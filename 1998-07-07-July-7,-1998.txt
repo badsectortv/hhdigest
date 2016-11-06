@@ -1,0 +1,461 @@
+July 7, 1998
+
+===================================================================== 
+URL of the day: www.kevinmitnick.com - The Kevin Mitnick Web Site 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS
+
+* Free ISP Account 
+* Foiling the "hidden" directory trick 
+* AOL Hack 
+* Comment, advice, help 
+* Completely anonymous surfing? 
+* Re: FTP problem 
+* Listing of Login Prompts 
+* Rhino9 server gone forever? 
+* NT Admin rights vulnerability 
+* Editorial: The upcoming 'Takedown' movie
+
+================================================================== 
+ *** Free ISP Account 
+================================================================== 
+From: "Isaac T." <spy911@geocities.com>
+
+If you go to http://tritium.net you can sign up for a free ISP account. 
+There aren't access numbers in all areas, and it's mostly US only, but if 
+you sign up, you can get a notice when there is a local number you can call 
+and your account will be already created. The only drawback is that 12% of 
+your screen is taken up by ads (Just pretend you're using AOL and you won't 
+mind =).
+
+-isaacICQ 6034332 
+=================================================================== 
+ *** Foiling the "hidden" directory trick 
+=================================================================== 
+From: "Stephen Nicholas (AKA: Elfshadow)" <Elfshadow@innocent.com>
+
+To Happy Hacker
+
+In regards to Thomason's <midas@pacbell.net> letter in the June 23rd edition, 
+Thomason was talking about how he had a bunch of directories that he couldnt 
+delete, move, or get any access to, either through dos OR win95. 
+Then it goes on to explain by using Ascii char ALT - 255 (null) you 
+can make a directories that can be hidden etc..
+
+Well, I have found a way around it. There is a neat little dos program called 
+'X-Tree Gold', it is a fairly old program, made a while back. This program 
+CAN view, edit, rename, delete, and otherwise manipulate directories with 
+an ALT 255 (Or any ascii chars) in the name!!
+
+Regards: Stephen Nicholas <AKA: Elfshadow> Elfshadow@innocent.com 
+================================================================== 
+ *** AOL Hack 
+================================================================== 
+From: <Suzbik@aol.com>
+
+Hello,I am relativly new to the hacking scene, but I do know quite a bit 
+about computers and Win95. However, when it comes to NT - I am 
+a newbe, and UNIX - what is it?
+
+Anyway, I thought that it might be usefull for you to know that 
+if someone has AOL and you want to find out the passwords for 
+logging on (you must be at the computer), all you have to do is as 
+follows:
+
+Go to C:\AOL\IDB 
+Open the file called Main.IDX in Wordpad 
+Press Ctrl+F and search for one of the user names, keep searching until 
+you find the name with a password after it. It is not encrypted!
+
+Hope this helps.
+
+Suzbik 
+================================================================== 
+ *** Comment, advice, help 
+================================================================== 
+From: RandomSeed <randomseed@thepentagon.com>
+
+Hi.
+
+I'd first like to say that I enjoy your hh digest! I'd also like to say 
+2 things about your June 29 hh digest.  1st, keydet said that a proxy server 
+hides your ip address from websites, which is not true.  Even with 
+anonymizer, and a proxy server, web sites can still see your ip address, so 
+warn your readers not to do anything stupid thinking they won't get caught 
+just because they listened to keydet.
+
+If your readers want to learn something more, tell them to visit 
+http://members.xoom.com/randomseed.  In my own modest opinion, it is good.
+
+Thanks, 
+Randomseed. 
+____________________________________________ 
+From: "Dave Weir" <dweir@bluefinmicro.com>
+
+Proxy Servers do offer some anonimity, but just like any other server, a 
+proxy server has access logs.  And these access logs list everyone that has 
+gone through the proxy. An example of an proxy log:
+
+198.153.225.90, anonymous, Mozilla/4.0 (compatible; MSIE 4.0; Windows 95; 
+c_commcd1), N, 6/12/98, 8:17:34, W3Proxy, NFAPROXY01, -, www2.all-yours.net, 
+206.217.169.19, 80, 2033, 437, 702, http, tcp, GET, 
+http://www2.all-yours.net/postcard/note2.gif, image/gif, Inet, 200
+
+198.153.225.108, anonymous, Mozilla/4.0 (compatible; MSIE 4.0; Windows 95; 
+c_commcd1), N, 6/12/98, 8:17:34, W3Proxy, NFAPROXY01, -, ww3.sportsline.com, 
+208.226.198.93, 80, 581, 14837, 858, http, tcp, GET, 
+http://ww3.sportsline.com/u/photos/allsport/jun98/HernandezJ061198.jpg, -, 
+Inet, 200
+
+The logs give the administrator info on who is surfing through their proxy, 
+where they are going, and what the surfers IP address is.
+
+Using a proxy for anonymous surfing and web attacks isnt the greatest idea, 
+just like anything else on the internet, you will get caught.
+
+As for setting the proxy settings on IE, select View  -> Internet Options - 
+> Connections -> Proxy Server.
+
+Make sure you check the box to use the proxy server, click on advanced (for 
+IE4) or settings (for IE3) and enter the proxy address.
+
+Skurp 
+Network Administrator
+
+================================================================== 
+ *** Completely anonymous surfing? 
+================================================================== 
+From: Izaac <rowei1@nevada.edu>
+
+Carolyn,
+
+In case you readers are interested there is a site out there that 
+offers completely anonymous surfing and email. You don't even have to 
+give them any information about you, and providing you pay in an 
+untraceable way i.e. cash or money order, you can be completely unknown 
+to the world. The site in mention is http://www.anonymizer.com/
+
+    It offers anonimity in every feature (?) and even offers a secure 
+tunnel to you and the site by using some really neat technical terms 
+that are over my head.  All right, enough already, I'm going to stop. I 
+am starting to sound like a commercial here. I wanted to tell you about 
+it and I did.
+
+Izaac 
+================================================================== 
+ *** Re: FTP problem 
+================================================================== 
+From: Christopher Hicks <chicks@chicks.net>
+
+On Mon, 29 Jun 1998, Master Hackronym wrote: 
+> When i do ls -lga c:\autoexec.bat <-- it over-writes da file...
+
+That will work with /any/ web site you hit.  Go to ftp.cdrom.com and the 
+same thing will happen.  It's not your ftp server.  It's how you're using 
+the ftp client.
+
+The filename you gave there is the file name where the output of the 
+command is going to go.  The command you think you're typing is:
+
+ls "-lga c:\autoexec.bat"
+
+ls takes two arguments.  The first is what is passed to the server and the 
+second is the file to store the result to.  If you want to pass more to 
+the server you have to enclose it in quotes.  If you do your commands with 
+the quotes as indicated you will get a 'file not found' or 'permission 
+denied' error.
+
+</chris> 
+================================================================== 
+ *** Listing of Login Prompts 
+================================================================== 
+From: Carter Cavanaugh <sly_wyvern@sekurity.org>
+
+This is a listing of login prompts for many different OSes. Many people are 
+puzzled by what OS a box is running. Well use this handy guide compiled by 
+Mr. Photon (haxor@technologist.com)
+
+--[ Apple Printer ]---------------------------------------------------------
+
+**************************************************************************** 
+                            Apple Computer, Inc. 
+                           LaserWriter 16/600 PS 
+                    TCP/IP Printer Configuration Utility
+
+--[ Ascend Router ]---------------------------------------------------------
+
+(ROUTER_NAME) Enter password:
+
+--[ OS/2 Box ]--------------------------------------------------------------
+
+OS/2 Version 2.3 (computername)M
+
+--[ Windows NT or 95 ]------------------------------------------------------ 
+Hummingbird Communications Ltd., Windows NT, Telnetd Version 6.0 (COMP.NAME)
+
+ login:
+
+--[ VAX/VMS ]---------------------------------------------------------------
+
+VIRTUAL MACHINE/ENTERPRISE SYSTEMS ARCHITECTURE
+
+--[ HP-UX ]-----------------------------------------------------------------
+
+HP-UX fake.com B.10.10 A 9000/712 (ttyname)
+
+--[ SPP-UX ]----------------------------------------------------------------
+
+fake.com [Convex Exemplar SPP-UX V5.2.1 1200/XA-16]  Authorized use only.
+
+--[ AIX ]-------------------------------------------------------------------
+
+AIX telnet V.4 (computername)
+
+--[ SunOS ]-----------------------------------------------------------------
+
+SunOS UNIX (computername)
+
+--[ IRIX (Silicon Graphics Workstation) ]-----------------------------------
+
+IRIX (computername)
+
+--[ Solaris ]---------------------------------------------------------------
+
+UNIX(r) System V Release 4.0 (computername)
+
+--[ Terminal Server for Dialin Access ]-------------------------------------
+
+User Access VerificationPassword:
+
+--[ Cisco Switch ]----------------------------------------------------------
+
+Cisco Systems Console
+
+Enter password:
+
+--[ Red Hat Linux ]---------------------------------------------------------
+
+Red Hat Linux release 4.1 (ComputerName) 
+Kernel 2.0.27 on an i486
+
+--[ Old BSD ]---------------------------------------------------------------
+
+4.2 BSD UNIX (computername)
+
+--[ SunOS Unix ]------------------------------------------------------------
+
+SunOS 5.6
+
+--[ AIX ]-------------------------------------------------------------------
+
+telnet (computername)
+
+AIX Version 4 
+(C) ©s by IBM and by others 1982, 1996. 
+login:
+
+--[ Hewlett Packard Printer ]-----------------------------------------------
+
+HP JetDirect
+
+Please type "?" for HELP, or "/" for current settings 
+>
+
+--[ VAX/VMS ]---------------------------------------------------------------
+
+        Welcome to VAX/VMS V5.4-2
+
+Username:
+
+--[ Ultrix ]----------------------------------------------------------------
+
+ULTRIX V4.2A (Rev. 47) (graphics)
+
+--[ MS-Windows NT or 95 ]---------------------------------------------------
+
+Hummingbird Communications Ltd., Telnet Daemon V5.0
+
+Username:
+
+*EOF*
+
+Note From Me: Prompts may differ slightly.
+
+-Sly Wyvern 
+================================================================= 
+ *** Rhino9 server gone forever? 
+================================================================= 
+From: The Stroh Family <gstrohjr@cybertron.com>
+
+Hi,
+
+Could you let your other readers know that rhino9.org, that is mentioned 
+in the 29 June issue of the Happy Hacker's Digest, is gone. Thank you.
+
+george m. stroh, jr.
+
+-----------------------------------------------
+
+Attachment: Forwarded Message
+
+Date: Wed, 01 Jul 1998 18:17:58 -0700 
+From: Julie <stack@goodnet.com> 
+To: The Stroh Family <gstrohjr@cybertron.com> 
+Subject: Re: Rhino9 server
+
+Rhino9 domain is defunct. Im not sure if it will ever be up again.
+
+Later 
+a
+
+================================================================= 
+ *** NT Admin rights vulnerability 
+================================================================= 
+From: Dale Holmes <editor@techbroker.com>
+
+A vulnerablility in Windows NT has recently been announced that allows 
+a user to get administrative rights to your Windows NT machines by 
+changing the default debugger in the Registry.
+
+The debugger is a tool that is started when a program running on a 
+Windows NT system crashes. The debugger is declared in the Windows 
+NT Registry, in the following location:
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\AeDebug: 
+Value: Debugger 
+Data Type: REG_SZ 
+Default Value: drwtsn32 -p %ld -e %ld -g
+
+Users in the Everyone group have Set Value rights to that key. This allows 
+them to change the value - the default program to run - when a program 
+or service crashes. The debugger runs within the context of the process 
+that crashed. This means that an attacker can specify User Manager as the 
+debugger. They need only force a process running in the SYSTEM context 
+(such as a service) to crash, and they gain administrative access to the 
+user database. Exploits that might cause such a crash are readily accessible 
+on the Web.
+
+It is not yet clear what the effect would be of changing the rights to 
+that key for the Everyone group. It's worth a try, though... 
+================================================================= 
+ *** Editorial: The upcoming 'Takedown' movie 
+================================================================= 
+From: Dale Holmes <editor@techbroker.com>
+
+I have recently heard that Miramax Films will be releasing a movie 
+made from the John Markoff and Tsutomu Shimomura book, "Takedown: 
+The Pursuit and Capture of Kevin Mitnick, America's Most Wanted 
+Computer Outlaw - By the Man Who Did It."
+
+This distresses me terribly...
+
+The Kevin Mitnick story is one that is horribly distorted 
+by media hype and the overall fear of technology of the general 
+public. People who are not technically savvy are easily intimidated 
+by the things that technical people can do. The press exploits this 
+constantly. Often they exaggerate the capabilities of technical people 
+and what they could do if they had bad intentions. Sometimes, the press 
+simply lies, not just exaggerating the facts, but creating them out 
+of thin air. In the case of Kevin Mitnick, much of this has happened. 
+Kevin has been slandered in way that are unbelievable. No movie star 
+or celebrity would tolerate such media abuse, but Kevin is not in much 
+of a position to defend himself.
+
+The end result of this media hype and hyperbole is that the general 
+public has an image of Kevin Mitnick as some sort of crazed madman; 
+some evil genius out to destroy civilization as we know it. 
+They beleive that he will alter people's medical records so that they 
+cannot receive the treatment they desperately need. They beleive that 
+he will crash 911 systems in cities all over the US. They beleive that 
+he will steal US government secrets and sell them to our enemies, and that 
+he will steal everyone's credit card number and sell them to the mafia. 
+People believe that he *WILL* do all of these things and more. And why 
+shouldn't they believe this? After all, the press told them so.
+
+It is easy for the press to manipulate people's beliefs this way. People 
+without technical knowledge can be convinced that he *CAN* do these things 
+through simple demonstrations of technology - even if they bear no relation 
+to reality. Once they beleive he can do these things, all it takes is 
+some scary stories to make them believe he *WILL* do these things. 
+Stir up their fear with a few "What if..." scenarios and people will buy 
+anything. And buy they do. Hacker hype sells lots of newspapers and books 
+and movie tickets.
+
+The upcoming movie is bound to follow the same pattern. In order to sell 
+tickets, the movie will have to tell an exciting story. It will have to 
+pit the forces of good against the forces of evil. It will have to tell 
+the story of a love that's lost, and a struggle against all odds to 
+realize one's self and face one's dark side. Otherwise, it would be boring. 
+Nobody would pay to see it.
+
+The problem is, you see, that the Kevin Mitnick story, the *REAL* Kevin 
+Mitnick story, is terribly dull, dry, and uninteresting. The average movie 
+going person would be bored to tears if they were forced to sift through 
+UNIX system logs or IRC transcripts. They definitly don't want to learn 
+C programming or UNIX shell scripting or encryption algoriths or intellectual 
+property law. But this is the stuff that makes up the bulk of the real Kevin 
+Mitnick story. So, Mirimax will have no choice but to try to find other 
+angles in the story to make it interesting, to make it digestible, and to 
+make it *MARKETABLE* to the general public.
+
+They will do this by exploiting the thrill of the chase. They will do this 
+by making Kevin into the Dark Knight and Shimomura into the White Knight 
+and pitting them against each other. They will play up Shimomura's love 
+interest. They will attempt to strike fear in the hearts of movie go'ers 
+everywhere at the mere mention of the name Kevin Mitnick. Then they will 
+tear him down before us all, making the world safe once again. This will 
+be exciting to the general public, and this will bring in box office $$$.
+
+Remember, however, that Kevin Mitnick is a *REAL PERSON*. He has been in jail, 
+without a trial, for over three years. He has been denied bail - in fact, he 
+has been denied a bail hearing! He is not a hero; he is not a martyr. He is 
+not an evil genius or a crazed madman. He's just a guy who hacked some stuff 
+and got caught. For this, he should be tried, and if convicted, he should be 
+sentenced. Once he completes that sentence, he will have paid his debt to 
+society, 
+and should be allowed to get on with his life.
+
+But for Kevin Mitnick, this is highly unlikely. People are scared to death of 
+him. Some of these people are the very government and judicial employees that 
+will hear his case and determine his fate. Thanks to books like Markoff's and 
+Shimomura's, public opinion is so tainted against Kevin that he will likely be 
+"crucified" for his minor crimes to set an *EXTREME* example for other would 
+be hackers. He will be used like a voodoo doll, so that the whole country can 
+exorcise its technological fears by destroying him.
+
+A movie like the upcoming story from Mirimax Films might make box office 
+millions. 
+It might entertain the masses. It might even discourage a few young people from 
+commiting "cyber crime". It might... but it will *DEFINITELY* help to completely 
+destroy the rest of Kevin Mitnick's life - and he doesn't deserve that, no 
+matter 
+what he has done.
+
+[To learn more about the Kevin Mitnick story, visit www.kevinmitnick.com] 
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net> or 
+Carter Cavanaugh <sly_wyvern@sekurity.org> 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Want a mentor to teach you how to do *legal* hacking?  Contact mentor 
+coordinator Ron Gloetzner, member, Happy Hacker Board of Directors, at 
+<rgloetz@flash.net>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <">>

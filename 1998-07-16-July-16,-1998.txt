@@ -1,0 +1,311 @@
+July 16, 1998
+
+===================================================================== 
+Inside Happy Hacker Report July 16, 1998
+
+===================================================================== 
+See back issues of the Happy Hacker Digest and Guides to (mostly) Harmless 
+Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska: 
+http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+Contents: 
+* Hurray for Netmask! 
+* Hacker Wargame Recent History 
+* The Wargame Is up Again 
+* How to Tell When a Wargame Box Goes Online 
+* Cryptik will Be Back 
+* Help, I'm a Newbie, Teach Me Step by Step How to Hack 
+* Hacking Lessons 
+* What's in a Name?
+
+Hurray for Netmask!
+
+ For months many haxors have tried to prove how elite they are by attempting 
+to vandalize Rt66 Internet.  However, last week Netmask (netmask@303.org) 
+showed those haxors what the ethic of a real hacker is.  He found a security 
+flaw in chili.rt66.com -- someone had forgotten to upgrade Secure Shell on 
+that computer after a remote root exploit had been found for it.  Netmask 
+could have used his knowledge to sneak in and vandalize chili to prove how 
+31337 he is.  However, instead he emailed a Rt66 sysadmin about the problem. 
+As a result, Netmask made new friends who honored him by praising him in the 
+logon message for all Rt66 shell account users. 
+ Netmask is sysadmin of a web site (http://www.303.org) that is not exactly 
+complimentary to me (Carolyn Meinel).  Despite that, I now have to admit he 
+is a real hacker.  Way to go, Netmask!
+
+Hacker Wargame Recent History
+
+ We had a lot of fun with the first Wargame computer, 
+cryptotek.happyhacker.org.  Spagheti was the first winner.  He made me 
+promise not to reveal his true identity, but he sure was fun to play with! 
+ When we launched this game, I assumed that any player would want to hog 
+root all to his or herself.  I was wrong.  At times as many as three people 
+were sharing root, and working together in a friendly way, monitoring 
+cryptotek almost around the clock in shifts. 
+ One day I was sniffing the goings on with the IP-Watcher sniffer program 
+(available from http://www.engarde.com) while one fellow was trying to patch 
+cryptotek.  This fellow was having a hard time, so suddenly someone else 
+su'ed into a root shell and used that power to start typing instructions on 
+how to do it right on the other fellow's screen. 
+ The most exciting day was May 8, 1998.  Someone who had root on cryptotek 
+was taking advantage of it to try to break into the Rt66 domain name server. 
+We later learned he had told the fellow who runs Antionline 
+(http://antionline.com) that he planned to tamper with the Rt66 DNS server 
+so that anyone pointing their Web browser at http://www.happyhacker.org 
+would instead go to his fake Web page that he had set up on cyptotek. 
+ Since attacking a Rt66 computer was against the rules of the game, one of 
+the other guys with root blew the culprit entirely off cryptotek. 
+ Moral of this story is that if you play politely, the Uberhackers who hang 
+out on our Wargame will lend you a hand and even share root with you.  Those 
+who fight dirty will be history.  Those who brag in advance that they will 
+hack the Happy Hacker Web site or mess with Rt66 will probably end up 
+looking like lamers. 
+ What I really liked about the game is that some Uberhackers proved that 
+they are generous, kind and powerful enemies of computer criminals.  it was 
+a real privilege to watch them at play.  Of course, these guys deny being 
+Uberhackers, but that only tells me that the best hackers are also modest.
+
+The Wargame Is Up Again
+
+ The Hacker Wargame is up again: koan.happyhacker.org.  Actually it has been 
+up since July 1.  We wanted to see how long it would take for people to 
+realize it is up.  If you were one of the early birds, you would have 
+discovered it when it was a mere newbie challenge.  However, no one broke in 
+during those first few days when it was super vulnerable.  Now it has been 
+upgraded to an intermediate challenge. 
+ By intermediate we mean it is easy to hack, but not by exploits that you 
+can download at any hacker websites (that we know of).  You will have to use 
+your ingenuity.  Yes, it soon will be vulnerable to some remote exploits, so 
+you don't need a shell account on it to be able to seize control.  For more 
+details on rules of the game and how to break in, see 
+http://koan.happyhacker.org/. 
+ Violators of the rules will suddenly discover that the game is run by 
+people who are better hackers than they are -- and who have console 
+access:):)  Remember the fate of the May 8 hacker!;^) 
+ Koan's sysadmin is Satori, a recent graduate of an Albuquerque area high 
+school and a sysadmin at Sandia National Laboratories.  The hardware, a 486, 
+is on loan from the infamous blips, with ethernet card provided by the Happy 
+Hacker Grand Pooh-bah (me). 
+ Koan is lots of fun.  I just logged into my shell there and got the message 
+"Troubled day for virgins over 16 who are beautiful and wealthy and live in 
+eucalyptus trees."  If you think my sense of humor is bad, try breaking into 
+koan and see how Satori messes with your head!
+
+How to Tell When a Wargame Box Goes Online
+
+ By now you are probably realizing that if you had spotted koan the first 
+day it was up, it might have been a mere newbie challenge and you would 
+probably have root on it by now.  Now quit all that moaning about why didn't 
+we let you know right away when it was up! If you want a chance at a newbie 
+box, you have to patiently keep on scanning our network for warboxes.  The 
+minute a new one pops up -- have phun! 
+ How do you know when a computer is available for you to legally attack? 
+Our rule is that anything in the happyhacker.org domain is OK to attack. 
+ So how do you identify when something is up in the happyhacker.org domain? 
+You need the nslookup program.  It is available on almost Unix computers. 
+There are also nslookup programs for Windows, but I'm not going to tell you 
+where to get them because it should be impossible to break into any of our 
+wargame computers using programs that run on Windows.  So please don't waste 
+your time hacking this game from Windows. 
+ Don't have a shell account?  You can find ISPs that sell shell accounts at 
+http://www.celestin.com/pocia.  Netcom provides shell accounts with local 
+dialup numbers in most parts of the US. 
+ If you live where there are no dial-up shell accounts, you can get one on a 
+distant ISP and telnet in.  See http://www.happyhacker.org for more 
+instructions.  Don't email me about how to get a shell account, you can find 
+lots of answers to your questions in recent Digests and the GTMHHs on shell 
+accounts. 
+ Or -- best of all -- run some form of Unix on your home computer.  If you 
+are a newbie, probably the easiest to install is Red Hat Linux 
+(http://www.redhat.com).  Most powerful, IMHO, is Slackware Linux.  Most 
+secure is, in the experience of our Wargame, either OpenBSD or FreeBSD. 
+Most compatible is, IMHO, Debian Linux (http://www.debian.com).  If you have 
+a Power PC, check out the Apple Web site for Mach 10, a Unix for Macs that 
+Hacker Wargame director Mark Schmitz swears by. 
+ Assuming you have a shell account (an account on a Unix computer that 
+allows you to give Unix commands), here's how to see whatever is in the 
+Happy Hacker domain (stuff after the ">"s are the commands you will give):
+
+~ > nslookup 
+Default Server:  mack.rt66.com 
+Address:  198.59.999.1
+
+> ls happyhacker.org 
+[mack.rt66.com] 
+ happyhacker.org.               server = mack.rt66.com 
+ happyhacker.org.               server = chili.rt66.com 
+ fantasia                       198.59.118.50 
+ sparc1                         198.59.118.52 
+ koan                           198.59.118.51 
+ mail                           198.59.118.53
+
+ The computers mack and chili are NOT available for hacking.  They come 
+after the word "server".  That just means they carry information about what 
+computers are in the Happy Hacker domain.  Only the computers which have 
+numbers after them are in the Happy Hacker domain. 
+ Now before you get all excited and think we have four computers available 
+to try to break into, there is one more step you need to take.  These are 
+merely IP addresses we have assigned.  There may not be a live computer 
+behind each of these numbers.  Your next step is to ping these numbers to 
+see if anything answers back.  In your shell account, or in Win 95 or Win 98 
+MS-DOS while online, give the command:
+
+~ > ping 198.59.118.52 
+PING 198.59.118.52 (198.59.118.52): 56 data bytes 
+ping: sendto: Host is down
+
+ This is how ping works on koan.  On MS-DOS you may get:
+
+C:\WINDOWS>ping 198.59.118.52
+
+Pinging 198.59.118.52 with 32 bytes of data:
+
+Request timed out.
+
+What Not to Attack
+
+ You probably figured out that our ISP, Rt66.com, is NOT OK to attack.  If 
+you try to break into Rt66 you are breaking the law. 
+ The Happy Hacker website also is not OK to attack.  Despite its name, it is 
+NOT in the Happy Hacker domain.  Here's an easy way you can tell.
+
+~ > ftp www.happyhacker.org 
+Connected to zlliks.505.org. 
+220 zlliks FTP server (Version 5.60) ready.
+
+ As you can see, ftp discovers that www.happyhacker.org is on 
+zlliks.505.org, which is NOT a happyhacker.org computer.  All 505.org 
+computers belong to the 505 gang.  While they are kind enough to volunteer 
+lots of help for Happy Hacker, they are really grouchy about people trying 
+to break into their computers.  I have gotten ever so many anguished emails 
+from people who tried to break into zlliks.505.org and lost their Internet 
+accounts.  This is because minor attacks, really lame stuff like phf 
+attacks, cause an automatic program to email the ISP from which the attack 
+came alerting its sysadmins that someone tried to break in, and sends a log 
+of the attack.  From this log the ISP is able to tell who was the culprit 
+and will often kick him or her off. 
+ People who try more sophisticated illegal attacks get even more interesting 
+responses.  I suggest you NOT experiment with riling up 505. 
+ Just to be sure you don't accidentally attack a 505 gang computer, here is 
+how to tell which belong to them:
+
+~ > nslookup 
+Default Server:  mack.rt66.com 
+Address:  198.59.162.1
+
+> ls 505.org 
+[mack.rt66.com] 
+ 505.org.                       server = mack.rt66.com 
+ 505.org.                       server = chili.rt66.com 
+ 505.org.                       198.59.118.49 
+ knight                         198.59.118.62 
+ zlliks                         198.59.118.49
+
+Cryptik will Be Back
+
+ Those of you who miss Cryptik and his Wargame box, 
+cryptotek.happyhacker.org, will be glad to hear he will soon be back in the 
+game.  He recently moved from Albuquerque to Sunnyvale where he has been 
+busy finishing high school a year early, taking a college course in advanced 
+shell programming, and also working in a place that builds motherboards. 
+Nevertheless he has taken the time to replace the 486 that used to host 
+cryptotek.happyhacker.org with -- an ULTRASPARC2!  We expect this new, 
+muscular version of cryptotek to swagger back into the Wargame soon.  Way to 
+go, Cryptik!
+
+Help, I'm a Newbie, Teach Me Step by Step How to Hack
+
+ I get email asking me this all the time.  Here's what I tell all these 
+guys.  Buy "The Happy Hacker" book.  It is NOT a printed version of the 
+GTMHHs.  It is all new writing, and has lots of screen shots.  It takes you 
+step by step, chapter by chapter, all the way from being a pure beginner to 
+where you can do some lots of really fun stuff such as playing the hacker 
+wargame.  In fact, three of the editors of The Happy Hacker book are helping 
+run the Hacker Wargame.  When you get good enough to master everything in 
+the book, it has lots of URLs to point you to places where you can begin 
+advanced study and even tells how to win a mentor who will help you make it 
+to the top if you work hard and buy him or her lots of pizza and chocolate 
+covered strawberries and mint condition Crow comic books.  Spagheti is 
+especially partial to Crow comics. 
+ How do you get "The Happy Hacker"?  I've gotten a number of complaints 
+about it being hard to get.  Here are the best I've found:
+
+1) Cheap: get it from your local bookstore for $29.95 plus any local sales 
+tax.  They probably won't have it on their shelf, but can usually order it. 
+Barnes and Noble has it in their warehouse.  If your local bookstore doesn't 
+have it, tell them they can get it from American Eagle, 800-719-4957 
+(outside the US dial US country code plus 520-367-1621). 
+2) Cheapest: get together with some friends and talk American Eagle 
+(800-719-4957) into selling a bunch of the books to you wholesale. 
+3) Buy it with a credit card on the Web at either http://www.amazon.com or 
+http://www.infowar.com.  The Infowar site also sells a lot of rare computer 
+security books. 
+4) Fastest: In the US, buy it directly from me (Carolyn Meinel) by sending a 
+check for $34.95 (That's $29.95 plus $5 shipping and handling).  This gets 
+it to you by 2nd day priority US mail.  By contract I'm not allowed to sell 
+it for less than other folks such as Infowar, which also charges $34.95 for 
+shipment by priority mail.  But I have the book in stock all the time, and 
+sometimes Infowar runs out. 
+5) Buy it directly over the phone with a credit card at American Eagle, 
+800-719-4957 (outside the US dial US country code plus 520-367-1621). 
+ If you have ordered the Happy Hacker book and not gotten it after several 
+weeks, please let me know.  I can help find the problem faster if you tell 
+me who you bought the book from and where and when your check was deposited. 
+Important note: if you made the check out to "Happy Hacker," guess what, 
+more than one person has sold it under that name.  Be sure to tell me the 
+mail or email address to which you sent your money. 
+ We have not had any problems with American Eagle, Amazon.com or 
+Infowar.com.  They are all well established companies with good reputations.
+
+Hacking Lessons
+
+ Want someone to hold your hand on IRC while you learn to hack?  You are out 
+of luck.  However, if you want to learn Unix well enough so you can have a 
+chance of winning the Hacker Wargame, email Joshua Fritsch 
+<derr@idworld.net> and he will notify you of his next IRC Unix lesson.
+
+What's in a Name?
+
+ Speaking of more than one person getting people to write out checks to 
+Happy Hacker and depositing them in their personal checking accounts -- 
+guess what, this name isn't trademarked.  Anyone can call themselves Happy 
+Hacker.  The only way you can tell us from the others is that we have a 
+better sense of humor and own happyhacker.org. 
+ For example, if you go to http://www.happyhacker.com, you will discover 
+they call themselves "HappyHacker, Inc."  Their site, last time I visited, 
+had nothing to do with either happy or hacking, but sure had an X-rated 
+simulation of Bill Clinton and Monica doing, um, er, something.  We have 
+nothing to do with those guys! 
+ A fellow named Brian Martin, who also uses the handles jericho, DisordeR, 
+Damien Sorder and dis, owns the domain name happy-hacker.org.  He also has 
+no role in our Happy Hacker. 
+ However, when he isn't flaming me he often asks me to please let him be an 
+editor of my upcoming GTMHHs.  I actually kind of like Brian when I'm not 
+flaming him, and a long time ago he helped with two of the GTMHHs. Recently 
+he turned up on one of Josh Fritsch's Unix lessons on IRC and was quite 
+helpful.  So who knows, Brian might someday become a Happy Hacker regular 
+volunteer.  But he isn't one yet:)
+
+ That's all for now.  Have fun and hack happy!  Just don't rile 505, OK? 
+__________________________________________________________________ 
+
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you!
+
+Happy Hacker is a 501 (c) (3) tax deductible organization in the 
+United States operating under Shepherd's Fold Ministries. Yes! This is 
+all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net> 
+Happy Hacker Digest editor: "Dale Holmes"<editor@techbroker.com> 
+Want a mentor to teach you how to do *legal* hacking?  Contact mentor 
+coordinator Ron Gloetzner, member, Happy Hacker Board of Directors, at 
+<rgloetz@flash.net> 
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

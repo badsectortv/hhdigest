@@ -1,0 +1,237 @@
+July 20, 1998
+
+===================================================================== 
+URL of the day: http://www.webcrunchers.com/crunch/esq-art.html 
+Read the article that started it all for some of us... 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS
+
+* Make NT run like UNIX 
+* ICQRevenge 
+* Null Char 
+* Tritium accounts 
+* RE: AOL Hack 
+* Modern Hackers Desk Reference 
+* GT(M)HH in Portuguese 
+* NukeNabber 
+* Lamers ruin it again! 
+* Editorial: How do I get my message printed in the Happy Hacker Digest?
+
+================================================================== 
+ *** Make NT run like UNIX 
+================================================================== 
+From: Keydet89<keydet89@yahoo.com>
+
+Give your NT box the capabilities of a Un*x box (well, almost...)
+
+Have you been reading all of those newsgroup posts 
+that tell newbies that they _must_ have Un*x or 
+Linux in order to "hack"?
+
+Want to give your NT box the ability to do some, if not all the 
+things a Un*x box can do?  Well, you won't be able to make your 
+NT machine run circles around a Un*x box, but there are 
+freeware and shareware tools that you can load on your box:
+
+For free/shareware servers and clients: 
+http://www.microsoft.com/NTServer/Solutions/SoftwarePart/Tools/default.asp 
+**Look under "Maintenance Utilities" for some Unix-like tools...
+
+For a bash shell and development tools (ie, c/c++ compiler): 
+http://www.cygnus.com/misc/gnu-win32/
+
+For a korn shell, telnet/inet daemons, and access to 
+the Registry as a filesystem: 
+http://www.research.att.com/sw/tools/uwin/
+
+For Perl for Win32: 
+http://www.perl.com 
+**look toward the bottom of the left-hand panel for the links...
+
+For Java: 
+http://www.javasoft.com
+
+So, if you're tired of asking how to do somethings on NT, and receiving 
+"get Un*x" as the response, take a look at these links...
+
+Keydet89 
+=================================================================== 
+ *** ICQRevenge 
+=================================================================== 
+From: <yruno2@usa.net>
+
+Your recent newletter about virii reminded me of a recent "adventure" I had with one, actually a trojan.  I was studying how icq sends and receives messages, and I found something on one of those dark, creepy hacker sites which was called "icqrevenge", so i grabbed it to take a look.
+
+Winds up that this program copies itself as system32.exe into the 
+windows/system dir and updates the registry to auto-execute it every reboot. This program would log your machine into an undernet channel, and keep you there (with hundreds of others!) waiting for the author to pick his victim. Through a lot of experimentation, an IRC friend and I discovered that sending certain strings to the machines logged in to the channel would reveal information about your computer, and that the trojan had an ftp client in it, so the author could log into your machine and have his way.  Anyway, I wanted to catch the one responsible for this, but while I was gone one weekend, my friend found the owner in the channel, and got into an irc war and effectively got the channel shut down (set to invite only now).  This software is still on several sites on the net, just search for icqrevenge.
+
+Anyway, thought this was an interesting story and wanted to pass it on.
+
+YRUno2 
+================================================================== 
+ *** Null Char 
+================================================================== 
+From: "Michael Miller" <mikemill@jps.net>
+
+I would like to strighten something out.  the NULL character is not 
+Alt-255, but Alt-0.  Alt-255 is a BLANK char.  They do have different 
+properties when it comes to breaking programs.  Its no big deal but 
+it needs to be strightened out. 
+ 
+
+================================================================== 
+ *** Tritium accounts 
+================================================================== 
+From: joby07@juno.com
+
+There is a way to make no ads come up when you have Tritium. 
+Just use your email address as the login name, example: user@tritium.net 
+and then you wont get any ads.
+
+joby g. 
+ 
+
+================================================================= 
+ *** RE:AOL Hack 
+================================================================== 
+From: <SethBek@aol.com>
+
+In regards to this.....It can ONLY be done if the password has been stored 
+previsouly in the EDIT STORED PASSWORD area of AOL. 
+> ================================================================== 
+>   *** AOL Hack 
+>  ================================================================== 
+>  From: <Suzbik@aol.com>> 
+>  Hello,I am relativly new to the hacking scene, but I do know quite a bit 
+>  about computers and Win95. However, when it comes to NT - I am 
+>  a newbe, and UNIX - what is it? 
+> 
+>  Anyway, I thought that it might be usefull for you to know that 
+>  if someone has AOL and you want to find out the passwords for 
+>  logging on (you must be at the computer), all you have to do is as 
+>  follows: 
+> 
+>  Go to C:\AOL\IDB>  Open the file called Main.IDX in Wordpad 
+>  Press Ctrl+F and search for one of the user names, keep searching until 
+>  you find the name with a password after it. It is not encrypted!> 
+>  Hope this helps. 
+> 
+>  Suzbik 
+================================================================== 
+ *** Modern Hackers Desk Reference 
+================================================================== 
+From: Nik <fang.gang@btinternet.com>
+
+The Modern Hackers Desk Reference
+
+http://www.x-treme.org/rpet/mhd 
+================================================================== 
+ *** GT(M)HH in Portuguese 
+================================================================== 
+anonymous post
+
+Hi 
+Well now we have started to translate GT(M)HH in to Portuguese; you find them at Portugujs: 
+http://w1.340.telia.com/~u34002171/hhd/gtmhh/portuguese/index.html
+
+The translator is Wilson and he needs some help to translate them, it is too much for one person. Write to (in English) noworries2@hotmail.com and I'll forward your e-mail address to Wilson so that you can have a chat about which ones to translate
+
+================================================================= 
+ *** NukeNabber 
+================================================================= 
+From: wmiller <wmiller@optonline.net>
+
+Hey Carolyn,
+
+I was on a new Windows site, winfiles.com, and found a nifty 
+thing that watches up to 50 ports simutaneously watching for hax0rs.
+
+It's called NukeNabber, and best of all it's freeware ;^)
+
+You'll find it in the winsock area.
+
+================================================================= 
+ *** Lamers ruin it again! 
+================================================================= 
+From: "Tom Piccin" <tom.piccin@lineone.net>
+
+Hi Carolyn,
+
+I pray that you post this in your digest because I need to get the word out somehow.
+
+Not long ago, I gave information about webfreaks (the free shell account) out to your list. I know loads of your readers signed up for accounts there because I got many emails asking me for more information after I posted. Since this large influx of people, there are hundreds of clueless newbies running rampant on the box. Yesterday I telnet in and what do I see? Web access has been turned off because of phf abuse. This sort of thing is happening to much. The capabilities of the box is being stripped down because hacker wannabes are running lame attacks on the account. The Webfreaks shell account is the best out there, at least that I have discovered (one of your readers argued that you can't telnet out - you most certainly can!) and people are ruining it :-(
+
+Tom Piccin
+
+================================================================= 
+ *** How do I get my message printed in the Happy Hacker Digest? 
+================================================================= 
+From: Dale Holmes<editor@techbroker.com>
+
+How do I get my message printed in the Happy Hacker Digest?
+
+It's easy really. Here is the process I go through deciding 
+what to publish.
+
+Each week I get literally hundreds of messages for possible 
+inclusion in the Digest. I read each and every one of them. 
+Some messages are really flames - messages with foul language 
+and harsh, often unjustified, criticism. I read these messages, 
+ponder them seriously, laugh outrageously, then delete them. 
+They are usually intended to bad mouth me in particular, 
+and aren't for public consumption anyway.
+
+Some messages are really positive - offering thanks and praise, 
+but not including any technical information or tips for other 
+readers. These messages are great to receive; I read them all 
+and appreciate them - thanks to all that send them! But, I 
+delete these messages also, because they don't contain any 
+info that other readers of the Digest might find useful.
+
+The last group of messages are those that contribute some bit 
+of information - it could be a simple tip on where to find 
+something useful, or it could be some technical info about 
+a particular system or software product. With this type of 
+message, I will try to correct the spelling and grammar if 
+necessary, and then I will publish it in the Digest.
+
+Sometimes a message falls into more than one category. It may 
+contain useful tech tips, but at the same time contains obscenity 
+or foul language. I will usually print these messages, with the 
+obscenity or foul language stripped out. Who decides what is obscene 
+or inappropriate? Well, I do! As editor, that's my job afterall... 
+You may not personally find the words $%^& or @#%!&(* offensive, but 
+I have to edit with the entire reader base in mind; if even one reader 
+may find it offensive, it has to go. The technical info is the good stuff anyway, and that will still get printed.
+
+So, with that in mind, please send in your contributions! If you are 
+worried that you are not a guru in the topic discussed in your article, relax! We all can learn from one another. If we publish something that is not completely correct, we will certainly receive a correction from some other reader, and that will get printed too! If you really feel self concious about it, research you topic before you write. You will no doubt find out something that you didn't know, which will be beneficial to us all when your article does go to print.
+
+Be prepared to have your article reprinted all over the place. I often get requests from people to reprint the editorials that I write. I tell them all that it is OK to reprint my articles, provided that they credit me as the 
+author, and print theentire article with no additions or ommisions. Your contributions to the Digest may turn up in other places too. Be prepared to accept this. We all want information to be shared openly, and freely, so that anyone can learn as we have.
+
+Thanks very much to all who have contributed to the Happy Hacker Digest so far, keep up the good work. To all who have been thinking of writing 
+to us but have not done so yet - WHAT ARE YOU WAITING FOR?!? 
+================================================================== 
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net> 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

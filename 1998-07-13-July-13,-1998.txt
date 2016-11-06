@@ -1,0 +1,460 @@
+July 13, 1998
+
+===================================================================== 
+URL of the day: 
+http://www.yahoo.com/Entertainment/Humor__Jokes__and_Fun/Computer_Humor/Tech 
+_Support/
+
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS
+
+* Chat and Beginners Exploits 
+* Call for papers 
+* New Hacker wargame computer is up 
+* Modern Hackers Desk Reference 
+* Buy PCs with Linux pre-installed 
+* webFreaks.com Free Shell Account Server - back up! 
+* Rhino9 server gone forever? NOT! 
+* VBScript exploit? 
+* MINIX 
+* Editorial: What is SPAM anyway?
+
+================================================================== 
+ *** Chat and Beginners Exploits 
+================================================================== 
+From: "®3\\/×© ®@© |{ø(\\/)Å±1©2600" <revbezalel@hotmail.com>
+
+I am going to have at my website www.angelfire.com/sd/bezalel/ ten chat 
+rooms for my fellow happy hackers.  Twenty-four people can chat in one 
+room.  Right now I only have two chat rooms open and they are empty one 
+hundred percent of the time, but hopefully that will change.  Oh yeah, and 
+here are some beginners exploits.
+
+Exploits 
+To get the passwd file ,try using an FTP client to access the site anonymously 
+then check the /etc directory to see if access to the passwd file is 
+restricted. 
+If it is not restricted then download the file and run any one of a wide 
+assortment of cracker programs on it. If it is restricted then try this. Some 
+systems there is a file called PHF in the /cgi-bin directory. If there is then 
+you are in luck. PHF allows users to gain remote access to files (including the 
+/etc/passwd file) over the world wide web. To try this method goto your web 
+browser and type one of these URL's:
+
+http://xxx.xxx.xxx/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd 
+http://xxx.xxx.xxx/cgi-bin/php.cgi?/etc/passwdhttp://xxx.xxx.xxx/~root 
+http://xxx.xxx.xxx/cgi-bin/test-cgi?* HTTP/1.0 
+http://xxx.xxx.xxx/cgi-bin/nph-test-cgi?* HTTP/1.0 
+http://xxx.xxx.xxx/samples/search/queryhit.html 
+http://xxx.xxx.xxx/scripts/samples/search/webhits.exe 
+http://xxx.xxx.xxx/_vti_pvt/service.pwd 
+http://xxx.xxx.xxx/secret/files/default.asp.
+
+Substitute the site you are trying to hack for the xxx.xxx.xxx.
+
+If the preceding methods fail then try any way you can think of to get that 
+file. If you do get the file and all the items in the second field are X or! 
+or * then the password file is shadowed. Shadowing is just a method of adding 
+extra security to prevent hackers and other unwanted people from using the 
+password file. Unfortunately there is no way to "unshadow" a password file 
+but sometimes there are backup password files that aren't shadowed. Try 
+looking for files such as /etc/shadow and other stuff like that.
+
+A single entry of a passwd file entry might look like this: 
+               PASSWORD        GROUP NUMBER      HOME DIRECTORY 
+              /               /                  / 
+             /               /                  / 
+rbezalel:8d34jSjs73hsb:2162:15:ReverendBezalel:/usr/users/rbezalel:/usr/bin/ksh 
+ \                      \             \                             \ 
+  \                      \             \                             \ 
+   USERNAME               USER NUMBER   GECOS INFORMATION            SHELL
+
+Now take a look at the PASSWORD in this entry: 8d34jSjs73hsb. This is, in 
+fact, NOT the password. It is, instead, the encrypted equivalent TO the 
+password. As part of the UNIX Account Registration process, when a User 
+designates a password, the UNIX takes the password, and (*this is 
+important*) uses the other information from the account to generate an 
+encrypted equivalent to the actual password. Why? Because as part of the 
+UNIX operating system, users MUST have access to the 'passwd' file to be 
+able to login. But if anyone who has an account can access the 'passwd' 
+file, they can also see what everyone else's Password is. So, UNIX's 
+security against this is to encrypt the password entry for each users 
+account so that no one else will know what anyone other than their 
+password is. Fortunately the algorithm UNIX uses to perform this 
+encryption has been known to Crackers for sometime.
+
+And so if you can see this: 
+           encrypted equivalent of password 
+             / 
+rebezalel:8d34jSjs73hsb:2162:15:ReverendBezalel:/usr/users/rbezalel:/usr/bin/ksh
+
+[Dale: This tip seems to be unfinished. i think that the author meant to say 
+that 
+if you can see the encrypted equivalent of the password, then you can crack it 
+using a program like Cracker jack...]
+
+Thank you for your time, 
+  © øþÿ© @±   © ®@© |{ë®
+
+=================================================================== 
+ *** Call for papers 
+=================================================================== 
+From: "Betty G.O'Hearn" <betty@infowar.com>
+
+P L E A S E   D I S T R I B U T E   W I D E L Y
+
+C A L L   F O R  P A P E R S
+
+Assurance for the Global Convergence:
+
+Enterprise, Infrastructure and Information Operations
+
+InfoWarCon-9 
+Mount Royal Hotel, London, UK 
+December 7-9
+
+December 7 - Tutorials 
+December 8-9  General Session.
+
+Sponsors: 
+MIS Training Institute - www.misti.com 
+Winn Schwartau, Interpact, Inc. - www.infowar.com
+
+The Global community gets smaller and smaller, especially as technology 
+unites us all. Heretofore disparate entities now face the same challenges, 
+adversaries and opportunities.
+
+InfowarCon-9 will examine how three entities will coexist and survive: 
+· The private enterprise conducting global commerce 
+· The national and municipal infrastructure 
+· Military and Government Information Operations (Defense and Offense)
+
+Interested parties from government, law enforcement, academia, 
+corporations, product vendors and individuals from all nations are invited 
+to submit papers or concepts for papers/presentation to be given at 
+InfoWarCon-9 and published in the Conference Proceedings and at 
+www.infowar.com. The following Solutions Oriented topics are of special 
+interest to the conference, but all papers will be considered. Entertaining 
+and interactive sessions focussing on leading edge thinking and issues are 
+preferred:
+
+· Infrastructural protection, cyber-attacks, and defensive methodologies 
+· Y2K Versus EU Conversions: Is there an easy way? 
+· Information Operations in the Military· Offensive Weapons and Technologies 
+· Cyber-Forensics· Weapons of Mass Destruction for the Terrorist 
+· Espionage: Corporate and National 
+· Effective VPN/PKI for Defending Global Commerce 
+· Open Source Intelligence for InfoWar 
+· Joint Global Information Operations versus InfoWar? 
+· International Law Enforcement and Cooperation 
+· InfoWar Disaster Response Training· Denial of Service Attacks and Methodology 
+· The Law and War· New Info-Sec Models for Local and Global Enterprises 
+· Case Studies and Real World Successes of Defensive Information Warfare 
+· Electronic Civil Defense Policies 
+· National Defense and Intelligence Mechanisms 
+· Education: For the Choir and the Congregation 
+· Dealing with the Non-nation State Actor 
+· Interactive Infowar and Strategic Gaming 
+· Redefining the Responsibility of the State 
+· Case Studies of Prosecution: Successful and Not 
+· Corporate Vigilantism and Self-Preservation 
+· The Return of Privacy: Electronic Bills of Rights for Nation States 
+· Legal Issues for the Private Sector· Real Hacking
+
+Multi-media presentations, real-time scenarios or gaming, audience 
+participation and highly interactive topics are more likely to be accepted. 
+English is the conference language and all sessions will be unclassified.
+
+A one page abstract submission is required. If the abstract is selected, 
+the full paper will be due in 30 days. Submissions are to be in MSWord, WP 
+or Powerpoint, sent via email, including your CV and all contact information.
+
+Forward to:  Betty@infowar.com. with " IWC-London SUBMISSION" in the 
+SUBJECT line.
+
+Include your POC information including fax, phone, email, snailmail, title, 
+company name.
+
+Submission Deadline:   July 20, 1998  (NEW DATE)
+
+There will be no submissions accepted after July 20, 1998 so please plan now.
+
+For inquiry or discussion on submissions, please contact Betty O'Hearn at 
+813.393.6000
+
+For more information contact: Voice: 508.879.7999 Fax: 508.872.1153 
+Exhibitors & Sponsorship: Adam Lennon - Alennon@misti.com 
+Attendance & Registration: www.misti.com
+
+Betty O'Hearn 
+Assistant to Mr. Winn Schwartau 
+727-360-6256 Voice 
+727-363-7277 FAX
+
+http://www.infowar.com
+
+http://www.info-sec.com 
+================================================================== 
+ *** New Hacker wargame computer is up 
+================================================================== 
+koan.happyhacker.org is online and ready for assault!
+
+Need I say more??? 
+================================================================== 
+ *** Modern Hackers Desk Reference 
+================================================================== 
+From: "Jim Williams" <jbw2@bellsouth.net>
+
+Hi Again,I was able to find and download the Desk Reference from 
+http://www.danbbs.dk/~tox/hpa_dk/ 
+================================================================== 
+ *** Buy PCs with Linux pre-installed 
+================================================================== 
+Check out these web sites for info on purchasing PC's with LINUX 
+preinstalled:
+
+http://www.indelible-blue.com/ 
+http://www.zenontech.com/
+
+================================================================== 
+ *** webFreaks.com Free Shell Account Server - back up! 
+================================================================== 
+Mark Castillo <webmaster@webfreaks.com>
+
+Just wanted you to know that our new adduser scripts are now in place.
+
+Adding a user takes 15 minutes via the online form instead of 0-2 
+weeks :).
+
+The OS is still OpenBSD-current.
+
+http://www.webFreaks.com
+
+Telnet and IRC out are still not allowed on the free accounts, but 
+ssh is.
+
+Our Full Featured Shell accounts allow any port access and IRC bots.
+
+Please read the FAQ and Shell Account detail pages for pricing. 
+================================================================== 
+ *** Rhino9 server gone forever? NOT! 
+================================================================== 
+From: "Alexey L. Popov" <alpopov@elkamail.ru> 
+ 
+
+Hello Dale. 
+I wasn't sure to what address I should write to get to the digest 
+so I selected yours, sorry.
+
+Please let others know that Rhino9 server could be found at 
+http://207.98.195.250, or one could try web search for documents 
+titled Rhino9 Security Research Team since their site has changes 
+locations several times.
+
+Thanks for maintaining this digest.
+
+Alex 
+--------------------------------------------------- 
+From: The Slycer <the_slycer@telusplanet.net>
+
+Hello, in the July 7 1998 GTMHH, there was a message stating that 
+rhino.org domain is now gone. Just wanted to make sure that everyone 
+knows you can still get to the site @ http://207.98.195.250/
+
+IMHO it is a great site and although the domain is gone (for whatever 
+reason) the site is still up.
+
+Thanks, 
+The Slycer.. 
+--------------------------------------------------- 
+From: "Johan" <goyens.johan@unicall.be>
+
+Hi!
+
+Strange, I could read the message in the digest 7/7:
+
+>Could you let your other readers know that rhino9.org, that is mentioned 
+>in the 29 June issue of the Happy Hacker's Digest, is gone. Thank you.
+
+Strange, while I was reading this, I had my browser connected to the site. 
+Try http://207.98.195.250/
+
+Maybe there's a problem resolving the dns?
+
+Greetings, 
+Johan. 
+--------------------------------------------------- 
+From: Nik <fang.gang@btinternet.com>
+
+Please note http://www.Rhino9.ml.org is the new url
+
+Regards, 
+fanggang 
+================================================================= 
+ *** VBScript exploit? 
+================================================================= 
+From: <VM370x@aol.com>
+
+Hi, 
+I was looking through the MS VBScript documentation and I noticed 
+several things (such as the FileSystemObject) that look like clear 
+security holes.
+
+The example of this object shows the creation of a new text file 
+in the root directory and some text being appended.  It wouldn't 
+be too good to have WriteLine("del c:\io.sys") appended to 
+autoexec.bat would it?  I wish I could test this, but I don't have 
+DCOM installed so I can't run the VBScript Engine v2.
+
+Oah well, later- 
+================================================================= 
+ ***  MINIX 
+================================================================= 
+From: Renos <renosm@yahoo.com>
+
+Hi Carolyn!   Lately I have been searching to find an easy-to-install 
+UNIX like Operating System. I didn't want to make a 500MB partition 
+on my HD for a Linux Instalation. I read in previous issues of HH 
+about some UNIX like OSes that could run on Win95. They also had 
+small sizes and of course you didn't have to make a new partitions 
+on your HD. Keeping on searching I finally found a cool one Unix 
+like OS called Minix!
+
+Minix needs only 30MB of hard disk for a full instalation. It's 
+free and it comes with the sources! You can install it on a XT,286, 
+386, 486, 586,... If you still don't want to make a partition there is 
+Test-Minix. It's the Minix OS which can be run from the DOS prompt! 
+It's only 10MB (the Download size in is 2MB). It doesn't contain the 
+sources, and you must have at least a 386 with 4MB RAM . It contains 
+among other things the cc compiler, Internet tools such as telnet, 
+ftp, ping and deamons such as telnetd, ftpd, etc.
+
+More infos about MINIX and Test-Minix can be found at: 
+http://www.cs.vu.nl/~ast/minix.htmlRenos. 
+================================================================= 
+ *** Editorial: What is SPAM anyway? 
+================================================================= 
+From: Dale Holmes <editor@techbroker.com>
+
+What the heck is SPAM anyway? Well, there are two schools of thought. 
+SPAM is known to people around the world as a luncheon meat of legend. 
+People *worship* SPAM (http://www.iconnect.net/home/jstrong/spam.html). 
+SPAM has inspired millions to philosophise and express their innermost 
+thoughts and feelings (http://pemtropics.mit.edu/~jcho/spam/). SPAM has 
+become perhaps the most closely watched and talked about luncheon meat 
+of all time. Here are some SPAM facts:
+
+- In America, it's consumed at the rate of 3.8 cans a second by more than 
+60 million Americans. 
+- It's trademarked in 92 countries, and sold in 45, from Anguilla to Zimbabwe. 
+- If laid end-to-end, 5 billion cans would encircle the earth 12 1/2 times. 
+- 5 billion cans of SPAM would feed a family of four, three meals a day, for 
+4,566,210 years. 
+- You can grill more than 29 billion Spamburgers with it, and that supply 
+would last 5.4 days if everyone on Earth ate one spamburger for dinner each 
+night. 
+- Each year, 100 million pounds (45 million kg) of Spam are sold around the 
+world. 
+- SPAM is made in two U.S. locations - Austin, Minnesota, and Fremont, 
+Nebraska - 
+and seven other countries: England, Australia, Denmark, Phillipines, Japan, 
+Taiwan, and South Korea. 
+- The average consumers of Spam are families with several children, especially 
+in the southeastern U.S. 
+- In 1989, the U.S. armed forces bought 3.3 million pounds of SPAM. 
+- Hawaii, Alaska, Arkansas, Texas, and Alabama rate the highest in spam 
+consumption respectively. 
+- Among the 50 foreign countries where Spam is sold, the UK and South Korea 
+are the largest markets. 
+- In South Korea, SPAM is considered an upscale food and one of the most 
+popular American imports. The Wall Street Journal recently spotted a Seoul 
+executive in search of the perfect gift. The executive deliberately skipped 
+over traditional gift items such as wine and chocolates in favor of SPAM, 
+explaining, "It is an impressive gift." 
+- Hormel PR man Allen Krejci says: "SPAM has endured because of it's 
+convenience 
+and versatility. You can eat it hot or cold. You slice, dice, or cube it. You 
+can eat it for breakfast, lunch, dinner, or snacks. In fact, the only thing 
+that 
+limits your use of SPAM is your imagination." 
+- Nikita Krushchev once credited SPAM with the survival of the WWII Russian 
+army. ''Without SPAM, we wouldn't have been able to feed our army,'' he said. 
+- Senator Robert Byrd of West Viginia eats a sandwich of SPAM and mayonnaise 
+on white bread three times a week. 
+- Number of miles a snowmobile must drive at -30 F to fully brown a can of Spam 
+wired to the engine: 35 (Source: The Iditarod [heard on a Madison, WI radio 
+report for "National Canned Luncheon Meat Day, '96])
+
+All this is amazing, but it has little to do with hackers... Another take on 
+SPAM, 
+however, is much more serious. SPAM is the nickname for unsolicited junk email. 
+Usually this email comes from a commercial entity trying to sell some product or 
+service, or worse, trying to run some fraudulent scam.
+
+These emails tend to have false headers so that the reply to address is faked. 
+If a recipient tries to respond to the email to get themselves removed from 
+the list, their message bounces back as undeliverable.
+
+SPAM also includes advertisements placed in bulk to Usenet newsgroups. Usually, 
+these ads are placed in hundreds of newsgroups at a time, without regard to the 
+subject matter that the group was setup for. Ads of this nature clog up 
+newsgroups 
+to the point where it is difficult to find any posts that are actually on the 
+newsgroup's topic.
+
+SPAM makes use of Internet email and Usenet newsgroups very frustrating. 
+Many people 
+say that there should be a law preventing SPAM. Soon, there might be one. The US 
+Federal Trade Commision (FTC) will be releasing a report soon making 
+recommendations 
+to the US government and to the technology industry about how to fight SPAM.
+
+Though their intentions are good, the US government will probably miss the boat 
+when it comes to the SPAM wars. They tend to miss their targets in 
+technology issues 
+ - just look at WIPO, or the DOJ case against Microsoft. It scares me a 
+little when 
+I think of governments deciding the fate of my email based upon its content. 
+I hate 
+SPAM! But, I want to be the one defining what is and isn't SPAM in *my* inbox.
+
+How do you feel about it? What can you do? A good place to start it the Web 
+site for 
+the Coalition Against Unsolicited Commercial Email (CAUCE). Visit the site at 
+http://www.cauce.org/ and read about the issue. There are links from there 
+to other 
+reaources for SPAM war information, as well as instructions on how to avoid 
+becoming 
+a SPAM victim yourself. If it is too late for that, there is also 
+information on 
+how to detect the source of SPAM, and what you can do about it once you know 
+who is 
+spamming you.
+
+I suggest you read about it while eating a plate of SPAM, eggs, bacon, and SPAM 
+(http://http.cs.berkeley.edu/~ddgarcia/spam.html#MontyPython). 
+__________________________________________________________________ 
+
+  
+  This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net> or 
+Carter Cavanaugh <sly_wyvern@sekurity.org> 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Want a mentor to teach you how to do *legal* hacking?  Contact mentor 
+coordinator Ron Gloetzner, member, Happy Hacker Board of Directors, at 
+<rgloetz@flash.net>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <">>
