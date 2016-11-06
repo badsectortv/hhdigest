@@ -1,0 +1,755 @@
+Aug. 1997 Digests
+
+================================================================= 
+     Happy System Administrator Digest: 8-1 
+=================================================================
+
+                          Welcome to 
+  
+                             T H E 
+                   HAPPY SYSTEM ADMINISTRATOR 
+                          D I G E S T 
+ 
+
+                               A 
+       moderated forum discussing all things legal related to: 
+              installing, configuring, and maintaining, 
+                         a Linux system. 
+  
+ 
+
+=================================================================
+
+Contents: 
+=========
+
+1. A note from the moderator 
+2.  Some answers, plus a rant 
+3. Resizing rxvt's 
+4. Mounting floopies in Linux (monkey) 
+5. Misc Answers 
+6. Re: July 20th HSAD! 
+7. Sorry to be lame 
+8. Linux Red Hat 4.2 
+9. HSAD - hd problems 
+10. Submission for HSAD  HELP!! 
+11. Re: mtools 
+12. setting up x-windows 
+13. Re: July 20th HSAD! 
+14. Minicom installation troubles 
+15. help
+
+=================================================================
+
+1. A note from the moderator 
+From: Moderator <jammer@ecst.csuchico.edu>
+
+Hello again,
+
+Here's another HSAD. It looks to be a good one, so I hope you like it.
+
+You may have noticed that the period between issues has been growing. It's 
+because, for the summer, I have a full-time job, which coupled with new toys 
+and a healthy social life, mean I have less free time. But, not to worry. 
+In two weeks, my internship's over, and I get to go back to my normal pattern 
+of using the HSAD as a procrastination device.
+
+The creation of this HSAD was stretched over 3 days due to a a very slow 
+ISP whose modems kept dropping carier.
+
+Happy Administration,
+
+-Jon 
+ 
+
+=================================================================
+
+2.  Some answers, plus a rant 
+From: James Mastros <abszero@epix.net> 
+ 
+
+>And regarding mtools.. I was playing around with it yesterday and I'm 
+<SNIP> 
+> 
+>[ Jon: Hmm. What are the mtools? ] 
+> 
+mtools are a collection of utilities for using MS-DOS filesystems.  Word to 
+the wise: just mount the partition, and use normal unix commands.  That 
+way, you get to try to forget that you are dealing with crappy dos shit, 
+instead of trying to fake the fucked-up dos way of doing things. 
+(Note to Jon:  If you don't like the swearing, just don't publish any of 
+this e-mail.  I don't like censorship.)
+
+[ Jon: Swearing's fine, but my policy is to not publish flames/sensless 
+       rants/etc ]
+
+         -=- James Mastros
+
+>================================================================= 
+> 
+>12.. Winmodems and Linux NOT 
+>From: Bill Eldridge <bill@rfa.org> 
+<SNIP> 
+>[ Jon: You're right. Winmodems suck becuase they aren't real modems. They 
+>       rely on software to do most of the modeming. That's why they aren't 
+>       supported/liked in Linux. Check out US Robotics' homepage for more 
+>       information. ] 
+> 
+Linux would support winmodems on a fairly short basis, most likely, except 
+that modem manufacturers won't let developers get technical information on 
+their winmodems (I refuse the honor of capitalization to them).
+
+ -=- James Mastros
+
+============================
+
+Please remove me from this malling-list.  I am simply fed up with the 
+stupid questions that seem to pre-dominate this list.
+
+OK, it's officially rant time. 
+When I first heard of this malling-list, I immediately rushed to send a 
+mail to Jon to add me (OK, I used his handy web form, and I waited a couple 
+days).  I just loved the idea;  I though that I could finally get some good 
+middle-level information:  I'm beyond the crap in stuff like the Linux 
+Gazette (some of it isn't to simple, but lots of it is X stuff, and I don't 
+use X), but reading linux-kernel gives me headaches (along with post-doc 
+physics, but that's not bad from a 17yo <G>).  But of course not.  Instead, 
+this digest has become a haven for "how do I configure my GUI" and people 
+replying to others concerns by saying umm... I don't know.  I simply see no 
+value in this digest any-more.
+
+If a simple set of rules were adopted, I think that the quality of this 
+forum would improve drastically.  So, without further ado:
+
+[ Jon: I'm going to respond to each of the items. I think they are all valid 
+       points, and I appreciate the clarity with which you voice your rant. ]
+
+1)  Look for the answer yourself first.
+
+[ Often people don't know where to look. One of my guides (probably the next 
+  one) will be a bibliography of Linux references. But for now, the first 
+  place you should look for anything is "www.linux.org". ]
+
+2)  If the problems come before you see "Uncompressing linux....." for the 
+first time (FYI:  This is the first message that you see upon boot of the 
+linux kernel), then this is not the proper forum for your question; look at 
+the documentation for your distribution, then their web page; then e-mail 
+them.
+
+[ Unless they're running LILO, which can encounter problems. ]
+
+3)  If it's distribution specific, don't ask us; we won't know.  This 
+includes: "how do I do this in the GUI", "how do I un-install" (unless you 
+got it in source, or not as part of a distribution), and anything having to 
+do with RPM.
+
+[ That is true. There are many good forums for discussing Slack/RH/whatever 
+  installations. But there are also many people on this list who know/use 
+  many distributions. Feel free to ask your questions. If I feel it is not 
+  appropriate, I'll let you know off list, send you to the appropriate list. ]
+
+4)  If you don't want to run linux, don't do so.  This includes not wanting 
+to exit from X and do some command-line stuff, IMHO.
+
+[ X is a part of Linux. You aren't going to be able to run X without doing 
+  command-line stuff.And yes, this is not the appropriate forum to ask about 
+  getting rid of Linux. See comp.os.windows95.advocacy for that ;) ]
+
+5)  Be certain to include any information that you think might help people 
+to diagnose your problem.  This always includes your distribution.  More 
+information is almost always better than not enough.
+
+[ Very true. I get far too many questions asking "How do I get my XYZ to work", 
+  with no other information. If you have a question, please take the time to 
+  pose it clearly, explain the problem, and describe the situation. ]
+
+6)  Try to speak proper English.  I have noticed that those people from 
+primary US domains (.com, .edu, and .net) seem to be unable to speak proper 
+English.  Perhaps you should learn the language before you worry about 
+Linux.  I would certainly be ashamed to send out a mail with as bad English 
+as I see all the time in this digest to a friend.  Certainly, I would not 
+send such a mail out to hundreds (just how big is this list, Jon?) of 
+people whom I do not know, and have it visibly archived for all time.  But 
+people do that very same thing.  (Yes, I do realize that I have terrible 
+run-on sentences; deal.) 
+Resizing rxvt's 
+=================================================================
+
+3. Resizing rxvt's 
+From: root@solfire.ludwigsburg.netsurf.de
+
+ new subscriptions 
+  every day. ]
+
+7)  Have fun, and learn.  That's what Linux has been all about since it was 
+a few kilobytes that couldn't boot without Minix backing it up that existed 
+only in a dorm room in Helsinki, Finland occupied by an unknown student 
+named Linux Torvalids.  (I butchered all of those proper nouns, I know...)
+
+[ Indeed. Linux started out as a small project (read: learning experience), 
+  the blossomed into a quite popular/usable tool/environment. My goal is to 
+  give you (the reader) the ability to recreate that learning environment. ] 
+ 
+
+OK, end rant. 
+ 
+
+ -=- James Mastros
+
+Hi folks'n'hackers! ;-)
+
+I Have a question concerning some strange 
+behaviour of rxvt/bash:
+
+The default size of my rxvt under X 
+(using Linux) is 80x64 at a screen 
+resolution of 1280x1024.
+
+All works fine until I resize a 
+just openend rxvt-window by clicking 
+in the opper right button of rxvt.
+
+The window grows to the full size 
+of the screen and I can still enter 
+commands.
+
+But using CTRL-a or CTRL-e or 
+other line editing keys the 
+whole commandline, which I have 
+edited before becomes confuse -- 
+a lot of garbage.
+
+Can one give a hint how to prevent 
+that nasty behaviour?
+
+rxvt: version 2.19-3 
+bash: version 2.01
+
+KEEP HACKING! 
+meino
+
+[ Jon: It could be related to the fonts. Which font packages do you have? ] 
+  
+ 
+
+=================================================================
+
+4. Mounting floopies in Linux (monkey) 
+From: Duncan Mak <vulcan@asiaonline.net>
+
+hi, 
+ I install Monkey Linux on my 486 and it works really well. But I 
+have problems mounting floopies (and CD) in linux? what is the exact 
+command for mounting DOS FAT floppies? is it mount ext2 \mnt? (/mnt 
+exists, btw) of is it mount dos /mnt?
+
+Thankx,
+
+--Duncan
+
+[ Jon: The correct format is 'mount /dev/fd0 /mnt -tmsdos'. The first arg. 
+  is the floppy device (usually /dev/fd0 for drive A:, and /dev/fd1 for B:). 
+  The second arg. is the mount directory. The third argument is the filesystem 
+  type ('msdos' in this case).  Of course, you could have found this out for 
+  yourself by looking at the mount man page ('man mount'), or the Linux FAQ. ] 
+ 
+
+=================================================================
+
+5. Misc Answers 
+From: "Krzysztof G. Baranowski" <kgb@rubikon.net.pl>
+
+On Sun, 20 Jul 1997, Jon McClintock wrote:
+
+:> #Is there any way to start an xterm window as 'foo' and let 'bar' 
+:> #inherit the window with all permissions to it so that messages 
+:> #generated there are said to originate with 'bar'?
+
+For example, you want to run xterm as root, but it should look like 
+that jack is working there (after "w" or "who" or "finger"). 
+I think that is rather not possible (of course you can always hack 
+xterm sources :). 
+It is possible to run xterm with "-ut" and you won't be 
+logged to utmp. But I can always run eg. "ps -aux | grep bash/root" 
+and find out what user is running a shell. 
+ The other thing that is on my mind. What if you eg. your 
+uid=500, and you euid=0. What will be shown then ?
+
+[Jon: What's to stop you from doing it? Alas, on the machine I was going to 
+      try it on, I don't have rxvt installed. ]
+
+ps. One thing amazes me. Who is the real author of this post. 
+    He answered before the digest was released :-) 
+[ Uh, that would be me, screwing with time ] 
+============================================================================ 
+:Another linux question, 
+: 
+:Often i have a program to compile and gcc spits the dummy when it cant 
+:find a library its lookign for.
+
+Check if you have a library, it should be in one of directories 
+listed in /etc/ld.so.conf. You can also tell programs to look for 
+libraries located in any directory by: 
+LD_LIBRARY_PATH=/path/to/the/library; export LD_LIBRARY_PATH 
+You can do a lot of interesting things with libraries.
+
+================================================================= 
+:10. chmod +x  and mtools 
+:From: noname <noname@blah.com> 
+:How do i make a shell script executable? I wrote one called 
+:lsa which executes the ff command: 
+:#!/bin/sh 
+:ls -a 
+:I chmod +x 'ed it then entered lsa at the prompt and what I get is this: 
+:bash: lsa: command not found 
+:[ Jon: I can't see your problem, but why do it that way. You can do it much 
+:       easier using "alias". Do a man alias to find out more. ]
+
+Jon is right, the best way to do such kind of things is to setup an 
+alias. Sample entry in bash looks following:
+
+alias ll='ls -l' 
+alias pgrep='ps -auxw | grep $1'   /* $1 is a variable */
+
+But you can't run lsa because it's not in your PATH. 
+On Linux a local directory (a dot) is not searched 
+by default. You have to add it to your PATH or tell linux 
+that lsa is in you current directory. Type: ./lsa 
+To check the path type: echo $PATH
+
+[ Ah yes, I forgot about that. I have it set by default on all of my machines, 
+  which makes it easier. ]
+
+Kris 
+-- 
+Krzysztof G. Baranowski - The President of the Harmless Manjacs' Club 
+"Smith & Wesson - The original point and click interface..." 
+http://www.rubikon.net.pl/~celestyn/maniak/ 
+  
+  
+ 
+
+=================================================================
+
+6. Re: July 20th HSAD! 
+From: Christopher Hicks <chicks@chicks.net>
+
+On Sun, 20 Jul 1997, BJ Johnson <bjjohnson@usinternet.com> asked: 
+> 1.  I've gotten my PPP connect going fine.  Now I'm trying to setup pine 
+> to get my e-mail.  I'm using a dialup account on my ISP with dynamic IP 
+> addressing.  I configured the news-group part of it, and that works 
+> great.  I can even send mail out.  But it will not pick it up form my 
+> ISP.  My mail-check-interval is set right and I have the SMTP server set 
+> properly.  What am I forgetting?
+
+Incoming SMTP doesn't work very well with dynamic addresses.  To make it 
+work, your ISP would have to do something with dynamic DNS.  I have made 
+this work and it is ugly.  But there are workable options.
+
+You have three choices for getting your mail: POP, IMAP, and UUCP.  POP 
+makes sense if you just want to batch download your mail in a batch. 
+popclient works well.  IMAP makes sense if you want to leave the mail on 
+the ISP's server.  Pine works very nicely.  (I'm a pine fanatic.)
+
+If you want to have more than one mail box, life gets more interesting. 
+Using POP or IMAP, you'll need to have an ISP account for each mail box. 
+Now, that may be fine for some.  But I find its a headache to administer. 
+Its not that bad with IMAP, but if you've automated popclient to check for 
+mail every once in a while, then you have to keep track of usernames, mail 
+servers, and passwords for every user.  That's a pain.
+
+Which brings us to the third solution: UUCP.  This requires the 
+cooperation of some ISP out there.  (You can get UUCP service from one ISP 
+and your PPP connection from another.)  You decide on some domain name 
+(@blazyblah.somedomain.com) and all the mail for that domain gets sent to 
+your machine via uucp.  You can add and delete users on your machine 
+without worrying the ISP about it.  UUCP works fine over PPP connections 
+with dynamically assigned addresses.  And UUCP over tcp/ip is a lot easier 
+to administer than the old uucp on a raw modem was.
+
+<COMMERCIAL pardon="please"> 
+ I sell mail over UUCP service if your ISP does not. 
+</COMMERCIAL>
+
+[ Jon: But, if not setup properly, UUCP has some serious holes that can be 
+       exploited. ]
+
+</chris>
+
+"There are about four comments in all of NCSA httpd 1.3, and they mostly 
+have to do with people owing me beer or about how much some version of 
+UNIX sucks."  -- Rob McCool 
+  
+ 
+
+=================================================================
+
+7. Sorry to be lame 
+From: PlahZma Franco <plahzma@juno.com>
+
+I have been reading about Linux for a while now and decided to ask for 
+specific advice.  I have a compaq presario 425 DX4 100Mghz,  I purchased 
+a 2.1 Gig drive a while back and parted it to 2 partitions.  Due to win95 
+problems I lost some space in the process. 
+When I use DOS fdisk heres what i get: 
+Part.      status        type            volume label          MBytes 
+      system              usage 
+c: 1            A           PRI DOS 
+1801                FAT 16               54% 
+2                              EXT DOS 
+  929                                              46%
+
+Then it asks me to display logical DOS drives on part. 2: 
+DRV.     ........             MBytes          System    Usage 
+D:                                  929                FAT16   100%
+
+I want to part the d: in order to put linux on it.  But Fips says I can 
+not split extended dos partitions.  So now what?  I want about 200 megs 
+for linux.  What do I do from here?  How do I create the partition I 
+want.  BTW if you havent figured it out yet Im running win95, I boot from 
+the c: and I really want Linux.
+
+[ Jon: Try out Partition Magic. Yes, $59 does seem like a lot of money, but 
+       it works, and does its job pretty well. ]
+
+Also, I want to buy Redhat...and Im wondering if I will be able to 
+install it with my cd-rom. 
+I have two cd-roms actualy one very old and one old.  I have a 1 speed 
+BSR cd-rom , can I use this to install linux?  I also have an 8 speed.  I 
+would prefer to use this but dont think I can since it hooks up to the 
+printer port and the printer is routed to it.  I use win95 SCSI 
+controllers in order to use it, and cannot use it straight under MS-DOS 
+since it is initialized in win95.
+
+[ Your best bet is with the older CD-ROM drive. Especially if it uses an 
+  IDA/ATAPI interface. Otherwise, you probably have enough space to copy 
+  the distribution to your HD. ]
+
+Thank you everybody for helping me and Im very Sorry to sound so 
+ignorant.
+
+[ You can compensate for ignorance by taking the time to clearly state your 
+  question, and think about the problem. If we all speak clearly, we can better 
+  communicate problems and solutions. ] 
+  
+ 
+
+=================================================================
+
+8. Linux Red Hat 4.2 
+From: Michael Todd <trelane@infocom.com>
+
+I recently installed Red Hat 4.2 and with it, installed the newest version 
+of XFree86 version 3.2. I'm having problems with starting X. It acts like 
+it's going to start, then it brings up a terminal window, starts to bring 
+up control panel and just hangs there. It's almost like the mouse is locked 
+or something. I can see the mouse pointer but cannot move it. My system 
+info is as following: 
+P166 MMX, Asus VX97 motherboard, Matrox Mystique 4 MB video card, Sound 
+Blaster 16 sound card, USR 33.6 Sportster Modem (not Winmodem) set to com2 
+IRQ3 (dos), 3Com Etherlink III Network card (3C509 TPO), 32 MB RAM, 1.6 WD 
+Hard Drive, Microsoft Serial Mouse, Compaq Presario 1400 Monitor. I checked 
+all the settings I could find and couldn't find any problems. If anyone has 
+had the same problems and knows the fix, help me please. I also have 
+MetroLink X server 3.1.5 and it doesn't work either. I have deleted, 
+formatted and re-installed numerous times with the same and different 
+options. The version I have does work, I have it installed on my work 
+computer (basically same computer except Processor(P100), Video 
+Card(Diamond Stealth 3D) and monitor(IBM 15P). I even tried the Diamond 
+Stealth 3D card in my machine at home, no luck. Tried different monitor 
+settings....is there away to set my monitor for the exact specs? I picked 
+the closest and most conservative to mine, but there were no exact 
+settings. Would that cause it to lock up like that?
+
+[ My guess is that it is the video card. Check to see that the chipset is 
+  supported by the version of X you're using. www.xfree86.org should 
+  contain the most recent list, plus information for your card. 
+  I assume you're using XF86Setup to do the configuration. If so, you might 
+  want to go and edit the X configuration file, /etc/XF86Config. Do a man 
+  of XF86Config for its syntax. ]
+
+Also, question 2..after 
+my Windows 95 partition got screwed, I reinstalled Windows 95 and now LILO 
+is gone on my computer at work. How can I get it back? The Linux partitions 
+are still there. Just no way to get to them. The only bootdisk I have is 
+the installation bootdisk.
+
+[ Take your installation bootdisk and boot with it. When it asks you for boot 
+  parameters, type "mount root=/dev/hda2 ro", using your Linux partition in 
+  place of /dev/hda2. This will make it boot using your Linux partition as 
+  the root partition, from which you can simply run lilo to reinstall. ]
+
+And finally number 3. I have an earlier version 
+of slackware and XFree86 version 3.12. It came with a screensaver called 
+Rock which I really liked. Unfortunately, 3.2 doesn't include it. Does 
+anyone know where I can get it? Keep in mind, I'm not real familiar with 
+Linux and am just learning. I haven't gotten much farther than installation 
+and a little bit of configuring. I don't know how to install programs in 
+Linux or how to do upgrades or patches. I've been reading HSAD newsletters 
+as they come out. I've got a couple of decent books but the most prevalent 
+thing right now is to get X working. The other stuff will come later. I'd 
+appreciate any help anyone can give me with this. Thanks.
+
+[ Search for "xlock" on the web. The screensavers are actually bundled in one 
+  app called xlock. The mode is controlled by the '-mode' parameter. Rock 
+  may still be in there, but under a different name. man xlock for more info. ] 
+ 
+
+trelane@infocom.com 
+ 
+
+=================================================================
+
+9. HSAD - hd problems 
+From: -1
+
+Hi , first off - kepp up the good work jon , your doing a fine job =) 
+ 
+
+i'm having big troubles with a new quantum 6.4 eide hard drive 
+i have 3 main problems , which i summize
+
+ 1) I can't  seem to enable translation of my new hard drive 
+ 2) The appreance of a new phantom hard drive /hdb 
+ 3) A new occurance of different physical/logical endings on /hda
+
+my system is set up as follows
+
+pro 180 , with a AMI BIOS 1.00.04 - only got this box last november
+
+primary bus - quantum fireball eide 3.8 - master
+
+secondary bus - 1) quantum stratus eide 6.4 - master  - NEW 
+                2) cd drom - slave
+
+all the settings in the BIOS are on auto configure 
+for both drives and cd-rom , they all have the same options enabled
+
+but i have strange messages on boot , about a non existant device 
+/dev/hdb 
+( all the jumpers are set correct on all drives )
+
+Jul 22 03:29:40 iceburg kernel: hda: QUANTUM FIREBALL_TM3840A, 3681MB 
+w/76kB 
+Cache, LBA, CHS=935/128/63 
+Jul 22 03:29:40 iceburg kernel: hdb: non-IDE drive, CHS=784/255/63 
+Jul 22 03:29:40 iceburg kernel: hdb: INVALID GEOMETRY: 255 PHYSICAL 
+HEADS? 
+Jul 22 03:29:40 iceburg kernel: hdc: QUANTUM FIREBALL ST6.4A, 6149MB 
+w/81kB 
+Cach 
+Jul 22 03:29:40 iceburg kernel: hdd: FX120T, ATAPI CDROM drive
+
+my lilo is standard with no append lines or linear lines
+
+also as you can see the hda has been translated from 16 heads to 128 , 
+and 
+also with the cylinders approx 7400  to 935 ,
+
+How do i translate my  hdc ???
+
+i' ve tried the ontrack ,  boot manager 
+but it only had options to lay a ddo to a floppy OS disk 
+and i could not see any translation options either .
+
+Any suggestion on other software  ?
+
+On a side note , where excatley does the ddo live on the  mbr 
+because i have fdisked  the /hda mbr many times  and yet the translation 
+has not been aftected .
+
+and if all this was not bad enough  fdisk for /dev/hda now reports 
+ 
+
+Disk /dev/hda: 128 heads, 63 sectors, 935 cylinders 
+Units = cylinders of 8064 * 512 bytes
+
+   Device Boot   Begin    Start      End   Blocks   Id  System 
+   /dev/hda1   *        1        1      520  2096608+   6  DOS 16-bit 
+>=32M 
+   /dev/hda2          521      521      749   923328    6  DOS 16-bit 
+>=32M 
+   /dev/hda3          750      750      757    32256   82  Linux swap 
+   /dev/hda4          758      758      935   717696   83  Linux native 
+   Partition 4 has different physical/logical endings: 
+        phys=(933, 127, 63) logical=(934, 127, 63)
+
+any ideas ?
+
+i have searched the web extensively , real the lilo doc's , and the 
+large disk 
+how-to's , but yet i can find no real solution
+
+Any help would be greatly appreaciated
+
+Cr0n
+
+[ Jon: One thought might be to go into your BIOS and search for a setting 
+       which enabled "LBA" or large-block-addressing. Another thing to try 
+       is to tell LILO the exact specifications of your hard drive. Do 
+       a man on 'lilo.conf' for details on how to do this. ] 
+ 
+
+=================================================================
+
+10. Submission for HSAD  HELP!! 
+From: Andy <jaliviper@geocities.com>
+
+Hi all, 
+I need some seroius help. 
+I have Linux 1.2.13 on my 386 machine. It has a FPU and 8mb of ram with a 
+25Mb swap partition. 
+Recently I've been noticing that some of the virtual terminals have been 
+going haywire. tty3,tty4 and tty6 wont work and neither will tty12 . They 
+dont show up in /dev and every 5 minutes i get a message saying the process 
+is respawning too fast and its disabled for 5 minutes. 
+X now refuses to run as it cant find tty3 , I managed to fix that by making 
+a link to tty5 called tty3 ;-) The /etc/inittab file seems fine, i even 
+replaced it from a backup. Some changes could have been made without my 
+knowing(root is unpassworded and a lot of people use my machine) . Any ideas?
+
+[ I don't know. You might try recreating your /dev directory. ]
+
+Also can I upgrade just the kernel? If so will copying the new kernel and 
+running Lilo do it?
+
+[ No. But the files you will need to go along with the new kernel are listed 
+  in the release notes. ]
+
+Any help would be appreciated 
+Andy 
+           ========================================================== 
+                  URL: http://members.tripod.com/~technoviper 
+           You look like a million dollars.... all green and wrinkled 
+           ========================================================== 
+  
+ 
+
+=================================================================
+
+11. Re: mtools 
+From: Josh Rogers <savinien@juno.com> 
+ 
+
+10. chmod +x  and mtools 
+From: noname <noname@blah.com>
+
+<SNIP>
+
+[ Jon: Hmm. What are the mtools? ]
+
+I think they are a collection of short scripts that allow a user to use 
+_M_S-DOS commands in Linux.  mdir a:\new  That'd get some wierd response 
+in linux if it were ls a:\new  And it allows newly enlightened DOS users 
+to get around for a bit.  Hopefully, this isn't a permenant arrangement.
+
+Savinien 
+ 
+
+=================================================================
+
+12. setting up x-windows 
+From: Manny Roque <unix70@mosquito.frcc.cccoes.edu>
+
+i have currently linux red hat 4.1 and i'm pissed off at packard bell 
+for giving a hell of a pc to configure with linux. the os is installed i 
+just can't get the video to display correctly with x windows. i have a 
+cirrus chip on the motherboard :( and it does display x windows it's 
+just very fuzzy when i'm in x. i have the linux bible but i don't want 
+to spend the day reading it, does anyone have a quick fix for this? 
+and yes i do have the monitors manual with all the specs.
+
+[ Jon: Have you tried whacking the side of the monitor ;). We need to know 
+       more about your system (chipset, monitor, etc) before we can help. ]
+
+-- 
+cya on the mosquito,
+
+manny <unix70@mosquito.frcc.cccoes.edu>
+
+"watch out where the huskies go and don't you eat that yellow snow" 
+Frank Zappa 
+ 
+
+=================================================================
+
+13. Re: July 20th HSAD! 
+From: Jason William RENNIE <jrennie@hardy.ocs.mq.edu.au>
+
+Ok, so i've got the lib i want. Where do most programs expect to find 
+them ?? The main problems i've had are with compiling a picture viewer i 
+found. I found the jpeg lib it asked for, but where do i put it ?? 
+/usr/local/lib ?? /usr/lib ?? etc. I know i could put it anywhere but 
+where is the usual place ?? I assume mnost makefiles expect to find them 
+in a certian place.
+
+I hope that clarifies my query.
+
+Jason
+
+[ Jon: Usually, it is specified in the library documentation. Also, look for 
+       some kind of "make install" when compiling the library (you ARE 
+       compiling them yourself, right?) ] 
+ 
+
+=================================================================
+
+14. Minicom installation troubles 
+From: "Kurt Pfister" <kpfister@ao.net>
+
+I am running Monkey Linux on a 486 box with 32 MB ram and am trying to 
+install an ELF distribution of minicom.  The problem is that none of the 
+executables included in the program will work, the computer tells me that 
+the command is 'not found', even when I can see it in an ls.  The 
+permissions all have 'x' in the appropriate places. 
+The installation script did not work either, so I moved all of the files to 
+the appropriate directories by hand.  Any Ideas?  Thanks in advance. 
+ Kurt 
+ kpfister@ao.net
+
+[ Jon: As mentioned above, is your path set correctly? Is the minicom binary 
+       located somewhere in your path. Also, does your kernel support ELF 
+       binaries? If not, rebuild it so that it does. ] 
+ 
+
+=================================================================
+
+15. help 
+From: HeX <hex@netnet.net>
+
+I recently got red hat's linux 4.1 for intel and when I tried to install it 
+I found a problem. linux will install fine but lilo will not install onto my 
+machine. I have win95 but that can't be the problem cause the last time I 
+tried to install linux I formated my hd first and started with linux and it 
+still would not install lilo. the only thing I can think of is that I have a 
+bad install cd. red hat tech support gave me the run around, answers lilo 
+not loading, which has nothing to do with lilo not installing from the 
+install cd. I can't alter a program that doesn't exist on my computer yet. 
+and after they gave me the run around till the warrenty ran out for tech 
+support they cut me from their system. so my only chance is if someone out 
+there can help me. I'm not a linux god as a matter of fact I was just 
+learning linux but I can't get on with my study until I can actually use 
+linux and was gonna use this version to learn from. If anyone can help or 
+can confirm my theory that the install cd red hat sent me is faulty I would 
+appreciate it, thanks..
+
+[ Jon: What does lilo (not) do? Does it give an error? Does it not boot? 
+       I am very hesitant to blame RedHat. Give us some more information about 
+       your system and we may be able to help. ] 
+ 
+
+================================================================= 
+=================================================================
+
+Moderated by Jon McClintock
+
+Send submissions and subscription requests to: 
+   jammer@ecst.csuchico.edu
+
+This document, and other HSAD issues, can be retrieved at: 
+   http://www.ecst.csuchico.edu/~jammer/hsad/
+
+If you have a question about hacking, or are just looking 
+for some interesting reading, try the HSAD's sibling, the 
+Happy Hacker Digest. To subscribe, please use the menubar subscribe boxes. 
+All postings remain copyright their original authors.
