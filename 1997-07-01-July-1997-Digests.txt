@@ -1,0 +1,1299 @@
+July 1997 Digests
+================================================================= 
+     Happy System Administrator Digest: 7-2-97 
+=================================================================
+
+     This is a moderated list for the discussion of installing 
+                and maintaing a Linux system. 
+               The moderator is Jon McClintock 
+ 
+
+             Subscription requests and Submissions to : 
+                     jammer@ecst.csuchico.edu
+
+                         Back-issues at : 
+             http://www.ecst.csuchico.edu/~jammer/hsad/ 
+            H a p p y   A d m i n i s t r a t i o n ! 
+=================================================================
+
+Contents: 
+=========
+
+1. A note from the moderator 
+2. secret T/t-bit of chmod 
+3. Can't load X 
+4. Re: Happy-SAD June 29, 1997 
+5. Re: [HSAD] Removing apps from fvwm 
+6. HSAD: got one of the answers 
+7. Happy Systems Administrator Guide #2 (first released)
+
+=================================================================
+
+1. A note from the moderator 
+From: Moderator <jammer@ecst.csuchico.edu>
+
+Hello again,
+
+This is the eighth Happy System Administrator Digest. It also contains the first 
+released HSAD-Guide.
+
+The guide lists many useful applications for Linux which can get your system 
+moving. It helps to demonstrate that Linux isn't just something you boot into 
+once in awhile to do hacking. With a little patience, you can make your Linux 
+system more functional than a Win95 system.
+
+Okay, so the guide is a little short, but I think it makes up for that in 
+content.
+
+I keep getting more requests for subscriptions, so something's working right. 
+If you'd like to archive the HSAD's, or put a link to my page on yours, let 
+me know, and I'll put a link to yours off mine.
+
+Happy Administration,
+
+-Jon
+
+(Added 7/4): So, you're probably wondering why this digest is dated 7/2, 
+but you're getting it on the fourth? Well, I had it written up, and I was 
+in my mail software when *blink*, poop goes the power. And poop goes the 
+ISP. I couldn't get it out yesterday (Thursday), because I was busy flying 
+home. Oh well, keep it coming. 
+ 
+
+=================================================================
+
+2. secret T/t-bit of chmod 
+From: Meino Christian Cramer <mccramer@solfire.ludwigsburg.netsurf.de> 
+ 
+
+Hi there all!
+
+I have Linux installed and I am happy with it.
+
+But from time to time there are questions and 
+things, which I want to know, but no doc or 
+source code give me the answer.
+
+Now -- it is such a "time".
+
+I've been struggled over the "t" and "T" 
+bit of the chmod-command.
+
+The man-pages said for the t-bit 
+"save  program  text on swap device (t)"
+
+(and what's about directories???)
+
+but this isn't true.
+
+If I do a chmod 7552 I will get a "T" instead 
+of "t" -- also no answer from the man-pages.
+
+Does anybody out there know, what that`s good for? 
+ 
+
+Thanks for your help! 
+ 
+
+KEEP HACKING! 
+meino 
+  
+ 
+
+=================================================================
+
+3. Can't load X 
+From: gfm <bean@audiophile.com>
+
+The first time I started X, I got a message saying 'not enough memory 
+for 800x600'..or something to that effect. So then I went and modified 
+the XConfig file to comment out the lines referring to svga and 
+uncommented those pertaining to vga16, and did some other modifications 
+besides those, and now I'm receiving 'xinit and X server not found' etc. 
+errors. If anyone has ideas on how to solve this or can point me to a 
+site that could be of help, a reply would be greatly appreciated. 
+Thanks.
+
+-gfm
+
+[ Jon: Make sure that your X server is set correctly. Do an 'ls -l' on 
+       /usr/bin/X11/X, and see where the link points to. Make sure it points 
+       to the proper server for your video card (or the VGA/SVGA server, 
+       if your specific card isn't supported). ] 
+ 
+
+=================================================================
+
+4. Re: Happy-SAD June 29, 1997 
+From: "Krzysztof G. Baranowski" <kgb@rubikon.net.pl>
+
+On Sun, 29 Jun 1997, Jon McClintock wrote:
+
+=========================================================================== 
+#6. X-terms 
+#From: Anonymous 
+#I know that I can use alt-<function key> to move between tty's and login 
+#as different users when I am using the command line..  Is there any way 
+#to start different xterm windows and login to them as different 
+#users? 
+It's simple. Run another xterm and then  su <user>. Give a password 
+and have fun. I suppose you know how to move between windows ;-).
+
+Kris 
+=========================================================================== 
+#7. Desktop alternatives 
+#From: Astucious D Hacker <astuce@juno.com> 
+# 
+#What desktop alternatives are there beside xfree86 for slackware?  Could 
+#you say a little  bit about the alternatives as well. Thanks Astucious 
+ Slackware is one of many available distributions of Linux. 
+The others are RedHat (www.redhat.com), Debian (www.debian.org), 
+Caldera Open Linux (correct me if I am wrong). 
+ XFree86 is an X-server. The only alternative I know is 
+the commercial X-server - Metro-X, but you have to pay for it. 
+ With X-servers you can use one of many window managers 
+available. They are: fvwm, fvwm-95 (just like W'95), mwm (available 
+with Motif), Enlightemenet and so on... Check Yahoo pages.
+
+Kris 
+======================================================================== 
+  
+ 
+
+=================================================================
+
+5. Re: [HSAD] Removing apps from fvwm 
+From: Neon
+
+ hello .
+
+> Please post this anonymously. 
+I thought Linux was legal ;)
+
+> What is the best way to delete applications, and to make sure that 
+> their names are removed from the menu that shows up when I 
+> left-click on the desktop. 
+I don't know the tools you have , but  my Distribution (a german one 
+DLD 5.2 Pro) contained a nice tool named ViPer (Visual Packager) .
+
+AFAIK this works for RPM-Packages only ...
+
+Maybe you can find it .. it's pretty easy with this one . 
+ 
+
+To remove the entry's in fvwm's Menu just let it reconfigure 
+(this should check all installed packages on your system and 
+[re-]create the menu's . 
+Should be started with :  /etc/X11/fvwm95/system.fvwm95rc  )
+
+(maybe there is an Admin-tool which makes this a bit easier)
+
+Have a nice day 
+Neon
+
+[ Jon: As Joey noticed in his next posting, fvwm is configured through 
+       the file system.fvwmrc. And, as I pointed out, the Linux Gazette has 
+       lots of information on cool ways to configure fvwm. ] 
+ 
+
+=================================================================
+
+6. HSAD: got one of the answers 
+From: Joey Maier <maierj@okstate.edu>
+
+Hi.
+
+I had given you an HSAD message to post re: changing the programs listed 
+in the popup menus for fvwm.
+
+I started poking around and found out that there is a file in my X11/fvwm 
+directory that contains all the specifications for the menus, and that 
+you can easily edit with vi.  :) I think it is named system.fvwmrc [not 
+@ home right now, or I would check]
+
+I still have not found out how to change my default screensaver. :( 
+-- 
+  Joey Maier: maierj AT okstate.edu, SAM009   Geek Code: GS e+++ C+(++) L+>++
+
+[ Jon: The screen saver is a program called 'xlock'. Do a man xlock to find 
+       out more about it. Then grep system.fvwmrc for xlock, and change 
+       the appropriate line. ] 
+ 
+
+=================================================================
+
+7. Happy Systems Administrator Guide #2 (first released) 
+From: Me <jammer@ecst.csuchico.edu>
+
+Things you can do with Linux.
+
+1. Introduction 
+2. Graphics 
+3. Games! 
+4. Applications 
+ 
+
+---
+
+1. Introduction
+
+Well, now that you've spent umpteen hours installing and configuring Linux, 
+what are you going to do with it?
+
+Sure, you could do the usual thing, and probably the original reason you got 
+it, you could use it as a shell account to do all of your hacking.
+
+But come on! You're not going to waste several hundred megs of hard drive space, 
+just so you can hack, are you? You've got the full power of one of the first 
+native 32-bit Intel operating systems.
+
+There are plenty of freeware/shareware/Gnuware applications available for 
+you to play with. From 3D graphics to programming to games!
+
+So, this document will point some of these wonderful gems out to you.
+
+2. Graphics
+
+Sure, Linux has a great shell system, and is excellent for text-based 
+operations. But did you know that there are some high-end graphics packages 
+available, at little or no cost?
+
+2.1. Ray-tracers
+
+The first ones I'll talk about are what's called a Ray-tracers.
+
+POV-Ray (Persistence of Vision), is an application that takes in simple 
+descriptions of three dimensional worlds, and outputs stunning 3D images. 
+You don't even need X-windows to run it (although it helps when viewing the 
+images).
+
+The POV-Ray homepage is at "http://www.povray.org/". Here you'll see some 
+stunning examples of its output. You can download precompiled binaries (which 
+run faster), and the source.
+
+A more advanced (read: complex and difficult) ray-tracer is BMRT (Blue Moon 
+Rendering Tools), which uses Pixar's RenderMan standard to describe its scenes. 
+In addition to ray-tracing, BMRT performs Radiosity, a very cool (but 
+computationally intensive) 3d mechanism. Download binaries at: 
+  http://www.seas.gwu.edu/student/gritz/bmrt.html
+
+2.2. Modellers
+
+So, it's a little difficult to describe a 3D world using text, eh? Well, 
+several people have created modellers as front-ends to the ray-tracers. 
+To use these, you will have to have X installed.
+
+AC3D is a highly reccomended modeller that outputs in both POV-Ray and 
+RenderMan format. Check it out at: 
+  http://www.comp.lancs.ac.uk/computing/users/andy/ac3dlinux.html
+
+2.3. Image manipulation
+
+If you have an image that you want to modify, there are several utilities out 
+there that'll get you on your way.
+
+First, is an app that you may or may not know about, and it comes with most 
+distributions of X. The app I'm talking about is XV. XV is an awesome imaging 
+utility that allows you to cut, copy, crop, rotate, and otherwise manipulate 
+almost any type of image. The homepage is "http://www.trilon.com/xv/".
+
+For those command-line junkies, there's netpbm, a suite of conversion/manipu- 
+lation utilties, all command line based. 
+  ftp://ftp.crl.research.digital.com/pub/X11/contrib/utitities/ 
+        netpbm-1mar1994.p1.tar.gz
+
+If you want to view postscript files, you'll want to have Ghostscript and 
+GhostView installed. See http://www.cs.wisc.edu/~ghost/
+
+Last but not least, an image composition program, GIMP (GNU Image Manipulation 
+Program). See http://scam.xcf.berkeley.edu/~gimp/ 
+ 
+
+3. Games!
+
+Sure, you know about all the applications for Linux, but did you know there 
+are some pretty cool games for Linux?
+
+Abuse is a cool game (which I beleive has been ported to other platforms), 
+written almost entirely in LISP. ftp.crack.com should have it, but they've 
+been down lately. Search for "+linux +abuse +quake" and you should find it.
+
+Also, the same goons, who have absolutly no life, ported Quake to Linux. 
+See the Linux Quake page at http://threewave.planetquake.com/linux/
+
+There is also Linux DOOM. See the Linux DOOM FAQ at: 
+  http://jcomm.uoregon.edu/~stevev/Linux-DOOM-FAQ.html
+
+For even more Linux games, see the Linux Game Tome at 
+  http://www.cs.washington.edu/homes/tlau/linux-game.html 
+ 
+
+4. Applications
+
+So, you were wondering when I'd get down to some actuall apps, weren't you?
+
+PAPyRUS is a full-fledged word-processor for X. It looks like a Word clone, 
+but the documentation is in French. 
+  http://or.mime.univ-paris8.fr/~loscar/Papyrus/papyrus_eng.html
+
+For $220, you can get Caldera's Internet Office Suite, which includes 
+WordPerfect for Unix, an e-mail package, NExS (a spreadsheet program), and 
+Motif. 
+  http://www.caldera.com/products/
+
+You can also get Mathematica for Linux. Check for Student versions, they come 
+lots cheaper.
+
+There are tons more apps listed at the Linux Applications and Utilities Page: 
+  http://www.xnet.com/~blatura/linapps.shtml 
+  
+  
+  
+ 
+
+================================================================= 
+=================================================================
+
+Jon McClintock <jammer@ecst.csuchico.edu>
+
+================================================================= 
+     Happy System Administrator Digest: 7-20-97 
+=================================================================
+
+                          Welcome to 
+  
+                             T H E 
+                   HAPPY SYSTEM ADMINISTRATOR 
+                          D I G E S T 
+ 
+
+                               A 
+       moderated forum discussing all things legal related to: 
+              installing, configuring, and maintaining, 
+                         a Linux system. 
+  
+ 
+
+=================================================================
+
+Contents: 
+=========
+
+1. A note from the moderator 
+2. Changing default screensaver 
+3. Re: t bit of chmod 
+4. Re: HSAD: July 2, 1997 
+5. help with long linux booting 
+6. Re: X-terms and Sudo 
+7. FIPS Blues 
+8. Libraries 
+9. HSAD 
+10. chmod +x  and mtools 
+11. Linux from the CD 
+12. Winmodems and Linux NOT
+
+=================================================================
+
+1. A note from the moderator 
+From: Moderator <jammer@ecst.csuchico.edu>
+
+Hello again,
+
+Sorry I'm late on the ninth HSAD. But I had good reason. Last weekend was 
+DEFCON, and I had planned to send out one from there. But, the T1 never 
+arrived, so I couldn't connect to the internet. Then, Wednesday, I came down 
+with Sinusitis, which put me out until yesterday.
+
+Unfortunately (for you), my new toy came yesterday. The IBM PC110 is a fully 
+functional PC, that fits in a 4"x6" square. 256-color, VGA, sound-card, modem, 
+everything. So, I spent yesterday and most of today putting Linux on that.
+
+So now here I am, setting up to get you the HSAD, as promised, which I hope 
+to be a good one.
+
+Oh, and for all those who offered to write guides, I'm still waiting...
+
+Happy Administration,
+
+-Jon 
+ 
+
+=================================================================
+
+2. Changing default screensaver 
+From: phil lewis <pip@connect-wales.co.uk>
+
+> 
+> I still have not found out how to change my default screensaver. :( 
+> -- 
+>   Joey Maier: maierj AT okstate.edu, SAM009   Geek Code: GS e+++ C+(++) L+>++
+
+Hi,
+
+Don't know if this works on other distributions, but on my redhat 4.1 
+putting the line   xscreensaver -timeout 30 -cycle 10 &   in 
+/etc/X11/xinit/.xinitrc starts the screensaver after 30 mins of inactivity 
+and cycles through them all showing each one for ten mins.. 
+Do a man xscreensaver for other commands.
+
+Hope that's what you were after..
+
+Phil.. 
+pip@connect-wales.co.uk 
+  
+ 
+
+=================================================================
+
+3. Re: t bit of chmod 
+From: Christopher Hicks <chicks@chicks.net>
+
+On Fri, 4 Jul 1997, Meino Christian Cramer wrote: 
+> I've been struggled over the "t" and "T"  bit of the chmod-command. 
+> 
+> The man-pages said for the t-bit "save program text on swap device (t)" 
+> (and what's about directories???) 
+> 
+> If I do a chmod 7552 I will get a "T" instead of "t" -- also no answer 
+> from the man-pages.
+
+The t flag (a.k.a. the sticky bit) has an ancient purpose when applied to 
+files which is mainly of historical amusement on modern machines.  It also 
+has a quite practical purpose when applied to directories.
+
+First, the amusement.  Back in the days when UNIX ran on machines with 16k 
+or less of RAM (!), it was a significant performance improvement to be 
+able to keep some programs accessible more quickly.  Widely used programs 
+(such as vi) had their sticky bit set, so they'd 'stick' around.  This 
+meant that even if noone was using vi at the moment, it would at least 
+stay in swap since swap was often a faster device and there's less 
+computation to swap something in than to start it up from scratch.  With 
+modern OS's such as linux which dynamically allocate disk cache on 
+machines with up to a gigabyte of RAM, there is little value to the 
+sticky bit.  For FILES, that is.
+
+But the sticky bit is not just an anachronism.  When applied to 
+directories it causes a quite valuable behaviour.  It prevents people from 
+deleting or moving files they don't own.  You might think "but UNIX 
+handles that anyway".  Well, sort of.  Deleting and renaming are dependant 
+on the permissions of the DIRECTORY.  Since everyone has their own home 
+directory and has their own files in it, why would anyone care?  Because 
+of tmp directories.  Tmp directories are world writable.  This would 
+normally allow anyone to delete or rename files in them -- whether they 
+owned the file or not.  But that would make temporary directories 
+significantly less useful.  So it was decided that the sticky bit would be 
+'overloaded' with a special behaviour when it was set on directories.
+
+If you're interested in seeing all the sticky files and directories on 
+your system, try 
+ find / -perm -1000 -ls 
+(This may not work on some commercial systems that use non-gnu versions 
+of find.)
+
+</chris>
+
+      Free software isn't free, but expensive software is expensive 
+~*-,._.,-*~'`^`'~*-,._.,-*~'`^`'~*-,._.,-*~'`^`'~*-,._.,-*~'`^`'~*-,._.,-*~ 
+            "Unix is hacker crack."  -- Unix-Haters Handbook 
+  
+ 
+
+=================================================================
+
+4. Re: HSAD: July 2, 1997 
+From: "Krzysztof G. Baranowski" <kgb@rubikon.net.pl>
+
+#================================================================= 
+#> What is the best way to delete applications, and to make sure that 
+#> their names are removed from the menu that shows up when I 
+#> left-click on the desktop. 
+It depends what do you mean. Deleting and apllication from HDD or 
+from pop-up menu in your window manager. I hope you know how to 
+delete files from HDD. If you want delete sth' from menu you 
+must edit your window managers' config file.
+
+Kris 
+ps. Watch out, because RedHat uses common configuration files for 
+    fvwm and fvwm-95. It's called TheNextLevel. The hidden files 
+    are located in /etc/X11/TheNextLevel. If you have IQ >= 95 
+    you can safe edit them ;-) Don't forget to make backup copy. 
+#================================================================= 
+#For $220, you can get Caldera's Internet Office Suite, which includes 
+#WordPerfect for Unix, an e-mail package, NExS (a spreadsheet program), and 
+#Motif. 
+#  http://www.caldera.com/products/ 
+There is also: 
+- commercial Office Suite - "Applixware" from RedHat 
+- StarOffice 3.1 - it's free only for non-commercial use 
+  (just like PGP). It's mirrored all over the world. 
+  But it requires lot of memory and fast hard disk. 
+  Motif is also recommended, but there are statically 
+  linked binaries.
+
+Kris 
+-- 
+Krzysztof G. Baranowski - Prezes Klubu Nieszkodliwych Manjakow 
+"Smith & Wesson - The original point and click interface..." 
+http://www.rubikon.net.pl/~celestyn/maniak/ 
+  
+ 
+
+=================================================================
+
+5. help with long linux booting 
+From: OracLe <aren@mnl.v-link.net>
+
+Hi!
+
+i succesfuly managed to install my linux in my hard disk(clap and 
+appluase~!!) anyway, when i boot using the bootdisk i created after 
+the instalation, i still have to go through the process of my bootdisk 
+scanning the system which takes pretty long... 
+i.e.:
+
+   scanning 183 299  creative 
+   scanning 190 204  artec 
+   scanning  ....etc etc.
+
+this goes up to 20 to 30 minutes.
+
+can i boot without this agonizing experience?
+
+thanks.
+
+OracLe
+
+[ Jon: Make a new boot disk with a different kernel image. See the Bootdisk 
+       HOWTO ] 
+ 
+
+=================================================================
+
+6. Re: X-terms and Sudo 
+From: Someone 
+ 
+
+> #6. X-terms 
+> #From: Anonymous 
+> #I know that I can use alt-<function key> to move between tty's and login 
+> #as different users when I am using the command line..  Is there any way 
+> #to start different xterm windows and login to them as different 
+> #users? 
+> 
+> It's simple. Run another xterm and then  su <user>. Give a password 
+> and have fun. I suppose you know how to move between windows ;-). 
+> 
+> Kris
+
+Admittedly, *THAT* is simple, but that's not exactly what I wanted to 
+know.  If you recall, I went on to ask another more important question.
+
+['> #' added beacause it's part of my original message, even though Kris 
+ did not actually quote it.]
+
+> #Is there any way to start an xterm window as 'foo' and let 'bar' 
+> #inherit the window with all permissions to it so that messages 
+> #generated there are said to originate with 'bar'?
+
+WHAT I WANT TO KNOW IS IF 'su' OR 'login' TRUELY MASK YOUR IDENTITY; 
+i.e., IS THERE SOME WAY TO TO MASK YOUR ID  WITH SIMPLE COMMANDS 
+INSTEAD OF USING SOME SCRIPT OUT OF PHRACK [sorry to shout.  I wanted 
+that to stand out from the rest of the message.]  The correct answer 
+might vary depending on how tight the security on your installation 
+is, but on my little testbed [a 386 with the 1.1.61 kernel] neither 'su' 
+nor 'login' is capable of masking your identity from other users on the 
+system.  This was true of my box for both X an command line.
+
+I have printed up a couple scripts I made that show this happening and 
+sent them to the "Happy Hacker" digest, since that seems like a more 
+appropriate place to discuss such things.
+
+Kris (or anybody else), I'd really like to continue this thread in 
+that list....I'm hoping that you can tell me of a good way to mask my identity. 
+  
+  
+ 
+
+=================================================================
+
+7. FIPS Blues 
+From: Tuan Pham <fifo@concentric.net>
+
+To Jon and HSAD subscribers :(.  I want to take linux off my partiton and get my hd space back.  I 
+ used FIPS to resized it the last time.  But after reading the FAQ on fips, it said that I needed 
+a boot and root image of my original hd.  How can I resize it, if I don't have it?  Also would usi 
+ng a disk editor mean fdisk?  It said that if I don't have the boot and root image of my original 
+hd then I would have to study the (my) hard drive sector and recalculate things.  By the way, earl 
+ier I thought if I went to fdisk and select 3 to delete partitions it would del non-dos partiton 2 
+ and 3 for me..but I guess it only took it off the list.  Could anyone help?
+
+[Jon: What you can do now is add another DOS partition, in the space of the 
+      two Linux partitions. This is better anyways, becuase it saves you disk 
+      space (read up on cluster size and wasted space). 
+      If you want to get back to your original setup, with one big partition, 
+      you're going to want to get PartitionMagic, for $59. It will allow you 
+      to delete the two Linux partitions, and then resize the DOS parition to 
+      take up the whole hard drive. ] 
+ 
+
+=================================================================
+
+8. Libraries 
+From: Jason William RENNIE <jrennie@hardy.ocs.mq.edu.au>
+
+Another linux question,
+
+Often i have a program to compile and gcc spits the dummy when it cant 
+find a library its lookign for. So how do i get addational lib's and how 
+do i install them in slackware 3.1 ?? Can anybody point me in the right 
+direction ??
+
+Jason
+
+[ Jon: Any particular library in particular. Just search for the library's 
+       name, you're bound to find it. Some libraries are proprietary though, 
+       and you will have to may for them. ] 
+ 
+
+=================================================================
+
+9. HSAD 
+From: BJ Johnson <bjjohnson@usinternet.com>
+
+1.   I've gotten my PPP connect going fine.  Now I'm trying to setup 
+pine to get my e-mail.  I'm using a dialup account on my ISP with 
+dynamic IP addressing.  I configured the news-group part of it, and that 
+works great.  I can even send mail out.  But it will not pick it up form 
+my ISP.  My mail-check-interval is set right and I have the SMTP server 
+set properly.  What am I forgetting?
+
+2.    How do I see how much room I have left on my hard-drive without 
+X?  (RH 4.1 if it matters.)
+
+[ Jon: Simple, use 'df'. It'll give you a usage summary for all mounted 
+       partitions. ]
+
+Thanks!! 
+------------ 
+BJ Johnson 
+bjjohnson@usinternet.com 
+  
+  
+ 
+
+=================================================================
+
+10. chmod +x  and mtools 
+From: noname <noname@blah.com>
+
+How do i make a shell script executable? I wrote one called 
+lsa which executes the ff command:
+
+#!/bin/sh 
+ls -a
+
+I chmod +x 'ed it then entered lsa at the prompt and what I get is this:
+
+bash: lsa: command not found
+
+[ Jon: I can't see your problem, but why do it that way. You can do it much 
+       easier using "alias". Do a man alias to find out more. ]
+
+And regarding mtools.. I was playing around with it yesterday and I'm 
+not so sure what I did but now whenever I type mdir, it says 
+"Path component "NEW"is not a directory. File "a" not found. 
+I remember creating the "New" directory, then mcd-ing to it, then 
+mcd-ing back to the parent (mcd ..), typing mdir a:\new, mrd, mcd and a 
+slew of other commands but none of them work. I keep receiving the same 
+output even after sliding in another floppy in the drive. Can someone 
+help pls? Thanks.
+
+[ Jon: Hmm. What are the mtools? ] 
+ 
+
+=================================================================
+
+11. Linux from the CD 
+From: Alan D M <alandm@HotStar.net>
+
+Hold the flames for a minute or two: I have Red Hat Linux 3.0.3 on a two 
+CDRom set and I'm experiencing a mild delay getting a second hard drive to 
+put it on. In the meantime, however, I'd like to run the Linux, hack around 
+on it, just using the CD roms. I believe that's possible: there's a 
+fleeting reference to this oddball way of using Linux in the O'Reilly book 
+I have, but there's little in the way of direction as to how to go about 
+it. 
+Obviously, I don't want to use this method for long -- but until I get my 
+second hard drive I don't want to be staring at the two CD Roms just 
+wishing I could install them. 
+Any help out there?
+
+[ Jon: Hmm. I think you can do it. If you have an IDE (ATAPI) CD-ROM drive. 
+       One of the CD's may have a "live" filesystem on it. If so, you may be 
+       in luck. Try making a bootdisk, and rdev it so that it points to the 
+       live cd. You're not going to be able to do much, and it'll be as slow 
+       as hell. ] 
+  
+ 
+
+=================================================================
+
+12.. Winmodems and Linux NOT 
+From: Bill Eldridge <bill@rfa.org> 
+ 
+
+If the modem in question was a Winmodem, 
+the US Robotics manual says they won't work 
+with DOS or anything else, which seems sadly 
+true.  From Hyperterminal, you can do AT 
+commands that seem to show the modem alive 
+and functioning, but you simply don't seem 
+to be able to get ATDTxxxxxxx to work. 
+Efforts to use this with Linux seem even 
+more doomed.  I don't think it's a PnP 
+issue, though I could be wrong.  Anyway, 
+wasted a few hours trying to get a DOS 
+dial-up program to work with them, and 
+finally just threw my old Sportser 14.4k 
+in instead.
+
+Bill
+
+[ Jon: You're right. Winmodems suck becuase they aren't real modems. They 
+       rely on software to do most of the modeming. That's why they aren't 
+       supported/liked in Linux. Check out US Robotics' homepage for more 
+       information. ] 
+ 
+
+================================================================= 
+=================================================================
+
+Moderated by Jon McClintock
+
+Send submissions and subscription requests to: 
+   jammer@ecst.csuchico.edu
+
+This document, and other HSAD issues, can be retrieved at: 
+   http://www.ecst.csuchico.edu/~jammer/hsad/
+
+All postings remain copyright their original authors. 
+================================================================= 
+  
+ 
+
+ __ __                      __ __         __ 
+              / // /__ ____  ___  __ __  / // /__ _____/ /_____ ____ 
+             / _  / _ `/ _ \/ _ \/ // / / _  / _ `/ __/  '_/ -_) __/ 
+            /_//_/\_,_/ .__/ .__/\_, / /_//_/\_,_/\__/_/\_\\__/_/ 
+                     /_/  /_/   /___/ 
+                              ___  _              __ 
+                             / _ \(_)__ ____ ___ / /_ 
+                            / // / / _ `/ -_|_-</ __/ 
+                           /____/_/\_, /\__/___/\__/ 
+                                  /___/ 
+July 28, 1997 
+  
+This is a moderated list for discussions of *legal* hacking. 
+      You can find subscription and other info 
+           near the end of this message.
+
+Contents: 
+ Search for New Moderator(s) 
+ Mac Hacking 
+ New Netscape Java Security Hole 
+ The Week the Internet Almost Died 
+ Looking for Women Hackers
+
+============================================================ 
+ *** Search for New Moderators 
+============================================================
+
+Happy Hacker folks, this is your Fearless Founder, Carolyn Meinel, back 
+editing this Digest. Matt Hinze, who for some four months has brought his 
+tact, wit and knowledge to the Digest, has asked that someone new take a 
+turn running it.  We're sorry to see him go, but that's life:(
+
+Here is what Matt has to say about the end of his stellar tenure as editor:
+
+"It's time for me to step down as the moderator of the happy Hacker Digest. 
+I want to make it clear that this is not motivated by negative 
+comments/coercions of any sort, but rather the time-management situation I 
+find myself in now. I'm too busy to moderate the Digest - and there are 
+other things (my career, my school work, etc) that take up a lot of my time. 
+It seems that while the quality of the digest has skyrocketed since I've 
+taken over, the frequency has diminished. For the digest to be successful, 
+it needs to be distributed in a timely fashion AND be technically accurate.
+
+"If you think you want to try your hand at moderating the digest, I say go 
+for it. It's not easy, but it is fun, and if you do it right, it can bring 
+you a lot of positive experiences. Carolyn Meinel can be an invaluable 
+resource. And I assure you, I was not doing her dirty work at any time, nor 
+did she try to censor the digest or anything like that.
+
+"I did have a blast working with the digest - it's just time for me to move 
+on. While I won't be answering all of my mail, send me your questions or 
+comments at matt@cs.utexas.edu.
+
+"This has all been wonderful, but now I'm on my way." 
+    - Phish
+
+Matt
+
+So, who wants to fill Matt's shoes? Temporary guest editors are welcome, but 
+another person who can handle the entire job would be really welcome. This 
+can be an exciting job. True, it pays nothing, but there is the prestige of 
+running a hacker ezine that after being in existence less than a year, now 
+has almost 5,000 subscribers.  Also, there are many fringe benefits:
+
+Top ten reasons to become Happy Hacker Digest editor:
+
+10. You will rake in tons of money selling hacker secrets to guys in trench 
+coats.
+
+9. Supermodels will beg you for dates. Women hackers: visualize Fabio!!!!
+
+8. Hackers everywhere will revere you for your wit and wisdom and phear your 
+haxor sk1llz. You will never be flamed again.
+
+7. Celebrities will take you out to expensive restaurants and insist that 
+you eat raw fish.
+
+6. On IRC no one will dare flood or ICMPing you.
+
+5. The Mafia will give you a Cray just like they did for that dude in the 
+movie Sneakers.
+
+4. Carolyn will teach you how to move communications satellites around and 
+launch nuclear missiles.
+
+3. You will also learn how to blow up people's TV sets over the Internet.
+
+2. Carolyn will shower you with expensive gifts.
+
+And, the number one reason to become Happy Hacker Digest editor:
+
+1. Do you have any idea how much the FBI pays people to become narcs?
+
+Honest, I swear on my honor as a hacker that all these things are true! Us 
+hackers never, ever ever lie!
+
+So if you're tempted to try out for running the Digest, please email me. 
+Fame and fortune await you!!!!
+
+============================================================ 
+ *** Mac Hacking 
+============================================================
+
+ by aMbRoSe <ambrose@ConnActivity.ConnActivity.com>
+
+ I have been hacking for a number of years now, and I must say that although 
+I love my Mac, it's probably the most vulnerable computer around. Macs are 
+easy to hack, mainly because the simple security programs that are available 
+just don't do their job well enough, and with the large vulnerability of the 
+operating system, I have never seen a Mac that I couldn't get root access to 
+within fifteen minutes. I have even been caught hacking Macs... so I am 
+really r33t now ;)
+
+Mac Hacking - Step By Step
+
+1. Determine your target
+
+ The first step to hacking a Mac is picking a Mac. You should probably pick 
+one that is out of the way, because you will be doing some disk 
+swapping/other stuff that may alert a passing administrator.
+
+2. Determine the target's security/protection
+
+ This step is easy. You should first note the model number and the version 
+of system software that it is running. This will be very important later. 
+Then try to get some time on the computer. Try different things, and look 
+for a security program. Common ones are Foolproof and AtEase. Foolproof will 
+show you it's logo every time you try to do something that your not supposed 
+to and AtEase is characterized by it's drool-proof replacement for the 
+finder. The method that you will use to break in will get past _any_ 
+security, but if you want to remove the security for good then you will have 
+to know what to look for.
+
+3. Build a system disk
+
+ Remember that model number? Well now it's time to pull it out. You also 
+should have noted what version of the system software was on that computer. 
+Lets say that you want to hack a PowerMac 7200 that's running system 7.5.3. 
+Now go on Altavista or Apple's site or (gasp) AOL (puke) and do a search for 
+'System 7.5.3' or something like that. Look through the results until you 
+find the installer or the disk images. Download the disk image called 'Disk 
+Tools'. The Disk Tools disk has a minimal set of software that will allow 
+you to boot the target off the disk drive. Once you have download the 'Disk 
+Tools' image, use a good disk image tool like ImageMaster or DiskCopy and 
+make a disk from the image.
+
+4. Break in
+
+ Get to the target. Pop your disk in the drive and hold down 
+Command-Control-Power (power is the little key with the sideways triangle up 
+at the top of the keyboard). The computer should restart, and then the disk 
+drive will spin up. If all goes well, you should start up without the 
+security program, running entirely off the Disk Tools disk. Now that you are 
+started up, you can do anything, including...
+
+5. Remove the security!
+
+ Note: Don't do this if you don't want people to know that the computer was 
+hacked! To remove the security program, open up the system folder (usually 
+named 'System' or 'System Folder' in the root directory) and look for a file 
+with the name of the security program in the 'Extensions', 'Control Panels' 
+and 'Startup Items' folders. When you find a file that looks like part of 
+the security program (and there may be more than one file), delete it. 
+What's this? It says that it can't be deleted because the file is locked? 
+Well, just select the file's icon and hit Command-I. This will bring up the 
+File Info window. There will be a little check-box at the bottom labeled 
+'Locked' with an 'X' in it. Uncheck it and close the window. Voila! You may 
+now empty the trash, eject your disk and restart.
+
+       - Ambrose
+
+[Moderator's note: Please don't use this to get in trouble at your school or 
+library. However, if you want to win points, you could show a teacher or 
+librarian how easy it is to circumvent Mac security.]
+
+============================================================ 
+ *** New Netscape Java Security Hole 
+============================================================
+
+(This news item came from 
+http://www.news.com/News/Item/0.4.12840,00.html?latest)
+
+                Another hole poked in 
+                Communicator 
+                By Alex Lash 
+                July 25, 1997, 7:10 p.m. PT 
+Netscape Communications (NSCP) today confirmed that another hole has been 
+punched in its Communicator browser, the fourth one since the product 
+shipped in June.
+
+Discovered by Kuo Chiang of the Singapore's Information Technology 
+Institute, the security flaw affects both Macintosh and Windows versions of 
+Communicator. It produces 
+identical results to two previous flaws related to JavaScript, a scripting 
+language Netscape invented and uses in its browsers. It allows a Web site 
+administrator to place a nearly-invisible applet on a user's hard drive then 
+track the user's progress across the Web, including any data the surfer 
+types into the browser such as credit card numbers.
+
+The company knew about the bug yesterday and has already fixed it, according 
+to senior security product manager David Andrews. A new version of 
+Communicator will be available in two weeks to coincide with a scheduled 
+software upgrade. Users will have to download the entire suite to patch the 
+security flaw.
+
+Despite having identical results to two previous JavaScript holes, the 
+latest bug is due to the company's use of LiveConnect, a separate language 
+used to connect Java and 
+JavaScript, Andrews said.
+
+"LiveConnect is the way Java and JavaScript communicate with each other. 
+It's exposing information that it shouldn't be."
+
+Not nearly as scrutinized as Java and ActiveX, JavaScript and other 
+scripting languages are nonetheless used extensively to deliver information 
+to browsers. Andrews insisted that the architecture of JavaScript and 
+LiveConnect are not problematic, but their implementation in the browser 
+software has created security breaches.
+
+Microsoft's browsers were also affected by the previous JavaScript bugs. The 
+company released a patch for Internet Explorer 3.0 earlier this week. It is 
+unclear if the latest bug affects Explorer as well. 
+  
+============================================================ 
+ *** The Week the Internet almost Died 
+============================================================ 
+by Carolyn Meinel
+
+The week of July 13 may have been the worst week for the Internet since the 
+Morris Worm of 1988.
+
+· A huge upswing in Denial of Service (DOS) attacks 
+· Apparent sabotage of the DNS system made .com and .net sites inaccessible 
+· Damage that took out of service 70 GB/sec of the US portions of the 
+Internet backbone. 
+ *** A huge upswing in Denial of Service (DOS) attacks:
+
+There appears to be a concerted campaign against Mac Web servers. Reports 
+picked up from Tasty Bits from the Technology Front are at: 
+http://www.internetnews.com:80/isp-news/1997/07/1702-syn.html 
+http://www.tbtf.com/archive/09-23-96.html 
+http://hacke.infinit.se/
+
+Also, the ISP owned by the Institute for Global Communications, which hosts 
+many political organizations of what they describe as a "progressive" bent 
+recently underwent severe DOS attacks including mail bombing in retaliation 
+for their hosting of a web site for Basque rebels.
+
+ *** Apparent sabotage of the DNS system made .com and .net sites inaccessible
+
+Then there was the corruption of the DNS (Domain Name Server) system that 
+misrouted a large amount of Internet traffic. Internic, which manages 
+registration of domain names and their propagation across the routers of the 
+Internet, has accused Alternic of maliciously rerouting the system. The .com 
+and .net domains were affected.
+
+ *** Damage that took out of service 70 GB/sec of the US portions of the 
+Internet backbone
+
+But what was perhaps the greatest stress on the Internet in years came from 
+a series of accidents that disabled a large portion of the US Internet 
+backbone. Following are some excepts from technical news provided by Dale 
+Amon, technical director and cofounder of The Genesis Access project, the 
+oldest ISP in Northern Ireland.
+
+From: Dale Amon as Operator <root@starbase1>
+
+>Okay, here's a dump of less than a week's problem reports. ...quite an 
+impressive week...
+
+>Date: Tue, 15 Jul 1997 17:04:00 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>* there have been intermittent interruptions in service at 
+> MAE West, the longest late last week lasting several hours. 
+> 
+>* overload on a BBNPlanet circuit into PAIX is causing 
+> intermittent problems reaching www.apple.com
+
+>Date: Tue, 15 Jul 1997 17:54:44 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>We are having problems in New York right now.  The exact nature of 
+>the trouble has not yet been determined.  We have no time to fix 
+>yet, and are running on our California backup circuit. 
+> 
+>Date: Tue, 15 Jul 1997 19:01:00 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>Service has been restored in New York.  The fault appears to have 
+>due to an engineer mistakenly disconnecting one of our circuits.
+
+>Date: Wed, 16 Jul 1997 15:14:52 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>1 There is a major failure at Teleglobe's switch in New York. 
+> This has taken down our London - New York line.  No definite 
+> time to fix yet, but from prior experience we expect the line 
+> to be back up by 17:00 BST. 
+> 
+>2 Evidently there has also been a major failure at MAE West; 
+> a rectifier has failed in one of the battery rooms.  This 
+> has disrupted traffic across the MAE.  A large part of our 
+> California traffic goes via MAE West.  There is no definite 
+> to for a fix on this either; we would expect service to be 
+> fully restored within two hours, though. 
+> 
+> 
+>LINX traffic is at this time normal.  US traffic is all going via 
+>California, so that circuit is congested.
+
+>Date: Wed, 16 Jul 1997 15:48:09 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>Teleglobe has isolated the fault in this line to a cable cut in 
+>Vermont or in Canada near the US / Vermont border.  The cable has 
+>to be dug up and spliced
+
+>Date: Wed, 16 Jul 1997 19:12:12 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>Worldcom (= MFS = UUnet = Pipex) lost six major ATM trunks from 
+>St Louis Missouri to Los Angeles a short while ago.  This has 
+>disrupted traffic over much of the Internet. 
+> 
+>Our New York circuit has been repaired but so far we are seeing 
+>very little traffic flow across it, presumably because of the 
+>Worldcom failure.
+
+>Date: Wed, 16 Jul 1997 20:01:41 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>We are still seeing reports of major outages in the United States. 
+> 
+>Worldcom/MFS/UUnet/Pipex apparently had or has 496 DS3 (45 Mbps) 
+>circuits down.  A very large number of ISPs are affected.  Netrail, 
+>for example, has three different circuits over different fibre 
+>paths into its PAIX (Palo Alto, California) PoP; all of them are 
+>down.   Today we also had the second power failure this week at MAE 
+>West, the second largest peering point in the world, also operated by 
+>Worldcom / MFS.
+
+>Date: Thu, 17 Jul 1997 11:40:28 +0100 (BST) 
+>From: Gordon Henderson <gordon@vbc.net>
+
+>You may be experiencing problems accessing various sites through the world 
+>this morning. At present, it looks like there is a problem with most of 
+>the root nameservers. Best information I've seen so far is that they have 
+>been compromised to not respond, or respond with the wrong information, 
+>most likely through some sort of malicious actions. 
+> 
+>The effect of this is that you probably may not be able to access .com or 
+>.net sites unless this problem is resolved.
+
+>Date: Thu, 17 Jul 1997 13:21:43 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>As reported this morning, the root name servers that are at the 
+>heart of the Internet's domain name system have been sabotaged 
+>and have been supplying incorrect information or no information 
+>at all on .com and .net domain names. 
+> 
+>The effect of this is to make a large part of the Internet 
+>unreachable.
+
+>Date: Thu, 17 Jul 1997 21:12:31 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>We have just gotten reports of fibre cuts in Washington DC ... 
+>Sprint has lost 250 DS3s (45 Mbps) circuits. 
+> 
+>By my count we have seen 950 DS3s so far out this week, 500 in 
+>the West, 100 in New York, and now 250 in DC.  And it's only 
+>Thursday.
+
+>Date: Fri, 18 Jul 1997 01:09:21 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>Fibre cuts reported so far this week: 
+> 
+> WorldCom     496 DS3s    southwestern USA 
+> WorldCom     250 DS3s    New York area 
+>        Sprint       100 DS3s    DC area 
+> WorldCom     533 DS3s    Baltimore / DC area 
+>             ---- 
+> total       1379 DS3s 
+> 
+>Each DS3 is 45 Mbps, so we are talking about a staggering loss of 
+>bandwidth -- over 62 Gbps of Internet bandwidth in all.
+
+>Date: Thu, 17 Jul 1997 15:40:22 -0400 
+>From: Mark E Larson <markl@rust.net>
+
+>WorldCom has experienced a fiber cut between Washington, D.C. and Baltimore, 
+>MD which is causing outages across multiple U.S. Backbones, in the Northeast 
+>United States.  The fiber cut effected approx 533 DS-3's.
+
+>Date: Fri, 18 Jul 1997 01:23:34 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>On Fri, 18 Jul 1997, Jim Dixon wrote: 
+> 
+>> Fibre cuts reported so far this week: 
+>> 
+>>  WorldCom     496 DS3s    southwestern USA 
+>>  WorldCom     250 DS3s    New York area 
+>>       Sprint       100 DS3s    DC area 
+> 
+>correction:          280 DS3s    DC 
+> 
+>>  WorldCom     533 DS3s    Baltimore / DC area 
+>>              ---- 
+>>  total       1379 DS3s 
+> 
+>so this becomes     1559 DS3s 
+> 
+>> 
+>> Each DS3 is 45 Mbps, so we are talking about a staggering loss of 
+>> bandwidth -- over 62 Gbps of Internet bandwidth in all. 
+> 
+>and this becomes 70 Gbps of bandwidth in all. 
+> 
+>My apologies to those who are not interested, but this week from 
+>Monday has seen a remarkable number of outages in the United States; 
+>this must be a record.  And we saw the root name servers compromised. 
+>And there are still three more days left in the week ...
+
+>Date: Thu, 17 Jul 1997 14:35:41 -0500 (CDT) 
+>From: Joe Shaw <jshaw@insync.net>
+
+>UUNet is having the same problems between DC and Balitmore, MD. 
+> 
+>Joe Shaw - jshaw@insync.net 
+>NetAdmin - Insync Internet Services 
+>"Learn more, and you will never starve." - Paraphrase of Lee 
+> 
+>On Thu, 17 Jul 1997, Eric Wieling wrote: 
+> 
+>> Just got this from Sprint. 
+>> 
+>> > Date: Thu, 17 Jul 1997 08:56:40 -0400 (EDT) 
+>> > From: Outage Poster <postout@sprint.net> 
+>> > Subject: Washington DC outage 
+>> > 
+>> > 7/17/97  09:10 EDT 
+>> > 
+>> > We currently have 280 DS-3's down in our Washington DC relay site due to 
+>> > a fiber cut.  Customers connect to our DC routers will experience routing 
+>> > instabilities and delays.  We are working to resolve this problem...no ETR 
+>> > is available at this time.  We will send a follow-up message to update 
+>> > this problem. We apologize for any inconvenience that this may have 
+>> > caused.  Thank you for your patience.
+
+>Date: Fri, 18 Jul 1997 23:06:24 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net> 
+>Reports are just coming in of a major fibre cut in Illinois, 
+>continuing what must be the most disaster-ridden week ever in 
+>the history of the Internet.
+
+>Date: Sun, 20 Jul 1997 17:37:25 +0100 (BST) 
+>From: Jim Dixon <jdd@vbc.net>
+
+>On Sat, 19 Jul 1997, Dale Amon as Operator wrote: 
+> 
+>> Jim - this begins to strain credibility. Have we got a bunch of 
+>> pro-CDA fanatics getting revenge on the net? That might be 
+>> extreme, but still, this is just a bit too much to take on 
+>> board a pure chance. I don't think there have been this many 
+>> circuits down total over the last 12 months... 
+> 
+>Yes -- and there were reports of two more major cuts that I 
+>couldn't bring myself to say anything about.  I don't know what 
+>is going on at this point.
+
+============================================================ 
+ *** Looking for Women Hackers 
+============================================================
+
+Are you a woman hacker? Want to get famous and go on dates with Fabio? Would 
+you like to go to fancy restaurants with movie producers who will insist 
+that you eat raw fish? Want to be in a book? Please email Carolyn Meinel 
+<> and let's start talking. I'm serious. Honest!
+
+============================================================ 
+and include a 'HH' in the subject 
+header somewhere. Your posts are the lifeblood of the Digest; keep 'em 
+coming! But, please don't send us anything you wouldn't email to your 
+friendly neighborhood 
+narc, OK?
+
+To subscribe or unsubscribe, 
+please use the subscription boxes on the menubar.
+
+The Official Happy Hacker Digest Webpage is maintained by Adam Christopher 
+and can be found at http://goodweb.scol.net/hacker/index.html
+
+Check out our World Wide Web discussion forum at http://www.infowar.com.
+
+The HappySAD, our sister digest, moderated by Jon McClintock, deals with the 
+setup and administration of Linux. To subscribe to the HappySAD send a message 
+to: jammer@ecst.csuchico.edu The back issues of the HappySAD can be found at: 
+http://www.ecst.csuchico.edu/~jammer/hsad/
+
+============================================================ 
+Material discussed in this digest is controversial. Those who produce, 
+distribute, or contribute to the Happy Hacker Digest will not be held 
+responsible for anything you choose to do with the information contained in 
+this, or any other, Happy Hacker Digest. Parental discretion advised.
+
+Posts submitted to this Digest, along with material collected from various 
+electronic sources, remains the copyright of the original author. And unless 
+otherwise noted, complete issues or portions of any issue of the Happy 
+Hacker Digest may not be republished in any for-profit medium without the 
+consent of the copyright holder and the moderator.
+
+               H a p p y   H a c k i n g !
