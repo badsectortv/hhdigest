@@ -1,0 +1,493 @@
+July 2, 1999 
+_______________________________________________________________________
+
+Visit the Happy Hacker site at http://www.happyhacker.org 
+URL of the day: http://www.cit.ac.nz/smac/cprogram/  Online tutorials on=20 
+how to program in C!
+
+Table of Contents
+
+* Def Con adventure 
+* Another hacker mentor mail list 
+* Computer hardware mail list 
+* Flame war on Packetstorm!
+
+_______________________________________________________________________
+
+ *** Def Con Adventure 
+_______________________________________________________________________
+
+Are you going to the Def Con hackers' convention July 9-11?  Want to meet me 
+(Happy Hacker Clown Princess Carolyn Meinel) there?  I plan to enter a Linux 
+box in the Bastard Operator from Hell competition.  So, am I totally lame? = 
+ Or 
+will I surprise a few people by winning?  Oh, yes, how come you never see= 
+ any 
+mirrors of hacks of the Happy Hacker website?  Maybe we know something about 
+being secure?
+
+I will be staying in the Hard Rock hotel across the street from Def Con.  I 
+will be meeting people at my hotel room there Saturday between 6PM and 8PM.= 
+=20 
+Or, look for me at the wargame.  To make you happy, my entry will have a= 
+ guest 
+account with a silly password.  Honest, it will be really silly:):)
+
+Happy hacking!  Def Con info is at http://defcon.org. 
+_______________________________________________________________________
+
+ *** Hacker Mentor mail list 
+_______________________________________________________________________
+
+From: R a v e N <barakirs@netvision.net.il>
+
+I saw the posting about FooMentor, the new newbies mailing list. I have 
+a similar list myself, and I was wondering if you could tell people 
+about it in the next "Inside Happy Hacker" mailing list. It's good for 
+both newbies and gurus, since we discuss both Windows hacking and Unix 
+hacking (from how to install different distros of Unix to rewriting the 
+Kernel ;)... ).
+
+ Regards, 
+   R a v e N
+
+_______________________________________________________________________
+
+ *** Computer Hardware Mail List 
+_______________________________________________________________________
+
+Sender: "Tony Cheetham" <tony@zen.co.uk>
+
+Dear newbies/adepts alike, I am starting up a mailing list for hardware 
+problems, now I know what your thinking, "OMyGod not another one", but this= 
+ one 
+is different.  I have enlisted the help of a group of people whom I consider= 
+ to 
+be hardware experts who all have there all little niches, and hopefully= 
+ should 
+be able to answer any problem with installation, configuration and drivers. = 
+ So 
+far on the list we have 2 programmers who design drivers for a well known= 
+ 3Dfx 
+card supplier, but are known to me for there ability to write drivers for 
+obscure hardware.  4 web technicians from ZEN internet (the company I work= 
+ for) 
+who are respectively Linux, Windows, Dos, and NT users, and the 3 hardware 
+technicians from Zen, 2 whom deal with our servers (routers, bridges,= 
+ servers 
+and ISDN), and 1 who deals with client side installations, (NT, windows and 
+ISDN).
+
+If you are interested in joining please E-Mail SubscribeHW@zen.co.uk 
+I can be contacted at tony@zen.co.uk 
+Please visit ZEN's website cuz there sponsoring this list <home.zen.co.uk>
+
+_______________________________________________________________________ 
+=20 
+ *** Flame War on Packetstorm! 
+_______________________________________________________________________
+
+Special flame war section!  Yes, I know lots of people don't care for flames 
+(angry personal attacks), so please just delete this if you don't want to= 
+ read 
+flames.
+
+See http://www.zdnet.com/zdnn/stories/news/0,4586,2287456,00.html for a news 
+story of a controversy now raging through the hacker world.  It began when 
+Harvard University shut down a Web site they had briefly hosted for Ken 
+Williams (AKA Tattooman): Packetstorm. =20
+
+Brief summary: Packetstorm was a web site mostly dedicated to computer= 
+ security 
+information. However, it also had a section devoted to what some people see= 
+ as 
+personal attacks, threats, and obscene imagery.  Harvard shut Packetstorm= 
+ down 
+after receiving an email complaint from John Vranesevich.  You can read 
+Vranesevich's side of the story at 
+<http://www.antionline.com/archives/editorials/packetstorm.html>http://www. 
+antionline.com/archives/editorials/packetstorm.html.  Ken Williams' side is= 
+ at 
+<http://hackernews.com/>http://hackernews.com.
+
+I saw the portion of Packetstorm that John Vranesevich believed threatened a 
+family member.  What I recall is a photo and address of a child, along with 
+what I regard as deranged and obscene incitements against this family.=20 
+Williams argues that he meant it as satire.
+
+Even if Williams did intend it as intimidation, perhaps the right to= 
+ advocate a 
+campaign of intimidation against a child should be protected under the First 
+Amendment. Otherwise we get into the issue of people's right to advocate 
+whatever they choose to advocate.=20
+
+However, in my opinion, Williams' freedom of speech should not extend to any 
+"right" to make Harvard pay for disseminating threats against a child.
+
+Here is the official Harvard statement on this matter:
+
+* S T A T E M E N T * 
+ 
+
+As a service to the Internet community, Harvard agreed to host a 
+Packet Storm Security Website for security-related materials only. Without 
+Harvard's knowledge, unrelated content was put on the Harvard server,= 
+ including 
+sexually-related material and personal attacks on an individual not= 
+ affiliated 
+with the University.  A Harvard administrative site focused on security= 
+ issues 
+is not the forum for this type of material. We are returning the content on= 
+ the 
+site and hope that Packet Storm will make its security tools available= 
+ through 
+its own Website. 
+ 
+
+        Joe Wrinn 
+        Director 
+        Office of News and Public Affairs
+
+Joe Wrinn 
+Director, Harvard News Office 
+1350 Massachusetts Ave., Rm. 1060 
+Cambridge, MA   02138 
+Phone:  617-495-1585
+
+Now, on to the flames, pro and con.  I've removed most email addresses= 
+ because 
+I don't want to perpetuate the flame war by having people get flame email or 
+outright threats from readers of this material.  Also, I do NOT want anyone 
+harassing supporters of Ken Williams thinking they will win my favor by= 
+ doing 
+so.  I despise intimidation of any sort, especially by people who think they 
+are helping me. -- Carolyn Meinel
+
+----------
+
+Carolyn, 
+I have been supporting you and The Happy Hacker for 14 months, and was= 
+ willing 
+to devote my time and resources to mirroring your web site, editing the= 
+ digests 
+and maintaining archives of the G2MHH and the HHD. I was even willing to= 
+ talk 
+to the press and support your cause when you asked for my help. But now I= 
+ feel 
+I can no longer aid you, offer you my support or be involved in anyway with= 
+ the 
+Happy Hacker.
+
+This is because of your connections with AntiOnline, and their actions= 
+ against 
+Ken Williams and Packet Storm Security. I am in the process of creating a= 
+ site, 
+indexing lots of text files and the like, so I am aware of the time and= 
+ effort 
+it takes. Ken Williams has lost all his work and the great number of hours= 
+ he 
+has devoted to his site have been irretrievably lost. Aside from Ken's loss, 
+the loss of Packet Storm Security will be greatly felt by the whole= 
+ community. 
+I am really quite shocked, upset and horrified by these events. No matter= 
+ what 
+content the offending material had, there is NO excuse for the whole site to= 
+ be 
+lost for ever. I doubt you can appreciate the loss Ken Williams has= 
+ suffered, 
+because unlike you, he has not profited off of his service to the public.
+
+With this new light I greatly urge you to reconsider your partnership with= 
+ JP 
+and AntiOnline. I now understand what may have made Keydet89 give up his= 
+ post 
+as editor of the HHD.
+
+As you do that remember that while I no longer support you, may actively= 
+ oppose 
+what you say and will certainly rm any local copies of any of your work I= 
+ have, 
+I will *NOT* support or encourage any actions that prevent you from saying= 
+ what 
+you want. No matter what you write about me.
+
+[Packetstorm destroyed forever?  A Harvard spokesman claims they did not 
+destroy Williams' archives.  In any case, any computer security professional 
+should remember to always keep a back up OFF SITE.  Heck, I even keep a copy= 
+ of 
+my more valuable information on an ftp server in New York City.  -- CM]
+
+--------
+
+Look what your little buddy's done now, Carolyn.  He couldn't handle= 
+ something 
+himself, so he got Harvard to drop PacketStorm all together.
+
+If something has been posted that is really libelous, like JP says, he could 
+just file a suit against Ken, and leave it at that.  But no...he's got to= 
+ email 
+Harvard, b/c he knows what the computer and Internet- illiterate folks in= 
+ the 
+General Counsel's office will do when they hear words like "law suit".
+
+I'm not even going to speculate that Ken's claims of loosing 7 wks of class 
+work, a custom IDS, and all his research data are 100% true.  What I am= 
+ saying 
+is that the PacketStorm site has been far more valuable in any given week= 
+ than 
+JP's site has been the entire time it's been up. =20 
+...
+
+Why hasn't JP sued Brian Martin and his Attrition site?
+
+[According to what Vranesevich says is his email to Harvard, he did not 
+threaten to sue them. -- CM]
+
+------------
+
+Its a shame what is happening. Oh how I long for the days of the BBS's and 
+teleneting. There seemed to be a lot more enjoyment and certainly a lot less 
+people whose desires are to make decisions for others or simply a save the 
+world crusade. Life is a funny place cause generally when one really digs= 
+ into 
+the lives of these so called crusaders its a scary place to go. To keep this= 
+ in 
+simple form with gross generalizations; why is it that the crusader of= 
+ causes 
+is one who usually has the most troubled life and goes to great length to= 
+ mask 
+inner deceits they actually parallel the mental profile of a person who is 
+determined to hack solely to reap severe destruction. Both have serious= 
+ mental 
+problems. In closing its a shame that you and others like you have gotten 
+caught up in the problems of others. For what its worth I hope you do not= 
+ let 
+the anguish of a certain few wear you down where you say "to hell with it". 
+There are a lot of people who enjoy your work, they find it light and a form= 
+ of 
+entertainment; an escape from the work week. Some relax to TV, movies others 
+enjoy the idea of a different way to play with their PC. Its all really that 
+simple and simple it should of been kept. Good luck; stay strong.
+
+---------------
+
+This will be all over the place tomorrow. Here is your heads up.=20
+
+You name them, and they are mad at JP. Hackers and professionals alike.
+
+I have tried to warn you in the past about JP, but this is my last time. He 
+stands against everything you say you are for, and if this doesn't prove it,= 
+ I 
+don't know what can. He is the most negative force on the net, and is doing= 
+ far 
+more damage then any gang of kode kiddies hacking web pages ever could.
+
+-----------
+
+From: Brad Davis <brad@antionline.com>
+
+Packetstorm IS DOWN.. go to 
+<http://packetstorm.genocide2600.com/>http://packetstorm.genocide2600.com,= 
+ He 
+left a nice message trying to get people to feel sorry for him. The guy and= 
+ his 
+friends are trying to ruin AntiOnline and JP and this guy tries to make it= 
+ out 
+like he has done nothing wrong?? We never called Harvard NOR did we threaten 
+with a lawsuit. Has JP sent you the copy of the message? OH BTW, you are= 
+ blamed 
+for this too.  heh, I want to apologize for your name being brought into= 
+ this. 
+-- 
+Brad Davis <brad@antionline.com> 
+Staff / Operations Coordinator 
+AntiOnline (<http://www.antionline.com/>www.AntiOnline.com) 
+724-773-0940 voice 
+724-773-0941 fax
+
+[If you wonder why many people are blaming me for Harvard's decision on the 
+Packetstorm site, it is because they have been demanding that I stop= 
+ accepting 
+Antionline's listserv and POP server for handling Happy Hacker email. = 
+ Divide 
+and conquer.  I'm not going to fall for that. -- CM] 
+----------
+
+I've read a few things which implicated you with JP.   So far I haven't= 
+ really 
+taken a side in this whole mess and I'm not quite sure who to believe.  I= 
+ was 
+hoping you'd post something to your site which would express your opinion on 
+JP's recent involvement with packetstorm. Thanks.
+
+------------ 
+[The following email was addressed both to Vranesevich and me -- CM]
+
+I don't particularly dig writing this letter, but as part of a very= 
+ experienced 
+group of individuals performing some fairly important security work for the 
+Federal government (among others), I wanted to address an issue in a way= 
+ that 
+wasn't a public flame, or a proactive public discredit to either of you.= 
+ This 
+is a personal appeal to your senses and in no way represents Network= 
+ Security 
+Technologies corporate opinions.
+
+When you're insecure, and really fear what others have to say, you make rash 
+decisions that in the end, can hurt a group of people. It's reactionary and 
+disgustingly predictable.
+
+Believe in your ideals, spout them if you must be proactive in front of your 
+following, but acting with such blatant hypocrisy is the act of a 4 year= 
+ old. 
+You are hurting a community.
+
+I get information from several sources. The source's opinions me nothing to= 
+ me- 
+their information is valuable (when accurate). You take the bad with the= 
+ good. 
+That's what adults do. You don't flame in return. You don't misrepresent.= 
+ You 
+don't backpedal, leaving a glistening slug trail of obvious inaccuracies. = 
+ And 
+you don't hurt the community you're working within.
+
+A portion of the community is very critical of your efforts because of the= 
+ way 
+you both choose to react to criticism  With dubious, near slanderous, 
+allegations that provide little proof of your innocence. You're definitely= 
+ not 
+the only people guilty of that. It's frustrating discerning the truth 
+sometimes.
+
+Congratulations on ruining an Mr. Williams education, making yourselves the 
+target of a every angst-ridden technophile's digital justice, furthering the 
+media misconceptions about some very talented people's intentions, and most 
+importantly....acting like the whining 20 year old kid, and incapable rube= 
+ that 
+you're both accused of being by your many adversaries. Instead of protesting 
+against the allegations, ignore them an drive on. You didn't get to where= 
+ you 
+are by being stupid. Use the smarts for a common good, please. You both know 
+you're not whiny kids, rubes, or remotely incapable.
+
+I understand the harsh reactions at the mere mention of your names, though I 
+don't approve of most of them. When I see flaming at your names, I know it's 
+wrong. However,  deep down I get the same joy I got back in grade school= 
+ after 
+beating the living shit out of an outspoken bully, who was fond of acting= 
+ the 
+expert of things he knew only moderately well. I know... slightly barbaric. 
+This bothers me, I don't dig feeling that way about people I only know from 
+exposure to my particular occupational hazard. It was far quieter 10 years= 
+ ago. 
+Hell, five years ago.
+
+Talent is rare. You don't have to like it's sources, but it's criminal to= 
+ quash 
+it.
+
+To qualify this message, it isn't my intention to start a flame war, and if= 
+ my 
+observations over the past couple of years drew a completely inaccurate 
+conclusion, my sincere apologies to the both of you.
+
+It is also NOT my purpose to add textual information to any web sites. This= 
+ is 
+for my protection.
+
+Good luck in the future.
+
+---------
+
+I thought the story was a good example of the technological intimidation you 
+discussed at the conference.  I never did see a good explanation from any of 
+this site's defenders of why any of this stuff was there in the first place.= 
+  A 
+newspaper, for example, could not publish this stuff without being subject= 
+ to 
+libel and defamation laws.
+
+smile anyway,
+
+[The above was sent by a reporter friend -- CM] 
+---------
+
+Until now, I found your skirmishes with attrition to be mildly amusing. = 
+ Now, 
+with the destruction of the packetstorm site, I feel that you have really 
+become a liability to the security field.  The thought that someone might 
+associate us because you run a security-related site leaves me with a= 
+ profound 
+feeling of shame.
+
+-------------
+
+I agree with you 100% that threatening a child on a publicly accessible page= 
+ is 
+not a commendable act.  I was unaware that a document of that nature was 
+residing within the subtree of his site's root directory.  If the document 
+resided anywhere else (not available to the general public) then I don't= 
+ agree 
+it should be tossed like a bone to a hungry dog.
+
+On Tuesday, a lady going to church got her head stoved in front of her two 
+children. I believe they were 2 and 4. She died last night. I want her 
+attackers to suffer very slowly, for a very long time.
+
+Was there a link anywhere on the PacketStorm main site to these threatening 
+documents?
+
+Just curious.
+
+[Yes, the offending material was linked from a "JP" topic on one of the main 
+web pages -- the archive page. -- CM] 
+-------------- 
+Ken Williams <jkwilli2@unity.ncsu.edu>
+
+i had HDD and tape backups of the site, updated daily, and even had offsite 
+backups of everything made weekly.  unfortunately, with 8+ GB of data, i did 
+not have the bandwidth or resources to make backups myself at home.  Harvard 
+has the HDD, tape and offsite backups.  there are/were a total of at least 4 
+different complete sets of backups of the site, that were up to date. even 
+though Harvard is in possession of any/all remaining backups, a  figured= 
+ that 
+the 4 backup redundancy in which backups were kept in 4 different locations= 
+ was 
+good enough.
+
+My suggestion to you, CM, is to keep your mouth shut when you don't know 
+what you're talking about and don't have any information at all to base 
+your insults on.  additionally, your personal attacks on my character are 
+without foundation - you don't know anything about me - for you to attempt= 
+ to 
+judge me based on your lack of information is absurd.  please let us all= 
+ know 
+when/if you ever make it back from "the dark side of the moon".
+
+ken
+
+[I saw Ken's "jp" directory, and stand by my evaluation that any reasonable 
+person should consider it obscene and threatening to the child it targeted.= 
+ -- 
+CM] 
+_______________________________________________________________________ 
+To subscribe to the Happy Hacker Digest, email mailman@antionline.com 
+with the message "subscribe happyhacker."  Unsubscribe with message 
+unsubscribe happyhacker.
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have 
+committed.  We mean it.
+
+For Unix questions, contact unixeditor@techbroker.com.
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, <editor@techbroker.com>; Hacker Wargame 
+Director, Vincent Larsen <vincent@sage-inc.com>; 
+Clown Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries.
