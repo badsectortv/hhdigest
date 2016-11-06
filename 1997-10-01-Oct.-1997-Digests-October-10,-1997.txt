@@ -1,0 +1,855 @@
+Oct. 1997 Digests October 10, 1997 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Contents: 
+     *Carolyn Meinel -- " Introducing... the RJ!!!!!!" 
+     *R.J. Gosselin  -- "Well, Here We Go" 
+     *Moderators Listing -- FYI 
+     *New GTmHH Coming In 1 Week 
+     *Next Week - RJ Presents "uide To Social Engineering" 
+     *Roger's Windows Digest 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+"Introducing... the RJ!!!!!!"
+
+ This is Fearless Leader Carolyn Meinel here to give you the results of my 
+Fearless Investigation of our candidate for the new Supreme Editor of the 
+Happy Hacker list, Dr. R.J. Gosselin.
+
+ It turns out that RJ is a super great guy, wonderful sense of humor, 
+entrepreneur, gentle family man with seven (count them, seven) home-schooled 
+children, and death on a keyboard to bad guy hackers. If you happen to own a 
+bank, his doctoral dissertation will make your hair stand on end. It's a 
+good thing RJ gets bored by the idea of becoming an expatriate billionaire.
+
+ I got help from Winn Schwartau, who is the head of the US Cybermanhatten 
+project to battle information warfare, to find out just how good RJ's 
+recently completed doctoral dissertation is. Answer -- eeek!!!!
+
+ RJ also has a dynamic and humorous writing style. You'll get a blast, and 
+maybe a wakeup call, from his Guide to Social Engineering in this Digest. We 
+look forward to your Guides becoming classics on the hacker scene, RJ!
+
+-- Carolyn Meinel 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+"Well, Here We Go"
+
+ Hi there, everyone; Carolyn asked me to take a few minutes to introduce 
+myself to the list. I'm also going to identify for you how the "upper 
+echelons" of the Happy Hacker list have been re-organized now that COFL's 
+(that's "Carolyn, Our Fearless Leader") has a schedule that precludes her 
+from the day to day activities of HH list management. Then, later on in 
+this digest, you'll find the first part of a feature article entitled 
+"Guide To Social Engineering".
+
+ There are several things you learn having seven kids (20,19,18,9,7,5 and 
+2.5 -- Yeah, I know, we had to take a break in the middle).  You learn to 
+manage time really, really well.  You learn that what originally seems to 
+be an insignificant detail can be very important.  You learn how to 
+communicate very, very clearly.  You learn how to pull out your hair. You 
+learn how to say "No" 2,456 times in a row. And you also learn how to 
+understand "creative logic".  (Newbie Note: Four out of five of the above 
+skills help with hacking.) 
+(Second Newbie Note:  Pay attention to detail!  {It will make or break you 
+as a hacker} Go back to the previous paragraph and count again - there are 
+six things mentioned, although only four of them will help you develop your 
+skills.)
+
+ Anyway, now for the obligatory boring bio details.  I spent from '76 to 
+'79 in the U.S. Marines, assigned to Military Intelligence as an "S-2 
+Alpha" with a Hawiian Marine Battalion. While doing that, I traveled to 
+Okinowa, Hong Kong, Korea, Japan and Taiwan.  (Never got to visit 
+Australia, but promise to jump at any invitation.)  I got involved in PC's 
+just before DOS 3.0 made it's great debut, and have been addicted ever 
+since.  I have just earned my Ph.D., after working on it for only 
+seventy-two centuries (well, it seemed that long!!) and I run a small 
+network technology based in North Carolina.  Aside from being the Editor of 
+this list, I am actively developing security consulting jobs.  I have been 
+working in the martial arts since age 12, and hold a Fifth Degree Balck 
+Belt in Shizuka Do, and a Third Degree Black Belt in Isshin-Ryu. (Refer to 
+"gentle family man" statement, paragraph 2.) I am an expert with a pistol 
+(according to the USMC, anyway), not too bad with a rifle, and deadly with 
+a pager.  However, my "weapon of choice" is my keyboard and a phone line. 
+;-) OK, enough punishment.  Anybody who wants to know more can download my 
+bio from www.pentagon.gov/secret.agents/US.  One of my goals is to travel 
+to the Middle East, and I am especially interested in Northern Africa.
+
+-- R.J. Gosselin 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Moderators Listing -- FYI
+
+ Let me move on, I'd like to describe how your digest questions are being 
+handled.  Questions sent to the HH list get routed by me to one of several 
+volunteer moderators.  These folks, and the areas of questions they handle, 
+are:
+
+Carolyn Meinel Linux, Unix 
+Coyote   newbie-intermediate general 
+Mel Gray      newbie-net 
+Rodger Prata  newbie-windows 
+Jopee Llosa   newbie-windows 
+Karl Schaffarczyk Mac 
+Strider   Mac
+
+ These individuals come up with the answers to your questions, and then 
+forward the info back to me.  I compile the digests and send them out. 
+Articles of general interest can be submitted to me at any time.  I will 
+review them and post the best ones in an appropriate digest; immediately 
+making you world famous for 27.3 minutes. (Possibly more, possibly less.) 
+So keep those questions and comments coming.  If you're getting this 
+Digest, you know the addresses.
+
+ Also, if you think you've got what it takes to be a moderator -- send me 
+an email and tell me what area you think you can handle ---- and WHY.  Give 
+me background and details.  You may just have what it takes.  Like the USMC 
+- We're looking for a few good "men"; but it's a tougher job than you 
+think.  Somewhat akin to drinking water from a firehose!
+
+ But -- please note -- this list is for legal hacking !!  Please do not 
+forward indictable confessions and expect to have me post them in upcoming 
+digests.  Furthermore, since you never know who may be monitoring my mail - 
+you may find yourself with several well-armed Federal visitors offering 
+extended government-sponsored vacation packages if you do.  Let's confine 
+comments and questions to areas that will enhance skills, security and 
+general individual responsibility.  As most of you know, several law 
+enforcement agents subscribe to this list, you don't want to go bucking for 
+more than your 27.3 minutes of fame.  Just ask Mitnick.
+
+-- R.J. Gosselin 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*New GTmHH Coming In 1 Week
+
+ Be on the lookout!  Carolyn's next Guide To (mostly) Harmless Hacking is 
+in for review, and will be sent out within a week or so.  You're going to 
+love it!  It will make "hero's" out of many of you. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*NEXT ISSUE:
+
+RJ will include part 1 of his Guide To Social Engineering.  You also be 
+able to download the entire 
+Text of his dissertation from a certain well-known security site.  More 
+details next week.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+* Roger Prata's Windows Digest ----
+
+Contents: 
+ *Moderator's Note 
+ Real Audio Capture... 
+ Dynamic IP Address? 
+ Altos Mainframe??? Wow! 
+ More on Windoze Versions 
+ Hiding IP Addresses... 
+ Cracking .pwl's... 
+ *NIX Passwd File Intro... 
+ Routers Q + A 
+ Lots of answers... 
+ Firewall Question... 
+ More Win95 Answers... 
+ More Linux Answers... 
+ A Note From The SUPREME Moderator...
+
+Moderator's Note:  Hello all!  After a short unanticipated break, we're 
+back!  Some of these posts are pretty old, but each and every one of 
+them are really good ones.  We should be seeing digests every other day or 
+so! 
+Keep the posts coming, they are the life of the digest!
+
+-Rog 
+ 
+
+========================= 
+  Real Audio Capture... 
+=========================
+
+From: david6 <david@foreverblue.com> 
+Subject: RA capture
+
+not much of a hacking question - 
+I'm trying to find out how to "capture" real audio music files. 
+I can do it with music 
+david@foreverblue.com 
+========================= 
+  Dynamic IP Address? 
+=========================
+
+From: Brian M Johnson <john3300@tc.umn.edu> 
+Subject: HH - Find dynamic IP address?
+
+Does anyone know how to find someone's dynamic IP address if you know 
+that they are connected to the internet at that time using just their 
+e-mail address?  Either the Windows or Linux commands.  Or any programs 
+that will do this automatically for either Window or Linux.  Thanks! 
+------------ 
+Brian M Johnson 
+john3300@tc.umn.edu
+
+========================= 
+ Altos Mainframe??? Wow! 
+=========================
+
+From: Charlie F Herrick <chazfh@juno.com> 
+Subject: HH altos? mac?
+
+Dear HH 
+        I have two questions. First of all, me and a friend bought an 
+altos mainframe for $25 from an old library. Right now all it is is a 
+desk so if anyone knows about altos mainframes e-mail me.  Secondly the 
+school I attend just got a Mac network and I have an IBM is there a way 
+do dial into it? And it has the normal mac password protection how can I by 
+pass it? 
+ 
+
+                                        Sincerely, 
+                                              Chaz
+
+========================= 
+More on Windoze Versions 
+=========================
+
+From: zman <zman@nabi.net>
+
+Just when you thought it was safe to hack here comes a new version.
+
+There are currently several versions of windows 95 and several reasons 
+For these versions.
+
+1. Windows 95  Ver 4.00.950 
+    Original version of windows 95.
+
+2. Windows 95 OSR1 Ver 4.00.950 A 
+    Includes support for the PIIX3 controler. 
+    Changed the inbox to microsoft exchange (or was this in OSR2) 
+    Other minor cosmetic changes.
+
+3. Windows 95 OSR2 Ver 4.00.950 B 
+    More minor bug fixes and changes 
+    Better support for new hardware being released 
+    Several changes to the way the API works.
+
+4. Windows 95 Ver 4.00.950 Summer Release 
+    Gives better support for the PIIX4 controler 
+    Has support/drivers for the USB port. 
+    Other minor cosmetic and API changes. 
+    This version is a pre-release for window 98 
+    to keep the software compatible with the new 
+    hardware technology
+
+========================= 
+ Hiding IP Addresses... 
+=========================
+
+From: John Gibson <gambler666@hotmail.com> 
+Subject: [HH] hiding IP address in IRC
+
+Hi all, please excuse the lamer's question but is there a way to hide 
+your IP address in IRC so that other users won't know what ISP I'm using 
+and may cause damage? Thanks in advance for any help.
+
+========================= 
+   Cracking .pwl's... 
+=========================
+
+From: beast master <beastmstr@geocities.com> 
+To: hh@happy-hacker.ml.org 
+Subject: decrypting pwl's
+
+Question for you:  I can't seem to decrypt any pwl files.  Despite 
+trying glide.exe by its instructions, it doesn't return an output. 
+Anyone have any advice or alternate programs to try?  thanks!
+
+*P* 
+-- 
+http://www.geocities.com/SoHo/6660 
+"I will find a way or I will make one"--Sir Phillip Sidney
+
+[Roger:  I don't know about decrypting them, but you can view the guts 
+of a .pwl file.  On the Win95 CD, there is a proggie called PWLEDIT in 
+the admin folder.  Check it out!]
+
+========================= 
+*NIX Passwd File Intro... 
+=========================
+
+From: Krewz <evile@hotmail.com>
+
+The passwd file is a series of lines, each with user info on it, 
+the first section of the line (root in this case) is the user login 
+name.  The second part (x) is where the encoded password goes but in 
+this case the x means that the file is shadowed.  The third part(1) is 
+the user number and the fourth part (Super-User) is the user's name. 
+The final part is the user's home directory.  You may be having trouble 
+cracking this because this is a shadowed file.  The x represents the 
+place where the password would normally go.  You have to locate the 
+unshadowed copy of the file in order to crack it. 
+ 
+
+                                                      Krewz
+
+---------------------------------- 
+From: RussHarrison <wbdhruss@netspace.net.au> 
+Subject: hh
+
+> I have downloaded from a FTP-Server a File with login names&pwds, but I 
+> cannot use it! Is there somebody who can explain to me, what is each 
+> part of a 
+> line for?! 
+> root:x:0:1:Super-User:/:/bin/true 
+> ftp:x:500:2:Anon Ftp:/ftp:/bin/true 
+> 
+/etc/passwd is set out like this:
+
+username:encrypted password:userid:groupid:other info:home 
+directory:shell
+
+it appears that the file you have acquired is shadowed, so it is of 
+little use to you. You need the shadow file (on some systems 
+/etc/shadow).  This contains the encrypted password data, instead of an 
+x in the password field of the passwd file.
+
+Russ
+
+========================= 
+     Routers Q + A 
+=========================
+
+From: Azrael <azrael@trust-me.com> 
+Subject: routers
+
+-- [ From: Dmitrij Holomjov * EMC.Ver #2.5.02 ] --
+
+>Hello. I'd like to find out about ROUTING stuff. 
+>Our educational institution has 12- 20 computers running Win 3.11 and Dos. 
+>The server is Novell for 25 Users . One day we decided to set up an 
+>internet and we have to install a ROUTER. I wonder what Os and Software we 
+have to 
+>Install on the ROUTER? I work with Linux and i know that it supports 
+>some kinda routing stuff. So I'd appreciate any information about routing on 
+>mashines for Internet.
+
+Check Cisco home page (www.cisco.com) to get some info about Cisco IOS. 
+If you don't want to spend some cash with a router, you can set up a 
+Workstation  (or server) to act like a router, and that can be done with 
+NT, Linux, 
+Or even Netware...
+
+>Thanx alot
+
+Hope i helped
+
+Az 
+---- 
+Life is short, so drive fast, die hard 
+and NEVER MARRY!
+
+========================= 
+   Lots of answers... 
+=========================
+
+From: Austin <austinp@headland.co.uk> 
+To: HH mailing list <hh@happy-hacker.ml.org> 
+Subject: HH
+
+Hi again. Couple of answers:
+
+Re: Shell Scripting tutorials 
+============================= 
+clOut, you might find these useful:
+
+Yahoo! Result: Shell programming at: 
+http://av.yahoo.co.uk/bin/query_uk?p=%2B%22shell+scrip*%22&hc=0&hs=0 
+Bourne shell programming at: 
+http://theory.uwinnipeg.ca/UNIXhelp/scrpt/scrpt2.html 
+Shell Scripting at: 
+http://santa.jsums.edu/admin/scripts.html 
+How to write a shell script at: 
+http://theory.uwinnipeg.ca/UNIXhelp/shell/shell_help.html 
+Using csh (bourne) at: 
+http://www.ocean.odu.edu/ug/shell_help.html
+
+I use them for reference. Can't recall which is best, but you can find 
+loads of tutorials kicking about the net. The thing you have to remember
+
+(and you probly know this already) is that the first line tells the 
+server what shell to use, and all shells have slightly different syntax and 
+commands. If you want to use any examples you find on the net, check the 
+first line to make sure it's the same as the shell and dir you're going 
+to use.
+
+Re: FTP-Logins file 
+=================== 
+Well, Matthias, that's a Unix passwd file :-) 
+Format is, roughly, from memory: 
+username 
+crypt-encrypted password 
+user id number (uid) 
+group id I think (gid) 
+path of home dir 
+shell?
+
+all separated by colons (:).
+
+Check on the net for docs, there's plenty. The crypt-encrypted password 
+Is obviously the interesting bit. There is a prog called htpasswd on my 
+server, in <htdocs_root>/support which generates encrypted words and 
+pops them into a text file for your perusal. I have no idea how crypting 
+works, but I have heard of progs that crack the resulting encrypted words. 
+Through playing about I noticed that htpasswd generates different results from 
+The same words, so it's probably seeded with the system time or something. I 
+dunno.
+
+Woof, this is getting a little long. Sorry about that.
+
+Catch you later.
+
+Austin the Alingum.
+
+========================= 
+  Firewall Question... 
+=========================
+
+From: bheath@edgars.co.za 
+Subject: (HH) help!
+
+Hi there,
+
+Thanx for a great service, you guys are the best. 
+I hope that you can help me, 
+I work for quite a large firm in there IT division, 
+and up until now have had absolutely no restrictions 
+on the use of internet access, but recently they 
+installed a firewall, called "gauntlet" I'm not sure 
+which version, but they are going to restrict our access 
+to evenings and early morning. All I really want to do 
+is get into FTP sites and Gopher sites. I am running win 
+3.11 (for workgroups). what can I do?
+
+     See you later. 
+     Silence`
+
+     (Bruce Heath)
+
+========================= 
+  More Win95 Answers... 
+=========================
+
+From: numius@globalmail.net 
+Subject: RE: HH Win95 mini-net
+
+Jose M Garcia <tost@juno.com> inquired about dial-up networking help 
+Under Win95, using the RAS included in MSPlus! package. 
+OK, d00d3,  (como no hables ingles. vaya chasco) the answer is in basics 
+The following: 
+Assuming that the Remote Access Server is well configured (i.e the IPX,, 
+TCP/IP and NETBEUI are present in the system, as well as Filesharing and 
+The MS Net Client, all to be installed thru the Net Icon at the Control 
+Panel) and that the directory you want to became to public access has the 
+share 
+option set to on with its password established, if your system answer a 
+phone call and on the client computer a form to insert the password is 
+shown, everything is in order.
+
+This however, is quite a common thing that though the two machines are 
+connected, the client cannot see anything from the server machine and if 
+you try the option Network at the desktop, the system replies a non access 
+error.
+
+The reason for this is that Win95 RAS is not considered by Microsoft as 
+A real network, which only applies to netcards. So, to access the server 
+File system (and even to run programs from the server BUT NOT ON THE SERVER) 
+The client must use the Explorer window, click on the icon that represents 
+"connection to a network unit" and (very important) on the form that 
+will be shown to you the path must be written as \\SERVER\C , where SERVER is 
+the name given to the host computer (Control Panel -> Net Icon -> Ident) and 
+C is the name given to the shared directory or unit (C is the default to 
+Share your whole HD, do you dare?). Thats all to connect to computers under 
+Win95, as once done all this, the client will see another unit added to is 
+Explorer tree which is the shared Host directory. You can also follow this to 
+Share printers.
+
+========================= 
+  More Linux Answers... 
+=========================
+
+please withold my email address 
+ 
+
+Well finally some *NIX posts!! OK ive got a few answers for some of the 
+Question s.
+
+First: to the person with minilinux...scrap it, get a real distro.
+
+Second to the passwd file hacker:
+
+If your file looks like what you gave example of:
+
+root:x:0:1:Super-User:/:/bin/true 
+ftp:x:500:2:Anon Ftp:/ftp:/bin/true
+
+thats no good.  Its shadowed.  The second field (where you see the x) is 
+normally where the encoded (not encrypted) password goes.  Try looking for a 
+file called /etc/shadow .  That file contains the encoded password minus 
+some of 
+the stuff  in the first file.  Im sure you could write a handy shell script to 
+create the proper file you would need to run through a cracker such as cracker 
+jack, ucf john, and the likes.  There is also a program called Crack that 
+sysadmins 
+use to check for weak passwords that does a good job.  That should get you 
+going 
+in theright direction.  If you program check out the crypt() routine as thats 
+what most *NIX uses to encode their passwords.
+
+and for the shell scripting guy Clout,
+
+the bash man page is an excellent place to begin (if your using bash 
+that is) or  actually the man page for any shell.  There are also books 
+available 
+for the common shells (ie bash, C, bourne, korne) but those cost money :)
+
+minilinux...scrap it, get a real distro.
+
+Second to the passwd file hacker:
+
+If your file looks like what you gave example of:
+
+root:x:0:1:Super-User:/:/bin/true 
+ftp:x:500:2:Anon Ftp:/ftp:/bin/true
+
+you might
+
+================================== 
+A Note From The SUPREME Moderator: 
+==================================
+
+A quick question concerning all who post to this list: 
+You (the moderator) make a point of saying not to post anything we 
+wouldn't send to our friendly neighborhood narc.  What exactly would you do 
+if a 
+certain law enforcement agency came to you to investigate someone who 
+posted to the GTMHH.  Would you give them the information they wanted 
+ ~*~ if you did not have to?~*~ 
+Or would you side with the hacker community and deny 
+Them what they asked for?
+
+[Carolyn: Since we don't allow Digest posts that incriminate people, we 
+have no testimony to give on poster to the authorities. We destroy those rare 
+incoming posts that contain incriminating information, but can only pray 
+that the authorities will not someday burst in with a search warrant and 
+recover those erased files. 
+DON'T SEND US ANYTHING YOU WOULDN'T SEND A NARC, 
+and I mean it! The reason we shut down the Happy Hacker unmoderated 
+discussion list is that a certain self-destructive person announced his 
+intention to publicly commit a US federal hacking felony, and invited 
+others to join. Sheesh. On the other hand, several times hackers have 
+retaliated against the Happy Hacker list by vandalizing the Internet Service 
+Providers who were serving us. These are cases in which I am delighted to 
+cooperate with the FBI. The other exception is the time someone offered me 
+money 
+to commit a telecommunications crime. People like that are not hackers but 
+mere gangsters and deserve nothing but hard time in prison with a cell mate 
+named "Spike."]
+
+-----------------------------------------------------------------------
+
+Send posts to: hh@happy-hacker.ml.org and include a 'HH' in the subject 
+header somewhere. 
+Your posts are the lifeblood of the Digest; keep 'em coming! 
+But, please don't send us anything you wouldn't email to your friendly 
+Neighborhood narc, OK?
+
+To subscribe or unsubscribe, an email to 
+majordomo@happy-hacker.ml.org 
+with 'subscribe happy-hacker' in the body.  To unsubscribe, enter 
+'unsubscribe happy-hacker' 
+in the body.
+
+The Official Happy Hacker Digest Webpage is maintained by Praying Mantis 
+and can be found at http://happy-hacker.ml.org
+
+If you want to study, laugh at or flame back issues of the 
+Guide to (mostly) Harmless Hacking, Happy Hacker and 
+Happy-SAD Digests, you may find them at our official site at 
+http://207.58.122.50/hacker/index.html. 
+Webmaster is Adam Christopher.
+
+        Happy Hacking!
+
+---------------------------------------- 
+Material discussed in this digest is controversial. Those who produce, 
+distribute, or contribute to the Happy Hacker Digest will not be held 
+responsible for anything you choose to do with the information contained 
+in this, or any other, Happy Hacker Digest. Parental discretion advised.
+
+Posts submitted to this Digest, along with material collected from 
+various electronic sources, remains the copyright of the original author. And 
+unless otherwise noted, complete issues or portions of any issue of the 
+Happy Hacker Digest may not be republished in any for-profit medium without 
+The consent of the copyright holder and the moderator.
+
+                                           H a p p y   H a c k i n g !
+
+-- 
+Roger A. Prata           <prata@cyber-wizard.com> OR <r3w7@usa.net> 
+PGP: Contact me for my PGP key. 
+                  Please encrypt anything important. 
+-- 
+  
+ 
+
+From ???@??? Tue Oct 14 21:42:48 1997 
+Received: from elvis.vnet.net 
+ by mail02.rapidsite.net (8.8.5/8.8.5) with ESMTP id PAA13963; 
+ Tue, 14 Oct 1997 15:22:33 -0400 (EDT) 
+Received: from Security.ComputerSource1.com (secure.vnet.net [166.82.239.199]) 
+          by elvis.vnet.net (8.8.5/8.8.4) with SMTP 
+   id OAA09911; Tue, 14 Oct 1997 14:27:53 -0400 (EDT) 
+Message-Id: <3.0.1.32.19971014142803.006aadb8@pop.vnet.net> 
+X-Sender: rjgs@pop.vnet.net 
+X-Mailer: Windows Eudora Pro Version 3.0.1 (32) 
+Date: Tue, 14 Oct 1997 14:28:03 -0400 
+To: (Recipient list suppressed) 
+From: Editor - Happy Hacker List <system.security@computersource1.com> 
+Subject: Warning/Apology and GTmHH-How To Be A Hero In Your Computer Lab 
+Mime-Version: 1.0 
+Content-Type: text/enriched; charset="iso-8859-1" 
+ 
+
+SORRY IF YOU RECIEVE MULTIPLE COPIES OF THIS MESSAGE ... 
+WE EXPERIENCED SERVER PROBLEMS DURING TRANSMISSION 
+AND RE-SENT TO MAKE SURE EVERYONE GOT AT LEAST ONE. 
+  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Sometimes people make poor choices; and sometimes they require us to make 
+clear distinctions.  This is the case with the "Happy Hacker Chat List" run 
+by Jesse Brown.
+
+        We apologize in particular for the way that list was used last 
+Saturday to assault Bronc Buster in a classic hacker war combination of 
+breaking into and trashing the ISP he used, setting up a fake Web site, 
+setting his finger files so they could not be altered or deleted without the 
+program *chattr* being run from root, then deleting the chattr program... and 
+then inviting people on that chat list to attack him for the contents  of 
+that finger file and web site. And making out like the fact that it took a 
+few days to fix the problem was proof Bronc wanted it there.
+
+ Carolyn and I have made repeated efforts to negotiate Jesse's association 
+of this list with us.  Unfortunately, we have failed. This is sad because 
+Jesse is such a genius with TCP/IP. We had hoped to include him as a 
+moderator for that area.  For a period of time, he was even hosting our 
+moderator site and the Happy hacker list, for which we thank him for  his 
+hard work.
+
+ So now the Happy Hacker organization has to disassociate ourselves  from 
+Jesse Brown, his "Happy Hacker Chat List," and any input as moderator.  The 
+messages on his list have become vulgar, encourage credit card fraud, and 
+violate our approach to learning.  They are delving into that "dark side" of 
+the hacker scene; while we are committed to a "white hat" approach to system 
+security.  Because of these clear differences, Carolyn and I feel we should 
+make a formal warning and apology to the list. Warning regarding  Jesse's 
+list's content, flames, and encouragement of law breaking.  Apology 
+regarding the misconceptions that it may create.
+
+ For the record, neither Carolyn nor I have attempted to "censor" his list, his running 
+of his list, or his management of his list -- because it is simply that *his list*.  We have 
+asked him not to take advantage of *our* list of names, and not to use the name 
+"Happy Hacker".  We have sent several emails in an attempt to resolve the issues. 
+We are currently attempting to advise his parents of his actions, since he is delving 
+into activities that could have serious repercussions.
+
+ No one can stop Jesse from calling his list a "Happy" anything.  Even 
+though he has been asked to re-name it, he does not appear to be willing to 
+comply.  Since he has a copy of the HH mailing list, it is entirely possible 
+the you will receive mail from him.  Carolyn and I would ask all of you to adopt a 
+professional approach; flame wars never solved anything.  Neither would 
+6,000 plus readers mailing Jesse asking him to stop or rename whatever he's doing. 
+So, please be polite to him and remember the good that he has done for Happy Hacker. 
+ 
+
+-- R.J. Gosselin and Carolyn Meinel 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ 
+R.J. Gosselin, Sr., Ph.D.         rjg@computersource1.com 
+Network Security Analyst 
+Editor-In-Chief - Happy Hacker List 
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ 
+Computer Source 1   www.computersource1.com 
+V/ 704-983-1000   F/ 704-982-3077 
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+
+         __ __                      __ __         __ 
+         / // /__ ____  ___  __ __  / // /__ _____/ /_________ 
+        / _  / _ `/ _ \/ _ \/ // / / _  / _ `/ __/  '_/ -_)__/ 
+       /_//_/\_,_/ .__/ .__/\_, / /_//_/\_,_/\__/_/\_\\__/_/ 
+                /_/  /_/   /___/ 
+  
+                   ___  _              __ 
+                  / _ \(_)__ ____ ___ / /_ 
+                / // / / _ `/ -_|_-</ __/ 
+              /____/_/\_, /\__/___/\__/ 
+                     /___/ 
+  
+                      October 24, 1997 
+  
+ 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Contents: 
+  
+     *R.J. Gosselin  -- "Psst.. hey kid -- Wanna Free Password ???" 
+     *Apology Reprint & Responses 
+     *R.J. Gosselin  -- "Guide to Social Engineering" - Update 
+     *Carolyn Meinel -- "How to Forge Email Using Eudora Pro" 
+ 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*Psst.. hey kid -- Wanna Free Password ???
+
+Alternate Title:  Cyber Child Abuse !
+
+ As we all know, there are plenty of unscrupulous people out there who think nothing of using someone else to cover the tracks of their crime.  Sad, but true.  This is a warning that is intended to protect our readers against just such a problem.
+
+ Recently, several unprincipled hackers have been providing "newbie's" with logon names and passwords to ISP's. They then encourage them to take advantage of their new-found power and hack away. UNFORTUNATE PROBLEM #1 - Most of the people they are providing this information to are either a) Kids, b) too new to know how to spoof their IP address and evade identification, or c) both.  UNFORTUNATE PROBLEM #2 - According to COFL, these kids are getting nailed in droves.
+
+ What is frequently behind such "evasive tactics" is covering more deliberate and sinister activities on a particular server with a hail of overt traffic and hacking attempts.  In other words, keep the sysadmins so busy dealing with the *obvious* hacking problem that they have no time to look for and track the hidden one.
+
+ This approach ranks right up there with using innocent civilians as a bullet shield or sending kids walking thru minefields to clear them.  The folks who take this approach are all class....low. :-(        Be smart, kids -- don't take passwords from strangers.
+
+While I cannot go into details about where, when, why, etc - I would be very interested in being informed of ISP's that get shut down with serious disk problems.  The combined information from multiple sources would help with the investigation.  (Just include "ISP CRASH REPORT" in the message line.  Thanks.)
+
+--  R.J.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ *Apology Reprint & Responses
+
+Last week we sent out an apology to all of the readers of the list.  Due to server problems at one of our ISP's (hmmm .... I wonder if there's any relation to the above item ?????) several folks got nothing more than the subject of the message.  Don't touch that dial1 there is nothing wrong with *your* set.
+
+For the benefit of anyone who requested and did not recieve a resend of the apology message:  It is reprinted here.  It is followed by some of the responses I received.
+
+ORIGINAL MESSAGE:
+
+Sometimes people make poor choices; and sometimes they require us to make 
+clear distinctions.  This is the case with the "Happy Hacker Chat List" run 
+by Jesse Brown.
+
+        We apologize in particular for the way that list was used last 
+Saturday to assault Bronc Buster in a classic hacker war combination of 
+breaking into and trashing the ISP he used, setting up a fake Web site, 
+setting his finger files so they could not be altered or deleted without the 
+program *chattr* being run from root, then deleting the chattr program... and 
+then inviting people on that chat list to attack him for the contents  of 
+that finger file and web site. And making out like the fact that it took a 
+few days to fix the problem was proof Bronc wanted it there.
+
+ Carolyn and I have made repeated efforts to negotiate Jesse's association 
+of this list with us.  Unfortunately, we have failed. This is sad because 
+Jesse is such a genius with TCP/IP. We had hoped to include him as a 
+moderator for that area.  For a period of time, he was even hosting our 
+moderator site and the Happy hacker list, for which we thank him for  his 
+hard work.
+
+ So now the Happy Hacker organization has to disassociate ourselves  from 
+Jesse Brown, his "Happy Hacker Chat List," and any input as moderator.  The 
+messages on his list have become vulgar, encourage credit card fraud, and 
+violate our approach to learning.  They are delving into that "dark side" of 
+the hacker scene; while we are committed to a "white hat" approach to system 
+security.  Because of these clear differences, Carolyn and I feel we should 
+make a formal warning and apology to the list. Warning regarding  Jesse's 
+list's content, flames, and encouragement of law breaking.  Apology 
+regarding the misconceptions that it may create.
+
+ For the record, neither Carolyn nor I have attempted to "censor" his list, his running 
+of his list, or his management of his list -- because it is simply that *his list*.  We have 
+asked him not to take advantage of *our* list of names, and not to use the name 
+"Happy Hacker".  We have sent several emails in an attempt to resolve the issues. 
+We are currently attempting to advise his parents of his actions, since he is delving 
+into activities that could have serious repercussions.
+
+ No one can stop Jesse from calling his list a "Happy" anything.  Even 
+though he has been asked to re-name it, he does not appear to be willing to 
+comply.  Since he has a copy of the HH mailing list, it is entirely possible 
+the you will receive mail from him.  Carolyn and I would ask all of you to adopt a 
+professional approach; flame wars never solved anything.  Neither would 
+6,000 plus readers mailing Jesse asking him to stop or rename whatever he's doing. 
+So, please be polite to him and remember the good that he has done for Happy Hacker. 
+ 
+
+-- R.J. Gosselin and Carolyn Meinel
+
+Now, here are some of the responses -------
+
+***    I'd just like to write to tell you what a wonderful service you are 
+doing for the hacker community. In the midst of all the muck, and hype 
+surronding hacking, I think you guys really shine through.
+
+***        I agree totaly that people should not be encouraged to use hacking as a bad 
+thing. However as one who loves to play with unix holes and security risks 
+on my own home computer i find that most of any kind of hacking is an 
+annoance.  Like a simple line in WIN95 config.sys DOS=SINGLE sets Windows95 
+into a confusing mess.  But the bad hacking like emailing the password 
+file, and ftping off vmlinuz has no use in these lists, mailings and so forth.
+
+**** WHOA!!!!!!!!!!!!  Hold on a minute here!!!!  Yes, it might be somewhat vulgar 
+in a few posts, but that is free speech.  Although I don't feel it's a good 
+idea to cuss at anyone, I'm not going to stop others.  That is a personal 
+choice.
+
+ENCOURAGE credit card fraud?!?!  Not at all.  I remember one single little 
+post asking about a credit card reader, you had a hissy fit, then refused to 
+back down even when numerous people told you perfectly legal applications for 
+it.  Although I learned a great deal from you, if this is against your 
+approach to learning, I don't want to be anywhere near it. 
+ Editor's Note:  "Numerous" = 2 in this case. ;-)
+
+**** I have been reading the list for a while now on the understanding this 
+was a list for people who wanted to stay legal and share information.   I 
+think the attack on Bronc Buster was utterly disgusting, not in the 
+spirit of the list and definately not in the spirit of hacking.
+
+I would like to congratulate carolyn on the action she took and I hope 
+she would do exactly the same thing in future.  I am against a censored 
+list but when things like this happen I see the need to keep some control.
+
+**** IN REPLY TO THE ABOVE MESSAGE - WE ALSO GOT THESE --
+
+****  I'm against people using this list to suck up to the moderator... 
+No matter how you slice it, its still SPAM. 
+Editor's Note:  What's really funny here is that Carolyn isn't the moderator.
+
+****   ARE YOU STUPID OR SOMETHING? That's basically all I have to saw. 
+Carolyn was trying to censor the list  - there was no doubt about that 
+so my question is to you: how could you beleive that Carolyn did the right thing and be 
+against censorship at the same time?
+
+**** To be honest with you, the first I heard about this was the latest issue of HH and the copy of the above e-mail.  I really don't know all the story, so I'll reserve judgement until I get the facts straight.  On a moral principle, I agree with you about the issue of censorship, but if the letter is a privately ran operation, then I suppose Carolyn can do whatever she wants.  She will just lose a lot of subscribers in the process though, and that's a shame.  I've found the information in the letters very informative, and have learned more about how my computer system works from the newsletter than all my college computer classes combined.  It'd be sad to lose such a great source of information over something like this.  Still, I can't support the attack on Bronc Buster 
+either.  This list is out there with your and my names on it, and I really don't want a bunch of undue attention from the FBI, NSA, or other people in law enforcement, especially for something I had no part in, or even knowledge of.  I'm sure you probably feel the same way; who wants to get busted for something you didn't even do?  So if Carolyn feels she needs to disassociate herself from this, so be it.  In that sense, I don't blame her.  The list can go on without her involvement, if there is enough interest by others.  Personally, I don't want to be involved in it either, if it means risking going to jail for someone else's choices.  Doesn't mean I want to take away their right to choose or speak; just that MY right to choose otherwise should be respected as well.  No flames intended; just my humble opinion.  Feel free to comment and pass it on, if you wish.
+
+King Dagobert II of the House of Merovingian 
+ 
+
+OK - so now you get the idea of how things went.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+* "Guide to Social Engineering" - Update
+
+ I have received several emails requesting information on how to get copies of my dissertation.  Winn Schwartau will be making it available on his web site in the "Bookstore" section.  I am finishing up some modifications to the document before he posts it, since I am severely alergic to jail, and don't want to compromise the security of anyone who was/wasn't/might have been referred to in the original document.
+
+ The URL to check is www.infowar.com.  It will be in the bookstore section, and you should be able to download the document beginning on Monday. Don't let the first couple chapters bore you too badly.  But most of the interesting-type stuff can be found from Chapter Three and forward.
+
+ Once we have a finalized and sanitized-so-I-don't-go-to-jail version, I'll also be including some excerpts in upcoming digests.  Hope you understand the delay.  ;-)
+
+-- R.J. 
+ 
+
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ 
+R.J. Gosselin, Sr.                rjg@computersource1.com 
+Network Security Analyst 
+Editor-In-Chief - Happy Hacker List 
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ 
+Computer Source 1   www.computersource1.com 
+V/ 704-983-1000   F/ 704-982-3077
