@@ -1,0 +1,475 @@
+Aug. 24, 1998
+
+===================================================================== 
+===================================================================== 
+URL of the day: http://www.smu.edu/~csr/articles.htm  Computer law issues 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS 
+**This week's posts** 
+* WordPad wonders 
+* NAV removes Back Orifice 
+* Using JAVA to deliver BO 
+* Trojan Horses 
+* CCMaker File on the Net 
+* NetBus
+
+**This week's Questions** 
+* IRC program question 
+* Windows telnet question
+
+**Answers to previous Questions** 
+* Re Mac Question
+
+**Editorial - Too Lame???** 
+================================================================== 
+ *** WordPad wonders 
+================================================================== 
+From: <NoTrace1@aol.com>
+
+What's up everyone this is No Trace. I was copying text info from the net 
+and pasting it into the windows program Wordpad. I was thinking to myself 
+how would Windows handle it if I tried to paste other things in Wordpad like 
+a program, files or a shortcut. I found out some very interesting things 
+that could easily make Wordpad a security risk for people who don't want you 
+running certain things. Here's what you can do and how this works. You can 
+copy and paste an exe in Wordpad but the exe must only need the exe to run 
+it - no dlls or other files can be needed.  You only have room for 1 object 
+in here, meaning the exe or whatever you are pasting.  Once it's pasted you 
+can run the program like normal FROM WORDPAD! What is does is it will write 
+the whole file into Wordpad. You can save it and the doc file you saved will 
+be as big as the program file is.  If you want to run a program that 
+requires other files to get it running you can create a shorcut to the 
+program you want to run and copy that, then paste it into Wordpad and run it 
+from the shorcut.  Also you can paste any type of file that will run from 
+it's extention (like a pic), or you can paste a doc file into Wordpad and 
+double click that and it will open a new Wordpad window with the doc!
+
+There are many implications of what this can be used for. For people that 
+want to hide there files or exe's, put them in Wordpad. hehe. 
+No Anti-Virus progam is worried about Wordpad doc's; no administrator 
+cares about some Wordpad doc on his computer when it comes to security.  If 
+you are on a Windows system that gives users different rights and cannot 
+access other programs, you can hopefully find the computer running on root 
+one day in your office lets say and copy a shortcut to Wordpad then save it 
+before the boss or whoever comes back. Then run Wordpad because all users 
+can run Wordpad and open it.
+
+Note: I'm not sure if that will work it depends on what your running and the 
+security it has but most of the time you can run shortcuts to areas you are 
+not supposed to have rights to. They just usually won't give you the 
+shorcuts when you log onto your account but your lovely, well hidden Wordpad 
+doc has the shortcut you need. For all you people trying to hide your 
+programs that people download you might be able to make a program that can 
+open up the doc with your exe and double-click it without you physically 
+doing it.
+
+Also this shows up in your task manager when you press ctrl-alt-del; it 
+usually runs two programs one called packager and the other is your exe and 
+I think it gives it different names depending on what you have running but 
+it usually starts with PKG.  There are more implications I am sure, you just 
+have to find them. Who would have thought WORDPAD.  My favorite thing about 
+this is that nobody in security cares or even thinks about Wordpad when it 
+comes to security.
+
+Play nice. 
+Peace
+
+[Dale: If you want to learn more about how and why this works, read up on 
+topics like Object Linking and Embedding (OLE), Component Object Model 
+(COM), and Distributed Component Object Model (DCOM). 
+Actually, WordPad is usually considered by serious security people, as are 
+all other apps that support these features. The problem is that many people 
+require this functionality to do their daily work. Practical Security is a 
+trade off between the need to be secure and the need to do your work...] 
+=================================================================== 
+ *** NAV removes Back Orifice 
+=================================================================== 
+From: "Ted Al Groans" <groans@mailexcite.com>
+
+Hi!
+
+There was a letter in one of the August 10 publication of HH describing how 
+to detect the Back Orifice trojan.  The writer describes a way of deleting 
+it from the registry.  This is just to inform everyone, that if you have 
+Norton Antivirus, if you update it, it should detect it on your system.  In 
+fact I tried to download a zip file containing it, and it gave me warnings. 
+It is not a bad idea to check the registry anyway, but the NAV approach is 
+an easy deal.
+
+---~Prime 
+================================================================== 
+ *** Using JAVA to deliver BO 
+================================================================== 
+From: Nelson Murilo <nelson@pangeia.com.br>
+
+JSA                                   Finjan 
+                          Monday, August 17, 1998 
+  
+                     Back Orifice Hostile Applet Alert 
+  
+A hostile Java applet that contains the widely publicized hacker tool 
+called "Back Orifice" has been discovered on a Java consulting firm's 
+WebSite. Back Orifice was designed as an application by the hacker group, 
+Cult of the Dead Cow, and was debuted last week at the Def Con hacker 
+conference. This application can remotely monitor and control Windows 95 
+and Windows 98 systems. It also has the power to add and delete files, 
+directories and registry entries. 
+  
+The interesting twist to the Back Orifice application came recently when 
+it was embedded in a Java applet and dynamically installed in the browser 
+environment. While this was only a "demonstration applet," it did point 
+out the growing trend of taking public domain code and changing the code 
+to create a different type of attack or delivery method. This trend makes 
+it virtually impossible for a security administrator to maintain adequate 
+levels of protection -- the many mutations of public code can be endless. 
+This is a growing trend on the Internet today, where there are "how to 
+hack" sites popping up with everything from how to build denial of service 
+attacks to stolen digital certificates from respected software companies. 
+The most recent well-known attack using exploited public code was the 
+Pentagon "teardrop" attack. 
+  
+Throughout the last 10 days, many well-publicized security holes in 
+Microsoft environments, Netscape and Eudora mail have been brought to 
+light. Many of these problems are made more serious when combined with 
+mobile code payloads. Buffer overflow problems are only really serious if 
+the code delivered in the payload does something nasty. The upshot is that 
+mobile code can be used to successfully attack and compromise many popular 
+computing environments. Pervasive mobile code systems, especially 
+JavaScript and ActiveX, make exploitation of subtle security holes much easier. 
+  
+Dr. Gary McGraw, co-author of the forthcoming book, "Securing Java: 
+Getting down to business with mobile code," and Vice President of Reliable 
+Software Technologies, http://www.rstcorp.com, offers this perspective: 
+  
+"Mobile code poses a real threat to any computing environment. One way to 
+lessen your security exposure is to manage mobile code extremely 
+carefully. New features in Java can help you do this when used wisely. 
+Bringing this point even closer to home is the fact that the hacker tool 
+called Back Orifice, which completely compromises Windows platforms, can 
+now be installed using mobile code."
+
+Back Orifice Applet Delivery Details: 
+    1. Although this is a demonstration only, this applet's technique can 
+       very easily be revised by others with malicious intent to incur 
+       significant damage to your computers and environment. 
+    2. The applet is signed and "trusted" with a digital signature, yet 
+       it can still do damage. While digital signatures are an important 
+       part of your security model, most security breaches are 
+       nonetheless still carried out by trusted sources. Plus, fraudulent 
+       digital signature certificates are already easily available from 
+       several hacker sites. Security solutions that rely on digital 
+       signature checking alone will not be effective against this applet 
+       injecting Back Orifice, or against other versions of this attack. 
+    3. Those of you with Finjan mobile code security in place are 
+       protected in this case. SurfinShield and SurfinGate solutions 
+       block this type of applet.
+
+We will continue to update our customers and partners about additional 
+malicious mobile code. Please be sure to check Finjan's Web site for the 
+latest information on security breaches. To reduce chances of applet 
+proliferation, we are not including a link to the applet at this time. For 
+further information on the nature of Back Orifice in general, please see
+
+http://slashdot.org/features/980730/0928237_F.shtml 
+================================================================== 
+ *** Trojan Horses 
+================================================================== 
+From: Bios <klougee@forcomm.net>
+
+Well, to me you guys are late on info about trojan horses.  I know of 3 
+(4 including BO) trojan horses that are all over IRC.
+
+1. EvilFTP, this trojan is pretty good.  I know, I am the one that brought 
+it to IRC. When the program which provides the back door is run (the progam 
+that provides the back door acts like a FTP server),  then anyone can 
+connect and upload, download etc. 
+2. Hackers Pardise, this trojan works like evilFTP but does not act like a 
+FTP server.  In fact this trojan works just like BO but does not have as 
+many options. 
+3. Masters Pardise, this trojan works just like Hackers Pardise and BO but 
+has less options than BO.
+
+Well, just maybe the author got the idea of making BO from evilFTP, 
+Hackers Pardise or Masters Pardise.  Many many so called "lamerz" on IRC 
+want these program and thats why I regret bringing evilFTP to IRC.  Well 
+thats all, thank you.
+
+BiosCrash 
+================================================================== 
+ *** CCMaker File on the Net 
+================================================================== 
+From: lovespirit2@juno.com
+
+========================================================= 
+Ccmaker.exe posted on Newsgroups: Beware!!! This file does some wicked stuff! 
+=========================================================
+
+In July, some cracker or someone who wanted to be mean, posted a file 
+called Credit Card maker; it is ccmaker.exe and is 24 KB in size.  If 
+you run it, it begins a time bomb countdown threatening to erase your 
+hard drive.  I did it, but shut off the computer and scanned the entire 
+HD.  I was lucky, but don't really know if this program will truly erase 
+the entire HD or destroy your computer.  Email me privately for a copy of 
+the gizmo, they thought was funny.
+
+Opening a text editor on it reveals some fascinating stuff.
+
+lovespirit2@juno.com
+
+[Dale: It *probably* is nothing more than a joke - run it on a machine 
+that has nothing on it and watch it run to completion... I've never seen it 
+myself, but that is my guess.]
+
+================================================================= 
+ *** NetBus 
+================================================================= 
+From: anonymous
+
+Another tool which came out concurrently and with similar functionality 
+to Back Orifice is called NetBus. It runs on Windows NT, unlike 
+Back Orifice, so is of concern to Windows NT administrators. NetBus 
+functions in much the same way as Back Orifice in that it is a 
+client-server program. The server portion is installed on the 
+victim's computer, and the client can then "control" the server. 
+Understand that this is a back door tool, and thus can't be used 
+to attack NT hosts right up front. Like Back Orifice, it must be 
+installed once someone has access to NT. It's probably more dangerous 
+overall than Back Orifice because the latter gives access only to 
+lower-end systems (Windows 9x systems) with more limited execution environments.
+
+NetBus has the following characteristics: 
+* Size is about 500k (vs 128K for Back Orifice) 
+* Hides itself as "SysEdit" in the process table 
+* Installs a DLL called KeyHook.dll 
+* Has command line switch to SysEdit that will modify registry to run 
+  it each time the system starts 
+* Can scan IP-numbers for computers running NetBus.
+
+[Dale: Net bus can be found at: 
+http://members.spree.com/NetBus/index.html]
+
+================================================================== 
+ *** IRC program question 
+================================================================== 
+From: Raymond Cline <Rodan2@erols.com>
+
+I have a question. I use IRC via MIRC 5.4 and while online the other 
+night in a chatroom, I was having a private conversation with another 
+person from the channel. I know nothing is private in IRC, but we were 
+talking about this guy who was online in the chatroom. He was not aware 
+of the conversation we were having about him, (or so I thought) till he 
+messaged me VIA DCC and asked me if I wanted to know anything about him 
+I should ask him directly. He told me he knew that I was in private chat 
+with this other person and he was watching us type about him?? What I 
+want to know is this guy full of B.S. or can he really do this?? He even 
+told me ver-batim what we were saying.. I was just so stunned.... and 
+embarrased to.. So I told him I was sorry and directed my questions to 
+him directly. The person I was talking to told me he was just guessing? 
+But not if he told me exactally what I was typing. I would appreciate 
+your input here.
+
+ron 
+================================================================== 
+ *** Windows telnet question 
+================================================================== 
+From: Batman <dabatman@yahoo.com>
+
+I was reading the HH email discussions and it said send Win ?'s to 
+you. So here goes:
+
+When I telnet to my ISP's port 22, i get this:
+
+SSH-1.5-1.2.20
+
+I'm sure it has something to with secure shell but anything I try to type 
+in always gives the message:
+
+Protocol mismatch.
+
+and then it disconnects.
+
+I would really appreciate any help you can provide.
+
+Batman **(^)**
+
+[Carolyn:  That is secure shell, a program that provides an encrypted 
+version of telnet.  I use Secure Shell religiously, with a program I got 
+from http://www.datafellows.com.]
+
+================================================================= 
+ *** Re Mac Question 
+================================================================= 
+From: <ZehrWang@aol.com>
+
+Re Mac Question:In responce to the mac question,
+
+Its very easy to make files not seen on your computer. Get the freeware 
+program called ResEdit, then open it up goto the file menu then there's a 
+thing like file prefs. Open that up and click on File Invisable button. If 
+someone did a find for it they would pick it up, so don't name it like 
+"MYPASSWORDDONTLOOK" or something.... 
+------------------------------------------ 
+From: Strider <Strider@baka.com>
+
+Caleb, 
+There are a number of utilities that will do the job- Resedit, The Cloak, 
+and even MacPERL will do it for you. Each has a number of uses, but if you 
+_only_ want to make files invisible, The Cloak is what you'll want to use.
+
+It's available at <ftp://ftp.euro.net/Mac/info-mac/disk/cloak-10.hqx>.
+
+- strider 
+------------------------------------------ 
+From: Evil Ninja Taoist <mulder@ntplx.net>
+
+Invisible folders, like most other things, are easy to do on a 
+Macintosh. My recommendation is do it the easy way; do a net search and 
+find Big Secret, a nifty little Invisible files application...It'll let you 
+create invisible folders and invisible specific files, it's password 
+protected, and no one should be the wiser. Try selecting the app, going 
+into get info, and changing it's icon into a word file or something really 
+generic and entitling it "English #1" or something stupid like that; no one 
+will even know it's there.
+
+Evil ninja Taoist - Daniel Barrett 
+mulder@ntplx.net 
+IRC: Masao-kun 
+AOL IM: Masao Kun 
+http://www.ntplx.net/~bbarrett/welcome.html 
+------------------------------------------ 
+From: Dragon John <wizard@bga.com>
+
+The most universal way of doing this would be to get the file's info using 
+ResEdit (available from apple for free).  Then check the 'invisible' box. 
+That's it.  You won't be able to access the file from the desktop anymore, 
+until you unset the invisible flag.
+
+John--John Onorato 
+I speak only for myself. 
+PGP 5.0 RSA fingerprint:  1FCA 9EA3 9992 01B6  E7FE 2FA0 39BD 800C 
+PGP 5.0 DSS fingerprint:  9717 FB63 7664 7656 1F13  F881 79F2 8FB9 8E06 2522 
+------------------------------------------ 
+From: "QuikSilver" <quiksilr@ComCAT.COM>
+
+In reply to the question about making files/folders invisible on a mac there 
+are many ways to go about doing this but I found the best way is to use a 
+program called DiskTop.  It is very small but really lets a serious mac user 
+take control over his system.  Do a search for Disktop to find it.  It is 
+made by PrairieSoft Inc.  If you do any mac hacking you probably use 
+ResEdit.  You can also make files hidden using that.  Hope this helped.
+
+QuikSilver 
+------------------------------------------ 
+From: Somnambulist <kunst@hooked.net>
+
+Caleb,
+
+In order to do this, you will need one of the most essential pieces of 
+software any Mac owner can have.
+
+ftp://ftp.apple.com/Apple_Support_Area/Apple_Software_Updates/US/Macintosh/U 
+tilities/ResEdit_2.1.3.sea.bin
+
+From ResEdit's file menu select Get File/Folder Info, and then search for 
+the folder containing the dirty .jpegs that you want to hide. In the "Info 
+for..." box that comes up, click the check box next to invisible.
+
+Undoing it is just as simple, you just uncheck the box next to 
+invisible :)
+
+You could also use Snitch to do the same thing, but using ResEdit is more 
+respectable. You will need to use Apple-F to access the files within that 
+folder.
+
+ResEdit URLs: 
+http://av.yahoo.com/bin/query?p=ResEdit
+
+(I know that's cheap, but I need to go home now.) 
+------------------------------------------ 
+From: Anthony Tobias Teel <bigtoe@hardlink.com>
+
+To make files invisible on a mac, you must get an attribute editor for the 
+mac.  ResEdit has one built in.  You can get it from ftp.apple.com.  Also 
+if you have Norton utilities, the fast find utility also has an attribute 
+editor. This is will also help you in correcting the owners of files (what 
+programs open them) and their file types. 
+  
+I must also warn you that hiding files is a pain on a mac.  In order to 
+unhide them you have to run resedit, or another attribute editor, making 
+it a pain.  On the pc, it's easy to work with hidden directories, on a mac 
+it's significantly more difficult.
+
+If you want to, a great way to make your files hidden is to make disk 
+images of them.  They're easy to access, they're on your hard drive, and 
+the disk copy application you need to do this is free (also from 
+apple.com).  I believe you can password protect them too.  You could 
+probably do this with stuffit archives, but disk images are easier to work 
+with in my opinion.
+
+Ahh well.
+
+--Horrorshow 
+------------------------------------------ 
+[Dale: How's that for an answer!!!??? :) ] 
+================================================================== 
+ *** Editorial - Too Lame??? 
+================================================================== 
+From: Dale Holmes <editor@techbroker.com>
+
+Several people write me each week complaining that the Happy Hacker Digest 
+is too lame. They say that the technical level of the articles in the HHD is 
+so low that the Digest is of little use to them. I thought seriously about 
+it, and decided that - to a certain extent, they are right.
+
+Many of the articles in the HHD cater to the hacking newbie. Given that, it 
+is logical that the articles would then be relatively simple to someone who 
+has vast technical knowledge and experience. Many of these articles in one 
+place could make a publication dull or of little use to a long time hacker.
+
+SO WHAT!!! There are many, many newbie hackers out there - and they need 
+help. They need a place where they can learn without being chastised because 
+they are new and don't already know everything. The HHD is a place for them. 
+If a person does not find the information useful - there is no obligation 
+for them to continue to subscribe.
+
+And another thing - the articles in the HHD are submitted by it's readers. 
+If you consider yourself technically proficient in an area that is not being 
+addressed by the digest, write an article and send it in! I will be glad to 
+print it. Remember, though, that many of the readers will still be looking 
+for articles that are easier for them to understand, and those articles will 
+continue to get printed.
+
+I personally would love to see the HHD running a whole range of articles at 
+various levels of technical difficulty. This would help to provide some 
+growth for long time readers. I'd like the HHD to be a useful publication 
+for newbies and experts, and everyone in between, but it is not up to me... 
+It is the readers that make this publication what it is.
+
+If you write to me complaining that the publication is too lame, you only 
+have yourself to blame for not contributing an article that you feel is 
+worthwhile. If you are lurking out there, reading every issue and not 
+submitting any articles, don't complain if you don't see what you want - 
+write something up and send it in, and encourage your peers to do the same. 
+I'm waiting... 
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net> 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

@@ -1,0 +1,549 @@
+Aug. 10, 1998
+
+===================================================================== 
+===================================================================== 
+URL of the day: http://www.rsa.com/standards/  Info on Encryption standards. 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS 
+**This week's posts** 
+* NT Local GetAdmin Exploit 
+* NT registry default settings recovery 
+* Re: Part 1, The Magical Mystical Crypto-Primer 
+* How to fix ICQ trojan horse 
+* Start Button and Recycle Bin 
+* Visual DialogScript 
+* Linux CD's for Cheap 
+* Empty the bin from Anywhere 
+* Angelfire problem/exploit 
+* How to find and get rid of Back Orifice
+
+**This week's Questions** 
+* Mac question
+
+**Answers to last weeks Questions** 
+* In reply to the question about .au domains in whois servers 
+* Answer to Reg file Question from GTMHH
+
+================================================================== 
+ *** NT Local GetAdmin Exploit 
+================================================================== 
+From: MJE <mark@NTSHOP.NET>
+
+July 27, 1998, (NTSD) - Three gentlemen from India have been kind enough to 
+reveal to The NT Shop (http://www.ntshop.net or http://www.ntsecurity.net) a 
+serious hole in Windows NT systems (any version of Workstation or Server) 
+that readily grants the user complete membership to the Administrators group.
+
+According to the discovers, this exploit works against all versions of 
+WinNT, including WinNT 5.0 betas, and may also be possible against a domain 
+controllers in certain circumstances -- this is yet unconfirmed and 
+un-demonstrated as far as I know. Their sample program, SECHOLE.EXE, only 
+exploits the *LOCAL* user database.
+
+THE EXPLOIT, IN A NUTSHELL: by using existing Windows NT services, an 
+application can locate a certain API call in memory, modify the instructions 
+in a running instance, and gain debug-level access to the system, where it 
+then grants the currently logged-in user complete membership to the 
+Administrators group in the local user database.
+
+The NT Shop has reported this problem to Microsoft -- we've been in close 
+contact with their security folks since last week, and are told a fix is 
+ready -- I suspect they'll release a bulletin in the next 24 hours.
+
+For more information on the problem, as well as a brief interview with the 
+discovers and a working copy of the program demonstrating this serious 
+problem, visit our Web site where you'll find the page link at the top of 
+the list in the left window frame.
+
+Mark 
+http://www.ntsecurity.net or http://www.ntshop.net 
+=================================================================== 
+ *** NT registry default settings recovery 
+=================================================================== 
+From: "Dennis Hettema" <movingtheworld@hotmail.com>
+
+Hi all,
+
+The following is not really hacking or stuph but it is a bit of an 
+alca-selzer for registry probs with an NT server.
+
+One of the things I really like to do is play around with the registry, 
+but if your doing this too much you might (almost certainly will) get all 
+kinds of error message's and in other words you went a step to far.
+
+Usually you'll have backups of the registry before you start messing 
+around in it, but if you sort of forgot to do this, try the following:
+
+On the NT server in the 
+HKEY_LOCAL_MACHINE\system\CurrentControlSet\Services\LanmanServer\Parameters 
+key remove all the values except:
+
+- EnableSharedNetDrivers 
+- LMAnnounce 
+- NULLSessionsPipes 
+- NULLSessionsShares 
+- Size
+
+When you restart NT it will automatically reconfigure all the server 
+stuff and optimize it with Microsoft's parameters.
+
+[Dale - This key affects the Server service. If you mess with other keys 
+you had better have a backup of your Registry...] 
+================================================================== 
+ *** Re: Part 1, The Magical Mystical Crypto-Primer 
+================================================================== 
+From: "Panko" <panko@eznet.net>
+
+> ~~~~~~~~~~~~~~~~~~~~~~~~ Head Exercise ~~~~~~~~~~~~~~~~~~~~~~~~ 
+> You can brute force a key of two digits in your head.  Get a friend to 
+>think of a two-digit number, and not tell you.  Easy to guess, right? There 
+>are only 99 numbers it could possibly be, so you count down the list 'til 
+>you guess the right one.
+
+No.  There are 100 numbers it could be.  You have counted 01 through 99. 
+You have forgotten poor little 00.  00 counts too. 
+I hope you're not one of those people who think the next millenium begins 
+in the year 2000.  There was no year 0, but there was a year 1.
+
+-kevin 
+================================================================== 
+ *** How to fix ICQ trojan horse 
+================================================================== 
+From: Shaka <edouglas@bonwell.com>
+
+Useful info for subscribers of the Happy Hackers Digest and ICQ users 
+especially:
+
+The ICQ trojan horse (the one I have is called ICQ_SRV) adds itself as a key 
+into 
+your registry. I ran a virus scanner which did not detect it, but found out how 
+toget rid of it. To check if you have it and/or fix it, do the following:
+
+Open REGEDIT. 
+Go to HKEY_LOCAL_MACHINE. 
+Go to SOFTWARE. 
+Go to MICROSOFT. 
+Go to Windows. 
+Go to Current Version.
+
+In the RunServices "folder", there will be a key called "Explorer". This key 
+should NOT normally be there! If you find it, note the folder, and if it is an 
+ICQ\Received Files folder ESPECIALLY, delete the key and restart.
+
+Your computer should function normally, and you have defeated the trojan horse.
+
+Feel free to email me if this is somehow incorrect.
+
+--Shaka-- aka Corky6921 or Corky 
+================================================================== 
+ *** Start Button and Recycle Bin 
+================================================================== 
+From: "..." <erlank@intekom.co.za>
+
+Hey there man!
+
+First of all, I'd just like to tell the ppl out there how to change 
+their Recycle Bin, using their Registry (and yes, I do make backups of 
+my files, :) ) To change the text label, just search for the text string 
+"Recycle Bin" in regedit and change it. Then to change the default, 
+empty and full icons for the bin, click on the Recycle Bin's Default 
+icon key. Then change the icon in that setting. At the moment, its 
+shell32, 31 (that 31 is the number icon in the shell file). I changed 
+the 31 to 41, which is a tree!
+
+OK then, I already know how to change the text on the Start Button in 
+explorer.exe, but I would just like to know if there is a way in the 
+registry or in the explorer.exe file to remove or make invisible the 
+Start Button ??
+
+Thanks for running a brilliant digest!! 
+cheers 
+Tazzz 
+================================================================== 
+ *** Visual DialogScript 
+================================================================== 
+From: joby07@juno.com
+
+I want to tell you of this excellent programming language a friend found. 
+It is called Visual DialogScript. It is like Visual Basic but it fits 
+on one disk!!!
+
+I dont know the URL for this program, but the company's name is JM Technical. 
+I found this program excellent and entertaining.
+
+[Dale: The url is http://www.vds.sade.net/index.htm]
+
+You don't need programming experience although a little bit of BASIC would help.
+
+The help feature is excellent with tutorials and tons of sample code. 
+There is a 16-bit and 32-bit version. I have the registration code, if anyone 
+would like it please email me.
+
+I have written 2 programs already!! Without any teachers help; and a friend 
+wrote a program that will check ur Juno mail automatically!!
+
+Although, there is one minor problem. Whenver you compile 
+your program, you MUST include a file called dsrun.exe (which 
+can be found w/ the download) for the compiled file to run properly.
+
+'Later 
+Joby G.
+
+================================================================== 
+ *** Linux CD's for Cheap 
+================================================================== 
+From: mit6@Lehigh.EDU
+
+A quick note for all who keep making excuses instead of getting Linux up and 
+running... NO MORE EXCUSES! :)
+
+If all that downloading has got ya in a quiver, check out 
+http://www.linuxmall.com/ to get any of the popular releases you 
+like, on a handy-dandy CD, for a whopping $1.49. And if you just can't decide 
+which release you like, heck, order 6 of the most popular releases for 10 
+bucks! If you are worried about doing some damage to your new 20 bazilion gig 
+HD, check out the computer section at http://www.ebay.com/computers/ .
+
+I just picked up a used 640 meg hard drive (plenty big for Linux) for 37 bucks. 
+And finally, if you really want to go all out (like I had to), do not be 
+afraid to 
+spend the 45 dollars on "Linux Unleashed" by Sams Publishing. I had seen it 
+mentioned in past Digests, and I can't begin to tell you how worthwhile it has 
+been to pick up. If an 'eternal newbie' like myself can do it, I'm sure 
+most of you can, and better than myself. Then, let the fun begin! (Legal fun, 
+of course...:)
+
+Keep on keepin' on 
+-DJMT
+
+P.S.- I've been getting the Digest almost since it started, and it is 
+consistantly 
+the most worthwhile piece of e-mail I read. Thanks for the great service! 
+================================================================= 
+ *** Empty the bin from Anywhere 
+================================================================= 
+From: Chin Yau <acmy1998@yahoo.com>
+
+Ever wish to empty your Recycle Bin everywhere by just right-clicking 
+on any icon? Cool huh? Here is the way to do it.
+
+Start Windows Registry editor by running regedit.exe. Navigate down 
+until we reach the location (which is the first on most machines) : 
+  
+HKEY_CLASSES_ROOTS\*\shellex\ContextMenuHandlers
+
+Next, right-click the ContextMenuHandlers folder and choose New, 
+Key. When the new folder appears, type the following:
+
+{645FF040-5081-101B-9F08-00AA002F954E}
+
+Press Enter.
+
+Note :- All "0" are the number 0 not the letter O.
+
+After that, exit the Windows registry editor. Now when you right-click on 
+any file, you will have the option to empty the recycle bin. 
+================================================================= 
+ *** Angelfire problem/exploit 
+================================================================= 
+From: "un none" <fr33ck3r@hotmail.com>
+
+I am not sure if this exploit has already been discovered but I felt 
+that this should be known. In anglefire after you log in you are taken 
+to a screen where you can choose what page to edit, delete, ect...
+
+Well, if you view the document source it tells the full login and password.
+
+Now you say but how can I get this source.  Well contact the page owner 
+using icq, aim, mirc, or email and tell them that there page might be 
+hackable.  Tell them to give you that screens source code and you will 
+tell them if it is vulnerable.  If you are trying to hack some elite 
+hacking groups sight there is no chance this will work but I tried this 
+on many people and only one knew the password was there (and all the 
+people I tested it on claimed to be elite hackers), and all but two gave 
+me the source.  Now if you have the source these are the lines you want to 
+look for:  (Depending on there ad etc... the 
+source is shorter or longer so it isn't on a specific line)
+
+<input type="hidden" name="storage"  value="pa"> 
+<input type="hidden" name="hpd"      value="hackersight"> 
+<input type="hidden" name="password" value="elitepass">
+
+The first line is the state they say they live in (note:its in the sight 
+url) the second is the rest of the login and the third is the password. 
+  
+-This was sent by \\//\\//rath 
+ps- if you get busted don't blame me 
+================================================================= 
+ *** How to find and get rid rid of Back Orifice 
+================================================================= 
+From: James Strompolis <jimst@enteract.com>
+
+Though not specific to NT security there has been much talk about Back Orifice 
+lately.  I've played around with it a bit and here is a way to find it and get 
+rid of it.
+
+Default installation: 
+Installs a 122k - 123k file called " .exe" in c:\windows\system with a modified 
+date of 7/11/95.
+
+Changes HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\Default from 
+blank to " .exe".
+
+Transmits data on UDP Port 31337 - it's in the readme.
+
+An attacker can modify these defaults to be anything they like but if you check 
+the registry entries under
+
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices
+
+and find one you are not familiar with (not the task scheduler, not a virus 
+scanner, 
+etc) that runs a 122k - 123k file (does not have to be an exe) from your 
+c:\windows\system folder, it might be worth investigating further.  The file 
+could probably be padded to be a different size or the code could be 
+modified to 
+mutate its size to help hide it.  There was some speculation in some of the 
+media 
+reports that a virus detection program might be able to detect the program 
+in action. 
+Network Associates McAfee Virus Scan did not set off any alarms.  Maybe 
+another virus 
+scanner will view the program's actions as suspicious?
+
+Unless there are hidden "features" (still letting it run behind a firewall 
+logging all traffic on the Back Orifice machine as a test to see if there is 
+more to it) it is just a useful remote admin tool in a semi-GUI box that can be 
+custom packaged to take advantage of existing Win9x security flaws.
+
+Let me know if you've found more.
+
+James Strompolis 
+Aleph Consultants, Inc. 
+jimst@enteract.com 
+_________________________________________________________________________ 
+From: X-Force <xforce@ISS.NET>
+
+ISS Security Alert AdvisoryAugust 6th, 1998
+
+Cult of the Dead Cow Back Orifice Backdoor
+
+Synopsis:
+
+A hacker group known as the Cult of the Dead Cow has released a Windows 
+95/98 backdoor named 'Back Orifice' (BO).  Once installed this backdoor 
+allows unauthorized users to execute privileged operations on the affected 
+machine. Back Orifice leaves evidence of its existence and can be detected and 
+removed.  The communications protocol and encryption used by this backdoor 
+has been broken by ISS X-Force.
+
+Description:
+
+A backdoor is a program that is designed to hide itself inside a target 
+host in order to allow the installing user access to the system at a later 
+time without using normal authorization or vulnerability exploitation.
+
+Functionality:
+
+The BO program is a backdoor designed for Windows 95/98. Once installed it 
+allows anyone who knows the listening port number and BO password to 
+remotely control the host.  Intruders access the BO server using either a 
+text or graphics based client.  The server allows intruders to execute 
+commands, list files, start silent services, share directories, upload and 
+download files, manipulate the registry, kill processes, list processes, as 
+well as other options.
+
+Encrypted Communications:
+
+All communications between backdoor client and the server use the User 
+Datagram Protocol (UDP).  All data sent between the client and server is 
+encrypted, however it is trivial to decrypt the data sent. X-Force has been 
+able to decrypt BO client requests without knowing the password and use the 
+gathered data to generate a password that will work on the BO server. 
+The way that BO encrypts its packets is to generate a 2 byte hash from the 
+password, and use the hash as the encryption key. The first 8 bytes of all 
+client request packets use the same string: "*!*QWTY?", thus it is very 
+easy to brute force the entire 64k key space of the password hash and 
+compare the result to the expected string. Once you know the correct hash 
+value that will decrypt packets, it is possible to start generating and 
+hashing random passwords to find a password that will work on the BO 
+server. In our tests in the X-Force lab, this entire process takes only a 
+few seconds, at most, on a Pentium-133 machine. With our tools we have been 
+able to capture a BO request packet, find a password that will work on the 
+BO server, and get the BO server to send a dialog message to warn the 
+administrator and kill its own process.
+
+Determining if BO has been installed on your machine:
+
+The BO server will do several things as it installs itself on a target host: 
+* Install a copy of the BO server in the system directory 
+(c:\windows\system) either as " .exe" or a user specified file name. 
+* Create a registry key under 
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices 
+with the file name of the server file name and a description field of 
+either "(Default)" or a user specified description. 
+* The server will begin listening on UDP port 31337, or a UDP port 
+specified by the installer.  You can configure RealSecure to monitor for 
+network traffic on the default UDP 31337 port for possible warning signs.
+
+In order to determine if you are vulnerable: 
+1. Start the regedit program (c:\windows\regedit.exe). 
+2. Access the key 
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices. 
+Look for any services that may not have been intentionally installed on the 
+machine.  If the length of one of these file is close to 124,928 (give or 
+take 30 bytes) then it is probably BO.
+
+Recommended action:
+
+BO can be removed by deleting the server and removing its registry entry. 
+If possible, you should back up all user data, format your hard drive, and 
+reinstall all operating systems and software on the infected machine. 
+However, if someone has installed BO on your machine, then it is most likely 
+part of a larger security breach.  You should react according to your site 
+security policy.
+
+Determining the password and configuration of an installed BO:
+
+1. Using a text editor like notepad, view the server exe file. 
+2. If the last line of the file is '8 8$8(8,8084888<8@8D8H8L8P8T8X8\8'8d8h8l8', 
+then the server is using the default configuration.  Otherwise, the 
+configuration will be the last several lines of this file, in this order: 
+<filename><service description><port number><password> 
+<optional plugin information>
+
+Conclusion:
+
+Back Orifice provides an easy method for intruders to install a backdoor on 
+a compromised machine.  Back Orifice's authentication and encryption is 
+weak, therefore an administrator can determine what activities and 
+information is being sent via BO.  Back Orifice can be detected and 
+removed.  This backdoor only works on Windows 95 and Windows 98 for now 
+and not currently on Windows NT.
+
+----------
+
+© (c) 1998 by Internet Security Systems, Inc. 
+Permission is hereby granted for the redistribution of this alert 
+electronically.  It is not to be edited in any way without express consent 
+of X-Force.  If you wish to reprint the whole or any part of this alert in 
+any other medium excluding electronic medium, please e-mail xforce@iss.net 
+for permission.
+
+Disclaimer 
+The information within this paper may change without notice. Use of this 
+information constitutes acceptance for use in an AS IS condition. There are 
+NO warranties with regard to this information. In no event shall the author 
+be liable for any damages whatsoever arising out of or in connection with 
+the use or spread of this information. Any use of this information is at 
+the user's own risk.
+
+X-Force PGP Key available at:   http://www.iss.net/xforce/sensitive.html as 
+well as on MIT's PGP key server and PGP.com's key server.
+
+X-Force Vulnerability and Threat Database: http://www.iss.net/xforce
+
+Please send suggestions, updates, and comments to: 
+X-Force <xforce@iss.net> of Internet Security Systems, Inc. 
+_________________________________________________________________ 
+From: Defiant <defiant@CYBERDEFIANT.DEMON.CO.UK>
+
+A program called toilet paper has been released to remove Back Orifice. 
+Its installed and searches for the program at start up. You can download 
+it from www.sinnerz.com/tp.html or in the new files section of 
+www.genocide2600.com/~tattooman, hope it helps you all remove it after 
+experimentation.
+
+                   Defiant, 
+        defiant@cyberdefiant.demon.co.uk 
+         www.cyberdefiant.demon.co.uk 
+   -Life is just a dream on the way to death- 
+___________________________________________________________________ 
+From: Ken Williams <jkwilli2@UNITY.NCSU.EDU>
+
+Hi,
+
+Fresh Software <http://www.arez.com/fs/> has released a utility 
+called AntiGen 1.0 that "detects, cleans, and destroys the Back Orifice 
+trojan.  It checks the severity of the BOserve infection and cleans each 
+of them - automatically, in a wizard interface."
+
+It can be downloaded from Fresh Software at:http://www.arez.com/fs/antigen10.zip 
+I have provided a backup download location at:
+
+Details:  http://www.genocide2600.com/~tattooman/new.shtml 
+Software: http://www.genocide2600.com/~tattooman/new-uploads/antigen10.zip
+
+File Size:  189k
+
+Regards, 
+Ken Williams
+
+Packet Storm Security   http://www.Genocide2600.com/~tattooman/index.shtml 
+VP of E.H.A.P. Corp.    http://www.ehap.org/  ehap@ehap.org, tattoo@ehap.org 
+NC State Comp Sci Dept  http://www.csc.ncsu.edu/ jkwilli2@adm.csc.ncsu.edu 
+PGP DSS & RSA Keys:     http://www.genocide2600.com/cgi-bin/finger?tattooman 
+================================================================== 
+ *** Mac question 
+================================================================== 
+From: KMHCERBaker <baker@somtel.com>
+
+Dear Carolyn,
+
+The only thing that I need to know now about hacking on a mac is: 
+How do I make files and folders invisible on my power mac?
+
+Caleb Baker 
+================================================================== 
+ *** In reply to the question about .au domains in whois servers 
+================================================================== 
+From: DungBeetle <dungbeetle4life@yahoo.com>
+
+The whois servers for locations around the globe are:
+
+American Registry for Internet Numbers - whois.arin.net 
+Server for European locations: whois.ripe.net 
+Server for Asia Pacific locations: whois.apnic.netFor US Military: whois.nic.mil 
+For US Government: whois.nic.gov 
+For US non-military and non-gov: whois.internic.net NOTE!!! Whois.internic.net doesn't work the way this Digest says any more. Instead, click here to learn the new way to use it.
+
+For the server on Australian locations use the Asia pacific one. 
+And if you don't want to use whois.internic.net, you can users.internic.net 
+Pratically the same, and I don't know any different. Probably owned by 
+different companies, but I couldn't care less. 
+================================================================== 
+ *** Answer to Reg file Question from GTMHH 
+================================================================== 
+From: MadMan <madman593@yahoo.com>
+
+A while ago Randy Hunt had a question about saving his newly edited 
+.reg files.  He said that he edited it in Wordpad and that if it was 
+saved, all formatting would be lost.  You can fix this easily by 
+editing the *.reg file in Notepad instead of Wordpad.  You can also 
+rename it in Windows Explorer, File Manager, or DOS.
+
+Hope this helps.
+
+]v[ad]v[an
+
+__________________________________________________________________ 
+
+  Unsubscribe with message 
+ "unsubscribe hh".
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net> or 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com> 
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

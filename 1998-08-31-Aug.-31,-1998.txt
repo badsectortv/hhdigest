@@ -1,0 +1,470 @@
+Aug. 31, 1998
+
+===================================================================== 
+===================================================================== 
+URL of the day: http://thor.prohosting.com/~sp3cialk/text/unix.txt Intro to 
+basic Unix commands 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS 
+**This week's posts** 
+* What is "elite"? 
+* Online BO installer 
+* Re: The Magical Mystical Crypto-Primer 
+* Back Orifice, and PGP (2 topics, not related) 
+* Hacking Lessons On-Line 
+* How to download Real Audio files 
+* Another BO detector that is actually a trojan 
+* Re: GTMHH: Part 2 of War Tools! 
+* Juno gold 
+* PhreakNIC v2.0
+
+**This week's Questions** 
+* Virii question
+
+**Answers to previous Questions** 
+* IRC answer
+
+**Editorial - InfoWarCon 98 coming up!** 
+================================================================== 
+ *** What is "elite"? 
+================================================================== 
+From: keydet89 <keydet89@yahoo.com>
+
+I have an answer to the question...what is "elite"? 
+In English:  elite 
+In "haxor":  31337 
+In binary :  0111101001101001 
+In Hex    :  7A69
+
+Maybe I should get a black t-shirt with '7A69' 
+printed in big, white letters on the back... 
+=================================================================== 
+ *** Online BO installer 
+=================================================================== 
+From: gabe@tether.com
+
+Hi, Carolyn
+
+The applet that installs BO online is at: 
+http://www.withinreach.co.il/Hostiles/BackOrificeIntro.html
+
+Just thought you'd be interested if you didn't already know... ;)
+
+Thanks for the HHD! Keep up the good work - nice to see a TRUE hacker - Keep 
+sharing! Seeya!
+
+Gabriel B. 
+================================================================== 
+ *** Re: The Magical Mystical Crypto-Primer 
+================================================================== 
+From: David Jackson <thejoker@earthling.net>
+
+Hi all,In regards to "Part 2, The Magical Mystical Crypto-Primer", another 
+good program for browser encryption is Safe Passage Web Proxy.  It is 
+available at:
+
+http://www.int.c2.net/safepassage/
+
+It needs a bit of work to set it up, but once it is working, it is fine. 
+It offers a wide range of ciphers that can be used, including DES-CBC3-MD5 
+(is the most secure cipher available), RC4-MD5 (the most widely supported 
+cipher type), EXP-RC4-MD5 (the most commonly supported cipher among 
+export-crippled servers), and EXP-RC2-CBC-MD5 (sometimes supported by 
+export-crippled servers).  There are around fifteen other (weaker) ciphers 
+that can also be used.
+
+This is available for Win3.1/95/NT (not yet for Mac) and has an 
+unrestricted (I think  :) ) evaluation copy.
+
+There is also another page like https://www.fortify.net/sslcheck.html for 
+checking how secure your connection is.  It is:
+
+https://www.ukweb.com/
+
+Seeya,
+
+David Jackson  d.a.jackson@usa.net 
+"Some mistakes are too much fun to only make once!" 
+================================================================== 
+ *** Back Orifice, and PGP (2 topics, not related) 
+================================================================== 
+From: Hidden Access <user@email.com>
+
+Back Orifice========= 
+I've just had a curious (unpleasant <:(  ) experience. While more or less 
+innocently surfing the net, I couldn't help but notice that my computer 
+rebooted 3 times. Without my permission! I also found a rude message on my 
+desktop (Win 95). I did a 'netstat -a' and discovered that I had left the 
+server program for Back Orifice (BO)running after testing it. This left the 
+31337 port open for attack. I promptly removed BO (and the rude message). 
+Follow this link to safety:
+
+Software: http://www.genocide2600.com/~tattooman/new-uploads/antigen10.zip
+
+Moral: Don't leave BO running on your own box! and regularly use 'netstat 
+-a' to make sure no one else has either!
+
+PGP=== 
+I also found an interesting and frustrating limitation to PGP. After 
+encrypting one of my hard drives, I discovered that I could't decrypt it 
+because my system didn't have enough RAM to allow it (file size = 253.5 MB; 
+RAM = 64 MB). Since I had deleted the source info for the encryption, I 
+_was_ trapped!! This is no excuse not to encrypt, just be careful.
+
+Moral: Do not delete source info until you are sure you can fully decrypt it!!
+
+"While experience is a great teacher, someone else's experience is a safer 
+one!" - Me
+
+Hidden Access 
+================================================================== 
+ *** Hacking Lessons On-Line 
+================================================================== 
+From: UQ Mail <Anonymous>
+
+Dear Happy Hacker, 
+I'd like to point out for people the new 'step by step' hacking tutorial now 
+on-line at:
+
+http://hackkerz.home.ml.org
+
+It's still in the process of massive expansion right now, with a lot of 
+hackers sending further chapters for different areas, but until then, it 
+should already lead people through some of the basic ideas about hacking.
+
+Also, some good text files through the tutorial.
+
+Cheers, 
+Anonymous 
+================================================================== 
+ *** How to download Real Audio files 
+================================================================== 
+From: Rahim10@aol.com
+
+Ok, here's something useful- how to download real audio files:
+
+1. save the link as a file (it will have the *.ram extention) 
+2. open the ram file in notepad 
+3. go to the url in the file (it will have a *.ra extention) 
+4. save the ra file and then open it with real player
+
+If you know this trick you probebly think it is too simple to mention in the 
+HHD but many people have asked me how to download real audio files from web 
+pages and many think that it can't be done.
+
+Grephead 
+================================================================= 
+ *** Another BO detector that is actually a trojan 
+================================================================= 
+From: Ken Williams <jkwilli2@UNITY.NCSU.EDU>
+
+Hi,
+
+I recently came across a program called "BoSniffer.zip" that the 
+author claims will "block key points in the registry from BO as well as 
+search for existing installs of the backdoor."
+
+Close examination has revealed that this is actually a BO server 
+with the "SpeakEasy" plugin installed.  If you run "BoSniffer.exe", the 
+BoSniffer executable (read: BO Server Trojan w/ SpeakEasy) will "attempt 
+to log into a predetermined IRC server on channel #BO_OWNED with a random 
+username.  It then proceeds to announce its IP address and a custom 
+message every few minutes."
+
+This program, "BoSniffer.zip" is currently being widely distributed 
+as a "cure for Back Orifice infections".  It is probably being distributed 
+with other software packages and with other names too.  Listed below are 
+relevant details about this program.
+
+File Sizes (in bytes)- 
+--------------------- 
+231068 BoSniffer.exe 
+108573 BoSniffer.zip
+
+MD5 fingerprints and strings (checksums)- 
+---------------------------------------- 
+MD5 (BoSniffer.zip) = 2d75c4ac54b675778ff22f76f9a6a77f 
+MD5 ("string") = b45cffe084dd3d20d928bee85e7b0f21 
+MD5 (BoSniffer.exe) = 63748087b2e1598fcf34498b0295212e 
+MD5 ("string") = b45cffe084dd3d20d928bee85e7b0f21
+
+Evidence that BoSniffer.zip is really BO Server with SpeakEasy Plugin- 
+--------------------------------------------------------------------- 
+sector 0x028C38 
+irc.lightning.net:7000:Hey MASTER where are u!!!
+
+sector 0x0303F0 - sector 0x0306D8 
+BO ButtPlugs and goodies...http://www.netninja.com/bo.html 
+AJ Reznor: The pierced, tattooed grand master god of flame wars! 
+Who is John Galt? 
+Yes, you too can own my box with this special introductory offer of $0.00! 
+I'm sad to see Kontrol Faktory go away.Use Linux! 
+This box is now property of the Illuminati. 
+<<tap>> <<tap>> <<tap>>...Is this thing on? 
+Where do *YOU* want to go today?!
+
+sector 0x031848 
+SpeakEasy.dll
+
+sector 0x0318A8 - sector 0x031980 
+#BO_OWNED with IRC commands: 
+Own Me @ .NOTICE .JOIN #BO_OWNED host server :Owned USERNICK BO 
+.QUIT Psssst...Speakeasy was told to shut down 
+.NOTICE #BO_OWNED :Psssst...Speakeasy just started up
+
+You get the idea by now, hopefully.
+
+Instructions on removing BO Servers from compromised servers can be 
+found at:  http://www.iss.net/xforce/alerts/advise5.html 
+or by searching through the NTBUGTRAQ archives at: 
+http://ntbugtraq.ntadvice.com/archives/
+
+If anyone wants a copy of BoSniffer.zip for further examination, send 
+email to Packet Storm Security at PackStorm@Genocide2600.com
+
+Please note that we will disregard any non-corporate or suspicious requests.
+
+Regards, 
+Ken Williams
+
+Packet Storm Security http://www.Genocide2600.com/~tattooman/index.shtml 
+E.H.A.P. Corporation  http://www.ehap.org/  ehap@ehap.org info@ehap.org 
+NCSU Comp Sci Dept    http://www.csc.ncsu.edu/ jkwilli2@adm.csc.ncsu.edu 
+PGP DSS/DH/RSA Keys   http://www.genocide2600.com/cgi-bin/finger?tattooman 
+================================================================= 
+ *** Re: GTMHH: Part 2 of War Tools! 
+================================================================= 
+From: Andrew_Brandt@pcworld.com
+
+You wrote:  while you can protect your Windows boxes from attacks from the 
+Internet with a well-configured router and firewall, what if the intruder is 
+inside your LAN?
+
+Here's your answer:
+
+I've found a "personal firewall" device that performs standard firewall 
+tasks and connects to a LAN from an individual desktop PC:
+
+www.sonicsys.com
+
+I have one, and it works perfectly. 
+--A 
+================================================================== 
+ *** Juno gold 
+================================================================== 
+From: scorpion104@juno.com
+
+Hey, I saw a file you wrote on hacking SMTP.  Well, thanks for the 
+info.  Anonymously emailing my friends will keep me happy for a while. 
+Well, I feel obligated to share some info with you now, so...
+
+I don't know if your use juno or not, but they've recently started 
+promoting "juno gold", their new service that finally lets you get file 
+attachments with your email.  Up until now, when someone sent any juno 
+member a file attachment, the attachment was shown at the end of the 
+message as a bunch of garbage.  Well, you don't need to pay to get file 
+attachments with Juno.  You're savior will be Winzip (www.winzip.com) 
+Here's what you do:
+
+1.  Use the "save as text file" option under the file menu 
+2.  Open the text file with any version of Winzip 
+3.  Extract the files from the text file.
+
+You see, winzip treats that text file like an archive, probably 
+because Juno's central computers UUencode binary file attachments and 
+tack them on to the bottom of mail, and Winzip understands UUencoding. 
+You may have to rename the files you "extract" from the text file because 
+when they're extracted, they may still have the TXT extension.  Don't pay 
+for anything you can get for free ;) 
+  
+Thanks alot... 
+  
+-Scorpion 
+================================================================== 
+ *** PhreakNIC v2.0 
+================================================================== 
+From: jonnyx <jonnyx@mindspring.com>
+
+Good lord! It's                                              v2.00 09/01/98 
+`88888b. 88   88 .d88888 888888P   oOo  `88~  dP~88   d88 Y8888P  o888b. 
+ 88   8D 88   88 88'  88 88       dP Yb  88  dP  88  d8V8   88   d8P~~Y8 
+ 88ood8F 88ooo88 `Yboo88 88oood  dC   5b 88,dP   88 d8V88   88   88 
+ 8888F~  88~~~88   d8'88 88~~~T  88ooo88 88`Yb   88d8P 88   88   88 
+ 88      88   88  dV  88 88      88~~~88 88  Yb  888P  88   88   Y8L..d8 
+d88b     88   88vdV   88v888888b.88   88v88,  Yb.88P   88 d8888b  Y888P'
+
+1010000  1001000 1010010 1000101 1000001 1001011 1001110 1001001 1000011
+
+THE QUICK & DIRTY 
+--------------------------------------------------------------------------- 
+Who: se2600 (Nashville/Atlanta hackers) What: a weekend of hacking, panel 
+discussions, partying and other mayhem Where: Drury Inn south, I-24 and 
+Harding Place, Nashville TN, 615.834.7170 When: 30 October - 01 November Why: 
+why not? 
+--------------------------------------------------------------------------- 
+Greetings! This is the initial invitation to and announcement for PhreakNIC, 
+a convention for hackers, phone phreaks, cypherpunks, programmers, civil 
+libertarians, ham/scanner enthusiasts and culture jammers. Not one of the 
+above? No prob. Network engineers, ISP owners, sysops, security consultants, 
+the generally curious and (especially) those who want to learn about some of 
+the more "underground" elements of our technological culture are all 
+encouraged to attend. We're even inviting a few feds.
+
+The con starts 3:00pm Friday and runs nonstop until noon Sunday; there 
+may be a few additional events afterwards, so check our contact site at 
+http://se2600.org/phreaknic on a regular basis. There will be live djs, 
+films and videos, a series of lectures and panel discussions from 1:00pm 
+to 6:00pm Saturday, a costume party and mini-rave Halloween evening, and 
+numerous informal tech talks and demos. We're also providing space to the 
+Nashville Linux User's Group for a Saturday install-fest and swap meet.
+
+A computer network will be set up early Friday for a weekend-long session of 
+r00t wars. The goal will be to hack into as many LOCAL machines as possible 
+and take them over, while preventing the same from happening to you. 
+Participants will learn a LOT about internet and network security. Bring 
+your own ethernet/RJ45 equipped computer(s); the network will be TCP/IP.
+
+Why are we doing this?
+
+A very wise man once said "Don't get mad at the media, BECOME the media!" 
+We see this as a chance to dispel many of the misconceptions and outright 
+lies spread by certain greedy corporations (especially those in the 
+telecommunications industry) about our subculture, expose the bad laws their 
+lobbyists sponsor and our politicians pass (usually over the protests of 
+experts), and chastise the mainstream media for frequently poor and biased 
+reporting (and for perverting the word "hacker", which was a complement up 
+until the 80's). Assuming anyone wants to listen, that is...
+
+It's also an excuse for a big party Halloween weekend. See ya there!
+
+PS - Did we mention that its free? 
+================================================================== 
+ *** Virii question 
+================================================================== 
+From: Dmitry Markushevich <Dmitry@Home.Com>
+
+Hello HH. Been reading you for some time, and i think that you are great ;-)
+
+My question is, how close to truth are these "virus warnings" 
+(read CCMaker File on the net, last digest). 
+Through the several years that I've been using computers, I 
+heard about a lot of programs claiming to **damage** your 
+computer **physically**. Such things as for example, destroying 
+your hard-drive (perhaps a low level format with wrong 
+tracks/clusters/heads), blowing up your computer, burning up 
+the video card and/or monitor.
+
+Did anyone ever encounter such programs? Are they actually 
+possible? And if you did, how did they work?
+
+--Regards,
+
+Dmitry Markushevich   11:39 PM 
+********************************************** 
+Black clothes: Ideal tool for removing cat hair from furniture. 
+********************************************** 
+================================================================= 
+ *** IRC answer 
+================================================================= 
+From: cdcd <cdcd@onit.com>
+
+In response to Raymond's question about IRC:
+
+There is no legit way from IRC to snoop on someone. You may have Back 
+Orifice (it has a key logger) that was grabbing what you type and then 
+he simply snatched that file. ircN (6.02?) and several other mIRC 
+scripts (LittleStar, etc) have a CTCPREPLY exploit. He may have done 
+something there. Check out http://www.rootshell.com and see if you are 
+suseptable to the WinHack. If you are and you log your msgs, he may have 
+simply gotten the log right off your pc. Or, my final thought, your 
+connection was sniffed.
+
+Good luck on the answer, 
+cdcd 
+---------------------------------------------- 
+From: Jim Conner <notjames@jlmnet.com>
+
+Ron, 
+Hi!  Let me answer your question.  Before I do let me tell you who I am. 
+My name is Jim.  I run an IRC network and I can probably tell you exactly 
+how this guy was doing what he was doing...because I've done it before.
+
+Anyone who assumes any traffic over the Internet is completely safe from 
+people looking at the data transmission is fooling themselves.  This fella 
+was probably running something called a packet sniffer.  The one I use is 
+called sniffit.  If this guy was indeed using a packet sniffer to watch 
+your conversation then he knows something about how the Internet works.  It 
+is a little tough to get a packet sniffer to sniff packets outside the 
+domain of your ISP or the network on which you are broadcasting on.  I 
+admit I don't quite FULLY understand how that all works since I have never 
+successfully been able to sniff packets outside my domain.  I would love to 
+have someone explain that to me because I believe it requires some h4xor'ing.
+
+I watch for hackers on my network with sniffit.  But hackers can watch for 
+other nifty things on the net with it too.  I have watched these 
+conversations before in the past.  However, don't get paranoid thinking 
+that this person was definitely watching what you were saying.  This is 
+still per se.  There is a possibility that this person was also somehow in 
+kahoots with the person you were in chat with.  They might know each other. 
+The person you were talking to might have been cut & pasting your comments 
+to the guy whom you were talking about.  I have seen this happen a lot and 
+wouldn't put it past someone you don't know in IRC to play a prank such as this.
+
+Jim
+
+If anyone can tell me more about how sniffit works past the domain it is 
+executed in please email me.
+
+not(nospam)james@jlmnet.com 
+remove (nospam) from the name to reply. 
+================================================================== 
+ *** Editorial - InfoWarCon 98 coming up! 
+================================================================== 
+From: Dale Holmes <editor@techbroker.com>
+
+It is not very often that a really cool hacker type Con comes to the DC area 
+*and* I get to go... I am not sure that InfoWarCon 98 qualifies as a hacker 
+type of Con, but it should prove very enlightening anyway.
+
+I am looking forward to meeting some of the people who will be there to 
+demonstrate the "Tools of the trade". I plan to attend as many sessions as I 
+can, and will report to the digest readers the things that I find in future 
+editorials.
+
+I especially can't wait for the "Why Infowar is a Paranoid Myth: Point 
+Counterpoint" discussion - it should be a very lively and perhaps heated debate.
+
+The "Information Terrorism and the Dangerous Insider" session should be 
+interesting too - I wonder how much of it will be substantive and how much 
+will be hyperbole. You'll find out shortly after I do.
+
+The "Cops Breaking the Law to Enforce the Law" session sounds interesting 
+for obvious reasons.
+
+The web site for the Con promises attendees will receive conference 
+materials from all sessions, whether you attend them or not (optional 
+tutorials excluded), so I should have a lot of material to digest - and 
+report on in the Digest. :) Stay tuned for more...
+
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net> or 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

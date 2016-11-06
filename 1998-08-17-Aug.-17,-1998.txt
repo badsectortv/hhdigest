@@ -1,0 +1,342 @@
+Aug. 17, 1998
+
+===================================================================== 
+===================================================================== 
+URL of the day: http://www.smu.edu/~csr/articles.htm  Computer law 
+issues 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.techbroker.com/test 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS 
+**This week's posts** 
+* Foolproof Win95 Hack! All Versions! 
+* Contribution to the digest 
+* DOS (denial o service) 
+* Intresting book about hackers, written for eighth graders 
+* Why back orifice shouldn't be considered a break through? 
+* Re: IP utilities for various OS's 
+* Linux-Security based Mailing list 
+* ICQ Password Verification Bug
+
+================================================================== 
+ *** Foolproof Win95 Hack! All Versions! 
+================================================================== 
+From: "inf ormer" <fpinf0rmer@hotmail.com>
+
+Foolproof 3.5 (newest) and earlier.  Windows 95.
+
+Foolproof Security can block access to certain directories in the 
+system by 'intercepting interrupt 13h'.  Well, that is not quite true.  To 
+access any of the protected directories, simply go into any Office 97 
+application and go to the Macro Editor.  From there, you can use the 
+CopyFile command, Kill (to delete files), or any other file 
+operations.  This allows you full access to the file system.
+
+Foolproof can also disable every application in the system except for 
+specified ones that are set in the control panel.  To bypass this 
+protection, use macros to overwrite an allowed application, such as 
+Publisher 97/98.  Then, you run the application through the shortcut 
+that you usually run Publisher from.
+
+As you can see, Foolproof is a little less than foolproof.
+
+-FPinf0rmer 
+fpinf0rmer@hotmail.com 
+=================================================================== 
+ *** Contribution to the digest 
+=================================================================== 
+From: root <root@nerd.xs4all.nl>
+
+My contribution to your fine magazine, hopefully useful.
+
+First of all the netscape question of last digest. 
+All source code of the netscape browsers are free. I know 
+there are tools from netscape to make the browser more company 
+alike (for companys who bought the browser and want their logo in 
+there). It is possible to change the logo. I think it isn't that hard 
+to find out at the netscape site.
+
+Second, for all linux and hack newbies, I personally learned a lot 
+when I started to read the root/boot howto from linux. It's in all 
+distro's. It explains how to create a one or more linux bootdisks. 
+A compressed kernel with all your favorite tools on it.
+
+It took a great deal of time to learn how the linux system was put 
+together and to create a new filesystem small enough that it fit on one 
+floppy. It became my favorite hack tool. Everywhere a network was and 
+I knew the ipnumbers used, I booted from my linuxdisk (especially 
+school networks).
+
+The kernel had networking in it, handled most used network cards and the 
+msdos filesystem.So you could always mount the system you were on. 
+A script automatically setup sniffit, tcpdump, telnet and mscan on 
+different tty's.Third, you learn a lot with starting to program, just porting 
+programs. I'm now working on a port of nmap for windows NT. Nmap is a 
+portscanner for linux, you can use about 7 methods of scanning as well as 
+the few 
+stealth methods known.
+
+On our homepage there are two useful products we wrote for a school 
+project. First of all a normal tcp portscanner for Windows NT. Fast and 
+reliable. 
+It might work under 95/98 but some people reported system lockups :) 
+The second is our network/packet analyzer.It is also for Windows NT. 
+You have to be administrator to install the packet driver which comes 
+with it. Or equal rights or take the rights with the new security leak found in 
+NT (http://www.ntshop.net)
+
+Sources are also available. They are both written in CBuilder. The 
+source of the sniffer will be soon online. The scanner source is already online. 
+Anyway, our url is: http://www.surf.to/hoppa
+
+Bye, keep up the work. 
+Frank 
+================================================================== 
+ *** DOS (denial o service) 
+================================================================== 
+From: Joe Bullock <j.bullock@zianet.com>
+
+I haven't seen any reference to these, so I decided to send an email 
+about them to those who don't know what they are.
+
+DOS, or denial of service, are usually commands or shell scripts that 
+are not hard to make or do and are used in a malicious manner.
+
+ex: looping
+
+while : ; 
+do telnet yada.yada.com 
+&done
+
+ex: forwarding using finger
+
+finger @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.....yada.yada.com
+
+There are many more, and they can get more complicated than these or 
+even easier like the ping command.
+
+Adios, 
+serialmonkey,(it's not your typical bowl cleaner)
+
+[Dale: The reason you don't see references to DOS attacks is that DOS 
+attacks are considered to be lame, and also they are not a nice thing to do...] 
+================================================================== 
+ *** Intresting book about hackers, written for eighth graders 
+================================================================== 
+From: <Rahim10@aol.com>
+
+Dear Editor:
+
+I would like you to publish this in the next HHD. I have found a cool 
+book, it's about teenage hackers (good guys by the way). Although this book is 
+written for eighth graders it has accurate in depth technical info (It 
+actually mentions UNIX telnet, rlogin, dos commands, ftp, ports, ascii, hex, 
+coding, ect.).
+
+Well here's the first two chapters of one book so you can decide 
+wether it's good enough to publish. There are six books in the series, the first 
+two chapters for all of them are avilible at http://cyber.kdz.org (the 
+name of the book is Cyber.kdz by the way).
+
+Check it out its really good reading for all the young hackers out 
+there who want and interesting book to read. (oh and someone please scan a book 
+and post it on the web). And sorry about the bad spelling.
+
+[Dale: Far be it from me to exclude anyone just because they are an 
+8th grader. The two chapters attached were too long to print here - you'll just 
+have to go to the web site if you're interested... PS- Don't scan a book and 
+post 
+it to the web unless you own the copyrights - you don't want to deal with the 
+publisher's lawyer.]
+
+================================================================== 
+ *** Why back orifice shouldn't be considered a break through? 
+================================================================== 
+From: kilbert@juno.com (Nolan aka Kilbert)
+
+This is just my view on why back orifice shouldn't be considered a break 
+through. I've been doing some windows and winsock programming recently 
+and after I first heard about back orifice I started to think how 
+something like that could be implemented. It hit me that it is as simple 
+as pie, and that something like it could be made for any operating 
+system that supports any form of networking(tcp/ip, ipx, modem-to-modem, etc). 
+first off, I have yet to try back orifice, but I really want to so I'm 
+still neutral about it sucking or whatever. Second I have nothing 
+against the author or the cult of the dead cow. Personally I know very little 
+about the cult of the dead cow, other than they are a hacking group 
+(am I correct?). hmm...now where to begin. 
+----------------------------------------------------------------------------
+
+I think i'll go through this by telling how hard certian aspects of the 
+program are to implement.
+
+The hardest part to implement probably would be the communications. 
+You'd have to decide how you would do it, datagrams or stream, tcp/ip or ipx, 
+or a bunch of other odd things. You also have to decide whether or not 
+you want them encrypted or not. For back orifice the author chosed udp 
+over streams and tcp/ip for internet attacks w/ it.
+
+The second hardest part would probably end up being how to get the 
+server onto the computer of interest. Back orifice, as the posting to 
+happy hacker says, supports the ability to attach to exe's. That would 
+just be a matter of getting some virus attachment code if the author was 
+lazy, or some asm coding. It would also require an optimized installation 
+routine so the victim doesn't notice anything. Once it is installed the 
+program can then start up the server and the attacker can attack if all 
+goes well.
+
+Now here's the easier parts since it is pretty much straight forward in 
+the windows sdk.
+
+To send a file to the attacker from the host would only require dumping 
+the contents of the file to the open connection in the simplest form, 
+but I'm sure back orifice allows you to multitask. In that case it would 
+open up another port on both computers and send the file through that 
+connection.
+
+Now since it is supposed to cause havoc you need the ability to modify 
+stuff. To modify the registry it would need to recieve the command to 
+tell it to edit the registry and the data to do that. The server would 
+probably then parse the data and then call windows' registry functions. 
+To delete files and move the around would be fairly easy too. All that 
+is required is a move, copy, and delete funtion (I guess that is the bare 
+min). The server would need to recieve the command and the filename to 
+change and then call one of those functions based on the command that is 
+recieved. Now I'm sure the users would want to see the directory 
+structure too, so a dir type command would be needed outputing the text 
+through the connection.
+
+If the attacker wants to run programs on the attacked machine then it 
+would be harder to show apps that use the gui than it would be to 
+show console apps(dos). To see what a console app is doing is only a 
+matter of rerouting the keyboard and the output. To reroute a gui 
+program would be hard, but m$ seems to know how in netmeeting.
+
+Since I decided I better look and see what other features there are I 
+will put the rest of the stuff that didn't come off the top of my head 
+here. 
+The http server isn't super complex either, just a matter of listening 
+to http requests on another port and responding accordingly. There are docs 
+on http somewhere, and at least in rfcs and the apache src code. 
+Connection redirection is probably in an rfc somewhere too, so that's 
+avaliable. Sniffers are avaliable as src code too so any one could 
+implement that too.
+
+To obtain what the victim sees and does is just a matter of implementing 
+a key logger and a screen capture. After they are captured wait until 
+the attacker requests them and then send the file to them.
+
+Now to make it completely transperant (not quite true...lag on victims 
+input and stuff) is just some optimizations and knowing how windows runs 
+programs. I don't know how to make it not show up in the task list, but 
+it may have to do w/ it being in the run services entry in the registry. 
+Now to support plugins is up to the author of the program. My best guess 
+would be to use dlls for them and have some sort of src code released 
+(ala quake2's gamex86.dll file).
+
+Now I hope I haven't made this sound like I dislike back orifice, but 
+I'm just trying to keep people from getting all hyped up about it being 
+something revolutionary. I would say it was revolutionary if it didn't 
+need to be installed on the victims computer, but it does. I'm sure I've 
+given some people some ideas, like make one for linux or some other OS. 
+I'm thinking about trying my own little program like this sometime too. 
+To do this in linux or unix type system would probably need a program 
+that 
+is setuid or run as root.
+
+Just so you people know, I'm speaking hypothetically (my best guess) 
+here based on my experience programming windows and winsock which I've 
+learned alot over the past few weeks. I may write a follow up on this once I get 
+my greedy hands on back orifice, but until then have fun dreaming. I 
+also hope this ends up in happy hacker, since there needs to be a nice 
+article about more "technical" things other than changing wallpaper; other than 
+that it hasn't been too bad.
+
+I also hope the bars I just added help in separting the text some. 
+Enjoy!
+
+   ============================= 
+     Nemo me impune lacessit!! 
+   ============================= 
+Kilbert <kilbert@juno.com> 
+http://www.geocities.com/ResearchTriangle/2837 
+================================================================== 
+ *** Re: IP utilities for various OS's 
+================================================================== 
+From: "DS2 Gene R. Gomez" <grg@essex.navy.mil>
+
+While the list provided by strobe for IP utilities is large, it isn't 
+quite as useful as it could be.  I've seen many posts to this list recently 
+about UNIX utilities for 95/NT.  Hopefully those of you who are using a 
+non-31337 OS like Windows (or those of you who know how to use it just as well 
+as the wannabe-31337s do UNIX) aren't using 95.
+
+For NT, many of the utilities listed are already available:
+
+ping (/<winnt_root>/system32/ping.exe) 
+nslookup (/<winnt_root>/system32/nslookup.exe) 
+tracert (/<winnt_root>/system32/tracert.exe) 
+finger (/<winnt_root>/system32/finger.exe) 
+telnet (/<winnt_root>/system32/telnet.exe)
+
+Just to mention the ones listed in the post.  In addition, there are a 
+LOT of others hiding out in the /<winnt_root>/system32 directory that can be 
+used to poke around both a local and a remote machine, including arp, 
+ipconfig, ftp, nbtstat, netstat, net, rcp and a whole HOST of others. 
+Poke around a bit... I think that you'll be pleasantly surprised about the 
+things NT provides for you. 
+:)
+
+LLL, 
+DS2 Gene R Gomez, MCP 
+http://earth.terran.org/~grg 
+================================================================== 
+ *** Linux-Security based Mailing list 
+================================================================== 
+From: tripp@nkn.net
+
+Dear Linux users,
+
+I stumbled across a well of knowledge about 2 months ago, that I think 
+every Linux user should consider looking into.  This well is a mailing 
+list, Linux-Security based.  Mails go out every day, and they post 
+questions about security breeches with Linux, and how to fix them, et 
+cetera.  From reading the mail that the list provides, my knowledge on 
+Linux has greatly increased.  Here's how yours can too:
+
+Send an e-mail to:   linux-security-request@redhat.com
+
+Leave everything blank except for the subject. 
+Write the subject as: 
+  
+Subscribe
+
+And there you go, I hope that it helps you out as much as it has 
+helped me. 
+================================================================= 
+ ***  ICQ Password Verification Bug 
+================================================================= 
+announce-outgoing@rootshell.com
+
+It appears that ICQ has yet another bug.  This was just sent in from 
+one of our users.  This bug has been confirmed by Rootshell.
+
+__________________________________________________________________ 
+
+  Unsubscribe with message 
+ "unsubscribe hh".
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net> or 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com> 
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

