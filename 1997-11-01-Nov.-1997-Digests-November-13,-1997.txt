@@ -1,0 +1,427 @@
+Nov. 1997 Digests November 13, 1997
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Contents: 
+ 
+
+ * R.J. Gosselin  -- "We can't unsubscribe you" 
+  * R.J. Gosselin  -- "Guide To Social Engineering" Pt 1 
+     "Blah-Blah Bank" 
+ * Posts, Questions & Answers
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+** "We can't unsubscribe you" 
+ 
+
+I have been getting several messages each day asking to unscubscribe from 
+the "HH Chat List".  I really wish I could comply -- but, as indicated in 
+both our "Warning and Apology" email and the last Happy Hacker Digest - we 
+have no affiliation whatsoever with the other list.  According to Jesse 
+Brown, the "HH" in HH Chat stands for "Hacker Heretic".
+
+Somehow or other it seems as though *someone* with root access to Jesse's 
+machine added my email address into the routing of the majordomo, so I get 
+a copy of everything -- in and out. [No, I have no idea how .... Really! 
+;-)] From the message traffic I have been getting, it seems as though Jesse 
+and his crew are having a real tough time unsubscribing people from their 
+list. I must admit that I find it really funny that this "3l33t haxxor" is 
+having a hard time managing something as "complex" as unsubscribe on a 
+majordomo!  Oh well.
+
+My only advice for all of you who want to unsubscribe to his list would be 
+to try any or all of the following:
+
+A- Email the majordomo to unsubscribe. 
+ If that's not sucessful, then 
+B- Try email directly to him. [bextreme@pobox.com] 
+ If no response, he may be having email problems, so 
+C- Try calling him. [(805) 945-0139] 
+ I don't think he'd mind; he's really a nice kid.
+
+Wish I could be more help. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+** "Guide To Social Engineering" Pt 1 -- R.J. Gosselin
+
+>>> INSERT SHAMELESS "PERSONAL COMMERCIAL" HERE <<<<<<<<<<
+
+If you would like to download the entire text of "EXTERNAL THREATS TO 
+COMPUTER SECURITY IN NETWORKED SYSTEMS" - it is available online from Winn 
+Schwartau's InfoWar Web Bookstore.  The URL is www.infowar.com.  Select 
+"Bookstore" from the main page, then "Bookstore" from the On-Line 
+Department Store Page.  My book is on the top of the list. 
+ 
+
+~~~~~~ Comments About "External Threats ..." ~~~~~~~~~~~
+
+"Blew My Socks OFF!" -- Carolyn Meinel
+
+"Let me tell you something, I'm going to find "Tin Man". I'll go after her, 
+I'll even go after you if I have to. But she broke the law and I'm going to 
+see that she gets caught!" 
+(Name Suppressed), President, "Blah-Blah Bank" (See Below). By the way, 
+Blah Blah Bank insists that the incident related in this book absolutely 
+and unequivocally never happened. 
+  ------   That's why they want to catch "Tin Man". 
+>>> END SHAMELESS "PERSONAL COMMERCIAL" <<<<<<<<<< 
+ 
+
+ESPIONAGE AND DELIBERATE SYSTEM ACCESS -- UNWITTING TEAMWORK 
+ 
+
+Deep access to controlled information is sometimes unwittingly given by 
+those who have been given authorized access, but have not been trained in 
+the need to exercise caution and prudence.  This section provides a 
+detailed account of just such a situation, and details how deep access was 
+given by several individuals employed by a regional financial institution 
+unwittingly working in concert with one another.  The lesson which I hope 
+to drive home by the retelling of the incident is this: 
+ 
+
+WHENEVER ANY INFORMATION IS GIVEN TO AN OUTSIDER, RED FLAGS SHOULD BE RAISED. 
+ 
+
+The above statement applies, as shall be demonstrated, no matter how 
+"insignificant" the information might seem to be, nor  how "trusted" the 
+individual to whom it is given is assumed to be.  While it may certainly be 
+true that the information provided seems to be of absolutely no 
+consequence, it may gain significant consequence when combined with 
+information which is either readily obtainable, or may have already been 
+surreptitiously obtained.  While a particular end user might feel as though 
+the person with whom they are conversing is "obviously" supposed to have a 
+certain piece of data, providing them with that data may be akin to 
+unlocking the front door. 
+ 
+
+I am acquainted with an individual who, interestingly enough considering 
+her gender,  enjoys using  the moniker "Tin Man".  For purely innocuous 
+reasons , she was attempting to identify which phone numbers in a 
+particular block would be answered by a modem.  Her system was running a 
+particular type of software called a "war dialer", which is easily 
+available from any of several internet locations.  Software of this type is 
+designed to  perform the following actions:
+
+ 1) Dial the first number from a specified list 
+ 2) Determine if that number 
+  a) Went unanswered 
+  b) Was not in service 
+  c) Was answered by an person 
+  d) Was answered by a computer 
+ 3) Move to the next number in the sequence 
+ 4) At the conclusion of the list,  report numbers answered by computers
+
+Once she had been provided with this list of computer -answered numbers, 
+she proceeded to dial these numbers and attempt to identify to whom these 
+systems belonged, what type of entity they served, how they might be used, 
+etc.  This was gathering of information for the sake of the knowledge and 
+experience to be gained, with no malevolent intent whatsoever.
+
+It is probably worth noting that at this stage of her "career", "Tin Man" 
+was what is commonly called in these circles a "newbie".  She had almost no 
+experience at external system access, but she had undertaken the 
+development of skills in this area as a personal challenge for purely 
+academic reasons.  "Tin Man" was simply interested in determining the level 
+of difficulty one might reasonably be expected to face in accessing a 
+system to which she was supposed to have no access.  She had availed 
+herself of several internet-provided articles on this topic, but at that 
+point, she had not developed any significant skills in this area.
+
+Despite her inexperience, she found most of her calls to these numbers 
+provided her relatively little challenge. (This is a area that would be 
+most interesting in and of itself, if I were to discuss the other places to 
+which she was able to gain access.  But that is outside of the point I am 
+detailing here.)  Among the several places she was able to gain access, 
+there was one number, however, which simply provided a cryptic "logon:" 
+prompt.  None of the standard techniques which may have been expected to 
+cause the system to provide some information about itself seemed to have 
+any effect whatsoever. This system, whatever it was, simply and 
+unceremoniously disconnected her after each failed logon attempt.  This 
+ignominious little prompt, which refused to give her any information, 
+became her "pet project".   She deliberately set about on a course of 
+action to "win" the challenge presented her by the silent and uncooperative 
+system.
+
+Here is necessary to note, by way of explanation,  that businesses with 
+more than one phone line frequently obtain blocks of phone numbers from the 
+local phone company.  They may then choose to have only certain of these 
+numbers published, and sometimes only the main number.  Commonly, they rely 
+either on a rollover switch at the phone company or on a rotation feature 
+of their phone system to handle the routing of incoming calls to other 
+lines, as necessary.  However, if you dial these other, non-published 
+numbers directly, it is a simple thing to test your theory of ownership by 
+listening as they answer the phone, since they will have no way of knowing 
+you have bypasses their rotation and dialed directly and will answer with 
+their typical greeting.  So if you are trying to determine who owns (505) 
+327-1558, and you are able to determine that the phone number for a large 
+business is (505) 327-1555, it is a relatively safe bet that the business 
+owns 1556, 1557, 1558, and perhaps several more numbers.  Point noted, back 
+to our primary illustration.
+
+It was a relatively trivial matter for "Tin Man" to consult a reverse 
+directory and determine the probable ownership of the number. That 
+particular phone number, though unlisted itself, would have followed in 
+numerical sequence immediately after a series that apparently belonged to a 
+small, local bank.  The bank had only one number listed to them, but 
+afterwards there was a "space" of four "missing" numbers.  This was 
+followed by an inconsequential residential listing.  That the modem 
+belonged to the Blah-Blah Bank could readily be inferred within a few 
+moments by calls to the three other numbers in the rotation. The three 
+closest numbers to our recalcitrant dial-up system were each cheerily 
+answered "Blah-Blah Bank, may I help you?".  The fourth number could now 
+reasonably be assumed to belong to them as well.
+
+Our heroine then needed to concoct a plan to gather as much information as 
+she could about the target system.  She decided that it was time to employ 
+one of the most common (and yet also one of the least suspected) tools used 
+against unsuspecting end users - Social Engineering.  This skill is 
+practiced far more often than anyone would like to believe, and is highly 
+effective.
+
+Posing as an individual employed by Banking Technology, or some other 
+suitably impressive name she had made up, "Tin Man" phoned various branches 
+of the Blah-Blah Bank and proceeded to ask several "survey questions" about 
+the equipment the used to support external dial-in services for their 
+branches. It was indicated that the results of the survey would be 
+appearing in an upcoming issue. Given her position with such a prestigious 
+periodical, she was warmly and congenially provided with, among other 
+things,  the make and model of the particular piece of hardware which was 
+so determined to keep her and all others outside of the sacred, secure 
+areas of their depositors records.
+
+Having been provided with the key piece of information she needed, "Tin 
+Man" then visited the internet site of the manufacturer of this particular 
+piece of hardware. Once there she learned several key pieces of 
+information, not the least of which was that this fine vendor was pleased 
+to provide their valued clients with online technical support.  A few days 
+later, having read and learned a great deal about the operations of this 
+particular piece of equipment, she once again phoned the Blah-Blah Bank. 
+This time "Tin Man" was conducting no survey, she was responding to a 
+"reported problem" with one of the bank's computers.  A computer which just 
+happened to be connected to the offending guardian of the door.
+
+As anyone who has worked in an automated environment knows all too well, 
+someone within the organization is always having problems with something on 
+their computer.  These problems are frequently lamented while standing next 
+to fax machines, coffee makers and all manner of office equipment.  So when 
+"Tin Man" phoned and represented herself as being from the phone support 
+team for the particular piece of equipment in question, she was immediately 
+told that Mr. Jackson had been having problems with his system, and they 
+promptly forwarded her to his extension.  As it turns out, Mr. Jackson was 
+a Vice President with Blah-Blah Bank. (A fact which almost caused "Tin Man" 
+to abandon her efforts.)  Mr. Jackson wasn't at all sure what was causing 
+his particular problem, and (come to think of it) didn't even recall asking 
+his secretary to phone for support; but he was certainly pleased at the 
+prompt response of their support team.  After he finished describing his 
+problem to "Tin Man", she began to assist him in performing some diagnostic 
+steps.  After several minutes had been spent building his confidence, "Tin 
+Man" determined that she would not able to help him "off-line", but offered 
+to dial into their equipment attempt to reproduce the problem on her 
+system.  At this point Mr. Jackson, thrilled with the level of support 
+provided by their company, promptly provided his Username and Password for 
+use by the helpful "technician".
+
+Dialing into the modem port thus armed, "Tin Man" was now given a warm 
+welcome by the system; and every option available to Vice President Jackson 
+was presented to her.  These included  the ability to initiate account 
+inquiries, balance inquiries, and electronic wiring of funds!
+
+ "Tin Man" had reached the Emerald City of Oz!
+
+The crowning touch was a classic one. Now that she had gained access, she 
+proceeded to provide Mr. Jackson with the solution she had known all along. 
+ The end result of this conversation was that, not only did Mr. Jackson say 
+he was quite satisfied with the solution, but he indicated that he was very 
+pleased to have had it provided by such a pleasant and knowledgeable 
+service technician. He hung up the phone without ever realizing that he had 
+just compromised the financial security of every depositor at Blah-Blah 
+Bank.  A phone call to the bank's modem line a week later confirmed that 
+Mr. Jackson had not changed his password! In light of this, "Tin Man" 
+declared victory to be hers.  Ever the honorable victor, she consigned her 
+notes to her fireplace that evening during a celebratory dinner during 
+which her husband was treated to the details of the conquest.
+
+ -- RJ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+** Posts, Questions & Answers 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**DOS ATTACK TUTORIAL (From Carolyn) 
+We have had several questions related to Denial Of Service Attacks (DOS). 
+Hans Husman, a student in the Department of Scientific Computing, Uppsala 
+University (Sweden) has an excellent DOS tutorial and FAQ. Readers of this 
+digest have been given permission to run his denial of service tutortial at 
+http://www.student.tdb.uu.se/~t95hhu/c-war.html. 
+ 
+
+**FTP HELP INFO (Anonymous) 
+I was reading your file: gtmhh_bs23.txt from the X-Treme archive. 
+I noticed your remarks on the DOS "ftp" program, and thought you 
+might be interested in this. 
+ To get help on Dos ftp: 
+1)At the DOS prompt in /windows, type "ftp" 
+2)Type '?' or 'help' and return. 
+3)For specific commands, type '?' or 'help' followed by the command. 
+4)Typing '!' shells out to windows, but leaves the program active. 
+ you won't be able to close the program unless you re-enter 
+ the ftp shell by typing 'exit' and 'quit' the ftp program. 
+ Windows(95, anyway) won't be able to close the DOS window 
+ unless you've exited ftp using quit rather than shelling 
+ out.  Typing 'ftp' while shelled out to windows starts a 
+ second instance of 'ftp.exe' in active memory, and you'll 
+ have to quit out of BOTH of them if you want to close 
+ the window without the OS whining about lost information.
+
+** ALGORITHM QUESTION (Anonymous) 
+    I'm working on a project for a programming class... a unix password 
+cracker (like CrakerJack, etc...) web page applet written in Java (yes, I do 
+realize how slow and stupid this is).  The problem I am running into is that 
+nowhere can I find any reference material relating to the one-way algorithm 
+unix uses to encrypt algorithms.  Have you ever run across any documentation 
+or papers written that exactly describe how this algorithm in implemented in 
+unix.  If you know of anything or anyone that could be of help off the top 
+of your head, I'd GREATLY appreciate it.  Thank you very much!
+
+Editor's Note - Post reply's to with subject "HH Post" 
+ 
+
+**TELNET ANSWER AND PERSONAL FREEZE-UP (Anonymous) 
+(Question was "How can I find out someone's IP address if it is being 
+dynamically assigned by their ISP?")
+
+About those Dynamic IP addresses.  All you would have to do is telnet on to 
+the server that they are logged in from and telnet to the finger port (79). 
+Then figure out if they are logged in by hitting enter to get a list of 
+all the people on at the time.  It should on the right hand side of the 
+list, say where they are logged in from (the IP address they are logged in 
+from). Hope this was some help.
+
+Another point, if someone is p***ing you off on a *nix box and you know 
+their user name, give them this command.
+
+telnet localhost 19|write (target)
+
+This will only work if the person has messages on and is a dumb ***. 
+What this does is pipe the chargen which makes Ascii characters show up in 
+rows on the screen flood their screen and make it so they can't do 
+anything.  Like a personal freezeup.
+
+**LINUX/freeBSD QUESTION (From: Bill Catone <<cwil1757@uriacc.uri.edu>) 
+i have linux and freeBSD on a a disc . .but other people use my computer 
+and would kill me if i changed OS's. can i run two?
+
+Yes, Bill - LINUX has dual boot information in the readme file on the CD. 
+I'm not certain, but I beleive the freeBSD CD also has the same.  You will 
+need a separate logical drive for the *nix partition - or at least I did. 
+--RJ
+
+**PRE-1985 WOMEN HACKERS (From: "Paul N. Edwards" <<pedwards@pcd.stanford.edu)
+
+{Note from Carolyn -- 
+Paul Edwards is an interesting and nice guy who wrote a good book on the 
+early history of AI entitled "The Closed World".  His new project concerns 
+women hackers, and he's looking for relevant information and potential 
+interviewees.  I'd much appreciate if you could forward this to anyone who 
+might be able to help him.}
+
+I'm a historian of technology. Most of my work concerns the political, 
+social, and cultural history of computers and their uses. Members of this 
+list may know my book The Closed World: Computers and the Politics of 
+Discourse in Cold War America (Cambridge, MA: MIT Press, 1996). More 
+information about me is available on WWW at the URL below.
+
+I'm now working on a historical article about women hackers, based largely 
+on email and telephone interviews. The purpose of the article is to 
+investigate myths and realities surrounding the role of women in computing, 
+especially during the 1960s and 1970s, when most authors have argued that 
+hacking was more or less exclusively male. As I've met more and more women 
+recently who describe themselves as hackers, I've become interested in the 
+particular experiences of the small minority of hackers who were female. 
+(NB: I am purposely leaving the definition of the term up to respondents.)
+
+I'd like to hear from women who fit any of the following categories: 
+1) self-identified hackers; 
+2) women who have had extensive involvement with hacker communities in some 
+way, while not necessarily identifying as hackers; and 
+3) women computer professionals who have done serious thinking about the 
+gender roles of hackers.
+
+I'm especially (but not exclusively) interested in women whose experience 
+dates from the period prior to 1985. I would like to interview as many of 
+you as possible, either by telephone, or by email. I've prepared a short 
+(but broad) questionnaire that can be the basis for either oral or written 
+responses. Interviews can be confidential, if desired.
+
+I'm also looking for: 
+4) documents relating to women hackers. These might include, for example, 
+old email, other correspondence, newsgroup postings, or published 
+literature. Again, I'm primarily but not exclusively interested in the 
+period before 1985.
+
+Hope you'll be interested. I will be happy to send you a copy of the 
+questionnaire or to interview you by phone. It would also be helpful to 
+have names/emails of other women who might be willing to participate.
+
+Paul N. Edwards 
+Senior Research Scholar and Lecturer 
+Program in Science, Technology, and Society, Stanford University 
+     http://www.stanford.edu/group/STS/edwards.html 
+Director, Information Technology & Society Project 
+     http://www.stanford.edu/group/itsp/
+
+*TRACE ANONYMOUS EMAIL ?  (Anonymous)
+
+Is there anyway to find out who sends an anonymous mail from 
+www.hotmail.com, or is it simply impossible?
+
+[Carolyn: to trace it would require that Hotmail keep logs of its users. I 
+don't know if it does so. But if push were to come to shove and the FBI turned 
+up with a search warrant, what do you want to bet that a user would get 
+traced? This happened to the anon.penet.fi server when the Church of 
+Scientology wanted to bust someone for emailing secret church documents 
+through that anonymous server.]
+
+**VMS FILE PERMISSION QUESTION (From "13") 
+i have access to SYSUAF.DAT the password file in a vms system (with 
+permission of course). I have been trying to use kermit to download the file 
+but am undable to due to permissions. how can i change permissions or copy 
+the file to my local machine? any other advise will be much appreciated.
+
+----------------------------------------------------------------------- 
+and include a 'HH' in the subject 
+header somewhere. Your posts are the lifeblood of the Digest; keep 'em coming! 
+But, please don't send us anything you wouldn't email to your friendly 
+Neighborhood narc, OK?
+
+To subscribe or unsubscribe, please use the menubar subscribe boxes. 
+The Official Happy Hacker Digest Webpage is currently being relocated.  New 
+server URL will be announced ASAP. 
+ 
+
+   Happy Hacking!
+
+---------------------------------------- 
+Material discussed in this digest is controversial. Those who produce, 
+distribute, or contribute to the Happy Hacker Digest will not be held 
+responsible for anything you choose to do with the information contained 
+in this, or any other, Happy Hacker Digest. Parental discretion advised.
+
+Posts submitted to this Digest, along with material collected from 
+various electronic sources, remains the copyright of the original author. And 
+unless otherwise noted, complete issues or portions of any issue of the 
+Happy Hacker Digest may not be republished in any for-profit medium without 
+The consent of the copyright holder and the moderator. 
+ 
+
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ 
+R.J. Gosselin, Sr.                rjg@computersource1.com 
+Network Security Analyst 
+Editor-In-Chief - Happy Hacker List 
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ 
+Computer Source 1   www.computersource1.com 
+V/ 704-983-1000   F/ 704-982-3077 
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ 
