@@ -1,0 +1,644 @@
+Happy Hacker Digest March 9-12, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+           Moderators: Carolyn Meinel and Ruben D. Canlas Jr.
+                 
+            OR to the Hackers forum: http://www.infowar.com
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you  decide you 
+   just want to use the forum and not get these mailings, we promise   our 
+       feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+ 
+
+[TABLE OF CONTENTS] 
+   o Notes from the Moderator/s 
+   o Getting and Installing Linux 
+   o LILO Problems 
+   o Answers to a Pine Question 
+   o Still In Search of Identd 
+   o Viewing Passwords 
+   o Winhack 
+          - NT Questions 
+          - Programs from a Web Page 
+          - Logo stuff 
+   o Hacked on IRC! 
+   o What are IRC Identd Requests? 
+   o Why to Get a Computer Science/Math Degree 
+   o Rants and Responses 
+ 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+FROM THE MODERATOR/s: SETTING UP LINUX 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+Ruben says: Nothing feels better than the surge of happiness after 
+a major accomplishment. That's exactly the feeling I got after I 
+installed linux on my pc box.
+
+Thanks to the shared knowledge of the HH community, I got bold 
+enough to borrow my friend's Infomagic CD and ask him some stupid 
+questions. He recommended RedHat because he said it's easier to 
+install.
+
+Now, I recommend RedHat to all the other newbies here. I planned on 
+narrating my whole experience, but as you'll see from the messages 
+below, others have done a better job. So I've relegated myself to a 
+few inserted comments when I felt like giving my 2- cents worth.
+
+Meanwhile, we're trying to improve the readability of the digest. Help 
+us do this by (1) quoting relevant msgs clearly (that is, select and 
+quote the specific text you are responding to), and (2) by sending us 
+you rants and raves about the digest.
+
+Here's to a better mental shareware!
+
+          -- benc ;) 
+----------------------------------------------------------------- 
+ "In a world without fences, who needs Gates." 
+          -- t-shirt spotted at the recent 
+              Usenix conference 
+----------------------------------------------------------------- 
+ 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+GETTING AND INSTALLING LINUX 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+<1: get redhat linux> 
+From: Bernz <bernz@ix.netcom.com>
+
+"Jeffrey Steinbrecher" darkling69@hotmail.com asked this 
+question:
+
+   >I have a win95 laptop, and am looking to double boot linux 
+   on it. I >have no idea where to find linux, and only a rough 
+   idea on how to >get it working.
+
+Bernz answers:
+
+When i was interested in getting linux, i had the same problem. 
+I bought RedHat Linux Unleashed (from SAMS publishing). It is 
+bundled with a really nice linux cd that has plenty of stuff on 
+it to get you started. It also comes with LILO (read: "lie low"). 
+That's a boot system for linux that enables you to run multiple OS's. 
+The book tells you how to set it all up.
+
+You're going to need to partition your drive. In order not to 
+erase your 95 stuff, you have to use FIPS or another partitioning 
+utility. The book explains this all in detail. The point? Get yourself 
+a linux book and cd and just follow the instructions. 
+ 
+
+benc says: RedHat has a neat install facility that steps you 
+through the whole process. It's CD number 2 in the Infomagic set. 
+You'll need three blank disks - one for the installation boot disk, 
+and two ramdisks. Everything is written on the readme files and if you 
+know how to read ;) you ought to get it done easily. The partitioning 
+wasn't as difficult as I expected. After you step through the whole 
+process, you will be prompted on where to boot LILO - hard disk or 
+floppy. I chose floppy because I heard win95 doesn't work well with 
+LILO.
+
+<2: ftp and web sites for linux> 
+Sender: abszero@epix.net
+
+Linux can be gotten from many ftp sites all over the place.  I 
+use the closest mirror of sunsite.unc.edu, since that mirror is 
+at my isp.  For a complete list of offical mirrors of sunsite, 
+look at  http://sunsite.unc.edu/LDP/hmirrors.html.  The other 
+major linux ftp is tsx-11.mit.edu.  Both have several complete 
+distributions of linux in the directory/pub/linux/distributions.  I 
+use slackware, but RedHat and debian are highly recomended. All of the 
+subdirectories of distributions should have README files, I suggest 
+you read them. 
+ 
+
+"Timothy Ward" ward@carl.all-net.net advises:
+
+... the best place to get the o.s. is from linux systems labs. 
+www.lsl.com I think.  They have a cd rom with three verions, 
+slackware 3.1, debian 1.2.5, and Red Hat 4.1 for $2.95.  Yes, you can 
+get most or all of it for free from various ftp spots, but having it 
+all in one place helps tremendously.  Also, I recommend a book on 
+linux.  I like one called "Linux unleashed".  if you get one of these 
+books, usually they give you a cd rom with it, so there's no need to 
+buy it.
+
+--- 
+From: Robert Kennedy  <robk@hyperion.dynanet.com>
+
+Hey there.
+
+For anyone wanting to learn a bit about Linux, just go to this 
+site: http://www.dynanet.com/~robk/linux.html I put this site 
+together for the channel i started on IRC. The channel is 
+#Linux on the starlink server. I have just started using linux 
+and there are lots of places to get it from: local `puter stores, mail 
+order, downloads, friends, etc. See ya!
+
+-- rob k
+
+benc's 2-cents worth: don't be lazy guys ;) Search the web for 
+linux and you'll get a wealth of info. 
+  
+ 
+
+-=-=-=-=-=-=-=-=-=-=-=-= 
+LILO PROBLEMS 
+-=-=-=-=-=-=-=-=-=-=-=-= 
+From: "Stephen James" <sjamesflorida-wellington@worldnet.att.net>
+
+For some reason LILO can't detect my first or second hard drive 
+when the second hard drive is installed.  I have to remove 
+/dev/hdb to get Slackware Linux to work.  It confuses the 
+parameters (thinks both drives hda and hdb have 176 physical 
+heads) and refuses to boot the system properly.  The error code 
+LILO gives me is 0x80.
+
+Can somebody give some info on how to fix this problem or tell 
+me where I can get the info myself.
+
+Many thanks for your time,
+
+Stephen James 
+ 
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ANSWERS TO A PINE QUESTION 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+prata@boss1.bossnt.com asked this question: 
+I am using Minicom with pppd to connect to my isp.  Now, I have a 
+shell acct on my isp's Linux box.  I use Pine when I telnet to that 
+box. Is it possible to use MY Pine to send and receive email from a 
+remote box when connected through ppp?? I tried setting it up, but it 
+doesn't seem to work.
+
+"James Mastros" abszero@epix.net answers back: 
+Once you have pine set up, you need to run a program to retrieve 
+your mail from your isp.  Slackware (and other distributions I 
+assume) come with popclient on the N series.  I made a quick 
+"wrapper" for popclient called getmail:
+
+popclient -a -K -u abszero -p imnotteling -o $MAIL 
+mailhost.epix.net $*
+
+this will do the following: 
+-a:  get all of the mail waiting on epix (my isp)
+
+-K:  delete the retrived mail from epix after geting it
+
+-u abszero:  login to epix's mail server with the name 
+  "abszero", instead of root
+
+-p imnotteling:  give the password imnotteling to the mailhost 
+(puting your password on the command line might be a security 
+risk, since it would be visible with ps.
+
+-o $MAIL:  put the mail in the local mailbox of the 
+user that is running = the script.
+
+mailhost.epix.net:  the name of epix's mailhost $*:  if I gave 
+any arguments to getmail, give them to popclient here.
+
+put that script in /usr/local/bin, and chmod it u+x (or a+x to 
+allow anyb= ody to get the mail, useful if you have one remote 
+mailbox for everobody that has access to your computer (big fat 
+security risk).
+
+  -- James Mastros
+
+NB: you will get lots of blank messages from "POPClient" this 
+way.  If you know how to get rid of these, please e-mail me at 
+abszero@epix.net.
+
+  -- James Mastros 
+ 
+
+Charlie ROOT <root@ruined.all-net.net> answers back too:
+
+To the Pine questioner: 
+You may want to see if your ISP support's POP mail. If so you 
+can use the utility "popclient" provided with most Linux 
+distributions to get the mail from your server and you can put 
+it in any mail folder in your spool, and then use pine to mail 
+it. As for mailing FROM your box, Sendmail may want to be a 
+meanie and not let you unless you're STATIC, in which case you 
+may have to do it from your ISP. 
+ 
+
+Timothy Ward 
+ward@carl.all-net.net
+
+P.S. if you have a static IP, a .forward in your ~/ on your ISP 
+will forward your mail to ya, barring the need for popclient. 
+ 
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+STILL IN SEARCH OF INDENTD 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: "M.Falsetti aka 1NV3rNoMu+0" 
+<inverno.muto@bbs.infosquare.it>
+
+I've been experimenting with IDENTD and SMTP as outlined in 
+k1netik's post at www.infowar.com.
+
+What I found is:
+
+1) if you comment out auth line in /etc/inetd.conf, no SendMail 
+will be able to achieve your name via SMTP on port 25 (BUT you 
+could be traced with msgID of receiver - see 4)
+
+2) if you put in the same file, in the same line the -n 
+parameter, SendMail will get the user number instead of the user 
+name (see man identd)
+
+3)if you put -N and a .noidentd in home dir, SendMail's gonna 
+get HIDDEN USER instead of real name
+
+4)if you create a user called whoUlookingat, identd will pass 
+this to SendMail
+
+BUT THE REAL PROBLEM, IMHO, is that on slip and ppp running 
+Linux, we get the ISP IP assignement along with its name 
+as set in ISP's LAN aliases file -- e.g. in my case, 
+linexxx.infosquare.it (with xx being a number between 10 and 
+255) ...... SO:
+
+5)SendMail will usually report Received from: 
+name{identd(y/n)}@isp.dynamicip.name 
+ALONG WITH THE REAL  IP NUMBER !!! if the receiver email proggy 
+supports FULL HEADER  .....
+
+6) IP number is not identified through IDENTD which applies 
+for user names only. Anyone knows how this is achieved and 
+eventually countermeasured?
+
+7)if we got DIRECT CONNECTION or SHELL on a DIRECT LINK instead 
+of a slip/ppp (even if linux or other flavours), we can specify 
+OUR hostname as we like it to appear, say hell.micro$oft.com, 
+and this should be taken seriously by the SendMail ALTHOUGH the 
+REAL IP number would be identified .... but inexperienced 
+users wouldn't look so closely at IP numbers in the Received 
+field, but only at hostname. POINT 7 ONLY IF THERE'S NO 
+WAY TO WORK AROUND POINT 6
+
+further infos, discussion and help appreciated ........
+
+invy
+
+benc's 2-cents worth: hi invy! Like I said in a previous post, if 
+you're logging on from a modem, all your activities are traceable to 
+the modem port you are using, no matter what anonymous tricks you do. 
+You have a point in item 7 though. (In fact I already tried that). 
+Even then, as you said, your IP is still embedded, and will appear on 
+the header no matter what you do. Short of sneaking into a direct-net 
+computer and sending your anonymous msg, there really is no way. You 
+can only fool newbies or those too lazy to trace anonymous mail. Don't 
+get me wrong, however. I think there are times when we need to send 
+anonymous mail and like you, i am perpetually in search of those 
+methods. 
+ 
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+VIEWING PASSWORDS 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+in a previous hacker digest, someone asked:
+
+>   Now how do I view this pwd.db file? I tried Paradox 5 but it 
+>   said the file's header is corrupted.
+
+pete@servtech.com replies:
+
+Well, that probably holds the passwords, and from the suffix it 
+looks like a database file. Does your Unix box have any database 
+software installed? (I don't know of any Unix database stuff. 
+Anyone out there?) Or, if you have Acess or other high-end 
+databse software on your computer, you could try importing it.
+
+>   Another thing: in the passwd file all of the users have " 
+>   :*: " as their password. How do I find out their password? 
+>   One of the users also has no password " :: " but when I try 
+>   to login as that user, the system asks for a password.
+
+The *s mean that the passwords are shadowed, for better 
+security. (There have been other posts on that subject, so I 
+won't grind it into the ground.) For the no password user, try 
+just hitting return, or if it's a default user -- like bin, sys, 
+admin, etc-- try using the default password for that account. 
+You can get a list in one of the newbie philes on Infinity Void 
+(I forget which) but it's out there.
+
+Hope that helps! 
+-Pete
+
+>   CANDYMAN 
+>   I Am A Force Of Pure Destruction !!
+
+Good for you.
+
+Pete Hopkins       | "I got both a humidifier and a 
+de-humidifier for my pete@servtech.com  |  birthday, so I put 
+them in a room together and let 
+                   |  them battle it out." --Steven Wright 
+ 
+
+benc says: thanks pete, for not having to repeat that thing on 
+shadow files.  ;) 
+ 
+
+-=-=-=-=-=-=-=-=-=-=-=-= 
+WINHACK: NT QUESTIONS 
+-=-=-=-=-=-=-=-=-=-=-=-= 
+From: Clarky <clarky@Klink.Net>
+
+Ok heres the scenario... 
+The person who runs the library at my school is an evil witch 
+who likes to spoil fun. When me and my friend got busted for 
+using the network for a game of Quake she said that us "hackers" 
+would never be let back in, ever again!
+
+Time passed and we where not even allowed even near the library 
+entrance. But now that the windows NT network is up she said that if 
+we could hack her network and show her how we did it that she would 
+let us back in.  Us, being labeled as the elite of the school took it 
+as a welcome challenge.  BUT here is where the trouble starts. She has 
+the disk WRITE PROTECTED. And since debug wont work properly with the 
+permissions set like they are we cant do anything with that either. 
+We tried for hours.. we even tried pinging down the server at no 
+avail.  WE NEED YOUR HELP.. give us any ideas you have please!!!
+
+_______________________________ 
+<ANOTHER FINE WORK BY CLARK OF > 
+<SurgeNet Web Page development > 
+<    clarky@klink.net          > 
+<  http://www.klink.net/~clarky  > 
+<  http://www.klink.net/~surge   > 
+<    surge@klink.net           > 
+<    __      __   __  | /      > 
+<   |   |   |__| |__| |/       > 
+<   |__ |__ |  | |  \ |\       > 
+<                     | \      > 
+<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+Carolyn: A likely story. But I'll assume you're telling the 
+truth and I won't get busted for contributing to the delinquency 
+of a minor.
+
+Do you have physical access to the file server on this network? 
+That would simplify things. Then my suggestion is that you need 
+to edit the registry. If you can edit the registry you can gain 
+access to ANYTHING on the network. If you can't edit the registry on 
+the file server, try the registry of any other box on the network, and 
+see if from their you cna get administrative privileges. Maybe I'm 
+asking for flames, but it is my humble opinion that if you can gain 
+access to the registry, this is equivalent to gaining root on a Unix 
+box. Any half-way decent Windows 95 or NT manual should give details 
+about editing the registry. I like the registry editing instructions 
+in _Secrets of Winodws 95_, _Windows NT Workstation 4.0_ and _Peter 
+Norton's COmplete Guide to Windows NT 4 Workstation_.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+WINHACK: ACCESSING PROGRAMS FROM A WEB PAGE 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+previously, a hacker posted this:
+
+   |<img src="file|/c://whatever"> (this is NOT the "click here" 
+   to see |your hard drive one). 
+ 
+
+"Xenakis" xenakis@epix.net answers back: 
+I believe that you mean <A HREF="file|/c://whatever">Whatever</A> I 
+already had one at my site for a while....click on this link: <A HREF 
+= "file://C:\Windows\Notepad.exe">Notepad</A> or if you use Notepad to 
+do your site, try puting this HTML in your page:
+
+<A HREF = "file://C:\Windows\Notepad.exe"><IMG HEIGHT = 57 
+WIDTH=99 ALT="Made with NotePad" BORDER=0 SRC="notepad.gif"></A>
+
+It is a cool animated Notepad gif I made....
+
+Xenakis 
+ 
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+WINHACK: CAN'T FIND LOGO.SYS! 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+Sender: Alexei02@POboxes.com
+
+Hello-
+
+I was trying to do your first newbie hacker trick for Win95, but 
+I can't get the logo.sys file to show up.  I am following the 
+directions very carefully and it will not show.  It skips from 
+io.sys to msdos.. or something.  I don't know whats going on or 
+why its not working.  Please help me.
+
+Carolyn replies: In some versions of Windows 95 there is no 
+logo.sys, only io.sys. But naming your graphic logo.sys still 
+works (I know because I did it with one of those systems.) I 
+found some info that says only Microsoft Plus versions of Win95 
+have logo.sys.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+WINHACK: LOGOS TO GO! 
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: "Alien Virus" <kyle@felix.teclink.net>
+
+you can go to  http://www.windows95.com/apps/startup.html  and 
+find a large selection of startup and shutdown screens and also 
+you can get icons. P.S. you should of saw the weed-dows screen i 
+made
+
+c-ya, 
+alien 
+ 
+
+-=-=-=-=-=-=-=-=-=-=-=-= 
+I WAS HACKED ON IRC! 
+-=-=-=-=-=-=-=-=-=-=-=-= 
+From: Nathan <nathanp@worldchat.com>
+
+Hey list. I was sitting in IRC when some idiot came into the 
+channel swearing and so-on so I kicked him out.  When i tried to 
+get online later that night i couldn't, after calling my ISP i 
+discovered that this guy has hacked into some server under MY 
+username.  How did he do this and how can i prevent him from 
+getting ANY info from me in IRC.  You guys gotta be careful, my 
+ISP killed my account and i'm now trying to explain myself to 
+them.  I was one of the two people who got hacked and i wanna 
+know how to stop em!
+
+Thanks
+
+Nathan Poole
+
+benc replies: hey list questioner! :) are you sure you didn't put your 
+real account name or email address on your chat client?
+
+There are several details you haven't told us. Did he hack 
+servers in your isp or another server altogether? How was the 
+attack done and discovered by your isp?
+
+Since I don't know much about the details and am a newbie too, 
+this is what he possibly did:
+
+First, he did a /whois on you. This returned info on you, like 
+your IP address, and if you put your real name or email address, those 
+things too.
+
+In which case he either fingered your email address and found 
+more details on you, logged on to your isp, cracked your password and 
+spoofed you. 
+ 
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+WHAT ARE IRC IDENTD REQUESTS? 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: BrainMaster <fifo@concentric.net> 
+ 
+
+When I am on mIRC once in a while I notice that I get this on my 
+server status window: *** Identd request from 207.155.184.71 *** 
+Identd replied: 1145, 25 : USERID : UNIX : fifo ..is it that the 
+system wants 2 kno whu I am?.. what duz 1145, 25 mean?.. thanks
+
+-BrainMaster - the world at your fingertips
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+Why to Get a Computer Science/Math Degree 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: Keith Bostic <bostic@bostic.com> 
+Subject: Sometimes life *does* imitate morality plays. 
+Forwarded-by: Dave Barr <barr@math.psu.edu> 
+From: "Elizabeth D. Zwicky" <zwicky@neu.sgi.com>
+
+Long ago and far away I shared a house with two other 
+programmers. One of them was a starving college student, and the 
+other one was a highly-paid computer consultant with no 
+theoretical background.
+
+One day, the starving college student bounght a copy of 
+"Algorithms". This is a beautiful hardcover full of comp sci 
+stuff that cost at the time rough $60, which was approximately 
+$59.99 more than the disposable income he had available. The 
+highly-paid computer consultant thought this was the dumbest 
+concept he had ever heard of. 8 different ways to sort things! 
+Why, anybody could sort things!
+
+The very next weekend, we went down into the basement where the 
+computers were to ask the highly-paid computer consultant if 
+he'd like to go to a movie. "Well," he said "I can't go right 
+now, maybe in a couple of hours, I need to do something as soon 
+as this finishes.  The odd thing is, I thought it would be done 
+by now." "What's it doing?" says the starving college student, 
+and receives the explanation that the pointers have gotten 
+corrupted for the doubly-linked list that makes up the entire 
+customer database for one of the consultant's important clients, 
+and he is traversing the database, sorting it back into order. 
+With an insertion sort. He's traversing them in creation order, 
+which means that they are in fact about 75% in final order.  The 
+reason he thought he'd be done by then is that he watched it do 
+the first 20 items, and multiplied the time to do that by the 
+size of the database.
+
+The starving college student whipped out a pocket calculator and 
+calculated the time necessary to do the sort, using an algorithm 
+which in this situation approaches O(n!) and that exclamation 
+point is *not* for emphasis boys and girls, and pointed out that 
+indeed we might as well all go to the movie since it was going 
+to finish no sooner than midnight Sunday night and it was then 
+2:00 on Saturday afternoon, we had plenty of time. The 
+highly-paid computer consultant hung on grimly until the bitter 
+end, which was in fact 4am Monday, before admitting that maybe, 
+just maybe, there was some point in knowing more than one sort 
+algorithm.
+
+The truly sad point here, which some of you may have noticed, is 
+that it was a doubly-linked list and the data was mostly in 
+final order; simply reversing the order in which he traversed 
+the already sorted data would have changed it from near O(n!) 
+performance to near O(n) performance without requiring him to 
+learn a new algorithm at all. Increase in programming time: 5 or 
+10 minutes tops. Decrease in run time: call it 36 hours. As it 
+happens, his resulting loss was not just his Saturday afternoon 
+amusement, but also about 20 billable hours, and very nearly his 
+major client. All because he didn't know that how you sort 
+things matters.
+
+Sometimes life *does* imitate morality plays.
+
+ Elizabeth Zwicky 
+ zwicky@neu.sgi.com
+
+-=-=-=-=-=-=-=-=-=-=-=-= 
+RANTS: DO SOME READING! 
+-=-=-=-=-=-=-=-=-=-=-=-= 
+<anonymous>
+
+GRRRRR!  OK, Listen UP!  Go to your local bookstore.  Get one of 
+the 10,ooo+ books, with CDROM (oooh, it's soooo shiny!), on 
+Win95.  Get one that sez "For Dummies".  Get one that sez "For 
+Idiots" (yeah, with f'n Cliff Claven on the cover!).  Get one 
+that sez "Unleashed".  Then Learn to read.  Open the manuals 
+that came with your stupid OS.  Open the God D**N Readme files! 
+READ THEM!!  You should have ALREADY learned how to make a 
+tricky flashing ANSI Charset Color prompt in DOS before you even 
+THINK of getting anywhere on the net.  Cuz THAT'S WHAT IT TAKES! 
+If you don't have the guts, stamina, and balls (or ovaries) to 
+tweak your own system into hell and bring it back alive, how 
+could you hope to take root on someone else's?  Or to figure out 
+your own exploits.  Tell you what, when you can crash your OWN 
+system at will and ressurect it intact, then you can come out 
+here and make a name for yourself instead of running the same 
+old exploits again and again and bitching about how they don't 
+work.  Win95 has NO CONCEPT of taking root.  Just reboot the 
+f***er.  Hold down F8, and the box is yours.  Now, how do you 
+get root on a UNIX flavor? (and which flavor do you want?) 
+Thars a question WORTHY of someone who rules their own system 
+and wants to taste of power and knowledge of another's.  Just 
+send your WinCrap Hell/Baitway300 back to th' factory and find 
+your local community college.  You'll get farther, and no-one 
+calls you a "newbie".  Just a Freshman.
+
+L8tR
+
+Carolyn: You're going to hate me for this.  F8 doesn't always 
+work. To secure your Windows 95 box from this attack, put the 
+statement Bootkeys=0 in the msdos.sys file.
+
+But to circumvent this fix, reboot the computer with a boot disk 
+in the a: drive, and then edit the bootkeys statement. Then 
+reboot and press F8. Then simply delete every file that ends 
+with the extension "pwl." Tha eliminates all passwords. Then 
+when you reboot into Win95, when the password dialog box comes 
+up, just hit enter and you're in.
+
+If the computer won't boot from the a: drive, then you need to 
+go into the cmos setup at the very beginning of the startup 
+process and reset the default boot drive to a:.
+
+If there is a password required to reset the cmos ... I don't 
+know the answer to that one!
+
+benc says: yes Carolyn. open the cpu and remove the CMOS battery. this 
+messes up everything, but hey, it erases the password! then, you can 
+just autodetect the hard disks. 
+ 
+
+-=-=-=-=-=-=-=-=-=-=-=-= 
+ALIEN RESPONSE 
+-=-=-=-=-=-=-=-=-=-=-=-= 
+From: "Alien Virus" <kyle@felix.teclink.net>
+
+thanks for making me the url of the day, the bombs to e mail 
+account havve slowed down some but ive been added to hundreads 
+of e mail list (losers will never learn that all i hve to do is 
+press the delete button) but i also wanted to let you see the 
+ice page at  http://www.geocities.com/~pentiumru/icehtml.htm 
+thanks c-ya alien 

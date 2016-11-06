@@ -1,0 +1,536 @@
+Happy Hacker Digest March 7, 1997 
+=============================================================================== 
+         This is a moderated list for discussions of *legal* hacking. 
+                           Moderator is Carolyn Meinel. 
+  
+                      
+                 OR to the Hackers forum: http://www.infowar.com
+                   Please don't send us anything you wouldn't 
+                  email to your friendly neighborhood narc, OK?
+
+     To subscribe or unsubscribe, just 
+     use the subscribe boxes on the menubars. If you decide you 
+      just want to use the forum and not get these mailings, I promise my 
+           feelings won't get hurt if you unsubscribe from this list. 
+                                 Happy hacking! 
+------------------------------------------------------------------------------- 
+                     "Any excuse will serve a tyrant" -- Aesop 
+------------------------------------------------------------------------------- 
+URL 'O the Day:  http://www.newsday.com/ap/rnmpfn15.htm 
+-------------------------------------------------------------------------------
+
+=============================================================================== 
+*** From the Desk of Carolyn Meinel 
+=============================================================================== 
+   We aren't getting so many posts lately at our Infowar Hackers site 
+   (http://www.infowar.com). But more people will read you if you post 
+   there than if you post to this list. We only have a little over 
+   2,000 readers on this email list, but Betty O'Hearn, who manages 
+   that site, Infowar's Hackers forum gets the lion's share of the 
+   traffic of some 50,000 hits per week. And remember, Infowar is an 
+   award winning site, with a hot link from the prestigious New York 
+   Times web site.
+
+   Besides, we are getting way too many excellent posts. The trouble 
+   is that many readers are complaining about getting 25 kb/day from 
+   this list. Right now we are badly backlogged, too. Post to Infowar 
+   and we'll get your post up within 36 hours, whereas you may wait 
+   for 5 or 6 days on this list. 
+===============================================================================
+
+TABLE OF CONTENTS 
+   o IRC Woes 
+   o Down on Unix for Dummies 
+   o Email Forging Answers 
+   o Finding Dynamic IP Addresses 
+   o Linux Q&A 
+   o Tracking Down Bad Guys 
+   o More on Cracking 
+   o Identd Clarification 
+   o Flames
+
+=============================================================================== 
+*** IRC Woes 
+===============================================================================
+
+From: Warpy <root@null.net>
+
+   I'm noticing a disturbing trend starting to form on Infowar's IRC 
+   server.  To start off with it was OK. We were a bunch of 
+   newbie-intermediate hackers who actually wanted to learn how to 
+   hack. There were no op and/or flame wars, and we all managed to get 
+   along pretty well.
+
+   However this is not how it is today. Increasingly, people who have 
+   heard of the channel either through friends or HH have been leaping 
+   on-line.  Unfortunately their only idea of hacking is IRC-war, 
+   which is lame to the extreme. But who can blame them? Their just 
+   newbie's like we all were at some stage.
+
+   However I would just like to re-iterate that the #hackers channel 
+   on www.infowar.com is for the discussion of hacking in all its 
+   forms. And under most people definition, channel take-overs, 
+   flooding, and pinging someone down with a war script you didn't 
+   design is NOT hacking.
+
+   As well as that you DON'T advertise warez in the channel openly. If 
+   you've got a site ask people individually whether they'd like a 
+   look rather than flooding the screen with "/me has a warez site at 
+   123.456.789.0".
+
+   I'm not trying to be a pain in the a**, although I'm sure that's 
+   what it's coming across as to some people. I'm trying to get those 
+   people out there to whom mIRC and war-scripts are gods to 
+   understand there is more to hacking than that. If you really want 
+   to trade warez. Setup a new channel, don't join #hackers to trade 
+   it. And to those IRC warriors out there, sure playing with a war 
+   script is fun. But there is more to hacking than just that.
+
+   Warpy
+
+=============================================================================== 
+*** Down on Unix for Dummies 
+===============================================================================
+
+From: Anna Chronica <mcck@ucsu.Colorado.EDU>
+
+   > From: "NiNo" <NiNo@main.rgv.net> 
+   > 
+   >    I am wondering if there is anyone out there that puts out a 
+   >    *.txt, or book that is a definitive guide to UNIX commands and 
+   >    all their flags without all the other hooplah that comes with 
+   >    typing MAN.  Just: The Command; The Flags; An Example Of Each; 
+   >    How They Interact With Each other! No more, no less....There 
+   >    has to be one SOMEWHERE.  I have *heard* the "Unix For 
+   >    Dummies" (Yeah, flame me!!) book was somewhat decent.
+
+   Actually, don't get _Unix for Dummies_ if the above is what you are 
+   looking for.  I won't knock the Dummies books because I think some 
+   of them can be quite useful for people, especially people who are 
+   really computer phobic or brand-spanking new at something, but if 
+   you even know how to use the MAN command you are almost certainly 
+   beyond this book being of much use to you.  I've never encountered 
+   the sort of resource you are describing above.  Most Unix books 
+   I've encountered (the real Unix books, not the "for Dummies" type 
+   books) are pretty useful and straightforward. 
+  
+   About all _Unix for Dummies_ says about flags is a really basic 
+   definition of them and that just because 1's and l's look a lot 
+   alike on your screen, they aren't interchangeable.  That's the 
+   learning level you are looking at here.  Again, good for someone 
+   that that wouldn't occur to, but not much use to anyone who's 
+   beyond that point.  ;)
+
+   Anna Chronic
+
+=============================================================================== 
+*** Email Forging Answers 
+===============================================================================
+
+From: Iggy Drogue <optimus@canit.se>
+
+   >From: Jay Clements <jayc@compusmart.ab.ca>
+
+   >   Another thing I was wondering about...when ever I send mail to 
+   >   myself using sendmail on port 25 of some server...there is 
+   >   never any subject.. How do you specify a subject?
+
+   Just insert the line "Subject: blablablah" before the body of your 
+   mail.
+
+Moderator:
+
+   ... and put it in just after the "data" command.
+
+=============================================================================== 
+*** Finding Dynamic IP Addresses 
+===============================================================================
+
+From: THE ZOMBIE RITUAL<zombie@thepentagon.com>
+
+   I think I can answer this pretty easily.
+
+   The site that you are referring to are using Java. A good example 
+   is Silicon Toads page. You go to his page and right there in front 
+   of you is your OS what browser and how many times you've been 
+   there.  This doesn't mean he knows this about you. I think of this 
+   as a Java mirror. All it does is show you what you already see. 
+   Many people think this is just the most amazing thing but it isn't. 
+   Anyone can do it and it isn't hacking.
+
+   If you want to see how they do it then go to the page you want to 
+   see, go to View at the top of your browser then go to "View 
+   Document Source", this will show you the HTML and Java script used 
+   to publish this page.  These codes are read by Netscape, or what 
+   ever browser you use, to create .html documents containing variable 
+   font sizes and colors, etc...
+
+   There is no magic to it. Its an illusion at best.
+
+   As far as your friends IP is concerned you have me a little 
+   confused.
+
+   I'll explain IP addressing very shortly. An IP is a set of numbers 
+   in groups of four. You are assigned these numbers when you log on. 
+   They are always the same except for the last three. These three 
+   numbers change every time you log on (I wont go into why). Tracking 
+   a person should be left to the ISP. You can usually have this done 
+   (only if its necessary) by e-mailing the date time and IP number. 
+   The ISP will review their logs to see who it was.
+
+   I hope this helped a little. It wasn't very descriptive, so don't 
+   take this as gospel.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: Iggy Drougge <optimus@canit.se>
+
+   >From: Andre Chaperon <and-e@iafrica.com> 
+   >   IP address, as is mine, is Dynamically assigned. Basically, is 
+   >   there any way (by means of a program) that I can fined his IP 
+   >   number by just knowing his e-mail address (dxia@aol.com) or 
+   >   ISP.  An easy but unpractical way would be when he logs on, 
+   >   e-mails me his IP address. But using this way I must know when 
+   >   he's on or he must know when I'm on. I want to be able to scan 
+   >   or ping or something. If he is logged on it will return his IP 
+   >   address, or if he hasn't logged on yet return nothing.
+
+   Go to a Tucows mirror and look for "IP posters". Such programs for 
+   Windows post your IP address on a web page or whatever.
+
+   >   I've heard and even seen that when someone, such as myself for 
+   >   example, browsers a site like for example www.microsoft.com, 
+   >   that site or server can tell what my IP address is, name of my 
+   >   ISP, what type of machine or OS I am running etc. Using this 
+   >   method can't I track who has visited my site, then looking at 
+   >   that list, look for dxia@aol.com (my UK friend) which will have 
+   >   his IP address, or does this only work with servers (such as 
+   >   ISP's) connected directly to the Internet.
+
+   Any web server written in more than five minutes can see that. It's 
+   not that much to care about if you're just surfing the web, since 
+   it's just an IP address, not an email address. Any web server can 
+   sense the IP address, direct line to the net does not add anything 
+   but speed and a permanent connection.-
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: "Aileron" <aileron@aileron.com>
+
+   > From: Andre Chaperon <and-e@iafrica.com>
+
+   >    I have a friend in the UK who has recently subscribed to AOL. 
+   >    His IP address, as is mine, is Dynamically assigned. 
+   >    Basically, is there any way (by means of a program) that I can 
+   >    fined his IP number by just knowing his e-mail address 
+   >    (dxia@aol.com) or ISP.
+
+   Andre,
+
+   http://www.mirabella.com has some software called ICQ which may be 
+   able to help you. It keeps track of people you specify who are 
+   online and connected to their site. (Runs in the background).  You 
+   may want to make sure it's compatible with AOL, though.
+
+   /-\ileron 
+   -=-=-=-=- 
+   ColeSlaw Creative Internet 
+   aileron@akula.com 
+   www.akula.com/~aileron/csci
+
+=============================================================================== 
+*** Linux Q&A 
+===============================================================================
+
+From: "Robert B. Greer" <robin1@kersur.net>
+
+   Can anyone help me . I partitioned my HD and installed Linux 
+   leaving half for a Dos partition to reinstall Win95. The first half 
+   I left as a DOS partition. When I reinstalled Win I am afraid it 
+   took the whole drive back . There didn't seem to be a place in 
+   setup to designate where it should go.  Setup said there was an 
+   operating system already there.  Any help would be appreciated.
+
+   Robin Greer 
+   http://www.kersur.net/~robin1
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: k1neTiK <samk5@idt.net>
+
+   In the feb 27 issue John Beal wrote: 
+   > A. You can Backup your entire Drive that you intend on installing 
+   > Linux on and then Fdisk it and create 3 new separate partitions. 
+   > 1 for Win95 to reside in 1 for The Linux system itself and 
+   > finally 1 for the Linux Swap file <tip the swap file size should 
+   > be approx. twice the size of your physical Ram onboard>.
+
+   I am not sure there is really a point for creating the Linux 
+   Partitions with Dos's Fdisk. 
+  
+   What I did, is on my 850 meg drive, I partitioned it into one 600 
+   meg partition, which I of course made as the primary active 
+   partition, and that was all I did with Dos's Fdisk.  So basically 
+   what I had was an 850 meg drive, of which 600 meg was accessible 
+   through Win95. 
+  
+   I then formatted the drive, and rebooted using the BOOT and ROOT 
+   disks I had created.
+
+   I then ran Linux's Fdisk, and since I had 250 meg that was not in 
+   any partition on my Hard Disk, I made a Linux Native partition and 
+   a Swap Partition partition. 
+  
+   If I am not mistaken if you try to create the Linux Native and Swap 
+   Partition using Dos's Fdisk, you will just have to delete them 
+   again.  If you exit at this point, and run Dos's Fdisk, and check 
+   the partitions on your Hard Disk, you should find that it says one 
+   primary partition, and two non-Dos partitions.  Now you just have 
+   to install Linux.
+
+         |//////////k1neTiK////////////////////////////////////////| 
+         |//E-mail:  samk5@mail.idt.net////////////////////////////| 
+         |//IRC: usually on irc.stealth.net from around 5:30 p.m.//| 
+         |///(under the handle k1neTiK, duh!)//////////////////////|
+
+=============================================================================== 
+Tracking Down the Bad Guys 
+===============================================================================
+
+X-Sender: jopee@mozcom.com
+
+   I wanted to know who did something. So here's what I did with Win95 
+   telnet.
+
+   >whois dgte@foobar.com 
+   >No match for mailbox "DGTE@FOOBAR.COM".
+
+   >finger  dgte@foobar.com 
+   >[dgte.mozcom.com] 
+   > 
+   >Welcome to Linux version 2.0.0 at foobar.com ! 
+   > 
+   >  1:51pm  up 1 day,  6:00,  1 user,  load average: 0.08, 0.03, 0.02 
+   > 
+   >Login: Dgte                             Name:Joe Schmoe 
+   >Directory: /home/Dgte                   Shell: /bin/bash 
+   >Last login Tue Dec  3 12:33 (PDT) on ttyp1 from ***** 
+   >No mail. 
+   >No Plan. 
+   >
+
+   Are there other ways to find info about dgte@foobar.com?
+
+Moderator:
+
+   I anonymized the domain name and some user info to protect the 
+   privacy of jopee. One thing I would suggest is to do "whois 
+   foobar.com." This will probably give you the technical contact for 
+   Joe Schmoe's ISP. Then if this "Joe Schmoe" has been causing you 
+   serious trouble, email the technical contact and describe your 
+   problem.
+
+   If the whois command doesn't give you the technical contact, there 
+   are other options. See the GTMHH Vol.3 No.2 for a bunch more 
+   commands that will tell you more, most significantly nslookup. Or, 
+   if you have a Unix shell account, give the command "man nslookup" 
+   for details of the commands you can run from this invaluable 
+   program.
+
+=============================================================================== 
+More on Cracking 
+===============================================================================
+
+Sender: jericho@dimensional.com
+
+   >   I just saw a *.txt file that said that would work.  I want to 
+   >   know for sure.  You don't have to TELL ME EXACTLY, just point 
+   >   me in the direction of some *.txt's for me to read I have done 
+   >   SO many fr****** searches for "Rlogin" stuff and cant find it! 
+   >   Thanks Carolyn.
+
+   So many? Try 'man rlogin' at the prompt big guy.
+
+   >Moderator: 
+   > 
+   >   Alas, the NeXt operating system is a hackers' paradise because 
+   >   it has so many hackable holes...
+
+   Unless you know something I don't, SunOS and Linux have just over 
+   10x the amount of holes in them as NeXT
+
+Moderator: 
+  
+   But the NeXt holes are old and unpatched, so oftentimes serious 
+   crackers have all the tools they need to crack them already on 
+   hand.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+Anonymous:
+
+   My question arises from the fact that in this day in age of Caller 
+   ID on every phone or modem that matters, how do crackers get into 
+   systems? I mean eventually any dialup no matter how routed can be 
+   traced back to a base number somewhere and other than cell clones I 
+   can't conceive other untraceable methods. Wouldn't detection be as 
+   easy as asking telephone companies to show their logs or something? 
+   And isn't cell cloning expensive?  It's been a question I've been 
+   asking myself ever since I read The Fugitive Game, shouldn't it be 
+   easy to catch crackers by now? On a side note who is GALF? (I'm new 
+   to this list.)
+
+Moderator:
+
+   GALF stands for Gray Areas Liberation Front. Gray Areas is a 
+   magazine edited and owned by Netta Gilboa. At last year's def con 
+   convention there a near-riot broke out when Netta used her speech 
+   to accuse a long list of hackers, many of whom were present, of 
+   being narcs. GALF then set out to punish her attackers, but got 
+   mixed up on who they were. I wasn't even there at the time. Since 
+   then the dc-stuff  and Happy hacker email lists have both been 
+   prime GALF targets. The modus operandi is to break into a computer, 
+   send threatening and obscene messages to email addresses found on 
+   the system, and then erase the system files. Breaking tactics 
+   typically begin with sniffed passwords, followed by installing a 
+   program that allows telnet into a root shell.
+
+=============================================================================== 
+Identd Clarification 
+===============================================================================
+
+From: k1neTiK <samk5@idt.net>
+
+   >Moderator: 
+   > 
+   >   See Bronc Buster's excellent tutorials on identd in back issues 
+   >   of the Digest. To summarize, if a computer is running the 
+   >   identd (short for ident daemon -- a daemon is a program that 
+   >   lurks around all the time on a port waiting to do its job) it 
+   >   can tell your IP address. So to successfully forge email you 
+   >   need to find a computer that is not running identd.
+
+   repeat after me: 
+   Ident has NOTHING to do with the computer knowing your IP address! 
+   ALL Ident does is make a query to port 113 of your computer and if 
+   you have Identd installed there it will ask Identd to provide the 
+   server with your Username.  The easiest way to get around this is 
+   to install an Identd on your computer, and feed it a fake Username 
+   (you can use this to fake a fake Email).  If you have Win/Win95, 
+   edit the Ident tab in mIRC setup and leave mIRC running when you 
+   send your fakemail.   I posted a pretty long description on how to 
+   exploit this at Infowar in the "forging Email tips" section.
+
+            |////////////////////k1neTiK//////////////////////////////| 
+            |//// http://www.geocities.com/TimesSquare/Arcade/4594 ///| 
+            |//E-mail:  samk5@mail.idt.net////////////////////////////| 
+            |//IRC: usually on irc.stealth.net from around 5:30 p.m.//| 
+            |///(under the handle k1neTiK, duh!)//////////////////////|
+
+=============================================================================== 
+*** Flames 
+===============================================================================
+
+From: me38@juno.com (Certian Ly Notme)
+
+   >Moderator: 
+   > 
+   >   I'm doing the meanest, nastiest thing of all. I'm helping turn 
+   >   email bombers into laughingstocks.  Did you hear that RealAudio 
+   >   piece we had at the _PC World_ Web site. Hit records showed it 
+   >   was one of their most popular interviews. It got people 
+   >   laughing their ****** off at that johnny xchaotic d00d. 
+   > 
+   >   We'll see about GALF and your box. Just gimme that notarized 
+   >   contract test your security. What, are you afraid a 50-year-old 
+   >   newbie will rm your system philes? 
+   > 
+   First off, let me say thanks for not posting anything that I've 
+   written.
+
+   Second, you think that you are making everyone laugh at johnny . . 
+   . but look at what he's accomplished.  There aren't very many lists 
+   that haven't changed their formats after his email bombings.
+
+   Yes, we'll ALL see about GALF.  And I have no doubt that you cannot 
+   break into Damien's box.  Have you broken into anyone's box (and 
+   not your own, that doesn't count: ooh, is there a double meaning to 
+   this????) ever?   What the f*** do you want a signed letter for? 
+   He won't give you one.   You know that.  You would lose face if you 
+   accepted because you can't do it.
+
+   Find a new hobby CM.  You're an idiot.
+
+Moderator:
+
+   So then why doesn't jericho give me that notarized statement so he 
+   can prove to everyone that I'm an idiot?
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: jericho@dimensional.com
+
+   >   So if it is so simple, why hasn't he been caught yet? Or u4ea? 
+   >   Or Angry Johnny? Or... 
+   > 
+   >Moderator: 
+   > 
+   >   I'm keeping my mouth shut on Angry Johnny because he's been a 
+   >   publicity gold mine for me. Look at the mistake John Markoff 
+   >   made. Once Kevin Mitnick came to trial everyone realized that 
+   >   super reporter Markoff was full of baloney.  So I need Angry 
+   >   Johnny to stay in hiding. Don't get caught, please?
+
+   So you're going to cut him in on some of the profits, right? Last I 
+   checked, Netly News owed him 150 bucks for an article he wrote. He 
+   told them to hold the tab for now.
+
+Moderator (aside):
+
+   (You know and I know that Angry Johnny email bombed me as a free 
+    public disservice that just happened to backfire on him to my 
+    advantage.  But, hey, if you think email bombers should be paid by 
+    their targets, why not run an ad in Infoworld or 2600 offering to 
+    email bomb anyone who will pay your for the 2 minutes it takes to 
+    carry out the attack?)
+
+   >   As for GALF, that team used to strike everyone who said 
+   >   anything bad about Netta Gilboa. I don't agree that opposing 
+   >   Gilboa should
+
+   Not even close to everyone...
+
+   >   be punished with wiping system files. In my case, GALF goofed. 
+   >   Some jokester posted an alleged attack by me on Gilboa to a 
+   >   hacker bulletin board, and GALF went on the war path against 
+   >   me. You see the results -- now I attack Gilboa at every 
+   >   opportunity. In fact, GALF has become such a joke that lots of 
+   >   people are attacking Gilboa just to have fun seeing what kind 
+   >   of attack GALF does next.
+
+   Don't believe everything you see is the only advice I can offer 
+   there.
+
+   >   If any of you readers want the excitement of dueling with GALF, 
+   >   the best place to go to incite attacks is to post to the 
+   >   dc-stuff list (subscribe by emailing majordomo@dis.org with 
+   >   message "subscribe dc-stuff.") Also, GALF guys attend every def 
+   >   con convention taking notes on who says bad things about Netta.
+
+   Completely out of curiosity here.. lets play hypothetical. Lets say 
+   I know most of GALF. Lets say they were NOT at the last Defcon. How 
+   would you reply?
+
+Moderator:
+
+   I'd ask Rogue Agent and a few other guys how come they saw GALF and 
+   you didn't. Is it possible GALF is more than one person? That's my 
+   hypothesis.
+
+=============================================================================== 
+=M-o-d-e-r-a-t-o-r============================================================= 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 
+=============================================================================== 
+     To subscribe or unsubscribe, just 
+     use the subscribe boxes on the menubars. If you decide you 
+      just want to use the forum and not get these mailings, I promise my 
+           feelings won't get hurt if you unsubscribe from this list. 
+=E-d-i-t-o-r=================================================================== 
+     Peter Beckman  .  beckman@purplecow.com  .  http://www.purplecow.com/ 
+===============================================================================

@@ -1,0 +1,537 @@
+Happy Hacker Digest March 19-20, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+           Moderators: Carolyn Meinel and Ruben D. Canlas Jr.
+                 
+            OR to the Hackers forum: http://www.infowar.com 
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you decide  you just want to use the forum and not get these mailings, we promise 
+       our feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+================================================================= 
+URL 'O the Day: http://www.usps.gov/ncsc/locators/find-is.html 
+Where to report pyramid scheme spams 
+=================================================================
+
+Table of Contents
+
+o  Hacker Wars Strike Again 
+o  New Hacks: Usenet News Servers Vulnerable, New Windows Holes 
+o  Windows Registry Stuff 
+o  Anonymous Email Sites 
+o  Call for Writers 
+o  Social Engineering 
+o  Download Shell Account Stuff 
+o  IRCII Scripts? 
+o  Breaking into Windows 
+o  Telenet Tutorial
+
+==================================================================== 
+Hacker Wars Strike Again 
+====================================================================
+
+Carolyn: If you emailed the Happy Hacker list or Carolyn Meinel on March 18 or 19 you may have received an obscene message from the Gray Areas Liberation Front (GALF). This was accomplished by using the recently publicized inetd exploit to gain root access to Southwest Cyberport's system. This root access was then used to install .forward files in two of my shell accounts on the system which redirected email to the account galf@escape.com. Then there was an autoresponder at galf@escape.com which sent an obscene message to whomever emailed me at these two accounts. At the time I was routing all my cmeinel.com email through one of these shell accounts. For all you who emailed me during this time, please accept my apologies for that noxious email
+
+So what is GALF? This is a group devoted to destructive attacks on any Internet Service Provider that serves people who they believe may be enemies of Netta Gilboa. She is the editor of Gray Areas magazine. You can catch her Web site at http://www.gti.net/grayarea/. Warning: this site contains adult material regarding prostitution, pornography, illegal drugs, hacking and phreaking. You may also read about her in the essay "Elites, Lamers, Narcs and Whores: Exploring The Computer Underground," in the anthology _Wired Women: Gender and New Realities In Cyberspace_, edited by Lynn Cherny and Elizabeth Reba Weise, Seal Press 1996.
+
+GALF has made war on the Happy Hacker list almost from day one of its existence. Their modus operandi  is to damage computer systems. Sites they have hit in their war against Happy Hacker include New Mexico Internet Access, Cibola Communications, The University of Texas at El Paso and, in a heavy blitz from March 18-20, Southwest Cyberport.
+
+On March 20 Southwest Cyberport capitulated to the attacks. The owner advised Carolyn Meinel that it could no longer afford the financial devastation caused by the GALF attacks. He agreed to close all my shell accounts. His hope is that with me gone, GALF will leave Southwest Cyberport alone.
+
+This latest continues a disturbing trend in Cyberspace. The FBI is unlikely to get involved because their policy is to only prosecute crimes that involve theft of money. Since GALF has a purely political agenda -- the furtherance of whatever they believe are the aims of Netta Gilboa -- the FBI considers this to be not worth pursuit.
+
+What is Gilboa's role in this? She has chilled discussion of this in the print media by threatening to sue those who publish stories about GALF. For example, she managed to kill an article that was to have run in the Nov. issue of Internet Underground magazine on GALF. So sue me, Netta. I would be proud to stand up to you in court.
+
+What is the role of escape.com in this? I don't believe they actively collaborate with GALF. For example, GALF broke into a New Mexico Tech computer over Christmas break and posted email to a Web site on escape.com that they stole of a young woman student. When I complained, the sysdamin deleted the Web site immediately. My guess is that escape.com allows GALF to use escape.com as a base for operations simply because they cannot afford the expense of fighting their hacking attacks.
+
+So who are the people who operate GALF? Two individuals well-known on this list claim to know but won't tell. Is this because they are afraid, or is it because they sympathize -- or even my be part of GALF ? I don't know.
+
+But I (Carolyn) do know that I will not be intimidated. I fought Jim Crow laws that segregated people with darker skins from us Caucasian folks back when this meant risking our lives. One of my friends died from a beating. I'm not going to let some fascist GALF gang push the Happy Hacker list off the Internet. Just watch us -- we will ALWAYS find a way to keep going. Congratulations to all of you with the courage to maintain archives on your Web sites. Congratulations also to our inside team of Betty G. O'Hearn, Winn Schwartau, Webwarrior, Gerard Cochrane Jr., Ruben D. Canlas Jr., Matt Hinze, Peter Beckman, Silicon Toad, Brett Perlas, k1neTiK, Leprekon, WarBeast, and all of you who dare to post to this list.
+
+Unfortunately, the latest GALF attack has led to loss of our planned editor for the intermediate list. So we are still looking for candidates for the job. It has no pay, and you will be subjected to incessant attacks on you and any entity that provides you with Internet access. However, it will definitely be a way for you to get a reputation for being either brave or foolish or some sort of masochist. Qualifications for the job are a strong knowledge of computer science and familiarity with hacking -- and a mature, no flames attitude toward people who sincerely want to learn.
+
+-----------------------------------------------------------------------
+
+Oh, no, what happened to the award-winning Infowar site, http://www.infowar.com? Did hackers get us? Arrrggghhh!!! False alarm, it was just a hard disk crash. It is simply not possible for some hacker accessing the system remotely to cause a hard disk crash.
+
+But we did have some interesting hacker wars on our IRC server. Bots, ICMPing, you name it, it got too exciting. When Infowar gets up again, we will be running the Hacker IRC server under new rules. Hear, ye, hear ye, this is what our Supreme IRC Cop Betty G. O'Hearn has to say about the new regime:
+
+This purpose of this server is for the enjoyment of those who wish to come here and exchange information, for help,  for education, and  for exploration of issues relevant to information security, and information warfare.
+
+Profanity and pornography will not be tolerated.
+
+RULES RULES RULES
+
+The operators of this server have the right to  kill, ban or  kline anyone for any violation of the Rules.
+
+No Clones 
+No Flooding 
+No Spoofing 
+No Fake Usernames 
+No Harassment 
+No Mass Messages 
+No Colliding 
+No ICMP Bombing 
+No Bots Unless Registered and the Bot Request Form is Submitted 
+No Profanity used direct in the channel 
+No Pornography of ANY TYPE is to be traded, or transferred
+
+Bot Request Form 
+     1. Owners (Registered)  Infowar.Com NICK 
+     2. Owners (Non-Anonymous) E-mail address. 
+     3. BOT's (Registered).Infowar.Com NICK 
+     4. Channel(s) that the BOT will reside. 
+     5. Purpose of running the BOT.
+
+Forward this form via email to irc@infowar.com
+
+ Wait for response back acknowledging that the bot is registered.
+
+Any violators will be Klined from this server without notice.
+
+IRC COPS
+
+Thank you for volunteering! 
+IRC cops are to maintain order in the channel using common sense.  No power trips please. 
+Warnings will be given in private to those users who are breaking rules. 
+A three warning limit is suggested.
+
+Congratulations to the new Infowar IRC cops: Brett Perlas <bperlas@earthlink.net>, k1neTiK <samk5@idt.net>, Leprekon <leprekon@null.net>, WarBeast <dorothy@cytanet.com.cy>, 
+and, yes, Warpy <mindfusion@geocities.com>. We will announce additional IRC cops as they are deputized.
+
+====================================================== 
+New Hacks: Usenet News Servers Vulnerable, New Windows Holes 
+====================================================== 
+Excerpted from:
+
+T a s t y   B i t s   f r o m   t h e   T e c h n o l o g y   F r o n t
+
+    Timely news of the bellwethers in computer and communications 
+    technology that will affect electronic commerce -- since 1994
+
+    Your Host:  Keith Dawson
+
+    This issue: <URL:http://www.tbtf.com/archive/03-21-97.html>
+
+..Usenet servers under attack
+
+    Unknown crackers are broadcasting forged control messages, normally 
+    used in the routine maintenance of Usenet News, across the Internet 
+    in an apparently successful attempt to extract sensitive system in- 
+    formation from thousands of news servers. For details and examples 
+    see this New York Times story [5]; it may not remain online as long 
+    as this coverage from PC Week [6]. The attack targets InterNetNews, 
+    the software commonly used to manage the flow of Usenet news, and 
+    exploits a vulnerability that has been known -- and for which a fix 
+    has existed -- for a year and a half. One system administrator who 
+    accidentally sent a similar message while analyzing the attack re- 
+    ceived sensitive files from hundreds of systems around the world. 
+    The unknown perpetrators forged their messages so that they appeared 
+    to come from David Lawrence <newgroups-request@uunet.uu.net>, the 
+    moderator of news.announce.newgroups. The Times quotes Lawrence on 
+    the possible outcome of the attacks:
+
+      > This attack could [open] a previously inaccessible site for 
+      > shell access. The cracker would have the name of the site, 
+      > user names, and possible broken passwords for those sites.
+
+    Thanks to Monty Solomon < monty@roscom.com> for quick notice on this 
+    worrying development.
+
+    [5]  <URL:http://www.nytimes.com/library/cyber/week/031897news.html> 
+    [6]  <URL:http://www.pcweek.com/news/0317/17mhack.html> 
+ 
+
+    ..This week's crop of Microsoft security holes
+
+    TBTF for 3/9/97 [8]
+
+    This is getting boring. If the student community keeps finding Mi- 
+    crosoft security glitches at this rate TBTF may go to a scoreboard 
+    system. A student at the University of Washington, Aaron Spangler 
+    <pokee@maxwell.ee.washington.edu>, sent word of three new security 
+    problems in Microsoft software. They all allow an attacker easy ways 
+    to record the username and password of unsuspecting users. Spangler 
+    found and documented #4;  users in the U.K. and Israel discovered 
+    #5 and #6, respectively, Neither one is a student as far as I know. 
+    Birnbaum's exploit site [9] links an exhaustive and frequently up- 
+    dated compendium [10] of Windows NT security holes; at this writing 
+    50 are listed, most with patches or workarounds.
+
+      Bug       Found by   Date   W-95   W-NT   Attacker obtains: 
+      -------   --------   ----   ----   ----   ------------------------- 
+      #4 [11]   Aaron      3/14   no     yes    username, hashed password 
+                Spangler
+
+      #5 [12]   Paul       3/15   no     yes    ", " " and more 
+                Ashton
+
+      #6 [9]    Steve      3/17   yes    no     cleartext password 
+                Birnbaum
+
+    [8]  <URL:http://www.tbtf.com/archive/03-09-97.html> 
+    [9]  <URL:http://www.efsl.com/security/ntie/> 
+    [10] <URL:http://www.ntsecurity.net/security/exploits.htm> 
+    [11] <URL:http://www.ee.washington.edu/computing/iebug/> 
+    [12] <URL:http://www.security.org.il/msnetbreak/> 
+    ____________________ 
+..Cryptographers find a flaw in digital cell-phone code
+
+    Bruce Schneier and three other researchers subjected the once- 
+    secret CMEA algorithm, a symmetric cypher with a 64-bit key length, 
+    to "simple cryptanalysis." They found a flaw in the algorithm that 
+    effectively reduces its key length to 24 or 32 bits; communications 
+    encrypted using CMEA can now be broken on a run-of-the-mill PC in 
+    seconds or minutes. Details of CMEA were supposed to be a closely 
+    guarded secret known only to a small circle of industry engineers, 
+    but technical documents were leaked late last year and showed up 
+    on the Internet. This tactic, which the security community scorn- 
+    fully labels "security through obscurity," is hit hard in the re- 
+    searchers' press release: "Our work shows clearly why you don't do 
+    this behind closed doors. [We're] angry at the cell phone industry 
+    because when they changed to the new technology, they had a chance 
+    to protect privacy and they failed." The researchers have posted an 
+    account [17] of the exploit, and also host a copy of the New York 
+    Times writeup [18] on the affair.
+
+    The Times article says that unnamed telecommunications officials 
+    fingered the NSA as a source of pressure to weaken the crypto. 
+    Yesterday the NSA's Clint Brooks <cbrooks@romulus.ncsc.mil> for- 
+    warded this official statement (which I saw on Declan McCullagh's 
+    FC mailing list):
+
+      > "NSA had no role in the design or selection of the encryption 
+      > algorithm chosen by the Telecommunications Industry Associa- 
+      > tion (TIA). NSA also had no role in the design or manufacture 
+      > of the telephones themselves. As we understand the researchers' 
+      > claim, it appears that the algorithm selected and the way it 
+      > was implemented in the system has led to the stated flaws. NSA 
+      > provided the TIA with technical advice on the exportability of 
+      > these devices under U.S. export regulations and processes."
+
+    A poster to the Cryptography mailing list paraphrased this disclaim- 
+    er as: "NSA did not openly tell TIA not to use strong crypto in the 
+    digital phone standards, and wasn't directly involved in the decis- 
+    ion about which uselessly weak cryptographic system in particular 
+    they should select."
+
+    Today Omnipoint [19] bought page A21 of the New York Times (paper 
+    edition) to deliver a "public-service message" to users of wireless 
+    phones that the Omnipoint system, based on GSM technology, is not 
+    vulnerable to the publicized attack. "Self-serving message" is more 
+    like it, though they do have a point: the researchers note [20] that 
+    their approach "affects both CDMA and TDMA cellular systems, but not 
+    GSM systems."
+
+    [17] <URL:http://www.counterpane.com/cmea.html> 
+    [18] <URL:http://www.counterpane.com/cmea-nytimes.html> 
+    [19] <URL:http://www.omnipoint.com/> 
+    [20] <URL:http://www.counterpane.com/cmea-response.html> 
+     ____________________
+
+    TBTF home and archive at <URL:http://www.tbtf.com/>. To subscribe 
+    send the message "subscribe" to tbtf-request@world.std.com. TBTF is 
+    © 1994-1997 by Keith Dawson, <dawson@world.std.com>. Com- 
+    mercial use prohibited. For non-commercial purposes please forward, 
+    post, and link as you see fit. 
+    _______________________________________________ 
+    Keith Dawson               dawson@world.std.com 
+    Layer of ash separates morning and evening milk.
+
+======================================================== 
+Windows Registry Stuff 
+========================================================
+
+From: RadMan@emarkt.com>
+
+If you want to learn more about the registry, I've got a nice FAQ.
+
+Just e-mail me at:
+
+Meballs@emarkt.com
+
+And ask for a copy.  It's in a 270Kb Zip files, so you better be able to hanle files that large.
+
+I didn't write the FAQ, I just got it off of a cover CD, and thought it is quite good.
+
+For all my fellow British hackers:
+
+GO HERE:  http://www.madrab.demon.co.uk/phuk/phukfaq.html
+
+For a cool FAQ.  Check out:
+
+http://wwww.gbnet.net/net/uk-telecom/
+
+As well.
+
+A note on the on-going mail bombing debate - I think that mail bomb programs should be made available on websites, but only if the senders e-mail address is included in the actual messages, and the program does not attempt to cover any tracks.  That would!  sure stop the lamers(or Z, if you are of that sad disposition) from using them.  It would also allow easy retaliation, and their name/details could be distributed amount the better newsgroups (aka, all but alt.2600!).
+
+Just a final note,
+
+Try this:
+
+go to whois.
+
+type: @aol.com
+
+Press enter (or what ever), for great joy!!!!!!!!
+
+See ya! 
+------------------------------------------------ 
+From: Adam Christopher <mjolnir@thor.pla-net.net>
+
+2 Questions
+
+1. Does anyone know where I can find an assembler for DOS?  I've been 
+all over looking for one, but I can't find any.
+
+2. A week ago my Netscape started acting funny and it turned out I had a 
+virus.  I cleaned my HD and all of my disks, but when I tried to reboot 
+my comp locked up after the Plug and Play BIOS message.  my comp got 
+quiet and it sounded like the HD just stopped.  I was able to boot off a 
+disk and when I restored my system from tape, it still wouldn't boot. 
+So finally I whipped out the 'ol Win95 Upgrade CD and reinstalled.  My 
+system will boot now, but why wouldn't it boot before?
+
+Carolyn: My guess is that the registry was the culprit.
+
+================================================ 
+Anonymous Email Sites 
+================================================
+
+From: Niraj Bhatt <bhootnath@juno.com>
+
+To keep yourself anonymous (almost), there are several services on the 
+Internet that will give you a free e-mail address. Some of the 
+services, like BigFoot, simply forward the mail to the address of your choice. 
+Others, such as RocketMail, give you an entire mailbox you can access 
+from anywhere. Doesn't hurt to give them a try, they're all free.
+
+Forwarding Services:
+
+NetAddress - http://netaddress.usa.net/ 
+BigFoot - http://www.bigfoot.com/ 
+iName - http://four11.iname.com/  OR   http://www.iname.com
+
+Web - Based Services:
+
+MailCity - http://www.mailcity.com/ 
+HoTMaiL - http://www.hotmail.com/ 
+RocketMail - http://www.rocketmail.com/
+
+Niraj Bhatt
+
+==================================================== 
+Call for Writers 
+==================================================== 
+Visit The Digital Misfit Syndicate Web Site at: 
+   http://www.javanet.com/~mechanic 
+   http://mechanic.base.org 
+     To get on the mailing list, send mail to mechanic@javanet.com 
+       with a subject of <Subscribe_Mailing_List> 
+   DMS is currently looking for writers, ideas, and suggestions for DMS. 
+   Please mail mechanic@javanet.com with your article, or if you are 
+                                interested.
+
+==================================================== 
+Social Engineering 
+====================================================
+
+From: hwsnyman@medic.up.ac.za (Len)
+
+Sorry to be of a bother to you, but there is one or two things I just need 
+to know...
+
+1 - I know nothing(NOTHING!) of social engineering and I think that it's an art on it's own. I want to know if it's possible for you to tell me what it's all about and even how to do it(what to say). 
+  
+I give you my word of honor that I won't use it for evil or bad doing. 
+I just think that in order to become a good happy hacker, I need to know 
+all about hacking...can't only know some parts. 
+    Thank you for your time.
+
+2 - The server on IRC that you use .. is it INFOWAR..or is that just a channel. Do you connect to it, or do you use UNDERNET ?
+
+LiquidMetal
+
+P.s: I have a great sense of humor...you may play pranks on me if you 
+like...hehe  ;)
+
+Carolyn: That's a dangerous offer:):):)
+
+1) Social engineering is known in other circles as learning how to be a con artist.  But it's worth discussing in order to learn how to protect oneself from it.  A number of hackers, especially the ones trying to shut us down, fear that the Happy Hacker list  is a giant social engineering exercise. Is it? You'll find out!
+
+2) The Infowar IRC server is Java stand-alone application. We prefer it if you use your Web browser (it has to be able to use Java) and click on chat to get in. It's at http://www.infowar.com -- as soon as they fix the hard drive for the server!
+
+=================================================== 
+Download Shell Account Stuff 
+===================================================
+
+From: Adam Christopher <mjolnir@thor.pla-net.net>
+
+>From: Engineering Practice Pty Ltd <cdep@jimi.vianet.net.au> 
+> 
+>I was just wondering can you download stuff from your shell account to 
+>your home  pc(i.e. mail )?  I looked at the help files but couldn't >find anything that would help 
+>thanks
+
+There is a handy-dandy util called sz(send zmodem).  FTP to 
+ftp.planet.net/~nitro/bin/ (or something, just look around /~nitro/) 
+GET the file and type "rz filename" where filename is whatever you want 
+to d/l
+
+========================================================= 
+IRCII Scripts? 
+=========================================================
+
+From: cLOut <clout@widomaker.com> 
+Hey, 
+ I was wondering what a GOOD, all around ircII script is? I've tried 
+*MANY*, but can't really find a good one. Anyway, if ya know of some for 
+ircII, e-mail them to me..L8rz.
+
+     .oO cL0ut Oo.
+
+=========================================================== 
+Breaking into Windows 
+===========================================================
+
+From: dsdanger@secollege.edu (Douglas S Dangerfield)
+
+Carolyn, 
+I am a newbie, and I have been skimming through the GTMHH, and I have 
+question about Series #2 Section #2 - Easy Win Break In #2 
+ I follow step one and two then I have problems when I come to Step 
+three.  It says, Choose 7. then at the MS-DOS prompt type 
+"rename c:\windows\*pwl c:\windows\*zzz."
+
+I then hit Enter after typing it, and I get : 
+"Invalid parameter - c:\windows\*zzz."
+
+What does this mean, and what am I doing wrong?  Can you help me.  I am 
+trying to learn
+
+Thanks 
+Skooter
+
+Carolyn: Sorry, sorry, it's a typo. It should be *.pwl and *.zzz. I left out the dots. 
+---------------------------------------------------
+
+From: Mr. Fubar <mrfubar@execpc.com>
+
+Carolyn P. Meinel wrote: 
+> Get both NTLocksmith and 
+> NTRecover -- and lots more free hacker tools -- from > http://www.ntinternals.com.
+
+Guess what- NTLocksmith is not free!?! Any ideas on where I can get it 
+or something like it for less than $84? Let me know,
+
+Thanx
+
+---
+
+Carolyn: My mistake, I don't know how to get it without paying. 
+---------------------------------------------------------------
+
+From: --=Tepes=-- <tepes@usa.net>
+
+>To use Internet Explorer as a Windows shell, bring it up just like you would 
+>if you were going to surf the Web. Kill the program s attempt to establish 
+>an Internet connection -- we don t want to do anything crazy, do we? 
+> 
+>Then in the space where you would normally type in the URL you want to surf, 
+>instead type in c:. 
+> 
+>Whoa, look at all those file folders that come up on the screen. Look 
+>familiar? It s the same stuff your Windows Explorer would show you. Now for 
+>fun, click  Program Files  then click  Accessories  then click  MSPaint. 
+>All of a sudden MSPaint is running. Now paint your friends who are watching 
+>this hack very surprised. 
+> 
+ If you type c:/ in Netscape Gold 3.01, it will do the same thing, although 
+it doesn't look like Winblowz Explorer.  They look like links.
+
+-=Tepes=-
+
+Carolyn: But if you play around some with Netscape you will see it doesn't behave that much like a shell. It's pretty good for opening text files in an appropriate word processor, but you can't get it to run other kinds of applications.
+
+=============================================================== 
+Port Surf Question 
+===============================================================
+
+Anonymous:
+
+Can you be traced while port surfing on telnet? What about if you 
+attempt to log on to something? Do you know if I can be traced through 
+this account if I used false information. Please keep this 
+confidential or post it anonymously.
+
+Carolyn: If you are asking that question, the answer is yes. There are ways to evade identification, however.
+
+===================================================================== 
+Telenet Tutorial 
+===================================================================== 
+From: sarna@toltbbs.com
+
+Telenet                                       Courtesy of Exodus 
+                                              Orig. by JR
+
+It seems that not many of you know that Telenet is connected to about 
+80 computer-networks in the world. No, I don't mean 80 nodes, but 80 
+networks with thousands of unprotected computers. When you call your local Telenet-gateway, you can only call those computers which accept reverse-charging- calls.
+
+If you want to call computers in foreign countries or computers in USA 
+which do not accept R-calls, you need a Telenet-ID. Did you ever notice that you can type ID XXXX when being connected to Telenet? You are then asked for the password. If you have such a NUI (Network-User-ID) you can call nearly every host connected to any computer-network in the world.
+
+Here are some examples:
+
+026245400090184 :Is a VAX in Germany  (Username: DATEXP and leave mail 
+for CHRIS  !!!) 
+0311050500061   :Is the Los Alamos Integrated computing network (One of 
+the hosts connected to it is the DNA (Defense Nuclear Agency)!!!) 
+0530197000016   :Is a BBS in New Zealand 
+024050256       :Is the S-E-Bank in Stockholm, Sweden (Login as GAMES 
+!!!) 
+02284681140541  :CERN in Geneva in Switzerland (one of the biggest 
+nuclear research centers in the world) Login as GUEST 
+0234212301161   :A Videotex-standard system. Type OPTEL to get in and 
+use the ID 999_ with the password 9_ 
+0242211000001   :University of Oslo in Norway (Type  LOGIN 17,17  to 
+play the Multi-User-Dungeon !) 
+0425130000215   :Something like ITT Dialcom, but this one is in Israel ! 
+ID HELP  with password HELP  works fine with security level 3 
+0310600584401   :Is the Washington Post News Service via Tymnet (Yes, 
+Tymnet is connected to Telenet, too !)  ID and Password is: PETER You can read the news of the next day !
+
+The prefixes are as follows: 
+02624  is Datex-P in Germany 
+02342  is PSS in England 
+03110  is Telenet in USA 
+03106  is Tymnet in USA 
+02405  is Telepak in Sweden 
+04251  is Isranet in Israel 
+02080  is Transpac in France 
+02284  is Telepac in Switzerland 
+02724  is Eirpac in Ireland 
+02704  is Luxpac in Luxembourg 
+05252  is Telepac in Singapore 
+04408  is Venus-P in Japan 
+...and so on... Some of the countries have more than one 
+packet-switching-network (USA has 11, Canada has 3, etc).
+
+OK. That should be enough for the moment. As you see most of the 
+passwords are very simple. This is because they must not have any fear of hackers. Only a few German hackers use these networks. Most of the computers are absolutely easy to hack !!! So, try to find out some Telenet-ID's and leave them here. If you need more numbers, leave e-mail.
+
+I'm calling from Germany via the German Datex-P network, which is 
+similar to Telenet. We have a lot of those NUI's for the German network, but none for a special Tymnet-outdial-computer in USA, which connects me to any phone #.
+
+CUL8R,  Mad Max
+
+PS: Call 026245621040000 and type ID INF300 with password DATACOM to get 
+more Information on packet-switching-networks !
+
+PS2: The new password for the Washington Post is KING !!!!

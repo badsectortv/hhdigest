@@ -1,0 +1,460 @@
+Happy Hacker Digest March 27, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                       Moderator: Carolyn Meinel
+                 
+            OR to the Hackers forum: http://www.infowar.com 
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you decide 
+you just want to use the forum and not get these mailings, we promise 
+       our feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+================================================================= 
+URL 'O the Day: http://www.infinity.webhost.com.au 
+=================================================================
+
+Catch Supreme Moderator Carolyn Meinel on IRC tonight 10 PM EST at 
+http://www.infowar.com  #hackers, or www.infowar.com port 6667 with yout IRC 
+client!
+
+Table of Contents
+
+o  In Defense of GALF 
+o  GALF Discussion List Launched 
+o  Latest Sendmail Bug 
+o  Cracking Question 
+o  Mac Hacking 
+o  Hacking in Holland 
+o  Emailbomb Protection 
+o  Telnet vs Telenet 
+o  Changing Netscape, IE Logos 
+o  Calling St. Louis Hackers
+
+================================================================= 
+In Defense of GALF 
+=================================================================
+
+From: jericho@dimensional.com
+
+>Hi, I submitted a post a few days ago and got your "obscene GALF 
+>reply"  I must assume that they now know who I am and being in the 
+>sec/ tech business myself have now become concerned by the fact that 
+>I may become a potential target. I can not afford this sort of 
+>buzzkill.  Nor do I take lightly to this kind of political
+
+So why throw yourself into the fray and try to organize a counter-group? 
+Seems like you must not mind too much.
+
+>their regimes. We are currently in the process of organizing 
+>a SAD (seek and destroy) response team to deal with these Internet SS 
+>creeps. We will at least keep these guys on their toes, stay on their
+
+So should I organize a SADASAD team? (Seek And Destroy All Seek And Destroy)
+
+>No information about this team will be stored on computers.
+
+Why not store on NON-NETWORKED computers? Seems like you are overly paranoid 
+about this.
+
+>You may contact us by mail at 1705 14th St. suite 354 Boulder CO 80302
+
+Mind if I drop by?
+
+>Please include a phone number so we can contact you back.
+
+"But we won't give you ours..."
+
+> We accept mail from GALF victims and elite's who want to join our 
+>team.  We would also love to hear from the cowards at GALF if they 
+>want to talk about it before it's too late.
+
+Seems like you would provide a "throw-away" email account for contact, 
+or a phone number, or something besides snail-mail. Hell, I only 
+send books via snail mail.
+
+-----------------------------------------------------------------------
+
+>Carolyn: That Web page of yours is a great idea. Making phun of the lusers 
+>who abuse hacking the way GALF does is much more constructive than 
+>retaliating with illegal attacks on computer systems. It's more fun, too. 
+>The great thing is that Gilboa and GALF have atrophied senses of humor, so 
+>this is a battle we can easily win.
+
+"Sticks and stones.."
+
+------------------------------------------------------------------------
+
+>guys seem serious, and I can understand why the moderator might not to 
+>retaliate. But what the heck, I reckon that we should, like let's blast 
+>them from @escape.com, and see how they like it, two can play that game.
+
+Do you really think a group like that would base their operations from an 
+account like that? Catch a clue before you fight back.
+
+>There must be enough of us to start an attack, show them who`s boss, but 
+>I guess that's against the happy hacker ethics??.
+
+What makes you think you can take them? Carolyn and her elite uber-hacker 
+friends at UTEP haven't been able to. Her good friend super-cop Ira Winkler 
+hasn't caught them. But you will?
+
+>They act like conquerors not like citizens, they show no respect for 
+>mutual expression and freedom to say what one pleases. Genius does not 
+>grant you the right to emulate those that you hate.  If GALF is so great 
+>they ought to focus on more worthwhile tasks like messing with the 
+>Illuminati or corrupt governments or at least the super wealthy who show 
+>no regard.  Don't harass your peers when there are those who oppress you 
+>all around.    DUH?
+
+"Snatch back your brain". D00d. Don't believe Carolyn's quasi-media hype. 
+She has no clue about everything GALF has done. I would guess I know maybe a 
+slight fragment, but I know it is more than she knows. GALF is not this big 
+bad evil hacker gang like she makes them out to be. Quit believing her rants.
+
+Carolyn: We haven't tried to take out GALF because it's silly. Suppose we 
+knew of a computer that was actually theirs and not just belonging to some 
+hapless ISP they've hacked. Suppose we break in and rm the system philes and 
+lock them out so they have to use a boot disk and reinstall, and in the 
+meantime reply to everyone who emails them saying "Whoopie doopie, we've 
+rooted GALF!!!*&%@##!!!" Ahem, seems a little childish. Sheesh, besides, 
+jericho's so afraid of my hacker team he won't even allow us an account on 
+his box to demonstrate to him how easily we could get root from a user account.
+
+======================================================== 
+GALF Discussion List Launched 
+========================================================
+
+>From the X-men <antigalf@emarket.com>
+
+New ANTI GALF Mailing list.  Moderated by me, the X-men (all of 'em).
+
+Please send a message with the subject SUBSCRIBE, and in the body your EMAIL 
+ADDRESS, and NOTHING ELSE.  You will then be subscribed.  Send this to:
+
+ANTIGALF@EMARKT.COM
+
+You an also send your comments on GALF to there.  I would like GALF 
+themselves to contribute to this list themselves, and explain themselves..
+
+I suggest that all messages are sent via one of the many fake mail programs 
+around, because GALF could get their dirty mitts on the messages, but I 
+certainly won't be giving anything away.
+
+====================================================== 
+Latest Sendmail Bug 
+======================================================
+
+(Reprinted from the Bugtraq list. To join email listserve@netspace.org with 
+message "subscribe bugtraq")
+
+From: Jeffrey Moyer <phro@SEGFAULT.RES.WPI.EDU> 
+To: BUGTRAQ@NETSPACE.ORG
+
+On Sat, 22 Mar 1997 C0WZ1LL4@NETSPACE.ORG wrote:
+
+> Hello fellow mongoloids 
+> Try this: 
+> Make hard link of /etc/passwd to /var/tmp/dead.letter 
+> Telnet to port 25, send mail from some bad email address to some 
+unreachable host. 
+> Watch your message get appended to passwd. 
+> ie: 
+> cowzilla::0:0:c0wz1ll4 0wns u:/:/bin/sh
+
+Okay, here is a very very simple kluge to temporarily fix it.  Create a 
+file /var/tmp/dead.letter with chmod 0644 perms.  That way no one can make 
+the hard link to /etc/passwd, b/c the file /var/tmp/dead.letter already 
+exists.
+
+        -phro
+
+===================================================================== 
+phro@wpi.edu                                            Jeffrey Moyer 
+                        network operations 
+                         net-ops@wpi.edu 
+                Linux - The Choice of a GNU Generation 
+                  http://segfault.res.wpi.edu/~phro 
+--------------------------------
+
+Sender: Bugtraq List <BUGTRAQ@NETSPACE.ORG> 
+From: Jamie Rishaw <jamie@DILBERT.IAGNET.NET>
+
+> Hello fellow mongoloids 
+> Try this: 
+> Make hard link of /etc/passwd to /var/tmp/dead.letter 
+> Telnet to port 25, send mail from some bad email address to some 
+unreachable host. 
+> Watch your message get appended to passwd. 
+> ie: 
+> cowzilla::0:0:c0wz1ll4 0wns u:/:/bin/sh
+
+This is why Good Little Sysadmins(tm) have /, /var, /tmp, /usr, etc. on 
+separate partitions and/or drives.
+
+If /etc and /var/tmp are on different partitions this wont work. Can't 
+symlink cross-device far as I know.
+
+> This is not good.  Worked with my 8.8.4, will probably also work with 8.8.5 
+> Root for the whole family 
+> 
+> -Cowzilla the omnipotent b0v1n3 
+> PD 
+> Greets to various #2600 people 
+> 
+ 
+
+-- 
+jamie g.k. rishaw <jamie@iagnet.net> - Internet Access Group [www.iagnet.net] 
+  -  Cleveland  -  Akron  -  Pittsburgh  -  Detroit  -  Columbus  -  Toledo  - 
+Corp: (800) 637 4IAG / (216) 623 3565. DID: (216) 902 5455. FAX (216) 623 3566. 
+Personal: jamie@@arpa.com || jamie@@null.net (Remove second @, nonspammers) =) 
+-------------------------
+
+=============================================== 
+Cracking Question 
+===============================================
+
+(please make anonymous)
+
+OK, lets say I have gained access to a UNIX system (ULTRIX V4.3 (Rev. 
+44)) and then unshadowed the passwd file and gotten lots of passwords. 
+Now, when I login as one of these people and do nothing harmful (just 
+look around) and then logout, the next time so and so logs it is will 
+say "last login from "hacker IP address". 
+How can I prevent this from happening? In other words, I am not that 
+worried about sysadm logs, cause I am doing nothing bad to the system 
+(doing nothing at all really), but I don't want so and so whose account I 
+used to complain that someone is using his/her account.
+
+Thanks 
+====================================================== 
+Mac Hacking 
+======================================================
+
+Sender: dogwalker@hotmail.com
+
+if anyone on this list owns a Mac, tell me, I have good protection prog info. 
+Otherwise, ill just dump it on a macHack board.
+
+-----Dogwalker-----
+
+========================================================== 
+Hacking in Holland 
+==========================================================
+
+Hacking In Progress is an open-air hacker convention on a 
+campsite near Almere in the Netherlands. Visitors will bring 
+their own computer equipment and tents to build the largest 
+non-military open-air Ethernet ever. People from all over 
+the Netherlands and other countries will come together to 
+learn and discuss the benefits and the risks of new 
+technologies. They'll listen to lectures, participate in 
+workshops, enjoy special presentations and - last but not 
+least - party. All of this in the friendly open-air 
+environment of a very wired campsite far away from the 
+civilized world.
+
+HIP will be a place for hackers, artists, activists and 
+many, many others to network themselves, both in the social 
+and electronic sense of the word. HIP will deal with the 
+social and political aspects of information technology, 
+security, Internet, access to technology, cryptography, and 
+concerns about spamming and other 'hacker-related' topics.
+
+Who is organizing HIP? 
+----------------------
+
+Once there was a little magazine in The Netherlands called 
+`Hack-Tic', and it published wild ways to play tricks on the 
+information infrastructure of the world. The magazine 
+doesn't exist anymore, but most of the people that wrote 
+articles for the magazine or helped organize Hacking at the 
+End of the Universe (1993) and even some of the people that 
+helped put up the Galactic Hacker Party (1989) are still in 
+touch with each other. The every-four-year-itch has gotten 
+to us again...
+
+Open-air? 
+---------
+
+There'll be no hotel rooms or anything like that so you'll 
+want to bring at least a tent and a sleeping bag to HIP, 
+even if this means you can't bring the paper-tape unit that 
+came with your VAX 11/780. We'll supply a campground, 
+toilets, showers, good food and electrical power (as close 
+to 220V/50Hz as possible) and we'll do our best to supply 
+everyone who wants it with an Ethernet connection. You will 
+probably be able to trade wiring, extra outlets, Ethernet 
+cards, and the use of modular crimping tools for almost 
+anything.
+
+What will be the issues at HIP? 
+-------------------------------
+
+A lot can and will happen in the coming months, and we'll 
+keep adding new topics even during the event itself. But 
+we're definitely going to discuss the legal situation 
+regarding encryption, as well as the latest technical 
+developments in this field. The current decay of the Usenet, 
+copyright issues, censorship as well as many other 
+legislative, social political and technical issues 
+surrounding Internet will be discussed. Computer security, 
+or the lack thereof will also be a hot topic. We'll have 
+research workshops (i.e. GSM and chipcard security) and you 
+can also join many `how-to' workshops and lectures where you 
+can pick up on Linux (Unix you can run at home, not built by 
+Microsoft), perl (a very powerful computer language) and 
+many, many other topics.
+
+Just visit our web site at http://www.hip97.nl/ and use the 
+form to subscribe to the announcement mailing list. It's 
+spam-free and will only carry HIP announcements written by 
+us. You can also participate in the ongoing, yet slightly 
+messy debate in the newsgroup alt.hacking.in.progress
+
+If you don't have access to the web you can subscribe to the 
+announcement mailing list by sending an email message to
+
+    majordomo@hip97.nl
+
+with the line subscribe hip-announce in the body of the message.
+
+Announcements will also be posted in alt.hacking.in.progress 
+How can I contact the people behind HIP? 
+Check out our website at http://www.hip97.nl/
+
+Mail us at info@hip97.nl
+
+======================================================= 
+Email Bomb Protection 
+=======================================================
+
+From: jericho@dimensional.com
+
+>How to Protect Your Server From Being Used For Mail Bombing or Spammers 
+>----------------------------------------------------------------------- 
+>This is a Technophoria Release - www.technophoria.com - 
+>-----------------------------------------------------------------------
+
+(install qmail)
+
+>PrivacyOptions settings. There are various settings, but the BEST and 
+>SAFEST one is the "PrivacyOptions=goaway". With this set, you ENABLE ALL
+
+No. The best and safest is not to run sendmail.
+
+========================================================== 
+Telnet vs Telenet 
+==========================================================
+
+From: jericho@dimensional.com
+
+>What's D difference between TELENET & TELNET? 
+> 
+>Carolyn: There is an excellent discussion on this under the Telenet topic at 
+>our Hackers forum at http://www.infowar.com.
+
+Which is extremely lagged on top of being down for a few days, so join in!#@$
+
+=-=
+
+>>with ans.net passwords. So I'm not telling you how to social engineer those 
+>>passwords. 
+> 
+>Could U give me a hint on how to do it?
+
+No. Carolyn does not know what Social Engineering is. I recently spoke with 
+someone on IRC who claims to have prank called her, only to find she thought 
+he was trying to social engineer her. prank != SEing.
+
+- Damien Sorder 
+(c) 1997
+
+Carolyn: Hmmm, more evidence of atrophied sense of humor... That guy jericho 
+communicated with sure got mad when I told him he didn't know the first 
+thing about social engineering, he, he.... Sorry, d00dz, I'm going to win. I 
+am the biggest propeller head on the Net. Yes! Yes! YES!!!
+
+================================================== 
+Changing Netscape, IE Logos 
+==================================================
+
+From: Wendy Mosiman <wmosiman@feist.com>
+
+Hey... I thought it would be totally K-Rad 31337 (of course I'm new to 
+this stuff and my opinion doesn't count for much) if you could change 
+the pointer in Netscape, you know the little hand with the pointer 
+finger up that points to links, into something else.  Such as maybe the 
+middle finger up.  :)  This kind of crude hacking appeals to me for some 
+reason.  If anyone has any ideas on how to do this e-mail me if you 
+would.  thanks in advance
+
+NoEscape
+
+There is No Escape.
+
+-------------------------------------------------- 
+From: "Michael Paul" <mbp@locke.ccil.org>
+
+I don't know about changing the logo in Netscape, but in IE it's easy. 
+First you need the picture to put there:  a 40x40 animated bitmap.  To make 
+one, just make a really tall bitmap in Paint and paste each frame directly 
+under the preceding one.  The first frame will be shown when nothing is 
+being loaded, the next three are shown once when a download starts, and the 
+rest are played in a loop until the download is done.
+
+Once you have the bitmap, run Registry Editor (REGEDIT.EXE), open the 
+subkey "HKEY_CUURNT_USER\Software\Microsoft\Internet Explorer\Toolbar" and 
+change "BrandBitmap" to the name of the bitmap.
+
+When the text labels on the toolbar are turned off, a smaller image is 
+used.  Its dimensions are 23x23, and is specified by "SmBrandBitmap". 
+------------------------------------------------------- 
+From: "Michael" <michaelr@worldaccess.com>
+
+>Sender: candyman@voicenet.com 
+>I was wondering if anybody knows a way to change the animated logo (top 
+>left corner) of Netscape and IE browsers.  I know it's possible because 
+AT&T 
+>and Quicken and other companies did that, well at least to the Netscape 
+browser. 
+>So if somebody figures how to do it please post it on this list.
+
+For IE 3.0 (and I would assume 2.0 as well), use a text editor to create a 
+REG file, and add this text:
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar] 
+"BrandBitmap"="whatever.bmp"
+
+Where whatever.bmp is the path and name of the image you wish to replace 
+the stock animation with.
+
+A few things to note:  IE will use the width of your image file as the 
+height for each individual frame.  (ie. a 40 x 160 pixel bitmap would have 
+4 frames)  Also, you need to have an even number of frames in your bitmap, 
+or else the animation doesn't work quite right.  The first frame at the top 
+of the file is the frame IE sits on when it's not animated, when you are 
+not loading or contacting anything.
+
+To get rid of your customized animated logo, just go into RegEdit and 
+delete the "BrandBitmap" key. 
+ 
+
+Hope this helps, you can email me if ya want and I'll send an example image.
+
+=================================================== 
+Calling St. Louis Hackers 
+===================================================
+
+From: "Blake Leonard" <The_Ender@msn.com>
+
+ Calling all Hackers in the St. Louis Area. I am in need of a mentor, please 
+e-mail me.
+
+Carolyn Meinel 
+M/B Research -- The Technology Brokers

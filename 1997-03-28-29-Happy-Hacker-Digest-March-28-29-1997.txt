@@ -1,0 +1,1029 @@
+Happy Hacker Digest March 28-29 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Carolyn Meinel
+                 
+            OR to the Hackers forum: http://www.infowar.com 
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you decide 
+you just want to use the forum and not get these mailings, we promise 
+       our feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+================================================================= 
+URLs'O the Day: http://web.mit.edu/crioux/www/ie 
+http://www.cyberpass.net/~winsock/ 
+Want a logo for your Happy Hacker stuph on your home page? Email Randy 
+Knighton <gold@netdoor.com> for a good gif. 
+=================================================================
+
+Table of Contents
+
+· Infowar IRC Update 
+· Dangers of Port 19 
+· !!!!!:)GALF;)!!!!! 
+· Changing IE, Netscape Animated Logos 
+· IRC Stuph 
+· Hacking Port 25 
+· Windoze Hacking 
+· PHF Attacks 
+· Update from the Front on the War Against Spam 
+· Phreak ISDN 
+· Cracking Questions 
+· Calling Indianapolis Hackers
+
+=========================================================== 
+ *** Infowar IRC Update 
+===========================================================
+
+Carolyn: Despite warnings from the National Computer Security Association 
+that a gang of computer vandals was going to trash the Infowar IRC server 
+for my visit the evening of March 27, we went on-line anyhow. We had an 
+assortment of attacks. But our volunteers quelled the lamers. So we managed 
+to have an entertaining evening. Thanks to all! Following is Supreme IRC Cop 
+Betty's report on Infowar IRC copdom:
+
+From: "Betty G. O'Hearn" <betty@infowar.com>
+
+Hello everyone.
+
+Two news items...
+
+Wolfkill has been added as an IRCop and
+
+Leprekon has been named Coordinator.
+
+This will bring our op pool to 7 which hopefully should be able to give us 
+some coverage around the clock. We are also representing several time zones.
+
+Thank you for your assistance and willingness to work for free! lol  This 
+will be a good resume builder for you also.  You work/manage for free.... 
+but you gain tremendous experience and personal/professional growth. I will 
+give you a glowing recommendation for your future job search.
+
+We have the Coordinator to relieve WebWarrior and me of administrative 
+duties.  I know he will do a great job.
+
+We are running a series of WebEvents... so we will need some man power.  Lep 
+can coordinate all the security/protections he thinks we need.  As you know 
+the first one was March 27 with Carolyn.  Then we will start a 4series next 
+week on Terrorism...( in another room)  so someone will need to man that 
+channel and also Winn Schwartau will be featured along the away along with 
+several names that are very prominent in the field of Infowar and Infosec. 
+The Coordinator will arrange for all coverage.
+
+All Web Events will be logged.
+
+WebWarrior is putting a ListServ into place so you may communicate among 
+yourselves.  We will also have an irc@infowar account.
+
+Wolfkill has developed a InfoServ bot which will be an aid to you. Thank you 
+Wolfkill.... please make the final what-ever-it-is- you do to keep the thing 
+working around the clock.
+
+I don't want things to get complicated here, but bear in mind we are unique 
+because the people who visit us are in the field.... so we don't have day to 
+day IRC traffic that fills the channel with nonsense.  We want to have fun 
+here, but we also want to learn/teach hacking and associated exploits that 
+are legal.  I cannot stress how important the legal aspect is.  If we loose 
+that focus, and someone sees illegal activities discussed, it will hurt all 
+of our credibility.
+
+As you know it is my vision to have this infowar hacker channel an example 
+of good control, being a  pleasant  place with manners to newbies (and 
+everyone), and to build the traffic. We can build a model here that will be 
+unique and make help in our way to make the Internet a better place.  As you 
+may or may not know, Mr. Winn Schwartau has been very supportive of hackers. 
+We appreciate him for his support of this irc venture.
+
+As you know, we will not tolerate any nonsense as wars and similar silly 
+wastes of energy.  I know the team here is very mature for their ages and 
+responsible, and we feel comfortable with Lepreken coordinating things. 
+(Just don't become a hard boss Lep or I will have to spank you!)  I know 
+that Lep will also run the team in a democratic fashion giving ops the 
+ability to give input to issues that come up.   I stress team....
+
+So to sum it up.... this is IRC at infowar.com    THE place to go!
+
+Thank you all.
+
+We are here to support you. 
+Have fun and make this place great! 
+Let's rock the world!
+
+Betty/MsInfoWar
+
+================================================================= 
+ *** Dangers of Port 19 
+=================================================================
+
+From: "Mishari \"CykiX\" Muqbil" <mishari@thepentagon.com>
+
+The following attack seems to be working for me on my Linux box: 
+telnet localhost 19|telnet localhost 7 
+This puts a tremendous amount of strain on my computer and caused me to 
+restart at the end. Someone should stop port 19 totally. It is a huge 
+new potential for Simple but yet effective DYI Denial of Service 
+attacks. 
+-- 
+Reg'dz 
+[MÍ§hÄrí mÜQßî¦] (MiShArI MuQbIl) 
+Go to my homepage http://mishari.home.ml.orgContent-Description: Card for 
+Mishari Muqbil
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Carolyn: Thanks for bringing this up. MÍ§hÄrí mÜQßî¦ has independently 
+discovered a little-known, yet devastating denial of service attack. There 
+is absolutely no excuse for leaving port 19 (the chargen -- character 
+generator port) open to the outside world.
+
+Since rumor has it that a Windows 95 program may be released for download 
+tomorrow that might automate these port 19 attacks, it would be a good idea 
+to disable this port on all computers with Internet connectivity NOW. Sorry, 
+I won't give out the URL for the download site or even the program name as I 
+don't want to make it too easy for any lamers reading this to get the program.
+
+To disable port 19 on a Unix box, go into etc/inet/conf look and edit 
+chargen by commenting out the two line of UDP and TCP (put a # in front to 
+comment them out). This tip is courtesy of Gerard Cochrane Jr., a systems 
+administrator at the University of Texas at El Paso.
+
+To disable port 19 on an NT box, you have several options:
+
+1. The most is not to permit it through your router. (This should also work 
+on Unix boxes.) 
+2. By not installing the "Simple TCP Services" you do not install 
+Chargen, Echo, Quote of the Day, etc... servers. Since none of these is 
+essential for the average NT server, why invited trouble by installing that 
+feature? 
+3. You can also disable port 19 in NT 4.0 through the use of the Advanced 
+port filtering feature. 
+4. Finally, you can disable any of the individual Simple TCP Services by 
+changing a value in: 
+  
+HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/SimpTCP/Parameters
+
+EnableTCPChargen = 0 (defaults to 0x01 = enabled) 
+EnableUDPChargen = 0 (defaults to 0x01 = enabled)
+
+You will see a list of all the servers in this key and can alter their 
+listening states accordingly.
+
+These NT tips care courtesy of Russ at R.C. Consulting, Inc. - NT/Internet 
+Security, <Russ.Cooper@RC.ON.CA> He is moderator of the NT Bugtraq list. TO 
+subscribe, email message SUBSCRIBE NTBUGTRAQ Yourname to Listserv@rc.on.ca.
+
+=========================================================== 
+ *** !!!!!:)GALF;)!!!!! 
+===========================================================
+
+From: wraith@dimensional.com
+
+Ahhh!  GALF speaks.  I assume from the tone of his last post that Jericho 
+speaks on behalf of GALF or is directly a representative of that 
+organization.  If not, I write in vain. 
+My recent letter though harsh and designed mostly to get a response directly 
+from GALF, I believe held several viable points.
+
+1.) COOL and FOOL are only 1 letter apart...... didn't take much to turn 
+your peers against you did it?  GO figure.
+
+2.) Messing with the Happy Hacker, who is the one who graciously provides 
+this forum for you to expectorate upon in the first place, is the same as 
+picking on a little kid (no offense C) and if you are cool you will show 
+chivalry, PARTICULARLY in times of war.  We must always leave neutrality 
+open as an option.
+
+3.) We MUST retain the right to regulate the Internet ourselves for without 
+it there would be no battlefield upon which to earn our dignity. If you 
+continue you will force the man down on ALL OF US.  Unless that's what you 
+want???????
+
+4.) I propose we meet and discuss amongst ourselves the possibilities and 
+concerns of all involved before GALF gets itself put out of commission.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: GR8GUY <cyoung@northernnet.com>
+
+I just don't see how me especially and most people can compete with GALF in 
+the computer hacking area you know! I mean you can and others but not me or 
+most of us! Not that I would not try if it came down to it but... 
+so the best way I can think of is it to attack their popularity! And I now 
+know that gets to them even more then trying to hack them! After all 
+"sometimes its better to fight with your head then with brawn"! I'm really 
+glad I'm now on your list and caught up with you guys! You definitely have a 
+awesome group and thing going on...and best of all it's mostly legal..and 
+happy :o)!!! 
+                      ______________________________________________ 
+                     #define url= http://www.northernnet.com/cyoung 
+        #define handle= GR8GUY/LITTLE BOY 
+        #define os= Win95 
+        #define age= 18 
+void main() 
+{ 
+ printf("to IBM's"); 
+}
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Carolyn: You both make good points. If we use social pressure -- not illegal 
+computer vandalism!-- to encourage guys like GALF and email bomber angry 
+johnny into quitting their lamerfests, we can keep the Internet free. But if 
+this rash of destructive denial of service attacks and hacking into ISPs 
+continues, the day will arrive that the government will crack down on *all 
+hackers*. A government authority powerful enough to control the entire 
+worldwide scope of the Internet would be frighteningly powerful. Anything we 
+can do as hackers to curb the destructiveness of Internet vandals is a blow 
+for freedom and for keeping power out of the hands of Big Government.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+>From jericho@dimeonsional.com
+
+> Carolyn: We haven't tried to take out GALF because it's silly. Suppose we 
+> knew of a computer that was actually theirs and not just belonging to some 
+> hapless ISP they've hacked. Suppose we break in and rm the system philes and 
+> lock them out so they have to use a boot disk and reinstall, and in the 
+> meantime reply to everyone who emails them saying "Whoopie doopie, we've
+
+No.. because you CAN'T take out GALF. Don't front Carolyn. It has been 
+proved several times you are incompetent when it comes to hacking.
+
+> rooted GALF!!!*&%@##!!!" Ahem, seems a little childish. Sheesh, besides, 
+> jericho's so afraid of my hacker team he won't even allow us an account on 
+> his box to demonstrate to him how easily we could get root from a user 
+account.
+
+Stop your stupid s*** Carolyn, you look really ignorant. What part of our 
+original agreement are you ignoring here? What part of "you and you alone" 
+did you miss? You have already broken that agreement by letting your 
+uber-hacker friends at UTEP f*** with my system. I said YOU could try to 
+hack my system. Catch a clue and pass it along to your friends.
+
+As for 'scared', I don't think so. Like I have said a MILLION F***ING 
+TIMES before this..  If I want to hack 'dockmaster', do you think they 
+will give me an account there knowing my intentions? Of course not. So, 
+just like everyone else, you get to try to hack my box like a regular 
+hacker would. Petty insults and calling me 'scared' will not help your 
+chances. You are a p***-poor social engineer, give it up.
+
+And like I said long ago, I won't narc anyone for trying to hack my box. I 
+think that is pretty apparent from past attacks, but technically.. I have a 
+legitimate right to mail UTEP and complain about the UTEP admins. But, I 
+will sit back and let them try to hack the box too. Of course, if they do 
+get in for some reason, make sure you remind them to back up their own system.
+
+You are lame.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Carolyn: 
+1) The supposedly dire hacking attempt on jericho from the University of 
+Texas at El Paso (UTEP) was merely a port scanner. Word to the wise -- 
+please don't port scan jericho's obscure.foobar.org, it gives him 
+conniptions! However, it is legal to do so. Watch out, jericho, my next 
+visit may be from the account galfina@escape.com. 
+2)Crackers who rm system files, as GALF has done in the past at UTEP and as 
+jericho appears to be threatening to do to them again, are breaking the law 
+and acting REALLY lame. Besides, that buffalo.utep.edu box that GALF 
+fourletter worded over was set up with the sole purpose of acting as a lure 
+to get data on GALF. GALF is easy to social engineer, and I am patient:) 
+3)Both GALF and angry johnny -- both of whom jericho so emotionally defends 
+-- have been far more destructive than Kevin Mitnick or even Kevin Poulson 
+ever were. And look where those guys are now. GALF, angry johnny, do you 
+quit while you're still free, or do you find out how compatible you are with 
+your future cellmate "Spike"?
+
+==================================================================== 
+ *** Changing IE, Netscape Animated Logos 
+====================================================================
+
+From: Iggy Drougge <optimus@canit.se>
+
+>Sender: candyman@voicenet.com 
+>I was wondering if anybody knows a way to change the animated logo (top 
+>left corner) of Netscape and IE browsers.  I know it's possible because 
+>AT&T and Quicken and other companies did that, well at least to the 
+>Netscape browser. So if somebody figures how to do it please post it on 
+>this list.
+
+It's quite straightforward since version 3.0. Do a web search for 
+"throbbers".
+
+================================================================ 
+ *** IRC Stuph 
+================================================================
+
+From: Iggy Drougge <optimus@canit.se>
+
+>Sender: dschwarz@earthlink.net@hungary-c.it.earthlink.net
+
+>Happy Hacker, 
+>    I have a question about IRC. I was on your chat channel today and 
+>encounter something called a script. My questions is what are they, 
+>how do you make them?
+
+A script is a macro, which in IRC terms is run in your IRC client to 
+perform mundane tasks for you in just one step.
+
+===================================================================== 
+ *** Hacking port 25 
+=====================================================================
+
+From: "NK" <nk@xtasy.prestel.co.uk> 
+> 
+> 
+> From: anonymous 
+> 
+> Please make anonymous! 
+> I was wondering if you know the correct commands to enter once you 
+> connect to the incoming mail port? anything that I type says error!!!! 
+> Also is there a way to get my mail from the server through a certain 
+> port, if so what are the commands? Thanks! 
+> 
+> [ Matt: try the command 'help'. If that doesn't work, there's not much 
+> you can do. ]
+
+I have a really nice tutorial on sending fake email via port 25. Its quite 
+an old file so the mail server lists may be out of date , however the 
+method is exactly the same now. 
+Its a bit large to post here like that , instead anyone can read it from my 
+site , the URL of the document is: 
+http://www3.cybercity.hko.net/islamabad/nk/docs/fake.email 
+  
+-NK 
+xtasy-owner@graffiti.net
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: Valerie Henson <val@nmt.edu>
+
+>From Happy Hacker list:
+
+> Sender: Bugtraq List <BUGTRAQ@NETSPACE.ORG> 
+> From: Jamie Rishaw <jamie@DILBERT.IAGNET.NET>
+
+> > Hello fellow mongoloids 
+> > Try this: 
+> > Make hard link of /etc/passwd to /var/tmp/dead.letter 
+> > Telnet to port 25, send mail from some bad email address to some 
+> > unreachable host. 
+> > Watch your message get appended to passwd. 
+> > ie: 
+> > cowzilla::0:0:c0wz1ll4 0wns u:/:/bin/sh
+
+> This is why Good Little Sysadmins(tm) have /, /var, /tmp, /usr, etc. on 
+> separate partitions and/or drives. 
+> 
+> If /etc and /var/tmp are on different partitions this wont work. Can't 
+> symlink cross-device far as I know.
+
+It is _hard_ links that cannot be made across partitions/drives. 
+_Symbolic_ links can cross drives.  But this doesn't have the desired 
+effect, naturally:
+
+val@localhost<~>$ ls -l dead.letter 
+lrwxrwxrwx   1 val      2147           20 Mar 27 18:15 dead.letter -> 
+/etc/security/shadow 
+^^^this is where my system keeps the "real" passwd file
+
+val@localhost<~>$ echo "attempted_password_entry" >> dead.letter 
+bash: dead.letter: Permission denied 
+val@boris<~>$ 
+ 
+
+-VAL
+
+==================================================================== 
+ *** Windoze Hacking 
+====================================================================
+
+From: Jonathan Wilkins <jwilkins@SECNET.COM> 
+Subject:      ANNOUNCE : NTCrack v1.0 
+To: BUGTRAQ@NETSPACE.ORG
+
+This is a short message to announce NTCrack.  NTCrack is a program 
+designed to crack Windows NT passwords offline.  It presumes that 
+these passwords have been grabbed using Jeremy Allison's PWDump utility. 
+ 
+
+You can find information on NTCrack at 
+   http://www.secnet.com/ntinfo/ntcrack.html
+
+It is being released with full source code at 
+   ftp://ftp.secnet.com/pub/tools/ntcrack 
+ 
+
+PWDump is available at ftp://samba.anu.edu.au/pub/samba/pwdump
+
+-=-=-=-=-=-=-=- 
+Jonathan Wilkins      |  Futuaris   | If only they had used their 
+jwilkins@secnet.com   | Non Irresus | terminals for niceness instead 
+http://www.secnet.com |  Ridebus    | of evil ...-Maxwell Smart
+
+(Reposted from the Bugtraq list. To join email listserv@netspace.org with 
+message "subscribe bugtraq"
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: "Xenakis" <xenakis@epix.net>
+
+|Also, is there anyway to place a ..wav file in your 
+| Windows Startup Screen.  So when you boot up Windows a ..wav file will 
+| play with it?
+
+| BeAvEr
+
+---->Edit win95's startup sounds in Control Panel | Sounds | Windows | 
+Start Windows
+
+            ||=====================================|| 
+ || xenakis@epix.net    o0xenakis0o@hotmail.com    || 
+ || http://www.epix.net/~xenakis/         [SPROCKET] || 
+ || http://www.geocities.com/BourbonStreet/3407/      || 
+            ||=====================================|| 
+  
+There are two Bills running this country, and few like any of them...
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  
+From: "Otter" <otter@starnetinc.com>
+
+ I love the GTMHH series.  Right now I'm running Win 95 and working on 
+getting FreeBSD and NT running.  Quick question is NT Server better for 
+hacking or Workstation.  I used to work at a software store so I'm in NFR 
+heaven.  I think server would be better.  Should I use a combo of the two. I 
+have enough disk space, and system commander.  Any input would help. Thanks!
+
+Otter 
+otter@starnetinc.com
+
+Carolyn: Since you have enough disk space, I'd advise both workstation and 
+server. Here's an Evil Genius tip: the kernels of both NT server and 
+workstation appear to be identical. You just need to change some settings in 
+the Registry. Because Microsoft doesn't like people doing that themselves 
+instead of paying the extra $800 for the server configuration, in NT 4.0 
+this is pretty difficult. (It's trivial in NT 3). There is a program 
+floating around that does this for you. It's named NTTune 3.0. You will have 
+a hard time finding it, however, because the Microsoft lawyers have been 
+ferociously hunting down and destroying its download sites.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: PsyChadEl
+
+Ever since my first posting on the list regarding KeyLoggers that operate 
+under any of the Windows environments, I've gotten a lot of emails. Here's 
+what is upcoming for those of you who are interested:
+
+1. Yes I did hex a Windows keylogger. It was pretty shit as it wrote to 
+multiple files and took forever to locate what you were looking for. 
+However, I hexed it so it wrote to only one file.
+
+2. That wasn't good enough - it still wasn't hidden. I've found a way to 
+hide it and am currently working on automating the process.
+
+3. YES... the new release is going to be out soon. I'll post the web 
+address here as to where you can find it and any other information as such. 
+I'm almost done with it (I had no time to work on it for a number of 
+weeks)... and so you'll all have it at your fingertips fairly soon. It'll be 
+pretty simple to use and yet effective - especially for those who want to 
+know who's been snooping on their personal computers.
+
+I guess that's about it...
+
+PsyChadEl.
+
+=============================================================== 
+ *** PHF Attacks 
+===============================================================
+
+From: Jerome Thoma <jerome@Pool.Informatik.RWTH-Aachen.DE>
+
+Hi, 
+I've been following the discussing about phf-attacks for some time now and 
+as a newbie I have some questions about it. 
+How does such an attack exactly work? 
+What kind of programs are cgi-bin and phf? 
+What does the Qalias=x%0a part mean?
+
+Thanx for your patience 
+LennyD
+
+================================================================= 
+ *** Update from the Front on the War Against Spam 
+=================================================================
+
+SPAM BLOCK
+
+A California software engineer takes the annoyance caused by unsolicited 
+e-mail messages seriously, and has developed an anti-spam weapon he plans to 
+unveil next month.  Dead Bolt allows online users to share their 
+"blacklists" of spam purveyors so that they can more effectively filter 
+offending e-mail.  "The problem now is that everyone who is filtering is 
+keeping their own blacklists and they're not working together to tie their 
+lists together in a meaningful way," says Dead Bolt's creator.  "What I hope 
+my package will do is allow people to work together over the Net and filter 
+all this stuff out and finally put these people out of business....The 
+problem is that it costs the sender virtually zero dollars to send out a 
+million messages, and even if the response rate is minuscule by all 
+standards -- say .001 percent -- they've made money.  So from an economic 
+selfish point of view, it's in their interest to annoy the other 99.99 
+percent of the people."  (Miami Herald 24 Mar 97)
+
+========================================================= 
+Phreak ISDN! 
+=========================================================
+
+From: Tom Nelson Scott <tom-scott@veda-home.com>
+
+well your introduction is pretty cool ... so let me ask, do you know 
+anything about ISDN hacking using Java or the Java Telephony API? my wife 
+works with Java at Sun and I write ISDN documentation, so together we can 
+have a lot of fun with JTAPI applications in ISDN. Problem is, I'm having 
+trouble finding someone who wants to apply my kind of finite-state analysis 
+to Java ISDN hacking. Take a look at my ISDN manual and you'll see where I'm 
+heading: http://www.uwm.edu/~veda/Isdn 
+It all fits together but I can't really make it fly until I find that wild 
+and crazy subculture that will love this stuff (I mean stuph). 
+Wanna know my philosophy of life? See the picture drawn by my daughter at 
+http://www.uwm.edu/~veda/gloria.rabbit.jpeg ... cool (I mean kewl) ...
+
+Carolyn: Thanks!!!! We have had almost no info on phreaking on this list. 
+Please continue to contribute!
+
+========================================================= 
+Cracking Questions 
+=========================================================
+
+{{{{{{{{KEEP THIS ANONYMOUS}}}}}}}} 
+[sorry for the grammar]
+
+I was on IRC after you left and I was talking with 2 people and it came 
+up about logs on UNIX [and the flavors]. If I were to run files or 
+compile them on my server or even do commands, where would these actions 
+be usually be log in ? Does all my actions or compiling or running files 
+be logged in my user directory ?
+
+Thanks, 
+G1ver
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Anonymous post
+
+Here is a warning for the newbies.  I have detected in my travels a new 
+program that sysadmins are using and giving themselves a big pat on the 
+back...  This program is attached to daemons that control the various ports 
+on a computer....You know all about that.
+
+Well,  this new program acts like this......
+
+Say I do a telnet to AOL.COM *just an example*...If AOL.COM has this new 
+program,  it automatically dispatches a remailer to my host ISP.  This is 
+not funny either.
+
+One such message appeared like this....
+
+...Your client has attempted to access a restricted port on our server 
+*date*...*time*....Please contact Joe Blow at iamalozer.com for more 
+information. 
+Now...The interesting part of this program is it does not discriminate for 
+legal port entry.  Therefore,  an ISP who lacks an IQ will not understand 
+the legalities of this and close a newbies account without so much as a 
+second thought.  This new program breaks the freedom of information laws,  a 
+direction I see the net taking on a daily basis.
+
+I surf ports to see who the server admins are that are placing the web pages 
+on the net and that is it.  Without the ability to port surf,  this will 
+limit access to persons responsible for spam,  mailbombs,  kiddie 
+porn....Hell,  you get the idea.
+
+Carolyn: Yes, some people get really paranoid about having their ports 
+scanned (see jericho's post above). My defense is to make friends with the 
+sysadmins at any ISP I hope to keep for long. So far I have only been booted 
+off on account of threats from GALF, never for my own hacking activities.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Anonymous post:
+
+I recently found that I could delete the contents of the bash-history file 
+on my ISP using telnet. Logon to your shell using telnet then do something 
+like a bunch of finger's and whois's. When you're finished,  use the up 
+arrow to scroll back through each command you made deleting each command 
+with the del key as you go, then  use the down arrow to scroll back to the 
+present. You must scroll all the way back to the present for this to work so 
+count the number of commands you delete if there are a lot of them.
+
+Then type quit and logoff and the only thing that will be left in the 
+bash_history file is the last quit command you did.
+
+Does this work on other operating systems? I'd be curious to know if 
+anybody can reproduce this on their ISP.
+
+Carolyn: It doesn't work on my account at escape.com, which uses BSDI BSD/OS 2.
+
+============================================================ 
+ *** Calling Indianapolis Hackers 
+============================================================
+
+From: Charlie ROOT <root@ruined.buttnet.net>
+
+Calling for Hackers in the Indianapolis and surrounding areas.
+
+I'm interesting in perhaps starting a weekly meeting discussing 
+UNIX/95/DOS hacking, news and general computer topics.
+
+If anyone is interested please email me at ward@carl.all-net.net.
+
+Timothy Ward 
+ward@carl.all-net.net
+
+========================================================================== 
+Happy Hacker Digest March 31, 1997: Hacker Freedom Alert 
+==========================================================================
+
+Headline News: Major efforts in two nations -- the US and United Kingdom -- 
+to place heavy restraints on encryption.
+
+Table of Contents:
+
+o  US Alert 
+o  British Move to Restrain Cryptography 
+o  Zimmerman (Mr. PGP) Launches Newsletter 
+o  Help Choose Def Con IV's Happy Hacker Panel
+
+============================================================================
+
+  ___  _     _____ ____ _____ _ 
+ / _ \| |   | ____|  _ \_   _| |         THE CRYPTO BATTLE HAS BEGUN! 
+| |_| | |   |  _| | |_) || | | | CLINTON ADMINISTRATION PROPOSES CONTROL OF 
+|  _  | |___| |___|  _ < | | |_|     ENCRYPTION FOR AMERICANS ON U.S. SOIL 
+|_| |_|_____|_____|_| \_\|_| (_)               March 28, 1997
+
+                 Do not forward this alert after May 1, 1997.
+
+                         This alert brought to you by: 
+                     Center for Democracy and Technology 
+                                  Eagle Forum 
+                       Electronic Frontier Foundation 
+                       Voters Telecommunications Watch 
+                                 Wired Magazine 
+____________________________________________________________________________ 
+_ 
+Table of Contents 
+      What's Happening Right Now 
+      What You Can Do Now 
+      Background 
+      What's At Stake 
+      Supporting Organizations
+
+____________________________________________________________________________ 
+_ 
+WHAT'S HAPPENING RIGHT NOW
+
+On March 26, 1997, the Clinton Administration proposed draft legislation 
+which would, for the first time, impose DOMESTIC RESTRICTIONS on the 
+ability of Americans to protect their privacy and security online.
+
+In its current form, the draft bill seeks to impose a risky 
+"key-recovery" regime which would compel American citizens to ensure 
+government access to their private communications. Law enforcement and 
+national security agents would not even need a court order to access 
+private decryption keys.
+
+Congress is currently considering three separate bills which would 
+prohibit the government from imposing "key-recovery" domestically, and 
+encourage the development of easy-to-use, privacy and security tools 
+for the Net.
+
+As more and more Americans come online, the Administration's plan is a 
+giant step backwards and would open a huge window of vulnerability to 
+the private communications of Internet users.  Americans expect more 
+when conducting private conversations with their doctors, families, 
+business partners, or lawyers.
+
+Please read the Alert below to find out what you can do to protect your 
+privacy online.
+
+____________________________________________________________________________ 
+___ 
+__ 
+WHAT YOU CAN DO
+
+1. Adopt Your Legislator
+
+   Now is the time to increase our ranks and prepare for the fight that 
+lies 
+   a head of us in Congress.  The time to blast Congress or the White House 
+   with phone calls and emails will come, but now is not the appropriate 
+   moment.
+
+   Instead, please take a few minutes to learn more about this important 
+   issue, and join the Adopt Your Legislator Campaign at 
+   http://www.crypto.com/adopt/
+
+   This will produce a customized page, just for you with your own 
+   legislator's telephone number and address.
+
+   In addition, you will receive the latest news and information on the 
+   issue, as well as targeted alerts informing you when your 
+   Representatives in Congress do something that could help or hinder 
+   the future of the Internet.
+
+   Best of all, it's free.  Do your part, Work the Network!
+
+   Visit http://www.crypto.com/adopt/ for details.
+
+2. Beginning Monday March 31, call the White House
+
+   Internet public interest advocates continue to work the Hill in support 
+   of the three true encryption reform bills in Congress, Pro-CODE, SAFE, & 
+   ECPA II.  If you still feel a need to voice your opinion, however, you 
+can 
+   call the White House to express your opinion.
+
+   Step 1 - Beginning Monday March 31, call the White House
+
+        Call 202-456-1111 9am-5pm EST.  Ignore the voice mail survey and 
+        press '0' to get a comment line operator. 
+  
+   Step 2 - Tell them what you think about intrusions into your privacy!
+
+        Operator: Hello, White House comment line!
+
+SAY     YOU: I'm calling to oppose president's Internet encryption bill. 
+THIS ->      It infringes on the privacy of Americans. We need a solution 
+             to the encryption issue that protects privacy, and this is not 
+             it.
+
+        Operator: Thank you, I'll pass that along to the President.
+
+3. Spread the Word!
+
+  Forward this Alert to your friends. Help educate the public about the 
+  importance of this issue.
+
+  Please do not forward after May 1, 1997.
+
+____________________________________________________________________________ 
+_ 
+BACKGROUND
+
+Complete background information, including:
+
+* A down-to-earth explanation of why this debate is important to Internet 
+users 
+* Analysis and background on the issue 
+* Text of the Administration draft legislation 
+* Text of Congressional proposals to reform US encryption policy 
+* Audio transcripts and written testimony from recent Congressional 
+Hearings 
+  on encryption policy reform 
+* And more!
+
+Are all available at http://www.crypto.com/ 
+________________________________________________________________________ 
+WHAT'S AT STAKE
+
+Encryption technologies are the locks and keys of the Information age 
+ -- enabling individuals and businesses to protect sensitive information 
+as it is transmitted over the Internet. As more and more individuals 
+and businesses come online, the need for strong, reliable, easy-to-use 
+encryption technologies has become a critical issue to the health and 
+viability of the Net.
+
+Current US encryption policy, which limits the strength of encryption 
+products US companies can sell abroad, also limits the availability of 
+strong, easy-to-use encryption technologies in the United States. US 
+hardware and software manufacturers who wish to sell their products on 
+the global market must either conform to US encryption export limits or 
+produce two separate versions of the same product, a costly and 
+complicated alternative.
+
+The export controls, which the NSA and FBI argue help to keep strong 
+encryption out of the hands of foreign adversaries, are having the 
+opposite effect. Strong encryption is available abroad, but because of 
+the export limits and the confusion created by nearly four years of 
+debate over US encryption policy, strong, easy-to-use privacy and 
+security technologies are not widely available off the shelf or "on the 
+net" here in the US.
+
+A recently discovered flaw in the security of the new digital telephone 
+network exposed the worst aspects of the Administration's encryption 
+policy.  Because the designers needed to be able to export their 
+products, the system's security was "dumbed down".  Researchers 
+subsequently 
+discovered that it is quite easy to break the security of the system and 
+intrude on what should be private conversations.
+
+This incident underscores the larger policy problem: US companies are 
+at a competitive disadvantage in the global marketplace when competing 
+against companies that do not have such hindrances.  And now, for the first 
+time in history, the Clinton Administration has DOMESTIC RESTRICTIONS on 
+the 
+ability of Americans to protect their privacy and security online.
+
+All of us care about our national security, and no one wants to make it 
+any easier for criminals and terrorists to commit criminal acts. But we 
+must also recognize encryption technologies can aid law enforcement 
+and protect national security by limiting the threat of industrial 
+espionage and foreign spying, promote electronic commerce and protecting 
+privacy.
+
+What's at stake in this debate is nothing less than the future of 
+privacy and the fate of the Internet as a secure and trusted medium for 
+commerce, education, and political discourse.
+
+____________________________________________________________________________ 
+__ 
+SUPPORTING ORGANIZATIONS
+
+For more information, contact the following organizations who have signed 
+onto 
+this effort at their web sites.
+
+Center for Democracy and Technology                      http://www.cdt.org 
+    Press contact: Jonah Seiger, +1.202.637.9800 
+Eagle Forum                                       http://www.eagleforum.org 
+    Press contact: Phyllis Schlafly, +1.314.721.1213 
+Electronic Frontier Foundation                           http://www.eff.org 
+    Press contact: Stanton McCandlish, +1.415.436.9333 
+Voters Telecommunications Watch                          http://www.vtw.org 
+    Press contact: Shabbir J. Safdar, +1.718.596.7234 
+Wired Magazine                                         http://www.wired.com 
+    Press contact: Todd Lappin, +1.415.276.5224
+
+____________________________________________________________________________
+
+end alert
+
+======================================================================== 
+ *** Brtiish Move to Restrain Use of Cryptography 
+========================================================================
+
+From: rja14@cl.cam.ac.uk (Ross Anderson) 
+ 
+
+The British government's Department of Trade and Industry has sneaked out 
+proposals on licensing encryption services. Their effect will be to ban PGP 
+and much more besides.
+
+I have put a copy on http://www.cl.cam.ac.uk/users/rja14/dti.html as 
+their own web server appears to be conveniently down.
+
+Licensing will be mandatory:
+
+      We intend that it will be a criminal offence for a body to offer 
+      or provide licensable encryption services to the UK public without 
+      a valid licence
+
+The scope of licensing is broad:
+
+      Public will be defined to cover any natural or legal person in the UK.
+
+      Encryption services is meant to encompass any service, whether provided 
+      free or not, which involves any or all of the following cryptographic 
+      functionality - key management, key recovery, key certification, key 
+      storage, message integrity (through the use of digital signatures) key 
+      generation, time stamping, or key revocation services (whether for 
+      integrity or confidentiality), which are offered in a manner which 
+      allows a client to determine a choice of cryptographic key or allows 
+      the client a choice of recipient/s.
+
+Total official discretion is retained:
+
+      The legislation will provide that bodies wishing to offer or provide 
+      encryption services to the public in the UK will be required to obtain 
+      a licence. The legislation will give the Secretary of State discretion 
+      to determine appropriate licence conditions.
+
+The licence conditions imply that only large organisations will be able to 
+get licences: small organisations will have to use large ones to manage 
+their keys (this was the policy outlined last June by a DTI spokesman).  The 
+main licence condition is of course that keys must be escrowed, and 
+delivered on demand to a central repository within one hour. The mere 
+delivery of decrypted plaintext is not acceptable except perhaps from TTPs 
+overseas under international agreements.
+
+The effect of all this appears to be:
+
+1. PGP servers will be outlawed; it will be an offence for me to sign your 
+   pgp key, for you to sign mine, and for anybody to put my existing signed 
+   PGP key in a foreign (unlicensed) directory
+
+2. Countries that won't escrow, such as Holland and Denmark, will be cut out 
+   of the Superhighway economy. You won't even be able to send signed 
+   medical records back and forth (let alone encrypted ones)
+
+3. You can forget about building distributed secure systems, as even 
+   relatively primitive products such as Kerberos would need to have their 
+   keys managed by a licensed TTP. This is clearly impractical.  (The paper 
+   does say that purely intra-company key management is OK but licensing is 
+   required whenever there is any interaction with the outside world, which 
+   presumably catches mail, web and so on.)
+
+There are let-outs for banks and Rupert Murdoch:
+
+  Encryption services as an integral part of another service (such as in 
+  the scrambling of pay TV programmes or the authentication of credit 
+  cards) are also excluded from this legislation.
+
+However, there are no let-outs for services providing only authenticity and 
+nonrepudiation (as opposed to confidentiality) services. This is a point 
+that has been raised repeatedly by doctors, lawyers and others - giving a 
+police officer the power to inspect my medical records might just 
+conceivably help him build a case against me, but giving him the power to 
+forge prescriptions and legal contracts appears a recipe for disaster. The 
+scope for fraud and corruption will be immense.
+
+Yet the government continues to insist on control of, and access to, signing 
+keys as well as decryption keys. This shows that the real concern is not 
+really law enforcement at all, but national intelligence.
+
+Finally, there's an opportunity to write in and protest:
+
+  The Government invites comments on this paper until 30 May 1997
+
+Though if the recent `consultation' about the recent `government.direct' 
+programme is anything to go by, negative comments will simply be ignored.
+
+Meanwhile, GCHQ is pressing ahead with the implementation of an escrow 
+protocol (see http://www.cs.berkeley.edu/~daw/GCHQ/casm.htm) that is broken 
+(see http://www.cl.cam.ac.uk/ftp/users/rja14/euroclipper.ps.gz).
+
+In Grey's words, ``All over Europe, the lights are going out''
+
+Ross 
+------- End of forwarded message -------
+
+=============================================================== 
+ *** Zimmerman (Mr. PGP) Launches Newsletter 
+=============================================================== 
+ Ladies, Gentlemen & Cryptographers,
+
+I'm pleased to announce the imminent release of the premier issue of the 
+new "Zimmermann Telegram" newsletter. The Zimmermann Telegram will be a 
+regularly-published, paper-based, English-language technical update 
+newsletter from PGP's engineering staff, and will cover a variety of 
+cryptographic and other lighthearted topics which we may otherwise be 
+restricted from discussing via electronic media. The newsletter will be 
+sent, in compliance with US law, by regular postal mail to anyone 
+interested in technical information about PGP -- anywhere in the world.
+
+If you are now developing PGP-related freeware, shareware, commercial or 
+academic cryptographic software, or you plan in future to become a 
+registered PGP Developer or PGP World Partner (those programs are currently 
+under construction and will be formally announced later) or if you are just 
+interested in technical information about cryptography, we think you'll 
+enjoy reading our newsletter.
+
+In the premier issue, along with important updates regarding changes to the 
+PGP packet format, CRC security problems and new extensions to the PGP key 
+format which are not available through any other medium, you'll learn about 
+the significance of the "Zimmermann Telegram" name. Meanwhile, visit this 
+page: <http://www.nara.gov/nara/digital/teaching/zimmermann/zimmerma.html>.
+
+Scheduled to be mailed imminently, the premier issue will be sent free to 
+anyone who provides us with a postal mail address. After that, regular 
+subscriptions will require a modest fee (to be announced) to cover our 
+mailing costs, but we've committed to offering a limited number of free 
+one-year subscriptions to interested members of the cryptography community. 
+To request your free subscription, please send email to me at:
+
+<mailto:telegram-request@pgp.com?subject=first_issue_free_subscription_req>
+
+In the body of your request, please include the form below (items between 
+the cut-lines ONLY, and preferably PGP-signed), and replace the lines with 
+your complete postal mail address info as indicated. We'll put an HTML 
+subscription form on our website, but for the premier issue, we're managing 
+the subscription process via email. Thank you for your patience as we 
+deploy rapidly. :)
+
+========================================================================== 
+ *** Help Choose Def Con IV's Happy Hacker Panel 
+==========================================================================
+
+Carolyn: Going to Def Con IV, the most insanely great hacker convention in 
+the world? It will be held July 11-13 in the Aladdin Hotel and Casino in Ls 
+Vegas, Nevada, USA.
+
+Who would you like to hear speak? Def Con organizer Dark Tangent has asked 
+us to put on a Happy Hacker panel. Email us with your ideas for who you'd 
+like to see on the panel, and what you'd like to hear us talk about and/or 
+demonstrate. The people we choose for speakers win -- free admission! a 
+cool-looking name tag! And nothing else. But being a Def Con speaker makes 
+for great bragging rights, so give it a try, folks.
+
+I've already asked Dark Tangent to give us some of that T1 bandwidth he's 
+planning in order to run some newbie hacking sessions alongside all those 
+Uberhackers playing Capture the Flag and trying to win prize money for 
+destroying firewalls.

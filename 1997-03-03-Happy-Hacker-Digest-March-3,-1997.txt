@@ -1,0 +1,678 @@
+Happy Hacker Digest March 3, 1997 
+=============================================================================== 
+         This is a moderated list for discussions of *legal* hacking. 
+                           Moderator is Carolyn Meinel. 
+  
+                        
+              Better yet, post to the 
+                        Hackers forum: http://www.infowar.com
+                   Please don't send us anything you wouldn't 
+                  email to your friendly neighborhood narc, OK?
+
+     To subscribe or unsubscribe, just 
+     use the subscribe boxes on the menubars. If you decide you 
+      just want to use the forum and not get these mailings, I promise my 
+           feelings won't get hurt if you unsubscribe from this list. 
+                                 Happy hacking! 
+------------------------------------------------------------------------------- 
+"Truth is often eclipsed but never extinguished." -- Livy 
+-------------------------------------------------------------------------------
+
+TABLE OF CONTENTS 
+   o Cracking Info 
+   o Re: Overdosed Unix 
+   o Fan of Mac Unix
+
+=============================================================================== 
+*** CRACKING INFO 
+===============================================================================
+
+From: cL0ut <strider@unix.aardvarkol.com>
+
+   First I'd like to say that the new formatting of Happy Hackers 
+   Digest, is *MUCH* better, and I hope it stays like that. Next, I 
+   have a question about cracking passwd files. Say I got a passwd 
+   file called "shadow", am I right in assuming that's like a back-up 
+   of the "passwd" file? Also, I have a sh**ty 286, 1MB RAM 'puter, 
+   and I was wondering if there's a FASTER cracker other than BRUTE, 
+   because I was trying to crack the file with a 2MB word list, and 
+   after 7.5hrs it was STILL on "A"'s. Any suggestions and comments 
+   would be appreciated...thanx. 
+       -=cL0ut=-
+
+Moderator:
+
+   How fast a password cracker runs depends in part on how 
+   hard the passwords are to crack. You can crack "apple" or "kiss" much 
+   faster than "x4M&19cd#". Chances are you hit some of the hard ones. 
+   Also, I *do* hope you had permission to crack that file. Many 
+   sysadmins regularly run a password cracker on their password files so 
+   they can alert users of the need to change easily cracked passwords.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: "NiNo" <NiNo@main.rgv.net>
+
+   I have multiple accts at my ISP.  SO, I thought "Try to Rlogin" as 
+   someone else.  I have acct "A" and acct "b"  so I (think I ) made 
+   acct "a" a trusted host with "B" and vise versa.    I would try to 
+   log in and it would ask for a password?  Maybe my commands were 
+   wrong, I put this in the .rhosts file (I saw it somewhere on the 
+   net):
+
+               echo  "main.rgv.net maverick" >~/.rhosts 
+               Domain---->^^^^^^^   ^^^^^^^^^<-----Username
+
+   I just saw a *.txt file that said that would work.  I want to know 
+   for sure.  You don't have to TELL ME EXACTLY, just point me in the 
+   direction of some *.txt's for me to read I have done SO many 
+   fr****** searches for "Rlogin" stuff and cant find it!  Thanks 
+   Carolyn.
+
+   ThE nEWbIe HaCkErZ lOvE tO haTe.... 
+   nino
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+Sender: jericho@dimensional.com
+
+   >       more fun using hacker knowledge to make an honest and very 
+   >       prosperous living than to get thrown in jail. That's how 
+   >       jericho and evil pete make their livings, right?
+
+   What?! I sell crack for a living Carolyn! :)   Yes. That is how I 
+   got into the industry.
+
+   (Moderator: for the humor challenged -- this is a JOKE, OK?)
+
+   >       (jericho means that while in DOS you can interchange caps 
+   >       and lower case, in Unix it makes a difference. All those 
+   >       Unix commands above are lower case: 'cp', 'mv', 'ls', 'rm' 
+   >       'cd'. But I wouldn't get too critical of the author, after 
+   >       all, he's the first person to start posting really detailed 
+   >       explanations to this list of how to crack into Unix 
+   >       computers.)
+
+   But Carolyn, you more than anyone know how I want ACCURATE 
+   technical info posted. If it isn't accurate, then don't post it. 
+   So, I will continue to critique this kind of stuff and be quite 
+   mean in the process. Glad to see you are going behind me giving a 
+   more friendly and accurate description.
+
+   >       (I think he's pointing out that once you are running telnet 
+   >       your commands no longer turn up in the shell log file. 
+   >       Look, I agree, there are a zillion ways your breakin can be 
+   >       logged, but many sysadmins only look at the obvious.)
+
+   Since we don't know the sysadmin, we can only talk about what the 
+   system will do. The system will log that telnet. No, not in the 
+   shell log, but that is trivial.
+
+   >    2. Run a program Similar to The following code:
+
+   This is the code for that thing you said couldn't be done in the 
+   last...
+
+   >       Now this is Just a very small Code that will Unshadow on 
+   >       some systems but there are many larger codes that will work 
+   >       on almost any system.
+
+   But this will not work if you get the passwd file via FTP.
+
+   >       3. Now that you have it unshadowed if you didn't get root 
+   >       or just want a normal account you can login to a shell as 
+   >       one of the accounts you cracked and type 
+   > 
+   >          cat /etc/shadow
+
+   'permission denied'. Remember, the purpose of the shadow file is to 
+   store the passwds so they are readable only by the admin. Since 
+   /etc/passwd has to be 644 (world readable), the need for a more 
+   secure storage came about.  This is very simple.
+
+   >       what amateurs like the Gray Areas Liberation Front (GALF) 
+   >       use.  The GALF guys simply wipe system files after 
+   >       visiting.  Now on
+
+   Sometimes. If you are one for rumors... GALF sat on the server of a 
+   well known security expert for over 6 months without being 
+   detected. It is not easy to do that, especially on smaller systems 
+   with a handful of user accounts.
+
+   >       same path as the Masters of Deception did. They found out 
+   >       that if you make hackers mad enough, they start helping the 
+   >       Feds, and are really good at gathering evidence.
+
+   Most good hackers share the ethics of not being malicious toward 
+   other hackers, and tend to not help the feds in any matter. Also 
+   consider ALL the details of who GALF has hacked, and why. In most 
+   cases I have seen it was simply an action/reaction response to 
+   previous events.
+
+   >       computer crime detectives go to the computer the router 
+   >       points to. If that  computer has had its files wiped, we 
+   >       just check out the computer before that, and so on. We know 
+   >       your modus operandi, GALF. Are you going to get mad and 
+   >       hack me again for telling the Happy Hacker list that you 
+   >       aren't elite? Go ahead, make my day!
+
+   So if it is so simple, why hasn't he been caught yet? Or u4ea? Or 
+   Angry Johnny? Or...
+
+Moderator: 
+  
+   I'm keeping my mouth shut on Angry Johnny because he's 
+   been a publicity goldmine for me. Look at the mistake John Markoff 
+   made. Once Kevin Mitnick came to trial everyone realized that super 
+   reporter Markoff was full of baloney.  So I need Angry Johnny to 
+   stay in hiding. Don't get caught, please?
+
+   As for GALF, that team used to strike everyone who said anything 
+   bad about Netta Gilboa. I don't agree that opposing Gilboa should 
+   be punished with wiping system files. In my case, GALF goofed. Some 
+   jokester posted an alleged attack by me on Gilboa to a hacker 
+   bulletin board, and GALF went on the war path against me. You see 
+   the results -- now I attack Gilboa at every opportunity. In fact, 
+   GALF has become such a joke that lots of people are attacking 
+   Gilboa just to have fun seeing what kind of attack GALF does next.
+
+   If any of you readers want the excitement of dueling with GALF, the 
+   best place to go to incite attacks is to post to the dc-stuff list 
+   (subscribe by emailing majordomo@dis.org with message "subscribe 
+   dc-stuff.") Also, GALF guys attend every def con convention taking 
+   notes on who says bad things about Netta.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: Iggy Drougge <optimus@canit.se>
+
+   A Michael Oztosomething or other was telneting around, when he 
+   found a thing which wanted you to type "cli". What he got into was 
+   an Annex server, used by many ISPs and other Internet hosts. They 
+   are known for their security, which I'm inclined to agree with, 
+   since they don't run exploitable services, but only let you log on, 
+   and from there run arbitrary commands, such as rlogin, telnet, slip 
+   and ppp. They are mostly used to answer modems, or as a single port 
+   to all machines on a network, where telnetting to the machines is 
+   not allowed from the outside.
+
+   On another note, Carolyn had problems deciphering the Swedish 
+   someone posted to the list. It seems like the person who did so was 
+   not aware of being subscribed to the list, he was wondering whether 
+   it was some reading practice for his forthcoming English test. =/
+
+   BTW, what is a narc?
+
+Moderator:
+
+   This is an ancient term belying the Yippie/hippie origins of 
+   hackerdom. Back in the 1960s "narc" was slang for an undercover 
+   agent enforcing narcotics laws. Then around 1970 the big thing for 
+   hippies was learning to phone phreak. In fact the Youth 
+   International Party (Yippies), founded by Abbie Hoffman, began 
+   putting out a magazine called the "Technical Assistance Program" 
+   (TAP) with technical details on phreaking. Since these guys were 
+   already heavy into illegal drugs, it was natural to call the people 
+   who tried to catch phone fraudsters "narcs." Then as computer 
+   hacking began to be criminalized, the term "narc" spread to 
+   computer crime detectives.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: " Intergalactic  <--" <intergalactic@hotmail.com>
+
+   Awhile back, Bronc Buster posted an exploit for BSD. (the exploit 
+   consisted of ftp'ing to the local host, suspending the job with a 
+   [ctrl]+[z], then doing a kill -11 on that job and returning to the 
+   foreground, thereby creating a core dump which contains encrypted 
+   passwd's). After experimenting on a couple different systems, I 
+   have found this will work on OSF 1 as well. Is anyone here familiar 
+   with John the Ripper? If you are, I was wondering: How does the 
+   -single mode work? What is it doing? I didn't get any of the docs 
+   with the copy I had, but the -single mode seems to work on roughly 
+   1 out of 20 passwd files. I always thought the you HAD to have a 
+   wordlist for a cracking program to work, but John in -single mode 
+   does not use one.
+
+Moderator:
+
+   This sounds significant enough that you may want to advise the 
+   Bugtraq list of this hole. You may submit news on security flaws by 
+   emailing aleph1@undergound.org. This is also the subscription 
+   address.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: "Xenakis" <xenakis@epix.net>
+
+   Quick question....after seeing numerous Aptivia Home Director 
+   commercials, I wonder why someone hasn't tried to hack into 
+   one....(I just started laughing during the commercial when the 
+   puter started up the gas fireplace... ;) )
+
+   -xenakis@epix.net
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: Marco Pappalardo <bethesda@netropolis.be>
+
+   hmmmm....a Unix hacking tutorial...let's take a look : 
+   - "how to cover your tracks" : yeah right what about wmtp, umtp, 
+     logs,...?  not typing in any parameters ain't gonna save 
+     you...the moment you log into a computer, whatever the login and 
+     password, your IP address goes to the log...
+
+   - "how to get the password file" : anonymously ftp to a site and 
+     get /etc/passwd ? no offense but have you ever run a Linux or 
+     Unix server ?  in case you hadn't noticed the passwd file in the 
+     /etc directory is actually in /home/ftp/etc . That's right, it's 
+     not the REAL passwd, just a stripped down version of it. Most of 
+     the time all the privileged accounts are locked out and they 
+     don't have many user logins and passwords.
+
+   - "shadowed password files" : when the password file has a * in the 
+     password field it does NOT mean the password is shadowed, it 
+     means it's been locked out (read useless, it's like it's not 
+     there). It does makes sense though that you don't know it (or 
+     maybe you did ?) if you think that all the password files you've 
+     probably ever seen come from /home/ftp/etc (no offense here...).
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: anonymous
+
+   OK, I have a question. Lets say you want access to a system (it 
+   happens to be System V release 4.0) that is not run by a bunch a 
+   w***** that left a default user/pass. There is FTP access, but the 
+   password file is of course shadowed (x's in place of encrypted 
+   passwords). I try to "get /etc/shadow" like suggested and it says 
+   no such file. Now what.  Unshadow.c seems useless since I need to 
+   be logged in to run it on there machine. You can run and compile 
+   from anon. FTP. Can some post a way to gain access to such servers 
+   (which are almost all servers on the net these days, no one leave 
+   defaults in place if they have half a brain...)
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+Received: jericho@nova.dimensional.com
+
+   > From: "Roger A. Prata" <prata@cyber-wizard.com> What ever 
+   > happened to the big competition between you and Jericho and the 
+   > suicidal.foobar.com box??  Any more action? 
+   > 
+   > Moderator: jericho still hasn't given me a notarized contract to 
+   > test his security. Also, just after the johnny xchaotic email 
+   > bombings suicidal.foobar.com suffered a nervous breakdown, err, 
+   > hard disk crash.  Imagine that!  I got some interesting results 
+   > on a traceroute just now. It got into a loop at dimensional.com's 
+   > routers.
+
+   Oh gno! More conspiracy theories!#@$!
+
+   Status: foobar.com was sold to a company in MA that wanted the 
+   name. I have since registered sekurity.org which will be up soon. I 
+   am currently waiting on a second ISDN adapter (the first has no 
+   Unix support). As for the 'crash', it had nothing to do with any 
+   user. It had everything to do with me running that wily 'fdisk' 
+   program after upgrading. The new system has just under 5 gigs in 
+   hard drives, 10 gigs in jaz, 128 megs of RAM, and of course the 
+   ISDN. Once it is back up, Carolyn is more than welcome to attack 
+   again. And as I have said before, I will not send a notarized 
+   contract. I don't wish to give up that information about myself 
+   that is required for that contract. However, this is at least the 
+   10th time I have posted to the list saying it is OK. If that isn't 
+   good enough, oh well. I already had enough fun with the old systems 
+   and keeping people out. The new system will most likely be a bigger 
+   target. :)
+
+   Oh.. and I did catch her probes in my logs. She was never 
+   successful.
+
+   > Can your ISP detect a ping -l or ping -f? (would this be 
+   > considered illegal??)
+
+   Probably not with a default configuration, but it can certainly be 
+   setup to do so.
+
+   > Um, try going on any EFnet server, and join #2600.
+
+   Yeah.. no hacking there.
+
+   > BTW - If you want to apply your hacking skills, try getting ops 
+   > on a channel that you hate. Flooding (while sometimes lame) if 
+   > fun too.
+
+   Taking ops on a channel is NOT hacking.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: alma34 <root@ozemail.com.au>
+
+   Since discovering the system I mentioned in a previous digest I 
+   have come to understand showmount as being a very powerful tool for 
+   would-be hackers to discover whether a system is hackable.. So to 
+   illuminate you sysadmins who I know DO leave entire file systems 
+   mountable by EVERYONE as to why you shouldn't, and also to show 
+   hackers how such hacks can be accomplished..
+
+   BTW.. This type of insecurity is increasingly rare but it's more 
+   common than finding a unshadowed passwd file in the ftp /etc 
+   directory..
+
+   First lets look at using the command. From your shell prompt type..
+
+   [/root]# showmount -e targethost 
+   Export list for targethost: /cdrom (everyone) / (everyone)
+
+   If this is the case you've hit paydirt.. and sysadmins if you run 
+   this on your system and it comes up the same you're in deeep 
+   doo-doo. What a hacker could then do is the following..
+
+   [/root]#mkdir /hack 
+   [/root]#mount targethost:/etc /hack 
+   [/root]#cd /hack 
+   [/hack]#vi passwd...
+
+   And so on.. A hacker could get in and edit the passwd file.. 
+   enabling a disable account.. increasing his own to uid of 0 
+   decrease roots to 500, etc.. This is a very dumb setup for 
+   targethost. However you may have received the following from your 
+   showmount query.
+
+   [/root]# Export list for targethost: 
+             / stupid.targethost /var/spool/lpd  (everyone)
+
+   So you say to yourself.. "hmm, targethost is exporting everything 
+   to stupid.targethost (another computer on its network..) lets try 
+   that one out..
+
+   [/root]#showmount -e stupid.targethost 
+         Export list for stupid.targethost: / (everyone)
+
+   And once again you've hit paydirt... However when you looked at the 
+   passwd file their was only two accounts.. Of course you don't fuck 
+   with them so you create or enable one. But when you login with that 
+   account..
+
+   [/root]#rlogin -l test stupid.targethost test 
+   login not allowed on this terminal..
+
+   Login:
+
+   Hmmm.. you're not allowed to login with that. So you try some other 
+   ones but you get the same result. Is it unhackable..? By no means.. 
+   But what you'll have to do is play with the actual enabled 
+   accounts. Do a more of the passwd file. and write down the 
+   encrypted passwd.. 78hkjkHlj or something.. Then carefully delete 
+   it and increase the uid to 0. If you don't know what field to do 
+   this in then I won't tell you.. figure it out yourself.. Then login 
+   in with the account.
+
+   [/root]#rlogin -l user stupid.targethost
+
+   Welcome to stupid.targethost!
+
+   [/user]#
+
+   Now you should remember that targethost was exporting "/" to 
+   stupid.targethost. So now that you have root privileges you create 
+   a temporary directory and..
+
+   [/user]#mkdir /temp 
+   [/user]#mount targethost:/etc /temp 
+   [/user]#cd /temp 
+   [/temp]#vi passwd.. 
+   [/temp]#cp passwd /user 
+   [/user]#exit
+
+   Then the hacker would need to replace the encrypted passwd in its 
+   EXACT form otherwise it will be noticed.. You should also put in 
+   the correct uid otherwise someone will notice a # where they 
+   shouldn't. Of course this should always be done when no-on is on 
+   the system.. or someone's been idle for over a few hours.. Late at 
+   night's always a good idea.
+
+   A hacker could put in various backdoors to ensure future access.. 
+   To read up on what backdoors exist (there are heaps!) go to:
+
+   http://www.geocities.com/CapeCanaveral/3498/security.htm
+
+   A hacker would then have complete control of your system. However 
+   if he wasn't smart he/she would be easy to notice. I hope this has 
+   illustrated to you sysadmins that mounting you systems is a very 
+   dangerous practice unless the proper precautions are in place.. 
+   Tripwire is a good one to detect changes in file such as passwd. 
+   However that can be gotten around easily too. I suggest all 
+   sysadmins and security consultants check their systems immediately 
+   to detect whether the problem exists..
+
+   Of course if you received the following responce from showmount 
+   when you queried a system...
+
+   mount clntudp_create: RPC: Port mapper failure - RPC: Unable to 
+   receive
+
+   or..
+
+   mount clntudp_create: RPC: Program not registered
+
+   Then you would have some difficulty in attacking targethost with 
+   this method.. Also a hacker would be smart to change his default 
+   shell to disable history logging, as well as modify various other 
+   accounting logs..
+
+   A few other off topic things..
+
+   I would like to apologize to Betty from Infowar for kicking her off 
+   #hackers. I acted in a totally f***** elitist manner and I 
+   apologize for it.
+
+   Another thing is that I am currently compiling a FAQ for #hackers 
+   as well as a webpage. Any submissions, help, comments, or 
+   criticisms are welcomed.  Please send 'em to warpy@null.net.
+
+   Last thing... Could we please see some more FEMALE hackers on 
+   #hackers. I don't believe that the majority of hackers are made up 
+   of adolescent boys.. And it would be encouraging to see some Unix 
+   proficient females apart from our illustrious moderator...
+
+   That's about all for now... adios!
+
+   Warpy
+
+=============================================================================== 
+*** RE: OVER DOSED UNIX 
+=============================================================================== 
+From: Vithar <vithar@connect.ab.ca>
+
+   > 1.Ftp Anon get Shadowed Passwd
+
+   >       sometimes the defaults will work which are in this passwd, 
+   >       such as games.  Usually admins don't care to change this so 
+   >       you can login as games to get the real passwd file you know 
+   >       the big one that is likely unshadowed.
+
+   I'm not sure what you are trying to say here.  Why would any 
+   sysadmin create a ftp account for the id games ?  And if they did, 
+   why would they not put a password on it ?  FTP servers usually use 
+   their own passwd file ( as set up by the sysadmin ), not the main 
+   system passwd file.  The FTP passwd file will only contain id's for 
+   valid ftp logins.
+
+   [ Code deleted for brevity ]
+
+   >       Now this is Just a very small Code that will Unshadow on 
+   >       some systems but there are many larger codes that will work 
+   >       on almost any system.
+
+   All the above does is spit out the contents of the passwd file. 
+   You can do as much by typing 'cat /etc/passwd'.
+
+   >       3. Now that you have it unshadowed if you didn't get root 
+   >       or just want a normal account you can login to a shell as 
+   >       one of the accounts you cracked and type
+
+   Assuming you didn't get root:
+
+   >          cat /etc/shadow
+
+      Usually only readable by root.  So, you would not be able to 
+      look at it.
+
+   >          cat /etc/passwd
+
+   Which, if it's shadowed, would avail you nothing.
+
+   >  * -=-=-=-=-=-=-=-=-=-=- * Closeit.c * -=-=-=-=-=-=-=-=-=-=- * 
+   >  this is a rather kewl exploit to close programs  and delete you 
+   >  * from system logs */
+
+   [ SOME CODE DELETED ]
+
+   >    fd = open("/etc/utmp", O_RDWR); if (fd < 0) 
+   >    perror("/etc/utmp");
+
+      Which would trigger the perror on my system.  utmp is not world 
+      writable and trying to open it read/write would fail.  So, you 
+      are still listed in utmp, now what ?  Of course, if you have 
+      root access, hiding your tracks becomes almost trivial ( almost 
+      due to programs like tripwire).
+
+   > 1. Anonymous FTP cd to /etc and get the passwd
+
+   A properly configured ftp site will not let an anonymous user into 
+   /etc.
+
+   > 2. Some systems there is a file called PHF in the /cgi-bin 
+   > directory. If
+
+   True, PHF is a bad cgi program.  However, any sysadmin worth the 
+   name also knows this and has already deleted it.  In fact, several 
+   of the "stock" cgi scripts that come with some web server 
+   distributions are vulnerable.  Again these are well known and 
+   usually removed.
+
+   > SHADOWING 
+   > 
+   >   U finally get the password file and all the items in the second 
+   >   field are X or !  or * then the password file is shadowed. 
+   >   Shadowing is just a method of adding
+
+   A '*' in the passwd field means that the account cannot be used for 
+   login.  Many applications require their own user and/or group id 
+   and the '*' helps ensure that users do not log on with these 
+   accounts.  Of course, some buffer overflow exploits will drop a 
+   user into a shell with the uid/gid of the program that was running 
+   ;-) .
+
+   > password file. Unfortunately there is no way to "unshadow" a 
+   > password file but sometimes there are backup password files that 
+   > aren't shadowed. Try looking for files such as /etc/shadow and 
+   > other stuff like that. 
+  
+   Again, you are counting on a sysadmin being careless and leaving 
+   these backups lying about where you can look at them.  Most shadow 
+   passwd files are only readable by root, or at most, an 
+   administrative group.
+
+   >  type PINE to start the Unix e mail program there are many more 
+   >  programs but pine is my favorite.
+
+   One interesting tidbit about pine.  If you decide you want to 
+   advertise your presence and piss of the user whose identity you've 
+   assumed, just run pine while he/she has it up.  Pine will change 
+   their session to read-only and you will be given write access. :-)
+
+   >   You can do whatever you want to the servers http'd system
+
+   As root, you can do anything.  However, a lot of systems do not 
+   allow remote root logins ( i.e., you have to be at the console 
+   to login as root ).  As a user, you can only play with stuff 
+   that the user has access to.  If the sysadmin is in the least 
+   bit security conscious, it'll take a bit of work and ingenuity 
+   to get higher access.
+
+   > NOTE: It's best to hack late at night because root can't type who 
+   > and see you don't have the right IP. Usually he doesn't feel like 
+   > wasting his time baby-sitting uses so it is usually OK and if 
+   > they see your ipo there not going to hunt you down I mean there 
+   > trying to run a business not play superhero
+
+   I can see this being the case on a large site.  But on a smaller 
+   site ( less than 50 or so users ) there is a good chance that the 
+   sysadmin will be more likely to recognize a login name that he/she 
+   did not authorize.  Personally, if I see someone on the system that 
+   I do not recognize, I try and track them down ( it's good exercise 
+   if nothing else <g> ).
+
+   > (Moderator: This is one of the best reasons to do no harm if you 
+   > do choose to crack into the computer of someone who doesn't want 
+   > you there. If you don't cause trouble, they are likely to just 
+   > ignore you. But if you erase files, make copies of sensitive 
+   > material, or insult people, they may decide to try to get you 
+   > thrown in jail.)
+
+   Hmmm.  I wouldn't risk my freedom on this.  But, if you are not 
+   doing anything immediately damaging, the sysadmin may elect to just 
+   watch and see what you are doing.  Who knows, you could 
+   accidentally point out more security holes to him/her. :-)
+
+   > 8. Type telnet and telnet to another shell account ;) (now that's 
+   > anonymous)
+
+   Really ?  My logs would show this.
+
+   > 10. Harass other Users With! 
+   As soon as you let them know you are there, you will lose access 
+   very quickly.  Of course, if the above exploits gave you access in 
+   the first place, the sysadmin is so f*****d up that you could 
+   probably leave yourself a few back doors and they wouldn't likely 
+   find them. :-)
+
+   > 11. cd to /sbin/games/ to see a list of games (pretty crappy 
+   > stuff like terminal tetris) 
+   Or doom, or quake.  Of course, you have to have access to X or the 
+   console to actually play them. <g>
+
+   >  If you feel that you have what it takes to be a serious hacker 
+   >  then you must first know a clear definition of hacking and how 
+   >  to be an ethical hacker. Become familiar with Unix 
+   >  environments and if you are only just 
+ 
+
+   The above is absolutely correct.  Hacking is not running nifty 
+   little programs or tricks, it's knowledge.  Knowing the system 
+   better ( or at least as good ) as the people who run it is the sign 
+   of a hacker. :-)
+
+   P.S. - I do not consider myself a hacker as I still have a lot to 
+   learn.
+
+   /-----  /\oo/\ Debian ! /\oo/\ ----------------------------------------\ 
+   |                                      |  The more clocks you have ... | 
+   | vithar@connect.ab.ca                 |  .....  the less sure you are | 
+   | http://www.connect.ab.ca/~vithar     |  of what time it is !         | 
+   \----------------------------------------------------------------------/
+
+=============================================================================== 
+*** FAN OF MAC UNIX 
+===============================================================================
+
+From: "Pherdite Herma" <kewlpotatoe@hotmail.com>
+
+   In response to what you said about Linux being hacker-friendly, I 
+   would just like to say that the BeOS for Macintoshes is supposedly 
+   the most hacker-friendly OS for the common desktop machine.  It's 
+   UNIX based, which probably contributes to its value.  The NextStep 
+   OS is supposedly almost as hacker-friendly, and I have heard from 
+   numerous sources that Apple will do the smart thing and make a 
+   version for Intel compatible machines. 
+  
+Moderator:
+
+   Alas, the NeXt operating system is a hackers' paradise because it 
+   has so many hackable holes...
+
+=============================================================================== 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 
+=============================================================================== 
+     To subscribe or unsubscribe, just 
+     use the subscribe boxes on the menubars. If you decide you 
+      just want to use the forum and not get these mailings, I promise my 
+           feelings won't get hurt if you unsubscribe from this list. 
+=============================================================================== 
+                      End Happy Hacker Digest March 3, 1997 
+=============================================================================== 
+Editor:  Peter Beckman  +  beckman@purplecow.com  +  http://www.purplecow.com/

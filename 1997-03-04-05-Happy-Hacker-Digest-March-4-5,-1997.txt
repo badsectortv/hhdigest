@@ -1,0 +1,450 @@
+Happy Hacker Digest March 4-5, 1997 
+=============================================================================== 
+         This is a moderated list for discussions of *legal* hacking. 
+                           Moderator is Carolyn Meinel. 
+  
+                        
+              Better yet, post to the 
+                        Hackers forum: http://www.infowar.com
+                   Please don't send us anything you wouldn't 
+                  email to your friendly neighborhood narc, OK?
+
+     To subscribe or unsubscribe, just 
+     use the subscribe boxes on the menubars. If you decide you 
+      just want to use the forum and not get these mailings, I promise my 
+           feelings won't get hurt if you unsubscribe from this list. 
+                                 Happy hacking! 
+------------------------------------------------------------------------------- 
+"Truth is often eclipsed but never extinguished." -- Livy 
+------------------------------------------------------------------------------- 
+URL 'O the Day: Another newbie hacker page. Check it out! 
+                  http://oscar.teclink.net/~kyle/newbi.html 
+-------------------------------------------------------------------------------
+
+TABLE OF CONTENTS 
+   o NEW HACKER ZINE 
+   o SHOULD WE BE AFRAID OF HACKERS? 
+   o HACKER/PHREAKER (h/p) NEWSLETTER/WEB SITES 
+   o IP NAME QUESTION 
+   o MORE ON WIN95STARTUP SCREEN 
+   o GOT PERMISSION TO HACK 
+   o WHAT'S WRONG WITH BEING NEWBIE? 
+   o GOT THE PASSWD, BUT... 
+   o A PINE QUESTION 
+   o MORE X-HACKS 
+   o EMAIL BY TELNET
+
+=============================================================================== 
+*** New Hacker Zine 
+===============================================================================
+
+Moderator: 
+  
+   od^phreak <butler@tir.com>, who wrote the recent 
+   Overdosed Unix posts, has restarted the K.R.A.C.K. hacking 
+   ezine. This is for intermediate hackers, and focuses on Unix. 
+   There is some use of bad language, and no warning about the 
+   legality of what it teaches. Parental discretion advised. To 
+   subscribe, email butler@tir.com with message "subscribe."
+
+=============================================================================== 
+*** Should We Be Afraid of Hackers? 
+===============================================================================
+
+<Anonymous>
+
+   Hello Carolyn: I sometimes see you saying things like "Now if you 
+   do such and such to a REAL hacker you might get some unpleasantries 
+   happening to you."  I'm fairly new, and I'm curious exactly as to 
+   what hackers can do to someone if provoked enough. I'm aware of 
+   email-bombing (not that its hacking, but a pain in the butt), but 
+   what else can one of the "elite" guys do to someone?  I'd like to 
+   get a clear picture, none of that crap from the movie "hackers" 
+   (where they made buddy dead, and that stupid cookie monster virus 
+   etc...).  A friend of mine caught someone attempting to drive up 
+   his phone bill.  My friend saw this guy (who he knew and hated) in 
+   a car in front of his house with wires attached to one of his phone 
+   boxes.  The guy wound up in the hospital, and my friend got charged 
+   with assault.  Don't know about the punishment the guy got from the 
+   phreaking though :). Anyways if you could shed some light on it i'd 
+   appreciate it.
+
+Moderator: 
+   There are several books that detail the fallout from hacker wars:
+
+      _Takedown_ by Tsutomo Shimomura and John Markoff (Hyperion, 
+      1996, paperback, 494 pages, $5.99).
+
+      _The Cyberthief and the Samurai_, by Jeff Goodell, Dell, 1996, 
+      paperback, 328 pages, $7.99.
+
+      _The Fugitive Game: Online with Kevin Mitnick_ by Jonathan 
+      Littman (Little, Brown and Company, 1996, 1997, paperback, 397 
+      pages, $13.95).
+
+   The first of these makes out Kevin Mitnick to be a big time 
+   computer criminal. But if you read between the lines you will 
+   realize it was actually a hacker war between Tsutomo Shimomura and 
+   his friends vs Mitnick and Mitnick's friends.
+
+   Goodell and Littman both marshal an impressive body of evidence to 
+   show that Mitnick was guilty, at worst, of making free cellular 
+   phone calls and being a generalized pest. They make the hacker war 
+   nature of the conflict more obvious. It becomes clear to the reader 
+   that when Tsutomo and Markoff (who was mad at Mitnick for snooping 
+   in his account at The Well) got sufficiently angry, they were happy 
+   to use their investigative talents to put Mitnick in jail.
+
+   But please don't get the idea that hackers are in general 
+   dangerous. My experience is that for every destructive GALF type 
+   there are 100 hackers who are polite and helpful.
+
+   The biggest danger in hacker wars is that when you do something 
+   illegal, history tells us that many hackers will work hard and very 
+   effectively to help the authorities catch you.
+
+   Remember -- a popular career path for hackers is to become computer 
+   security professionals. So that is one reason I don't want anyone 
+   emailing me anything that could get them in trouble if a law 
+   enforcement agent were to read it. You never know who is reading 
+   your email to me.
+
+=============================================================================== 
+*** HACKER/PHREAKER (h/p) NEWSLETTER/WEB SITES 
+===============================================================================
+
+From: the mechanic <mechanic@javanet.com>
+
+   Well, I would like to inform everyone from the HH mailing list, of 
+   the site for the h/p group I write for. We write about a lot of h/p 
+   related stuff, but would like to get it spread around more, so I 
+   thought this would be a good place to post it.
+
+      ------------------------------------------------------------ 
+      | Visit The Digital Misfit Syndicate Web Site at:          | 
+      | http://www.javanet.com/~mechanic            | 
+      | http://mechanic.base.org                                 | 
+      ------------------------------------------------------------
+
+   To get on the mailing list, send mail to 
+      mechanic@javanet.com 
+   with a subject of <Subscribe_Mailing_List> DMS is currently looking 
+   for writers, please mail mechanic@javanet.com with your article, or 
+   if you are interested.
+
+   later.
+
+   [mechanic DMS]
+
+=============================================================================== 
+*** IP NAME QUESTION 
+===============================================================================
+
+<Anonymous>
+
+   I recently ran across a machine name that, when pinged, returned a 
+   different name. ("Ping -a www.fred.com" returns "pinging 
+   george.jet.com...")
+
+   Naturally, my curiosity was aroused. So, I tried Telnetting into a 
+   couple of its ports.  To my disgust, Nothing was doin'. Except for 
+   2 ports, FTP and HTML.  When I FTPed in, my connection was refused! 
+   Arg!
+
+   So... I Telnetted into the FTP port and was logged in anonymously. 
+   I typed HELP and got a list of available commands. But When I tried 
+   some of the available commands, it said either "Command not 
+   implemented" or something like "huh?  that's not a command".  So 
+   what is up here?  None of its commands work.
+
+   Going to the HTML port, I get this:
+
+      HTTP/1.0 400 Bad Request 
+      Server: Netscape-Enterprise/2.01 
+      Then <Your server sent something ours doesn't understand>
+
+   Then I got booted off.
+
+   BTW- The machines Telnet port works and gives:
+
+      UNIX(r) System V Release 4.0 
+      Login: (doesn't allow anonymous)
+
+   So other than a brute force attack on login attempts, being a 
+   newbie, I am stuck.  Hints on what I should learn before 
+   proceeding?  I don't want to be spoon fed, just need a starting 
+   point.
+
+   ThanX
+
+   IOScream!
+
+Moderator:
+
+   Several (and therefore different) IP numbers can map to one IP 
+   name, and several IP names can map to one IP number. It isn't 
+   unusual.
+
+=============================================================================== 
+*** MORE ON WIN95STARTUP SCREEN 
+===============================================================================
+
+From: Joey Street <jlsjkw@flinet.com>
+
+   >Moderator: Gee, well on my Win95 operating system, the startup 
+   >screen uses the same file as the background screen. But I 
+   >suppose it is possible that other versions of Win95 are not set 
+   >up to do this. All I can say is I do what works. Isn't that 
+   >what hacking is?
+
+   Sorry for the long, semi-off topic post. I just couldn't stand 
+   seeing people misled.
+
+   It can't use the same file. The background has to be a file with a 
+   .BMP extension and the startup and shutdown screens have .SYS 
+   extensions. However, the graphics in the files are similar, and it 
+   is possible to use one as the other, with a little manipulation. \, 
+   so you may actually be seeing the same screen.
+
+   The startup screen (with the color bar at the bottom) is called 
+   logo.sys. You may or may not have one in your root directory. If 
+   you do not, Win95 uses the default one that is stored in IO.SYS. 
+   Any file placed in root named LOGO.SYS is used instead of the 
+   default.
+
+   The shutting down screen (first one) is a file named LOGOW.SYS in 
+   <windows directory>. I don't know if there is a default for this or 
+   not. I am pretty sure there isn't.
+
+   The shut down screen (ie: the one that says "It is now safe to turn 
+   off..."), is the file LOGOS.SYS in <win>. Same as above.
+
+   These files are actually bitmaps with a .SYS extension. They are 
+   320 x 400 pixel bitmaps in 8-bit color (256). Win95 stretches them 
+   to fill the screen. The motion on the startup screen is because 95 
+   rotates certain colors to make it seem to move, like those moving 
+   X-mas lights. [And no, that isn't the Unix version of Christmas. :) 
+   ]
+
+   To make your own startup and shutdown screens, use a graphics 
+   program like MSPaint. Set the image attributes to 640 x 480 (trust 
+   me). Draw your picture the way you want it to look, but don't try 
+   to use too many colors, and certain colors may not work. Save the 
+   file with whatever name you want, so that you can easily modify it, 
+   if you want to.
+
+   Now use Edit>Select All (in MSPaint). Go to  Image>Stretch/Skew > 
+   Horizontal enter 50. Hit OK. Check the attributes. It should say 
+   320 x 400 (make sure Pels is selected) -- if not, you screwed up.
+
+   Now save the file as a 256-Color Bitmap named LOGO.SYS, LOGOW.SYS, 
+   or LOGOS.SYS, depending on which one you want it to be and in the 
+   correct directory (root for startup LOGO.SYS, <win> for shutdown.)
+
+   That's how to make your own custom screens. To be able to change 
+   the screens on a regular basis, and get some more screens, look at 
+   SHAREWARE.COM or TUCOWS.COM and you should be able to find freeware 
+   or cheap shareware.
+
+   BTW, an easy way to make a new screen: open the LOGO.SYS file, and 
+   invert the colors. Weird.
+
+   Now for a question. Does anyone know of any retail stores that sell 
+   any versions of Linux? Or is it only possible to mail-order?
+
+   ---- 
+   Millennium 
+   jlsjkw@flinet.com
+
+=============================================================================== 
+*** GOT PERMISSION TO HACK 
+===============================================================================
+
+<Anonymous>
+
+   thanks to your tip, i asked permission from my ISP sysadmin to hack 
+   into their system. and he agreed!
+
+   of course it helped that i know the guy, but previously, i was 
+   thinking of hacking without permission, which put me in a paranoid 
+   situation because. i knew they could always trace me if i made a 
+   wrong move and it would be embarrassing for me, since i knew the 
+   sysadmin.
+
+   so i wrote a letter broaching the subject and he agreed. on 
+   condition i don't destroy anything, and report to him what i did, 
+   how i did it, and what, if possible, could remedy the loophole.
+
+   naturally, i agreed. the only problem though is the sysadmin is so 
+   good about security that they refuse to give shell accounts and you 
+   can't even telnet into their main systems (except for one, whose 
+   passwd i now have to crack).
+
+   so my question now is: if i install linux and have access to unix 
+   commands, this means i don't need a telnet or shell account, right?
+
+   thanks a lot! although i think HH is a bit slow, it only takes 
+   patience and wait for something to turn a gem.
+
+   goodluck!
+
+Moderator:
+
+   You're right, with Linux or any other Unix that works on your home 
+   computer, you can do almost anything you could with a shell 
+   account.
+
+=============================================================================== 
+*** WHAT'S WRONG WITH BEING NEWBIE? 
+===============================================================================
+
+From: "BeAvEr" <beaver11@themall.net>
+
+   Hello fellow GTMHH readers,
+
+   This is your good ole' friend BeAvEr and I am here to tell you 
+   guys a few tidbits.  All I here now-a-dayz (on the IRC, and in 
+   GTMHH) is, "I am a newbie!" or "Don't flame me for this newbie 
+   question!"
+
+   What is wrong with being a newbie?  I am a newbie, I 
+   barely know what Linux is, and I am still running under that 
+   wonderful Windoze.  Since a majority on the net tend to call 
+   themselves newbies, why are they all afraid to ask questions?  Is 
+   there no empathy in the IRC domain?  To all the so called 311313 out 
+   there try and empathize a little with the younger "newbie" generation. 
+   If we ask what Linux is, don't flame us. At least tell us to f*** off 
+   nicely.  Don't ping us with packets of 4096 till we want to die. 
+   Basically under where we "The Newbie Generation" is coming from.  That 
+   is all from the BeAvEr today.
+
+   Until next time, keep the heads up and those minds aware. Cause 
+   you never know what's around the corner!
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: " Jeffrey  Steinbrecher" <darkling69@hotmail.com>
+
+   I have a win95 laptop, and am looking to double boot linux on it. I 
+   have no idea where to find linux, and only a rough idea on how to 
+   get it working.
+
+   If some one has a how too, including www/ftp sites to use, please 
+   email me at Darkling69@hotmail.com - BtW, this address is immune to 
+   e-mail bombs, so that's the only reason i have it up here. I'm not 
+   asking you to test that, just that you check out www.hotmail.com, 
+   and get your own free account ;).
+
+   Any help with double booting linux with win95 and where to get it 
+   is appreciated (sp).
+
+   The Darkling 
+   (no, I'm not a complete newbie... just not a linux person)
+
+=============================================================================== 
+*** GOT THE PASSWD, BUT... 
+===============================================================================
+
+From: "candyman" <candyman@voicenet.com>
+
+   I have a question regarding how to view in full a password data 
+   base file.
+
+   Well I hacked into my ISP (with permission from the sysadmin) and 
+   got the passwd file and another file called pwd.db.
+
+   Now how do I view this pwd.db file? I tried Paradox 5 but it said 
+   the file's header is corrupted.
+
+   Another thing: in the passwd file all of the users have " :*: " as 
+   their password. How do I find out their password? One of the users 
+   also has no password " :: " but when I try to login as that user, 
+   the system asks for a password. Can someone help me please ?
+
+   CANDYMAN 
+   I Am A Force Of Pure Destruction !!
+
+=============================================================================== 
+*** A PINE QUESTION 
+===============================================================================
+
+From: "prata@boss1.bossnt.com" <prata@cyber-wizard.com>
+
+   Hello!  I have a question about Pine on my Linux 2.0.27 system.   I 
+   am using Minicom with pppd to connect to my isp.  Now, I have a 
+   shell acct on my isp's Linux box.  I use Pine when I telnet to that 
+   box.
+
+   Is it possible to use MY Pine to send and receive email from a 
+   remote box when connected through ppp??
+
+   I tried setting it up, but it doesn't seem to work.  Any clues??
+
+   TIA, 
+   Rog
+
+=============================================================================== 
+*** MORE X-HACKS 
+===============================================================================
+
+From: <n-treeg@ix.netcom.com>
+
+   Hey, will the person who posted this please e-mail me at: 
+   N-TREEG@mobsters.com I'd like to get some more information on this 
+   hack.  I am on an AIX 4 system running X-windows.  I need to know 
+   what this "magic cookie" is, more info on the 2 second, period.
+
+   And how do you connect to another workstation?  Also, at what time 
+   do you run the program?  If you could e-mail me, I'd really 
+   appreciate it. I'm really interested in trying out this hack. 
+   Also, is there a possibility of running this hack remotely if you 
+   spoof your ip to be the domain of the internal network?  Thanks...
+
+   N-TREEG
+
+   >=============================================================== 
+   >*** X WINDOWS TRICK 
+   >===============================================================
+
+   > 
+   >Anonymous: 
+   > 
+   >   I've noticed a little feature in the network of our school 
+   >   that could be interested for "happy hackers," since I'm 
+   >   talking of "internal hacking" (this thing won't work outside 
+   >   your network, I think) and it won't damage anything. 
+   > 
+   >   We are running a network on AIX version 4 with IBM (NCD) X 
+   >   Terminals ; the X Window version running on this network is 
+   >   release 5 
+   > 
+   >   Now to the interesting part : when a X workstation closes 
+   >   its current session, there are two seconds before the magic 
+   >   cookie is installed ; so you can open a display to any 
+   >   workstation if you connect to it in these two seconds. 
+ 
+
+=============================================================================== 
+*** EMAIL BY TELNET 
+===============================================================================
+
+From: Wendy Mosiman <wmosiman@feist.com>
+
+   I heard there is a way to route your e-mail using telnet port 25... 
+   could anyone help me out with this?
+
+=============================================================================== 
+=M-o-d-e-r-a-t-o-r-s=========================================================== 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ruben d. canlas jr. 
+http://www.skyinet.net/users/benc 
+=============================================================================== 
+     To subscribe or unsubscribe, just 
+     use the subscribe boxes on the menubars. If you decide you 
+      just want to use the forum and not get these mailings, I promise my 
+           feelings won't get hurt if you unsubscribe from this list. 
+=============================================================================== 
+                      End Happy Hacker Digest March 4-5, 1997 
+=E-d-i-t-o-r=================================================================== 
+     Peter Beckman  .  beckman@purplecow.com  .  http://www.purplecow.com/

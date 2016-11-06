@@ -1,0 +1,287 @@
+Happy Hacker Digest March 6, 1997 
+                  ***> Special Internet Explorer Bug Issue <*** 
+=============================================================================== 
+         This is a moderated list for discussions of *legal* hacking. 
+                           Moderator is Carolyn Meinel. 
+  
+                      
+                 OR to the Hackers forum: http://www.infowar.com
+                   Please don't send us anything you wouldn't 
+                  email to your friendly neighborhood narc, OK?
+
+     To subscribe or unsubscribe, just 
+     use the subscribe boxes on the menubars. If you decide you 
+      just want to use the forum and not get these mailings, I promise my 
+           feelings won't get hurt if you unsubscribe from this list. 
+                                 Happy hacking! 
+------------------------------------------------------------------------------- 
+"Truth is often eclipsed but never extinguished." -- Livy 
+------------------------------------------------------------------------------- 
+URL 'O the Day: http://www.vcalpha.com/silicon/void-f.html This is Silicon 
+                Toad's current site. It has the best newbie hacker info around. 
+-------------------------------------------------------------------------------
+
+Table of Contents 
+   o What is the Internet Explorer Bug? 
+   o How Do We Fix It? 
+   o How Do We Exploit It? 
+   o Security Comparision .URL vs .LNK
+
+=============================================================================== 
+*** The MSIE Bug 
+===============================================================================
+
+From the Keys of Carolyn Meinel:
+
+   Thanks to the many people who reported to us the recent discovery 
+   of a serious bug in Microsoft's Internet Explorer, a program used 
+   with Windows 95 or Windows NT to browsw the World Wide Web. Special 
+   thanks to ruben d. canlas jr., who both provided valuable 
+   information for this issue, and who is also experiemnting with 
+   moderating the Digest.
+
+   In this special Digest we will give you the details on what the bug 
+   is, how to exploit it harmlessly, and how to fix it.
+
+*** What is the Internet Explorer Bug?
+
+   First, what is the bug? Bascially, it allows the operator of a bad 
+   guy Web site to to use ".LNK" and ".URL" files to run programs on a 
+   remote computer with the Windows 95 or Windows NT operating 
+   systems. For example, think about visiting a Web site, and having 
+   it execute the command "format c:" on your computer? Or how about a 
+   virus? For more details, read the following posts.
+
+From: "Joshua M. Duhl" <Joshua_Duhl@compuserve.com>
+
+   The following story appeared on CNET 
+   (http://www.news.com/News/Item/0,4,8447,00.html)
+
+   Windows can be hacked through IE 
+       By Nick Wingfield 
+       March 3, 1997, 5:15 p.m. PT
+
+       Internet Explorer contains a security hole that could allow 
+       hackers to completely bypass the browser's built-in checks for 
+       screening dangerous code.
+
+       The hole, discovered by a trio of students from the Worcester 
+       Polytechnic Institute last week, is not related to ActiveX, a 
+       technology for running software components within Explorer that 
+       has been criticized for being insecure. Instead of creating a 
+       malicious ActiveX control, the students were able to remotely 
+       create and delete folders using Shortcuts, a Windows 95 and NT 
+       feature for triggering actions and applications on the 
+       operating systems.
+
+       Microsoft today acknowledged that the security hole could allow 
+       a malicious Web site to delete files and folders from users' 
+       systems.  However, the students who discovered the glitch 
+       maintain that it goes beyond those actions, for it could also 
+       reformat users' hard drives or upload files from their PCs.
+
+       The company is working on a fix for the problem that it hopes 
+       to post later this evening, according to Dave Fester, lead 
+       product manager for Internet Explorer. The glitch does not 
+       affect Netscape Communications' Navigator, according to Geoff 
+       Elliott, one of the students who found the hole.
+
+       Microsoft has vigorously defended the security protections in 
+       Explorer, but it appears to have been caught off guard by the 
+       latest breach.  Explorer contains a feature called Authenticode 
+       that examines ActiveX controls and Java applets to make sure 
+       that they have been digitally signed by a trusted source. If 
+       users ignore the Authenticode warnings about unsigned programs, 
+       their systems are wide open to attacks.
+
+       A group of German hackers, the Chaos Computer Club, 
+       demonstrated an ActiveX control in January that made 
+       unauthorized bank funds transfers from a user's bank account.
+
+       "For executables, we have great security," said Fester. "This 
+       is going around that. You download a link, and it points you to 
+       a program on your own computer."
+
+       Instead of executable code, the latest glitch involves ".url" 
+       and ".lnk" files--also known as Windows 95 and NT Shortcuts. A 
+       malicious Web site operator could post a link to an ".url" file 
+       that, for example, creates a folder on a user's computer and 
+       then deletes it. The Shortcut is able to do that simply by 
+       remotely activating a command in Windows 95 rather than sending 
+       code over the network.
+
+       The Worcester students have set up a Web site that demonstrates 
+       some of the ways in which the hole can be exploited.
+
+       Microsoft's Fester said that a Web site would need to know the 
+       name of a folder, such as "MSOffice" for Microsoft's Office 
+       applications, in order to delete it. He also said that none of 
+       the files or applications in the folder could be deleted if 
+       they were open. But the Worcester students added today that a 
+       site could go further than deleting folders and files with a 
+       Shortcut, possibly even wiping a PC hard disk clean or 
+       snatching files off a computer.
+
+       One of the Worcester students, Brian Morin, said that the 
+       security stemmed from Explorer's close integration with 
+       Windows.
+
+       "It is interesting to note that everybody is so paranoid about 
+       Java and ActiveX [while] nobody bothered to look at the simple 
+       and obvious security holes that arise when Internet Explorer is 
+       tied so closely to the desktop," he said.
+
+       Some analysts echoed that observation. "I suspect more of these 
+       things will start to appear as Microsoft integrates Explorer 
+       with Windows," said Ira Machefsky, a senior industry analyst at 
+       the Giga Information Group.
+
+   Other articles there: 
+      Actively defending ActiveX 
+      Intuit warns against ActiveX 
+      ActiveX used as hacking tool 
+      CNET Special Report: Crime on the Net 
+      Battening down the Net's hatches 
+      Browser bugs hard to catch in Net rush
+
+*** How Do We Fix It?
+
+   Now since we assume that all you folks reading this list are good 
+   guys, we assume your most important goal is to learn how to fix 
+   Internet Explorer.  You can get a fix for this bug at
+
+      http://www.microsoft.com/ie/security/update.htm
+
+*** How Do We Exploit It?
+
+   **************************** 
+   You can go to jail warning: You can probably think of many ways to 
+   make ithis bug become destructive. Since so many people have 
+   emailed the Supreme Moderator complaining that they don't like to 
+   be warned of anything illegal, you guys had better skip the rest of 
+   this message before you get conniptions of the heart.
+
+   This bug allows you to run programs on other people's computers. If 
+   you want to do this hack, be sure to get permission from the people 
+   on whose computers you try out this bug. Even though the following 
+   example is harmless, if the owner of the computer you try it on 
+   doesn't like you little experiment, you could get in trouble with 
+   the law. 
+   ****************************
+
+   Want to go to a Web site where a harmless example of this Internet 
+   Explorer bug will be run against your Windows computer? See 
+  
+      http://www.cybersnot.com/iebug.html 
+  
+   Following is some information excerpted from that site.
+
+   It was tested on Microsoft Internet Explorer Version 3.0 
+   (4.70.1155) running Windows 95. This demo assumes that Windows is 
+   installed in "C:\WINDOWS". Windows 95 DOES NOT PROMPT BEFORE 
+   EXECUTING THESE FILES.
+
+   .URL files are WORSE than .LNK files because .URLs work in both 
+   Windows 95 and Windows NT 4.0 (.LNK's only work in Windows 95). 
+   .URL files present a possibly greater danger because they can be 
+   easily created by server side scripts to meet the specific settings 
+   of a user's system. We will provide .URL files for execution in the 
+   next day or so.
+
+   The "shortcuts" can be set to be minimized during execution which 
+   means that users may not even be aware that a program has been 
+   started. Microsoft's implementation of shortcuts becomes a serious 
+   concern if a webpage can tell Internet Explorer to refresh to an 
+   executable. Or worse, client side scripts (Java, JavaScript, or 
+   VBScript) can use the Explorer object to transfer a BATCH file to 
+   the target machine and then META REFRESH to that BATCH file to 
+   execute the rogue command in that file.
+
+*** Security Comparision .URL vs .LNK
+
+   Naturally, the files must exist on the remote machine to be 
+   properly executed. But, Windows 95 comes with a variety of 
+   potentially damaging programs which can easily be executed. The 
+   following link will start the standard calculator which comes with 
+   Windows 95.
+
+   Windows Calculator (.lnk). 
+   Windows Calculator (.url).
+
+   This bug can be used to wreak havoc on a remote user's machine. The 
+   following links will create and delete some directories on a 
+   Windows 95 machine.
+
+   Create a directory "C:\HAHAHA". 
+   Open "C:\HAHAHA" 
+   Remove the directory "C:\HAHAHA"
+
+   The META REFRESH tag can be used to execute multiple commands in 
+   sequence. This demo copies a .BAT file into your Internet Explorer 
+   cache and then runs the .BAT file. This .BAT will create a new key 
+   in your registry called "HKEY_CURRENT_USER/Software/Cybersnot". It 
+   will then open your AUTOEXEC.BAT and CONFIG.SYS in notepad. 
+   Finally, it will open REGEDIT so that you can view the key it 
+   creates. This demo does not destroy anything and should not cause 
+   any problems on your system. HOWEVER by clicking below, you are 
+   doing so at your own risk and agree not to hold us liable for any 
+   problems which may (but probably won't) arise.
+
+Sender: bbuster@succeed.net
+
+   I know you are on BugTraqs to so you know about that IE bug. If i 
+   were you, I'd NOT mention it on the HH list. That's trouble just 
+   waiting to explode.  All these newbies that want to hack, but can't 
+   figure out an e-mail bomber, I bet can sure do html.
+
+   Imagine a site causing a launching a minimised FTP and downloading 
+   a virus without you knowing it. Then the site getting refreshed 
+   automaticly and running it. I tryed this right after I got that 
+   post and it sure as hell works. Another bug I found is be doing a 
+   <img src="file|/c://whatever"> (this is NOT the "click here" to see 
+   your hard drive one). This will display a file from ANY local 
+   drive, or logged into network drive that is refrenced correctly in 
+   the HTML, on the screen, and with a simple <form type=hidden 
+   action=email> type of tag, have that displayed file e-mailed to 
+   whoever you want. This could be real dangerous on an NT system, on 
+   a network with a direction connection to the net, if you map to 
+   some important or critical files and the Admin user views the HTML.
+
+   Man-o-man this could be a real Lamer fest. Until these are old news 
+   I'm not even going to put it on my site.
+
+   Regards 
+      BB
+
+Moderator:
+
+   Bronc, I appreciate your concern. But I've waited awhile, and gory 
+   details f how to exploit this bug are being splashed all over the 
+   place. So I'm going to do what I admire about Silicon Toad's site: 
+   I'll let people know the problem exists, show them how to get the 
+   info to exploit it, but exert some degree of social pressure to not 
+   abuse this knowledge.
+
+   The difference between the Internet Explorer bug and email bombing 
+   programs is that there is a simple fix that will solve the Internet 
+   Explorer bug. But in the case of email bombing, the fixes are 
+   partial and all have serious disadvantages. There are those in the 
+   computer security industry -- for example Winn Schwartau (and 
+   myself)-- who regard email bombing as the single most pressing 
+   problem for the Internet today. I'm afraid email bombing will 
+   continue to be a growing lamer fest (as you so succinctly put it) 
+   until we work a better technical solution. But the Internet 
+   Explorer bug will soon be history.
+
+=============================================================================== 
+=M-o-d-e-r-a-t-o-r============================================================= 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 
+=============================================================================== 
+     To subscribe or unsubscribe, just 
+     use the subscribe boxes on the menubars. If you decide you 
+      just want to use the forum and not get these mailings, I promise my 
+           feelings won't get hurt if you unsubscribe from this list. 
+=E-d-i-t-o-r=================================================================== 
+     Peter Beckman  .  beckman@purplecow.com  .  http://www.purplecow.com/ 
+===============================================================================

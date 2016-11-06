@@ -1,0 +1,554 @@
+March 1997 Digests
+
+=============================================================================== 
+                     Happy Hacker Digest March 1, 1997 
+=============================================================================== 
+          This is a moderated list for discussions of *legal* hacking. 
+                       Moderator is Carolyn Meinel.
+
+             Note: Don't send anything you wouldn't send to a cop.
+
+To subscribe or unsubscribe, just 
+use the subscribe boxes on the menubars. If you decide you 
+just want to use the forum and not get these mailings, I promise my 
+feelings won't get hurt if you unsubscribe from this list. 
+Happy hacking! " 
+===============================================================================
+
+URL 'O the Day: http://www.defcon.org; or email info@defcon.org 
+--------------------------------------------------------------- 
+DEF CON V Convention Announcement 
+        WHAT: Speakers and partying in Vegas for all hackers 
+        WHEN: July 11th - 13th 
+        WHERE: Las Vegas, Nevada @ the Aladdin Hotel and Casino 
+        COSTS: $30 in advance, $40 at the door
+
+===============================================================================
+
+TABLE OF CONTENTS 
+----------------- 
+   o Call for Gluttons for Punishment 
+   o Help for Novell Problem 
+   o Win95 Tricks 
+   o Linux Help 
+   o Cookies Help 
+   o How to Get Busted 
+   o X Windows Trick 
+   o Rants
+
+=============================================================================== 
+*** CALL FOR GLUTTONS FOR PUNISHMENT 
+===============================================================================
+
+   The Happy Hacker project to teacher basics has become *too* 
+   successful. Lots of our 2000 readers are complaining that we are 
+   overloading them with information.
+
+   Is there anyone who would be willing to moderate an intermediate 
+   hacker education list? That way the newbies won't have to put up 
+   with baffling Unix wizard details, and the more advanced hackers 
+   don't have to read about IRC wars and Win95 tricks.
+
+   Advantages: lots of media attention, and a chance to build your 
+   reputation.  This could lead to a career as a computer security 
+   consultant, journalist or narc! (Just kidding! The FBI is too cheap 
+   to hire more narcs.)
+
+   Disadvantages: lots of media attention, work for no pay, have to 
+   put up with flames and rumors that you are a narc, get hit by email 
+   bombs and people cracking into your Internet hosts and wiping 
+   system files.
+
+   I would also like to hand over moderation of the Happy Hacker list 
+   to someone who would agree to our policies on flame control, no 
+   boasting about breaking the law, no naughty words, and spelling and 
+   grammar control.
+
+   If anyone would be kind enough to take on all this moderator work, 
+   I would have time to turn out a bunch more Guides to (mostly) 
+   Harmless Hacking.
+
+   Never fear, if no one comes forward, I'm keeping up this work. But 
+   it would sure be fun to have time to finish up all those 
+   half-written Guides to (mostly) Harmless Hacking!
+
+   Please contact Carolyn Meinel at carolyn@cmeinel.com or whatever 
+   email address isn't currently getting email bombed. Hint: I own the 
+   techbroker domain name so any user name @cmeinel.com gets to me.
+
+=============================================================================== 
+*** HELP FOR NOVEL PROBLEM 
+===============================================================================
+
+From: TQDB <tqdb@feist.com>
+
+   > From: "Michael Todd" <trelane@infocom.com> 
+   > 
+   >       I'm sure that this is some type of hacking but it is for a good 
+   > cause. I need to get into a Novell 4.1 server with Admin rights. Good luck 
+   > you say? My reason is this: not for anything illegal, destructive or the 
+   > like but because of a problem. At the job where I work, our Network Admin 
+   > left abruptly, leaving passwords on a lot of stuff and didn't tell anyone 
+   > what they were. We have no way of tracking him down and we can still access 
+   > some programs, data and our user directories but cannot change any settings 
+   > on the server. I have been promoted to Network Admin with the understanding 
+   > that I'll get it all fixed. OK, sure it's easy right? Down the server, edit 
+   > some files with a hex-editor...right? There's where the problem begins... 
+   > 
+   >       Before he left, he also unplugged the keyboard from the server. Now, 
+   > you can't plug the keyboard in on this particular server. Well, you can but 
+   > it doesn't do any good. It's hard to down the server with no keyboard. I 
+   > need to be able to down the server from a remote computer or edit the 
+   > password list. Keep in mind that no one has any admin rights but the person 
+   > who left. RConsole will not work without rights. Calling Novell is an 
+   > option, I realize but at $200 bucks a call....
+
+   >        I really don't want to do that because I want the company to trust 
+   > and depend on me. He took out all the backdoors that the company had put in 
+   > so there's really nothing there. I don't want to just turn the server off 
+   > and watch it crash. There has to be a way to administer the server, down 
+   > it, or change passwords or rights from a remote station without admin 
+   > rights. If anyone can help with this or if anyone knows anyone who could, 
+   > please email me. I'd appreciate no flames or bombs....not really in the 
+   > mood to fight back at this time.
+
+      First, I would check out: http://www.feist.com/~tqdb/texts/hacknov.html 
+   for a very good Novell Netware security reference.  I don't think any 
+   Novell admin should be without a copy.
+
+      Second, unless you are able to brute force hack the password of an 
+   account with administrative privileges you'll probably just have to 
+   physically power down your server.  The main problem with this whole 
+   situation is your lack of a keyboard right now.  If I understood 
+   correctly rebooting the server should re-enable the keyboard so you can 
+   get back to work.  Just try to make sure that all users are logged off 
+   and files are closed before shutting the server down.
+
+      Third, basically look through the Hacking Novell Netware FAQ and pay 
+   particularly close attention to the sections on how to recover the 
+   administrator password.  This should be the final step in gaining 
+   supervisory control over the server again.  Then tell your company to 
+   file suit against the former admin..
+
+      If all else fails, pay for some real support. 
+   .TQDB
+
+   -=| T.Q.D.B. - tqdb@wichita.fn.net - http://www.feist.com/~tqdb |=- 
+  
+            "The term 'hacker' is not necessarily derogatory. 
+            A small percentage of them give the rest a bad name." 
+         --Special Agent Andrew Black, FBI SF Computer Crime Squad
+
+   Greetings to all the hackers reading this ; first I'd ask you to make this 
+   anonymous, at least the domain from where it came (replace it with 
+   arisme@mygale.org please !)
+
+=============================================================================== 
+*** LINUX HELP 
+===============================================================================
+
+From: Timothy Ward <tbw@ruined.all-net.net>
+
+   I don't know why, but there is a bit of a mystification around PPP 
+   and Linux. It really is an easy task. I would suggest reading the 
+   PPP-HOWTO.  Or, if the person who cannot figure it, could email me 
+   directly I'd be glad to walk him/her thru it. Thanks, and have a 
+   wonderful day.
+
+   Timothy Ward 
+   ward@carl.all-net.net
+
+From: "Stephen James" <sjamesflorida-wellington@worldnet.att.net>
+
+   I *am* a newbie, but Linux loads well on my system.  In other 
+   words: USE AT YOUR OWN RISK.  I don't want flames and bombings 
+   because somebody's system won't work.  If you read this and find 
+   that you have no idea what I'm saying, DON'T try this. 
+  
+   The "setup" command on my Slackware Linux system makes it somewhat 
+   difficult to setup LILO (LInux LOader) because of the extensive 
+   prompts and menus, even though it is more secure.  Keep in mind 
+   that I'm assuming you already have Linux installed.  Don't try this 
+   if you know nothing about Linux.  If you don't mind hand hacking, 
+   edit your /etc/lilo.conf file to look something like this.  Change 
+   *only* the portions of my file that I list: 
+_________________________________________________________________ 
+boot = /dev/(drive Linux is on; *not* the partition) 
+_________________________________________________________________ 
+image = /vmlinuz 
+            root = (*now* enter the partition, or the drive) 
+ label = your choice (Linux?) 
+_________________________________________________________________ 
+other = (partition of win95) 
+ label = (your choice) 
+_________________________________________________________________ 
+  
+=============================================================================== 
+*** LOOKING FOR SAN DIEGO HACKERS 
+===============================================================================
+
+From: Matt Ooi <coder@electriciti.com>
+
+   I've seen a lot of people posting requests for hackers in their 
+   area... any San Diego hackers out there?
+
+   Well, I do have a legitimate question. Under Linux, is there any 
+   way to shell out of procmail or sendmail, short of ^Z (Suspend)? If 
+   not, how about sasteroids? The reason I ask is because on my system 
+   I noticed they have suid/gid permissions and are a potential 
+   security hole: should someone be able to shell out of them, they 
+   would effectively be root. 
+         --Matt
+
+=============================================================================== 
+*** COOKIES HELP 
+===============================================================================
+
+From: "ruben d canlas jr" <benc@skyinet.net>
+
+   hi carol! I guess this bounced because of your recent email bomb 
+   experience. hard being famous eh?  ;)
+
+   > I keep getting 'cookies' while using Netscape. Can anyone give me 
+   > an explanation as to what these are, what they do, and why do 
+   > they exist? 
+   > 
+   > Thanks. 
+   > 
+   > --Jason Clements 
+   > --Certified Novell Administrator
+
+   hullo there, jay!
+
+   cookies are tiny bits of information on yourself that are saved on 
+   to your hard disk by a web server. I'm sure you've encountered 
+   websites which greet you when you log on to them and allow you to 
+   customize what u want to see. or those shopping mall sites where 
+   you surf around and put your purchases in a shopping cart.
+
+   all the info used in these systems are saved in your local computer 
+   via a cookie. each web site saves its own cookie in your hard disk.
+
+   cookies are annoying and controversial. but some think they're 
+   better saved on your HD than on the web servers HD!
+
+   benc
+
+   ruben d. canlas jr. 
+   http://www.skyinet.net/users/benc
+
+=============================================================================== 
+*** HOW TO GET BUSTED 
+===============================================================================
+
+From: willm@intermind.com (Will Munslow)
+
+   > The best way of all to wind up in jail for computer crime is to 
+   > make hackers mad at you. Oh, you think a hacker won't narc on 
+   > you? Look at Shimomura.  That's also how the Masters of 
+   > Destruction got caught -- they p***** off the Legion of Doom. So 
+   > guess who it was that gathered enough evidence to bust the MOD? 
+   > Yes, it was the LOD. Five MOD guys were convicted: Phiber Optic 
+   > (Mark Abene), Outlaw (Julio Fernandez), Corrupt (John Lee), Acid 
+   > Phreak (Elias Ladopoulos) and Scorpion (Paul Stira). 
+   > 
+   > Now Eric Bloodaxe (Chris Goggins) -- the LOD guy who did the most 
+   > to bust the MOD -- is a revered hacker, a successful consultant, 
+   > and author of the book _The Complete Internet Business Toolkit_ 
+   > which you can find in almost any bookstore.
+
+   Uh...I read the hacker Crackdown, too, but I recall that it was the 
+   phone company that busted the MOD, not LOD. I believe Chris was 
+   arrested also.  Then Chris & Co. set up the Security firm. MOD 
+   messed with them and they started complaining to the FBI. The 
+   business went under, MOD went to jail, got out of jail, got jobs. 
+   It has been a while since I read the book.
+
+Moderator: 
+  
+   You can get details of the role LOD played in busting MOD in the 
+   book _Information Warfare_ by Winn Schwartau, chapter 11. Since 
+   Winn has worked closely with Goggans (sorry, I mispelled his name 
+   earlier), I am inclined to believe Winn's version of the story.
+
+=============================================================================== 
+*** X WINDOWS TRICK 
+===============================================================================
+
+Anonymous:
+
+   I've noticed a little feature in the network of our school that 
+   could be interested for "happy hackers," since I'm talking of 
+   "internal hacking" (this thing won't work outside your network, I 
+   think) and it won't damage anything.
+
+   We are running a network on AIX version 4 with IBM (NCD) X 
+   Terminals ; the X Window version running on this network is release 5
+
+   Now to the interesting part : when a X workstation closes its 
+   current session, there are two seconds before the magic cookie is 
+   installed ; so you can open a display to any workstation if you 
+   connect to it in these two seconds.
+
+   But why is it useful ? Simple ! When you have a display attached to 
+   a workstation, you keep it until the current X session is over ; 
+   that means you just have to wait for someone to log on this 
+   station, and after he's connected just send a XDisableAccessControl 
+   to the display you have created This will cause the workstation to 
+   disable its magic cookie (as if the user typed xhost +)
+
+   And then you can do everything you want on this workstation ...  If 
+   someone is interested, my next post could be how to have fun with a 
+   workstation in xhost + : how to kill processes, log keys, send 
+   unremoveable windows, make the station beep and a lot of other 
+   harmless things :)
+
+   Now to be clearer a simple program that could do this: 
+------------------------------------------------------------------------------ 
+/* When you include all there are never problems :) */
+
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <X11/X.h> 
+#include <X11/Xlib.h> 
+#include <X11/Intrinsic.h> 
+#include <X11/StringDefs.h> 
+#include <X11/Xutil.h> 
+#include <X11/Shell.h>
+
+main () 
+{ Display *d; 
+  char c;
+
+  d=XOpenDisplay("funny_station");
+
+  if (d==NULL) { printf("Error,access denied\n"); exit(0); } 
+  
+  fflush(stdin); 
+  c=getchar();
+
+  /* Now just wait for someone to log on */
+
+  XDisableAccessControl(d);
+
+  /* And the workstation is in xhost + */ }
+
+------------------------------------------------------------------------------ 
+   You compile this with gcc -lX11 
+   Simple and short no ?
+
+   Now the questions :
+
+   * What systems are subject to this "bug" ; I checked another AIX in another 
+     school and you could "connect" this way on every "unlogged" 
+     station, there wasn't any two seconds limit (and so was our 
+     network before I told our admin ... so perhaps all AIX systems 
+     have the session manager configured this way on default) ; I 
+     think that it doesn't work with HP terminals ?
+
+   So please if you want to do something useful, stop pinging on IRC 
+   and email bombing and check if this works on your nearest 
+   workstation :) 
+  
+   * I don't think that this will work "outside" since the 
+     XDisableAccessControl only works if the station that sends this command 
+     is on the same domain that the one which started the session ? Or does it ? 
+  
+   * Could it work with X11 release 6 ? 
+  
+   * It is safe because you can't get passwords easily on the "login session" 
+     (xlogin on AIX) : the login window doesn't accept changing its 
+     attributes to KeyPressEvent or KeyReleaseEvent ; you just have to 
+     wait for a telnet :)
+
+   So I think that a good idea would be to begin a list of funny things to do 
+   on X Window like this one ... I am just a beginner in C and I think this 
+   system has a lot of potential for a hacker :)
+
+   In conclusion, if this is published, PLEASE TEST IT ON YOUR WORKSTATIONS and 
+   let's make a summary of harmless weaknesses in different X-Window systems !
+
+=============================================================================== 
+*** WIN95 TRICKS 
+===============================================================================
+
+From: "Xenakis" <xenakis@epix.net>
+
+   ------> The files are: 
+   Logo.sys - the infamous Windows 95 startup! 
+   Logow.sys - the first shutdown window (black and clouds "Please wait while 
+   your computer shuts down") 
+   Logos.sys - the second shutdown window (black and orange text "Your 
+   computer is now safe to shutdown (can be avoided through Power Management)
+
+   -xenakis@epix.net 
+   http://www.epix.net/~xenakis/
+
+Make this anonymous....
+
+   I have a Compaq Presario 9660 and it came with this little fun 
+   program called "Presario Vault". What this program does is hide any 
+   selected folders and/or files and keeps them locked with a master 
+   password and a password for the individual file. So I, being the 
+   smart-ass that I am, decided to hide some useless files and put in 
+   some worthless passwords that I would forget. Now I am trying to find 
+   a way to get to the files without a password. I have torn the 
+   registry apart and looked in every INI file.. Would anyone know about 
+   this program and how to break it??
+
+From: savior28@juno.com (Savior28 . C) 
+Date: Wed, 26 Feb 1997 17:15:23 EST
+
+   To edit the windows help screen (the one that comes up when you 
+   boot up windows), click the start button on the task bar, click 
+   run, and type in REGEDIT.  that will take you to the registry 
+   editor.  Once there, go into the dir:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER\TIPS
+
+   Double click on the line that you want to edit (on the right frame) 
+   and go for it.
+
+   Also, to make the start button go quicker without the delays, go 
+   into the regedit program like you did above --^ and then go into 
+   the dir:HKEY_CURRENT_USER\control panel\desktop in this dir look 
+   for a value called menushowdelay and hit enter twice.  Then, set 
+   the value to 100. Its probably set at 400 right now. You'll have 
+   to reboot to see any change.
+
+   most of these tips were by: The Plowsky Phreak
+
+ -Savior28-
+
+=============================================================================== 
+*** RANTS 
+===============================================================================
+
+From anonymous:
+
+   Dear Carolyn, 
+            I have conclusive evidence that you work for the F.B.I. 
+   Why, I saw you only the other night when I was out drinking with 
+   Santa Claus and John Lennon.........
+
+   In fact how do you know I don't work for the F.B.I?
+
+   In fact, come to mention it how do I know that everyone on the Happy Hacker 
+   isn't on the F.B.I. payroll and all this is an elaborate ploy to trick me. 
+   ... 
+   Anyway, I'm off to but O.J.Simpson a new pair of gloves.......
+
+   Sam 
+   (A young impressionable Prozac fiend)
+
+   Keep this anon. Please? Pretty please with sugar on top? Pretty please with 
+   sugar on top and laced with cocaine?
+
+-------------------------------------------------------------------------- 
+From: k1neTiK <samk5@idt.net>
+
+   >From: mulder@jumbo.ntplx.net (Hunter Rose)
+
+   >        So why don't we just start posting the GTMHH on stopping 
+   > spammers every time we see a spam? make it available to every 
+   > idiot with a computer.  I mean, put it everywhere. I want to see 
+   > people just going down every day.  I want to see people AFRAID to 
+   > post this crap. I want these people OFF the Internet.
+
+   This idea is terrible, and I'll tell you why.  Firstly, a spam is 
+   something that in Usenet usually refers to something that is 
+   completely off topic, and most likely an ad.  If you would post the 
+   GTMHH every time someone spammed, you would have become a spammer. 
+   You would have posted something which has no relevance to the 
+   Newsgroup, and if, as you said, you would post it EVERY time 
+   someone spammed, you would fill the newsgroups with GTMHHs, and 
+   therefore be a particularly annoying spammer.  To stop spammers, 
+   follow the GTMHH or mailbomb their a**, I find no ethical problem 
+   with mailbombing a spammer AS LONG AS you do not damage the ISP in 
+   the process, and my respect for US computer legislation only goes 
+   so far (so far being two inches from my nose).  But the "fight fire 
+   with fire" concept won't work here.  You wanna get back at a 
+   spammer, you do so, but don't make other people read more spams. 
+   If they want to do something they'll do it, there is info on 
+   fighting spam widely available on the net.
+
+               |//////////k1neTiK////////////////////////////////////////| 
+               |//E-mail:  samk5@mail.idt.net////////////////////////////| 
+               |//IRC: usually on irc.stealth.net from around 5:30 p.m.//| 
+               |///(under the handle k1neTiK, duh!)//////////////////////|
+
+-------------------------------------------------------------------------- 
+From: "Robert RIVIERE" <robert@mail.pf>
+
+         ;-) every body!! 
+   Just one thing : Stop talking about email bomb :-@ 
+   Email bombing is not hacking for me. Hacking can be noble. 
+   Hacking is gaining information. 
+   It's more interesting for me to discover new tricks or new bugs 
+   than get bored with email bomb. 
+   Every body have lost the meaning of the word "Hacking". 
+   Here in France Hackers are very vulnerable (DST, DGSE) because they 
+   have done rubbish like e bomb, or cracking Transpac connections to 
+   have free phone connections. 
+         I respect people who respect the other. What do you think about that?
+
+-------------------------------------------------------------------------- 
+From: plowsky@juno.com (plowsky d phreak)
+
+   I couldn't agree more, email bombing and destructive hacking is 
+   exactly what gives the word 'hackers' a bad meaning in the public 
+   eye. I've been mail bombed many times, and I guarantee that it took 
+   longer for them to send the bombs than it did for me to clean them 
+   up. This kind of childish behavior shouldn't be considered hacking 
+   by anyone...
+
+   Plowsky Phreak 
+  
+-------------------------------------------------------------------------- 
+From: bbuster@succeed.net (Bronc Buster)
+
+   You know, this is really getting sad. This mailing list is made for 
+   the Newbie who has gotten up the nerve, courage, and/or guts to 
+   dive into this vast and never ending world of "hacking". Some of 
+   the self professed "hackers" who write to this list are totally see 
+   through, and fake. You are trying to Bulls**t your way through... 
+   Stop wasting my/our time. If a someone asks a question, try to 
+   answer it. If you don't know the answer, read they reply and learn 
+   it, don't start shooting off your mouth. 99% (dare I say 100%) of 
+   the information you need to know if on the Internet...
+
+   Ask a question about something, someone will answer it and then 
+   once you have a lead, pursue it. Real simple. If the Moderator 
+   would be a little more responsible and post e-mail that had some 
+   value to this list, this mailing list would lose the "tarnished" 
+   image it is quickly gained around the net.  This list has turned 
+   into a 30% flame war, 30% Moderators personal problems and 
+   opinions, and 40% about what this list is really about. This 40% is 
+   why most of you subscribed (I hope).
+
+   Every time I read one of the Happy Hackers, I learn something, or 
+   remember something I had forgotten (well 40% of the time I 
+   do).......
+
+   PS. do you think I can have my .sig NOT cut off this as usual?
+
+Moderator:
+
+   We've posted Bronc's loooong sig plenty of times. The Digest 
+   archives and posts by Bronc Buster at the Hackers forum at 
+   http://www.infowar.com have plenty of examples of his sig.
+
+=============================================================================== 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 
+=============================================================================== 
+   To subscribe or unsubscribe, just 
+   use the subscribe boxes on the menubars. If you decide you 
+    just want to use the forum and not get these mailings, I promise my 
+        feelings won't get hurt if you unsubscribe from this list. 
+===============================================================================
+
+-------------------------------------------------------------------------------- 
+Peter Beckman      (c)1997 by Peter Beckman 
+beckman@purplecow.com 
+Webmaster, Northern Virginia Internet Access Cooperative

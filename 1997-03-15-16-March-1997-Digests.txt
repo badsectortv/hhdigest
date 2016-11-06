@@ -1,0 +1,331 @@
+March 1997 Digests
+====================================================================== 
+                Happy Hacker Digest March 15-16, 1997 
+====================================================================== 
+    This is a moderated list for discussions of *legal* hacking. 
+         Moderators: Carolyn Meinel and Ruben D. Canlas Jr.
+
+                
+           OR to the Hackers forum: http://www.infowar.com 
+ Digest archives are held under the "New" button at the Infowar site
+
+             Please don't send us anything you wouldn't 
+            email to your friendly neighborhood narc, OK?
+
+To subscribe or unsubscribe, just 
+use the subscribe boxes on the menubars. If you decide you 
+just want to use the forum and not get these mailings, we promise our 
+    feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+====================================================================== 
+Special Windows NT Hacking Resources Issue 
+======================================================================
+
+   With the wildfire spread of the Windows NT operating system, and 
+   its growing use for Internet and Web servers, NT is becoming THE 
+   operating system that hackers love to hack.  To keep up with the 
+   growing list of NT exploits, there are several excellent email 
+   lists you may wish to join. Following are three of the best. 
+ 
+
+   Excerpted from:
+
+   T a s t y   B i t s   f r o m   t h e   T e c h n o l o g y 
+                                                           F r o n t 
+   3/9/97
+
+      Timely news of the bellwethers in computer and communications 
+      technology that will affect electronic commerce -- since 1994
+
+      Your Host:  Keith Dawson
+
+      This issue: <URL:http://www.tbtf.com/archive/03-09-97.html>
+
+====================================================================== 
+*** Microsoft scrambles to close loopholes in software and image 
+======================================================================
+
+    In the last week three students at three American universities 
+    dis- covered three serious security loopholes in Microsoft 
+    Internet and desktop software, and, after contacting Microsoft, 
+    published three similar Web pages to spread the word and to cement 
+    credit for their finds. In each case the bug was discovered by a 
+    single student, who then enlisted friends to investigate it and 
+    publish the findings.
+
+          Discov-   Date    School  MSIE    Win95?   WinNT? 
+           erer                     vers. 
+          -------   ------  ------  -----   ------   ------ 
+      [6] Paul      2/27    WPI     3.0     yes      4.0 
+          Greene                    3.01 
+  
+      [7] David     3/4     UMD     3.0     no       4.0 with 
+          Ross                      3.01             SP 1 or 2 
+                                    3.01a 
+  
+      [8] Chris     3/7     MIT     3.01    yes      no 
+          Rioux
+
+    Microsoft now has a patch [9] available for download that fixes 
+    all three bugs.
+
+    The WPI bug [6] (also called Cybersnot, after the domain name at 
+    which it was published) exploits the surprising fact that a remote 
+    machine can directly access and run Windows "Shortcuts" -- .LNK or 
+    .URL files. This bug is the most widely dangerous of the three. 
+    The second bug [7], called UMD, as demonstrated requires the user 
+    to double-click on an icon imbedded in a Web page; this action can 
+    run a program on the client machine. Machines in networks behind 
+    fire- walls are not vulnerable, so the bug affects far fewer 
+    machines than the original one. The MIT bug [8] uses .ISP files, 
+    yet another flavor of automatically executable objects in the 
+    Microsoft environment, this one intended to help users sign up for 
+    Internet service. (Per- haps characteristicly, the MIT page sniffs 
+    at the weak "exploit" examples developed by UMD.)
+
+    When Microsoft first posted a patch to the WPI bug, an Israeli 
+    com- puter security / antivirus company, EliaShim, saw an 
+    opportunity to add value (and get lots of publicity and names for 
+    their database).  The effect of the Microsoft patch is to warn the 
+    user if s/he is about to download a Shortcut. EliaShim has posted 
+    a stronger patch that unilaterally prevents the download of a 
+    Shortcut. (You can download the patch, called IE-SAFE, here [10] 
+    -- but note that Elia- Shim collects contact information from you 
+    before letting you down- load, a move I consider borderline 
+    sleazy.) EliaShim claims that the bug affects not only IE, but 
+    also Microsoft's Internet Mail and Internet News applications 
+    running on Win 95 and Win NT, a claim which Microsoft doesn't 
+    quite deny.
+
+    A blizzard of news coverage followed the first bug's announcement: 
+    by the morning of 3/4 the story had spread from seven Net news 
+    organizations to page 1 of the New York Times, above the fold. 
+    Coverage has tailed off rapidly with the drumbeat of new discov- 
+    eries; the news value of "more of the same" has a perilously short 
+    half-life. This is a shame, because the real story is in the pat- 
+    tern. As the UMD discoverer David Ross noted, these bugs all 
+    result from the expedited push to integrate the Internet Explorer 
+    with the traditional Microsoft desktop. The desktop was designed 
+    to be private. Networks aren't private.
+
+    [6]  <URL:http://www.cybersnot.com/iebug.html> 
+    [7]  <URL:http://dec.dorm.umd.edu/iebug.html> 
+    [8]  <URL:http://web.mit.edu/crioux/www/ie/index.html> 
+    [9]  <URL:http://www.microsoft.com/ie/security/update.htm> 
+    [10] <URL:http://www.eliashim.com/files2.html>
+
+====================================================================== 
+*** Linus moves ten time zones west 
+======================================================================
+
+    Or is that fourteen east? Linus Tovalds, the creator of Linux, has 
+    left his native Finland for Santa Clara, CA, where he will join a 
+    start-up chip design company called Transmeta. (They have a domain 
+    name but not yet a Web page.) 
+   ____________________________________________________________________
+
+    TBTF home and archive at <URL:http://www.tbtf.com/>. To subscribe 
+    send the message "subscribe" to tbtf-request@world.std.com. TBTF 
+    is © 1994-1997 by Keith Dawson, <dawson@world.std.com>. 
+    Com- mercial use prohibited. For non-commercial purposes please 
+    forward, post, and link as you see fit. 
+    _______________________________________________ 
+    Keith Dawson               dawson@world.std.com 
+    Layer of ash separates morning and evening milk.
+
+====================================================================== 
+*** Windows NT BugTraq Mailing List Announcement 
+======================================================================
+
+   In the tradition of Aleph One's BugTraq mailing list, this list has 
+   been created to invite the free and open discussion of Windows NT 
+   Security Exploits/Bugs or *SEBs* as I call them. This list is not 
+   intended to be a forum to discuss "how to" issues, but instead 
+   should be used to report reproducible SEBs which you have 
+   personally encountered with Windows NT or its related BackOffice 
+   products.
+
+   Q:What is a SEB? 
+   A:Anything that can be done to a Windows NT installation via a 
+   remote connection (network or RAS) or through the local 
+   installation of commercial software which causes Windows NT to 
+   react in anything but an expected fashion. So telnet to TCP port 
+   135 and typing 15 characters thereby causing the Windows NT CPU to 
+   go to 100% utilization would be an acceptable topic. Sitting at a 
+   console logged in as Administrator and removing the 
+   Administrator's file permissions on the %systemroot%\system32 
+   would not be considered an acceptable topic.
+
+   Do's: 
+   - Discuss SEB resolution or workaround. 
+   - Discuss SEBs in third-party Windows NT products, providing that 
+     the product is designed for BackOffice. 
+   - Discuss Macintosh, Netware, or Samba/Unix-related SEBs assuming 
+     that the SEB is related to Windows NT involvement.
+
+   Don'ts: 
+   - Discuss Windows '95, unless, and only if, the Windows NT SEB can 
+     only be reproduced with a Windows '95 client. 
+   - Discuss Windows for Workgroups or Windows 3.x, for any reason. 
+   - Discuss products to enhance security, unless they have been 
+     proven to resolve an outstanding SEB. 
+   - Discuss Unix SEBs, these should be addressed to 
+     BUGTRAQ@NETSPACE.ORG (subscribe through LISTSERV@NETSPACE.ORG) 
+   - Discuss general Windows NT Security, how to, what to, why to, 
+     type questions. The NTSecurity@ISS.net list (subscribe through 
+     MAJORDOMO@ISS.NET) would be a better forum to discuss these 
+     issues.
+
+   Vendor involvement in the list is not discouraged, but I would ask 
+   that you not use this forum as a method of advertising the value of 
+   your products. If a SEB shows a weakness in Windows NT design, and 
+   your product can resolve that weakness, a short note indicating 
+   TECHNICALLY how your product addresses the issue would be consider 
+   appropriate. If you don't address the issue in a technical fashion 
+   your subscription will be revoked.
+
+   Now after reading all of this you'll probably wonder why I'm being 
+   so restrictive. For one, I want to keep the volume low, as low as 
+   possible.  I want to keep the content as pertinent as I possibly 
+   can so that the list becomes a useful tool for everyone using 
+   Windows NT. If the list can remain on topic, people will post SEBs 
+   here first, and we will all have an opportunity to address the 
+   issues in a way best suited to our environments.
+
+   I would also make a couple of recommendations to you prior to you 
+   posting a security exploit/bug.
+
+   1. Don't post SEBs unless you have been able to reproduce it. If 
+   the subscriber base grows as I expect it will, posting such 
+   messages may cause many people to waste valuable time trying to 
+   reproduce something which is not there.
+
+   2. When posting a SEB, make sure you include enough relevant 
+   information about your configuration to make it possible to 
+   reproduce your scenario.  Versions of the relevant software, 
+   service pack levels of your system, platform, and any configuration 
+   information which might affect the issue. By doing this you will 
+   prevent a lot of messages asking you the basic questions and make 
+   resolution or workaround that much quicker.
+
+   3. When posting a resolution or workaround, if you have received a 
+   Microsoft Knowledgebase Article number (a Q#####), please post it 
+   with your message so everyone can read it if they want.
+
+   4. Remember your Non-Disclosure Agreements. Issues pertaining to 
+   products covered under NDA should not be discussed here, use the 
+   appropriate Microsoft Newsgroup for these issues. Typically, once a 
+   product has been released to public beta testing your NDA changes 
+   to one limiting you from discussing performance characteristics of 
+   the product.  Please check with your Microsoft representative or 
+   Beta Administration if you are at all unsure of your NDA status 
+   prior to posting.
+
+   This list operates on a confirmation basis. Your subscription, and 
+   every message you post to this list will generate a confirmation 
+   message from LISTSERV@RC.ON.CA. This is there for your protection 
+   to ensure that subscription requests really are from the actual 
+   individual email address. It is also there to let you think about 
+   your message prior to it being posted. This is not a configurable 
+   option.
+
+   I hope that the list proves useful to you and your organization. 
+   With the REview option turned off, I hope that it will attract 
+   individuals in organizations who have the ability to address the 
+   issues which get raised on this list. I know from personal 
+   experience that having to pay Microsoft US$195 in order to report a 
+   bug (despite the fact you get a refund 3 or 4 days later) can often 
+   mean the difference between reporting a bug and not. This list 
+   should provide an alternative to that process, and at the same 
+   time, should allow the rest of the Windows NT community the 
+   opportunity both to take up the issue with their own Microsoft 
+   representatives, and protect themselves from the possible exploits 
+   which a SEB might expose them to.
+
+   The objective is to get SEB resolution done faster, better, and 
+   with less risk to the Windows NT customer than currently exists.
+
+   To subscribe to this Listserv, send a message to Listserv@rc.on.ca 
+   with
+
+   SUBSCRIBE NTBUGTRAQ Your Name 
+   SUBSCRIBE NTBUGTRAQ Russ Cooper (for example)
+
+   Cheers, 
+   Russ 
+   R.C. Consulting, Inc. - NT/Internet Security
+
+====================================================================== 
+*** NT Security Mailing List 
+======================================================================
+
+   This is an unmoderated mailing list discussing Windows NT security 
+   as well as the Windows 95 and Windows For Work Group security 
+   issues.
+
+   The issues discussed will be everything at the host and application 
+   level security as well as at the network level.
+
+   This mailing list is for security discussions so please keep 
+   personal emails offline.
+
+   This list is NOT for: 
+   - flamewars of any type 
+   - discussions about NT vs. UNIX 
+   - general administration issues 
+   - bashing Microsoft or other vendors
+
+   We expect all list participants to behave in a civil and 
+   professional manner.  If you feel the need to engage in flamewars, 
+   please go find the USENET newsgroup of your choice.  If you must 
+   disagree impolitely with another list participant, take it to 
+   personal e-mail.
+
+   The list owner can be reached at ntsecurity-owner@iss.net if there 
+   is any problems that need to be addressed.
+
+   I have been known to moderate the list when our mail queue has 
+   grown too large, or there have been auto-responder messages, going 
+   across the list.
+
+   If you would like to send mail to the list, send it to:
+
+   ntsecurity@iss.net.
+
+   Please do not send it to majordomo, majordomo-owner, or 
+   ntsecurity-owner.
+
+   To unsubscribe, send email to:
+
+   majordomo@iss.net w/ the body of
+
+   unsubscribe ntsecurity <your email>
+
+   <your email> is optional. Majordomo will extract your email from 
+   the headers if you do not include it. If majordomo comes back with 
+   errors like you are not on list ntsecurity, try not including your 
+   email.
+
+   There is a digest version of the list. It is 
+   ntsecurity-digest@iss.net.  To unsubscribe from this list, and 
+   subscribe to the digest version send email to majordomo@iss.net 
+   with the BODY of:
+
+   unsubscribe ntsecurity <your email> 
+   subscribe ntsecurity-digest <your email>
+
+   Again <your email> is optional.
+
+======================================================================== 
+=M-o-d-e-r-a-t-o-r====================================================== 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 
+======================================================================== 
+  To subscribe or unsubscribe, just 
+ use the subscribe boxes on the menubars. If you decide you 
+  just want to use the forum and not get these mailings, I promise my 
+       feelings won't get hurt if you unsubscribe from this list. 
+======================================================================== 
+                Happy Hacker Digest March 15-16, 1997 
+=E-d-i-t-o-r============================================================ 
+  Peter Beckman  .  beckman@purplecow.com  .  http://www.purplecow.com/

