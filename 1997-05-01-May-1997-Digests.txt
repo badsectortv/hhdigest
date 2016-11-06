@@ -1,0 +1,675 @@
+May 1997 Digests
+
+================================================================= 
+     Happy System Administrator Digest: 5-1-1997 
+=================================================================
+
+     This is a moderated list for the discussion of installing 
+                and maintaing a Linux system. 
+              The moderator is Jon McClintock 
+ 
+
+                 Happy Administration! 
+=================================================================
+
+Contents: 
+=========
+
+1. Welcome to the Happy Systems Administration Digest 
+2. minilinux install?? 
+3. Accessing a UUCP server 
+4. Monkey Linux 
+5. Downloading Linux 
+6. MKLinux Info 
+7. Re: MKLinux Info 
+8. Some Guestions 
+9. linux on laptop
+
+=================================================================
+
+1. Welcome to the Happy Systems Administration Digest 
+From: Jon <jammer@ecst.csuchico.edu>
+
+Welcome to Linux.
+
+This digest is a spin-off of the Happy Hacker Digest. Its topic is Linux. 
+That's it. Linux. Running linux, installing linux, working with linux, 
+whatever, it goes here.
+
+This digest is NOT about hacking. While it may cover methods of securing a 
+linux system, we will not discuss how to hack from/to a linux machine.
+
+Currently, this digest will be sent out weekly, to all the recipients of the 
+Happy Hacking Digest. In the future, we will move the HSAD to another list.
+
+Happy Administration, 
+-Jon 
+ 
+
+=================================================================
+
+2. minilinux install?? 
+From: "Kurt Pfister" <kpfister@ao.net>
+
+I have installed minilinux (another version of linux which does not 
+require 
+a partition) on my win95 box.  Install went fine, however whenever I 
+try to 
+start linux the startup program tells me that there is not enough free 
+memory between 90000h and 9ffffh and that there may be zombie programs 
+running (zombie programs??).  It also tells me that I should check to 
+see 
+what drivers may be occupying this space. 
+        When I check my system configuration I cannot see any drivers 
+which may be 
+using this space.  I then tried to reserve 90000h to 9ffffh but was 
+told 
+that I had entered at least one invalid value.  I don't know enough 
+about 
+hex to tell which value is invald.  Anyone have any ideas?  BTW this 
+same 
+thing happened when I tried to run monkeylinux. 
+        Thanx 
+                kpfister@ao.net
+
+[Jon: This may be something in your ROM configuration. (Some systems 
+      shadow ROM routines in RAM. ]
+
+=================================================================
+
+3. Accessing a UUCP server 
+From: *Anonymous*
+
+I need ur help on some stuph. I have an e-mail account with an 
+*offlie* 
+UUCP service. It runs LINUX and when I connect to it, it just 
+transfrers my 
+mail to my comouter and recceived the ones that I have to send I use 
+Waffle 
+and pegasus mail on my end. Now, how can I access the computer? Since 
+there 
+is no questions of Telnetting in?
+
+[Jon: What would you want to access that for? There isn't much you 
+      could do. If you want a shell account, try asking the ISP. ] 
+ 
+
+=================================================================
+
+4. Monkey Linux 
+From: Marius Mayerhoefer <ace_fth@hotmail.com>
+
+Carolyn, 
+        having read ALL (!) your articles I've finally decided to get 
+        LINUX.....YO!! Now, you have provided much general info on 
+Linux 
+installing and stuff, but you haven't written anthing         about how to use 
+it when you HAVE installed it !!! BTW what         about Monkey Linux ?? 
+        I had planned to get Red Hat Linux but now I'm not so sure... 
+        it seems Monkey got all stuff I need for hacking....until now 
+        I have used several wardialers(lazy hacker-wannabe, you'll 
+say, but without UNIX, what else could I have done ?? Getting 
+        a shell account from my ISP is impossible...here in Austria 
+        there aren't too many providers...)....So should I get Red Hat 
+        or will Minkey suffice for hacking ?? I got 3,5 GB so HD-space 
+        is not a problem.....
+
+                                         THANX in advance, 
+                                                       ACE
+
+[Jon: I've never heard of Monkey Linux, but all you really need is 
+      a version of linux that will support networking with SLIP or 
+      PPP. ]
+
+=================================================================
+
+5. Downloading Linux 
+From: Andip Unknown <andi_panda@hotmail.com>
+
+I just wondered if u knew where i could get a hold of Linux, and not just 
+different applications and utilities. I would like to download/buy a copy of 
+the 
+whole operating system. I tried to dowload something called Doslinux which was 
+supposed to be working from dos/doswindow without deleting my win95 setup, i 
+think. This didn't work, when i tried to decompress it it just used up all the 
+space on my harddrive.
+
+Thanx in advance
+
+André
+
+[Jon: How much space do you have on your hard drive? Linux is gonna 
+      take upwards of 10 MB of space. Any distribution of Linux will 
+      run concurrently with Win95, as long as it supports/includes 
+      LILO. ] 
+ 
+
+=================================================================
+
+6. MKLinux Info 
+From: Autarkis Aetherjammer
+
+> From: mulder@jumbo.ntplx.net (Evil Ninja Mulder) 
+> 
+> alright....as sensitive as i am to the evils of reliance, BELIEVE me: 
+> i spent over an HOUR trying to find this one simple little tidbit of 
+> information. ..
+
+Fire away..
+
+> the problem is this: i am interested in running MKlinux, the apple 
+> port to Linux, on my computer, because i want to set up a small web 
+> server. 
+> 
+> ..but i found out the hard way i have no idea hwat linux really is. 
+> after traipsing around, i practically had a breakdown when no one 
+> revelas this fact:
+
+Hmmmm...  did you find the alt.os.linux FAQ?  Or have all the copies 
+vanished again?
+
+Linux is a Unix clone for PCs, Macs, and a couple other systems.
+
+> can i keep my old os? i dont get this. how can i siwtch from one os or 
+> the other? this questions is SO elementary every site just overlooks 
+> it.
+
+Yes, you can keep your old operating system.  I believe there is a way to 
+partition the Mac disk so that MacOS resides on one portion and LinuxMK 
+on the other.  Anyone running Lmk know this to be true?
+
+Autarkis Aetherjammer
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+doctor who  -  founder:  RWCRD (Ravers Who Can't Really Dance)    2 -><- 3 
+            "and I hate to ask, but/are friends electric?"  -InSoc 
+http://www.lm.com/~bryce <- advertising e-mail proofreading charge: $2300 US 
+ 
+
+=================================================================
+
+7. Re: MKLinux Info 
+From: Tristan Doherty <ristar@abacom.com>
+
+>can i keep my old os? i dont get this. how can i siwtch from one os or 
+>the other? this questions is SO elementary every site just overlooks 
+>it.
+
+Well, I'm not sure about MKLinux, since I don't have a powermac to play 
+with :( but I do run MacBSD on an old 68k IIcx that I've got lying around. 
+I assume that the procedure is about the same.
+
+You will be able to keep MacOS on your computer but it won't be running at 
+the same time. You will have to make a second and third partition (or third 
+and fourth if you already have two) on your hard drive that you will store 
+Linux on. One is for all the files, and the other is for SWAP (like a disk 
+cache). After you have installed all the files with installers (available 
+from www.mklinux.apple.org I *think*), you will then run a little program 
+called a booter. What this does is effectively quit MacOS and start running 
+Linux. To go back to MacOS, you will have to restart (the command I use is 
+halt) and then your mac will boot back into macOS.
+
+I *highly* recommend trying this, because for hacking, UNIX just rules, no 
+competition!
+
+If you simply want to run a simple web server from your mac, try MacHTTP 
+1.0. It's probably available from www.shareware.com and is definitely 
+available from www.starnine.com. It's free, and it works like a charm for 
+low traffic sites that don't need lots of scripts (although it can quite 
+easily be done).
+
+I hope that answers your question, and whatever you do, if you think you 
+can handle it, DO install linux, it will prove invaluable in your hacking 
+career.
+
+-Ristar
+
+------------------------------------------------------ 
+Tristan Doherty                      ristar@abacom.com 
+ 
+
+=================================================================
+
+8. Some Guestions 
+From: *Anonymous*
+
+Hi there,
+
+1.  Is it possible to telnet into someones computer and shutting in 
+down. Or remote it. The computer is a normal PC, not a server or 
+workstation.
+
+[ Jon: There is software that allows you to dial in and turn a PC off, 
+       but under normal circumstances, you can not telnet into a PC 
+       and shut it down. ]
+
+2. Wanna get a shell account for free, goto www.cyberspace.org.
+
+3. Which is much recomended to use. Slakware, Redhat or Monkey for 
+Linux.
+
+[ Jon: Its all a matter of preference. I hear RedHat is really easy to 
+       install. I've only used Slackware. Each has its pro's and con's. ]
+
+ps. If you feel that this shoulb be anonymous please post it up in 
+the     digest.
+
+[ Jon: I will make any posts anonymous, just ask. ]
+
+=================================================================
+
+9. linux on laptop 
+From: Redington <nemesis@minot.com>
+
+I am in the process of installing Linux on my 133 pentium notebook, I 
+have almost everything complete except two things.  I can't get it to 
+mount my PC Card modem, I have everything else setup like minicom etc, 
+does anyone know by any chance what the location is for the PC card 
+modem dev? The other thing is that when I startx the only way I can 
+get 
+it to work is if I have it in really low resolution because it doesn't 
+list any monitors or graphic cards that are like mine.  I have emailed 
+RedHat (oh yeah its Redhat 4.1, installing from CD) and they say they 
+will get back to me on it eventually, but I thought in the mean time 
+someone out there on HH might be able to help me out.
+
+Thanks,
+
+neMEsis
+
+[ Jon: See the PCMCIA howto for more info, it may answer your question 
+       http://sunsite.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html 
+       As far as resolution goes, try to find out which chipset your 
+       accellerator uses. Otherwise, your out of luck. ]
+
+================================================================= 
+=================================================================
+
+Jon McClintock <jammer@ecst.csuchico.edu> 
+  
+  
+ 
+
+====================================================================== 
+              Happy Hacker Digest May 5, 1997 
+======================================================================
+
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator is Matt Hinze
+
+             Send posts to: matt@cs.utexas.edu (Matt Hinze) 
+           [if you can, include a "HH" in the subject header]
+
+Digest archives are held under the "New" button at the Infowar site
+
+             Please don't send us anything you wouldn't 
+            email to your friendly neighborhood narc, OK?
+
+To subscribe or unsubscribe, just 
+use the subscribe boxes on the menubars. If you decide you 
+just want to use the forum and not get these mailings, we promise our 
+feelings won't get hurt if you unsubscribe from this list. 
+  
+          The Happy Hacker Digest Webpage, located at 
+ http://www.cs.utexas.edu/users/matt/hh.html, contains recently 
+          discussed web sites and past URLs Of The Day 
+            (usually updated the day after the Digest is released).
+
+         H a p p y  H a c k i n g !
+
+============================================================================= 
+URL Of The Day: http://www.geocities.com/NapaValley/1613/main.html 
+=============================================================================
+
+Table Of Contents 
+=================
+
+* Note From Matt 
+* IBM 8235 
+* Viewing Full Header Info From MSIE Internet Mail 
+* Port Number Reference 
+* .rhosts? 
+* Windows NT 4.0 SAM Hotfix 
+* Programming Languages 
+* Macintosh Port Scanner 
+* Fighting Spam
+
+================= 
+============================================================================= 
+*** Note From Matt 
+=============================================================================
+
+Hello Happy Hackers,
+
+Well, for me, class is over, *finally*, for the summer. I do have a 
+couple of final exams left to ace, but studying for them won't be more 
+time consuming than class. This summer will be exciting. I will attend 
+a few hacker conferences and I landed a job at an ISP doing what I 
+(all of us, for that matter) enjoy most: messing around on computers. 
+Return of the BOFH! Of course, who cares about my personal life, 
+right? :) Anyway, The latest Guide To (mostly) Harmless Hacking was 
+just released, and if you haven't read it yet, you can snag a copy 
+from http://www.cs.utexas.edu/users/matt/hh.html.
+
+Matt
+
+============================================================================= 
+*** IBM 8235 
+=============================================================================
+
+[anonymous]
+
+Keep it anonymous please.
+
+I'd like to know what a IBM 8235 system is, how it works and what is 
+it used for. If some1 has a list of commands it would be great. I know 
+'help' is one of them :)))
+
+Thanx.
+
+[Matt: Try a web search.]
+
+============================================================================= 
+*** Viewing Full Header Info In MSIE Internet Mail 
+=============================================================================
+
+From: "Scott" <dianner@ibm.net>
+
+I just read your last post on Headers and stuff. It seemed you didnt 
+know how to check out headers on MS Internet Explorer. Well...I found 
+out how..Highlight the message you are going to read, and then right 
+click it. Go down to Properties. Once you are in there, click on the 
+Details tab, and WAHLA!! There you have, all the info you need...
+
+Quadron X
+
+============================================================================= 
+*** Port Number Reference 
+=============================================================================
+
+From: [anonymous]
+
+Please make this anonymous.
+
+I found a list of port numbers and what they are at: 
+http://www.con.wesleyan.edu/~triemer/network/docservs.html 
+It's pretty comprehensive, goes up to 1024.
+
+-- 
+Amy Bridger (ami@full-moon.com) 
+I am in AUSTRALIA.
+
+WARNING! I cannot be held responsible for the above because my cats 
+have apparently learned to type.
+
+[Matt: Each system can use different ports for some daemons. If you 
+want to see what ports a certain machine uses on a *nix box, check 
+/etc/services .]
+
+============================================================================= 
+*** .rhosts? 
+=============================================================================
+
+From: Luminus <Wiltz@concentric.net>
+
+I have read that on some systems there is a vulnerability in which if 
+the "/." directory is writeable and owned by FTP a user from Anonymous 
+Ftp can upload a .rhosts file to this directory and use rlogin from 
+his system to access the target system.
+
+My question is..what does an .rhosts file look like? Is there some 
+special format that it is in similiar to that of the passwd file?
+
+[Matt: Try a "man rlogin".]
+
+============================================================================= 
+*** Windows NT 4.0 SAM Hotfix 
+=============================================================================
+
+From: Aleph One <aleph1@DFW.NET> 
+ 
+
+-------------------------------------------------------------------------- 
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation, version 4.0 
+ - Microsoft Windows NT Server, version 4.0 
+--------------------------------------------------------------------------
+
+SUMMARY 
+=======
+
+The Windows NT Server 4.0 System Key hotfix provides the capability to 
+use strong encryption techniques to increase protection of account 
+password information stored in the registry by the Security Account 
+Manager (SAM). Windows NT Server stores user account information, 
+including a derivative of the user account password, in a secure 
+portion of the Registry protected by access control and an obfuscation 
+function. The account information in the Registry is only accessible 
+to members of the Administrators group. Windows NT Server, like other 
+operating systems, allows privileged users who are administrators 
+access to all resources in the system. For installations that want 
+enhanced security, strong encryption of account password derivative 
+information provides an additional level of security to prevent 
+Administrators from intentionally or unintentionally accessing 
+password derivatives using Registry programming interfaces.
+
+STATUS 
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server 
+version 4.0.
+
+A supported fix is now available, but has not been fully 
+regression-tested and should be applied only to systems experiencing 
+this specific problem. Unless you are severely impacted by this 
+specific problem, Microsoft recommends that you wait for the next 
+Service Pack that contains this fix. Contact Microsoft Technical 
+Support for more information.
+
+You can obtain this Application Note from the following sources:
+
+ - Microsoft's World Wide Web Site on the Internet at:
+
+      http://www.microsoft.com/ntserversupport/
+
+ - The Internet (Microsoft anonymous ftp server) at:
+
+      ftp://ftp.microsoft.com/bussys/winnt-public/fixes/usa/nt4 
+      /hotfixes-postSP2/sec-fix/
+
+ - Microsoft Technical Support
+
+MORE INFORMATION 
+================
+
+The strong encryption capability with the Windows NT 4.0 System Key 
+hotfix is an optional feature. Administrators may choose to implement 
+strong encryption by defining a System Key for Windows NT. Strong 
+encryption protects private account information by encrypting the 
+password data using a 128-bit cryptographically random key, known as a 
+password encryption key. Only the private password information is 
+strongly encrypted in the database, not the entire account database. 
+Every system using the strong encryption option will have a unique 
+password encryption key. The password encryption key is itself 
+encrypted with a System Key. Strong password encryption may be used on 
+both Windows NT Server and Workstation where account information is 
+stored. Using strong encryption of account passwords adds additional 
+protection for the contents of the SAM portion of the registry and 
+subsequent backup copies of the registry information in the 
+%systemroot%\repair directory created using the RDISK command and on 
+system backup tapes.
+
+The System Key is defined using the command SYSKEY.EXE. Only members 
+of the Administrators group can run the SYSKEY.EXE command. The 
+utility is used to initialize or change the System Key. The System Key 
+is the "master key" used to protect the password encryption key and 
+therefore protection of the System Key is a critical system security 
+operation.
+
+There are three options for managing the System Key designed to meet 
+the needs of different Windows NT environments. The System Key options 
+are the following:
+
+- Use a machine generated random key as the System Key and store the 
+key on the local system using a complex obfuscation algorithm. This 
+option provides strong encryption of password information in the 
+registry and allows for unattended system restart.
+
+- Use a machine generated random key and store the key on a floppy 
+disk. The floppy disk with the System Key is required for the system 
+to start and must be inserted when prompted after Windows NT begins 
+the startup sequence, but before the system is available for users to 
+logon. The System Key is not stored anywhere on the local system.
+
+- Use a password chosen by the Administrator to derive the System Key. 
+Windows NT will prompt for the System Key password when the system is 
+in the initial startup sequence, but before the system is available 
+for users to logon. The System Key password is not stored anywhere on 
+the system. An MD5 digest of the password is used as the master key to 
+protect the password encryption key.
+
+The System Key options using either a password or requiring a floppy 
+disk introduce a new prompt during the initialization of the Windows 
+NT operating system. They offer the strongest protection option 
+available because master key material is not stored on the system and 
+control of the key can be restricted to a few individuals. On the 
+other hand, knowledge of the System Key password, or possession of the 
+System Key diskette is required to boot the system. (If the System Key 
+is saved to a floppy disk, backup copies of the System Key diskette 
+are recommended.) Unattended system restart may require that System 
+Key material be available to the system without Administrator 
+response. Storing the System Key on the local system using a complex 
+obfuscation algorithm makes the key available only to core operating 
+system security components. In the future, it will be possible to 
+configure the System Key to obtain the key material from tamper 
+proof hardware components for maximum security.
+
+WARNING: If the System Key password is forgotten or the System Key 
+floppy disk lost it may not be possible to start the system. Protect 
+and store the System Key information safely with backup copies in the 
+event of emergency. The only way to recover the system if the System 
+Key is lost is using a repair disk to restore the registry to a state 
+prior to enabling strong encryption. See the Repair Issues section 
+below.
+
+Strong encryption may be configured independently on the Primary and 
+each Backup Domain Controllers (DCs). Each domain controller will have 
+a unique password encryption key and a unique System Key. For example, 
+the Primary DC may be configured to use a machine generated System Key 
+stored on a diskette, and Backup DCs may each use a different machine 
+generated System Key stored on the local system. A machine generated 
+System Key stored locally on a Primary domain controller is not 
+replicated.
+
+Before enabling strong encryption for Primary domain controllers, you 
+may want to ensure a complete updated Backup domain controller is 
+available to use as a backup system until changes to the Primary 
+domain are complete and verified. Before enabling strong encryption on 
+any system, Microsoft recommends making a fresh copy of the Emergency 
+Repair Disk, including the security information in the registry, using 
+the command, RDISK /S.
+
+The SYSKEY command is used to select the System Key option and 
+generate the initial key value. The key value may be either a machine 
+generated key or a password derived key. The SYSKEY command first 
+displays a dialog showing whether strong encryption is enabled or 
+disabled. After the strong encryption capability is enabled, it cannot 
+be disabled. To enable strong authentication of the account database, 
+select the option "Encryption Enabled", and click OK. A confirm dialog 
+appears reminding the administrator to make an updated emergency 
+repair disk. A new dialog appears presenting options for the Account 
+Database Key. Use the options available on Account Database Key dialog 
+to select the System Key.
+
+After selecting the System Key option, Windows NT must be restarted 
+for the System Key option to take effect. When the system restarts, 
+the administrator may be prompted to enter the System Key, depending 
+on the key option chosen. Windows NT detects the first use of the 
+System Key and will generate a new random password encryption key. The 
+password encryption key is protected with the System Key, and then all 
+account password information is strongly encrypted.
+
+The SYSKEY command needs to be run on each system where strong 
+encryption of the account password information is required. SYSKEY 
+supports a "-l" command option to generate the master key and store 
+the key locally on the system. This option enables strong password 
+encryption in the registry and allows the command to run without an 
+interactive dialog. The SYSKEY command can be used at a later time to 
+change the System Key options from one method to another, or to change 
+the System Key to a new key. Changing the System Key requires 
+knowledge of, or possession of, the current System Key. If the 
+password derived System Key option is used, SYSKEY does not enforce 
+a minimum password length, however long passwords (greater than 12 
+characters) are recommended. The maximum System Key password length is 
+128 characters.
+
+REPAIR ISSUES 
+-------------
+
+Introduction of strong encryption of account password information 
+changes the SYSTEM and SAM portions of the registry in ways that 
+effect the repair options available for recovery of a Windows NT 
+system. Always use the RDISK command with the /S option to create a 
+new Emergency Repair Disk including a backup copy of the SYSTEM and 
+SAM portion of registry in the \repair directory.
+
+For complete recovery options, the following Emergency Repair Disks 
+should be available:
+
+- Prior to installing the System Key hotfix, create a fresh repair 
+disk. This disk is a "pre-hotfix" repair disk that contains a copy of 
+the system configuration and account information prior to installation 
+of the hotfix. The "pre-hotfix" repair disk may be used to recover the 
+registry and system files using the Windows NT distribution CDROM.
+
+- After installation of the System Key hotfix, but before enabling 
+strong encryption using the SYSKEY command, create a repair disk. This 
+repair disk is "hotfix - Before Encryption". This repair disk can be 
+used to repair the Registry to the state before strong encryption is 
+enabled, for example it may be used to recover a system if the Windows 
+NT System Key is lost or forgotten.
+
+- After running SYSKEY to enable strong encryption, create a repair 
+disk. This repair disk is "hotfix - After Encryption". This repair 
+disk, and subsequent updates to this repair disk, can be used recover 
+the registry with strong encryption intact using the System Key in 
+effect at the time the repair disk was last updated.
+
+The System Key hotfix support for strong encryption affects the 
+following system components:
+
+- SYSTEM and SAM registry hives
+
+- Three system security component files: Winlogon.exe, Samsrv.dll, 
+Samlib.dll
+
+In general, the repair process needs to use matching versions of these 
+components. Whatever repair option you choose, the repair process will 
+coordinate repair of the registry hives with the matching system 
+files.
+
+The following table lists the recovery options available.
+
+Desired System        Repair disk to        Repaired System 
+Configuration         apply 
+after Repair
+
+--------------------------------------------------------------------------- 
+ 
+
+Windows NT 4.0,   Use the "Pre-hotfix" Registry matches system before 
+prior to hotfix   repair disk          hotfix installed; the three 
+installation                           system security component files 
+           need to be repaired from the 
+                                       Windows NT 4.0 compact disc to 
+                                       match the pre-hotfix registry 
+                                       format.
+
+Windows NT 4.0 with  Use the "hotfix -  Registry matches the system 
+hotfix installed,    Before Encryption" before strong encryption. but 
+strong               repair disk        System Key is not in effect; 
+encryption is not                       strong encryption not enabled. 
+enabled                                 System security files do not 
+                                        need to be repaired from the 
+                                        Windows NT 4.0 compact disc
