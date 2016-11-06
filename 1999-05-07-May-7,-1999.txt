@@ -1,0 +1,366 @@
+May 7, 1999 
+_______________________________________________________________________
+
+Visit the Happy Hacker site at http://www.happyhacker.org 
+http://www.lpwa.com web proxy experiment 
+http://www.anonymizer.com Hide your identity from the Web sites you surf 
+_______________________________________________________________________
+
+Table of Contents
+
+* Another win in battle for Internet Freedom of speech 
+* Hacker wargame news: Antionline offers prizes! 
+* Black Helicopter sightings 
+* Instructions for sending viruses and Trojans
+
+_______________________________________________________________________
+
+        *** Another Win in Battle for Internet Freedom of Speech 
+_______________________________________________________________________
+
+Our thanks to Antionline.com for providing an email list server to 
+manage our mailings.  It isn't easy running an email list when some of 
+the world's most notorious hackers are trying to shut us down.  Hurray 
+for Antionline founder John Vranesevich and Antionline and Happy Hacker 
+Wargame staffer Corey Gallatin for figuring our how to keep an email 
+list server running under conditions of brutal, incessant attack.  They 
+are real heroes in our battle against those computer criminals (AKA 
+"hacktivists") who believe they have the right to censor the Internet. 
+I (Carolyn Meinel) predict that Vranesevich and Gallatin will go down in 
+history alongside with other heroes of the battle for freedom of speech, 
+such as Thomas Paine, Voltaire, and Benjamin Franklin. 
+_______________________________________________________________________
+
+        *** Antionline offers Prizes in Hacker Wargame 
+_______________________________________________________________________
+
+Check out http://www.antionline.com for how to win prizes in the Happy 
+Hacker Wargame.  You might even win a prize just for registering in the 
+game! 
+_______________________________________________________________________
+
+        *** Black Helicopter Sightings 
+_______________________________________________________________________
+
+You may have noticed Antionline, John Vranesevich, Happy Hacker and 
+Yours Truly (Carolyn Meinel) are often the subject of nasty stories 
+originating from a number of folks who are prominent in news stories 
+about hackers.  Just in case you haven't seen about how terrible we are, 
+you can learn about our supposed crimes and noxious behaviors at:
+
+http://www.attrition.org 
+http://www.hackernews.com 
+http://www.dis.org
+
+People who have put in a great deal of effort trying to convince people 
+that I am one or more of the following: a fraud, an FBI secret 
+informant, someone who sells my body for crack cocaine (whooee!) 
+include:
+
+* Pete Shipley (according to a recent Upside magazine story he is chief 
+of security for top six accounting firm Peat Marwick 
+http://www.kpmg.com/; his hacker gang web site is http://www.dis.org) 
+and who reportedly was questioned by the FBI in conjunction with the 
+Hacking for Girliez attack on the New York Times Web site; and who runs 
+the dc-stuff hacker mail list (email majordomo@dis.org with message 
+"subscribe dc-stuff")
+
+* Brian Martin, who Shipley says assists him with security projects, and 
+who has been raided as a suspect in the Hacking for Girliez attack on 
+the New York Times web site (Martin's hacker gang web site is 
+http://www.attrition.org and his computer security company is 
+http://www.repsec.org) (formerly with Trident Data Systems 
+http://www.tds.com/, which serves Federal Government military and 
+intelligence agencies)
+
+* Chris Valor (Se7en), for a long time a close confidant of Pete 
+Shipley, until recently a member of Shipley's Dis.org gang, and a
+
+sometimes roommate of Brian Martin, and who was recently exposed as a 
+fraud who pretended to be a hacker when he knew nothing about hacking, 
+and who tricked the media into reporting that he was running a hacking 
+campaign against kiddie porn 
+(http://www.wired.com/news/news/culture/story/17789.html)
+
+* Michael Schiffman, recently laid off from his job with Cambridge 
+Technology Partners (http://www.ctp.com/), and co-editor with Brian 
+Martin of Phrack magazine (http://www.phrack.org), and who at one time 
+negotiated with C-Net TV to defend the actions of the Hacking for 
+Girliez gang on one of their TV programs
+
+* Modify (real name unknown, but he tells people he is Craig Whitmore), 
+who represented himself as Se7en's partner in their media hoax about 
+being a team of anti-kiddie porn hacker vigilantes, and who is a member 
+of Martin's gang
+
+These four hacker media icons have something truly surprising in common. 
+John Vranesevich reports (http://www.antionline.com/cgi- 
+bin/News?type=antionline&date=04-19-1999&story=hhead.news):
+
+In 1996, the self proclaimed "subversives 
+expert" Fred Villella began forming a team of 
+hackers through "New Dimensions 
+International", a company which he is currently 
+the president of. As of this year, Villella's team 
+of hackers have included: Pete Shipley, Michael 
+Schiffman, "Christian Valor", "Craig Whitmore", 
+and Brian Martin. These individuals have 
+arguably been the biggest names in the hacker 
+culture, the true "head of the hacker hierarchy".
+
+You can see these people listed as working for Villella at his web site, 
+http://www.newdimensions.net.  Note Crag Whitmore is listed as 
+"Modify."
+
+For more on Villella's past involvement in penetration of suspected 
+subversive organizations, see: 
+http://www.publiceye.org/huntred/Hunt_For_Red_Menace-10.htm#P994_229399
+
+To see what the Federal Emergency Management Agency (FEMA) was accused of 
+doing while Villella was the number three man there, see: 
+http://www.sonic.net/sentinel/gvcon6.html 
+http://www.livelinks.com/sumeria/politics/fema.html
+
+Or read the book "The Secret Government: The Constitution in Crisis" 
+by Bill D. Moyers, Henry Steele Commager.  According to this book, the 
+leaders of FEMA, in conjunction with Col. Oliver North, attempted a 
+military coup against the United States.  The publisher's press release 
+on this book reads,
+
+        Based on an acclaimed PBS documentary, The Secret Government 
+        analyzes the threats to constitutional government posed by an 
+        illegitimate network of spies, profiteers, mercenaries, ex- 
+        generals and "superpatriots" who have tried, at various times, to 
+        take foreign policy into their own hands.
+
+I talked with a reporter from the New York Times about the peculiar 
+coincidence that several Hacking for Girliez suspects/advocates working 
+for Fred Villella.  He told me that Villella, even though he was the 
+number three man at FEMA, was never more than a bureaucratic 
+functionary, that contrary to news reports such as those cited above, 
+Villella never took an active role in FEMA's alleged plans to track down 
+hundreds of thousands of Central Americans and throw them into 
+concentration camps in the event of a US invasion of Nicaragua.  He told 
+me it is ridiculous to suppose that Villella and his contractors may be 
+preparing plans to throw hackers into concentration camps in the event 
+of a cyberwar emergency.
+
+HOWEVER, if you want to be safe, I recommend that you unsubscribe from 
+any hacker mail lists -- ESPECIALLY Shipley's dc-stuff, Schiffman's 
+Phrack, and our Happy Hacker list, and resubscribe under an email 
+address that is hard to trace.  Examples of free, hard to trace email 
+accounts may be found at juno.com and hotmail.com.  When surfing hacker 
+web sites, you may keep your identity secret by using anonymizer.com or 
+try the experimental service lpwa.com.
+
+True, you still can be tracked down if the black helicopter set is 
+willing and able to set up sniffers or carry out search warrants to get
+
+access logs from your anonymous mail and web surfing servers.  But at 
+least this way you will force the US Federal government to have to work 
+hard to violate your constitutional rights.
+
+To unsubscribe from the Happy Hacker list, email   You can resubscribe with your 
+anonymous email account from our home page, http://www.happyhacker.org 
+or by emailing with message "subscribe hh".
+
+SO WHAT'S WITH THIS BLACK HELICOPTER STUFF?  If you do a Web search on 
+"black helicopter" you will turn up many references to FEMA and 
+"America's Secret Government."  Actually I see lots of black 
+helicopters over my home, but that's just because I live near the US 
+headquarters for the "Special Forces" and its black helicopters.  Read 
+all about black helicopters at 
+http://www.geocities.com/Athens/Atlantis/8820/gvcon6.html 
+http://weber.ucsd.edu/~dmckiern/blakchop.htm
+
+Or read about black helicopters in the book: 
+Black Helicopters Over America: Strikeforce for the New World Order 
+by Jim Keith, 160 pages, $12.95 Order info at 
+http://www.parascope.com/parastore/storeitems/blackhelicopters.htm
+
+Actually, I'm tempted to offer expensive vacation stays at my Sandia 
+Mountains home so people can view black helicopters from their choice of 
+my deck, sun room or swimming pool.  Sorry, no sky views available from 
+the sauna.  As long as we are going to play with conspiracy theories, we 
+may as well do it for fun and profit.  Oh, yes, we have horses and 100 
+square miles of wilderness for the truly adventuresome.  Now do you want 
+to be my friend?:^)
+
+I don't believe that Hacking for Girliez hit the New York Times Web site 
+as a federally-funded (through Villella) retaliation for the Times 
+providing downloads of the Starr report.  It probably was a coincidence 
+that this happened on what was shaping up to be the busiest day in that 
+Web site's history, what with all those people rushing to download the 
+just-released Starr report on the Monica Lewinsky's salacious details of 
+her interactions with President Clinton.  There is no way the Clinton 
+administration would make the same mistake that President Nixon made 
+when he hired people to burglarize the Watergate headquarters of the 
+Democratic Party.
+
+Seriously, while the Villella thing may turn out to be just a series of 
+amazing coincidences, I do believe it is worthwhile to research any 
+signs of a government plan to round up us hackers into concentration 
+camps.  During WWII all people of Japanese ancestry were stripped of 
+their property and thrown into concentration camps.  News stories claim 
+that Villella's section of FEMA put in a lot of effort into tracking 
+down US residents who where born in Central America, and had planned to 
+throw them into concentration camps if Reagan had authorized an invasion 
+of Nicaragua.
+
+Thanks to several volunteers, we now have an in-depth dossier on 
+Villella and his associates.  I would publicly credit the people who 
+have been helping with this research, except that Villella is 
+threatening to bring lawsuits against anyone who goes public with 
+stories about him.  Anyone who does want public credit, let me know and 
+you, too can hear from Mr. Black Helicopter himself!
+
+Also, there is a possibility that some of Villella's contractors may 
+commit computer crime against people who ire them, as suggested by news 
+stories about Hacking for Girliez suspects who are Villella contractors. 
+So don't identify yourself as having any involvement in our research 
+project unless you are prepared for massive computer crime attempts.
+
+If you would like to help us dig deeper into the Villella story, here 
+are some areas where we need help.
+
+* Have you attended any of Villella's seminars?  Who has spoken at them? 
+What would you rate the technical quality of these seminars? Is he still 
+using pretend hacker Se7en?
+
+* We need true identities of members of Pete Shipley's gang or any other
+
+gangs that are associated with Villella.
+
+* If you live in the Bay Area, Denver, Nashville, Northern Virginia, 
+Boston region, Tampa/St.Petersburg, or San Diego areas, you might be 
+able to find out amazing things about who the Federal Government is 
+using in its research efforts on hackers.  Contact me and I'll tell you 
+how to research people's criminal and civil court records.
+
+I will be using this information in my upcoming book "Hacker Wars." 
+Find something significant and you win an autographed copy.  If you are 
+willing to face attacks by Federal contractors and computer criminals, I 
+will credit you by name or handle in the book.
+
+Again, let me emphasize that I am not making any accusations against 
+Villella.  Other people, such as reporters at the New York Times, 
+Washington Post, and the Nation, and a Congressional Committee headed by 
+Al Gore, are the ones who made these accusations.  Villella briefly 
+posted something at his web site saying that he has been exonerated of 
+all accusations made by Al Gore's former Congressional Committee against 
+him; that he was the victim of a vast, politically motivated conspiracy.
+
+_______________________________________________________________________
+
+        *** Instructions for Sending Viruses and Trojans to Me 
+_______________________________________________________________________
+
+Lots of folks try to trick me into running Trojans or viruses by sending 
+me files that they claim are something else.  Actually I welcome these 
+and try to run them so I can study them.  If you REALLY want me to run 
+your Trojan or virus, however, please keep in mind that I variously use 
+many Unix varieties, Win95, Win98 and WinNT flavors of operating 
+systems.  Since each virus or Trojan is usually only good for one 
+operating system, you will make it easier for me to run your program if 
+you tell me what operating system it was written for. -- CM
+
+From: Donald J Carter <donaldjcarter@juno.com>
+
+I wanted to comment about the Happy99.exe, the newsletter I got said it 
+was sent via a stranger, well I was sent the Happy99.exe from a friend 
+and I ran it thinking it wasn't a virus, and I have Norton Anti-Virus 
+5.0 and it didn't detect a virus when ran, but when I updated Norton it 
+found the Trojan.  I just wanted to say it is sometimes sen to you from 
+people you know too.
+
+Sincerely, 
+Donny
+
+From: "Spud" <spud@wf.net>
+
+Hey. I just read this section in your last newsletter about Happy99.exe 
+and how people keep sending them to you hoping you will run them.  Well, 
+I doubt that they even know that they are sending it to you.  Do you 
+know how the Happy99.exe trojan works? So they probably don't even know 
+they are sending it to you. I got infected with it a long time ago, and 
+I unknowingly sent it to several of my collegues before I realized what 
+was going on.  I don't know if those guys that are sending you that 
+stupid worm know how to get rid of it, but here is how I got rid of it: 
+The file is usually named HAPPY99.EXE in the email or article 
+attachment.  When being executed, the program also opens a window 
+entitled "Happy New Year 1999 !!" showing a firework display to disguise 
+its other actions. The program copies itself as SKA.EXE and extracts a 
+DLL that it carries as SKA.DLL into WINDOWS\SYSTEM directory. It also 
+modifies WSOCK32.DLL in WINDOWS\SYSTEM directory and copies the original 
+WSOCK32.DLL into WSOCK32.SKA.  WSOCK32.DLL handles internet-connectivity 
+in Windows 95 and 98. The modification to WSOCK32.DLL allows the worm 
+routine to be triggered when a connect or send activity is detected. 
+When such online activity occurs, the modified code loads the worm's 
+SKA.DLL. This SKA.DLL creates a new email or a new article with 
+UUENCODED HAPPY99.EXE inserted into the email or article. It then sends 
+this email or posts this article.  If WSOCK32.DLL is in use when the 
+worm tries to modify it (i.e. a user is online), the worm adds a 
+registry entry: 
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce=SKA
+
+..EXE
+
+The registry entry loads the worm the next time Windows start. 
+Removing the worm: 
+1.delete WINDOWS\SYSTEM\SKA.EXE 
+2.delete WINDOWS\SYSTEM\SKA.DLL 
+3.replace WINDOWS\SYSTEM\WSOCK32.DLL with WINDOWS\SYSTEM\WSOCK32.SKA 
+4.delete the downloaded file, usually named HAPPY99.EXE 
+NOTE: You will have to disconnect from the Internet before you can 
+delete 
+some of the files, or you may even have to drop to DOS.
+
+                Thanks, 
+                   Spud <spud@wf.net>
+
+_______________________________________________________________________
+
+        ***  Call for Writers 
+_______________________________________________________________________
+
+From: Lee Codrington-Marshall <techwiz@freeuk.com>
+
+Hi Carolyn, I'm sure you get loads of enthusiastic writers wanting to do 
+stuff for your newsletter, but due to the exact nature you are probably 
+having to turn them down a lot.  Please could you send them to 
+http://www.techwiz.freeuk.com and tell them to look at the InfoZone 
+section, if they want to write for my online magazine then I'd be more 
+than happy to give them a place to speak.
+
+The InfoZone is entirely run and edited by volunteers, of all ages and 
+experiences, on anything to do with computers and the internet.
+
+Thanks, 
+Lee.
+
+_______________________________________________________________________
+
+To subscribe to the Happy Hacker Digest, email mailman@antionline.com 
+with the message "subscribe happyhacker" Or subscribe from our Web site, 
+http://www.happyhacker.org.  Unsubscribe by sending message 
+"unsubscribe happyhacker" to mailman@antionline.com.
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have 
+committed. We mean it.
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com>
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan 
+D. Zerulik and William Lewis <>; Hacker Wargame 
+Director, Vincent Larsen <vincent@sage-inc.com>; Wargame Sysadmin, 
+Satori <Satori@rt66.com>; Webmaster, Diode <webmaster@happyhacker.org>; 
+Clown Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!

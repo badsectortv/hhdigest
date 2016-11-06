@@ -1,0 +1,168 @@
+May 27, 1999 
+_______________________________________________________________________
+
+Visit the Happy Hacker site at http://www.happyhacker.org 
+New Wargame winners! http://meyer.happyhacker.org 
+Crackers vs. Feds -- whos winning?  http://antionline.com 
+_______________________________________________________________________
+
+Table of Contents
+
+Happy Hacker Unix editor, Meinel to speak at Summercon 
+Gallatin, Meinel at Cyberspace Free Speech Seminar 
+gH Gang battles FBI over massive raids, arrests 
+Windows editor needed
+
+_______________________________________________________________________
+
+ *** Happy Hacker Unix editor, Meinel to speak at Summercon 
+_______________________________________________________________________
+
+Summercon 99 will be held in Atlanta, Georgia (USA) for the weekend of 
+June 4-6th, at the Omni Hotel (which is also headquarters for Cable 
+Network News). Happy Hacker Clown Princess, Carolyn Meinel, will speak and 
+also teach hacking with a live Internet connection (if the hotel doesnt 
+renege on its promise of an analog phone line or blow up my modem by 
+giving me a digital line instead).  Our anonymous Unix editor will also be 
+there to lend a helping hand to newbies and sophisticated hackers alike.
+
+Admission to this con is free!  Learn more about it at 
+http://www.summercon.org.  Hope to see you there!
+
+_______________________________________________________________________
+
+ *** Gallatin, Meinel at Cyberspace Free Speech Workshop 
+_______________________________________________________________________
+
+If you someday get to play an online, multiplayer game called You Dont 
+Know Jack about Free Speech, you can blame Corey Gallatin!
+
+It all started at a May 22 through 25 seminar "Freedom Beyond Borders: The 
+Future of the First Amendment in Cyberspace." I was held at the Media 
+Center of the American Press Institute in Reston, Virginia.
+
+Gallatin, who runs the routers at our Hacker Wargame, is alleged to have 
+incited a bunch of new media folks and science fiction author Melissa 
+Scott (Trouble and her Friends) into threatening to produce a computer 
+game that would have at least as much blood and mayhem as Quake or Doom if 
+the bad guys get the better of the free speech folks.  It happens in real 
+life, folks -- people sneaking down alleys distributing banned newspapers, 
+getting run down by tanks, being tortured to death for speaking out 
+against tyranny.  And it could happen here.
+
+If you are a computer game programmer -- please contact us.  If you join 
+the game team you get to hang out with some really cool people and maybe 
+help make the world a freer, better place.
+
+Read about our adventures at the Media Center at 
+http://www.mediacenter.org.
+
+_______________________________________________________________________
+
+ *** gH Gang battles FBI over massive raids, arrests 
+_______________________________________________________________________
+
+Right now a massive series of raids and arrests are underway, apparently 
+centering around the gH gang.  What apparently tripped it off was the May 
+2 hack of the White House web site by someone claiming to be Zyklon of gH. 
+We mention this story in an Inside Happy Hacker ezine because the hacked 
+White House site included an insult against me.  Of course I cried myself 
+to sleep over this -- NOT.
+
+On May 8 the FBI arrested Eric Burns, 19, on three counts of computer 
+intrusion.  Burns is believed by some to be Zyklon.  While he has not been 
+charged (so far) with the White House attack, he has been indicted for 
+crimes against the web site of the U.S. Information Agency as well as 
+LaserNet of Fairfax, Va., and Issue Dynamics Inc. of Washington, DC.
+
+According to news stories first reported at http://Antionline.com, this 
+week the FBI has raided and arrested several dozen hackers, many, if not 
+all of them somehow associated with Zyklon and gH.  These apparently 
+include two who are well known to people using the Happy Hacker IRC server 
+at otter.happyhacker.org: MostHated and Coolio.
+
+May 26 the gH gang struck back with attacks that included shutting down 
+the FBI web site with denial of service attacks.  In response the FBI 
+faxed requests to many Internet service providers and universities 
+requesting that they save copies of all email, logs etc. belonging to a 
+long list of suspects.  These suspects include cult hero, well-known for 
+his Temple of Hate at http://www.attrition.org.  Cult hero has previously 
+been raided in connection with the Hacking for Girliez hacks of the New 
+York Times and Rt66 Internet.  Damage associated with the Hacking for 
+Girliez rampage has been estimated at over $3 million.
+
+Duh.  DUH!  People, if any of you are even THINKING of protesting ANYTHING 
+by committing computer crime, first say DUH as loud as you can three 
+times.  Hacking high profile web sites only puts pressure on the FBI to 
+arrest somebody.  Anybody.  Lots and lots of somebodies.  If the pressure 
+from, lets say residents of the White House gets strong enough, lots of 
+innocent people could get arrested.  If you want the world to hear what 
+you have to say, you are free today to set up your own web site and anyone 
+on the Internet will be free to see what you have to say.  Please dont 
+give the FBI and White House excuses to round up large numbers of 
+suspected hackers.  It really is possible that thousands of us someday 
+could get rounded up into concentration camps as threats to society -- 
+regardless of how innocent we are.  Ask the hundreds of thousands of US 
+citizens who, in World War II, were rounded up into concentration camps 
+and their homes, land and businesses stolen by the government.  Their only 
+crime was to be of Japanese ancestry.
+
+Wont ever happen again, you say?  In 1983 the US Federal Emergency 
+Management Agency (FEMA) drew up plans to throw several hundred thousand 
+legal immigrants from Central America into concentration camps if we 
+invaded Nicaragua.  News stories claimed this was done in the part of FEMA 
+run by Fred Villella.  Mr. Villella, known as Uncle Fred by the hackers 
+who work for him, recently has given contracts to many of the most 
+prominent US hackers, for example Mudge of The L0pht 
+(http://www.l0pht.com), Pete Shipley who runs the dc-stuff hackers mail 
+list and Dis Org Crew (http://www.dis.org) and Michael Schiffman (AKA 
+Route), who runs Phrack (http://phrack.org).  News stories say Villella 
+now conducts training for the FBI and Federal intelligence agencies.
+
+This does NOT mean that Villella and his contractors are up to anything. 
+Villella may well have decided that after being raked over the coals over 
+and over again in Congressional hearings that he never wants to be 
+involved in FEMA-style activities again.  I just bring up his case to 
+remind you of how easily the Federal government can infiltrate hacker 
+groups.
+
+Duh.  Now will you people who hack web sites please think about setting a 
+good example of what freedom of speech means by putting up your own web 
+sites and not hacking those of other people or organizations?  All you are 
+doing is giving the Feds the pretext to lock up lots of people.  In the 
+current hysteria, many innocent people are in danger of going to jail.
+
+_______________________________________________________________________
+
+ *** Windows Editor Needed 
+_______________________________________________________________________
+
+It is with great sadness that we must say good bye to our Windows editor, 
+Keydet89.  He has resigned, citing his opposition to Antionline providing 
+the mail services for our ezines.
+
+If you know Windows, if you are totally opposed to computer crime but 
+understand that hacking is what makes cyberspace free and fun, if you 
+arent afraid of controversy, if you want to make a difference in the lives 
+of the people who will learn from your Windows Digests, please contact 
+Carolyn Meinel, , 505-281-9675.
+
+_______________________________________________________________________ 
+with 
+the message "subscribe happyhacker."  Unsubscribe with message unsubscribe 
+happyhacker.
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have 
+committed.  We mean it.
+
+For Unix questions, contact unixeditor@techbroker.com.
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, <editor@techbroker.com>; Hacker Wargame 
+Director, Vincent Larsen <vincent@sage-inc.com>; 
+Clown Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries.
