@@ -1,0 +1,589 @@
+June 29, 1998
+
+===================================================================== 
+URL of the day: thomas.loc.gov  - US legislative info online. 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless 
+Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS
+
+* A bug in serv-u ??? 
+* Surfing the web anonymously? 
+* Correction... 
+* Changing the prompt in dos 
+* Why does everyone want free shell accounts? 
+* HappyHacker Channel 
+* Skippy vulnerability scanner 
+* What's up with WIPO???!!!
+
+================================================================== 
+ *** A bug in serv-u ??? 
+================================================================== 
+From: Mister Hackronym <hackronym@geocities.com>
+
+Hi, I have been running a temp. ftp server with Serv-U on my pc 
+(I have linux on my other partition so dont worry) hehe 
+and i found a certain command which can be pretty harmfull...
+
+First, (in DOS) I log in with localhost as "anonymous" user --> Very 
+restricted rights...then, (in DOS), I type
+
+ls- lga c:\autoexec.bat
+
+and... miraculously... it over-writes my autoexec with the list of 
+files in the dir. I was in.
+
+And I clealy made sure that the rights to even know about the 
+c:\autoexec.bat files is unreachable...the only access I was "SUPPOSED" to 
+have were 
+to upload to the upload dir.
+
+When i try "cd c:\" <-- access denied 
+When i try "get c:\autoexec.bat" <-- access denied 
+When i try to get whatevah... <-- access denied... well, you get the picture. 
+When i do ls -lga c:\autoexec.bat <-- it over-writes da file...
+
+That is pretty messed up to me.
+
+I would just like to know if you can test that command and tell me if 
+it's a bug or if it's my imagination. Because you're cool and you are surely 
+able to help me... Thanx ! 
+Bye !!!
+
+=================================================================== 
+ *** Surfing the web anonymously? 
+=================================================================== 
+From: Keydet89<keydet89@yahoo.com>
+
+Questions about surfing the web anonymously or hiding 
+your IP, all while using Win95, have popped up time 
+and again.  If you want to surf the web, or try those 
+phf or other web server attacks, without allowing 
+the server to be able to determine your IP address, 
+just use a proxy server.  There are many of them out 
+there on the web that you can connect to...in Netscape, 
+just choose Edit -> Preferences -> Advanced -> Proxies, 
+and choose the Manual Configuration option.  Press the 
+view button and enter the IP address of the proxy 
+server that you have found for the service that you 
+would like proxied.  This will only work for those 
+services that the server is configured to provide.
+
+I have tried this and verified that it works using 
+NetXray.
+
+Don't ask me about how to set up the proxy connection 
+in IE... 
+ 
+
+Keydet89 
+================================================================== 
+ *** Correction 
+================================================================== 
+From: Nik <fang.gang@btinternet.com>
+
+Please note in your recent happyhacker digest the url for Rhino9 was 
+given incorrectly.
+
+It is in fact: http://www.rhino9.org
+
+not ".com".
+
+U can also get the Modern Hackers Desk Reference from this site and I 
+urge everyone to read it.  It includes a section on wingates so people 
+could maybe resist the urge to go on IRC and keep repeating questions 
+like "how do I find a wingate"etc.
+
+regards
+
+fanggang 
+================================================================== 
+ *** Changing the prompt in dos 
+================================================================== 
+From: CRZYboy720@aol.com
+
+I read the article in Happy Hacker 6-22, and I was wondering if there 
+is any way to keep the custom prompt. Whenever I change it it looks cool, but 
+when I close dos and re-open it the prompt is back to normal. 
+Please help, Ph|_U
+
+[Roger:  Look in your autoexec.bat.  There should be a 'prompt $p$g' 
+line.  Change that to suit your needs... that should keep it.  If you 
+are using DOS under Win95, look at the properties for the shortcut. 
+There is a way to invoke a batch file upon entering a DOS shell.   I bet 
+that'll work...]
+
+================================================================== 
+ *** Why does everyone want free shell accounts? 
+================================================================== 
+From: Carter Cavanaugh <sly_wyvern@sekurity.org>
+
+I have been reading the Happy Hacker stuff since day 1. I am really too 
+advanced for the GTMHHs so I mainly read the Happy Hacker digests. I've 
+noticed that a lot of the digests consist of people asking where they 
+can get free shell accounts. Let me tell you guys something, you rarely get 
+anything good for free. Most of the time the drawback of getting a free 
+shell account is that you can't use most of the outgoing Internet 
+services (telnet, FTP, IRC, etc.), i.e., cyberspace.org won't let you use _any_ 
+but WWW with lynx. Webfreaks.com doesn't let you telnet out. The list goes 
+on. 
+I haven't found a single free shell account provider that gives you a 
+full featured shell account. Innocent.net is unreachable for me, the server 
+is always down. The only way to get a free shell account is to do one of 
+these:
+
+1) Get *access* to a big system with a shitload of users (i.e., a 
+college), and create yourself an inconspicous account. 
+  
+2) Install Unix on your box. I'm running a MS-DOS/Win95 box w/ 
+Slackware. Hell, I don't even have it one a separate partion. I run it from a 
+subdirectory!
+
+3) Become a "security auditor", e-mail no-so-bright sysadmin's say "I 
+would gladly test your system for security holes, in exchange for a shell 
+account"
+
+I've gotten many shell accounts with the third method, and I have a wide 
+range of them on my own box. I have no comment on method number one. I 
+take no responsibility for what you do, and I don't suggest you do method 
+number one. If you need help installing, and securing Slackware just e-mail 
+me at sly_wyvern@sekurity.org
+
+-Sly Wyvern 
+================================================================== 
+ *** HappyHacker Channel 
+================================================================== 
+From: Carter Cavanaugh <sly_wyvern@sekurity.org>
+
+I've set up a #happyhacker IRC channel for all the Happy Hackers to use. 
+It's on DALNet. Don't ask for Ops. I only give them to myself, and other 
+Happy Hacker major people (I'll give 'em to Carolyn, Joshua, Dale, etc.) 
+Please, if it says the channel is full don't keep trying to enter. The 
+limit is 100 users which is rather lenient. The people who run DALNet 
+wouldn't be pleased if they had thousands of hackers trying to join one 
+channel!
+
+-Sly Wyvern 
+================================================================== 
+ *** Skippy vulnerability scanner 
+================================================================== 
+From: keydet89 <keydet89@yahoo.com>
+
+[WARNING!!!: Runnning this program against sites whose sysdadmins have 
+not given permission for you to use it against them will get most 
+users kicked off their ISPs, and maybe get some people fired from 
+their jobs.]
+
+[NOTE: You need to have JRE (Java Runtime Environment) installed to use this -Josh]
+
+I wrote a Java application that performs scanning of 
+a host for information regarding vulnerabilities.  The 
+application is called "skippy" and can be obtained 
+from:
+
+http://members.bellatlantic.net/~carvdawg/ispy2.html
+
+Make sure you read the readme file, which is also 
+included below.  If you have problems downloading the 
+"skippy.jar" file, try right-clicking on the link, and 
+choosing "Save link as..." .  Make sure that the file 
+has the ".jar" extension when you save it.
+
+For anyone who is interested in trying it out, I would 
+be glad to hear from you, especially if you have 
+recommendations for improvements...
+
+Here's the readme file....
+
+skippy
+
+This is the readme file for skippy v1.2 
+by Keydet89@yahoo.com
+
+DISCLAIMER 
+skippy is distributed as a JAR file only.  skippy is distributed 
+for educational purposes only, and is not intended to be used for 
+harmful or malicious purposes.  Any use of this application for 
+harmful or malicious purposes may result in actions taken by 
+responsible parties, for which the author (me) is not responsible.
+
+COPYRIGHT 
+skippy is provided as is, at no charge.  Feel free to distribute 
+skippy as you like...all I ask is that you simply give credit 
+where credit is due.  If you are interested how something was done, 
+or if there is something that you would like to see implemented, or 
+if you would like to see part or all of the source code, email 
+me.  I generally don't appreciate folks who decompile my code, and 
+then ask me why I did something.  Hey, folks, let the source be 
+with you...all you have to do is ask.
+
+skippy is a Java application that is designed to act as a 
+sanity check for sysadmins.  skippy will gather information about 
+a designated host.
+
+As of v1.2, skippy's capabilities are:
+
+  - Whois query to the server chosen by the user.
+
+  - Forward and reverse DNS lookups on the designated host.
+
+  - TCP connect() portscan of designated ports.  The listing of ports 
+    was taken from "Firewalls and Internet Security", by Cheswick and 
+    Bellovin.  Not all ports are scanned, because not all ports are 
+    dangerous.  As of version 1.2, the ports are still hard-coded.
+
+  - Banner sweep of ports 21, 25, and 110, plus getting the name of the 
+    web server.
+
+  - Connect to an active SMTP port and issue vrfy, expn, wiz, and 
+    debug commands, and then displaying the responses from the server.
+
+  - Connect to an active finger port and issue queries for the more 
+    popular names that appear in the /etc/passwd file.  Responses are 
+    displayed.
+
+  - Connect to the web server and issue various known exploits.  The 
+    result codes are shown, but they do not guarantee that the exploit 
+    has actually worked.  The displayed result codes are simply those 
+    result codes returned by the server.  NOTE:  The exploits were 
+    taken from the Unofficial Web Hack FAQ, by Simple Nomad, and are 
+    shown below:
+
+        /cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd 
+        /cgi-bin/php.cgi?/etc/passwd 
+        /~root 
+        /cgi-bin/test-cgi?* HTTP/1.0 
+        /cgi-bin/nph-test-cgi?* HTTP/1.0 
+        /samples/search/queryhit.html 
+        /scripts/samples/search/webhits.exe 
+        /_vti_pvt/service.pwd 
+        /secret/files/default.asp.
+
+  - Hidden treat:  if the platform that the application is running on 
+    is Win95 or NT, and the target host has an active NetBIOS session 
+    port, the application will run the nbtstat command on the local 
+    host and display the NetBIOS Name Table. (NOTE:  The author has 
+    thought about adding "net view" as a follow-up command.  Adding 
+    this command will be based on user response...)
+
+  - The user can save the session to a text file...see the options on 
+    the menubar.
+
+  - Check out About -> Sysinfo...
+
+OBTAINING JAVA 
+skippy is distributed as a Java JAR file.  All you need to do to run 
+skippy is to have either the JDK1.1 or JRE1.1 available.  skippy was 
+written using the Sun JDK1.1.5, and has been tested on WinNT4.0 
+Workstation using Sun JDK1.1.5 and 1.1.6.  As no special classes were 
+used, skippy should work with other JVMs.  Please let me know if you 
+have any problems.
+
+You can obtain the Sun JDK or JRE from:
+
+http://www.javasoft.com
+
+Once you have the JDK/JRE installed and running, you need to add the 
+JAR file to your  classpath.  You can do this in Windows by going to a 
+command prompt and typing:
+
+c:\>SET CLASSPATH=%CLASSPATH%;skippy.jar
+
+To make this much simpler, the following maybe copied into a batch 
+file for execution prior to running skippy.  Simply copy the following 
+text into a batch file that is kept in the same directory as skippy, 
+and run the batch file from the command prompt prior to initiating 
+skippy:
+
+SET CLASSPATH=%CLASSPATH%;skippy.jar
+
+If skippy is not in the current working directory, make sure that 
+you add the complete path to the classpath statement.
+
+NOTE:  The JAR file is a Java archive format.  However, you do not 
+need to extract the files from the JAR to run the application.  All 
+of the necessary instructions are listed above.
+
+PROBLEM REPORTING 
+If you have any problems, contact me at:  Keydet89@yahoo.com 
+State as much information as you can, such as what was the problem, 
+what characterized the problem, what platform you are using, etc. 
+The easiest way to get the platform information is to run "Sysinfo", 
+save the displayed information to a file, and include that information 
+in the email.
+
+REQUESTS 
+Requests for complete or partial source code may be directed to 
+the author.  The same goes for requests for additional features. 
+================================================================= 
+ *** More fun Hex editing Explorer.exe 
+================================================================= 
+From: Nick <blast@webfreaks.net>
+
+The first thing you should do is make a new directory.  Something short, 
+like "Hacking" then after that, find the file called "explorer.exe" in 
+your windows directory.  Press Copy and copy it into your new directory.
+
+The next part isnt needed BUT it is VERY usefull in case you screw up.
+
+Right click on the windows desktop so the little menu pops up. Click 
+"New" and under that menu click "Shortcut"  That will bring up a new window. 
+ There should be something that says "Command line:" and a blank line.  In 
+the blank line, type in
+
+  c:\windows\command.com 
+NOTE: If you main windows directory is something else be sure to put 
+that in place of "windows" instead.
+
+Click NEXT.  It should now say, "Select a name for the shortcut:" type 
+in 
+there "Exit", Click Finish.
+
+There should now be a new icon, but were not yet done, right click on 
+the new icon so that it brings up the menu.  Click "Properties" a window 
+should now come up again up at the top click on the "Program" tab.  Now you will 
+see at the bottom there should be a button that says "Advanced"  Click it. 
+Now CHECK the button that says "MS-DOS mode", UNCHECK the button that 
+says "Warn before entering MS-DOS mode", and circle in the "Use current 
+MS-DOS configuration".  Click OK and OK again. Now your done.
+
+Explanation:  Command.com is basically the program that brings up a MS 
+DOS window. By doing the thing with the advanced button, it tells it to 
+shut down the computer into dos then run the program.  The windows "START, 
+SHUTDOWN, 
+RESTART IN MS DOS MODE" Does the EXACT same thing.
+
+(Evil Genious Tip:  This is a REALLY mean thing to do in department 
+stores that sell computers, just make one and change the icon and name to 
+something catchy, and its REALLY REALLY mean if you put it in the startup 
+directory.)
+
+Now your ready to mess with windows, the top part was just so you can 
+exit windows if something goes wrong, because sometimes when you mess up 
+windows WON'T let you use the START button.
+
+Exit your computer into DOS Mode, NOTE that you can't just bring up a 
+window, you NEED to completely exit windows.
+
+Make sure your in the WINDOWS directory...
+
+(Newbie Tip:  You can tell if the prompt says something like 
+C:\Windows> 
+if it does not say that, type in   "cd c:\windows" )
+
+Now type at the prompt:
+
+edit /70 explorer.exe
+
+note that the /70 is needed.  When I first saw this I though that the 
+/70 did was something special that made the program show more or less or 
+something like that but really all it does is sets the coloumns to 70 across so 
+that you can see it all in on page over, other wise its REALLY hard to read.
+
+Half of this file or program appears to be Blah Blah garbage, but half 
+of it is actually understandable.
+
+The editable part starts at line 2558  (You can tell what line your on 
+at the bottom of the window, it says LINE:####
+
+Now this is where it all gets hard and a bit confusing.  If you also 
+look at the bottom of the screen there is a line that says "VALUE:#" that 
+will be inportant to you.  You see, all those little characters that are 
+there, like the heart, smily face, square, EVERYTHING, has a numerical 
+value, and that thing that says "VALUE:#" interprets what that thing is.  So 
+find a heart, put your 
+cursor over it. 
+The value should say "3" thats because a hearts numerical value is 3.
+
+One of the most important things is the space, notice after everything 
+in the text area, there is a space in between them, BUT THEY ARE NOT 
+SPACES!!!  If you type in a space anywhere in the document for a second, and 
+put the 
+cursor over it you will see that the value of the space is 32, the value of 
+those 
+spaces are 0. Remember that.
+
+Ok now skip down to line 2558 and you will see that one that line it 
+should say "Ajust Date/Time". We're going to change that; what you 
+should do is put your cursor over the "D" in Date and change the "D" to and 
+"F"  Make 
+sure you dont delete anything else except for the d.  ALSO you can not put more 
+letters than there already are or it will screw up windows and you will be 
+forced 
+to use that "EXIT" file we made earlier and restore the old "Explorer.exe". 
+Do the same 
+thing to "Time" only change the T to a L. It should now say "Ajust Fate/Lime"; 
+save that file and reboot windows.  Now when everthigns up, place your mouse 
+over the 
+clock in the taskbar, and right click on it.  It would normally at the top say 
+"Ajust Date/Time" 
+BUT now it SHOULD say "Ajust Fate/Lime"  Isnt that cool?
+
+You can change this "Ajust Date/Time" to anything you want AS LONG as 
+you keep the "spaces" in there, and the whole thing "Ajust Date/Time" 
+stays in there.
+
+Now we'll go into some more advanced stuff.
+
+You will notice that up untill line 2561 on the word "P&roperties" they 
+are all things that come up on the pop up when you right click on the 
+menu bar. So if you changed "P&roperties" to "F&loperties" it would then 
+when you 
+right clicked on the task bar says "Floperties" instead of Properties  NOTE 
+that the & just means to under line the next letter, so if you check out the 
+right click 
+"properties" word in windows it will says "Properties" but the FIRST R 
+is underlined thats because in Exporer.exe there is a & in front of the R. 
+For this 
+section from line 2558 - 2561 you MUST keep the number of letters the same 
+as they 
+already are.
+
+You are now done with that section.  You can edit anything in there, so 
+basically can edit the pop up menu words.  Have fun with that part.
+
+Now comes another fun Part.  Go to line 2585. 
+You should now see on that line something that says "&Programs" Change 
+that to "&Shograms" save and reboot windows.  Click on the start 
+button, and NOW instead of seeing "Programs" you should see "Shograms" 
+COOL!!  You can 
+edit the START menu all the way down to line 2593, you should see where it says 
+"DOCUMENTS" and SETTINGS and CONTROL Pannel and FIND and RUN and HELP and 
+SHUTDOWN and 
+anything else thats there.  You can edit this but also here you MUST keep 
+the words 
+the SAME legnth.
+
+Now comes the last part that I will show you.  Skip to line 2693. 
+You should now see a word that says "START"  Change that word to 
+anything else like you've been doing, that is 5 letters long, like take my 
+Name, BLAST change it to BLAST and save and reboot windows.  Now instead of 
+saying 
+that stupid old "START" under the button it now says "BLAST"! It must be 5 
+letters 
+long though, but for this one we can actually change that, like say you want 
+something 4 letters long, or maybe 10.
+
+Remember how I told you that all those symbols had numerical values? 
+Well right before the place that said "START" there should be a little 
+symbol.  If you look it stands for "5" thats what tells windows how many letters 
+to use so it doesnt look messed up.  If you want something thats four 
+letters long 
+all you have to do is find the symbol that has the value of 4 (Its a 
+diamond) and copy 
+and paste it in the place of where the club looking thing should be (delete the 
+club) and then type your 4 letter word.
+
+The same thing for any number of letters, just find the coresponding 
+symbol to the amout of letters you want to use. BE CAREFUL, there is a 
+place you can screw up on really bad.  YOU NEED TO REMEMBER THAT EACH LETTER 
+HAS A 
+SPACE BETWEEN WITH THAT THING THAT ISNT REALLY A SPACE,  what you need to do 
+is for 
+longer words, COPY that space symbol and paste it for how ever many you 
+need.  (NOTE 
+the space symbol that isnt really a space DOES NOT count as a letter).
+
+There are a lot more things you can do but these are just the basics... 
+HAVE FUN!
+
+-=Blast 
+blast@webfreaks.net
+
+Thanks to these people that got me interested in this:
+
+Raymond Mowder- Guy who started this all 
+Mike Miller- Computer Geek consulted to Ray
+
+================================================================= 
+ ***  What's up with WIPO???!!! 
+================================================================= 
+From: Dale Holmes <editor@techbroker.com>
+
+We have received dozens of messages from HH readers warning us of 
+the dangers of WIPO. The EFF, and l0pht sites have displayed warnings 
+too. Trade magazines have run articles on the subject, and everyone 
+seems to be in a panic state over it.
+
+What is it anyway?!? Well, WIPO is an acronym for the World 
+Intellectual Property Organization, and what people are concerned 
+about is the World Intellectual Property Organization © Treaty 
+and Performances and Phonograms Treaty.
+
+Currently there is some legislation working its way through the US 
+Senate and House of Representatives that is slated to update the current 
+United States laws on © Protection for intellectual property.
+
+People are saying that this legislation will make hacking illegal. 
+They say that it will render lists like Bugtraq or CERT Advisories 
+illegal too. It would make software like l0phtcrack illegal. And the penalties 
+will be stiff too - up to 10 years in prison and $1,000,000 fine for 
+multiple offenses.
+
+But the language of the legislation does not seem to say that 
+directly... The legislation currently being reviewed is specific that it 
+protects 
+only *copyright* information. This is certainly bad news for WaReZ kids who 
+write programs to defeat copyright protection schemes or distribute info 
+on breaking those schemes, but it shouldn't worry the people at Bugtraq.
+
+The legislation uses words like "access" and "technological protection 
+measures", which sound like things that Hackers know about. But the use 
+of those terms has a context - that of copyright protection - in the 
+legislation. It is not the same as access in the sense of login access, 
+or file system rights access, or network connection access...
+
+I have read the full text of the legislation in the House and the 
+Senate, as well as that of USC Title 17 (the law that would be ammended by the 
+proposed legislation) and I can't find any language that is specifically 
+targeting the stuff that lists like Bugtraq cover, or any language 
+that is sufficiently vague that it might seem to include the stuff that 
+Bugtraq covers.
+
+Keep in mind that I am NOT a lawyer!
+
+What you should do is decide for yourself... 
+Go to thomas.loc.gov and read the complete text of:
+
+H.R. 2281 
+S. 1121
+
+Use the GOPHER service at the US Library of Congress to look up and 
+read USC Title 17.
+
+Then go to www.eff.org and see what they say.
+
+Think about it for a while, make your own decision, and then contact 
+your representative in the Federal Government (if you live in the US) and 
+tell that person what you think...
+
+Whatever you do, don't panic. You might think that you need to go into 
+action to stop the bill, or you might not, but chicken little style panic will 
+do little to help your cause. Don't fall victim to FUD (Fear, 
+Uncertainty, and Doubt)! 
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net> or 
+Carter Cavanaugh <sly_wyvern@sekurity.org> 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Want a mentor to teach you how to do *legal* hacking?  Contact mentor 
+coordinator Ron Gloetzner, member, Happy Hacker Board of Directors, at 
+<rgloetz@flash.net>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <">>

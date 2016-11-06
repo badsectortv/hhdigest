@@ -1,0 +1,482 @@
+June 3, 1998
+
+=====================================================================
+URL of the day:  http://www.rhino9.com: a big guide to NT hacking
+See back issues of the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://www.Happyhacker.org.
+GTMHH en espanol: http://underhack.islatortuga.com
+Svenska: http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html
+=====================================================================
+
+TABLE OF CONTENTS
+
+- Changing stuff in Win95
+- A hot new email list to join
+- Free shell accounts
+- The Happy Hacker Book Review
+- Hanging Windows 95 Explorer
+- Conseal Firewall update
+- Correction: Batch file daemons
+- Trojan Horse in icqkiller
+- InfowarCon 98!!
+- Introducing the new Happy Hacker Webmaster
+- Call for volunteers and an old 486
+
+==================================================================
+	*** Changing stuff in Win95
+==================================================================
+From: "Michael Miller" <mikemill@jps.net>
+First thing you must do is backup explorer.exe because you will be editing
+this file.
+
+Second you must exit windows and go to the command prompt.
+
+Third- type "edit /70 explorer.exe" the /70 is VERY important.
+
+To change the start button go to line 2689, find the part of the line 
+that has the club symbol (i can't reproduce it here), after that it should 
+look like this "S t a r t".  This is the start button.  The ascii values 
+are 5 0 115 0 116 0 97 0 114 0 116.
+
+The club is 5.  This represents the length of the start button.  The most
+important thing is the null character between the letters.  This MUST be 
+there or the start button will look all messed up.  So to change it we copied
+the null character and pasted them and used typeover.  We then count the 
+number of chars and change the club to that value.  View it using edit 
+from the command line.  Use regular Edit and the look at is using the /70 
+afterward to view the values.
+
+I'll e-mail you more details latter as we find them.
+
+Thanks
+Raymond Mowder- Guy who started this all
+Mike Miller- Computer Geek consulted to Ray
+===================================================================
+	*** A hot new email list to join
+===================================================================
+From: Carolyn Meinel <">>
+
+Here's a hot new email list to join, run by Roger Prata, a sometimes 
+editor of the Happy Hacker Digest.  It's the Linux Workstation list.  
+
+To sign up, go to http://www.findmail.com/list/linux-workstation/.  
+I recommend it highly!  
+
+Roger also was one of the technical editors of the Happy Hacker
+book. 
+
+-- Carolyn Meinel
+==================================================================
+	*** Free shell accounts
+==================================================================
+From: Digital Convict <DigitalConvict@geocities.com> 
+
+I finally found a great free shell account called innocent.net, 
+amazing place, I tell you. I think the sysadmin is a hacker himself,
+he has a handle called xenakis. I'd also like to say that your guides
+have jump-started me into this new world of technology and i want 
+to express my thanx. 
+==================================================================
+	*** The Happy Hacker Book Review
+==================================================================
+From: "Betty G.O'Hearn" <betty@infowar.com>
+(The following book review first appeared in Network World Magazine, the
+issue for the week of May 25.) 
+
+Network Administrator Alert!
+So You Wanna Be A Hacker?
+By Winn Schwartau
+
+"How do you break into a computer?" 
+"How can I break into and write graffiti on a Web site?"
+"How can I learn to be a hacker?"
+
+Network administrators, security professionals, corporate  
+management, the Department of Defense - to name a few, are 
+actively attempting to defend their Internet connections, their 
+Intranets, their corporate assets and indeed their jobs against 
+an increasingly hostile Cyberspace. The neighborhood is clearly 
+getting worse by the minute. 
+
+And the media hasn't helped. Labeling everyone with access to a 
+keyboard and an attitude as a "hacker," the term has developed 
+incredibly pejorative connotations. "If he's a hacker, he must 
+be bad." "Oh, God! It's a hacker, watch out." "Hackers are 
+criminal by nature." Well, thank you very much John Markoff et 
+al, for rip-roaring headlines that have forever misinformed 
+America.
+
+What is the best hack you've ever seen? (Think now, pause. Stop 
+reading, and really think before proceeding. What is the best 
+hack you've ever seen?)  The answer is from the mega-hit movie, 
+Apollo XIII. Remember the scene at NASA, and a manager spills a 
+box of assorted parts onto a table and says to a group of 
+engineers: "This is all they have up there. Figure out how to 
+save their lives."
+
+First of all, hackers are not bad. Criminals are bad. Criminal 
+hacking is bad. Hacking is not bad. And that is the recurring 
+theme in Carolyn Meinel's thoroughly enjoyable, highly 
+entertaining and educational new book, "The Happy Hacker: A 
+Guide to (Mostly) Harmless Hacking."
+
+The Happy Hacker will answer hundreds of those unanswered 
+questions that network administrators have, like, "exactly how 
+do those %@*&#^ hackers break into my computers?"  Meinel 
+provides dozens of step by step methods on exactly how it's 
+done; from telnet to port surfing to using a shell account. 
+In her folksy conversational manner (she's from New Mexico), she 
+starts off by teaching the reader how terribly insecure a 
+Windows95 box is, and walks us through a series of super-simple 
+way to hack right into your corporate network. Considering that 
+the vast majority of computer crimes and hacks occur from within 
+a company's network, these introductory parts of The Happy 
+Hacker are worth the price of the book alone. These are the 
+weaknesses that Microsoft will never tell you about, wishes 
+would just go away and provide one of the most compelling reason 
+to ignore Win95, forget about Win98 and rush right out and buy a 
+copy of the infinitely more secure NT. 
+
+Now, before you rant and rave about "Hackers writing a book!", 
+Meinel is a computer scientist, a mother of four, and as she 
+puts it "an old lady" who remembers her forties. While she 
+provides a whole slew of hacks that work, especially on those 
+machines "with poor defenses," there are no technical 
+revelations of scurrilous Clinton-level scandal. These are the 
+basics of hacking, and after a read of this highly worthwhile 
+book, I realized that every security and network administrator 
+should have this on their shelf.
+
+Far from encouraging teenage wannabes from hacking away at your 
+front door, the book is chock full of "You Can Get Punched In 
+the Nose, Fired and Busted Warnings" and "You Can Go To Jail 
+Warnings."  Many of the tricks and techniques throughout The 
+Happy Hacker are clearly illegal, immoral and unethical. The 
+point that Meinel makes over and over is that "hacking your own 
+equipment is healthy and good. Hacking a box or network with 
+permission is good. Any other kind of hacking will land you in 
+jail."
+
+The Happy Hacker has something for everyone. It is a moderately 
+technical book, with advice for the Newbie sprinkled throughout, 
+as well as offering Evil Genius Tips for the more advanced 
+readers. 
+
+Her goals are admirable, even though she has been railed by the 
+hacker community and several legitimate publishers refused to 
+print her tome. She advocates the ethical use of technology, 
+legal hacking where the results are beneficial and conducted 
+with permission - and totally decries illegal activities of any kind.
+Her sections on spoofed email will be a God-send to the network 
+administrator trying to train staff in the details of how 
+hackers work their so-called magic. The dangers of open ports 
+and shell-based telnet are driven home and is the clearly 
+written section on How To Map the Internet. 
+
+As Denial of Service attacks become more prevalent, Meinel 
+provides the basics of why and how they work, plus the hard 
+facts on what can and what cannot be done about them. She gives 
+coherent advice on how to protect yourself against spamming, 
+email bombs and other words of wisdom. Her participation in a 
+number of hacker wars has given Meinel an insider's look at the 
+psyche and the psychosis of the Undernet (Underground Internet), 
+lamerz, d00dz, wannabes, 3lit3 haxors and host of the 
+techno-denizens you probably don't want your daughter dating. 
+(Most hackers are of the male of the species.)
+
+While the book needed a good editor, (typos, math errors from 
+time to time, inconsistent formatting; but what the heck: the 
+tiny publisher, American Eagle, also published the controversial 
+Virus Handbooks and similar works) my primary criticism is a 
+compliment. Meinel includes so many URLs for reference, in every 
+chapter, now I have to spend a lot time to organize them. I wish 
+she had put them all into a properly annotated on-line 
+bibliography. 
+
+So, network admin folks, managers and bosses on high: if you've 
+ever wanted to know exactly how systems are broken into, this is 
+the book for you. It's easy going style and value-packed content 
+puts it on my Top 10 list of Essential Security Reading List.
+
+The Happy Hacker, Carolyn Meinel, 1998.
+260pp 
+American Eagle Publications, Inc. 
+ISBN 0-929408-21-7 
+$29.95. 
+
+Available at the on-line bookstore at www.infowar.com
+
+Betty O'Hearn
+Assistant to Mr. Winn Schwartau
+813-360-6256 Voice
+813-363-7277 FAX
+http://www.infowar.com
+http://www.info-sec.com
+
+To get an autographed copy, shipped to you priority (2-day) mail, in the US
+send $34.95 (includes $5 shipping and handling) made out to Happy Hacker to
+P.O. Box 1520, Cedar Crest, NM 87008.
+
+==================================================================
+	*** Hanging Windows 95 Explorer
+==================================================================
+From: "Busy" <busy@idirect.ca> 
+
+A while back I saw a hack to remove the Windows 95 Start button but there
+was no solution as to how to bring it back without rebooting. 
+
+The way to remove the button is the following...
+
+1. Press <CTRL>+<ESC>2. Press <ESC>3. Press <ALT>+<SPACE>4. Press <C>
+Now..... To bring it back.....
+1. Press <CTRL>+<ALT>+<DEL>2. Select "Explorer"
+3. Press <ENTER>4. Press <ESC>when you see the shut down Windows screen.
+5. Wait about 15-20 Seconds
+6. Click on "END TASK" When an error message pops up for "Explorer.exe".
+(Usually the error message is "An error has occurred in the application...")
+
+Happy Hacking
+Aemulus
+==================================================================
+	*** Conseal Firewall update
+==================================================================
+From: "wtf" wtfwft@x-treme.org  
+
+Hello, this is wtfwft from the group X-Treme(www.x-treme.org). 
+This is to reply about the Conseal Firewall and [A]lien's script 
+Dark Eclipse. Right now x-treme.org is going under many changes, 
+and you will most likely not be able to find Conseal there. But do try
+http://www.x-treme.org/csic for a very good Exploit and Information  Archive
+we are still working on. 
+
+Also, [A]lien's script is going through new beta and is going to be 
+called X-Treme script v1.0 for now. Well, hope you all enjoyed the 
+update.
+
+wtfwft
+X-Treme Security Group
+http://www.x-treme.org
+==================================================================
+	*** Correction: Batch file daemons
+==================================================================
+From: Magnus Kristiansen makris@online.no  
+
+Hello.
+
+Dale,
+I am just wondering about the Batch file presented in the latest edition.
+I think I may have spotted a mistake.
+------------------------------------------------------------------------
+Create a batch file called batlog.bat (or whatever).
+That file should contain the following lines:
+
+@echo off
+echo %1 >files.log
+notepad %1
+------------------------------------------------------------------------
+You should probably write?!?
+
+echo %1 &gt>files.log
+
+instead. With your method, a new file called "files.log" is created
+each time the batch file is run, whereas with two &gt>s, the %1 is
+appended to the log file.
+
+If you only use one >, the files..log will of course be useless, as only
+the latest file accessed will be registered.
+
+If this is right please let the members of the list know.
+
+Best regards,
+//Marius A. Kristiansen
+
+[Dale: Quite right - one redirection symbol causes the file to be
+overwritten (if it already exists...), while two redirection symbols
+will allow you to append to the file.]
+
+=================================================================
+	*** Trojan Horse in icqkiller
+=================================================================
+From: corey corey@nextdim.com  
+
+Just thought if you don't already know there was a trojan horse found in
+icqkiller you can get the info on it at www.warforge.com. I just thought
+maybe you should post something on it in the HH digest maybe as a lot of
+people have that program...
+
+[Dale: I have not verified this, but better safe than sorry...]
+=================================================================
+	***  InfowarCon 98!!!
+=================================================================
+From: "Betty G.O'Hearn" betty@infowar.com
+
+InfowarCon 98!!!
+
+Don't forget InfowarCon 98! 
+September 8-11, 1998.
+
+Produced by Winn Schwartau and MIS Training Institute.
+Early Bird Registration - 100.00 off!! Ends July 1, 1998.
+
+The COMPLETE CONFERENCE BROCHURE and REGISTRATION is available at:
+http://www.misti.com/infowar98/
+
+Here are 21 strategic reasons you won't want to miss this blockbuster
+event...You will:
+
+1. Save $100 off the regular registration fee of $895 ($695 government) if
+you register by July 1,1998.
+
+2. Hear what the National Infrastructure Protection Center is doing to
+coordinate critical infrastructure defense efforts and learn how you can
+put its methods to work for you.
+
+3. Benefit from live link-ups to Australia and Cambridge as you take a
+"walking tour" of world infrastructures and their vulnerabilities.
+
+4. Focus on the problems that can arise should fire, police, EMS, disaster
+agencies, and 911 systems become targets of cyber-terrorists and learn
+strategies for protecting these local services.
+
+5. Explore the threats posed by mainstream terrorist groups and trusted
+insiders and what you can do to thwart them.
+
+6. Get inside intelligence on the capabilities of SOCOM, including IO
+destruction, deception and EW.
+
+7. Discover the high-tech techniques the Cyber Mafia is using to outgun the
+law.
+
+8. Witness a real-life attack on a variety of intrusion detection and
+response companies to determine which techniques work...and which do not.
+
+9. Examine PSYOP and SOFT WAR, the newest faces of information warfare.
+
+10. Get first-hand details about Germany's approach to Military Information
+Operations.
+
+11. Explore the controversial approach to stopping cyber-terrorism that
+allows peace makers to become law breakers.
+
+12. Probe the role of the intelligence officer in an era of massive
+information availability.
+
+13. Take a guided tour of the National Infrastructure Coordination Initiatives.
+
+14. Assess how much protection you can really achieve in a corporate
+environment.
+
+15. Master network design techniques that will help you evaluate the threat
+of a cyber-attack.
+
+16. Pinpoint the sources of military conflict in the Information Age and
+the key imperatives that must be in place to maximize the benefits of 
+information operations.
+
+17. Investigate the critical synergy between telecommunications and
+financial infrastructures that must exist to ensure the US' ability to
+assume a leadership role in the world economy.
+
+18. Cover a broad range of CERT missions and discover for yourself why some
+succeed and others do not.
+
+19. View demos of confiscated technologies used by criminals to compromise
+security.
+
+20. Learn the recent findings on the use of HRF/DEW weapons by the Joint
+Economic Committee.
+
+21. Gain a military and commercial perspective on the use of intelligent
+agents in information warfare.
+
+Remember, to save $100, you must register by July 1, 1998.
+
+Betty O'Hearn
+Assistant to Mr. Winn Schwartau
+813-360-6256 Voice
+813-363-7277 FAX
+http://www.infowar.com
+http://www.info-sec.com
+==============================================================
+	*** Introducing the New Happy Hacker Webmaster
+==============================================================
+
+        Folks, we have a new Webmaster, Josh Fritsch.  He's an ex-Navy
+cryptologist now working as a system/network administrator for a contractor.
+He's never published anything in his life, but points out "I know people
+that have! Does that count?" Actually, he has written some proprietary
+training manuals for the government.
+        What I really like about Josh (besides those pictures of him that I
+promised I wouldn't make fun of) is his activities on our Hacker Wargame.
+He quickly figured out who some of the people are who are root on the
+Wargame, and the hard way, too, by getting kicked off by them.  We can
+anticipate that Josh will be a fun player as the Wargame grows -- we promise
+the newbie box will soon be online with the essential parts of the operating
+system on read-only media so no one can kill it with the dread "rm star"
+command.  Josh says "I welcome any and all pranks (FRIENDLY pranks) from
+any hacker that feels the need, just as long as you don't leave me hanging
+if I ask you how you did something. ;)"
+        Josh also claims to have a life outside the digital world.  "Love
+dogs. Hate cats. Ferrets rock. AND....(drum roll please)....I'm an internet
+addict! (Imagine that....)"
+-- Carolyn Meinel
+
+==============================================================
+	*** Call for Volunteers and an old 486
+==============================================================
+
+We need a new postmaster!  We really appreciate the work postmaster Jonathan
+D. Zerulik did on the list, but he just took a new job that wipes out his
+free time.  The Happy Hacker email list has for a long time been manually
+maintained on account of security issues.  The problem is, several hundred
+elite haxor d00dz keep on
+trying to break into our computers, putting a major work load on those who
+run our Web site and the Hacker Wargame.
+
+One of our volunteers is planning to get Listproc running for us on a
+FreeBSD or OpenBSD box.  Sigh, Listserv is pretty secure, but we would need
+a donation of staggering size to be able to afford to buy it (the free
+version is only for tiny lists, we have over 9,000 subscribers).  
+
+We need at least an old 486!  The one we were going to put the mail list
+just got drafted to replace a Hacker Wargame computer that died of a
+hardware problem.  Al we need is a stripped down 486 as we have an Ethernet
+card and extra hard drives and CD-ROM drives courtesy of our new Webmaster,
+Josh Fritsch.  Of course, if you want to contribute something better, we
+would be delighted.  Since we have a donated T1, a better box, say a 400MHz
+class machine, might allow us to run a discussion list as well as putting
+out Digests and GTMHHs (for those who would like to subscribe to a
+discussion list).  All donations to Happy Hacker are tax-deductible in the
+US through the 501 (c) (3) status of our parent organization, Shepherd's
+Fold Ministries.
+
+In the meantime we still need a volunteer to manage our mail list manually,
+and to manage the odds and ends when listproc is up.
+
+If you take over the job, you will get a free account on the Hacker Wargame
+box of your choice, and the email address with POP server of
+postmaster@techbroker.com.  
+-- Carolyn Meinel
+__________________________________________________________________
+
+  
+
+   
+
+
+This is a list devoted to *legal* hacking! If you plan to use any
+information in this Digest or at our Web site to commit crime, go away!
+Foo on you! 
+
+Happy Hacker is a 501 (c) (3) tax deductible organization in the
+United States operating under Shepherd's Fold Ministries. Yes! This is
+all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>, 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@txdirect.net>
+Happy Hacker Digest editor: Dale Holmes<editor@techbroker.com>
+Want a mentor to teach you how to do *legal* hacking?  Contact mentor
+coordinator Ron Gloetzner, member, Happy Hacker Board of Directors, at
+rgloetz@flash.net
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <">>

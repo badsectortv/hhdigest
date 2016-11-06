@@ -1,0 +1,647 @@
+June 22, 1998
+
+===================================================================== 
+URL of the day: http://www.cmpcmm.com/cc/standards.html 
+Everything you always wanted to know about computer standards! Lots 
+of links... 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska: http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS
+
+* Port Surfing Tools 
+* Trojan Horse and "Hiding" files with the null character 
+* Dig for Windows 95 
+* FreePPP 
+* More on Free Shells 
+* Cryptography Links & Misc Stuff 
+* Fun with Prompts 
+* Using Win95's FTP program 
+* Disk Partitioning
+
+================================================================== 
+ *** Port Surfing Tools 
+================================================================== 
+From: High Pung Chow <hpc@asu.edu>
+
+I enjoyed your Happy Hacker publications and thought I'd share... 
+In your publication you make multiple references to port surfing.  I 
+myself like to use tools to do some of this for me; at www.rhino9.com 
+there is an assortment of useful tools including a collection called 
+ostroSoft tools that has a port and domain scanner which I've 
+found useful for Wingating, checking my open ports, etc. Anyway, I 
+thought you may want to look there and you seem to be somebody that's 
+actually willing to take the time to be a hacker, unlike most schmucks 
+that get published with their old stories and attempts to grab money off 
+book deals while the hacker phenomem is still active.
+
+-High Pung Chow 
+=================================================================== 
+ *** Trojan Horse and "Hiding" files with the null character 
+=================================================================== 
+From: Thomason <midas@pacbell.net>
+
+Dear Happyhacker,
+
+I am running Win95 and I was using mIRC. As soon as I went into 
+a channel, I was set up to download something. So I did and I really 
+regret it . I knew I should of not opened it but curiosity killed the 
+cat.
+
+Like I said, all the bomb does is call you a lamer and then 
+installs a bunch of junk folders in the root dir. When I try to rename, 
+move, and delete, a message comes up saying that it can not find that 
+folder. I have tried using the deltree command on it, but no success. 
+The only way that I am able to get into the folders is by using edit in 
+dos. I also found two files in the root dir. They both are .lmr files. 
+On of the files has nothing in it and the other has all of the names of 
+the folders in it. I have tried editing that files with all of the 
+names 
+in it but was not able to.
+
+I have attached a file to this email that I found on the net 
+awhile ago and wonder if it could be of any help. Thanks for your 
+help!
+
+Sincerely, 
+B.M.T. 
+_______________________________________________________________________ 
+REAL Hidden Directories 
+DOS Trick by kM & mR.dISCO 
+03/25/97 (screwing around at work)
+
+- This is old but newbies need to know about it - 
+Another Original from the HackerZ Hideout 
+www.hackersclub.com/km 
+====================== 
+OK here is a trick that you can do with your DOS/Windows3.x and 
+Windows 95 machine that works. Under Windows NT 4.0 this little trick doesn't 
+work.  It only works on people who don't know DOS and the ASCII table. Use at 
+your own risk!  If you're trying to hide kiddie porn from the feds and 
+get busted its not our fault!
+
+Maybe we will do another revision of this that will be more malicious 
+to the end user with this hack.  I'm sure if you play with it long enough and 
+read your DOS manual maybe you can guess what we are thinking.
+
+Send us your own ideas about this trick...we will publish them here if 
+they are good. 
+======================
+
+What it Does: 
+This trick can be used to hide data on a computer in a directory. 
+Unless you know how to change to the directory manually you won't be able to 
+access it (meaning Windows File Manager and Windows Explorer can see 
+it,  but can't access it).
+
+Why it Works: 
+In DOS there are 256 characters (i.e. letters, numbers and symbols 
+numbered 0-255).  Look in the back of any DOS manual to find these. 
+When you hold down the ALT key and type the ASCII code from the number 
+pad it will print it to the screen.  For example ALT (155) is " and 
+ALT (129) is |. However, ALT (255) is the NULL character (it is true 
+nothingness). 
+  
+If you create a directory using ALT (255) as the name, it will appear 
+to have no name, but...=)
+
+NOTE: You will not have the access to the full character set unless ANSI 
+is loaded. Look in your DOS book, or in WIN 95 help to do this.
+
+How to Do It: 
+Goto DOS and do these commands
+
+C: 
+cd\ 
+md {hold ALT (on your numberpad only)} 255 <- this is an ASCII NULL 
+Character 
+cd ALT 255
+
+and put something in there.
+
+Limitations: 
+This can only be created in DOS or a DOS window.  If you create this 
+in explorer or file manager it will let you access the directory.
+
+What the Average User Sees: 
+To test it...go into windows File Manager or Explorer...you will see a 
+C:\_ directory...when you double click it will say :
+
+     " c:\_ not accessible. 
+      This Folder was moved or removed"
+
+Heheh...If you really want to be bad ATTRIB the directory +H so no one 
+in DOS can see it.
+
+Why should I use this? 
+ -  This is handy for making backups of configurations and covering 
+your **s.
+
+Its a small hack...but its for newbies who need to learn even the 
+littlest of things count. 
+================================================================== 
+ *** Dig for Windows 95 
+================================================================== 
+From: Mark J. Van Valkenburgh
+
+In the Happy Hacker book, you mention that you know of no Dig program 
+for Windows.  Blighty Designs' (www.blighty.com/spam/spade.html) Sam Spade 
+program combines a number of useful utilities.  In addition to Dig, 
+there's Ping, DNS,  Whois, IP Block, Traceroute, Finger, SMTP Verify, View Raw 
+Website, and Keepalive. 
+================================================================== 
+ *** FreePPP 
+================================================================== 
+From: joby07@juno.com
+
+Hello,
+
+I recently found of this great srvice called FreePPP. It allows to 
+access the internet for FREE. Unless you live in the 212 area code, it is a 
+long distance call. Here is how you can get online.
+
+If you have windows 95 (or PPP software) then you can use it.  You 
+must have Windows Dial-up networking(you may want to print these out).
+
+    1.    Click on My Computer on your desktop 
+    2.    Click on Dial Up Networking 
+    3.    click on Make New Connection 
+    3.    Call the connection "FreePPP" or something similar 
+    4.    Select your modem if its not already selected, then click next 
+    5.    Leave the area code box blank and in the telephone # box put 
+          1-212-796-1460 
+    6.    Now it should exit out of what you were doing, its basically 
+          set-up 
+    7.    Go back into dial-up networking and you should see freeppp, 
+          right click and select properties 
+    8.    Click on the Server Types tab 
+    9.    Click the TCP/IP Settings button 
+    10.   In the second section of the window, click the radio button 
+that says "Specify name sever and address" 
+    11.   In the primary DNS box put 198.70.60.2 
+          In the secondary DNS box put 207.171.208.10 
+    12.   You are now setup!
+
+To add freeppp to your desktop:
+
+    1. Open up dial-up networking 
+    2. Right-click on freeppp and HOLD (do not let go) 
+    3. Drag the icon onto the desktop and let go 
+    4. From the menu, select Create Shortcut 
+    5. Move the icon to where you want it.
+
+To log-on to freeppp
+
+    1. Double-click on icon 
+    2. In the username enter ppp 
+    3. As the password enter ppp 
+    4. Check the box next to Save Password 
+    5. Press Connect.
+
+Please note that unless you live in the 212 area code the 
+phone call will be long distance.  After you connect run your 
+browser(opera,netscape, internet explorer, lynx, etc). 
+Then you can browse the web as usual. When you want to disconnect just 
+look in your system tray(next to the clock) and you'll see two computers 
+with green flashing lights.  Right click on it and select "Disconnect".
+
+Good Luck!
+
+P.S: Are there any more of these services? So far, I have only found 
+one.
+
+Joby George 
+================================================================== 
+ *** More on Free Shells 
+================================================================== 
+From: Jeff Gazdacko <arrow@ibm.net>
+
+Hi Carolyn,
+
+First, I'd like to thank you for helping me figure out how to do 
+different things in Windoze 95 on the network at school (I don't use 95 at home, 
+I mainly use OS/2) through this list and the GTMHH.  Keep up the good 
+work! 
+It would also be nice to see more about Netware and OS/2 in GTMHH's 
+and on this list in the future.
+
+Second, it seems that people are always trying to find ways to get 
+free unix shell acounts.  I've found a way that I don't think anyone has 
+mentioned yet, joining a Linux Users Group (LUG) near you.  The Linux 
+Documentation 
+Project has some links to help you find one near you 
+(http://sunsite.unc.edu/LDP/).
+
+I'm not sure if other LUG's give out shell acounts, but the one that 
+I'm a member of does.  The LUG I'm in just put 2 machines on the internet 
+(it's supported by an ISP), one being a Sparcstation, to use to try 
+different things out in Linux.  I'm the sys-admin-in-training for the systems. 
+Not only did I get accounts on both of the machines right away (everyone 
+else in the LUG had to wait another month to sign a waiver and then another 
+couple weeks to get their accounts created and for us to make sure the 
+machines are setup right), but I'm also learning a lot about how to be 
+a sys-admin and a lot about unix in general.
+
+So, if you want to learn unix, join a LUG near you.  Even if the LUG 
+that's closest to you doesn't offer free acounts, you could still learn a lot 
+about unix.
+
+Bye 
+Jeff Gazdacko 
+arrow@ibm.net 
+http://members.tripod.com/~jeff_gazdacko/ 
+----------------------------------------------------------------------- 
+From: LinuxPRO@aol.com
+
+Caroyln, Carolyn, Carolyn...
+
+As you *should* know, shell accounts DO NOT cost a lot to offer...  ONE 
+computer is needed to host the shell accounts.  ONE internet connection is 
+needed to connect the box.  _*NO*_  Tech support is needed whatsoever! 
+ Why in the **** would one need tech support on a free shell?
+
+The only thing I can see that would cost money would be the internet 
+connection, although from how it sounds, your pals at rt-66 internet 
+might give you a hand..  Needless to say, you wouldn't need to place it on a 
+T1 line..
+
+The *REAL* issue I see is that you are scared of giving out free shells, 
+namely becuase some people don't know how to handle them..  I think 
+that this should not be too big of an issue though, assuming your 505 gang 
+really knows how to get a computer set up securely.  For monitoring users, 
+it would 
+be wise to enstate filters and such to help you pinpoint users with harmful 
+intent.
+
+The point of this message still remains to be that cost IS NOT the 
+deciding factor..  I offer shells for free on my Linux box and it costs nothing 
+to me over what I pay per month for ISP access...
+
+Sorry for the length of this message.
+
+------------------------------------------------------------------------ 
+From: VM370x@aol.com
+
+i think your readers may be interested in this url:
+
+http://mk.netmegs.com/free.html
+
+it has a big list of providers that offer free shell accounts. 
+------------------------------------------------------------------------ 
+From: Liche <liche@tp.silkera.net>
+
+Excerpt from your last Happy Hacker Digest:
+
+[Carolyn: We don't give free shell accounts because no one has 
+volunteered to pay for them.  They cost losts of money to offer -- the 
+cost of the computers, the Internet connection and the tech support.]
+
+---End of Excerpt
+
+Since so many Happy Hacker Digest readers have supported your book by 
+going out and buying copies for both themselves and friends and family, 
+why don't YOU volunteer that so we can all enjoy the vast amount of 
+knowledge in the guides?  Besides, doing so will make you more popular 
+and it'll be easier to market more seemingly elite books to more 
+unwitting newbies.  Isn't that a great idea?
+
+Liche 
+------------------------------------------------------------------------ 
+From: Sean Duckett <metis@webFreaks.net>
+
+You published an email in the last HH digest about free shell 
+accounts.  I would like to offer a few corrections to the list.
+
+1.  cyberspace.org DOES in fact allow acces to the shell, you just 
+have to exit the menu subsystem. (I have an account there)
+
+2.  arbornet.org also offers a free shell account.  It is similar to the 
+    one at cyberspace.org; you have to exit the menu subsystem to get to 
+    the shell.  (I also have an account there)
+
+3.  it's webfreaks.com, not webfreaks.org.  Their shell accounts are by 
+    far the best I have found yet ;) (see above email address...)
+
+I would be happy to offer time for support if HappyHacker.org were to 
+offer shell accounts.  You could probably get a corporate sponsor 
+(perhaps techbroker.com?) to pay for the equipment needed for the shells.
+
+--sean duckett
+
+[Carolyn: Techbroker is my company, and we are already stretched quite 
+thin with all the other things we are offering free -- the HH Digest, 
+GTMHHs and Hacker Wargame.  If anyone wants to provide free shells, however, we 
+will be happy to let our 10,000 readers know about it.] 
+================================================================== 
+ *** Cryptography Links & Misc Stuff 
+================================================================== 
+Cryptography Pages:
+
+http://www.counterpane.com - Creators of the Blowfish Algorithim 
+http://www.austinlinks.com/Crypto/ 
+http://www-hze.rz.fht-esslingen.de/~tis5maha/software.html - Encryptor 
+for Win95/NT. Open format for algorithims lets you write your own.
+
+Allegedly for old HP-UX & Unisys boxes, there is a command account 
+REBOOT. Guess what it does :-).
+
+Undocumented MS-DOS Commands: 
+TRUENAME - Returns actual path to a file 
+VER /R - Returns more information
+
+Undocumented NT Command: 
+CD /D - Lets you change drives and directories at the same time. 
+================================================================== 
+ *** Fun with Prompts 
+================================================================== 
+From: MadMan <madman593@yahoo.com>
+
+Here's something cool that you can do with that boring DOS prompt. 
+Here's what happens when you type "prompt/?" at the DOS prompt. 
+--------------------------------------------------- 
+C:\>prompt /? 
+Changes the Windows command prompt.
+
+PROMPT [text]
+
+  text    Specifies a new command prompt.
+
+Prompt can be made up of normal characters and the following special 
+codes
+
+  $Q   = (equal sign) 
+  $$   $ (dollar sign) 
+  $T   Current time 
+  $D   Current date 
+  $P   Current drive and path 
+  $V   Windows version number 
+  $N   Current drive 
+  $G   > (greater-than sign) 
+  $L   < (less-than sign) 
+  $B   | (pipe) 
+  $H   Backspace (erases previous character) 
+  $E   Escape code (ASCII code 27) 
+  $_   Carriage return and linefeed
+
+Type PROMPT without parameters to reset the prompt to the default 
+setting. 
+--------------------------------------------------- 
+As you can see, you have just been given a bunch of commands that 
+enable you to customize your DOS prompt.  Combine the commands with a 
+little imagination and who's what you'll come up with.
+
+Try typing this at the DOS prompt:  "PROMPT THE 
+TIME$Q$T$H$H$H$H$H$H$_$P$G"  (Without the quotation marks of course.)
+
+]v[ad]v[an 
+================================================================= 
+ *** Using Win95's FTP program 
+================================================================= 
+Win95 ships with a command-line FTP (File Transfer Protocol) 
+program that is actually quite easy to use.  No, it doesn't 
+come with nice fancy GUI, and it doesn't have bells and whistles 
+like status bars and point-and-click buttons, but it is really 
+simple and powerful, IF you know how to use it.  I say "simple 
+and powerful" b/c it's modelled after the original Unix FTP 
+program.
+
+** What is it? ** 
+** FTP commands ** 
+** How to use FTP **
+
+** What is it? **
+
+First, what is FTP?  The file transfer protocol is a way for a 
+client application to "speak" to a server, or daemon, in order 
+to facilitate the moving of files about networks such as the 
+Internet.  In order to distinguish this protocol from others, 
+both the client and server programs are refered to as FTP 
+programs.  In short, "FTP" usually refers to the client program.
+
+** FTP commands **
+
+Let's take a look at some of the commands that are available via 
+the FTP program.  In order to view these commands and what they 
+do, you need to open a DOS prompt and type:
+
+c:\>ftp
+
+You will now see an ftp prompt:
+
+ftp>
+
+To get a listing of commands, type:
+
+ftp> help
+
+************************************************************** 
+NEWBIE NOTE:  Typing all of these commands at once at the command- 
+line will cause the FTP program to try to connect to the server. 
+For example, typing:
+
+c:\>ftp help
+
+will cause the program to try to connect to the server "help". 
+**************************************************************
+
+After typing the help command, you will see a list of commands:
+
+!       delete          literal         prompt          send 
+?       debug           ls              put             status 
+append  dir             mdelete         pwd             trace 
+ascii   disconnect      mdir            quit            type 
+bell    get             mget            quote           user 
+binary  glob            mkdir           recv            verbose 
+bye     hash            mls             remotehelp 
+cd      help            mput            rename 
+close   lcd             open            rmdir
+
+Wow!  That's a lot of commands.  To see what a specific command 
+does, type:
+
+ftp> help [command]
+
+For example:
+
+ftp> help lcd
+
+returns:
+
+lcd     Change local working directory
+
+A brief overview is in order.  You see that some of the commands 
+are similiar, such as "get" and "mget".  The "m" prepended to the 
+command refers to "many" and the command will be executed on multiple 
+commands.  For example, if you want to get a single file, you would 
+type:
+
+ftp> get myfile.txt
+
+If you want to get all of the executable files in a directory, you 
+would type:
+
+ftp> mget *.exe
+
+"lcd" allows you to change the local working directory (in case you 
+are running the ftp command from the root, or c:\, directory, and you 
+want to work with files in the \temp directory), and "cd" allows you 
+to change directories on the remote machine.
+
+"bye", "close", "quit", and "disconnect" give you different methods of 
+terminating ftp sessions.
+
+"ascii" and "binary" are transfer modes...best to use binary.
+
+"ls" and "dir" allow you to view the contents of directories.
+
+** How to use FTP **
+
+So let's say that you want to update your own personal web pages 
+that you maintain on your ISP.  In order to do so, you need to 
+transfer, or ftp, your updated pages from your home computer to 
+the server.  So you open a DOS command window, and type:
+
+c:\>ftp myserver.com
+
+************************************************************* 
+NEWBIE NOTE:  Another way to connect to the server is to type
+
+c:\>ftp 
+ftp> open myserver.com 
+*************************************************************
+
+The response you see will be the FTP banner followed by a username 
+prompt.  In order to access your account on the server, you need to 
+provide your username, and then your password when prompted for 
+it.
+
+************************************************************ 
+ANONYMOUS FTP:  There is something called "anonymous ftp", which 
+is really nothing more than an open ftp directory that allows 
+anyone access.  When presented with the username prompt, you enter 
+"anonymous", and then when prompted for the password, you are asked 
+to enter your email address (though just about any garbage will 
+do).  You can also access anonymous ftp via your browser by typing:
+
+ftp://ftp.myserver.com
+
+or just:
+
+ftp.myserver.com
+
+into the location bar of your browser.  Keep in mind, a properly 
+secured anonymous ftp server will only allow limited access...you 
+will be limited to where you can go in the directory structure. 
+************************************************************
+
+************************************************************ 
+EVIL GENIUS HACKING TIP:  There is an exploit floating around 
+the Internet that works to some degree.  Basically, when you connect 
+to an ftp server, you hit <enter> for the username and password 
+prompts.  When you get the ftp prompt back, type:
+
+ftp>quote user ftp
+
+Hit <enter>, and type:
+
+ftp>quote pass ftp
+
+If this has been successful, you will be able to browse the 
+directories...otherwise, you will simply have not connected.
+
+In some cases, this exploit has allowed access to ftp servers 
+that do not allow anonymous access.  Nothing regarding entries 
+that appear in the server log files was reported with the 
+exploit. 
+************************************************************
+
+Once you gain access to the server, you will have an ftp prompt, 
+and from there you can issue the necessary commands.  For 
+example, you can issue the "dir" command to list the contents of 
+the directory, or you can issue the "ls -al" command, which has 
+the same effect.
+
+Since we want to update web pages, we need to change to the 
+directory that the html files are kept in...generally, something 
+like "public_html".  So type:
+
+ftp> cd public_html
+
+And then type "pwd" or "dir" to ensure that you are in the 
+correct directory.  Now you are ready to copy your files 
+from your computer onto the server.  If you did not start your 
+ftp session from within the directory on your hard drive where 
+you keep your HTML files, you can change to that directory by 
+using the "lcd" command.  Once you are in the correct directory, 
+and you want to update only a single file, type:
+
+ftp> put myfile.html
+
+If you want to update several files, you can type:
+
+ftp> mput *.html
+
+Once you complete your tasks, just type:
+
+ftp> bye
+
+Quit or exit will also work.  Disconnect will end your session 
+on that server, but leave you with an FTP prompt. 
+================================================================= 
+ *** Disk Partitioning 
+================================================================= 
+From: Prata, Roger <roger.prata@tdstelecom.com>
+
+On the LINUX CD, there is a proggie called FIPS.EXE.  There is a readme 
+file with it.  Read the file, and run FIPS.  It will allow you to shrink 
+your existing Windoze partition, and make drive space available to 
+create a new Linux partition.
+
+That is how I managed my very first Linux installation.  Now, I am proud 
+to say, I have been M$ free for over 3 months now!  (Between a Linux box 
+and a Solaris box, and a BSD box...  I have no Windows boxes at all...)
+
+Good luck, and let me know if you need more info..
+
+-R
+
+>---------- 
+>From:  Hamdani Meghji[SMTP:hamdani@raha.com] 
+>Sent:  Sunday, June 21, 1998 6:14 AM 
+>To:    rprata@techbroker.com 
+>Subject:       DISK PARTIONING 
+> 
+>    Hello, sorry for this inconvinience. 
+>I am using windows 95 which came with the computer, I didn't have to do 
+>any partition and don't know how to do it. 
+> 
+>Recently my friend asked me about how to install Linux on his 
+>computer(something I have been dying to do too). How am I supposed to 
+>make the partition with my original windows still in? Please help me. 
+> 
+>Nyangu 
+================================================================= 
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@idworld.net> 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Want a mentor to teach you how to do *legal* hacking?  Contact mentor 
+coordinator Ron Gloetzner, member, Happy Hacker Board of Directors, at 
+<rgloetz@flash.net>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <">>

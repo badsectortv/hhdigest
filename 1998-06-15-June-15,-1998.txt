@@ -1,0 +1,417 @@
+June 15, 1998
+
+=====================================================================
+URL of the day: www.sans.org/ntsetp.htm "Windows NT Security:
+Step-by-Step"
+See back issues of the Happy Hacker Digest and Guides to (mostly)
+Harmless Hacking at http://www.Happyhacker.org.
+GTMHH en espanol: http://underhack.islatortuga.com
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html
+=====================================================================
+
+TABLE OF CONTENTS
+
+* What happened to the HH Digest for 6/8/98???
+* Free UNIX shell...
+* Netlab 95
+* Advice on how to get help through UseNet
+* Problems with telnet
+* Free UNIX Tutorials
+* A few links for manuals
+* The Happy Hacker' Rocks InfoWar.Com Bookstore
+
+==================================================================
+	*** What happened to the HH Digest for 6/8/98???
+==================================================================
+[Dale:
+
+Well, to make a long story short, the June 8th edition of the
+Happy Hacker Digest fell into a watery grave.
+
+While on vacation in the mountains last week, my laptop, 
+which carried (among other things) the June 8th edition of the
+HH Digest, rolled out of my car, slid down a very steep hill,
+bounced off some really big rocks, and came to rest in a surprisingly
+deep, cold, and algae laden spot about 4 feet from the side of the lake.
+
+It spent only about 2 or 3 minutes there, but it was quite completely
+dead when it was retreived. Removing it from the icy water was cause
+for much excitement for both me and my dog.
+
+I will try to put what I still have (from another computer) into
+this edition. Sorry for the delay... ]
+===================================================================
+	*** Free UNIX shell...
+===================================================================
+From: Renos
+
+Carolyn hi !
+I read that are alot of your subscribers that would like to
+have a free UNIX shell account. I did some searching and I found 
+these addresses wich I also checked out.
+
+1. http://www.webfreaks.org
+Well, I read their announcement and they don't give free shell
+accounts anymore or at least for now.
+
+2. http://www.nyx.net
+They give a free account but you can't do alot of things unless 
+you pay a small fee.
+
+3. http://www.cyberspace.org
+They give free accounts. You don't have access to the shell (unless
+you pay...) but there is a GOOD menusystem. I also got an account 
+there for my self!!
+
+4. http://www.vexation.org
+They offer free unix shells but they seem to have a small problem
+so they cannot offer shells now. I also tryed to find something about 
+innocent.net but I couldn't connect to that server.
+
+If you try "free unix shell" on a search engine you will propably find
+a page with a list of servers offering free unix shells. Many of the
+servers are not working anymore.
+
+Carolyn, how come Happy Hacker don't give free UNIX shell accounts?
+It would  be very helpful for your subscribers to really understand
+UNIX and learn it even better. They could also try all the UNIX tips
+you are writting in GTMHH. After all cryptotech is ment to be free for
+hacking why not offering UNIX shells? (well, they won't be secure
+accounts, but the purpose is to help the newbies)
+
+Renos.
+
+[Carolyn: We don't give free shell accounts because no one has
+volunteered
+to pay for them.  They cost losts of money to offer -- the cost of the
+computers, the Internet connection and the tech support.]
+==================================================================
+	*** Netlab 95
+==================================================================
+From: Grafik  
+
+Hi! Let me intoduce myself. The name's Grafik M0de and I'm really 
+pleased to e-mail u.
+
+Here's the subject of the message. U talk about Windows Hacking in 
+your GTMHH. But Windows lacks several Internet tools needed for this
+(finger, whois, etc...), so it's harder than using Unix.
+
+However, there is a program which allows u to use these tools. It's 
+called *Netlab 95*. It's *FREEWARE*, so don't tell me I'm a pir8. 
+
+Net Lab 95 has several tools to help Windows Internet "exploring": 
+finger, whois, ping, trace... It even has a port scanner, muhahaha!
+
+So, I think, you should talk about this program to newbies who just have
+AOL and a Windoze 95 box.
+
+Thank you in advance.
+Grafik M0de.
+==================================================================
+	*** Advice on how to get help through UseNet
+==================================================================
+From: keydet89@yahoo.com  
+
+Based on the response I received from the latest GuideTo (mostly) 
+Harmless Hacking, I just want to provide some tips for the newbies:
+
+1.  Read past editions of the GTMHH and learn about 
+your system.  Become familiar with how the operating
+system and applications work.  Use the online help for
+both Win95 and the applications.  Believe it or not,
+there is a lot of valuable information in the help files 
+for new users.
+
+2.  At least understand what the letters "TCP/IP" stand for.  
+
+3.  Try things out for yourself...there is no harm in
+experimenting.  You don't really learn anything if you
+get your edition of GTMHH and just click every place
+it says to click without really understanding what is
+going on.
+
+4.  If you do have a question about something, try 
+doing a search on DejaNews.  Also, it you go to the
+Yahoo site and drill down to the Win95 section, you 
+will find loads of information.  There are sites with
+tips, information, software, etc.  There are also 
+several FAQs available for Win95.
+
+5.  If you are receiving an error message while using
+Win95, try doing a search on the Microsoft Support 
+site.  Just go to http://www.microsoft.com, and click
+on the black "Support" button at the top of the page.
+Register your email address...but don't worry, the
+service is free.
+
+6.  If you must email or post a question to the
+newsgroups, make sure that you are clear about what
+you are asking.  Make sure you mention what operating
+system you are using (in some instances, win3.1, win95,
+and NT will all react differently), exactly what you
+did, and exactly what the error message is.  Other
+pertinent information, such as a particular protocol
+stack, or a particular application, is also useful.
+
+I have no problem with answering questions about files
+that I write or just questions in general.  However, I
+am not a mind reader.  
+
+Here are some DOs and DON'Ts:
+
+DO be clear and concise in your emails and posts.  
+Provide information so that someone can help you.  If 
+you don't want to provide the information, don't expect 
+a response.
+
+DO be courteous and DO thank the individual for their
+time and effort.  Keep in mind...if you have found 
+someone to send a question to, chances are others have
+found this person, too.  
+
+DO put forth the effort to research your question prior
+to sending the question.  
+
+DON'T use the "3l337 hax0r" typing style.  If your 
+question can't be understood, it can't be answered.
+
+DON'T obfusicate your "reply to:" address when you 
+send email.  I don't like putting out the effort to
+answer a question, only to have the email sent back b/c
+the username or domain is incorrect.  If you don't want
+an answer, don't email the question.
+
+DON'T flame the person who is helping you.  We are 
+trying to help you as best we can.  Many of us have 
+day jobs and families, so don't get upset if it's a
+day or two before you get your response.  
+
+DON'T reformat your hard drive every time you have a
+problem.  If you do that, you are destroying your 
+current configuration and possibly opening yourself up
+to a whole new set of problems.
+
+Keydet89
+==================================================================
+	*** Problems with telnet
+==================================================================
+From: k purcell 
+
+I have been reading gtmhh but I have been unable to use telnet like 
+it should be used. I entered DOS after connecting to AOL then I typed
+telnet. The telnet screen appeared and I went into remote systems. 
+
+For the host name, I typed "whois.internic.net", and many other
+possible host names, but every time I pressed connect a box appeared saying 
+connection failed. Am I doing something wrong or do i need to register 
+with someone?   
+
+[Note from Carolyn Meinel:  Many people have written saying their telnet
+program fails to connect no matter what host they try to reach. 
+Here's away to fix your problem.  First -- make sure you are already connected
+to the Internet.  If your telnet program still cannot connect to anything,
+here's how to fix your problem.  Click "start", then "settings", then
+"control panel."  Then click "Internet", then "connection."  This screen will
+have two boxes that may or may not be checked.  The top one says "connect to the
+Internet as needed."  If that box is checked, uncheck it -- but only
+uncheck it if you already have been having problems connecting.  The bottom
+box says "connect through a proxy server."  If that box is checked, you
+probably are on a local area network and your systems administrator doesn't allow
+you to use telnet.]>>
+NOTE!!! Whois.internic.net doesn't work the way this Digest says any more. Instead, click here to learn the new way to use it.
+
+From: Anthony Tobias Teel bigtoe@hardlink.com
+
+On AOL, a lot of people ask me about this.  (And why Mirc, Pirch,
+CuteFTP,
+netscape, Internet Explorer, or any other external internet prog doesn't
+work.)
+
+For those on aol, it is generally just a simple thing (And most people
+don't bother to fix it.  Uggh.).  A lot of the aolers out there use a
+16-bit aol client.  This is actually fine as long as you don't use aol
+for
+anything other than, well, aol.  But if you use it as your internet
+connection, you are only providing a 16-bit winsock, and no 32-bit
+programs can access it.  
+
+This is very easily remedied by (a) calling AOL and getting a 32-bit
+copy
+of their software, or (b) downloading a copy right there.
+Appearantly, some progs for hax0ring AOL don't work under a 32-bit
+version.  They way I look at it, who cares?  If anything, good for aol!
+Those annoying things are ruining the service!  I hope nothing works for
+the soon to be aol 4.0.  Uggh.
+
+Thought this might help.
+
+--Horrorshow
+==================================================================
+	*** Free UNIX Tutorials
+==================================================================
+From: Josh Fritsch
+
+So have we convinced you yet that when it comes to hacking, Unix is
+the way
+to go? Called your ISP and found out you DO have a shell account, but
+you
+have no idea how to use it? Relax. I'm going to hook you up.
+
+I'm going to offer free BEGINNER Unix tutorials on IRC. When? Where?
+How?
+Well, that part is up to you, the readers. To start, I'm going to need
+to
+get a feel for how many people are interested in this. To do so, I'm
+going
+to ask that anyone interested send me an email at derr@txdirect.net
+stating
+that you want to participate. I will keep a list of everyone that
+responds,
+and then send out times/dates/places(on IRC). Sorry, but I will not
+accept
+Hotmail/Juno/thepentagon.com/etc addresses. I'm out here as my REAL
+SELF,
+if you want to learn, you have to do the same.
+
+The only requirement is that you must already have access to some form
+of
+Unix. I don't have a fast enough connection to offer temporary
+accounts on
+my machine, sorry.
+
+Experienced Unix users are encouraged to join in! Just let me know
+that you
+want to help (or maybe you just want to watch and make sure I don't give
+out bogus info ;).
+
+Lastly, if you live in the San Antonio area and want some more advanced
+training in Unix, Windows, or harmless hacking, my friend and I run a
+small
+business on the side that can hook you up. Email me for more info.
+
+-Josh
+==================================================================
+	*** A few links for manuals
+==================================================================
+Here are a few links for manuals:
+
+http://www.help-site.com
+800+ links to sites with computer info.(OS, programming, etc.  
+Check out Other-sites on this site too.)
+
+http://hoganbooks.com/freebook/webbooks.html
+This has a lot of great books whether it's on their site or on 
+anothers.
+=================================================================
+	*** The Happy Hacker' Rocks InfoWar.Com Bookstore
+=================================================================
+From: "Betty G.O'Hearn" betty@infowar.com  
+
+SEMINOLE, Fla., June 3 /PRNewswire/ -- "The Happy Hacker" continues to
+rock the InfoWar.Com on-line bookstore with "stunning international
+response!"
+according to site manager, Betty O'Hearn.
+
+Orders are pouring in from around the world.  The book, recently given
+rave reviews by Winn Schwartau has skyrocketed to the top of
+InfoWar.Com's
+sales.
+
+Authored by "I remember the 40's" Carolyn Meinel, "The Happy Hacker"
+apparently is satisfying everyone's burning desire to understand the
+hacker
+mind and to learn their tricks in a step by step fashion.
+
+Schwartau's review opens with, "In her folksy conversational manner
+(she's
+from New Mexico), Carolyn starts off by teaching the reader how terribly
+insecure a Windows95 box is, and walks us through a series of
+super-simple
+ways to hack right into your corporate network.  Considering that the
+vast
+majority of computer crimes and hacks occur from within a company's
+network,
+these introductory parts of 'The Happy Hacker' are worth the price of
+the book
+alone."
+
+He continues, "These are the weaknesses that Microsoft will never tell
+you
+about, wishes would just go away and provide one of the most compelling
+reasons to ignore Win95, forget about Win98 and rush right out and buy
+a copy
+of the infinitely more secure NT."
+
+Meinel provides dozens of step by step methods on exactly how hacking is
+done; from telnet to port surfing to using a shell account.
+
+Far from encouraging teenage wannabes to hack away at your front door,
+the
+book is chock full of "You Can Get Punched In the Nose, Fired and Busted
+Warnings" and "You Can Go To Jail Warnings."  Many of the tricks and
+techniques throughout "The Happy Hacker" are clearly illegal, immoral
+and
+unethical.  The point that Meinel makes over and over is that "hacking
+your
+own equipment is healthy and good.  Hacking a box or network with
+permission
+is good.  Any other kind of hacking will land you in jail."
+
+Schwartau echoes those sentiments.  "Hacking is good.  Criminal
+hacking is
+bad.  Happy Hacking is educational, ethical and legal."
+
+"The Happy Hacker" has something for everyone.  It's a moderately
+technical book, with advice for the Newbie sprinkled throughout, as
+well as
+offering Evil Genius Tips for the more advanced readers.
+
+Included in the book is an extensive education section on "spoofed"
+email,
+which will be a God-send to the network administrator trying to train
+staff in
+the details of how hackers work their so-called magic.  The dangers of
+open
+ports and shell-based telnet are driven home as is the clearly written
+section
+on How To Map the Internet.
+
+"The biggest criticism of 'The Happy Hacker' is that there is So-Much
+information," Schwartau says, "and so many URL's, I wish they were all
+organized in a single bibliography."
+
+InfoWar.Com ships "The Happy Hacker" from stock within 24 hours unlike
+the
+"others" who require 4-6 weeks.
+
+"The Happy Hacker," ©, Carolyn Meinel, 1998.
+260pp American Eagle Publications, Inc.  
+ISBN 0-929408-21-7 $29.95.  
+Available at the on-line bookstore at http://www.infowar.com
+__________________________________________________________________
+
+   
+  
+
+This is a list devoted to *legal* hacking! If you plan to use any
+information in this Digest or at our Web site to commit crime, go away!
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata rprata@techbroker.com; 
+for Macs, write Strider Strider@clarityconnect.com, 
+and Unix, write Josh Fritsch derr@txdirect.net
+Happy Hacker Digest editor: Dale Holmes editor@techbroker.com
+
+Want a mentor to teach you how to do *legal* hacking?  Contact mentor
+coordinator Ron Gloetzner, member, Happy Hacker Board of Directors, at
+
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel "><script language="JavaScript"><!--
+var name = "cmeinel";
+var domain = "techbroker.com";
+document.write('<a href=\"mailto:' + name + '@' + domain + '\">');
+document.write(name + '@' + domain + '</a>');
+// --></script>
