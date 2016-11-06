@@ -1,0 +1,398 @@
+Jan. 21, 1999 
+_______________________________________________________________________ 
+See the Happy Hacker web site at http://www.happyhacker.org 
+Your local firewall blocks you? Try http://happyhacker.org 
+Svenska: http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+URL of the day: http://www.anonymizer.com/ Avoid the snoops! 
+_______________________________________________________________________
+
+Opening Comments 
+URLs 
+Reader Submissions 
+Clearing Browser History...Final Edition 
+Internet Protocols 
+SNMP Explained 
+Perl Corner 
+Editor's Comments
+
+****************************************************************** 
+Opening Comments 
+Okay, another issue of the HHD is on the way!!  Seems last issue, 
+several people took offense at the quote that I said came from 
+the Bible.  Okay, I apologize.  I don't know that it came from 
+the Bible...I've heard the quote for years, and never thought to 
+look it up.  However, very little was said about the technical 
+portion of the Digest, so things went rather well!!
+
+****************************************************************** 
+URLs
+
+Hunt for 'Easter Eggs' on your computer!! 
+http://www.eeggs.com/ 
+http://www.htsoft.com/easter/ 
+http://handel.pacific.net.sg/~panglee/easter.html
+
+Traceroute Servers 
+http://boardwatch.internet.com/traceroute.html 
+**Note:  Some of these links are old and dead...but not all 
+of them.  Use these systems to run traceroutes...but remember, 
+the traceroute will be in relation to the server, not your 
+machine.
+
+The CyberSpace Atlas 
+http://www.geog.ucl.ac.uk/casa/martin/atlas/isp_maps.html
+
+Network Associates Security Advisory Site 
+http://www.nai.com/products/security/advisory/default.asp
+
+What are the laws regarding computer crime in each state of 
+the US?? 
+http://www.icsa.net/icsalaws
+
+****************************************************************** 
+Reader Submissions
+
+>From "NoWorries" <noworries@telia.com>:
+
+Seems NoWorries (bet his ISP is in the Down Under) sent in an 
+email regarding a product that he'd seen...go to:
+
+http://www.telusplanet.net/public/don1/netbus.html
+
+Evidently, this is a superior NetBus scanner, allegedly better 
+than the scanner that comes with NetBus itself.  I downloaded it 
+in the wee hours this fine morn...and it seemed to run fine. 
+This scanner also allegedly changes the password for you...so one 
+could potentially hijack someone else's NetBus.  It's definitely 
+worth a look.  Just keep in mind...you have to download the 
+original version before you d/l the update...
+
+"Red Tide" <red_tide@mailcity.com> is asking for help from anyone 
+who speaks/reads/writes any of the following languages:  Chinese, 
+Czech, Danish, Dutch, Esperanto, French, German, Greek, Hungarian, 
+Italian, Indonesian, Latin, Japanese, Korean, Norwegian, Portuguese, 
+Romanian, Russian, Slovak, Spanish, Swahili, Swedish, Thai, Turkish, 
+Ukrainian, and Vietnamese.  Seems Red got some translation software 
+and wants some assistance...so if anyone is willing to assist 
+another reader, drop him a line.
+
+Vesselin Bontchev <bontchev@COMPLEX.IS> sent in the following email 
+that he received:
+
+From: Daryl Pecelj <darylp@MICROSOFT.com> 
+Subject: HTML virus patch available for MS Internet Explorer 
+Date: Mon, 28 Dec 1998 13:03:44 -0800
+
+Due to last weeks debacle (Remote Explorer) and all the unnecessary 
+hype, I was actually unable to send this information out on time. 
+The truth is the fallout from remote explorer has still got me under 
+water however this info must be delivered in a timely manner.
+
+Last week Microsoft's Internet Explorer team released a patch that 
+addresses 1Internal's HTML viruses specifically the HTML.worm where 
+the virus author exploited a security bug in IE. The patch is called 
+"Frame Spoof" and can be obtained from 
+http://www.microsoft.com/windows/ie/security/default.asp. 
+I know this gets confusing...the fact is this patch incorporates all 
+the prior patches available for IE and is the only one needed for a 
+completely patched system (from an Internet Explorer stand point)... 
+hope that helps clear some confusion!
+
+More information:
+
+Internet Explorer 3.X and 4.0 
+----------------------------- 
+Internet Explorer 3.X and 4.0 users must first upgrade to Internet 
+Explorer 4.01 with Service Pack 1, which is available at 
+http://www.microsoft.com/windows/ie/download/. After installing the 
+upgrade, apply the Internet Explorer 4.01 patch as discussed above.
+
+Internet Explorer 4.01 
+---------------------- 
+Customers using Internet Explorer 4.01 (with or without Service Pack 1) 
+can obtain the patch from the Internet Explorer Security 
+web site, (http://www.microsoft.com/windows/ie/security/spoof.asp).
+
+Macintosh & Solaris 
+---------------------- 
+The patches for the Macintosh, HPUX and Solaris versions will be 
+slightly delayed. When they are available, a notice will be posted 
+on http://www.microsoft.com/ie/security/. 
+ 
+
+Please inform your customers who are concerned about this issue and 
+point them to the available patch. As always, feel free to ping me if 
+you have any issues concerning this patch.
+
+[NOTE:  I made the call to withhold the author's personal info... 
+I didn't have his permission to release it.]
+
+****************************************************************** 
+Clearing Browser History...Final Edition.
+
+Kalanga Joffres sent me a URL with his latest contribution.  But 
+since I do not want to devote every Digest solely to this topic, 
+I'll put the URl here for everyone to visit...
+
+http://2waymedia.hypermart.net/hh/browsers/index.htm
+
+Thanks goes to Kalanga, and his collaborator, Per Haglund.
+
+****************************************************************** 
+Internet Protocols
+
+Want to find out a little more about Internet protocols?  Wondering 
+what to do next when you telnet to port 80 on a web server?  Well, 
+check out...
+
+http://dir.yahoo.com/Computers_and_Internet/Communications_and_ 
+Networking/Protocols/
+
+Now, just about everything on the Internet is documented in 
+some form or another.  The most popular and indepth form is the 
+Request For Comments, or RFCs.  The documents range in topic and 
+content.  Sites to begin looking at RFCs include:
+
+http://www.csl.sony.co.jp/rfc/ 
+http://www.garlic.com/~lynn/rfcietf.html 
+http://www.cis.ohio-state.edu/hypertext/information/rfc.html
+
+Go to these sites (or a variety of others) and read up on the 
+real-deal, with regards to Internet protocols, etc.
+
+****************************************************************** 
+SNMP Explained
+
+If you've examined the topic of networking at all, you've likely 
+come across the SNMP protocol.  SNMP stands for the "Simple Network 
+Management Protocol".  Back in the mid- to late-'80's, a protocol 
+was needed to manage network devices, such as routers, switches, 
+etc.  The interim solution was SNMP, but that solution caught on 
+so well that the follow-on protocol was all but abandoned.
+
+This is how SNMP works...the management station (MS) has SNMP tools 
+for making queries.  The managed devices (MD) have 'agents' running 
+on them...small daemons that just sit and wait for requests.  When 
+the MS sends a request (SNMP uses the UDP protocol) to the agent on 
+the MD, the agent consults it's managed information base (MIB) for 
+the information and sends the response back to the MS.  The MIB is 
+essentially a database that resides on the device.  Also, given 
+particule conditions, the MD can send a 'trap' to the MS, alerting 
+the MS to some condition.
+
+Here's an example of the communications that takes place:
+
+   [MS]   --->  SNMP query (UDP, port 161)  --->  [MD]
+
+   [MS]   <---  SNMP response (UPD)         <---  [MD]
+
+These queries and responses are referred to as 'polling'.  The 
+MS 'polls' the MD for information.
+
+   [MS]   <---  SNMP trap (UPD, port 162)   <---  [MD]
+
+This communication is referred to as a 'trap'.  The MD finds that 
+a particular condition has been met, and sends a message to the 
+MS.  This form of communication is also used by intrusion detection 
+systems to tie into the network management system...
+
+Now, here's some particulars regarding SNMP.  The first version, 
+SNMP v1, is probably the most widely used version.  Some systems 
+seem to install and enable SNMP with little or no input from the 
+user.  Cisco routers simply require that the entry for SNMP be 
+marked yes or no, for example.
+
+As I said, the MIB is essentially a database of managed information. 
+The MIB contains information about various aspects of the system... 
+the number of IP packets to go in and out of an interface (NIC), 
+the number of TCP reconnect requests, who to contact if there's a 
+problem, and the routing table for the interface.  Each piece of 
+information is referenced by an object identifier or 'OID'.  When 
+you want a particular piece of information, you make the request 
+for the particular OID.  Now, these OIDs are long sequences of single 
+digits separated by dots...which is why there are tools that let you 
+choose the information you want, and substitutes the particular OID 
+into the request for you.  Two of these tools are WS_Ping Pro from 
+IPSwitch, and the Java SNMP classes and demo application from 
+Advent Network Management (see URLs below).
+
+Here's an example OID...for the system uptime (how long since the 
+last reboot of the managed object) you need to request:
+
+sysUpTime or OID '1.3.6.1.2.1.1.3.0'
+
+Hhhhmmm...which would be easier to remember?
+
+One of the configuration options for SNMP is something called the 
+'community string'.  This is a piece of information that, w/ SNMP 
+v1, is passed on the UDP datagrams in plain text, and is used as 
+a sort of password.  For the query to be valid, the community string 
+must be correct.  Well, like many things on the Internet, this option 
+is left at it's default value...'public'.
+
+SNMP v1 has three types of requests...get, get-next, and set.  Because 
+of the extreme lack of security, many systems do not implement the 
+set capability...Cisco and Microsoft's versions come to mind.  However, 
+using the get and get-next capability, you can get all sorts of great 
+information.  By using get-next requests, you can get the routing tables
+
+for the interface (NIC).  Using just the get request, you can get 
+information on the number of IP/ICMP/TCP/UDP packets to go in and out 
+of the interface.  You can get the system contact and information 
+strings.
+
+In this Digest, I am not going to go into great detail about the 
+various types of managed objects, or the various vendor-specific 
+MIBs that are available.  My intention has been to provide a brief 
+overview of SNMP, and hopefully spark your interest for further 
+investigation.  I am not going to give you a list, but there are 
+many sites on the Internet that think they are secure, but they 
+allow SNMP datagrams to travel in and out of their networks.  So 
+imagine walking into one of these company offices and handing them 
+a map of their network...which you developed by using a Java-based 
+SNMP tool that your wrote!!
+
+Use any of the links to RFCs from the 'Internet Protocols' 
+section above to look for RFC 1157, regarding SNMP.
+
+Info on SNMP 
+http://www.inforamp.net/~kjvallil/t/snmp.html 
+http://snmp.cs.utwente.nl/
+
+Advent Network Mgmt's Java SNMP classes 
+http://www.adventnet.com/
+
+30-day eval version of WS_Ping from IPSwitch 
+http://www.ipswitch.com/Products/WS_Ping/index.html
+
+For Perl programmers, I found a Perl module at CPAN, written by 
+David M. Town <dtown@fore.com>, which is really great!  You 
+don't need to have the CMU SNMP package installed...all you need 
+to do is un-tar the archive and move the .pm file to the right 
+location.  This provides a cross-platform SNMP capability...I have 
+a script working on NT that can be moved to Linux or Solaris and 
+run without modification.
+
+****************************************************************** 
+Perl Corner
+
+One or two readers have shown interest in Perl programming, so I 
+thought that I would include a Perl Corner here for future Perl- 
+Win32 programmers.  I will be posting short tutorials and exercises 
+here...snippets of code that are written by myself and your 
+wonderful readers!  Maybe by inviting contributions, we can all 
+learn a little more.
+
+The first thing you need to do is to get Perl.  You need ActivePerl, 
+and the latest version is build 509.  Go to:
+
+http://www.activestate.com/ActivePerl/download.htm
+
+and download the build.  The file name is 'APi509e.exe' and the 
+file is about 4.6MB.  After you install it, on either 95, 98 or 
+NT, make sure that the path to perl.exe is correct in your PATH 
+statement.
+
+For some basic tutorials, start by browsing around:
+
+http://www.perl.com 
+http://www.perl.org 
+http://www.netaxs.com/~joc/perlwin32.html
+
+Before we get into the particulars about the language, we'll do the 
+obligatory 'Hello World' program.  Now, Perl programs end in the 
+'.pl' extension...the easiest way to write your programs is to go 
+to the Perl directory (usually c:\perl) and type:
+
+c:\perl>notepad hello.pl
+
+Now, in Notepad, type the following lines:
+
+#! c:\perl\bin\perl.exe 
+print "Hello, World!\n";
+
+Now, save the file and type:
+
+c:\perl>hello.pl
+
+Tada!!  Your first program.  Now, to spruce it up a little, change 
+the program to read:
+
+#! c:\perl\bin\perl.exe 
+$name = $ARGV[0]; 
+print "Hello, $name!\n";
+
+Now, type:
+
+c:\perl>hello.pl myname
+
+Okay, now let's add a little something extra...our last version of 
+hello.pl took an argument, and displayed it in the text that was 
+printed to the screen.  Now, let's set it up so that it will print 
+either the argument, or a default, if no argument is given:
+
+#! c:\perl\bin\perl.exe 
+$name = shift || 'Capt. Picard'; 
+print "Hello, $name!\n";
+
+Now that we've done a couple of programs, let's look at the particular 
+parts of the program.  The first line of your Perl scripts should 
+start with the 'she-bang' line...this is a holdover from Unix, and 
+identifies the interpreter to be used when executing the script. 
+The '#!' is referred to as 'she-bang' and is followed by the path to 
+the Perl interpreter...on Win95 or NT this will likely be c:\perl\ 
+bin\perl.exe, if you installed Perl in the c:\perl directory.
+
+The next line, in the last two scripts, got the arguments that were 
+entered with the script.  In the first case, we used $ARGV[0], and 
+in the second case, we used 'shift'.  In the second script, we 
+used the line:
+
+$name = shift || 'Capt. Picard';
+
+which tells the interpreter, "Get the first argument and assign it 
+to scalar (variable) '$name', but if there aren't any arguments, 
+assign 'Capt. Picard' to $name."
+
+Finally, we send the text to 'standard output' (ie, STDOUT, or the 
+screen) using the print statement.
+
+Okay, more next time!  User contributions are appreciated...please 
+comment the code (comments are lines that begin with just a '#'), 
+and your contribution will be copyrighted to you.  Next time, 
+we'll look at getting some Windows-specific information from your 
+own computer.  Before too long, we'll be writing sockets...  ;-)
+
+****************************************************************** 
+Editor's Comments:  Well, I hope everyone's enjoyed this issue. 
+Right now, these Digests are coming out on a fairly regular basis, 
+but remember...the Digests and Guides are purely a voluntary effort 
+by myself, Carolyn, and everyone else.  Reader contributions are 
+always welcome, but please be clear and concise when you send an 
+email in...that way, we can read it quicker and include it in the 
+Digest!!
+
+******************************************************************
+
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Mark Schmitz <wizard@rt66.com>; Wargame Sysadmin, Satori <Satori@rt66.com>; 
+Grand Pooh-bah: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!

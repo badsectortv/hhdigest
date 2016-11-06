@@ -1,0 +1,350 @@
+Jan. 7, 1999 
+===================================================================== 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+Preview our new Web site at http://www.happyhacker.org/test 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+===================================================================== 
+Opening Comments 
+URLs 
+Free ISPs 
+April Fool's 2001 Bug 
+Clearing Browser History: Update 
+ICQRevenge Trojan Update 
+Changing your Active Desktop View 
+Adding Features To Your Windows Box...FOR FREE 
+Editor's Note
+
+****************************************************************** 
+Opening Comments 
+Okay, to get the ball rolling here...let me start by answering one 
+of the big questions I have received via email.  Yes, you can, in 
+fact, "hack" from Windows...even 95!!  In fact, there is very little 
+that you can't do from 95 or NT, if you have the right resources 
+available.  In future digests, I will be addressing this exact 
+issue...but for now, start by checking out the link to the PC  
+Magazine Free Utilities link I have in the next section...
+
+****************************************************************** 
+URLs 
+Protecting Win95 
+http://www.winplanet.com/features/howtos/security95/index3.html
+
+Hacker News 
+http://www.hackernews.com 
+Also see the HHN affiliate "100% Pure Bikkel" 
+http://www.bikkel.com/~demoniz/
+
+Editor's Comments:  For anyone who has been following the two 
+sites above, it would seem as though there is some sort of  
+underground hacker war going on.  Groups like HcV, milw0rm, 
+and now the 109 Security Team seem to be hacking web sites just 
+to publicize their disdain for each other.  Add to this LOU's  
+"declaration of war" (not my words) on China and Iraq for  
+civil rights abuses (and the subsequent statements by other  
+groups such as 2600, CdC, l0pht, and Phrack condemning such 
+actions), and the US Dept. Of Defense's decision to _finally_ 
+view cyberspace as a valid battlefield...sheesh.  Is it safe 
+to web surf anymore!?!?
+
+http://www.infowar.com/new_iwc/new_iwc.shtml
+
+Free Utilities 
+http://www.zdnet.com/pcmag/pctech/index-ut.html
+
+****************************************************************** 
+Free ISPs 
+DQ<arvec@geocities.com> sends along notice of another free ISP... 
+check out:  http://www.netzero.com
+
+****************************************************************** 
+April Fool's 2001 Bug 
+Richard Smith <rms@PHARLAP.COM> of PharLap sent in a bug report to 
+Microsoft on 5 Jan 99 that was confirmed the next day, but no  
+mention was given as to a fix.  The bug is as follows:
+
+In the US and Canada, daylight savings starts on the first Sunday 
+in April and runs until the last Sunday in October.  For more on 
+this see: 
+http://www.energy.ca.gov/daylightsaving.html
+
+It seems, however, that Microsoft's runtime library, specifically 
+MSVCRT.DLL, thinks that in the year 2001, daylight savings doesn't 
+start until April 8...when in fact, it starts on April 1.  So for 
+a week, the system clocks will be out of sync by an hour.
+
+Richard has a test demo page at: 
+http://security.pharlap.com/y2k/demo1.htm
+
+Thanks, Rich!!
+
+****************************************************************** 
+"Kalanga Joffres" <Kalanga@email.com> 
+Clearing Browser History: Update 
+With new web browser versions coming out faster than the justice 
+department can say "patent infringement", Carolyn's papers on how to 
+prevent people at work or home from snooping around in your page  
+history have gone out of date fairly rapidly. That's why I'm here to  
+update some of that information.
+
+The best way to prevent people from knowing the web pages you've been 
+visiting is to delete your browser's page history.
+
+Page history Netscape's Navigator browser versions 4.x can be deleted 
+by:
+
+1.       In a Navigator window, open the Communicator menu.
+
+2.       Open the Tools menu.
+
+3.       Click History
+
+4.       a) To delete all entries press down CTRL and A on your  
+keyboard and then the Delete button.
+
+         b) To delete a specific entry click on it and press Delete 
+on your keyboard
+
+Internet Explorer 4 and above also let you remove browser history 
+easily. To clear it out completely follow these steps:
+
+1.       In an Internet Explorer window, slide down the View menu
+
+2.       Choose Internet Options
+
+3.       Click the Clear History button
+
+To delete specific entries in Internet Explorer's history follow these 
+steps:
+
+1.       In an Internet Explorer windows, click the History button
+
+2.       Right-click on an entry
+
+3.       Choose Delete from the context menu
+
+Kalanga Joffres 
+[parallaxe@email.com] 
+****************************************************************** 
+Changing your Active Desktop View  
+I received an email from AMOX <amox@ver1.telmex.net.mx>, a reader 
+from Mexico.  He sent me an interesting technique for changing the 
+look of your system if you are using Active Desktop.  I'll be  
+translating here...this pertains to changing the way the Options/ 
+View as a Web Page looks.  I can't test this, as I don't have 
+Active ("Captive") Desktop, but I'm putting it out there for  
+the glorious readers to try!!
+
+First, there are some hidden ".htt" files that contain the template 
+for how Explorer is supposed to look when viewed as a web page. 
+Amox reports that there is a good deal of documentation in these  
+files, so no exact step-by-step guide was passed on.  He also says 
+that there are two files, wvleft.mbp and wvline.gif, that are the 
+graphics for the left panel and menubar line, respectively.  Change 
+these to whatever you like...
+
+Like I said, I haven't been able to test this.  If anyone has a  
+step-by-step guide for this that they want to share, send it along. 
+Credit and kudos go to Amox!!
+
+****************************************************************** 
+ICQRevenge Trojan Update 
+wh0re <wh0re@SoftHome.net> 
+Below i have included what Yruno wrote about this trojan. I read about 
+something that sounds related on some security site. It said that lots 
+and lots of boxes (in the thousands) were continuously  
+downloading/requesting files from certain websites. Of course this is  
+sucking the hell out of their bandwidth, and slowing geocities  
+wayyyyyy down. It was believed that people were downloading trojans  
+that continuously requested/downloaded certain files. Just thought i  
+would let ya know!  
+P.S. I wouldn't mind a strip poker game with Jenny McArthy either!!!!
+
+-wh0re 
+________________________________________________________________ 
+From: <yruno2@usa.net> 
+
+Hi again Carolyn, 
+
+Seems I have stumbled upon another almost identical trojan horse like 
+the icqrevenge I wrote about before.  I don't know a lot about this  
+one yet, and it is still active.  The file is called jm-poker.zip,  
+called "Jenny McCarthy strip-poker" (a friend got it, not me... I  
+swear!) The program file which is installed is called OCE.EXE.  This  
+one also connects to the irc, and logs you into a channel, and it is  
+a bit more sophisticated than icqrevenge (although written in VB).   
+It also downloads files from a geocities account, which I haven't  
+determined what their use is yet. 
+
+Anyway, wanted to give a heads-up, and warn you users in case they  
+were looking to play some poker with Jenny one time, they probably  
+have this running on their machine, and are vulnerable to snooping.   
+I would assume this one also installs in the auto-run section of the  
+registry, so search for oce.exe and delete the key. 
+
+I'll send more info as soon as I dig it out. 
+
+YRUno2 
+
+**Editor's Comments:  Sheesh, where do you guys come up with your 
+nick's??  Anyway, on the subject of trojans...anytime you are  
+running just ANY program you get off of the Internet, you are  
+vulnerable to this.  A company in Australia scanned some ISPs down 
+there and found over 1400 running copies of BO!!  And that's only 
+the ones that weren't reconfigured to run on something other than the 
+default port.  So what do you do?  Well, don't run arbitrary programs 
+that you get on the Net.  Some of the more popular ways of getting 
+users to execute these programs the first time are to either rename 
+the file to something "kewl" ("hotbabes.exe", "naked.exe") or to 
+attach it to another program, such as any of these animation .exes 
+you see around Christmas time.
+
+****************************************************************** 
+Adding Features To Your Windows Box...FOR FREE
+
+A lot of folks (users, newbies, sysadmins, etc) don't  
+realize how easy it is to add features to their Win95/98/NT 
+boxen.  And it is very, very easy...it's only limited by  
+your imagination.
+
+What I've included below is a list of sites that provide 
+the means of adding features to your system...FOR FREE. 
+I was able to gather this list in a matter of minutes, and 
+it is by no means complete...but it is enough to show you 
+that there are a lot of available resources.
+
+My particular favorite is Perl for Win32.  It's great... 
+flexible, easy to use, and free.  Don't know how to program? 
+No problem...there are lots of tutorials available?  Don't 
+have any money?  No problem...it's free.  What can you do 
+with it?  A LOT!!  Not only can you write Perl and CGI scripts, 
+but you can write scripts that use any of the command line tools 
+on your system...nbtstat.exe, net.exe, etc.  You can write port 
+scanning tools that look for and catalog hosts that have 
+NetBus loaded, and you can write an NT service (yes, a 
+"service"...you can use a Resource Kit utility to install any 
+script as a service) that makes your system look like it's 
+running NetBus, but logs the IP of the user who is trying to 
+connect.  You can even write your own finger server!  Further, 
+ActiveState's Perl has a tool for creating an executable out of 
+your script.  Incidently, this is also true for Python, which has 
+a "freeze" utility for creating executables that you can share 
+with your friends!
+
+My second favorite is Java.  Now, you've probably heard folks 
+say that Java is lame...but check the classified ads of a paper 
+in a large city, or any employment web site.  Do a search on 
+all companies that want Java developers.  Java is free, too, 
+and you can use it to write applets for web pages, or  
+applications (applications don't use a browser).  Want to 
+write your own email tool or encrypted chat program?  It's 
+easy to do in Java...
+
+I've also included links for a free (GNU) C compiler, Lisp, 
+and a couple of interesting alternative operating systems. 
+Lisp is a programming language that is used in artificial 
+intelligence research and implementation.  I've played with 
+Inferno...it installs right alongside NT, and it's a lot of 
+fun to play with.  The Cygnus C compiler provides a nice  
+bash shell, so you can learn bash shell programming without 
+having to have Linux installed on your system. 
+
+If you're interested in other programming languages, such as 
+Ada or Prolog, start at the Yahoo web site, choose the 
+Computers and Internet section, and then the Programming  
+Languages subsection.  
+
+This is a list of sites that offer the ability to add a  
+wide variety of features to your system...servers, clients, 
+scripting and programming languages, etc.
+
+Microsoft Stuff 
+http://www.microsoft.com/NTServer/nts/exec/vendors/freeshare 
+/default.asp
+
+Other Software 
+http://tucows.hrfn.net/windownt.html
+
+Unix environment 
+http://www.research.att.com/sw/tools/uwin/
+
+C/C++ 
+http://sourceware.cygnus.com/cygwin/
+
+Perl 
+http://www.perl.com 
+http://www.activestate.com 
+http://www.netaxs.com/~joc/perlwin32.html
+
+Java 
+http://www.javasoft.com
+
+Python 
+http://www.python.org/ 
+http://www.python.org/windows/
+
+TCL\Tk 
+http://zazu.maxwell.syr.edu/nt-tcl/
+
+Windows Scripting 
+http://msdn.microsoft.com/scripting/
+
+LISP 
+http://www.harlequin.com/products/ads/lisp/ 
+http://www.pcai.com/pcai/New_Home_Page/ai_info/pcai_lisp.html
+
+For those with nerves of steel... 
+Alternative Operating Systems 
+Freedows '98 - http://www.freedows.net/english/index.html 
+Inferno - http://www.lucent-inferno.com/ 
+  (NOTE:  Uses the Limbo programming language) 
+Plan 9 - http://www.ecf.toronto.edu/plan9/ 
+         http://plan9.bell-labs.com/plan9/ 
+  (NOTE:  Runs on x86 systems, where x > 2)
+
+****************************************************************** 
+Editor's Note:  Okay, cherished readers, there's a new editor 
+on the block!  And I would just like to ask you for your help, 
+so that we may help you better.  Many of the emails I receive 
+are just plain unclear...there isn't enough information in  
+the email to answer the question.  Given the volume of email, 
+it's always possible that one or two will slip through the  
+cracks.  So here's some tips that will help us help you:
+
+1.  Be clear.  Tell us what you want.   
+2.  Give enough back ground information to help...what operating 
+system, application, or command you were using.  The more detail 
+the better...as long as the detail pertains to the question. 
+3.  Stay away from 'lee7 skript...it's too difficult to understand. 
+4.  Try to use complete sentences and grammar.  The easier it is 
+for us to understand you, the quicker we can address your concerns. 
+5.  Spelling...'nuff said!
+
+If anyone has any ideas for a topic for the Digest or even a Guide, 
+send it along.  Credit will be given, of course...the majority of  
+the Digest will always come from the readers.  Every now and again, 
+expect me to add comments, or little sections on things I have been 
+working on.   
+__________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, Gerry Mullins <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <hacker@teechbroker.com>; Hacker Wargame Director, 
+Mark Schmitz <wizard@rt66.com>; Wargame Sysadmin, Satori <Satori@rt66.com>; 
+Grand Pooh-bah: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!

@@ -1,0 +1,449 @@
+Jan. 15, 1999 
+Windows version 
+===================================================================== 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+Preview our new Web site at http://www.happyhacker.org/test 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+Opening Comments 
+URLs 
+Helping You Help Yourself 
+Update to Alternative OSs 
+Cover Your Tracks in Netscape 
+Port Scanning Revisited 
+IP Spoofing Revisited 
+Win95 hacking and nbtstat 
+ASM Programming
+
+****************************************************************** 
+Opening Comments
+
+Okay, the second edition of the HHD with Keydet89 at the reigns 
+is out!  Following the release of the first edition, I got a lot 
+of emails, and I am sorry that they can't all be posted here.
+
+****************************************************************** 
+URLs
+
+Read RFC1739: A Primer On Internet and TCP/IP Tools 
+http://www.internic.net/help/domain/rfc1739.txt
+
+Hacker Texts 
+http://www.genocide2600.com/~tattooman/hacking-textfiles/
+
+USN CIDER Project 
+http://www.nswc.navy.mil/ISSEC/CID/ 
+**Check out the "Coordinated Attacks and Probes" paper
+
+****************************************************************** 
+Helping You Help Yourself
+
+Everyday, I get emails asking for help in all sorts of areas.  Many 
+times, I don't know the answer, and I will say so.  Sometimes, I or 
+someone else has already answered that question in a Guide or Digest, 
+so I suggest that the person review the text.  I try to direct someone 
+to the answer if I don't know it.  But I like to observe a quote from 
+the Bible that says "if you give a man fish, you feed him for a day; 
+if you teach a man to fish, you feed him for a lifetime."  So I 
+thought I would take a minute to show you how to help yourself...
+
+The key to helping yourself is to gain knowledge...in fact, that's 
+what REAL hacking is all about...just go to the library and get a 
+copy of Steven Levy's "Hackers".  In fact, the library is an excellent 
+source of information.  My local library, for instance, not only 
+has books on Unix and Windows OSs, but it's also where I got my first 
+look at "Learning Perl on Win32" from O'Rielly and Assoc.
+
+If you have a more detailed question, and can't find the answer in 
+one of the books in the library, check out some online sites.  For 
+example, you'd be surprised at what you can find at the Microsoft 
+Support Site (http://support.microsoft.com) and their Security 
+Site (http://www.microsoft.com/security).  In fact, any time you 
+have a problem with software or hardware, check out the manufacturer's 
+web site first.
+
+If you still can't find what you're looking for, go to DejaNews 
+(http://www.dejanews.com) and do a search.  DejaNews searches the 
+newsgroups for you.
+
+If your question is about how to do something in Linux (and believe 
+me, I get a lot of Linux questions, even though I am the Windows 
+editor!!), check out the Linux Documentation Project at:
+
+http://metalab.unc.edu/LDP/ldp.html
+
+This site has links to HOWTO documents, which will explain how to 
+do just about anything you would like to do in Linux.
+
+The Yahoo site has excellent links to software for operating 
+systems, and tutorials for programming languages.  Many times, if 
+you just post your question to a newsgroup, it will be ignored at 
+best, or mercilously flamed at worst.  Why?  Well, did you check and 
+see that that very same question had been asked and answered 5 times 
+a day for the past month?
+
+The key to "hacking" has nothing to do with breaking into computers. 
+The key is to learn...and in doing so, learn to help yourself.
+
+****************************************************************** 
+Update to Alternative OSs 
+I received an update from an attentive reader... 
+"Luka Grah, Gimnazija Kranj" <luka@s-gim.kr.edus.si> 
+Go to:  http://www.qnx.com/iat/index.html  to learn more about 
+the QNX Internet Appliance Toolkit.  The IAT is a complete system 
+on a disk...for either modem or network connections.  I haven't 
+tried it, but it looks promising!  Thanks, Luka!
+
+Here's another one I've been watching...it's not Windows...it's 
+Linux.  But it's worth a look anyway...http://www.trinux.org. 
+Read about it...it looks interesting...
+
+****************************************************************** 
+Cover Your Tracks in Netscape 
+**NOTE:  I did not test this one... 
+This one was submitted by Per Haglund <p.i.haglund@lse.ac.uk> 
+n the last Happy Hacker digest (Jan. 7th) there is a section submitted 
+by Kalanga Joffres that describes how you delete entries from the 
+Netscape 4.x history list (and IE 4.x). Good enough, but there are at 
+least three more places in Netscape that show where you have surfed:
+
+The disk cache: In users/username/Cache copies of pages, images and 
+sometimes java-applets are stored. Delete them manually or in netscape: 
+Edit --> Preferences --> + advanced --> Clear disk cache.
+
+The cookies file: If you accept cookies without warnings then you can 
+either edit away unwanted entries (users/username/cookies.txt) despite 
+what 
+the comments in the file say as long as you only remove complete parts 
+(starting with an url and ending with some numbers, followed by the 
+next url), or, for future protection from snooping, turn off cookies 
+in netscape: Edit --> Preferences --> Advanced --> disable cookies
+
+The typed-url history: When you type an url in the location field, 
+Netscape will store the url so that you can select it from the 
+pull-down menu on the side of the location field. You can remove 
+entries from this "mini-history" by opening the file users/username 
+/prefs.js (right click and choose edit) and removing lines that look 
+like this:
+
+user_pref("browser.url_history.URL_5", "www.rivazone.com/");
+
+If you are not familiar with Javascript please note that you have to 
+remove the semi-colon at the end (not sure what happens otherwise, 
+but it probably won't work). Just remove the entire line that contains 
+the url you don't want others to see.
+
+Editor's Comment:  Hey, reader submissions are always appreciated!! 
+As long as everyone else's input is treated with respect, you'll see 
+more of it.  Because of the mass of email, not everything can be 
+checked and verified...I would like to ask that from now on, if you 
+have an update or different technique, put it on a web page and 
+email me the URL.  It's much easier to include in the Digest.
+
+****************************************************************** 
+Port Scanning Revisited 
+Alert reader Dave Garn <dgarn@osf1.gmu.edu> asked that we address 
+the issue of some of the things you will see while port scanning. 
+I thought that I could cover that here...see if maybe I could address 
+the issue satisfactorily.  Here goes...
+
+For the most part, straight port scanning takes advantage of the 
+3-stage TCP handshake to determine what ports, if any, are open on 
+the remote machine.  Ports allow the various clients to communicate 
+with the server...without the various ports, you'd only be able to 
+telnet or ftp or send email to a server.  Using ports, you can do 
+all these things, and more!  See the next section for a link to 
+the Assigned Ports RFC (RFC = Request For Comments).
+
+Now, what will you see?  Well, it all depends.  If you use telnet 
+and connect to an IP address using the default port (port 23), 
+and see a lot of information, you might have stumbled across a 
+router or switch without a password!!  So what do you do?  Find the 
+email address of the sysadmin and send him an email via the 
+Anonymizer!!
+
+What else will you see?  Again...depends.  What IP and port are 
+you looking at?  What tools are you using?  Telnet?  Netcat? 
+A port scanner?  Several of the available service issue a banner 
+when you connect to them...ports like 21 (FTP), 25 (SMTP), and 
+110 (POP3).  If you telnet to these ports, then the first thing 
+you will see is the banner for this service.
+
+Now, here I have to point something out...telnetting to a port 
+only works if there is an active service on that port.  There is 
+nothing that says that all servers must have telnet and mail 
+servers running.  On top of that...95/98/NT don't ship with 
+telnet servers...so unless one is installed, you generally won't 
+be able to connect to the server.  But if you think about, you 
+can use this piece of information to help you determine what 
+operating system is running on the remote machine.  For example, 
+a host with port 23 (Telnet) active likely isn't NT.  Now, 
+this technique isn't always accurate, but it's a way to get 
+started.
+
+****************************************************************** 
+Ports Revisited 
+"Arran Pearce" <arran_p@hotmail.com> wanted a little explanation 
+that follows right along with the previous topic, with regards to 
+what ports on a server do what.
+
+Well, the place to look is RFC1700: Assigned Numbers.  A quick 
+search on Lycos found a copy at:
+
+http://andrew2.andrew.cmu.edu/rfc/rfc1700.html
+
+Basically, the idea is this...ports between 1 and 1024 are 
+referred to as "well-known"...everyone on the Internet uses the 
+same port for the same service.  SMTP always runs on port 25, 
+etc.  Of course, we aren't going to get into esoteric discussions 
+about proxy servers and redirecting ports...let's just keep it 
+simple for the time being.  Ports over 1024 are client ports...when 
+your browser, for instance, wants to make a connection to a 
+web site on port 80, it has to open up a port locally for 
+communications, as well, so it chooses a random port above 
+1024.
+
+A reader asked about "screwy" stuff...well, keep an eye on TCP 
+port 12345, and UDP port 31337...these are the default ports for 
+NetBus and BO, respectively.  As far as telnetting to ports and 
+seeing something you don't recognize...well, be careful.  You 
+don't want to accidently cause damage, and have your IP "finger- 
+prints" all over the place!!
+
+****************************************************************** 
+IP Spoofing Revisited 
+Reader Francesco Frentrop <frentrop@car.nl> dropped me an email, 
+asking that I address IP Spoofing...particularly via a Win95 
+box and dial-up ISP account.
+
+Let me start by saying that there is a misconception about subjects 
+such as spoofing and "hacking" in general, particularly amongst the 
+newer users.  One has to be careful where they mix and match terms 
+because they can cause a lot of confusion.  In this case, I think 
+that Francesco _meant_ to ask how he could hide or mask his IP 
+address, but what he _said_ was spoofing.
+
+Before I get into the explanation, let me say that there are some 
+excellent texts located at the URL posted above.  Go to the URL 
+and look for "tcpspoof.txt".  This one was written by the Secure 
+Networks guys (before they were bought by NAI).  Also look for 
+"sequence_attacks.txt" and "shimomur.txt".
+
+If you've ever been on alt.hacker or alt.hacking, you'll see several 
+posts a day..."I have 95..how can I spoof my IP".  But to understand 
+why you can't do this, you need to understand something about TCP/IP 
+and routing.  You see, as packets travel across the Internet, the 
+header information contains both the source and destination IP 
+addresses...the packet needs to know where to go, and it needs to 
+tell the remote box where to send responses.  Now, the term 
+"spoofing" is used to refer to changing your IP address, or the 
+source IP address of the packets, so that you can look like 
+someone else to the remote machine.  Well, there are attacks that 
+use this technique, but they are very, very sophisticated...they 
+involve sequence number prediction, etc.  These types of attacks 
+are generally run from Unix or Linux boxes, because the operating 
+systems allow you to have very detailed control over the creation 
+of IP packets...if you know how.  This is how the SYN Flood attack 
+works...the attack that brought down Panix a while back.  The 
+attacker sent thousands of TCP SYN packets to the server a second. 
+These packets attempt to initiate a session with the server...so 
+the server has to allot some resources to the request, and then 
+go about trying to respond to the requesting station.  But it 
+can't find that station, because the destination IP address 
+has been "spoofed"...so as the requests come in, more and more 
+resources (memory, etc) are alloted, until the server runs out of 
+resources for anything else.
+
+Now, assuming that you _could_ spoof your IP address, let's 
+examine what would happen.  You want to contact a remote machine 
+and you want to hide "who" you are.  Okay, fine.  So you "create" 
+a packet, but the destination IP address is not the same as the 
+one for your computer.  So when the remote machine receives the 
+response, it tries to reply to the destination IP address...but 
+even if it does find the address, it's not YOUR address.  So you 
+can send packets, but not get anything back...well, not without 
+a lot of other work...so what good is that.
+
+Now that brings up the issue of masking your IP address...which 
+is not the same as spoofing.  Masking your IP address is simply 
+using another facility, such as a proxy or a shell account, to 
+make the target machine think that you are coming from the 
+proxy.  Here's how it works:
+
+You have a browser configured to access a web proxy.  You send a 
+request for a web page, and the proxy services it...the proxy 
+sends the request to the target.  Now, the target sees a request 
+coming from the proxy...which has a different IP address than 
+yours.  The proxy then forwards the response to you...
+
+Step 1.  Issuing the request.
+
+[u.u.u.u]  -->  [p.p.p.p] 
+  You             Proxy
+
+Step 2.  The proxy forwards the request.
+
+             [p.p.p.p]  -->  [t.t.t.t] 
+               Proxy           Target
+
+**To the target, the request is coming from IP "p.p.p.p"
+
+Step 3.  The response is sent to the Proxy
+
+             [p.p.p.p]  <--  [t.t.t.t] 
+               Proxy           Target
+
+Step 4.  You get the response from the Proxy.
+
+[u.u.u.u]  <--  [p.p.p.p] 
+  You             Proxy 
+ 
+
+Now, the same is true when you use telnet and a shell account or 
+two.  You mask the IP address of the computer you are sitting at 
+by telnetting to one or more shell accounts and then telnetting to 
+the final target.  This uses the same principle as was described 
+above.
+
+****************************************************************** 
+Win95 hacking and nbtstat
+
+To this day, I still get many emails a week asking about accessing 
+Win95 machines via the Internet, and the two biggest questions I 
+get are:
+
+1.  "I try to run nbtstat, and I get an error about 'could not 
+access NBT 1 driver' or something to that effect".
+
+2.  "Tell me why I get 'host not found'".
+
+Let me take a minute to address those two...but first, let me point 
+you at the Guide that I wrote on this subject:
+
+http://patriot.net/~carvdawg/win95.txt
+
+This is the latest version...it even includes references to info 
+from Micro$oft.  Now, to answer the first question...you need to 
+install NetBEUI.  The vulnerability that this technique takes 
+advantage of is the fact that a default installation of NT or 95/98 
+tells NetBIOS to use TCP/IP...making non-routable NetBIOS accessable 
+via the Internet.
+
+I briefly touched on the second topic in the Guide, but let me try 
+again...first, the purpose of using nbtstat is only to (a) get the 
+NetBIOS name of the remote computer, and (b) see if file sharing is 
+enabled.  Now, if you are having trouble with nbtstat, try calling 
+your friend.  Or, read the PGP Guide at:
+
+http://patriot.net/~carvdawg/pgpguide.txt
+
+...and pass the information back and forth encrypted.
+
+Now, if you get 'host not found', there could be any number of 
+reasons for this.  Nbtstat uses UDP...'user datagram protocol'... 
+which is an unreliable protocol.  Unlike TCP, there is nothing in 
+the protocol that guarantees receipt of or response to the message. 
+So if traffic is heavy on the 'Net, then you might not get a 
+response before the timeout, so the app will respond with "Host Not 
+Found".  Further, your buddy might not be logged on at the IP address 
+that you have, or there could be a firewall blocking UDP between 
+the two of you.
+
+****************************************************************** 
+ASM Programming
+
+I got two emails regarding ASM programming, and I am going to post 
+the contents here...but please understand, I haven't tried any of 
+the links, nor have I tried any coding...but for everyone interested, 
+here they are:
+
+>From Weazel (weazel_@gmx.net): 
+Perl for Win32 is perhaps OK and Java will be better soon (i think) but 
+nothing beats old Assembler. Now you think that I'm a stupid cracker 
+writing my patches in 8086 DOS-assembler, but that's not correct. OK, I 
+know how to crack, but that's my work (I'm a protectionist). But 
+assembler is still alive. Now with the true 32-bit power! And it's not 
+difficult at all! You don't have to care about interrupts, or anything 
+about old DOS... I've done a lot of programming in Delphi and the 
+difference between Delphi (or C++) and Win32 Assembler is not that big! 
+And it's FREE too! The best advantage with Assembler is the size of the 
+EXE... Minimum 4 kb, but a normal util won't be bigger than 8-16 kb!!! 
+Try to beat that with your overbloated language!
+
+Where to start? Try to find Microsoft Assembler (MASM). However, I 
+rather use Turbo Assembler, but it's not very cheap. I don't want to 
+tell you where to find it, but you will probably do so if you really 
+want it.
+
+Some URLs: 
+    _Masta_'s tutorials (can be find on my webpage, 
+http://fly.to/weazel (click on misc) 
+    Iczelion's Win32 Assembly Homepage, http://members.xoom.com/iczel 
+    Fungus (temporary closed?), http://win32asm.home.ml.org 
+    And you can find a lot of tutors on the cracking pages. 
+http://cracking.home.ml.org or http://www.fravia.org 
+    Download MASM v2 http://members.xoom.com/Iczel/files/masm32v2.zip 
+    Win95Asm, http://www.eskimo.com/~htak/win95asm/win95asm.htm 
+ 
+
+>From PBBSER:
+
+For free windows utilities I have a few to add to the list.
+
+Microsoft has MASM 6.1 in the windows98 ddk.  I don't know if the 
+install will work on win95 but I know MASM 6.1 does, in fact it only 
+requires DOS 6.0 (I think). 
+---> www.microsoft.com <--- 
+---> http://www.microsoft.com/hwdev/ddk/ <---
+
+NASM - Netwide Assembler.  With source and mult-platform-compatable 
+---> http://www.cryogen.com/Nasm <---
+
+Simantel Archives 
+---> ftp://oak.oakland.edu/pub/simtelnet/msdos/asmutl/ <---
+
+ASM Edit 
+---> ftp://ftp.cdrom.com/pub/demos/code/editors/asmedit8.zip <---
+
+W32DASM - Windows Dis-Assembler 
+---> http://www.expage.com/page/w32dasm <---
+
+ASMVISEDIT (by me!) - A windows assembly editor made in vb, isn't that 
+weird.  CAN access windows clipboard unlike Asm Edit. 
+---> http://legionoot.hypermart.net/ <---
+
+Contributed by PBBSER from the LegionOOT 
+(http://legionoot.hypermart.net) 
+Email: gold100@erols.com, security@angelfire.com 
+Some links found at Paul's ASM page.
+
+**Editor's Note:  Two things...first, if you have a problem with 
+any of the links, or have a question, please send it to the 
+individual.  All I did was cut-n-paste their email.  Second, 
+Puh-lease do NOT inundate me with emails about ASM!!  A couple are 
+fine, but if you have something to contribute, put it on the web and 
+send me the URL.  Thanks. 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <hacker@teechbroker.com>; Hacker Wargame Director, 
+Mark Schmitz <wizard@rt66.com>; Wargame Sysadmin, Satori <Satori@rt66.com>; 
+Grand Pooh-bah: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
