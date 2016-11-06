@@ -1,0 +1,101 @@
+Inside Happy Hacker, Oct. 12, 1999 
+_______________________________________________________________________
+
+Table of Contents
+
+* Where the heck have we been? 
+* Call for editors 
+* The Stephen Glass Syndrome (reporters who write hacker stories  
+  that they know are false) 
+* New York Times Exposes Smear Campaign against Vranesevich
+
+
+
+ *** Where the heck have we been? 
+_______________________________________________________________________
+Yes, we’re still alive!  Sorry for the long time not sending out mailings.  If you visit our web site from time to time, you’ll see new features.  
+Check it out!
+
+I (Carolyn Meinel) have been busy working on our Hacker Wargame.  People  who were persistent discovered three new computers on the Wargame in August  and September.  No one got root, but I did preserve all files on  meyer.happyhacker.org, an OpenBSD server.  When I put it back up (probably  next week), the folks who figured out the ridiculous guest password and the  few who got into guest2 using find and grep can get back into the game.
+
+In general, the concept of the wargame is to figure out what is happening  there yourself.  If you have to ask me what computers are there and how to  break in, you aren’t ready yet to play the game.  See the Happy Hacker  bookstore (http://happyhacker.org/bookstore/index.shtml) for computer manuals that  will help get you up to speed, and read out Guides and Digests.  Don’t email  me with questions!  I have reached email meltdown and mostly just delete  everything nowadays.
+
+I’ve also been working on a shell account server,  
+http://shells.techbroker.com.  I had it on the Wargame for almost two months  with two easy to crack accounts (one was user name test, password test).  The Tg0d gang got inside and was messing around and not getting root.  That  made me feel good about the security, which was created by Satori and B-lips.  When it goes back up online in a few days, check it out for instructions on  how to set up a home Windows 95/98 LAN and set up an Internet gateway so all  your computers can access the Internet simultaneously through just one modem. 
+
+We will be selling shell accounts on it with tech support for people who want  the power of a T1 for learning how to hack, and as a platform for competing  in our Hacker Wargame.  Of course we will not allow shells.techbroker.com to  be used as a platform to commit crime.
+
+Each Tuesday http://antionline.com posts a new “tip of the week” of mine. If you want to find out how to get online with Linux really easily, even  easier than Windows, check out the tip archives.  In a nutshell, the answer  is, make sure your modem isn’t a Winmodem, and install Caldera Linux  (http://www.caldera.com). You can get an outstanding book on how to use  Caldera at the Happy Hacker bookstore, http://happyhacker.org/bookstore/index.shtml.
+
+Also, I’ve been working on my next book, “Uberhacker: How to Break into  Computers.”  It will tell how to create Linux and WinNT attack computers,  how to set up OpenBSD and Linux bastion computers, and how to set up a home  hacker laboratory with many operating systems - cheaply!  As usual, I have to test everything.  This keeps me rather busy.  Not only that, in order to be helpful to you who will read the book, I try everything on many different  computers with many different operating systems, and do half a dozen  installations of each operating system on several different hardware  configurations. 
+
+I’ve finished working with Red Hat Linux.  Right now I am experimenting with  SuSE Linux (http://www.suse.de), which comes with a totally awesome 5 gigs  worth of programs, including many of great interest to hackers, such as nmap  and SAINT.  I’m also still playing with Caldera, which is easier to install  than Windows 98.  Next on my list are Debian Linux (http://www.debian.org)  and Solaris (http://www.sun.com).
+
+
+
+ *** Call for Editors 
+We lost our Windows Digest editor Keydet89 because he objected to John  Vranesevich donating his listserv services to us.  Keydet89 had several angry  conversations with me in which he made it clear that he believes the  allegations made against Vranesevich by Brian Martin’s hacker gang, as seen  at http://attrition.org.  Our Unix editor also quit.  As you saw in his last  Digest, he was angry at Vranesevich for pointing out to Harvard University  that the Packetstorm web site they were hosting contained a photo of his kid  sister, her home address, and incitements to harm her.  Yes, I saw that  material myself.  Harvard immediately took down the site, and made a statement  
+to the media that the reason was attacks on an individual and pornography. Please give the Harvard administration credit for being decent human beings,  folks.  I have no desire to work with anyone who would hate Vranesevich for  protecting his kid sister. 
+
+I apologize to you who have subscribed to this mail list for not having done  a better job of evaluating the character of the people who have been our  editors.  I was looking foremost for technical talent.  I failed to adequately consider the issue of values. 
+
+If anyone would like to take over the jobs of Windows editor and Unix editor,  please phone me at 505-281-9675.  This time around I will make sure that  anyone who does volunteer work for us agrees that decent human beings have a  duty to defend children against net criminals, and who have common sense.  I mean, get real.   Attrition.org carries instructions for how to shoplift  without getting caught and advocates murder, burglary, perjury and computer  crime.  Common sense alone should tell anyone that its proprietors must also  lie like rugs.
+
+If you applied before, please consider doing so again.  I apologize in advance  for not choosing you, OK?
+
+These jobs pay nothing except the sense of satisfaction of helping people  to learn about computers.  If you take the job, you will have to put up  with people from Brian Martin’s Attrition.org emailing and phoning you  with fanciful, malicious stories.  If you do a good enough job, it is possible  that computer criminals will persuade their stable of credulous or unethical  reporters (Polly Sprenger of Wired, Lew Koch of Cyberwire Dispatch, and Adam  Penenberg of Forbes) into writing false and malicious stories about you, just  as they have about Vranesevich. 
+
+
+
+ *** The Stephen Glass Syndrome 
+See Penenberg was elevated to a senior editor of Forbes on the basis of his article  "Lies, damn lies and fiction" in Forbes Digital Tool (May 11, 1998).   This broke  the story behind "Hacker Heaven," an article in the New Republic by Stephen Glass.  Unfortunately the Forbes web site no longer carries Penenberg’s article. However, the Columbia Journalism Review has an excellent story on the Glass hacker hoax at  
+http://www.cjr.org/year/98/4/glass.asp.  Following is an excerpt:
+
+How a Writer Fooled His Readers
+
+by Ann Reilly Dowd 
+Dowd, a free-lancer, is former Washington bureau chief of Money  and Fortune
+
+"We're going to Bethesda," Charles Lane, the editor of The New Republic, told  Stephen Glass, the writer of a May 18 story, "Hack Heaven," that was being  called factually challenged by reporters over at Forbes Digital Tool, the  Forbes magazine Web site. And in Bethesda, Maryland, at the building where  Glass had supposedly covered a computer-hackers' convention, Lane says his  twenty-five-year-old star gave "the most detailed step-by-step account" of  where he had sat, and with whom he had spoken. 
+
+It was only when Lane reminded him that the building's log and security videos  would show who was actually there that day that Glass broke down and sobbed.  Yes, he confessed, he had made up the conference. In truth, Lane says, the  entire article had been created "out of whole cloth." So, it turns out, were  others.
+
+Stephen Glass was a bright, prolific writer and prodigious reporter. He had a  likable demeanor, an eye for detail, and an ear for language. He also had a  fatal flaw -- a stunning lack of integrity...
+
+How was it possible that editors and checkers, who make their living as  professional skeptics, got so snookered? When did it begin, and why?…
+
+Glass gamed the system, and brilliantly. He'd often submit stories late to the  checkers so they were pressed for time. When they questioned his material,  Lane says, Glass would provide forged faxes on fake letterheads of phony  organizations, as well as fictitious notes, even voice mail or actual calls  from people pretending to be sources…
+
+
+
+ ***  New York Times Exposes Smear Campaign against Vranesevich 
+_______________________________________________________________________ 
+Just in case you are wondering whether the stories Sprenger, Koch, and Penenberg  have written about Vranesevich could possibly have any substance, please read  a recent article in the New York Times about him.  Reporter Matt Richtel  actually interviewed the people involved instead of writing stories manufactured  by Brian Martin and his imaginative crew at Attrition.org.   Following are some  highlights of Richtel’s report:
+
+http://www.nytimes.com/library/tech/99/10/cyber/articles/08hackers.html
+
+...The new Vranesevich started to help government officials find people accused  of malicious hacking. He said he turned over information to the FBI that led  it to raid the home of a hacker named Brian Martin in connection with an attack  on The New York Times' Web site in September 1998. 
+
+...Martin, who admits to some malicious hacking in his past but says he has been  an above-board security consultant for years, is a member of Attrition.org, a  hacker group that has spearheaded an effort to discredit Vranesevich. …The group  also says that Vranesevich paid a hacker to break into the Web site of the  United States Senate so that AntiOnline could be the first to report it -- an  accusation Vranesevich denies...
+
+Special Agent Jim Margolin of the FBI said the agency does not comment on whether  it has investigated someone in the past. "But we continue to consult with Mr.  Vranesevich, and that should say something about our assessment of his bona  fides," he said. 
+
+... his site continues to grow... Vranesevich runs it out of a rented three-room  office space in Beaver, and said it gets "hundreds of thousands" of visitors  each month. He has one full-time employee, paid and unpaid freelancers, and  eight informers who keep him up to date on hacker activity. 
+
+Among the site's users are research firms who are putting faith in Vranesevich  to help them understand computer security. For example, he is working with  Klein Associates, a consulting firm near Dayton Ohio, that advises companies  on decision-making techniques… 
+
+So, folks, there you have it.  A respected reporter (Matt Richtel) from the  world’s most prestigious newspaper (The New York Times) actually researched  his article.  He actually talked to the FBI instead of (as did Sprenger,  Koch and Penenberg) trying to trick people into believing a malicious story  about an FBI investigation concocted by criminal hacker suspect Martin.  I  can hardly believe that Penenberg - who exposed Stephen Glass -- would risk  losing his career by going along with Martin’s scheme to smear Vranesevich. 
+
+Could it possibly have something to do with the book Penenberg told me he is  writing about hackers?  Could he and the other two reporters who have written  stories invented by Martin possibly be vying to get exclusive rights to the  story of the hacking spree of Hacking for Girliez/Loan Gunmen?  Nah, I’m  probably just paranoid.
+
+Well, it’s time to sign off and get back to playing with SuSE Linux.  I’m  building a new Hacker Wargame box with SuSE,lady.happyhacker.org.  Meanwhile, Vranesevich is working on raising funding to pay someone to administer the  Hacker Wargame full time so we can teach you serious computer security  techniques in a fun environment.  I feel honored to know Vranesevich, and look  forward to the day when the people running the smear campaign against him  suffer the fate of Stephen Glass.  
+
+Oh, in case you were wondering, Glass has been studying to be a lawyer. 
+_______________________________________________________________________ 
+This is a list devoted to *legal* hacking! If anyone plans to use any  
+information in this Digest or at our Web site to commit crime, go away!   We like to put computer criminals behind bars where they belong!
+
+Hacker Wargame Director, Vincent Larsen <vincent@sage-inc.com>; 
+Clown Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization
