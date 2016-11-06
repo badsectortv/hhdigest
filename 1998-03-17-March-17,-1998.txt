@@ -1,0 +1,295 @@
+March 17, 1998
+
+=====================================================================
+URL of the week:
+(http://www.zdnet.com/products/content/articles/199803/king.hill/index.html) 
+See back issues if the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://www.Happyhacker.org.
+Super Swedish Happy Hacker site: http://w1.340.telia.com/~u34002171/hhd.html.
+Coming soon: Spanish translations of the Digests!
+GTMHH en espanol: http://underhack.islatortuga.com
+=====================================================================
+
+Table of Contents:
+
+* Get the Happy Hacker Book -- in a REALLY *F*U*N way
+* Ziff Davis breaks the WarGame story
+* Hoaxes - The Follow Up
+* Digest Q-
+
+~*~*~~*~*~*~*~*~*~*~~*~*~*~*~*~*~*~*
+Get the Happy Hacker Book -- in a REALLY *F*U*N way
+by RJ
+
+Carolyn's newest book, "The Happy Hacker" is now available for release in
+the US, Canada and Mexico. You could just order it (yawn) the way everybody
+else in the world will. OR, you could be a part of a totally legal, and
+rather cool way of ordering it.
+
+Anyone who knows me knows that my book "External Threats to Computer
+Security In a Networked Environment" (available in the bookstore at
+www.infowar.com) talks in depth about banks and bank security. Well, part
+of my research identified a little known method of getting money out of just
+about any bank account. (Smile) Wanna see how? Well, as an example of just
+how easy it is to use bank systems from the outside to draft money out of an
+account, I'll let you order your copy of the book in that manner! AND, as
+an added bonus, I'll have your bank send you the details as to how I did it
+in your next statement. (I'm assuming you get a full statement and
+documents. Of course, what self-respecting hacker WOULDN'T get his full
+statement and docs, right?!)
+
+HERE's HOW -
+
+Email me at rjg@techbroker.com with BOOK ORDER as the subject. In the body
+of the message provide me with two things -- 
+
+1. Your name and shipping address 
+2. The two sets of numbers on the bottom of your check. 
+These are the bank ABA number and your account number.
+
+No big deal here because you give everybody this same info whenever you
+write a check. Here's where it gets fun -- I'll draft your account for
+$34.95 and have Carolyn send you an **autographed** copy of the book! When
+your next bank statement arrives, you'll see how it was done. Let me
+emphasize that, so long as we're dealing with you and your account - there
+is nothing illegal being done here. It's just a fun way to order. And for
+the "super cautious" among you, I promise not to draft more than the $34.95
+for the book. Hey, if I was going to use what I know about banks to get
+money illegally, I wouldn't be messing around with your account anyway; I'd
+be tapping into the secret account the IRS uses to process tax payments
+nationwide! ;-)
+
+YOU CAN GO TO JAIL WARNING!!! If you decide to send me wrong information,
+you will be breaking several, Federal laws. For this you will stand a real
+good chance of getting a new roommate named "Spike". Don't be stupid.
+
+One final note. You could order your copy from Amazon.com instead, and send
+your credit card numbers over the Internet, then nobody would see
+them.....right?!? There's a fun thought.
+
+~*~*~~*~*~*~*~*~*~*~~*~*~*~*~*~*~*~*
+Ziff Davis breaks the WarGame story
+by RJ
+
+Z-D broke the Happy Hacker wargame story yesterday on their website. See
+their news story at 
+http://www.zdnet.com/products/content/articles/199803/king.hill/index.html
+
+It seems as though they've managed to "scoop" everyone else on this one.
+Kudo's to Z-D!
+Carolyn tells me that we'll soon have the boxes up and running, so more fun
+is just around the corner.
+
+~*~*~~*~*~*~*~*~*~*~~*~*~*~*~*~*~*~*
+Hoaxes - The Follow Up
+by RJ
+
+In our last issue, I spent some time discussing the topic of computer
+hoaxes; but had to leave one loose end dangling in the breeze. The brief
+re-cap is that a message supposedly seeking to help raise money for cancer
+research was making the rounds. The "original author" was purported to be a
+Dr. Jean Linney from a South Carolina university. I had sent an email to
+Dr. Jean Ann Linney seeking her response to the message, but had not
+received her reply at that time.
+
+I now have received her answer. Her name was used without her knowledge or
+consent, and she had no idea what was happening until it was too late. As
+is frequently the case with victims, she also has no idea why she was
+chosen. The net result of all of these good-hearted people forwarding the
+messages to their friends is that some spammer now has thousands more names
+to add to his list.
+
+One interesting insights that came about as people responded to the article
+came from BigToe, who said:
+
+Pertaining to Hoax #1:
+
+All names on AOL must have at least 3 characters and a maximum of ten.
+This helps eliminate fakers.
+
+Just thought you'd like to know.
+
+~*~*~~*~*~*~*~*~*~*~~*~*~*~*~*~*~*~*
+DIGEST Q
+Tanstaafl replies to some wquestions in the Jan 31 HH Digest:
+>then change your OUTGOING mail server to one where you want the email to
+>be bounced from. For this you will need to do a little exploring. I
+>tried a few [mail servers] before I got a header that told nothing
+>except my fake email address, so send yourself some test messages and
+>look at the FULL headers (in navigator goto View, Headers All ).
+
+The problem with this is that the server will show the server
+from which you bounced your mail, as it does in my headers. You need
+to do some cutting before you bounce your mail.
+What I do to circumvent the problem is to bounce my mail via a
+NNTP server, I know this isn't ethical, but neither is fake mail. Most
+NNTP servers allow this, but only with some persuasion.
+
+>Lots of servers I got "do not relay" messages from and some showed where I
+>dialed in from (aaarrghhh).
+
+One way to remove the problem with "do not relay" messages is
+to change the e-mail address to which you send you mail. I don't send
+my mail to user@node.server.com, but I send it to
+user%node.real-server.com@node.relaying-server.com. The SMTP server at
+node.relaying-server.com strips the @node.relaying-server.com and
+changes the user%node.real-server.com to user@node.real-server.com.
+Almost all NNTP/SMTP servers will allow this. The only problem
+is when you try to post to:
+user%node.real-server.com%node.second-relaying-server.com@node.first-relayin
+g-server.com
+the server at node.second-relaying-server.com can tell that it's been
+relayed once and will post it back to node.first-relaying-server.com
+with a "do not relay" message, but often the servers have been set up
+so badly that this isn't a problem. It does give for lots of rubbish
+being send with your message if you add too many servers.
+
+************
+Here's an anonymous TELNET question --
+
+Subject: HH-problems with the port 25 thing
+
+Okay here's my problem. I telnet to port 25 and then try to send myself
+e-mail, just to see if it works. It says everything worked okay, but I
+never get the message. I've tried with a couple of different servers
+and a couple of different e-mail accounts as the rcpt to:
+
+Here's a log, can anyone tell me what's wrong?
+I never get the msg.
+
+220 mercury.any.edu Mercury 1.32 ESMTP server ready.
+helo santa@north.pole.net
+250 mercury.any.edu Hi there, santa@north.pole.net.
+mail from:santa@north.pole.net
+250 Sender OK - send RCPTs.
+rcpt to:me@myemail.com
+250 Recipient OK - send RCPT or DATA.
+data
+354 OK, send data, end with CRLF.CRLF
+does this work?
+.
+250 Data received OK.
+quit
+221 mercury.any.edu Service closing channel.
+
+So can anyone tell me what's wrong? I've waited a couple of days since
+I first tried this and still nothing has come through.
+
+************
+
+>From: Mad Mac the Mechanic 
+>To: rprata@techbroker.com
+>Subject: 
+>
+>I hav a question about Windows NT 3.51 and setting up an internet server.
+>I am taking over sysops control of an exsisting server, running all MS
+>products for the internet. It is a basic server offerring http, ftp,
+>telnet, smtp, and a couple of other of things, but I'm not to sure. The
+>previous sysops never shared anything with anyone, they considered him a
+>god, an idiot if you ask me, I can't find anything. I would like to scrap
+>the setup and start over, but the people I report to have said no. I am
+>wondering what do I have to worry about for hackers attacking the site?
+>It is running MS IIS server from what I can tell. I don't trust the e-mail
+>program worth a damn. It is all based off a Compaq P-133. Which they got
+>ripped of in buying in the 1st place anyways. I know about the .. / ..
+>hole, but I am unsure how it is exploited, and how to protect against it.
+>Thanx for any help that you can give me.
+
+I would first convince them to upgrade to NT 4.0, service pack 3, IIS4.0. 
+Exchange Server 5.0 for NT is a fairly good MTA. Keep up on all the
+patches, etc. Consider joining NTBugtraq (mailing list) to discuss NT
+bugs, etc.
+
+This is definitely not the cheap way out. It will cost the company some
+dollars to do the NT 4.0 upgrade, and to purchase Exchange Server, but you
+are looking at securing your site. IIS4.0 comes with Exchange Server, I
+beleive. You could also try to talk them into purchasing the Backoffice
+Suite for Small Business, which comes with NT Server, Exchange Server,
+IIS4.0, SQL, SMS, etc... It may even come with NT Workstation.. but not
+too sure about that.
+
+Good Luck!
+
+-Roger
+***************
+CAN SOMEONE SNED ME THE TRANSLATION TO THIS, PLEASE? - RJ
+
+Halloooooo,
+Leeft gij nog?Lang geleden da ik nog iets gehoord heb van u.
+De dropping zou waarschijnlijk doorgaan maar Johan zal waarschijnlijk niet
+kunnen meegaan.Zoudt gij dan eventueel willen helpen?
+
+gunther.
+
+********************
+Stainless_Steel Rat follows up on the Firewall question with
+
+In addition, you should realize that all major market firewalls log 
+just about everything about a connection going through them, (like the 
+URLs you're been surfing, your failed FTP attempts, etc.) The only 
+reason you haven't been busted is because most firewalls log so much 
+crap that admins get tired of reading them on a regular basis. Why try 
+to a firewall? Just go around it. Don't bother trying to crack a FW, 
+if a target has a FW look for dial-ins, modem banks, RAS servers, PC 
+anywhere connections, Lotus Notes Servers, extra internet connections, 
+routers connecting third party WANs, etc). If you want to FTP go get a 
+modem and slap it into you analog line at your office and use you 
+private ISP to dial in and surfs up. But be careful, if you get caught 
+you'll definitely get fired.
+
+********************
+This question comes from a reader in Pakistan:
+>I wanted to know how to break a certain password in
+>Windows 95. I use dial up netwoking to connect to my internet service
+>provider. In the connect window where user name, password, server phone
+>number and location are required we have a save password option. I
+>wanted to know how to break this certain password or how to get the info
+>of the astricks (*) after it is saved. The password is obviously saved
+>in a file on the hard disk. Do you know the file name? Or is there
+>another system? I've already tried the registry editor but I can't put
+>my finger on it.I've been trying to know this technique and I've asked a
+>few.
+
+>Of course I know the password, I put it there. But I wanted to know
+>this technique. If by any chance you don't know how to do this please
+>tell me about anyone else who could help me.
+
+RJ -> SnadBoy has a program called "REVELATION" which will display the
+contents of this file when the asterisks are on the screen. You should be
+able to do a search and locate a downlaod site near you. If not, drop me a
+line and I'll forward the program to you.
+
+___________________________________________________________________
+with
+message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan yo use any
+information in this Digest or at our Web site to commit crime, go away! Foo
+on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the Unites
+States operating under Shepherd's Fold Ministries. Yes! This is all a plot
+to save your immortal souls!
+For Windows questions, please write Roger Prata; for
+Macs, write Strider; and Unix, Carolyn Meinel. Editor-in-chief is R.J. Gosselin. Webmaster is
+Praying Mantis.
+
+ 
+
+ 
+
+R.J. Gosselin, Sr.
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+Editor-In-Chief -- Happy Hacker Digest
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+
+"There is no way you're describing our system, 
+she could never have gotten past our security.
+
+But I'm going to find her and see that she's prosecuted ... 
+she broke the law, and she's going to pay!"
+President of "Blah Blah Bank"
+
+--&gt&gt>Does anybody ELSE see a small discrepancy here ???????
+
+*****************************************
+For full story (and many others), download
+"External Threats to Computer Security in Networked Systems"
+from Winn Schwartau's InfoWar.com bookstore @ www.infowar.com

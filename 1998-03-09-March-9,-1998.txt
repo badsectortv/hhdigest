@@ -1,0 +1,464 @@
+March 9, 1998
+
+=====================================================================
+URL of the week: (http://www.pcweek.com/) You'll see why as you read on!
+See back issues if the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://techbroker.com/happyhacker.html.
+Super Swedish Happy Hacker site: http://w1.340.telia.com/~u34002171/hhd.html.
+Coming soon: Spanish translations of the Digests!
+GTMHH en espanol: http://underhack.islatortuga.com
+=====================================================================
+Table of Contents:
+
+* Ziff Davis helps with anonymous email
+* Hoaxes - Learn to open your eyes, ask questions and think
+* Digest Q- IP Spoof; Tete-a-tete; Line Install
+* Firewall walkarounds
+
+=====================================================================
+*** Ziff Davis helps with anonymous email -- RJ
+=====================================================================
+Ssshhh!! Don't let anyone know that you found this out. But Ziff Davis has
+decided to let anyone who wants to have some "harmless" fun use their web
+server to do it -- and to do it totally anonymously!
+
+I first found this out since I subscribe to ZD's "PC Week Inbox Direct".
+Each week ZD sends out an email with an HTML attachment that links to
+stories on their PC Week site. A couple of weeks ago I noticed an
+interesting new "feature" had been added to their repertoire of services --
+the ability to email the article which you were looking at to the person of
+your choice. When I clicked on the "email this story" button, I was
+presented with a screen which asked me to answer four simple questions:
+
+1--"Send To:"
+2--"Your email:"
+3--"Comment:"
+4--Select the message format -- text or HTML
+
+"Now", I thought to myself, "surely you can't just put ANY OLD EMAIL
+ADDRESS as your own and have the message headers reflect that information!
+Or can you ??" Well, as it turns out -- you can!!! I gave Carolyn a heads
+up on my suspicions, and then sent her a message which claimed to be from a
+certain well known US politician who has problems with his zipper. She
+found no way of tracing who it had come from, other than the stated sender.
+Then I sent myself a message which looked as though it came from one of my
+friends at WC3. ("WC3" is one of many White Collar Crime units at the
+FBI). Here it is, headers and all, for your review:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Received: from u2.zdnet.com.
+by mail.rapidsite.net (8.8.5/8.8.5) with SMTP id LAA03680
+for <>; Wed, 21 Jan 1998 11:06:40 -0500 (EST)
+Received: by u2.zdnet.com. (SMI-8.6/SMI-SVR4)
+id LAA24833; Wed, 21 Jan 1998 11:06:40 -0500
+Date: Wed, 21 Jan 1998 11:06:40 -0500
+Message-Id: <199801211606.LAA24833@u2.zdnet.com.>From: WC3@fbi.gov
+To: Subject: FWD: PC WEEK: Serious E-commerce sites will find Kiva a must-buy
+Content-Type: text
+
+This message was forwarded to you from ZDNet (http://www.zdnet.com) by
+WC3@fbi.gov.
+
+Comment from sender:
+look close
+
+&lt<The article followed here&gt>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You'll notice there is nothing in the headers which indicates the actual
+address of the sender, only the address I chose to type in.
+
+Imagine all of the fun you could have with this! For instance, a person
+may take one of the Monica Lewinsky articles which has appeared in PC Week,
+and forward it to "news@cnn.org" from "president@whitehouse.gov" and in the
+"Comment" field say something like: "I'm tired of all of the bad press,
+especially articles like the one I've forwarded with this message. I knew
+you folks would treat this information fairly -- so I've decided to give
+you these details about our relationship in the hopes of demonstrating my
+sincerity to the American people." Then --- share away. Who knows what
+interesting information might appear on Headline News in the next half
+hour. ("CNN learned today, in an exclusive message from the President,
+that he and .......") Well, you get the picture.
+
+Just a final thought. If you did anything illegal with this, there is that
+pesky field in the header labeled "Message-Id:"; and who knows how long ZD
+may keep other information on that message. So I'd recommend caution.
+-- RJ
+
+=====================================================================
+*** Hoaxes -- RJ
+=====================================================================
+RJ - This next section is somewhat long for the Digest, and could really
+have been the beginnings of a GTmHH on Social Engineering. (And may still
+become just that after more work.) But I wanted to get these two things
+out in the open now.)
+
+For as long as I have been on the net, there have been hoaxes of one sort
+or another being sent around cyberspace. This is not likely to diminish or
+cease anytime in the near future. But one thing that a hacker should be
+aware of is the ever-present possibility of spoofs. This translates into
+asking questions, and seeking source information from wherever it may be
+obtained in order to verify the data presented. In just the last week, I
+have received two of these "hoax" messages.
+
+The first was quite harmless, except for the bandwidth it was taking up as
+thousands of people crowded cyberspace with this cyber-litter.
+It read as follows:
+
+>I received this from Children's Hospital in Denver...after you read it
+>you will want to follow the instructions and pass it on as well!
+>>----Original Message-----
+>>Subject: This is for Cancer Research... -Forwarded
+>>>>This is why we all work in Cancer Research...and should be thankfule
+>>for it!
+>>>>Forwarding...
+>>No comedy here. It's about a seven year old girl with cancer.
+>>Please read it and pass it on to as many people that you can.
+>>Occasionally we get to use this medium for some actual good, rather
+>>than trading barbs across the waves. And once in a while things like
+>>this bring us back to reality, allowing us to count ourselves lucky in
+>>life.
+>>Let's put our network to work here!
+>> It will only take you a second to send this message.
+>>>>Jessica Mydek is seven years old and is suffering from an acute and
+>>very rare case of CEREBRAL CARCINOMA. This condition causes severe
+>>Malignant brain tumors and is a terminal illness. The doctors have
+>>given her six months to live. As part of her
+>>dying wish, she wanted to start a chain letter to inform people of
+>>this condition and to send people the message to live life to the
+>>fullest and enjoy every moment, a chance that she will never have.
+>>Furthermore, the American cancer society and several corporate
+>>sponsors have agreed to donate three cents toward continuing cancer
+>>research for every new person that gets forwarded this message.
+>>Please give Jessica and all cancer victims a chance. Add acs@aol.com
+>>to the list of people that you send this to so that the American
+>>cancer society will be able to calculate how many people have gotten
+>>this. If there are any questions, send them to
+>>the American cancer society at acs@aol.com. Three cents for every
+>>person that receives this letter turns out to be a lot of money
+>>considering how many people will get this letter and how many people
+>>they, in turn, pass it on to.Please go ahead and forward it to
+>>whoever you know- it really doesn't take much to help out.
+>>>>Jean Ann Linney, Ph.D.
+>>Professor Department of Psychology
+>>University of South Carolina
+>>Columbia, SC 29208
+>>>>PHONE: 803-777-4301
+
+Just the type of message to tug at your hear strings and cause you to
+forward this message to your entire contact list, pat yourself on the back
+for a deed well done, and continue on with your work. Unfortunately
+(unless, of course, if you're Jessica Mydek) this message is totally
+fraudulent. Let's examine the message in detail, and note some things which
+are "nice touches" and some others that should raise red flags.
+
+Nice Touches:
+** "I received this from Children's Hospital in Denver" -- Nice "appeal to
+authority"
+** "This is why we all work in Cancer Research" -- Inclusion, you're part
+of "our" team
+** "...seven year old girl with cancer" -- Ouch! Who can NOT want to help.
+** "Let's put our network to work here!" -- Inclusion again. 
+** "As part of her dying wish" -- More heartstrings here
+** "... it really doesn't take much to help out" -- Hey, you aren't THAT
+lazy, are you??
+** Finally, the Professors' Name, Degree and Phone # -- Another appeal to
+authority
+
+The overall effect of these gambits is that you are left feeling as though
+this HAS TO BE legitimate; after all, someone who was a Ph.D. and is a
+Psychology professor at the University of South Carolina would certainly
+not fall for a hoax .... would she? Well, as of right now, the answer to
+this question is not known. Dr. Linney is in fact the Chair of the
+Psychology department at the Univ. of SC. I have sent her an email message
+requesting clarification of issues from her, but have yet to receive a
+reply.
+
+As I see it, there are at least two distinct possibilities here. First,
+Dr. Linney's name was used without her knowledge or consent. This would
+tend to indicate that a present or recent member of the academic body as
+the university had determined to attempt to discredit her judgement for
+some reason. Second, she may have fallen prey to the hoax, and
+participated unknowingly.
+
+What are the items in the message that should raise red flags?
+** "and should be thankfule" -- Professionals rarely misspell words in a
+public message
+** "the American cancer society and several corporate sponsors have agreed
+to donate three cents toward continuing cancer research for every new
+person etc -- American Cancer Society is not capitalized. Furthermore,
+they *collect* money for cancer research and then PERFORM CANCER RESEARCH -
+they don't *donate* their money for cancer research.
+** "Add acs@aol.com to the list ... forward it to whoever you know" -- That
+the American Cancer Society would have a *single* AOL account for email is
+stretching the imagination a bit. what is more likely to be happening here
+is an address grabbing operation for sale of the addresses.
+
+The solution here was as simple as two toll-free calls. (REALLY toll free,
+no phreaking here.)
+The first was to the ATtoll free directory for the 800 number to the
+ACS, the second was to their National Cancer Information Center in Austin
+TX. They quickly confirmed that the entire matter was a hoax. After
+working out a few details with them, I sent the following reply to everyone
+on my end of the chain (which was several hundred people!):
+
+As a network security consultant, I frequently confirm information I
+receive with the purported source. Unfortunately, I have confirmed with
+the National Cancer Information Center in Austin TX that the below message
+is fraudulent. I have also agreed to assist them in disseminating the
+confirmation that it is false. It is indeed unfortunate that this type of
+"chain letter" is started and wastes the time of so many caring individuals
+who would like nothing better than to help a poor child. You can, however,
+turn that which was meant for evil into something very good: a small,
+donation to the American Cancer Society would accomplish the same effect.
+Give them a call at 800-227-2345 for details.
+
+RJ Gosselin, Sr.
+Network Security Consultant
+
+The second hoax message sounded much more ominous - but "Join The Crew" was
+much easier to see through. It read like this:
+
+>VIRUS WARNING !!!!!!
+>>If you receive an email titled "JOIN THE CREW" DO NOT open it.
+>It will erase everything on your hard drive. Forward this letter out
+>to as many people as you can. This is a new, very malicious virus and not
+>many people know about it. This information was announced yesterday
+>morning from IBM; please share it with everyone that might access the
+>internet. Once again, pass this along to EVERYONE in your address book so
+>that this may be stopped. Also, do not open or even look at any mail that
+>says "RETURNED OR UNABLE TO DELIVERY" This virus will attach itself to
+>your computer components and render them useless. Immediately delete any
+>mail items that say this. AOL has said that this is a very dangerous virus
+>and that there is NO remedy for it at this time. Please practice cautionary
+>measures and forward this to all users.
+
+When you start talking about erased hard drives -- people stand up and take
+notice! Especially when IBM and AOL are the ones doing the warning. there
+is only one small problem here, the virus and the danger are figments of
+someone's imagination. But the clues, even without contacting IBM or AOL,
+were easily detected.
+
+First, email is text. Text cannot erase your hard disk ... period. The
+only real danger here would be an attachment to an email which, if opened,
+could possibly contain a virus of some sort, but *not* simply a text
+message. No virus exists that can do this strictly from a text file being
+opened. But, even if you didn't know that to be the case, one good source
+of virus information is the Symantec Antivirus Research Center on their
+website. (http://www.symantec.com/avcenter) They even have a section
+dedicated to hoaxes, and our friend "Join the Crew" has their own listing.
+(http://www.symantec.com/avcenter/data/jtch.html)
+
+But the same sort of social engineering gambits used in the first hoax are
+used in the second, as well as the added element of fear. You can re-read
+it and see their appeal to authority, the inclusion on a team or an elite
+few, and the appeal for help.
+
+Learn to be suspicious when you read anything that is unsolicited and asks
+you to forward it to everybody you know. That is the biggest red flag of
+all.	-- RJ
+
+=====================================================================
+*** Digest Q--
+=====================================================================
+Would it not be possible to do a perfect email forge using IP-spoofing? 
+(probably to a PPP connection, as most PCs do not log the incoming 
+packets) If you were to spoof a server, then (as in the above note) you 
+could be traced by time of attack, but spoofing from a PC should have no 
+record. or am I mistaken? -Nethead
+
+[Carolyn: The FIRST packet of a spoofed IP connection is always a true
+packet. Someday soon I'm going to write a GTMHH on IP spoofing and how to
+catch the spoofer anyhow. Folks, there is NO WAY to commit the perfect IP
+spoof.]
+********
+********
+From: Kenn ***** responding to Strider (our Mac Editor)
+&gt>Strider wrote:
+A true hacker enjoys exploring and working things out- programming is one
+of the best ways to do this. Why not give away the fruits of your fun? Some
+would say that being paid for it is selfish- although I doubt many people
+of the cracker mentality would understand that: a typical cracker would, I
+agree, like to take- breaking into a system, pirating "warez" and the like,
+but not give. After all- where, they would say, is the gain in that?
+- Strider
+&gt>Ken Answered:
+Civilization is the process of setting men free. Men do the work they
+love and trade it by mutual agreement to mutual benefit so that both may
+pursue their own productive avenues. Money is merely a tool to
+facilitate that process. Being paid for anything IS selfish, and I think
+that a rational selfishness is a virtue not a vice. I will not work for
+free, because I value my life, and my time. I am proud of the products
+of my efforts. But you've damned yourself, you're selfish too. If there
+were no people, no community of intelligent, productive people willing
+to make something to mutual benefit (like Linux), then you're all
+selfish too. But is this bad? Is this evil? Think about it.
+---
+&gt>Strider Responded: 
+Perhaps you're right. But the people who need the money, as you say, create
+shareware or commercial products. The people who create free products do so
+on their own time, because they love to do it and don't NEED the money. If
+more people showed generosity such as that, instead of charging 300% over
+manufacturing and development for their products, more things in life would
+be free, or at least cheaper. Releasing free software works against those
+who charge too much for a shoddy product (WinNT is an example- full of
+holes, many of the patches don't work, and although it's overall a decent
+system, the only thing it can use to compete with freeBSD or linux is hype)
+and displays an appreciation for community. It also completely destroys
+elitism (or 331337ism, if you must) because all the source code is
+accessible. Anyone can learn from anyone else's work, and that inspires
+heightened learning and growth in any developmental community.
+- Strider
+********
+********
+&gt>Linux Answer from Tom Ben-Yehoshua
+
+Regarding the anon dude installing red-hat:
+Like him, I'm a newbie at linux (installed 1st time last week). I too
+had some problems with LILO - I've installed latest Slackware on a P166,
+64Mb, 3HD's (8+ Gb combined), 24x CDROM, all IDE - let's see if I can
+help out :
+1.	first problem I've encountered was setting LILO as my boot
+manager on a UMS DOS partition - everything looked fine until I tried to
+boot without the boot diskette :
+a.	at first LILO would boot, writing LILO really slow and then
+hanging
+b.	for some reason, after re-installing (exactly the same way) it
+would write the entire LILO booting phrase (can't remember exactly what
+it says in there and then giving me a prompt. If I just pressed enter,
+it would try to mount a ramdrive, exit with an error and re-post the
+dubious prompt..
+2.	well, time for a DOS fdisk... I've deleted the obscure UMS
+partition, loaded linux boot disk and created an all linux partition...
+Installed... no good... same as 1(a) - probably I'm missing something -
+but who gives - fdisk;format c: /u/s/v:LINUX... and start over..
+3.	well I now have a DOS partition.. let's go.. Installed UMS DOS
+this time without a linux boot partition :
+DOS boots fine and now I have to directories on my HD :
+Slackware (all linux install diskettes) and linux (guess...) - ha ha,
+what's in the root dir? LODLIN16.ZIP.. guess what that is? Unzip, k, an
+executable a batch file and a couple of readme's.. seems LODLIN stands
+for LOAD LINUX (check the batch file for an example..) et' voila - linux
+loaded ... Yee-pee
+4.	well next level was configuring X for a Number 9 Imagine128 and
+a MAG Trinitron display...
+
+ALL IS WELL NOW...;)
+
+Btw: I have an Award BIOS dated July 97 with virii detection disabled..
+
+//Tom Ben-Yehoshua
+****
+****
+=====================================================================
+*** Firewall Question
+=====================================================================
+
+From: JAY BAYLON 
+>>I have been reading GTmHH for some time now. I'm not a hacker nor am I a
+>cracker but I do know my computers (maybe someday *grin*).
+
+What I really like to hear is some in-depth explanation on how firewalls
+work and how to trick them.
+
+&gt>ANSWER FROM SKURP
+
+First you cannot trick a firewall, but you can defeat a firewall. How?
+A firewall cannot protect against connections that don't go through it.
+A firewall cannot provide 100% protection against all threats.
+
+You want to know how a firewall works? Firewalls can be configured in three
+ways.
+
+1. Packet Filtering - worst way for configure a firewall. Packet filtering
+works by dropping packets based on their source or destination addresses or
+ports...decisions are made only from the contents of the current packet.
+
+Administrators makes a list of acceptable machines and services, and a list
+of unacceptable machines. It is easy to permit any IP access between host
+A and B, or deny any access to B from any machine but A.
+
+For example, one might want to allow any host to connect to machine A, but
+only to send or receive mail. Other services may or may not be permitted.
+
+Packet Filtering allows some control, but it is a dangerous and error-prone
+process.
+
+2. Application-level gateway - represents the opposite extreme in firewall
+design. Rather than using a general purpose mechanism to allow many
+different kinds of traffic to flow, special purpose code can be used for
+each desired application. Although this seems wasteful, it is likely to be
+far more secure than any of the alternatives. One need not worry about
+interactions among different sets of filter rules, nor about holes in
+thousands of hosts offering nominally secure services to the outside.
+
+Application gateways allow for logging of all incoming and outgoing traffic.
+
+In other words an application firewall allows an SA to turn off all the
+applications associated with the server, i.e.
+finger
+IP redirects
+IP route-cache
+ip proxy-arp
+mop
+telnet
+ftp
+smtp
+http
+All these services can be turned off using the application gateway setup.
+
+ 
+
+3. The last and most secure configuration is Stateful Inspection.
+
+Stateful Inspection technology accesses and analyzes data derived from all
+communication layers. This "state" and "context" data is stored and updated
+dynamically, providing virtual session information for tracking
+connectionless protocols (e.g. RPC and UDP-based applications). Cumulative
+data from the communication and application states, network configuration
+and security rules, are used to generate an appropriate action, either
+accepting, rejecting or encrypting the communication. Any traffic not
+explicitly allowed by the security rules is dropped by default and real-time
+security alerts are generated, providing the system manager with complete
+network status.
+
+ 
+
+>I'm using a computer which passes through the corporate firewall. I can
+>use http but I can't use ftp. Can you please help me. Most of the cool
+>wares that I want downloaded use ftp downloads not http.
+
+DUH...if you worked for me I would have you fired in a minute. There is
+most likely a reason that you cannot FTP out of your "corporation", they
+were smart enough to turn off FTP.
+
+Skurp
+Network Analyst
+
+___________________________________________________________________
+with
+message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan yo use any
+information in this Digest or at our Web site to commit crime, go away! Foo
+on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the Unites
+States operating under Shepherd's Fold Ministries. Yes! This is all a plot
+to save your immortal souls!
+For Windows questions, please write Roger Prata; for
+Macs, write Strider; and Unix, Carolyn Meinel. Editor-in-chief is R.J. Gosselin. Webmaster is
+Praying Mantis.
+
+R.J. Gosselin, Sr.
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+Editor-In-Chief -- Happy Hacker Digest
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+
+"There is no way you're describing our system, 
+she could never have gotten past our security.
+
+But I'm going to find her and see that she's prosecuted ... 
+she broke the law, and she's going to pay!"
+President of "Blah Blah Bank"
+
+--&gt&gt>Does anybody ELSE see a small discrepancy here ???????
+
+*****************************************
+For full story (and many others), download
+"External Threats to Computer Security in Networked Systems"
+from Winn Schwartau's InfoWar.com bookstore @ www.infowar.com
