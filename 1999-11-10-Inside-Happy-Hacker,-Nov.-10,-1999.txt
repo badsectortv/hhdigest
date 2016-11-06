@@ -1,0 +1,96 @@
+Inside Happy Hacker, Nov. 10, 1999
+_______________________________________________________________________
+Table of Contents
+· New Unix and Windows Digests
+· How to set up a home Windows hacker lab
+· How to keep people from breaking into your email
+· Want to be part of the Uberhacker! book?
+· Troubles with Amazon.com?
+
+*** New Unix and Windows Digests
+
+Coming soon: new Windows and Unix Digests. We have some great new editors.
+You can email your questions and contributions for the Windows Digest to 
+hheditor@techbroker.com, and send Unix/Linux material to 
+unixeditor@techbroker.com. When these Digests come out, the new editors 
+will introduce themselves.
+
+*** How to Set up a Home Windows Hacker Lab
+
+Want to set up a Windows hacker laboratory in your home and connect all 
+of your computers to the Internet through just one modem? Learn how at 
+http://happyhacker.org/winlan.html. This material will also help you with 
+the problems of installing network interface cards for your Linux and 
+other Unix type computers. You'll get screen shots, keystroke by keystroke 
+instructions, and troubleshooting tips.
+
+*** How to keep people from breaking into your email
+
+
+Get laughs at all the people who plead with Meinel to help them commit 
+computer crime, updated every few days at http://happyhacker.org/sucks.html. 
+Look for Meinel's answer that begins, "Whoops --- you are so much more talented 
+than Brenda and Tyme that you just social engineered me! OK, here's how all you 
+pitiful wretches can risk going to prison by snooping on your lovers' and 
+enemies' email…" Meinel tells how even your PGP encrypted material can be 
+compromised - and tells you how to prevent people from snooping on your email.
+
+*** Want to Be Part of the Uberhacker! Book?
+
+Preview Meinel's upcoming book, Uberhacker! at http://happyhacker.org/intro.html. 
+Would you like to contribute your knowledge? As with The Happy Hacker book, you 
+will be credited by name (if you wish). If you contribute a great deal, you will 
+get a free autographed copy. For example, one problem Meinel is working on right 
+now is how to detect hidden shares in NT boxes. They are easy to make - just add 
+a $ to the end of the share name. Users who create hidden shares are a major 
+hazard - could a malicious user be setting up back doors for confederates outside 
+the network? How does the administrator of an NT network find these hidden shares 
+without knowing their full file names? Explain how, and you get in the book.
+Meinel is looking for simple, but often overlooked ways to break into and defend 
+computers. OK, OK, to be a book for Uberhackers, it will include the more 
+sophisticated techniques. But it's awfully lame to spend weeks breaking into (or 
+setting up) defenses for a network while overlooking some incredibly easy holes - 
+like a hidden share of an NT file that holds stuff that looks like this:
+[HKEY_LOCAL_MACHINE\SAM\SAM]
+"C"=hex:03,00,01,00,00,00,00,00,84,00,00,00,02,00,01,00,01,00,14,80,64,00,00,\
+00,74,00,00,00,14,00,00,00,30,00,00,00,02,00,1c,00,01,00,00,00,02,c0,14,00,\
+0e,00,05,01,01,01,00,00,00,00,00,01,00,00,00,00,02,00,34,00,02,00,00,00,00,\
+00,14,00,31,00,02,00,01,01,00,00,00,00,00,01,00,00,00,00,00,00,18,00,3f,00,\
+0f,00,01,02,00,00,00,00,00,05,20,00,00,00,20,02,00,00,01,02,00,00,00,00,00,\
+05,20,00,00,00,20,02,00,00,01,02,00,00,00,00,00,05,20,00,00,00,20,02,00,00
+[HKEY_LOCAL_MACHINE\SAM\SAM\Domains]
+@=hex(0):
+[HKEY_LOCAL_MACHINE\SAM\SAM\Domains\Account]
+"F"=hex:02,00,01,00,40,01,14,00,70,85,18,10,d9 etc. etc.
+So… if you know, please share your knowledge!
+
+*** Troubles with Amazon.com?
+
+
+Are you one of the many people who ordered The Happy Hacker book from 
+Amazon.com and they haven't shipped it for weeks and weeks? You can cancel 
+your order and get the book fast from Barnes & Noble. Hundreds of copies 
+have just arrived at their warehouse. Just order it from a local 
+Barnes & Noble book store or from their web site at 
+http://shop.barnesandnoble.com/BookSearch/results.asp?sourceid=00133557120334059230&bfdate=11-03-1999+15:53:53&title=The+Happy+Hacker&match=exact&options=and.
+You can always order it from anywhere in the world at the American Eagle 
+bookstore (phone toll-free in the US 800-719-4957); or you can get an 
+autographed copy shipped to anywhere in the world by sending a check or 
+money order, made out to "Happy Hacker" to PO Box 1520, Cedar Crest NM 87008. 
+Its price, including shipment by Priority or Airmail delivery, is: US: $39.95; 
+Canada, Mexico, Ireland, Great Britain, Western Europe: US$46.90 Everywhere 
+else: US$48.90. If you live outside the US, just ask your bank to make out 
+a money order for US$.
+
+Happy hacking, folks. May us white hats rule!
+_______________________________________________________________________
+To subscribe to the Happy Hacker Digest, email mailman@mailout.antionline.net
+with the message "subscribe happyhacker." Unsubscribe with message
+unsubscribe happyhacker.
+This is a list devoted to *legal* hacking! If anyone plans to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+We like to put computer criminals behind bars where they belong!
+Hacker Wargame Directors, Vincent Larsen vincent@sage-inc.com and 
+John Vranesevich <jp@antionline.com>;
+Clown Princess: Carolyn Meinel <>
+Happy Hacker is a 501 (c) (3) tax deductible organization
