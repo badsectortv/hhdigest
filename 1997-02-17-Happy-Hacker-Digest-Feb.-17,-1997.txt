@@ -1,0 +1,320 @@
+Happy Hacker Digest Feb. 17, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to . Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking! The aim of the superior man is truth -- Confucius 
+---------------------------------------------------------
+
+URL 'O the Day: http://www.geocities.com/TimesSquare/Arcade/4594. Non 
+existent graphics but great writing quality and the best explanation I have 
+ever seen on how to search the Web for hacker information. This site will 
+soon also archive back issues of the Happy Hacker Digest in addition to the 
+GTMHHs it already hosts.
+
+Table of Contents
+
+Finger Question 
+Help for Dutch Hackers 
+Win Woes 
+Linux Answer 
+Legal Stuph 
+Hacker Handle 
+More "Calm, Measured Discourse"?
+
+FINGER QUESTION
+
+Anonymous post:
+
+I have been trying lately to finger some servers and have managed it use it 
+successfully, 
+Every time (well almost) I finger a server with @ it brings up a list with 
+the users and it also presents their current status.. please explain to me 
+what TTY is and what is meant by the user being idle. I think I already know 
+what the latter means but just in case explain it plz
+
+Moderator: TTY is the file that represents the user's terminal. For example, 
+when you are logged on and you want to know how your connection to the host 
+computer is represented, give the command "tty."
+
+What does "idle" mean? Just what it sounds like. However, could anyone help 
+me with the question of why "root" often turns up with an idle time of days 
+or even weeks? I hope it doesn't mean someone has logged in as root and left 
+that session open on an unattended terminal -- that would really be a no-no.
+
+HELP FOR DUTCH HACKERS
+
+From: "server" <joe1@dds.nl>
+
+Regarding the question of XS4ALL:  XS4ALL is actually one of the most 
+liberal providers in the Netherlands.  They're actually seen as one of the 
+pioneers and actively participate in the whole Internet Freedom movement, 
+such as the Scientology issue.  What I have heard, though, is that they've 
+restricted shell access to limit access to more "sensitive" areas, which 
+could be restrictive to hackers.  And BTW, I don't work for XS4ALL...
+
+Bas Burgmans
+
+From: "M.Falsetti aka 1NV3rNoMu+0" <inverno.muto@bbs.infosquare.it>
+
+>From: Nils van den Heuvel <n.heuvel@pi.net> 
+>Hi, 
+>I have been looking for a provider that offers shell accounts, I have 
+>found one in my country (Holland) that does, but they say: "We can't 
+>allow our users to hack servers outside of our domain (www.xs4all.nl), 
+>you can only hack our machines." 
+>Now, I have 2 questions: 
+>1) Is this really possible?
+
+if I remember right, xs4all is a famous European group of hackers, brought 
+on the spot by newspapers during Optik's showtime, along with 
+underground.org .... so I think they mean JUST  WHAT THEY SAY .... ;)
+
+>2) Is there a way to bypass their security, so I can hack whatever I 
+>want?
+
+sure...if ya can be worthy as some1 tells they are <g>
+
+invy 
+PGP Public Key Fingerprint = C0 5A 47 F4 80 B8 9A D3  4D 1A BA 10 DC 38 FE A2
+
+WIN WOES
+
+From: Nils Janson <wyoguys@twd.net>
+
+Although this has no bearing whatsoever on hacking (or, at least, not 
+much of one) I felt the need to post this in a forum where I wouldn't 
+get flamed.  Anyway, I'm having trouble setting up a winsock with dns 
+servers and other things.  The reason that I'm having so much trouble is 
+that I don't know how to set it up manually, and when I try to use an 
+installing winsock it doesn't recognize ISDN at all, so I don't have any 
+way of doing this.  All the help texts that I've found are in German or 
+are of no help whatsoever.  Please please please please please send all 
+responses to my email address, not post it in the newsletter.  Thanks. 
+--
+
+Nils Janson 
+mailto:wyoguys@twd.net 
+http://homepage.third-wave.com/nils/main.html
+
+LINUX ANSWER
+
+From: Timothy Ward <tbw@ruined.all-net.net>
+
+Sir,
+
+I believe if you move your dir's i.e. c:\base, c:\rpms to: 
+c:\redhat\base 
+c:\redhat\rpms
+
+I believe that will solve this problem!
+
+Good Luck!
+
+Timothy Ward 
+ward@carl.all-net.net
+
+LEGAL STUPH
+
+Moderator: We have a series of GTMHH in the works that cover cyberlaw citing 
+the statutes. In the meantime, for US cyberlaw info, see the CyberLaw 
+Internet site http://www.cyberlaw.com. The lawyer who runs this site is 
+Jonathan Rosenoer. He has also written an excellent book, _CyberLaw_, 
+Springer, 1997. He also puts out an ezine, Cyberlex. For more information, see: 
+CyberLaw.com 
+Jonathan Rosenoer, Esq.  | Kentfield, California, USA 
+cyberlaw@cyberlaw.com | www.cyberlaw.com 
+Ph. 415-461-3108            | Fax 415-461-4013
+
+There is also a cyberlaw forum at http://www.infowar.com.
+
+Please remember, when we discuss the law we are not lawyers and we are not 
+offering you legal advice. We are simply discussing the law as we are able 
+to understand it. Your best bet for staying out of trouble  is the Golden 
+Rule: if you are doing something to someone else's computer that you 
+wouldn't want done to yours, don't do it!
+
+Now our first post in this section today refers to the war dialing question, 
+as well as to computer trespassing in general.
+
+From: rydell@juno.com (Code Of Law)
+
+As far as I can tell, in section 156.10 labeled 'Computer trespass'
+
+ "A person is guilty of computer trespass when he knowingly uses 
+or causes to be used a computer or computer service without authorization 
+and: 
+ 1, he does so with an intent to commit or attempt to commit or 
+further the commission of  any felony; or 
+ 2, he thereby knowingly gains access to computer material."
+
+ This is labeled as a class E felony
+
+ Still the section above (156.05) labeled 'Unauthorized use of a 
+computer' says: 
+ "A person is guilty of unauthorized use of a computer when he 
+knowingly uses or causes to be used a computer or computer service 
+without authorization and the computer utilized is equipped or programmed 
+with any device or coding system, a function of which is to prevent the 
+unauthorized use of said computer or computer system" 
+  
+ This is labeled a Class A misdemeanor.  Now the difference 
+between a misdemeanor and a felony in these cases is quite great if 
+someone is ever charged.  I'm not quite sure how one would tell the 
+difference between the two, except if someone was to break in and do 
+nothing(misdemeanor) or if they walked around the system(felony).  Either 
+way it doesn't look too friendly.
+
+ This is all from the 1993 Looseleaf Law Publication in section 
+156 
+Code 
+rydell@juno.com 
+================================================== 
+WW III is a guerilla information war, with no division between 
+military & civilian participation  -- Marshall McLuhan 
+==================================================
+
+Anonymous: 
+Hi, 
+I've found a server that allows for it's passwd file to be 
+read/downloaded with an anon. ftp connection.  Is this unusual, or 
+standard?  Is it illegal for me to download the file to my home computer? 
+ What would one do with the passwd file?
+
+Moderator: I'll bet this availability of the password file is accidental. 
+Since the server made no attempt to protect it, IMHO you probably won't get 
+in trouble. What some hackers would do with this file is run it through a 
+crack program to extract the passwords from the encrypted versions you 
+probably found. But once you extract the clear text of these passwords you 
+may be breaking the law under the US Computer Fraud and Abuse Act of 1986 
+amendments to  18 USC: Chapter 47,Section 1029. This prohibits fraud and 
+related activity that is made possible by counterfeit access devices. 
+Penalty is a fine of $50,000 or twice the value of the crime and/or up to 15 
+years in prison, $100,000 and/or up to 20 years if repeat offense.
+
+From: tabby@enter.net
+
+>From: jericho@dimensional.com 
+>Since when is a war dialer software program illegal?! In some counties in 
+some states 
+>there are statutes against war dialing, but no federal laws regulating the 
+>software that does it.
+
+Hey there...  Better post this to the list so EVERYONE knows.
+
+Jerircho, as persuant to some ACT made by the FCC, making random phone 
+calls before 8 AM and after 8 PM is illegal.
+
+From: jericho@dimensional.com
+
+As for using war dialer software in the US, I would like you to quote that 
+source. I know in Colorado there is a statue which makes it a misdemeanor 
+to "wardial without the intent to communicate" (not exact words) in 
+Colorado Springs. In Denver, there is no such statute.
+
+=-=
+
+> Moderator: Email bombing is a denial of service attack. If the attack
+
+Stop. That is a blanket statement that is untrue in some cases. If you 
+email bomb someone by subscribing them to 1000 mail lists, and they are 
+sitting on a T3 or better, running a mail server with half a gig of RAM, 
+and a few gigs for the mail spool, it is not a denial of service attack. 
+You are not stopping them from using any service. You are simply being a 
+pain in the ass. If you do the same to someone on a P5/32M/1.2g with a 
+28.8 static connection, you are then denying them service.
+
+If you are going to speak like this, make sure you fully qualify your 
+statements.
+
+Moderator: Hmm, does dimensional.com have a T1? Does that mean you think it 
+would be OK to email bomb you? Have you ever tried to sort out legitimate 
+email messages from among 25 MB per day of email bomb spam? Maybe it's easy 
+for you, but for most people their email is as good as lost. Many people 
+even have to close their accounts after getting email bombed. Now that is 
+denial of service.
+
+HACKER HANDLE
+
+From: Strider <strider@unix.aardvarkol.com>
+
+Hey, 
+ Hmm...I've finally thought of a new handle! How does cL0ut sound?? It 
+means Authority, Influence, and Muscle....just tell me what ya'll think 
+ASAP! Thanks......
+
+              Strider 
+          (For NOW) 
+ 
+
+MORE "CALM, MEASURED DISCOURSE"?
+
+From: willm@intermind.com (Will Munslow)
+
+>From: "ruben d canlas jr" <benc@skyinet.net> 
+> 
+>mulder@ntplx.net said: 
+> 
+>> If I see a site that I personally find distasteful, it no 
+>> more gives me the right to persecute it and attempt to get it removed than 
+>> it gives a nazi the right to attempt to destroy a Jewish home page. 
+> 
+>mulder, thanks for bringing this up. it will set us to thinking 
+>deeply on the philosophy of protest, which I think is a natural 
+>aspect present in all hackers. 
+> 
+>I'd like to argue on two levels. here's the first: 
+> 
+>there is a big difference between arguing in the abstract and in the 
+>concrete. for instance, you are using the nazi experience to validate 
+>that violating children is not offensive.
+
+I disagree. He did NOT say, "As the Jews were persecuted for their 
+religious beliefs, so are the child molesters." In fact, he did not even 
+say child molester. He said that if he sees a site that he may "find 
+distasteful" he has no right to destroy it. Absolutely correct. Now, back to 
+the original argument. Kiddie porn is illegal. Hacking is illegal. 
+Illegally hack illegal kiddie porn sites. Fine with me. 
+****************************************************************** 
+"I am." is the shortest complete sentence in the English language.
+
+From: jsyn <jasonp@iAmerica.net>
+
+At 10:54 PM 2/16/97 -0700, Damien Sorder wrote: 
+>> Moderator: Hackers can learn a lot from MLK, Gandhi and Jesus. Too many 
+>> hackers get in trouble for a tendency to let being a vigilante overstep the 
+>> bounds of the law. Cracking and email bombing come to mind. Now possessing 
+>> war dialing software -- I haven't heard of that being illegal, either. But 
+>> using it in the US sure is. 
+> 
+>I think you are on crack or something. To say a hacker can learn from 
+>those three is a very poorly worded statement. I don't know where to start 
+>on showing the craziness of this statement. It can be read to mean only 
+>hackers can learn from these which is ridiculous. Or if you mean hackers 
+>can learn something specific from their actions, then we fall back to the 
+>argument on the definition of a hacker.
+
+I agree that Carolyn's statement is off the wall and out of place in this 
+context, *however*:
+
+>I also don't want to erupt this into a full religious debate either, but I 
+can >assure you, that without a doubt, I can learn nothing from Jesus, 
+ESPECIALLY in >relation to hacking.
+
+One day, you'll see...
+
+jsyn
+
+0101101001100011010110101110001001010011011011101000110101 
+10100110010011010101 jason e peel 0111001101001 jsyn 01100 
+11001 jasonp@iamerica.net 10010010100101101100100110101010 
+0011001100110010 SysadminProgrammerConsultantStudent 01101 
+1001010100101011011001001101001001101001010110101101100111
+
+Moderator: IMHO, trying to discuss ethics without referring to experts in 
+ethics such as Jesus, Gandhi and Martin Luther King is like trying to 
+discuss TCP/IP without referencing RFCs.

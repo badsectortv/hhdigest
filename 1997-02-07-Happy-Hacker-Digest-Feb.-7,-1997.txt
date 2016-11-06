@@ -1,0 +1,506 @@
+Happy Hacker Digest Feb. 7, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to cmeinel@techbroker.com. Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking -- and ne auderis delere orbem rigidum meum! Hey, how come 
+nobody posting today used a Latin slogan???? 
+---------------------------------------------------------
+
+Table of Contents:
+
+Meinel Announces War Against Web Sites that Offer Email Bomber Program Downloads 
+Getting Rid of Juno Ads 
+Where to Find RFCs -- and Why You Should Study Them 
+Amazing Discovery: Egg Drops 
+I'm Not Trying to Crack this Account, Honest! 
+Windows 95 Passwords Are a Joke! 
+Oops, Now Can I Cover My Tracks? 
+More on Linux 
+How to Keep Active X  from Raiding Your On-Line Banking Account 
+Is Anybody Out There? 
+Finger Question 
+More Less Is More 
+Sniffer Question
+
+MEINEL ANNOUNCES WAR AGAINST WEB SITES THAT OFFER EMAIL BOMBER PROGRAM DOWNLOADS 
+ 
+
+Moderator: Judging from some of the email I get, lots of people think that 
+boilerplate up above about this being a list for *legal* hacking think I'm 
+just saying this because some lawyer told me so. No way. I'm against 
+computer crime. In fact, according to some of the law enforcement people on 
+this list, the things we discuss here have been helpful in teaching them how 
+to make busts.
+
+But some of you guys either don't believe me, or you think you can pull the 
+wool over my eyes. So here's how I'm going to prove without a doubt which 
+side I'm on.
+
+Many of you have heard my interview on the PC World Web site 
+(http://www.pcworld.com/news/newsradio/meinel/index.html). Remember how I 
+said a three year old could launch an email bomb attack using certain Web 
+sites?
+
+Well, guess what, I'm not going to give out those URLs here. I figure most 
+people on this list could find them really easily. And the ones who can't, 
+well, I'm not going to help you do irresponsible things.
+
+Now here's my challenge. See if you can beat me at getting those email 
+bomber sites off the Web. It's something even a beginner can do.
+
+Have you seen the Guide to (mostly) Harmless Hacking Vol. 1 No. 6 -- How to 
+Nuke Offensive Webs Sites? I show the legal procedure with step-by-step 
+hacking techniques for getting rid of bad news stuff. I show myself getting 
+mightily tempted by a buggy Web server, but backing off and doing the right 
+thing.
+
+If you want to turbo charge your study of legal hacker techniques to cut a 
+bad news Web site off from the Internet, you may add to your arsenal the 
+techniques in GTMHH Vol. 3 No. 2, "How to Map the Internet."
+
+Both these GTMHHs can be found at the Infowar site Hackers forum, 
+http://www.infowar.com/cgi-shl/login.exe.
+
+************************* 
+Tip for irresponsible email bombers: not a single one of these programs will 
+really truly keep you anonymous. Do you really think the programmers of 
+these weapons would turn them loose and then be helpless to defend 
+themselves against you guys? No way. Each of the programs has a way the 
+victim can get back at you. Do you want to take that gamble? Besides, we all 
+think email bombing is lame because you don't have to know anything 
+whatsoever to use them. 
+************************* 
+  
+GETTING RID OF JUNO ADS
+
+From: k1neTiK <samk5@IDT.NET> 
+Subject: Getting rid of Juno ads
+
+>From: j-roc@juno.com (s j johnson) 
+> 
+>If you want to get rid of all those annoying Juno ads, its so easy it's 
+>funny.  All you have to do is delete the file in your root directory 
+>named "resource.jno" and create another one that is 1 byte that is read only.
+
+      I tried that, and it didn't work.  I also found a method that actually 
+does work though... in your Juno directory, go to subdirectory "ads", and 
+delete all the numbered directories besides the first two, because they have 
+the Juno logos in them and if you mess with those, Juno won't work properly. 
+It would be a good idea to copy the numbered directories to another location 
+before trying this because Juno may not work without it, because it seems to 
+be very picky.  Do NOT try to mess with the ads, i.e. editing them so that 
+they'll say something funny, because Juno will DELETE the directory where 
+the ad is in.
+
+WHERE TO FIND RFCS -- AND WHY YOU SHOULD STUDY THEM
+
+From: k1neTiK <samk5@IDT.NET>
+
+I have noticed that from time to time people post 
+questions about where to find a list of commands for something, and don't 
+know where to look.  Well, the first place to start should be a RFC.  go to 
+http://www.internic.net/ds/dspg0intdoc.html, go to the RFC section, and 
+search for whatever you are looking for.  Example, you want to know the 
+commands for incoming Email (most often POP3), go to the page, and search 
+for POP3 or POP.  Then look through the documents for one talking about POP3 
+in general (you don't want a RFC detailing the specifics of a certain 
+command, unless of course your researching that command.), and look for the 
+section on COMMANDS.  This is easily done, and as so many hackers have 
+pointed out (some in not such a polite way), it's a lot better to find 
+something out for yourself than to have it "fed" right to you.
+
+AMAZING DISCOVERY: EGG DROPS
+
+From: willm@intermind.com (Will Munslow) 
+Subject: Re: Happy Hacker Digest Feb. 6, 1997
+
+At 10:39 AM 2/6/97 -0700, you wrote:
+
+>From: "Roger A. Prata" <prata@bossnt.com> 
+>Subject: check this out 
+> 
+>while on my shell acct, I checked processes, and noticed someone 
+>telnetted..  'telnet localhost 6969'  so of course being the curious 
+>type, I tried it and got.. 
+> 
+>boss1:/usr/home/prata$ telnet localhost 6969 
+>Trying 127.0.0.1... 
+>Connected to localhost. 
+>Escape character is '^]'. 
+> 
+> 
+>Rydia  (Eggdrop v1.0n+pl2  (c)1997 Robey Pointer) 
+> 
+>Please enter your nickname. 
+>prata 
+>You don't have access. 
+>Connection closed by foreign host. 
+>boss1:/usr/home/prata$ 
+> 
+>WOW!!  pretty kewl huh?  any ideas as to what the he** this is?? 
+> 
+>Rog
+
+I dunno. So, hit www.yahoo.com, search for Eggdrop. A couple of 
+pages...here's a good one: http://www.foonet.net/~pepsi/f/estranged.html
+
+>From their FAQ:
+
+(1) WHAT IS EGGDROP?
+
+    Eggdrop is an IRC bot, written in C.  If you don't know what IRC is, 
+    this is probably not whatever you're looking for!  Eggdrop, being a 
+    bot, sits on a channel and takes protective measures: to keep the 
+    channel from being taken over (in the few ways that anything CAN), 
+    to recognize banished users or sites and reject them, to recognize 
+    privileged users and let them gain ops, etc.
+
+    One of the more unique features of Eggdrop is its "party line", 
+    accessible via DCC chat, which allows you to talk to other people 
+    lag-free.  Consider it a multi-way DCC chat, or a miniature IRC 
+    (complete with channels).  You can link up with other bots and 
+    expand the party line until it actually becomes something very much 
+    like IRC, in fact.
+
+    Eggdrop is always being improved and adjusted because the author 
+    is never really satisfied with it.  In fact, it existed for several 
+    years as v0.7 - v0.9 before finally going 1.0.  A valiant effort has 
+    been made to chase down and destroy bugs.  It is definitely nowhere 
+    near as buggy as the ircII client.  Crashes should be rare and 
+    surprising (but aren't they always? [surprising anyway]).
+
+    This README file contains information about how to get Eggdrop, how to 
+    quickly compile the bot, what you may need to do when upgrading from 
+    older versions, a list of frequently asked questions about compiling, 
+    how to set up a crontab, some boring legal stuff, info about the mailing 
+    list (a great place to ask questions), and a complaint/explanation about 
+    the lack of documentation.
+
+    The preliminary documentation is in "eggdrop.doc" and is intended to be 
+    read after you have Eggdrop compiled and set up.  It's changing all the 
+    time and getting new sections added.  If you'd like to write a section 
+    or just indicate some part that needs improving, please do! 
+ 
+
+I'M NOT TRYING TO CRACK THIS ACCOUNT, HONEST!
+
+Subject: UNIX/Change Permission 
+From: point@someled.com (De Lemos, Brian ) 
+  
+If this UNIX question is inappropriate to the list then please do not 
+post it. I have consent from the ISP to be on their server.
+
+I am hoping one of ya'll on the list has a minute to answer a UNIX 
+question for me. 
+I am trying to change the permission access to files on a server 
+Below is a copy of the session:
+
+UNIX(r) System V Release 4.0 (goliath) 
+Last login: Thu Feb  6 17:21:58 
+Please make sure you back up your own accounts. 
+Sun Microsystems Inc.   SunOS 5.4       Generic July 1994 
+Thu Feb  6 17:26:38 EST 1997 
+/home/reddirt> chmod -666 readbook.pl 
+chmod: WARNING: can't access readbook.pl 
+/home/reddirt>
+
+As you can see I am trying to change access to the *readbook.pl* file in 
+the reddirt directory using the *chmod -666* command 
+You can also see that I get 
+*chmod: WARNING: can't access readbook.pl* 
+as my response
+
+Any ideas how I can change the permissions to this file (and the others 
+in the reddirt directory)? 
+Thanks for your time, I know it's valuable, 
+Brian@>-,---'---
+
+From: Marco Pappalardo <bethesda@netropolis.be> 
+Subject: more answers...
+
+to Matthew DeMizio : 
+there is a little something called the 'phf' hack but personally I've 
+never seen it work...Anyway you can check AcidAngel's web page at 
+http://globalkos.org/acid/
+
+From: TQDB <tqdb@feist.com> 
+Subject: Re: Happy Hacker Digest Feb. 6, 1997
+
+On Thu, 6 Feb 1997, Carolyn P. Meinel wrote:
+
+> (Moderator: Some browsers allow you to do ftp (file transfer protocol). Or 
+> were you asking about downloading any arbitrarily chosen file? That would be 
+> illegal.)
+
+    Accessing files over a public website is hardly illegal.  Should an 
+admin be stupid enough to leave their passwd file freely accessible 
+from their web site or have their email archive open for public 
+browsing <ahem> you can hardly blame the user for looking.
+
+    If you take active steps to circumvent the existing security of the 
+site, that would probably qualify as illegal. 
+.TQDB
+
+  -=| T.Q.D.B. - tqdb@wichita.fn.net - http://www.feist.com/~tqdb |=-
+
+From: "mojoe" <mojoe@wko.com> 
+Subject: Web Page hacking
+
+My web page is still being hack! I talked to my isp and he said he has no 
+answer my password is really well un guess able. How can the hacker do this? 
+I want to know? What is password sniffing and how can i do it?
+
+BTW hears and example of our password files..
+
+root:2atAaGv9dtSeo:0:0:root:/root:/bin/bash
+
+Please help!!!
+
+mojoe@wko.com
+
+Moderator: looks like your passwords aren't being shadowed. (Shadowed means 
+the encrypted passwords aren't even in the password file.) I'll bet 
+2atAaGv9dtSeo is the encrypted password for your sysadmin. The temptation is 
+great to run 2atAaGv9dtSeo through a password cracking program and use it to 
+break into the root account and leave your sysadmin a nasty note. But that 
+would be wrong. And illegal:) But I'll bet that's how your nemesis is 
+running rampant on your Web page.
+
+Anonymous post:
+
+Subject: Hacking Novell Netware 
+  
+My school runs Novell Netware on it's computers.  The computers will have a 
+DOS prompt, but you won't be connected to the network until you type in 
+"login tty---" where --- is the login name.  My problem is, as soon as you 
+do that, it runs a script and brings up some program called automenu,  Where 
+it gives you a list of runable programs from the network. 
+   My question is, can anyone tell me where such a script file would be held?? 
+  
+(Answer: 'tty---' is the user name. 
+So if you type SYSCON.EXE (sys:\public\), it will give you a list of all 
+the user on the Novell network. 
+The script that it's running is either the system login or the user login 
+script. If you want to modify the user's login script, try finding the 
+SYS:\MAIL (dir)(to map yourself try - MAP O:=server\SYS:\MAIL) then just 
+follow down the directories until you reach the end. There will be a 
+file called LOGIN (no extension). This is the personal login script.) 
+  
+You can't exit from automenu without logging out.  There is a command which 
+gets you out of Automenu without logging you off but you need a password for 
+that. 
+But the school runs WordPerfect and you have read rights and possibly Write, 
+so I think I can save myself a copy of the script on a disk, without the 
+command to bring up Automenu.
+
+(Looking for the Automenu. Look for a file with the *.mn? extension) 
+  
+You can also run certain Win 3.11 applications though Automenu, but the RUN 
+command is shaded so you can't click on it.  Can someone tell me where the 
+command is located which tells the computer to shade run??
+
+(If you look into your WIN.INI for a [RESTRICTION] section- Look for RUN=OFF 
+just REM (;) that line and you should be able to use the RUN command. 
+Thanx!!
+
+WINDOWS 95 PASSWORDS ARE A JOKE!
+
+From: pmurgs@aztec.co.za (P. Murgatroyd)
+
+There is a small program available on the net to get a users screensaver 
+password (you can run it when the screen saver is active). I think 
+Materva's Hideout has a link to download it.
+
+From: "Steven Alexander" <salexand@cell2000.net> 
+Subject: Windows 95 Screensaver
+
+As a reply to Tony's message I would like to add that there is an article 
+in the winter '96 issue of 2600 that he would probably be interested in.  I 
+hope it helps.
+
+  Steven Alexander
+
+From: "Steven Alexander" <salexand@cell2000.net> 
+Subject: Protected mode sucks
+
+I just wanted to say that windows protected mode sucks.  It can be broken 
+in a variety of ways; these are a few:
+
+1) Use a boot disk. 
+2) Select run from the Windows file menu and enter C:\command.com 
+3) On start-up bypass the autoexec.bat files.
+
+I may post all of the ways I know to beat windows "security" in a later 
+post but  I'm short of time.
+
+I just wanted to put out the message that protected mode is no means of 
+security.
+
+From: jopee@mozcom.com 
+Subject: win95
+
+Kumusta mga kumpare sa HH?
+
+How many ways does WIN95 encrypt ur password? 
+What process does WIN95 to encrypt a password?
+
+From: Saint Waldo <stwaldo@teleport.com>
+
+A really simple way to get rid of a windows password (if you have 
+physical access) is to boot into DOS (try hitting F5 during boot up 
+to see a nice boot menu), and the shuffle thru the Win95 dir looking 
+for *.pwd files.  At this point, you can trash all the sharing 
+passwords on a machine.  Reboot.  Set up any password you want, 
+anywhere.  Make sure you add access and a password for yourself on 
+the win95 hierarchy.  If that icon change on shared folders seems 
+like a dead giveaway, you can use Plus to change it.
+
+As an ethical note, messing with other peoples configs is LAME!! 
+Ask your friend who got burned if they want to see this blow up 
+into a war.  Since it sounds like you all are near each other 
+geographically, this stuff is great fuel for a fistfight.  I'd 
+just call the guy a loser, clip his net cable, and make HIM sit 
+in front of your friends box during the arduous Win95 install. 
+If you really want to make him squirm, tell him you want to 
+have a preserved copy of DOS 6.2 on the drive as well.  Then 
+ask for OS/2 and NT partitions as well.  And make 
+him serve daiquiris while the installer checks the system.  Then 
+you'll be 3liT3, cuz every gronk knows that Win95 is a tough 
+nut to crack (I hope the sarcasm is obvious).
+
+BTW, a Timex Sinclair running BASIC is inherently cooler than 
+any Pentium Whatever running Gates' World (Parity Time, 
+Excrement!).
+
+OOPS, NOW CAN I COVER MY TRACKS?
+
+From: "Steven Alexander" <salexand@cell2000.net> 
+Subject: logfiles
+
+To Enrique you may also want to edit the log files usr/adm/sulog and 
+usr/adm/culog if you used cu.
+
+From: Bauermann <jungmann@br.homeshopping.com.br> 
+Subject: question
+
+        Hello guys, I was reading this list and I saw some questions about 
+"which log files should I modify/delete?", and u said that you shouldn't 
+delete or modify those files or it would be a crime. Good, but then how can 
+we hack into a system without being noticed? If you don't modify anything, 
+maybe the sysadmin wouldn't care about you? I'm still a newbie, and I want 
+to hack for the first time, but I need to know how to make it in "the secure 
+way". 
+[]'s 
+Thiago
+
+Moderator: There ARE things a hacker can do other than break into computers. 
+Or you could get a friend to let you try breaking into his. Or you can hack 
+your own computer. But if you crack into the computer of someone who doesn't 
+consent, and then you alter logs, you are making your crime worse. Also, 
+systems administrators are often hackers. You don't want to find out what 
+your victim sysadmin may do to you to get revenge.
+
+MORE ON LINUX
+
+From: Marco Pappalardo <bethesda@netropolis.be> 
+Subject: more answers...
+
+to matthias@hacker.cymes.de.dyn 
+you can use your Linux box as a router but I think it would imply that 
+you install Linux on the other PC's too. Anyway it would take up too 
+much space to tell you how to do it so I can only recommend you to buy 
+the book 'TCP/IP' from O'Reilly (excellent books by the way).
+
+Well that's all for now... :-) 
+  Bethesda
+
+HOW TO KEEP ACTIVE-X FROM RAIDING YOUR ON-LINE BANKING ACCOUNT
+
+From: "Charles Duffy" <duffy@lightspeed.net>
+
+> Our only solution would be to 
+> forbid browsers from executing any ActiveX component without express 
+> authorization, but that rather circumvents part of what ActiveX is 
+intended 
+> for.
+
+The user can choose if they want each ActiveX component to be installed. If 
+it's suspicious (or even uncertain), the option is available to just say 
+no.
+
+IS ANYBODY OUT THERE?
+
+From: "Steven Alexander" <salexand@cell2000.net> 
+Subject: Is anybody out there?
+
+I was just wondering if there were any other hackers around the Central 
+Valley - Merced area of California.  I've been hacking about a year now and 
+have yet to run into any others in my area.  Will anyone who is in my area 
+please e-mail me.
+
+FINGER QUESTION
+
+From: Warpy <mindfusion@geocities.com> 
+Subject: Finger redirection
+
+I read that it is possible to redirect a finger query using the 
+following format:
+
+$ finger @host@targethost
+
+Is this the case? Two other questions. Is it possible to do the same 
+through telnet (if so how?), and thru how many servers can you 
+theoretically redirect finger.
+
+BTW, I would like to congratulate WebWarrior? for setting up a fantastic 
+site at www.infowar.com. As well as that how about seeing more people 
+using it's IRC server at www.infowar.com:6667.
+
+Moderator: I got it to work on a Linux box but not with bash on Sun OS. I 
+wonder if I was doing something wrong, or if that's just Sun OS?
+
+MORE LESS IS MORE
+
+From: pmurgs@aztec.co.za (P. Murgatroyd) 
+Subject: Re: Happy Hacker Digest Feb. 5, 1997
+
+>actually, by "cat it through more" he meant "cat /etc/services | more".  But 
+>it won't make a difference, except in helping you to understand Unix.  Also, 
+>I have never seen less (much better than more, but not as good as most <G>) 
+>on anything but a Linux box.
+
+I'm running 'less' on two IBM RiSC 6000 boxes running AIX 4.1 for which I am 
+the admin for at work. I couldn't get by without it.
+
+SNIFFER QUESTION
+
+From: imPulse9 <noone@nowhere.no> 
+Subject: Sniffing Data
+
+Hey. I am a beginner hacker who is just wondering how to run a sniffer 
+program such as esniff.c...if anyone knows, please e-mail 
+me(creednet@cybernex.net) or if this mailing list's moderator could tell 
+me, it would be greatly appreciated. Thanks!
+
+Moderator: why do I get the feeling everyone who asks about sniffers wants 
+it to intercept passwords or email? Those are both illegal. Is there anyone 
+who could enlighten us about how to detect sniffers?
+
+WANT HANDLE IDEAS
+
+From: Frankie Hayes <strider@unix.aardvarkol.com>
+
+Hey, 
+ So howz everyone doing? The point of this is to state that the usage of 
+the legendary "Strider" was/is unintentional.  I had been searching for a 
+LONG time for a descent handle and i came upon Strider to use. I don't 
+mean to sound like a lamer, etc., but i don't like committing "Hacker 
+No-No's" such as this. SO, if anyone has a suggestion for a handle, I'd 
+appreciate your response/post....Later all! 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 

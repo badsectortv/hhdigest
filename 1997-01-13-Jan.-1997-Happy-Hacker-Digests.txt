@@ -1,0 +1,520 @@
+Jan. 1997 Happy Hacker Digests
+
+Mon Jan 13 20:49:57 1997
+
+Welcome to -- or back to -- the Happy Hacker list.
+
+We have been down for awhile thanks to (pick one or more):
+
+a) Hacker Wars!!@#!?*%#! 
+b) Your Fearless Leader, Carolyn Meinel, has been too greedy lately and has preferred making money on her consulting jobs 
+c) Technical difficulties 
+d) Fearless Leader met a really dynamite computer scientists and got married 
+e) Two blizzards since Christmas
+
+If you want to study, laugh at or flame back issues of Guide to (mostly) Harmless Hacking, you may find them at either http://www.vcalpha.com/silicon/episteme.html or 
+http://www.netwalk.com/~silicon/void-neo.html#happy.
+
+Our thanks to Silicon Toad, who is providing this Web archive. There are many resources for advanced hackers at his site, as well.
+
+We also wish to credit Gerard Cochrane Jr., Patrick Rutledge, Jericho, Webwarrior, Betty G. O’Hearn and Winn Schwartau for tremendous amounts of expert assistance to the Happy Hacker list.
+
+If you prefer the Web version of the Happy Hacker list, we are just opening a moderated forum at http://www.infowar.com/cgi-shl/login.exe. This is computer security guru Winn Schwartau's site. To read, click on the "hacker" forum. On your first visit, please click on the help button to register your choice of a user name and password. To submit posts to this Web forum, just be very patient and remember to move around the frames until you see places that give you the right options. Also, this is new software, so expect lots of "undocumented features"! But it has the advantage that it gives you hot links to email the people who post there or to jump straight to the kewl hacker sites people tell us about.
+
+If you have hacking questions, first please read through this forum before asking, as your question may have already been answered there.
+
+If you wish to submit posts to the email version of the Happy Hacker list, send them to cmeinel@techbroker.com.
+
+Soooo ... Welcome to the biggest game on Earth:
+
+Hacking!
+
+Top ten reasons hacking is the biggest game:
+
+10) It is REAL. 
+ 9) If you mess up you can go to jail. 
+ 8) If you do it right, you can make lots of money and feel good about yourself. 
+ 7) It's a good way to impress people and get dates. 
+ 6) If it weren't for hackers, the Internet would long ago have collapsed under the  weight of spammers. 
+ 5) It is absolutely the best way to learn about computer and communications  software and hardware. 
+ 4) Even if it isn't the best way to learn, it sure is the most fun way! 
+ 3) Some day we will save planet Earth from alien attack. 
+ 2) Hacking will always keep us one jump ahead of Big Brother.
+
+And, for the NUMBER ONE REASON hacking is the BIGGEST GAME ON EARTH...
+
+ 1) Once you learn enough to be dangerous, hacking is totally addictive.
+
+So welcome to the Happy Hacker list! This is a moderated discussion group dedicated to the proposition that it is possible to hack to our hearts' content -- without breaking the law! That's why we're happy hackers: we don't have to worry about the bummer of jail.
+
+However, we do recommend parental discretion in the use of this list. While hacking can be done in a harmless manner, we don't promise that our hacking tips can be entirely fool-proof. However, the family that hacks together, stays together.
+
+If you want to boast to the list about the computer crimes you have committed -- SHUT UP! We are against computer crime. Yech! Bleah! We hate crime! Also, a bunch of narcs are on the list, so we all have to be on our best behavior:) If you don’t believe me, just check around the rest of the Infowar.com Web site, d00dz!
+
+Note to the humor-impaired: we kid around a lot. If you grind your teeth and write email full of naughty words when you see people goofing around and committing pranks, this list will give you ulcers. We have observed that about one out of every ten hackers has total fits when people joke about computers. That's how come we get hacked so often.(On the other hand, if you like to laugh, you can join our totally frivolous technology humor list by emailing humor@techbroker.com with message "subscribe.")
+
+Because the Happy Hacker list is moderated, you don't have to worry about getting flamed for asking "dumb" questions. If you want, you can request anonymity in your posts to either the list or Web forum. Just write "please make this anonymous" in your message and email it to cmeinel@techbroker.com instead of posting it directly to the infowar.com hacker forum.
+
+If you do see any flaming on the list, it is because both parties to the flame war have agreed to it. Unfortunately, some people have good ideas to contribute to the list, but are unable to express themselves without being insulting. That is why we compromise by letting them have their obnoxious say if the target of the insults agrees to having it posted. We will, however, bleep out the naughtiest words.
+
+Moderator is Carolyn Meinel, a research engineer, writer, political activist and generalized trouble maker/prankster.
+
+You can read about Meinel at http://techbroker.com, or in the book Great Mambo Chicken by Ed Regis, Addison Wesley, 1990. For example, Regis quotes her as saying, "Engineering students are always pulling pranks...but back in those days... you could just go down to Apache Powder Company and ... say 'I want a case of dynamite, thirty feet of spritzer cord, ten yards of primacord,' and so on and they'd sell it to you like it was nothing."
+
+Well, today you can just walk into a bookstore and say "I want Essential System Administration by Aeleen Frisch (O'Reilly & Associates, 1995), Internet Security Professional Reference (New Riders, 1996) and Internet Firewalls and Network Security by Karanjit Siyan (New Riders, 1995)" and they'll sell them to you like it was nothing.
+
+Yet the consequences of ANYONE being free to understand and MANIPULATE the over ten million computers and the communications links of the Internet is vastly more revolutionary than mere knowledge of how to build bombs.
+
+We are talking about the obsolescence of taxes, national governments, the end of poverty and eradication of acne. OK, OK, maybe not quite all that stuff. But we can guarantee that the Internet and spread of computer literacy will transform the world. Hang with this anarchistic army of happy hackers, and you, too, can play a role in how this transformation will unfold.
+
+Think of the "butterfly effect" of chaos theory. In a chaotic system, a tiny force can such as the flutter of a butterfly's wings can catalyze a cascade of events that could ultimately divert the course of a hurricane so that it dissipates harmlessly at sea.
+
+Today the chaotic system is the collapse of the industrial age and the rise of the information era. The hurricane is the threat of weapons of mass destruction. Thanks to the spread of computer-aided engineering, production of nuclear weapons is becoming almost trivial.
+
+But in the path of the hurricane lots of butterflies are flitting around: us hackers.
+
+The Happy Hacker list is designed to be your hands-on introduction to hacking on the Internet. You can start with reading back issues our Guide to (mostly) Harmless Hacking, archived at either http://www.vcalpha.com/silicon/episteme.html or 
+http://www.netwalk.com/~silicon/void-neo.html#happy. Each of these guides gives easy, step-by-step instructions on how to hack. In fact, we promise that with only half an hour of reading and practice and knowledge of just *two* commands, you can do hacks that will amaze your friends.
+
+But we go beyond mere cheap hacking tricks. Each of the hacks you will learn illustrate profound principles of how the Internet works -- and how to bend it to your will. Furthermore, the exercises we present will never ask you to break the law -- or even violate Netiquette. Well, not very often...
+
+Of course we wrestle with the ethical dilemma: many of the things you will learn from Happy Hacker can be used to commit crimes and hurt people. Or they can be used to stymie tyranny, earn a good living, battle spammers, and have fun. But we haven't figured out a way to teach you how to play the Internet like a Stradivarius violin without also teaching you how to use it like brass knuckles and nerve gas.
+
+So it's your choice. Parental discretion advised. But if you choose the dark side of hacking, you'll have to contend with the rest of us. You have been warned!
+
+Happy Hacking! 
+ 
+
+Thu Jan 16 09:51:05 1997 
+Subject: Happy Hacker Digest. Dec. 14-15, 1997
+
+Want to either get a few laughs or get really mad at the Happy Hacker list's 
+Fearless Leader? Check out 
+http://www.pcworld.com/news/newsradio/meinel/index.html.
+
+So why aren't many people posting to our new Hacker Infowar discussion group 
+yet at 
+http://www.infowar.com/cgi-shl/login.exe?
+
+Damien Sorder (jericho) was the first to  post there. I've also posted 
+several people's items there, but the way the software works all those posts 
+look like they came from me. We also have a new, turbocharged version of the 
+Guide to (mostly) Harmless Hacking on forging email posted there.
+
+It's a great place for you to post because some 80,000 to 100,000 people 
+visit the Infowar site every week. By contrast, there are only about 1000 
+people on this list.
+
+Of course, that software is a little bit hard to use if you aren't in the 
+habit of moving frames around to see all those command options. Heck, I had 
+a miserable time learning it myself. I also managed to encounter a bug the 
+first day I used it. (That bug is that you can crash a portion of it by 
+trying to post an item that is too big. Sounds like a buffer overflow to me. 
+Hmm...)
+
+But heck, we're all hackers, so finding bugs is what we like to do! If you 
+have trouble reading or posting to the Infowar site, email me and I'll 
+answer questions -- with help from Webwarrior, the Infowar sysadmin.
+
+Also, guess what -- log in at the Infowar site and you get a free mini-home 
+page! Also, they are looking for more people to moderate discussion groups. 
+See the official announcement below for details:
+
+From: "Betty G. O'Hearn" <betty@infowar.com> 
+Subject: Discussion Forums Open
+
+On Monday, January 13, 1997 WWW.InfoWar.Com will begin hosting a series of 
+discussion forums, available to anyone on the Internet. Everyone who logs onto 
+the forums will also be provided with a mini-home-page (for free!) so other 
+participants may get to know with whom they are interacting.
+
+The discussion forums may be accessed from the Infowar.Com Home Page by 
+clicking on the "Digest, Discussion & Chat Groups" icon.
+
+The forum moderators will be:
+
+Moderator                                                 Topic
+
+Winn Schwartau   Information Warfare and 
+President, Interpact, Inc.                 Electronic Civil Defense
+
+Carolyn Meinel                                          Hackers/Hacking 
+Publisher of Happy Hacker Digest
+
+Matthew Devost                                        Terrorism 
+Systems Engineer, SAIC
+
+William Church                                         IWAR 
+Publisher of The Journal of IWAR Intelligence Acquisition
+
+Scott Brower                                             EBR  Electronic 
+Bill of Rights/Privacy 
+Executive Director, Electronic  Frontiers Florida
+
+Robert Steele                                            OSSINT 
+President OPEN SOURCE SOLUTIONS, Inc.
+
+Unmoderated                     Viruses
+
+Unmoderated                     Infosec
+
+We welcome this distinguished group of moderators and encourage you to 
+participate in these forums. Sign in and start posting!
+
+Have an idea for a new discussion forum?  Want to be a moderator?  Contact 
+betty@infowar.com.
+
+_______________________________:)
+
+InfoWar.Com will also be introducing several hundred  "chat" lines in the 
+coming 
+weeks.
+
+Keep contributing..... keep up your input.  We are introducing these new 
+modules that you have requested.
+
+Thanks for all of your invaluable support.
+
+Winn Schwartau and the incomparable staff at 
+www.infowar.com
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+From: Jared <amazing@li.net> 
+Subject: messed up/need help
+
+Dear Carolyn,
+
+First off, before I say what I need help with, I want to admit something.  I 
+am a stupid newbie! I installed Linux recently (What a pain) and ever since 
+I have been messing around with it.  I have been trying stupid things like 
+DOS commands in Linux (yeah I know it sounds stupid).  So far only dir 
+works.  I was playing with the vi editor and the file /etc/passwd .  I was 
+playing with Linux following an old computer philosophy "When all else 
+fails, read the manual." Well as you can probably guess all else has failed 
+and the manual doesn't have a chapter on recovering after you screwed up.  I 
+managed to make it so I can't log into my system as root.  I changed the 
+name root to oprttt' or something(yes I even added the ').  I typed in 
+oprttt' then my password, and it says something about /root/, and my kernel 
+version.  It does not say incorrect password and I know I didn't change that 
+part.  I logged in as another user I made earlier, and tried to edit it 
+back.  The other user has Read only capabilities when in the passwd file. So 
+now here is my question.  Can this be undone. Do I have to reformat my 
+Linux partition?  How do I reformat my Linux partition?  ohh yeah can you 
+recommend a good Linux book to me?  ( I have Slackware version, but forgot 
+the numbers) I appreciate any help you can give me.
+
+Thanks in advance, 
+Jared(amazing@li.net)  P.S. I noticed something about what I did.  When I 
+tried                        to finger the name I put instead of root it 
+doesn't work.                        I believe it to be because of the '. 
+that is the only                        thing I can think of that would make 
+a difference. Can                        this ability to not get fingered be 
+useful (I hope so                        then I can say this hole 
+experience wasn't for nothing)
+
+(Moderator's note: I found the "Linux System's Administrator's Survival 
+Guide" by Timothy Parker, Sam's Publishing to be really helpful.)
+
+From: "MICHAEL C. CHUSUEI" <mchusuei@osf1.gmu.edu> 
+X-Sender: mchusuei@mason2.gmu.edu 
+To: carolyn meinel <cmeinel@techbroker.com> 
+Subject: hacknet 
+X-Loop: techbroker.com
+
+carol, 
+ in one of your GTMHH, you talked about creating a site where 
+people could legally hack.  I think this is kewl idea!!! what would it 
+take to get something like that going? I'm pretty much a newbie, but I'd 
+like to help in any way I can.  I figure by helping to set it up I can 
+learn stuff in the process.
+
+(Moderator's note: I am checking out a Web site in Australia that is 
+offering prizes for people who can hack into a certain computer. I want to 
+be certain this is not a hoax first, however.)
+
+other questions: 
+1.) how does one become an ISP?
+
+(Moderator's note: With just a PC, Linux and an ISDN line you can launch a 
+half-way decent ISP. See the book "Building a Linux Internet Server," by 
+George Eckel and Chris Hare, published by New Riders, 1995. It even includes 
+a CD-ROM with Linux.)
+
+2.) how does one become a sysadmin?
+
+(Moderator's note: learn TCP/IP and Unix or Windows NT inside and out.)
+
+3.) if information about a user is contained in the packets that TCP/IP 
+sends out, is there any way to disguise it or alter it? I think doing so 
+would be difficult, because then if an error occurred during transmission 
+it would be difficult for the remote computer to request resends of the 
+messed-up packets.
+
+(Moderator's note: that's IP spoofing. Good question on resending messed up 
+packets. Anyone else have an answer?)
+
+mike.
+
+From: JFM100000@aol.com 
+Subject: easy hacking
+
+having trouble with fingering where do you put command?
+
+Moderator's note: Here's what I do--
+
+->telnet remarque.berkeley.edu 79 
+Trying 128.32.152.164 ... 
+Connected to remarque.berkeley.edu. 
+Escape character is '^]'. 
+shipley 
+Login name: shipley                     In real life: Evil Pete 
+Directory: /h/remarque/shipley          Shell: /bin/csh 
+Last login Wed Jan  1 15:39 on ttyp6 from loca1host.dis.or 
+No unread mail 
+Project: destory all those that oppose 
+Plan:
+
+(Moderator's note: I snipped out the plan, but it makes really entertaining 
+reading. Fingers ahoy!)
+
+ (Anonymous post)
+
+Well I have to admit that you have really help me with your text about the way 
+of sending and recognizing fake e-mails.. I was looking for such guidance 
+everywhere and you when I found yours I was amazed of the way you explained it 
+(It was so easy that even my young brother can take it down) Thanx man... And 
+something to propose . If you want you can check out the server "atlanta.com 
+25" I think it is one of the best so far . And that is because There is no way 
+(as far as I've tried ,which is not far enough :)) to understand that it is 
+fake .
+
+(Moderator's note: here's what I get--
+
+From: santa.claus@postal.atlanta.net 
+(snip) 
+Received: from santa.claus (kitsune.swcp.com [198.59.115.2]) by 
+postal.atlanta.net (8.8.4/8.8.0) with SMTP id VAA00594 for 
+cmeinel@techbroker.com; Wed, 15 Jan 1997 21:46:26 -0500 (EST) 
+Date: Wed, 15 Jan 1997 21:46:26 -0500 (EST) 
+X-Loop: techbroker.com 
+X-Loop: techbroker.com 
+Message-Id: <199701160246.VAA00594@postal.atlanta.net> 
+Apparently-To: <cmeinel@techbroker.com>
+
+That kitsune stuff tells what computer this really came from. The SMPT id 
+can be traced by the kitsune sysadmin to identify me as the sender. )
+
+The only shortcoming of the server is that if you press the backspace 
+there is a box where you have pressed it on the e-mail that the "Victim" 
+receives . Do you have any ideas of how I can surpass that problem ??? Do 
+you know 
+any better servers where it is difficult (especially for people who do not know 
+the way ) to understand the phony ?? Please let me know .
+
+Oh and something else I have two bios crackers and they both do not work (I 
+have set a pass and they do 
+not reveal it )I wanna know just for the fun . Do you have any bios 
+crackers?? And is it difficult to become an expert hacker (Some say it only 
+takes to know the assembly language...
+
+From: Charles Duffy <duffy@lightspeed.net> 
+Subject: Win32 console utils
+
+I've found Win32 console-based telnet, whois, finger and host programs 
+patterned after their UNIX equivalents... any advantage of the UNIX ones, 
+tho? (that is, do I still need a shell account?)
+
+(Moderator's note: OK, OK, Windows NT and Windows 95 -- the 32 bit operating 
+systems -- have more and more great TCP/IP utility programs coming out. But 
+I still think Unix rules!)
+
+From: Magus <LordKidd@concentric.net> 
+Subject: Fingering and "Shell accounts"
+
+OK.  Please bear with me cuz I'm a newbie.  All right, when I log on to 
+concentric.net, I dial in and then when it's connected I start 
+Netscape.  When you wrote about shell accounts, were you talking about 
+going through something like Hyperterminal?  If this is the case, will I 
+need a Unix password or just my own?  Thank you for all your help.  You 
+seem to be one of the nicer "hackers" out on the net.  :o)
+
+(Moderator's note: yes, you usually need a separate password to log into a 
+shell account. Hyperterminal is one of my favorite VT-100 terminal 
+emulators. I use it all the time with my shell account.)
+
+From: "John G." <creator2@sbt.infi.net> 
+Subject: shell account
+
+hi again-creator2. I've spent a week now trying to find a shell account. 
+called at least 10-15 ISP's and *nothing*. keep referring to different 
+places and telling me that there is no market for them so they won't 
+sell 'em. went to search engines and get a 1,000 different accounts. 
+HELP! 
+-creator2 
+ 
+
+Thu Jan 16 22:54:23 1997 
+Subject: Happy Hacker Digest Dec. 16, 1996 
+X-UIDL: ab2d8acc2c74e095877b3a82e84491d0
+
+Happy Hacker Digest Dec. 16, 1996
+
+Moderator’s note: Hooray! Almost half of today’s new posts were placed on 
+our Hackers site at http://www.infowar.com/cgi-shl/login.exe! Remember, post 
+there and it is easier for the tens of thousands of visitors to the 
+Infowar.com site to read your words of wisdom. But, yes, it is a hassle to 
+post there, especially for us lynx browser fans.
+
+Our apologies to those of you who got more than one copy of the Digest 
+yesterday. Right now we’re using a Win95 Pentium running Eudora over a PPP 
+dialup connection for this list. It’s clunky, but also hard to hack. Please 
+email me if you get more than one copy of this so I can more easily debug 
+things.
+
+From: jericho@dimensional.com 
+Posted-Date: Wed, 15 Jan 1997 23:07:05 -0700 (MST) 
+Date: Wed, 15 Jan 1997 23:07:04 -0700 (MST) 
+To: "Carolyn P. Meinel" <cmeinel@techbroker.com> 
+Subject: my response for the HH list
+
+> Happy Hacker Digest. Dec. 14-15, 1997
+
+> So why aren't many people posting to our new Hacker Infowar discussion group 
+> yet at 
+> http://www.infowar.com/cgi-shl/login.exe?
+
+Tried going to those pages with lynx? :)  Web forums suck for daily chat.
+
+> Unmoderated                     Infosec
+
+Weird that Winn wouldn't moderate this.
+
+=-=
+
+> part.  I logged in as another user I made earlier, and tried to edit it 
+> back.  The other user has Read only capabilities when in the passwd file. So 
+> now here is my question.  Can this be undone. Do I have to reformat my 
+> Linux partition?  How do I reformat my Linux partition?  ohh yeah can you
+
+Yes. Look into booting into "Single User Mode". Read the manual for 
+details.
+
+=-= 
+>  in one of your GTMHH, you talked about creating a site where 
+> people could legally hack.  I think this is kewl idea!!! what would it 
+> take to get something like that going? I'm pretty much a newbie, but I'd
+
+A series of boxes with different OSs, public banners on each saying it is 
+legal to hack, along with the guidelines, and notarized letters mailed to 
+anyone who asks for them.
+
+> (Moderator's note: I am checking out a Web site in Australia that is 
+> offering prizes for people who can hack into a certain computer. I want to 
+> be certain this is not a hoax first, however.)
+
+If it isn't their site, then it is a hoax or DOS.
+
+=-=
+
+> (Moderator's note: OK, OK, Windows NT and Windows 95 -- the 32 bit operating 
+> systems -- have more and more great TCP/IP utility programs coming out. But 
+> I still think Unix rules!)
+
+Excuse me? You list Win NT and Win95, then say "32 Bit Operating Systems" 
+(plural). I only see one there. Win95 is NOT a 32 bit operating system.
+
+=-= 
+(Moderator’s note: jericho sent in details on Windows 95 problems and 
+limitations which I have posted at the Hackers forum at 
+http://www.infowar.com/cgi-shl/login.exe.)
+
+From: Pheesh <morgue@cloud9.net> 
+To: cmeinel@techbroker.com 
+Subject: please post this
+
+hello out there,
+
+This is my first post so I hope I'm doing 
+right.  If not please let me know where to 
+send my posts.
+
+First off, let me say that your mailing list 
+is the best thing since microbreweries. 
+I have one problem though.  When you gave your 
+example of telneting to the finger port, you 
+entered the site by typing 'telnet blah.com 79'. 
+Now if someone using a Unix shell account were to 
+use the 'w' command they will know exactly where 
+you are.  Take from someone who has had ppl follow 
+me around net.  The best way to avoid this is by 
+typing 'telnet' at the command prompt.  Then type 
+'open' and then enter the site.  This way when someone 
+types 'w' they will see the word 'telnet' after your 
+name.  The same technique can be used for any application 
+i.e. ftp, Lynx....Now no one will know that you are trying 
+to dominate the world by way of yale.edu.
+
+Hope this is helpful
+
+Laters
+
+From: mulder@jumbo.ntplx.net (Hunter Rose) 
+Subject: Re: Happy Hacker
+
+hello.
+
+I’ve been using computers for about three years, and bought one about a 
+year and a half ago. I'm completely fascinated by them in practically every 
+way, and would like to thank you for providing such a unique learning 
+avenue to people like me. most of what I learned is from trial and error (I 
+learned DOS from breaking into my school's library-search computers.) so I 
+know the importance of learning beyond what they tell you in manuals..
+
+which brings me to my very general question...
+
+I know next to nothing about UNIX or shell accounts, something which 
+frustrates me to no end. but another factor is the fact that I use a 
+Macintosh computer. personally, I prefer them over other types of 
+computers. the fact that when I say that scores of 'elite hacker warriors" 
+spare no effort in telling how much of a piece of crap Macs are and how 
+stupid I am for using one.
+
+I would appreciate an informed answer (and perhaps an opinion, if I can 
+receive one without opening the dreaded computer holy war book again.)...is 
+it possible to have a good shell account, etc, on a Macintosh? how is 
+hacking on the Macintosh?
+
+I thank you for your time, and happy hacking,
+
+--daniel barrett 
+ 
+
+  ------------------------------------------------- 
+HUNTER ROSE -  mulder@ntplx.net 
+Devil By Deed 
+http://www.geocities.com/hollywood/8707 - sailor mercury homepage 
+"..the key to liberation is abstinence form the destructive escapism of 
+intoxication.." - earth crisis 
+socialism/freedom/straight edge 
+  -------------------------------------------------
+
+From: Emilio González <emiliog@mtnweb.com> 
+Subject: Announcement (for HH)
+
+I'd like to tell all Mac users that feel left out of the fun (read: 
+agonizing installation process) of Linux, Apple has ported it for the Mac. 
+Called MkLinux, information, along with how to obtain a CD or download it, 
+is available from http://www.mklinux.apple.com/.  It's currently supported 
+only by 601 NuBus and 603/604 PCI Power Macintoshes and clones. 
+  
+ 
+
+          Emilio Gonzalez                    emiliog@mtnweb.com 
+                  ------------------------------------- 
+                          Information is Power. 
+                  ------------------------------------- 
+                    Don't believe what they tell you. 
+                    I'm capable of coherent thought. 
+                  ------------------------------------- 
+           Have you ever been to the Wheeling Hubcap Factory?

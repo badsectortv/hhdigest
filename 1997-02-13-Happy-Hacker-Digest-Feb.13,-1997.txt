@@ -1,0 +1,324 @@
+Happy Hacker Digest Feb.13, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to . Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking --"National security" and "drugs" have become the root 
+passwords to the US Constitution! 
+---------------------------------------------------------
+
+URL O' the Day: http://www.wired.com/news/technology/story/1993.html See 
+another Bulmash on the warpath against spam!
+
+Finger O' the Day: Quake fans, give the command "finger 
+johnc@idsoftware.com" for a real eye opener.
+
+Table of Contents
+
+Denial of Service Attack Against FCC 
+Inside Dope on Swedish Hack Contest 
+Hacker Handles 
+Security Hole? 
+SMPT Question 
+Syn Flood Answer 
+Freefall User Alert 
+More Flames
+
+DENIAL OF SERVICE ATTACK AGAINST FCC
+
+Moderator: Please stop emailing me about how we all have to desperately 
+email the FCC or else they may allow local phone companies to impose per 
+minute charges on Internet access. Yes, there was some truth to the alerts 
+you sent me. But the deadline for comments has passed. The telcos have lost. 
+Now stop those messages!
+
+Michelle V. Rafter in a Reuters Report, February 13 at 10:03 am EST, says 
+that the Federal Communications Commission consideration of the [RBOC's] 
+levying of access fees on Internet providers has generated much consumer 
+activity. The FCC received more than 80,000 messages from consumers in one 
+four-day period last week. This was an unprecedented amount for a single 
+subject over a four-day period. She reports that mail continues to arrive at 
+a rate of 30 message per minute and, at one point, temporarily crashed the 
+e-mail server.
+
+But today I got an email with an altered deadline for comments. This 
+suggests malicious intent. Also, many of the email messages I have been 
+spammed with on this topic had no deadlines for submission of comments to 
+the FCC. You should beware of any email that urges you to send out email to 
+anyone else, especially when there is no "drop dead" date. Good Times 
+syndrome. Folks, this has become just one more sleazy denial of service attack.
+
+D00dz, NEVER, NEVER, NEVER act on an email warning without checking up on it 
+yourself. You can check out the FCC Web site where discussions of changes in 
+regulations are posted: http://www.fcc.gov/isp.html.
+
+For debate on this issue, see "yes" side at 
+http://www.fcc.gov/Bureaus/Common_Carrier/Comments/access_reform/ 
+The No side: http://www.econtech.com/exec.htm
+
+INSIDE DOPE ON SWEDISH HACK CONTEST
+
+From: bbuster@succeed.net (Bronc Buster!!!) 
+Subject: Please Hack this System?
+
+OK, I know everyone out there has heard about this server in Sweden that is 
+begging to get hacked (http://hacke.infinit.se/indexeng.html <-- The Engilsh 
+Site). I will tell you all now, don't waste your time. Although they have 
+made this server a Public Domain and given the proper legal disclaimers to 
+the authorities on placed them on their sites, this site (I'm 99% sure) CAN 
+NOT be hacked into. "What?" you say. Bronc Buster saying a site is 
+UNhackable? Well this site in running on a MAC. Here is the server information:
+
+(Information Provided by THEM!)
+
+Computer: Power Mac 8500/150 with 64 megs of RAM, 2 gig HD. 
+Network: Standard Ethernet on a 10 baseT LAN. 
+Server: WebSTAR 2.0 with minimun plug-ins. 
+Operating System: Mac OS 7.6 running Apple Script. The Open Transport has 
+been                   upgraded to 1.1.2 
+Domain: hacke.infinit.se, IP 195.198.39.110
+
+For those of you not familiar with a Mac web server, let me give you a quick 
+crash course. It's more like a Windows web server than a Unix web server (to 
+put into Windows terms). The Mac server has NO telnet process/program to 
+attach to, and FTPs are not possible. Because of this lack of a "shell" to 
+get into, so you may change their web site and get all that money, it leaves 
+very little possibilities for getting attached to their server, besides HTTP. 
+In addition to this, if you COULD somehow attach, you would need to be 
+running a Mac, with AppleTalk of course, and be using a Mac TCP/IP stack. 
+The only "hole" found on this server was the cgi-bin directory, which on a 
+Mac server is not a hole at all.
+
+I'm not a Mac lover by any means, BUT their Web Servers are the most secure 
+on the net today and I'd put one of them up against a Unix system any day. 
+So go back to school, or work and forget about this 10,000 whatevers (it's 
+Swedish money) because I bet they don't even have it. If someone does hack 
+it, I'll eat a bug....... 
+ 
+
+Regards                   \__ ^^ __/ 
+   BB                        X  X 
+                             \  / 
+                              \/
+
+HACKER HANDLES
+
+From: "Matt . Wolak" <mwolak@wesleyan.edu> 
+Subject: handle
+
+ Just pick something you are interested in, and I like something 
+just obscure enough so that it's meaning is only really obvious to someone 
+who is in to the same things as you. Mine, for example, is Etaon Rish. I 
+enjoy cryptography and cryptology beyond belief. There are other reasons 
+you would know this, but those are (in order) the 9 most common letters in 
+the English alphabet. It started as a mnemonic device for me when I was 
+first getting into the making and breaking of codes. It also sounds cool. 
+ Etaon Rish
+
+SECURITY HOLE?
+
+From: Noah Goldberg <mtribe@duo-county.com>
+
+Hi,
+
+Usually when I dial my ISP the server immediately asks for my user-id 
+and password.  But occasionally when I dial it says "Connected to 
+Multi-Modem Manager" first and rejects my password.  Is this a possible 
+security hole?  Could I have connected to a different machine?  I'm not 
+trying to hack into my ISP, just curious as to why this would happen.
+
+Thanks, 
+Noah
+
+SMPT QUESTION
+
+Anonymous post:
+
+Dear Carolyn,
+
+I was wondering how the heck can I attach a file if I telnet to a port on a 
+distant computer to send e-mail.
+
+Moderator: I advise doing a Web search with key words "SMPT" and "RFC" .
+
+SYN FLOOD ANSWER
+
+From: Brad Pauly <paulyb@colorado.edu>
+
+Check out Phrack Magazine volume seven, issue 48, file 13: Project Neptune. 
+www.fc.net/phrack/files/48/p48-13.html
+
+-bp
+
+Moderator's note: That Phrack code needs two modifications to actually work. 
+What the newbie sees happening when it runs as posted in Phrack is a 
+delicious joke. Folks, remember, sysn flooding is in most places an illegal 
+denial of service attack.
+
+FREEFALL USER ALERT
+
+Approved-By: aleph1@UNDERGROUND.ORG 
+Date:  Wed, 12 Feb 1997 09:27:55 -0600 
+Reply-To: Aleph One <aleph1@DFW.NET> 
+Sender: Bugtraq List <BUGTRAQ@netspace.org> 
+From: Aleph One <aleph1@DFW.NET> 
+Subject:      Security Advisory - Recent compromise of freefall.freebsd.org 
+To: BUGTRAQ@netspace.org
+
+To: announce@freebsd.org 
+Subject: Security Advisory - Recent compromise of freefall.freebsd.org 
+Date: Tue, 11 Feb 1997 20:46:45 -0800 
+Message-ID: <12352.855722805@time.cdrom.com> 
+From: "Jordan K. Hubbard" <jkh@time.cdrom.com>
+
+Overview:
+
+The following advisory documents a recent security compromise on 
+freefall.freebsd.org, the FreeBSD Project's master source repository 
+machine, discussing some of the potential ramifications of the event 
+and the recovery measures which are being carried out in its 
+aftermath.
+
+Since investigation is still ongoing and at least one law enforcement 
+agency is currently involved, some details will, of necessity, need to 
+be deliberately vague or even omitted entirely for now.  We apologize 
+for this and promise to keep everyone as up-to-date as possible on 
+events as the situation progresses, releasing information as we're 
+allowed and deem it prudent.
+
+Anyone with an account on freefall.freebsd.org is strongly advised to 
+*CHANGE THEIR PASSWORD*, both on freefall and on any other machines 
+where the same password is used.  Based on the Trojan horses we found, 
+you should assume that your password was grabbed and transmitted to a 
+hostile 3rd party if you logged in at any time on or after January 
+18th, 1997.  It does not matter if you logged in with ssh or with 
+telnet, you should assume that your password has been collected. 
+Furthermore, if you used ssh, rlogin or telnet on freefall to go *out* 
+to other machines then you should assume that password information 
+given to these programs was also compromised. 
+ 
+
+Details:
+
+The break-ins occurred on at least 2 cdrom.com machines, root being 
+compromised in both instances, and numerous system binaries had Trojan 
+horses inserted for the purpose of gathering and sending back password 
+information.  The method of entry used by the attacker(s) is not so 
+important given that both systems were vulnerable to several 
+significant, now known, security exploits at the time and any one of 
+them could have been used to gain entry & root privilege.  What is 
+more interesting about this attack is the sophistication of the Trojan 
+horses left behind, assembled as they were from a rather sophisticated 
+"kit" put together by someone who clearly knew their way around a BSD 
+system.  This told us that we should not take this attack as just 
+another incident of juvenile pranksterism but as something rather 
+more serious.
+
+Since the CVS master repository machine was attacked, it would also be 
+an immediate and obvious concern that the intruder may have taken 
+advantage of their temporary root privileges to make modifications to 
+the FreeBSD master source repository, possibly to introduce back-doors 
+for later use or cause deliberate embarrassment by introducing 
+catastrophic failure modes.
+
+Fortunately, neither scenario is as fearsome as it might seem.  For 
+one thing, the CVS repository is replicated on hundreds of machines 
+now, all syncing up with varying degrees of (deliberate) latency, and 
+"CTM deltas" are also made continuously from this repository.  These 
+streams of CTM information can show exactly what changed from moment 
+to moment in the source tree, entirely independently of the CVS 
+mechanisms (which might be compromised) for doing so.
+
+There is also the fact that there are many, many eyes on the FreeBSD 
+source tree right now, more than most of us probably ever thought 
+possible in the beginning, and it's hard to believe that someone would 
+be able to slip a significant attack past the eyes of that many 
+people, watching their daily CTM deltas come by and reviewing, as they 
+do, each change with heavy skepticism before bringing it into their 
+own source trees.  To date, no reports of anything suspicious have 
+been received. 
+ 
+
+In summary:
+
+We will continue to review our CTM deltas and we will look for signs 
+of skullduggery, but we frankly feel that the real dangers here lie 
+not so much in recently introduced changes, which are easily reviewed 
+for and caught, but in those accidental security holes which have been 
+buried in the BSD code for months or possibly years.  Since security 
+seems to have become the theme of the month, and many people have 
+volunteered (in light of our recent 2.1.6 security fracas) to begin a 
+much more serious and comprehensive security audit, we will take 
+advantage of this opportunity to see that all code in the FreeBSD 
+source tree, old and new alike, is reviewed line by line for buffer 
+overflows, unguarded copies, back doors, whatever.  We may not make it 
+through every last byte, but we can certainly focus on the "hot spots" 
+(suid programs and system utilities) and do our best to prevent 
+problems like those which caused our recent headaches from reoccurring.
+
+This advisory is simply to inform those people who have used freefall 
+in the last 40 days or so that they should change their passwords and 
+to explain to people that yes, there was a break-in to 
+freefall.freebsd.org and yes, we're aware of the issues this raises, 
+both now and in the immediate future, and that we will be exerting 
+significant effort over the next few weeks in dealing aggressively 
+with security issues, both in FreeBSD and on the FreeBSD project 
+machines.
+
+MORE FLAMES
+
+From: Jason Lenny <lucid@yakima.net> 
+To: Artimage <nelsonl@cs.purdue.edu> 
+cc: "Carolyn P. Meinel" <>, dc-stuff@dis.org 
+Subject: Re: Happy Hacker Digest, Feb.10, 1997
+
+On Tue, 11 Feb 1997, Artimage wrote:
+
+> No, that is not what I meant. I think you should ask the person who's page 
+> it is to take it down, not the owner of the box. Just because a person has 
+> a tool up doesn't make him a "bad guy", and it should be that users 
+> decision as to whether to remove the item or not. Otherwise they'll just 
+> move to a box that allows it. And if you create an environment where people 
+> will not host these types of pages, then I'll just put up a box where they 
+> can. Once again, I don't like the programs, but I won't allow you to 
+> pressure people off the net.
+
+I'm gonna further this point a bit..
+
+Not everyone is going to download these for "evil" purposes, Carolyn. 
+People who are writing programs that will keep these programs from working 
+need to see the source (many of the mail-bomb programs come with source, 
+and it's not to hard to disassemble most of these).  It would be like 
+trying to make a bullet-proof vest without ever seeing a bullet.
+
+ -Lucid
+
+"There are two major products that come out of Berkeley: LSD and UNIX. 
+We don't believe this to be a coincidence." - Jeremy S. Anderson
+
+"The Internet is a good tool for getting on the net." - Bob Dole
+
+*Finger for PGP Public Key for ALL secure transmissions.*
+
+Moderator: The Web sites I am trying to take down do not offer code for 
+intellectual analysis efforts. They make email bomb programs available for 
+use by clueless fools at the click of a mouse.
+
+If you want to study how email bomb programs work, just check out email 
+forging topics in the Hackers forum at www.infowar.com or in the Happy 
+Hacker Digests also archived at those sites. Look for posts by k1neTiK and 
+Bronc Buster.
+
+However, I have censored even the names of the most newbie-friendly email 
+bomb programs so as to inhibit them being used in Web searches. Sorry, until 
+we get better technological defenses against them, I am treating the email 
+bomb fad as a serious problem.
+
+In the meantime, I am archiving gifs of the worst email bomb program 
+download sites. 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers  

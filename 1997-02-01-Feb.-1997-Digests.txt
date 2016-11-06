@@ -1,0 +1,434 @@
+Feb. 1997 Digests
+
+Happy Hacker Digest Feb. 1, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to cmeinel@techbroker.com. Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. Happy hacking! 
+---------------------------------------------------------
+
+Moderator: Get the inside dope about who us characters really are who run 
+the Happy Hacker list from 
+http://verbosity.wiw.org. Yes, there you will find an interview that reveals 
+the dark secrets of the Jerry Cochrane/Patrick Rutledge/Carolyn Meinel tong. 
+Muhahaha... But maybe we'll have to come up with a more glamorous name for 
+our gang than Happy Hacker. Hmmm, Wizards of Deception ... Masters of the 
+Apocalypse ... Non-Newbies of the Netherworld...
+
+Moderator: The Windows NT saga continues. It turns out to be buggy as heck. 
+(Gloat time: remember, you HH old-timers, that back in Oct. I predicted this 
+would turn out to be the case.) If you want to make your mark in the world 
+as a truly elite hacker, now is your chance by becoming one of the 
+discoverers of these flaws. To stay in the middle of these exciting 
+discoveries, and publicize your own, join the following email list:
+
+> Windows NT BugTraq Mailing List 
+> 
+> In the tradition of Aleph One's BugTraq mailing list, this list 
+> has been created to invite the free and open discussion of 
+> Windows NT Security Exploits/Bugs or *SEBs* as I call them. This 
+> list is not intended to be a forum to discuss "how to" issues, but 
+> instead should be used to report reproducible SEBs which you have 
+> personally encountered with Windows NT or its related BackOffice 
+> products. 
+> 
+> Q:What is a SEB? 
+> A:Anything that can be done to a Windows NT installation via a 
+>   remote connection (network or RAS) or through the local 
+>   installation of commercial software which causes Windows NT to 
+>   react in anything but an expected fashion. So telnet to TCP port 
+>   135 and typing 15 characters thereby causing the Windows NT CPU 
+>   to go to 100% utilization would be an acceptable topic. Sitting 
+>   at a console logged in as Administrator and removing the 
+>   Administrator's file permissions on the %systemroot%\system32 
+>   would not be considered an acceptable topic. 
+> 
+> Do's: 
+> - Discuss SEB resolution or workaround. 
+> - Discuss SEBs in third-party Windows NT products, providing that 
+>   the product is designed for BackOffice. 
+> - Discuss Macintosh, Netware, or Samba/Unix-related SEBs assuming 
+>   that the SEB is related to Windows NT involvement. 
+> 
+> Don'ts: 
+> - Discuss Windows '95, unless, and only if, the Windows NT SEB 
+>   can only be reproduced with a Windows '95 client. 
+> - Discuss Windows for Workgroups or Windows 3.x, for any reason. 
+> - Discuss products to enhance security, unless they have been 
+>   proven to resolve an outstanding SEB. 
+> - Discuss Unix SEBs, these should be addressed to 
+>   BUGTRAQ@NETSPACE.ORG (subscribe through LISTSERV@NETSPACE.ORG) 
+> - Discuss general Windows NT Security, how to, what to, why to, 
+>   type questions. The NTSecurity@ISS.net list (subscribe through 
+>   MAJORDOMO@ISS.NET) would be a better forum to discuss these 
+>   issues. 
+> 
+> Vendor involvement in the list is not discouraged, but I would 
+> ask that you not use this forum as a method of advertising the 
+> value of your products. If a SEB shows a weakness in Windows NT 
+> design, and your product can resolve that weakness, a short note 
+> indicating TECHNICALLY how your product addresses the issue would 
+> be consider appropriate. If you don't address the issue in a 
+> technical fashion your subscription will be revoked. 
+> 
+> Now after reading all of this you'll probably wonder why I'm 
+> being so restrictive. For one, I want to keep the volume low, as 
+> low as possible. I want to keep the content as pertinent as I 
+> possibly can so that the list becomes a useful tool for everyone 
+> using Windows NT. If the list can remain on topic, people will 
+> post SEBs here first, and we will all have an opportunity to 
+> address the issues in a way best suited to our environments. 
+> 
+> I would also make a couple of recommendations to you prior to you 
+> posting a security exploit/bug. 
+> 
+> 1. Don't post SEBs unless you have been able to reproduce it. If 
+>    the subscriber base grows as I expect it will, posting such 
+>    messages may cause many people to waste valuable time trying 
+>    to reproduce something which is not there. 
+> 
+> 2. When posting a SEB, make sure you include enough relevant 
+>    information about your configuration to make it possible to 
+>    reproduce your scenario. Versions of the relevant software, 
+>    service pack levels of your system, platform, and any 
+>    configuration information which might affect the issue. By 
+>    doing this you will prevent a lot of messages asking you the 
+>    basic questions and make resolution or workaround that much 
+>    quicker. 
+> 
+> 3. When posting a resolution or workaround, if you have received 
+>    a Microsoft Knowledgebase Article number (a Q#####), please 
+>    post it with your message so everyone can read it if they want. 
+> 
+> 4. Remember your Non-Disclosure Agreements. Issues pertaining to 
+>    products covered under NDA should not be discussed here, use 
+>    the appropriate Microsoft Newsgroup for these issues. 
+>    Typically, once a product has been released to public beta 
+>    testing your NDA changes to one limiting you from discussing 
+>    performance characteristics of the product. Please check with 
+>    your Microsoft representative or Beta Administration if you 
+>    are at all unsure of your NDA status prior to posting. 
+> 
+> This list operates on a confirmation basis. Your subscription, 
+> and every message you post to this list will generate a 
+> confirmation message from LISTSERV@RC.ON.CA. This is there for 
+> your protection to ensure that subscription requests really are 
+> from the actual individual email address. It is also there to let 
+> you think about your message prior to it being posted. This is 
+> not a configurable option. 
+> 
+> I hope that the list proves useful to you and your organization. 
+ With the REview option turned off, I hope that it will attract 
+> individuals in organizations who have the ability to address the 
+> issues which get raised on this list. I know from personal 
+> experience that having to pay Microsoft US$195 in order to report 
+> a bug (despite the fact you get a refund 3 or 4 days later) can 
+> often mean the difference between reporting a bug and not. This 
+> list should provide an alternative to that process, and at the 
+> same time, should allow the rest of the Windows NT community the 
+> opportunity both to take up the issue with their own Microsoft 
+> representatives, and protect themselves from the possible 
+> exploits which a SEB might expose them to. 
+> 
+> The objective is to get SEB resolution done faster, better, and 
+> with less risk to the Windows NT customer than currently exists. 
+> 
+> To subscribe to this Listserv, send a message to 
+> Listserv@rc.on.ca with 
+> 
+> SUB NTBUGTRAQ Your Name 
+> SUB NTBUGTRAQ Russ Cooper (for example) 
+> 
+> Cheers, 
+> Russ 
+ R.C. Consulting, Inc. - NT/Internet Security Consulting 
+ 
+
+From: dmclean@mail.island.net 
+Subject: Wow...
+
+Wow...
+
+I found your guides just great. They were so helpful and you seemed 
+to cover everything. But I did have two quick questions:
+
+1.  As I was Port surfing around I came upon a site with a command called 
+"Adduser". Is this what I think it is? Could I be making my own user 
+ accounts?
+
+2. After I find a computer with security hole, I don't know what to 
+do from there on. I don't want to make any stupid mistakes. Could you 
+please help me.
+
+Thanks a Lot!
+
+From: RadBite@aol.com 
+Date: Sat, 1 Feb 1997 04:24:59 -0500 (EST) 
+To: cmeinel@techbroker.com 
+Subject: C Compiler
+
+Concerning the C++ compiler.
+
+Try aol's file libaries.  They have an C compiler.  I have a copy, and would 
+be willing to mail it to the person whom wants it as an e-mail attachment.
+
+Make me Anon.!
+
+I have found a sendmail program that is ver. 7.?.?. 
+That is not what it says but I can not remember. 
+Anyway I do not have to login or use the "helo" command at all. 
+This is just for verification this is a good place to send fake e-mail 
+right? 
+Also I am thinking of sending an anon e-mail to there system administrator 
+through 
+there port 25 and warning them that there are some security leaks in your 
+server. 
+Is that really stupid? 
+I know this sounds newbieish but that is what I am a newbie.
+
+(Moderator: you are absolutely right, old sendmail versions are a major 
+security risk. If I were you, yes, I'd send the sysadmin an email warning 
+him or her of the problem. I definitely would not try out any of the 
+sendmail exploit programs to gain root access to that system.)
+
+(Moderator: following are some security advisories that should be of 
+especial interest to advanced newbie to intermediate hackers.)
+
+Approved-By: aleph1@UNDERGROUND.ORG 
+X-Sender: soulet@imhotep.cst.cnes.fr 
+Date:  Tue, 28 Jan 1997 10:01:25 +0100 
+Reply-To: Gilles Soulet <Gilles.Soulet@CST.CNES.FR> 
+Sender: Bugtraq List <BUGTRAQ@NETSPACE.ORG> 
+From: Gilles Soulet <Gilles.Soulet@CST.CNES.FR> 
+Subject:      Another NT CPU Hog ? 
+To: BUGTRAQ@NETSPACE.ORG
+
+I can put any NT server I have on its knees by just 
+connecting to a shared network drive on the server 
+(for example from a PC running Windows 95) and 
+transfer a large file file (>100 MBytes) from/to the server.
+
+File transfer begins normally, but after few seconds, the 
+poor NT box is completely frozen. File transfer continues 
+normally, but eat 100% CPU time (he, sounds familiar, isn't it ?)
+
+Is anybody able reproduce this "bug" ?
+
+   ~Gillus 
+Approved-By: aleph1@UNDERGROUND.ORG 
+Date:  Tue, 28 Jan 1997 16:27:31 -0700 
+Reply-To: Alfred Huger <ahuger@SECNET.COM> 
+Sender: Bugtraq List <BUGTRAQ@netspace.org> 
+From: Alfred Huger <ahuger@SECNET.COM> 
+Subject:      Re: [NTSEC] CPU 100% Update (fwd) 
+X-To:         Aleph One <aleph1@DFW.NET> 
+To: BUGTRAQ@netspace.org
+
+On Tue, 28 Jan 1997, Aleph One wrote: 
+> 
+> Finally, on the issue of NT DNS. There was a security advisory sent out 
+> by Secure Computing indicating that NT DNS could be exploited by sending
+
+The advisory was released by Secure Networks Inc. *Not* Secure Computing.
+
+> results were that between DNS.EXE and SERVICES.EXE the CPU utilization 
+> was pegged at 100%.
+
+The issue we released an advisory on was the NT DNS server choking and 
+dying when it received a response for a query it never issued. The patch 
+provided does not work.
+
+> these problems, but I should warn you that this is not a supported fix
+
+Yep, it is in fact an unsupported patch.
+
+> Given that DNS is one of the things that must be left open, the fact 
+> that it resolves the CPU 100% utilization problem from Telnet 
+> connections makes it a good fix in my book. I leave it to you to decide 
+> if you want to apply it or not. As yet, I have not seen a version for 
+> Alphas.
+
+While the patch does not work for what *we* reported, it did seem to fix 
+the 100% CPU usage problem. Cold comfort considering anyone, anywhere on 
+the Internet can easily *remove* your DNS server. 
+ 
+
+/************************************************************************* 
+Alfred Huger                                            Phone: 403.262.9211 
+Secure Networks Inc.                                    Fax: 403.262.9221 
+"Sit down before facts as a little child , be prepared to give up every 
+preconceived notion, follow humbly wherever and whatever abysses nature 
+leads, or you will learn nothing" - Thomas H. Huxley 
+**************************************************************************/
+
+EXPORTABLE CRYPTOGRAPHY TOTALLY INSECURE: CHALLENGE CIPHER BROKEN IMMEDIATELY 
+  
+January 28, 1997 - Ian Goldberg, a UC Berkeley graduate student, announced 
+today that he had successfully cracked RSA Data Security Inc.'s 40-bit 
+challenge cipher in just under 3.5 hours. 
+  
+RSA challenged scientists to break their encryption technology, offering a 
+$1000 award for breaking the weakest version of the code.  Their offering 
+was designed to stimulate research and practical experience with the security 
+of today's codes. 
+  
+The number of bits in a cipher is an indication of the maximum level of 
+security the cipher can provide.  Each additional bit doubles the potential 
+security level of the cipher.  A recent panel of experts recommended 
+using 90-bit ciphers, and 128-bit ciphers are commonly used throughout 
+the world, but US government regulations restrict exportable US products 
+to a mere 40 bits. 
+  
+Goldberg's announcement, which came just three and a half hours after 
+RSA started their contest, provides very strong evidence that 40-bit 
+ciphers are totally unsuitable for practical security.  "This is the 
+final proof of what we've known for years: 40-bit encryption technology 
+is obsolete," Goldberg said. 
+  
+The US export restrictions have limited the deployment of technology 
+that could greatly strengthen security on the Internet, often affecting 
+both foreign and domestic users.  "We know how to build strong 
+encryption; the government just won't let us deploy it.  We need strong 
+encryption to uphold privacy, maintain security, and support commerce on 
+the Internet -- these export restrictions on cryptography must be 
+lifted,"  Goldberg explained.  Fittingly, when Goldberg finally 
+unscrambled the challenge message, it read: "This is why you should use 
+a longer key." 
+  
+Goldberg used UC Berkeley's Network of Workstations (known as the NOW) to 
+harness the computational resources of about 250 idle machines.  This allowed 
+him to test 100 billion possible "keys" per hour -- analogous to safecracking 
+by trying every possible combination at high speed.  This amount of computing 
+power is available with little overhead cost to students and employees at 
+many large educational institutions and corporations. 
+  
+Goldberg is a founding member of the ISAAC computer security research group 
+at UC Berkeley.  In the Fall of 1995, the ISAAC group made headlines by 
+revealing a major security flaw in Netscape's web browser. 
+From: Keith Bostic <bostic@bsdi.com> 
+X-Loop: techbroker.com 
+To: /dev/null@mongoose.bostic.com 
+Subject: It's very difficult to escape prosecution when your voice is on tape
+
+Forwarded-by: cyerkes <cyerkes@interport.net>
+
+Wiretappers struggle to keep lines open
+
+BY STEPHEN LYNCH 
+Orange County Register
+
+Law enforcement officials tap as many as 116 telephone lines a day 
+in Orange County, according to an FBI report that for the first 
+time details the pervasiveness of electronic surveillance.
+
+The unprecedented disclosure of wiretaps nationwide is part of an 
+effort by police officers and federal agents to gain access to 
+high-tech phone systems, which in some cases block traditional 
+surveillance techniques.
+
+A 1994 law, the Communications Assistance for Law Enforcement Act, 
+requires companies such as Pacific Bell and GTE to keep the lines 
+accessible, even as they upgrade to more reliable, digital 
+networks.
+
+The FBI report, released last week, said Orange County phone 
+companies should allow federal, state and local authorities to 
+monitor up to 194 lines simultaneously, to allow for population 
+growth.
+
+``Wiretap usage has been going up every year for several years,'' 
+said Frederick Hess, director of the office of enforcement 
+operations in the Department of Justice. ``It's an indispensable 
+aid.''
+
+Hess cited Operation Zorro II, a massive drug investigation that 
+nabbed 150 trafficking suspects in May. Officials tapped phone 
+lines in a dozen states, including California, to build their 
+case. Wiretaps also are playing a major role in a case against a 
+Santa Ana man whom authorities allege is a member of the Mexican 
+mafia.
+
+``It's very difficult to escape prosecution when your voice is on 
+tape,'' Hess said. ``We had John Gotti talking about killing 
+people -- he's dead in the water at that point.''
+
+That power, ironically, is threatened by clearer, faster telephone 
+systems.
+
+Pacific Bell, for instance, has about 30 stations in Orange County 
+that route calls, called ``switches.'' Each switch is being 
+replaced with a computer system that routes digital information. 
+Before, authorities could place a device on a phone line, called a 
+``loop,'' and hear the conversation. With a digital system, all 
+they would hear is the sound of binary beeps, like the static on a 
+modem.
+
+The software to translate the digits into voices at the switch has 
+not been developed yet, as phone companies and the FBI negotiate a 
+reasonable wiretap capacity. It's an expensive proposition, and 
+Ron Peat, director of federal relations for Pacific Telesis, 
+complained that authorities are inflating the figures and driving 
+up the price.
+
+The higher the capacity for wiretaps, the more it costs, and law 
+enforcement doesn't need access to 194 lines at each station, Peat 
+maintained.
+
+``What they have done is take the busiest area of the county and 
+made it the standard for the whole area,'' he said. ``They need to 
+set priorities.  The office in Brea may never need a wiretap.''
+
+The last estimate by the telephone companies for a nationwide 
+overhaul is $2 billion. Yet Congress has authorized only $500 
+million for wiretap capacity, and only $100 million of that has 
+been released, Peat said.
+
+Pacific Bell has not waited for the problem to be resolved. Some 
+digital switches are already in place, without the tapping 
+software, though Peat said no one has needed to monitor the line yet.
+
+The FBI took the wiretap figures from the busiest day in a 
+16-month period between 1993 and 1995. Orange County ranked third 
+in California counties for wiretaps, behind Los Angeles (1,080 in 
+one day) and San Diego (263). The total for the state is 2,569, 
+but officials warn that the figure is deceptive. Each county's 
+peak probably was reached on a different day.
+
+The national figure, with the same caveat, is 24,617.
+
+Wiretaps are used mainly by federal authorities, said Carl 
+Armbrust, chief of narcotics enforcement for the Orange County 
+District Attorney's Office.
+
+``We've only used it about three times in the last few years,'' 
+said Armbrust, who noted that state wiretap guidelines are more 
+restrictive than federal rules.
+
+But the overall numbers surprised some civil libertarians and 
+defense attorneys, who didn't realize wiretaps were so 
+widespread.
+
+``One hundred and sixteen? Really?'' said Allan Stokke, a criminal 
+defense attorney in Santa Ana. ``That sounds really high to me. 
+Many, many judges seem to be giving the authority.''
+
+Stokke worries that prosecutors are not disclosing wiretaps if 
+evidence from them isn't introduced at trial. He added that the 
+technological problems ``may be a good thing. It should never be 
+easy to intrude on people's privacy.''
+
+But Hess said the increased tapping capacity will only keep pace 
+with the growing population, and remains a small percentage of the 
+total number of phone lines.
+
+``We're trying to figure out what's within reason for the growth 
+of the country,'' he said. ``These are all court-ordered taps, 
+nothing illicit. If we don't do this, there's going to be a big 
+problem.''
+
+Visit the Register on the World Wide Web at 
+http://www.ocregister.com/ 

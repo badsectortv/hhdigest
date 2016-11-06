@@ -1,0 +1,444 @@
+Happy Hacker Digest Feb. 11-12, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to . Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking -- and ne auderis delere orbem rigidum meum! 
+---------------------------------------------------------
+
+Attachment is another email bomb flame war special edition.
+
+Table of Contents
+
+Another Netscape "Easter Egg" 
+How to Catch Email Bombers 
+Call for Syn Flood Info 
+Calling all Phreaks: TDMA Wireless Scanner Released 
+Banyan Vines 
+Do We Believe *this* Invitation to Hack? 
+Linux Questions 
+Ping Question 
+Random Questions
+
+ANOTHER NETSCAPE "EASTER EGG"
+
+From: Keith Bostic <bostic@bsdi.com> 
+From: Robert Mark Waugh <rmw@netscape.com>
+
+Try, in the Netscape navigator:
+
+ about:hype
+
+you will hear a sound bite, "What is global hypermedia?"
+
+HOW TO CATCH EMAIL BOMBERS (OR KEEP FROM GETTING CAUGHT)
+
+Moderator: I had to think about whether I would post this one a bit. It 
+offers information that makes it easier for email bombers to get away with 
+their attacks. But on the other hand, it will show all the systems 
+administrators and security experts on this list why they absolutely should 
+run Identd. And it shows us all how to catch the run of the mill email 
+bomber. Heh, heh.
+
+From: bbuster@succeed.net (Bronc Buster!!!) 
+Subject: Checking Anonymous Servers
+
+This is a simple way, for all you people that are not sure how, or what 
+Identd is, to see if a server is running it. Most people have no idea what 
+Identd is, or does, but it's very important thing to know when you are 
+trying to do something and not get caught (i.e. Mail Bombing). I won't go 
+into the ins and outs of Identd here; but what it does (for e-mail), in 
+laymans terms, is once you connect and try to send an e-mail, it wants to 
+know who you are, so it asks your systems Identd and they pass information 
+to each other and when they are done, the other system knows all about you 
+(well enough so you can get pinned) and pastes all this information onto the 
+Header file that is a part of the e-mail message. Let me show you a part of 
+one from some lamer who bombed me a few days ago:
+
+This was from <You@S***.net> and sent to me and LordSumner. As you can see 
+he used another server to try and cover his/her/it's tracks, but it was 
+running Identd so he/she/it was easily tracked back. Let's tear this apart!
+
+--------------Begin Header-------------------------- 
+>>Return-Path: <You@s***.net>
+
+**This is the Fake from
+
+>>Received: from u2.farm.idt.net (root@u2.farm.idt.net [169.132.8.11]) 
+>> by franklin.cris.com (8.8.5/(97/02/04 3.20)) 
+>> id TAA15105; Mon, 10 Feb 1997 19:49:48 -0500 (EST) 
+>> [1-800-745-2747 The Concentric Network]
+
+**This is LordSumers ISP, cris.com, that accepted the message for delivery 
+ 
+
+>>From: <You@s***.net> 
+>>Errors-To: <You@s***.net> 
+>>Received: from s***.net (*****@Cust4.Max12.Cleveland.OH.MS.UU.NET 
+[153.35.130.4]) 
+>                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+>> by u2.farm.idt.net (8.8.5/8.8.5) with SMTP id TAA15345; 
+           ^^^^^^^^^^^^^^^ 
+>> Mon, 10 Feb 1997 19:49:30 -0500 (EST) 
+>>Date: Mon, 10 Feb 1997 19:49:30 -0500 (EST) 
+>>Message-Id: <199702110049.TAA15345@u2.farm.idt.net> 
+ 
+
+**This is it, busted! If you see the parts I underlined you'll see the 
+tracks **left by him. The server used was "u2.farm.idt.net" but because it 
+was **running Identd, it attached to it's header a "Received: from s***.net" 
+which **it knows is really 
+** "(*****Cust4.Max12.Cleveland.OH.MS.UU.NET [153.35.130.4])" from talking 
+to **his/her/it's Identd. The five "*" you see are his/her/it's e-mail that 
+I **took out for this
+
+-------------End Header-----------------------
+
+So you ask, how do I know if a server is running Identd? You say you don't 
+know enough to send yourself an e-mail and then look at the header in your 
+shell, or maybe you don't have the resources. Well never fear. After doing 
+some testing over the last few weeks I found that ANY up to date mIRC client 
+will tell you. 
+How? Ok:
+
+1. Open your mIRC client like you would to get on an IRC server, but don't 
+connect.
+
+2. Open an e-mail program (of your choice, but remember normal ones will do 
+a HELO and give you away) and send an e-mail to yourself.
+
+3. Go back to the mIRC client and look on the Status window. If you see the 
+same thing you saw when you opened it up the first time, your safe. If you 
+see ANYTHING else, like "Idnetd Request from 123.123.123.123" move on to the 
+next  server because it is running the Identd and you'll get busted!
+
+If you want to know more about the ins and outs of Sendmail, SMTP and other 
+mail holes, do a NetSearch for "sendmail or "SMTP", or go get a good book on 
+Unix. No site or book is without something on Sendmail as it has been, and 
+still is, one of the biggest security holes in the Unix operating system. 
+Good Luck and Happy Hacking!
+
+HACKER HANDLES
+
+From: root <abszero@epix.net>
+
+NOTE:  I hereby give permission for anyone to flame me, either via the list, or 
+directly at abszero@epix.net (not root@theone.epix.net (my sendmail is 
+f****d up)), so long as they give similar consent.
+
+> From: mulder@jumbo.ntplx.net (Hunter Rose) 
+> 
+> handles come in many major types and sizes, but the most common is from 
+> literary sources (here's a hint: real hackers read, too.)
+
+I also find picking improper nouns with the proper flair and properising 
+them works well, yielding handles that don't sound like you stole the name 
+from somebody else, nor do they leave people saying "How did they spell that?".
+
+ --- The Orb
+
+CALL FOR SYN FLOOD INFO
+
+From: ZOMBIE <tmartin@themall.net> 
+Organization: ZOMBIE RITUAL
+
+I had an idea for your next letter. I'm sure you know of PHF and 
+SYN-flooding. I'm doing a lot of studying on it right now. I could use 
+more info. I have some on my site at http://monsoon.ted.org/~todd/
+
+Thanx!
+
+~ZOMBIE~
+
+CALLING ALL PHREAKS: TDMA WIRELESS SCANNER RELEASED
+
+Moderator: I don't normally carry commercial messages such as the following. 
+But if this ad is legitimate, it means that there is now a scanner that can 
+work with one of the new PCS cellular protocols, Time Division Multiple 
+Access (TDMA).
+
+From: Bill Clinton <director@mailmasher.com> 
+Newsgroups: alt.cellular-phone-tech 
+Subject: Monitoring TDMA (IS-54) digital voice channel with modified cellphone
+
+              The modified Motorola TDMA Flip Phone for monitoring 
+                                     Digital Voice Channel!
+
+For surveillance purposes.
+
+The first portable device in the market to offer monitoring and (optionally) 
+recording the Digital TDMA (IS-54) Voice Channel at affordable price!
+
+The Control Channel can be fixed manually or set automatically 
+(being updated every 2 or 3 minutes).  The target mobile number can be 
+easily entered through the phone's keypad.  No ESN required, just enter MIN.
+
+Fully automatic! All hand-offs followed during a call as the target phone is 
+moving and switching over to another voice channel. No interrupted 
+calls. Every incoming and outgoing call can be intercepted and tape-recorded 
+from beginning to end!
+
+This is what many law-enforcement agencies and private investigators 
+in America, Russia, Hong Kong, China, Israel etc. have been waiting for!
+
+Really portable, just fits in your pocket!  No computer required! 
+ 
+
+             Only US$7000.-
+
+                                            E-mail to director@mailmasher.com
+
+BANYAN VINES
+
+From: beast master <beastmstr@geocities.com>
+
+Heya!  does _anyone_ know anything about Banyan Vines?  I was wondering 
+if anyone knew where the password file is located...can't find it. 
+Also, any clue what the encryption scheme is? 
+thanks! 
+-- 
+http://www.geocities.com/SoHo/6660 
+"I will find a way or I will make one"--Sir Phillip Sidney
+
+DO WE BELIEVE *THIS* INVITATION TO HACK?
+
+Anonymize me.
+
+>A Swedish company, <http://www.infinit.se/hacke/crack.html> is offering a 
+>10,000 Swedish Kronor reward to the first person to attack and 
+>successfully change information on one of their web servers. See their 
+>English-language press release at 
+><http://www.infinit.se/hacke/release.html> for details and the URL of the 
+>system to hack. The contest starts February 10, 1997 and runs through 
+>April 10. At this writing (Feb 7), the system to attack is not visible to 
+>my browser. 
+> 
+>The company is a commercial Web site developer. They are using standard, 
+>commercially available software: "The server will be a standard Apple 
+>Internet Server Solution, upgraded with WebStar 2.0. No firewalls, no 
+>router filter. Just an unprotected web server." 
+> 
+>Reading between the lines, I would note that the Macintosh is generally 
+>immune to the Unix-specific attacks (through SMTP and various TCP/IP 
+>ports). My reading of their press release would disallow 
+>denial-of-service attacks such as SYN flooding.
+
+Moderator: This one sounds believable. But you had better own or have 
+written permission to hack one of those Web servers. If you hack one of 
+their Web servers owned by someone who doesn't appreciate your attentions, 
+you'll wind up in jail.
+
+LINUX QUESTIONS
+
+X-Sender: "Mike Coloney" <ctone2@peachlink.com>
+
+ Hello again, 
+                  well I finally figured out the illusive PPP with Linux. 
+so what did id do once I logged on to my ISP through LINUX for the first 
+time? Well I think to myself  "I'll go play on my favorite New Mexican 
+Computer GRANDE!!" well of course like everything new in Linux it barked 
+at me "Invalid Host Name" so I eventually figure out !!! wow I have to 
+punch in the d*** DNS instead of the host NAME! well this brings me to 
+my obvious question... HOW do I configure Finger , Telnet , Lynx etc.. 
+to use Names instead of DNS #?
+
+From: Ben <cyberkid@usa.net> 
+Organization: Linux Rules 
+Subject: HTML editor for Xfree86?
+
+>From: roger prata <prata@boss1.bossnt.com> 
+>Subject: HTML Editor for Xfree86
+
+>Does anyone know of a good (cheap) HTML editor that runs under 
+>X-Windows? 
+>I am eventually going to set up a site, but I dot wanna use Gates' 
+>World. 
+>Any suggestions??
+
+>Thanks, and happy hacking!!
+
+UGH.  There used to be a WYSIWYG editor called BullDozer, akd 'Dozer :) 
+but that site has been down for about a month and I cannot find it 
+anywhere else.  You might want to check out 
+http://www.xnet.com/~blatura/linapps.shtml this page keeps pretty up to 
+date on the cool LINUX apps...
+
+From: root <abszero@epix.net>
+
+> from: Brandon Tennant <Brandon_tennant@bc.sympatico.ca> 
+> Subject: Yet another LINUX ? 
+> 
+>  Hello again, 
+>                   well I finally figured out the illusive PPP with Linux. 
+> so what did id do once I logged on to my ISP through LINUX for the first 
+> time? Well I think to myself  "I'll go play on my favorite New Mexican 
+> Computer GRANDE!!" well of course like everything new in Linux it barked 
+> at me "Invalid Host Name" so I eventually figure out !!! wow I have to 
+> punch in the d*** DNS instead of the host NAME! well this brings me to 
+> my obvious question... HOW do I configure Finger , Telnet , Lynx etc.. 
+> to use Names instead of DNS #? 
+>
+
+Set up your "/etc/resolv.conf" file.  It should look like this:
+
+    domain your.isp. 
+    search your.isp. 
+    nameserver 123.456.789 
+    nameserver 321.456.789 
+  
+You should be able to get the nameservers fairly easily from the instructions 
+your ISP gave you for more main-stream stacks.  Remember the more nameservers 
+you get, the better.  Note also the trailing dots on the names.
+
+BTW sub 1: You can actually give anything you want on the "search" line.  It 
+simply specifies what sub-domains to check for the DNS name to resolve 
+before trying the whole 'net.
+
+BTW sub 2: The numbers you would have to give are IP numbers, not DNS numbers.
+
+BTW sub 3: Try looking at the LDP's (Linux Documentation Project) documents 
+at http://sunsite.unc.edu/LDP (152.2.254.81), or your local mirror.
+
+--- James Mastros
+
+From: agent green <cpe2@gte.net> 
+Subject: linux ppd
+
+i edited etc/resolv.conf and added the two DNS servers i connect to through 
+my isp. i set up a pppd script in my home directory, opened minicom, dialed 
+my isp, connected, exited without resetting my modem and ran my pppd script. 
+it didn't give me any 'CONNECTED' messages, nothing. is it supposed to? than 
+i tried running finger and ping to see if it was working, but they couldn't 
+access anything i inputed. what the h*** is wrong!? and i'm having a h*** of 
+a time getting x running on my computer, a toshiba pentium laptop. the thing 
+is, it can run at 800x600 dual scan SVGA, but whenever i can actually get 
+the x server to execute without any errors, the windows in a huge virtual 
+window, and the resolution's about 320x200, if even. and i can't do 
+anything, the whole window's blank, and when i use the mouse, the pop-up 
+menu's too big to read, so it doesn't display correctly. also, are there 
+anyother command-line modem apps for slackware, beside chat? can you suggest 
+any good material for slackware? i got my version of linux with a book, 
+Linux Unleashed. it s****. thanx.
+
+i mean, if you really think about it . . . 
+agent green
+
+From: Ben <cyberkid@usa.net> 
+Organization: Linux Rules
+
+>  Hello again, 
+>  well I finally figured out the illusive PPP with Linux. 
+> so what did id do once I logged on to my ISP through LINUX for the first 
+> time? Well I think to myself  "I'll go play on my favorite New Mexican 
+> Computer GRANDE!!" well of course like everything new in Linux it barked 
+> at me "Invalid Host Name" so I eventually figure out !!! wow I have to 
+> punch in the d*** DNS instead of the host NAME! well this brings me to 
+> my obvious question... HOW do I configure Finger , Telnet , Lynx etc.. 
+> to use Names instead of DNS #?
+
+It sounds like you have not set up /etc/resolv.conf or have not set it 
+up correctly.  Basically you just have to put the following:
+
+domain yourdomain.com 
+nameserver yournamserver //this is numerical! 
+nameserver anyothernameserveryourisphas
+
+From: dawson@world.std.com (Keith Dawson) 
+    T a s t y   B i t s   f r o m   t h e   T e c h n o l o g y   F r o n t
+
+    Timely news of the bellwethers in computer and communications 
+    technology that will affect electronic commerce -- since 1994
+
+    Your Host:  Keith Dawson
+
+    This issue: <http://www.tbtf.com/archive/02-11-97.html>T a s t y   B i t 
+s   f r o m   t h e   T e c h n o l o g y   F r o n t
+
+    Timely news of the bellwethers in computer and communications 
+    technology that will affect electronic commerce -- since 1994
+
+    Your Host:  Keith Dawson
+
+    This issue: <http://www.tbtf.com/archive/02-11-97.html> 
+..First Linux virus reported
+
+    Experts have long believed Unix immune to the sorts of viruses that 
+    plague personal-computer operating systems, because its more robust 
+    security model typically requires administrative privileges for 
+    anyone trying to infect a system. An unknown party has now devel- 
+    oped and released into the wild a virus-like program, called 
+    "bliss," that has been proven to infect machines operating under 
+    Linux (a free variant of Unix) without benefit of root privileges. 
+    The perpetrator claims that the code is portable, so there is no- 
+    thing limiting it only to attacking Linux systems -- "Bliss com- 
+    piles clean (but was not run) on sunos, solaris, and openbsd," s/he 
+    writes. I've posted the author's letter describing the virus [14] on 
+    the TBTF Archive. MacAfee Software, developer of anti-virus tools, 
+    has made available an antidote to bliss amid many press releases. 
+    The company's public behavior has annoyed some in the security com- 
+    munity who see it as grabbing credit it has not earned. I learned 
+    about the virus from the 0xdeadbeef mailing list conducted by Glen 
+    Macready <glen@substance.abuse.blackdown.org>.
+
+    [14] <http://www.tbtf.com/resource/bliss.html> 
+ 
+
+PING QUESTION
+
+(Please keep anonymous) 
+ 
+
+I was wondering if PING (used with the -l argument) is comparable to PING 
+with the -f argument, the flood ping.  I read the ping info page and it 
+said something about -l sending a certain amount of packets as fast as 
+possible before sending regular packets.  When you compare this to the -f 
+switch (sending as many packets as fast as possible) it sounds similar. 
+Couldn't someone make "-l" a huge number and use it for the same effect as 
+-f?  Also, when I tried using -l on a server, after the pinging was done 
+it said "82% packet loss".  Does this mean that I was slowing down the 
+server (which was not what I was trying to do), or was it just ignoring 
+me?
+
+Thanks
+
+RANDOM QUESTIONS
+
+From: Frankie Hayes <strider@unix.aardvarkol.com>
+
+Hey, 
+ Post ONLY what follows:
+
+ Hey... 
+ Anyone know any proggys to password protect my HDD? My platform is MS-DOS 
+6.20, and it's a 286, 1MB of RAM puter. I need it protected from someone 
+that COULD get physical access to my box.
+
+ Also, anyone have any documentation on how to nuke web pages??? I found a 
+perverted kitty porn site i wanna take down...*PLEASE* e-mail me the 
+docs!!! Thanx....
+
+       Strider
+
+Moderator: the legal way to take down Web sites with which you disagree is 
+to identify where physically the Web server is located -- see the Guide to 
+(mostly) Harmless Hacking Vol. 1 No. 6 -- How to Nuke Offensive Webs Sites? 
+I show the legal procedure with step-by-step hacking techniques for getting 
+rid of bad news stuff. I show myself getting mightily tempted by a buggy Web 
+server, but backing off and doing the right thing.
+
+If you want to turbo charge your study of legal hacker techniques to cut a 
+bad news Web site off from the Internet, you may add to your arsenal the 
+techniques in GTMHH Vol. 3 No. 2, "How to Map the Internet."
+
+If what you are talking about is "kiddie porn" rather than "kitty porn," in 
+most countries it is illegal. So once you identify the offending site, 
+simply call the cops.  If you want to take down a site that is legal, 
+however, I recommend advising the owner of the Web server of its existence 
+and urging him or her to remove it. This is tremendously effective if in 
+fact the Web site is seriously bad news. If this doesn't work, contact the 
+company that provides Internet connectivity for that Web server.  And so on 
+up the line.

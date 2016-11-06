@@ -1,0 +1,384 @@
+Happy Hacker Digest Feb. 5, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to cmeinel@techbroker.com. Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking -- and ne auderis delere orbem rigidum meum! 
+---------------------------------------------------------
+
+Moderator: just in case you don't read the boiler plate above, let me remind 
+you. DON'T EMAIL US ANY MESSAGES ABOUT CRIMES YOU MAY HAVE COMMITTED!!@#!! 
+We are against computer crime. Get it?
+
+From: grayd@eazy.net 
+Subject: req
+
+Recently I found a site online that acts as an online betting 
+agency.  The servers are located in Barbados the company is based out 
+of Las Vegas.  On their site they offer $1000.00 to anyone who can 
+alter the results or account balances of anyone on their server. 
+Well I could always use a $1000.00 but I was wondering.
+
+1.) This is an international hack to Barbados what are the laws 
+concerning this?.
+
+2.) Does their post constitute permission or do I need to contact 
+them in advance and pre arrange written permission.
+
+3.) If they do give me permission and I don't do any phone phreaking 
+in the process of hacking them, what other laws will I probably be 
+breaking?
+
+Anyway just trying to work and stay out of the pen in the process. 
+P.S. Happy hacker is one of the best things to hit the newbie 
+community.  Thanks for the taking the risks and putting in the time. 
+z0r7@planetnetwork.com
+
+(Moderator: If I wanted to both get some sick entertainment and shut down an 
+Internet gambling outfit -- oh, yes, I think gambling is a nasty ripoff of 
+the math-challenged -- guess what I would do? I would use a good IP spoofer 
+to  hack their Web site and put in a message saying "Pleeeze hack our 
+gambling site! Steal money from us! Screw up our accounts! We'll luv ya for 
+it. Honest!" Then guys with guns with silencers will pay their visits to the 
+clueless newbie hackers they catch breaking into their computers. I'll get 
+away clean. Fortunately, however, I'm not that kind of a woman. So to live 
+long and prosper DON"T HACK THEIR SITE!!!! In general, I figure that unless 
+I have a signed, notarized contract to hack a site, I'm not going to risk 
+the many, MANY kinds of trouble lurking there.) 
+  
+(Moderator: the following post about how to disable Cybersitter is not meant 
+to encourage you minors on this list to fill your heads with garbage. 
+Parents who are using this list need to know how easily Cybersitter can be 
+hacked. Parents, please remember to supervise your children's use of this 
+list, OK? And don't let them hack any gambling operations.)
+
+From: "Ryan" <c.barrett@virgin.net> 
+Subject: Cyber Sitter!!!!!!
+
+Here's how to 'hack' Cyber sitter.
+
+In the Windows Directory, edit the field Cy.alt (or something like that) in 
+Notepad.  This file contains all the violations made.  Only took 5 mins to 
+work out, and that was only as long as it took me to open all the 
+Cybersitter files in notepad!  They take kids for fools (So I'm slightly 
+older than the 15 year old kids whom this would appeal to).
+
+From: Saint Waldo <stwaldo@teleport.com> 
+Subject: Beginner's Hole...
+
+Hey all,
+
+I'm tired of lurking and want to make sure that the 
+Spookys out there MAKE a file on me if they don't 
+already have one.
+
+Here is something to think about the next time you 
+see an office full of Win95 crap boxes running Word. 
+In the last version I played with (6.0), it was 
+possible to sneak into any users "personal Documents" 
+folder through the file open box.  I tried this on 
+a remote drive whose personal docs folder was not shared.
+
+For a little background,  a guy in our office was 
+wasting a lot of time and office resources on his 
+own "consulting work".  We knew he was using the 
+office software for his own business.  He was tying 
+up phone lines, distracting people with BS about 
+vapor-tech, and basically a pain.  My manager and I 
+wanted to get the poop on what he was doing, and get 
+some proof that he was improperly using company time 
+and resources.  His machine was on and logged into 
+the network, and the kicker was that he was USING it 
+while we did this hack.
+
+He wasn't using word.  We started up his copy of word, and hit 
+File: Open.  Popped up to the network level, and hit his 
+machine.  We noticed that, even though normal surfing 
+(i.e. File manager) would NOT show us the personal 
+docs folder, his word over the network would.  We got 
+a  good look at everything, and saved copies on our 
+machine (even the passworded ones were copyable). 
+The poop we needed was there, and we filed it away for 
+future use.
+
+I know it's a "lame" hack, but it was fun cuz we were 
+looking at things this guy KNEW he didn't want seen, 
+KNEW was incriminating, and KNEW would get him in trub. 
+For a paranoiac, his knowledge of how to keep things a 
+secret sucked. 
+It also might lead you to some other ways that the 
+Godzilla of OS's fails in it's claim of security, and 
+take steps to make sure you can plug up the holes.
+
+----------------------------------------------------- 
+The Above mini-Hack should be tested while playing 
+Sonic Youth's "Death Valley 69" at MaxVol. 
+Saint Waldo I.P./E. 
+"Callidus ad Infinitum, Magister ad Nihil."
+
+(Moderator's note: my Latin quote is kewler than your Latin quote. "Ne 
+auderis delere orbem rigidum meum.")
+
+From: Marco Pappalardo <bethesda@netropolis.be> 
+Subject: answers
+
+here are answers to some of the latest posts :
+
+to friend@home.com (if that is his address) : 
+congratulations for *FINALLY* discovering RFC's and welcome to the world 
+of -real- hacking (read 'learning as much as possible')
+
+to Enrique F Azuara who wants to know what log files to erase, 
+wmtp, umtp and lastlog would be a good start...
+
+(Moderator's note: erasing these files is destroying evidence, in itself a 
+crime. Trust me, erasing or altering these is not enough to keep you from 
+getting caught.)
+
+From: Marco Pappalardo <bethesda@netropolis.be> 
+Subject: answers (continued)
+
+to intervention@imt.net : 
+they look like *nix systems (Unix, Linux, BSD,...) No wonder default 
+passwords don't work, no one uses them anymore. If I were you I'd try 
+port 25 for remote sendmail exploits, getting an account if it's your 
+university for local exploits, checking directories that are being 
+exported if they have NFS/NIS,...
+
+to burncy@mail1.nai.net : 
+no no no finger doesn't bring you up the user's password (that'd be too 
+good to be true...) It just gives you info about that user, thus giving 
+you clues about what his password MIGHT be. Sorry you'll have to try 
+harder...
+
+and finally to you Carolyn : 
+the exploits idea is good but you may have noticed there's no actual 
+code in the posts. I don't care I get them through Bugtraq just like you 
+but I doubt the newbies that go around asking how to hack will figure 
+out how to code an exploit from the info you give... :-)
+
+One last thought : I used to think of myself as a newbie but after 
+months of intensive reading and collecting exploits all over the net I 
+realized that when true hackers talk about stuff I actually understand 
+what they're talking about and I could answer most of the questions in 
+Happy Hacker...Could it be ...? YES ! I have finally evolved from the 
+status of newbie hacker wannabe to intermediate hacker ! Reading books 
+does pay after all !!! :-) 
+P.S.: I know nobody cares but I just felt like letting everyone know ...
+
+ bethesda
+
+From: root <abszero@epix.net> 
+Subject: Re: Happy Hacker Digest Feb. 2-4, 1997
+
+> If you load /etc/services into your favorite text editor or just cat it 
+> through 'more', you'll see a list of every port a Unix can understand, 
+> what it does, the protocol layer it monitors, and maybe some comments. 
+> What port 15 does is it responds with network statistics, like the load 
+> the processor of the system is running, what method is being used to 
+> access that process (in your example, a direct telnet session), kilobytes 
+> of memory that process is addressing, and suchlike. 
+> 
+> (Moderator: what he means by "cat it through 'more' is to give the command: 
+> ->more /etc/services/ 
+> On some Unix systems you can also give the command: 
+> ->less /etc/services 
+> This is actually an obscure programmers' joke. See if you can find the 
+> difference in the two commands.)
+
+actually, by "cat it through more" he meant "cat /etc/services | more".  But 
+it won't make a difference, except in helping you to understand Unix.  Also, 
+I have never seen less (much better than more, but not as good as most <G>) 
+on anything but a Linux box.
+
+        <-> <-> <-> <-> <->
+
+> 
+> FROM: "Enrique F. Azuara" <eazuara@scanda.com.mx> 
+> Subject: what to delete after a hack????? 
+> 
+> howdy: 
+> I was wondering what logs or files should be modified in a Unix system after 
+> a hack. I want to start my first hack but I need to know what not to do. 
+> 
+> BTW does anyone know if hacking is illegal in Mexico??, are here any groups, 
+> clubs, or something to share a drink or two? 
+> 
+> see ya 
+> henry jr. 
+> 
+> (Moderator: Above all, don't erase the system files. Elite hackers do no 
+> harm. Period! 
+(snip)
+
+ In general, you should also *edit* the logfiles, but *D*O*N*'*T* completely 
+remove them.  You can find the names of the system logfiles on many Unixes 
+by viewing /etc/syslog.conf.  The simplest way to do this is to record the 
+time you start hacking their system, since loglines are always dated and 
+timed. 
+Note that if their are entries like a.b <TABS> @hostname, and you cannot 
+hack into @hostname, it is likely best to not modify any of the logs, unless 
+their is something auth., or security., or >.notice.  (Read man syslog if you 
+didn't understand that)
+
+--- James Mastros
+
+(Moderator: many logging programs save your log file in memory and then 
+write it to disk after you log off of the system. So you're still in 
+trouble. Hint: *part* of the solution is to figure out how to log on in such 
+a way that there will be no logging at all of your visit. Galf knows how to 
+do that. But it's against the law. One of these days the FBI file on galf 
+will get big enough for a bust. Think about it, galf, how come we knew so 
+much about your hack even though you logged on to the Happy Hacker majordomo 
+server box in such a way that there was no shell logging? )
+
+From: root <abszero@epix.net> 
+Subject: Re: Happy Hacker Digest Feb. 2-4, 1997 (continued)
+
+> From: Kenn Evitt <cpe2@gte.net> 
+> Subject: linux slackware 
+> 
+> I understood how to use minicom with the pppd daemon to open a PPP 
+> connection, but how can i do this and connect to a specific DNS host? 
+>
+
+In your /etc/resolv.conf, add "nameserver nnn.nnn.nnn.nnn".  If you don't 
+already have a /etc/resolv.conf, you should also have a "domain your.isp." 
+(note the trailing dot) in the file.
+
+> From: "J Leane" <commando@hartingdale.com.au> 
+> 
+> Hi IM new to happy hacker... 
+> Any ideas on hacking bbs's?? 
+>
+
+Yeha, don't.  Generally, if their is anything worth getting at a BBS, the 
+best way to get to it is to UPLOAD good stuff.  If you have warez to upload, 
+send a e-mail with an attachment to the SysOp, do not upload it to a public 
+forum, which can result in legal damage to the SysOp of the BBS in question.
+
+ --- James Mastros 
+  
+          <-> <-> <-> <-> 
+  
+> From: burncy@mail1.nai.net (Burn-Cycle) 
+> Subject: Re: Welcome to Happy Hacker 
+> 
+> I use windows 95 and I use a really good telnet program...I think. Only 
+> because I've read thing that hackers have written and they have said that 
+> they can't only do certain stuff with a shell account. Well, I can do 
+> everything they can do with my telnet program..........i think. Only things 
+> that I've tried, have all worked for me. Anyway, I don't get something. I 
+> know that when you finger someone you get the location of their password 
+> file right? 
+> 
+> ya know it looks something like this.. 
+> 
+> etc\usr\bin
+
+That looks like it should be /etc/usr/bin.  Note that Unix uses slashes, 
+                             ^   ^   ^ 
+rather than back-slashes like DOS or colons like MacOS (yeech!).  Also, 
+under every Unix I have ever seen, the password file is /etc/passwd or 
+/etc/shadow-password.
+
+  --- James Mastros
+
+From: Tony Riggs <triggs@computize.com> 
+Subject: NEW
+
+Hey folks,
+
+New guy here just wondering does anyone know how to get around the stupid 
+password on the screen saver for WIN 95 WITHOUT hitting CTRL + ALT + DEL??
+
+Thanks 
+Tony
+
+(Moderator: think boot disk. If that doesn't work, power down, restart, hit 
+escape and make sure the bios is set to boot from a: drive. Folks, that 
+Win95 password is a fragile way to save you from someone with physical 
+access to your box!)
+
+From: Frankie Hayes <strider@unix.aardvarkol.com> 
+Subject: BBSes
+
+Ok... 
+ Since this is my 1st post, I'd like to say, "Hey!" to everyone out there. 
+Now, the main question i have is does anyone have ANY tips on hacking 
+WildCat!, TeleGuard, or Renegade BBSes? I know for a fact that Renegade 
+BBSes are relatively simple, but tips always help. ;) 
+ The following is a tip for anyone else interested in hacking BBSes; and 
+from experience i KNOW this helps... 
+    1) First, get a copy (Shareware -or- Registered version) and set 
+ it up on your computer. 
+    2)  Next, make sure that it's installed properly, and logon to it 
+ locally. (Ya'll should know what that means) 
+    3)  After your logged on, DON'T use SYSOPs or whatever YOUR 
+        "SuperUser" account is, and try hacking it and dropping to DOS. 
+This is a VERY good way to practice hacking into a board...BUT DO NOT 
+TRY HACKING YOUR BOARD WITH VIRII, ANSI-BOMBS, etc. So don't say i didn't 
+warn ya!!!!  I'd appreciate any responses/flaming of what I've stated 
+above. Until then...later......  ;)
+
+=============================================================================== 
+      _____     _____     _____     _____     _____     ____    _____ 
+     | ____|   (_   _)   |  o  )   (_   _)   |     \   |__ _)  |  o  ) 
+     |____ |     | |     |  _ (     _) (_    |  O   |  |__)_   |  _ ( 
+     |_____|     |_|     |_| |_)   (_____)   |_____/   |____)  |_| |_) 
+                     fh 
+  
+ 
+
+From: jon@balder.us.dell.com 
+This letter was forwarded Tue 3:52pm, 4 Feb 1997 EST by SUNRUNNER@TAMPA: 
+This letter was forwarded Tue 3:42pm, 4 Feb 1997 EST by MATCHMAKER: 
+>From comp.risks; seems fitting re the sub-discussion about ActiveX security 
+at the last JUG meeting.
+
+Date: 1 Feb 1997 05:12:02 GMT 
+From: weberwu@tfh-berlin.de (Debora Weber-Wulff) 
+Subject: Electronic Funds Transfer without stealing PIN/TAN
+
+The Berlin newspaper "Tagespiegel" reports on 29 Jan 97 about a television show 
+broadcast the previous evening on which hackers from the Chaos Computer Club 
+demonstrated how to electronically transfer funds without needing a PIN 
+(Personal Identification Number) or TAN (Transaction Number).
+
+Apparently it suffices for the victim to visit a site which downloads an ActiveX 
+application, which automatically starts and checks to see if Quicken, a popular 
+financial software package that also offers electronic funds transfer, is on the 
+machine.  If so, Quicken is given a transfer order which is saved by Quicken in 
+its pile of pending transfer orders.  The next time the victim sends off the 
+pending transfer orders to the bank (and enters in a valid PIN and TAN for 
+that!)  all the orders (= 1 transaction) are executed -> money is transferred 
+without the victim noticing!
+
+The newspaper quotes various officials at Microsoft et al expressing 
+disbelief/outrage/"we're working on it".  We discussed this briefly in class 
+looking for a way to avoid the problem.  Demanding a TAN for each transfer is 
+not a solution, for one, the banks only send you 50 at a time, and many small 
+companies pay their bills in bunches.  Having to enter a TAN for each 
+transaction would be quite time-consuming.  Our only solution would be to forbid 
+browsers from executing any ActiveX component without express authorization, but 
+that rather circumvents part of what ActiveX is intended for.
+
+A small consolation:  the transfer is trackable, that is, it can be determined 
+at the bank to which account the money went.  Some banks even include this 
+information on the statement, but who checks every entry on their statements...
+
+Debora Weber-Wulff, Technische Fachhochschule Berlin, Luxemburger Str.  10, 
+13353 Berlin GERMANY weberwu@tfh-berlin.de <http://www.tfh-berlin.de/~weberwu/>
+
+SAN MATEO, Calif.--(BUSINESS WIRE)--Feb. 4, 1997--Pretty Good Privacy, 
+Inc. (http://www.pgp.com), the world leader in digital-privacy software 
+for individuals and businesses, today announced the availability of 
+PGPmail 4.5, an upgraded version of the world's most popular 
+encryption software for sending private encrypted email messages 
+and files over the Internet and corporate intranets. 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 

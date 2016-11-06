@@ -1,0 +1,529 @@
+Happy Hacker Digest Feb. 22- 23, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is Carolyn Meinel. Please don’t send us anything you wouldn’t email to your friendly neighborhood narc, OK? 
+To subscribe or unsubscribe, a really obnoxious letter to . (I got tired of all the polite letters.) If you decide you just want to use the forum and not get these mailings, I promise my feelings won’t get hurt if you unsubscribe from this list. 
+Happy hacking! “Be wiser than other people if you can, but do not tell them so.” --  Earl of Chesterfield. 
+--------------------------------------------------------- 
+URL ‘O the Day: http://www.nbs.nau.edu/~jwa/Security/ 
+Tools to catch hackers.
+
+Exciting announcement: DefCon IV Dates!  July 11-13, 1997. This is one of the best, if not *the* best, hacker conferences around. Hackers, law enforcement professional, and computer security experts party it up between surprisingly good talks and panels. Reporters, directors and movie producers hang out hoping to meet the hackers that can help them make gobs of money by glamorizing (or demonizing) us in the eyes of the public.
+
+Table of Contents
+
+Desperately Searching for Suicidal.foobar.com 
+More Modem Jammer 
+IRC Issues 
+Linux Questions 
+Calling for Hackers from OZ 
+What About Cookies? 
+Does Identd Workaround Exist? 
+Way to Get Spammers 
+More Cracking Questions 
+Key Logger URL 
+Social Engineering Debate Continues 
+Rant
+
+DESPERATELY SEARCHING FOR SUICIDAL.FOOBAR.COM
+
+From: "Roger A. Prata" <prata@cyber-wizard.com>
+
+What ever happened to the big competition between you and Jericho and the 
+suicidal.foobar.com box??  Any more action?
+
+*************************************************************** 
+Please direct responses to prata@cyber-wizard.com 
+direct flames to /dev/null@boss1.bossnt.com 
+***************************************************************
+
+Moderator: jericho still hasn’t given me a notarized contract to test his security. Also, just after the johnny xchaotic email bombings suicidal.foobar.com suffered a nervous breakdown, err, hard disk crash. Imagine that!  I got some interesting results on a traceroute just now. It got into a loop at dimensional.com’s routers.
+
+MORE MODEM JAMMER
+
+From: bryan_g@juno.com
+
+ I spoke with a friend of mine, who had this to say about Modem 
+Jammer:
+
+ "Well, it could be used as by someone as  a way to carry a virus 
+to those '313!+3 pirate boardz' out there who won't give them access to 
+'warez'. The name of the program alone might cause a neophyte to d'load 
+it, and if a virus is attached to it, they might experience an infection 
+if anti-virus software isn't on their 'puter."
+
+  As always, you gotta be selective about what you decide to get. 
+Just be careful!
+
+IRC ISSUES
+
+From: Timothy Ward <tbw@ruined.all-net.net>
+
+I'm not sure, but I was under the impression the ICMP floods (ping -f) 
+were classified as denial of service. And since no one wants some lamur 
+with half a brain to get in trouble, it should be mentioned.
+
+If I'm wrong, I apologize ;)
+
+From: "Xenakis" <xenakis@epix.net>
+
+<snip from HH 3-3> 
+>Yes, on IRC it is possible to identify the dynamically 
+>assigned IP address of your home computer and send stuff directly to your 
+>modem! If the bully has a decent computer, he or she may be able to ping 
+>yours badly enough to briefly knock you out of IRC.
+
+Can your ISP detect a ping -l or ping -f? (would this be considered 
+illegal??)
+
+Secondly, 
+<snip from HH 3-3> 
+>If they were able to sneak into the channel and get OPs just like that, 
+then 
+>chances are they are much more experienced and dangerous than you are.
+
+Just curious, but this happened to me the other day...how do they perform 
+such an act? (it had a message that the server itself oped them)
+
+Anonymous:
+
+> IRC has nothing to do with hacking and I subscribed to the list to maybe 
+> pickup a few more stuff on UNIX  (Unix is hacking) But know 
+> you’re just becoming like everything else 
+>
+
+Um, try going on any EFnet server, and join #2600. 
+BTW - If you want to apply yer hacking skills, try getting ops on a chan 
+that you hate. Flooding (while sometimes lame) if fun too.
+
+>at these naughty people. Where can I get a ping -f Win3.1 util? Rest 
+>assured it will be put to good use on those unfortunate enough to 
+>disgust the heck outta the rest of us.
+
+Get Trumpet Winsock and use the "Ping" util, not quite as effective as 
+ping -f, but will get the job done. What it does is ping a person with 
+the desired packet size and interval, until you tell it to stop. It tells 
+you "ICMP Transmit Error" a lot if you set it to go too fast, or with too 
+high of a packet size, but will lag someone to hell if they're annoying 
+you. 
+Have fun.
+
+LINUX QUESTIONS
+
+From: "Roger A. Prata" <prata@cyber-wizard.com>
+
+I am trying to set up a PPP Chat script for Linux.  I am trying to set up a 
+PPP connection to my ISP, static IP.  I am using dip.  I cannot seem to get 
+the chat script working.  Are any of you using dip with PPP??  If so, cud u 
+mail me a copy of a chat script that I cud modify for use with my ISP??  I 
+am using Slackware Linux, kernel 1.2.3 
+TIA,
+
+Rog 
+ 
+
+******************************************************************** 
+From: prata@boss1.bossnt.com 
+Please direct responses to prata@cyber-wizard.com 
+or r3w7@usa.net 
+direct flames to /dev/null@boss1.bossnt.com 
+Wise man once say: Man who stand on toilet high on pot. 
+******************************************************************** 
+ 
+
+From: "Stephen James" <sjamesflorida-wellington@worldnet.att.net>
+
+ I grow closer to installing package "A" (Slackware) every day.  I figured out how to 
+install from HD.  I mounted my DOS drive manually under /mnt/dosc, but pkgtool just gives me the message: "[: -d:] argument expected" when I try to install.
+
+CALLING FOR HACKERS FROM OZ
+
+From: Dunebuggy <agradkow@sebas.vic.edu.au>
+
+Hi 
+  This is the first time I’ve written here and I was wondering if there 
+were any other subscribers from Australia here as a lot of the talk sounds 
+like it's from America. I also need some help with Unix hacking so if 
+some could send me some info it would be a great help. 
+thanxs.
+
+ps. PsyChadEl the guy with the cool hair from the prodigy's name is Keith Flint. 
+All I ask for is a chance to prove money can't make me happy.
+
+Moderator: There are LOTS of Australian hackers on this list. Now if you want to check out a really dynamite hacker site in OZ, see http://www.skeeve.net.
+
+WHAT ABOUT COOKIES?
+
+From: Jay Clements <jayc@compusmart.ab.ca>
+
+I keep getting 'cookies' while using Netscape. Can anyone give me an 
+explanation as to what these are, what they do, and why do they exist?
+
+Thanks.
+
+--Jason Clements 
+--Certified Novell Administrator
+
+--It is far better to remain silent and be thought a fool, than to speak up and 
+--remove all doubt.
+
+--email: jayC@compusmart.ab.ca 
+--home page http://www.ualberta.ca/~mrau/bauhaus/bauhaus.htm
+
+DOES IDENTD WORKAROUND EXIST?
+
+From: The Grizzled Mage <GrizzledMage@the-lair.com>
+
+Is there any way to get around or change Identd to gain anonymity, at 
+least for my account name?  Is there anything else that can detect my 
+account name? 
+-- 
+ "I am not a vegetarian because I love animals; I am a vegetarian 
+because I hate plants." - A. Whitney Brown
+
+WAY TO GET SPAMMERS
+
+From: mulder@jumbo.ntplx.net (Hunter Rose)
+
+        This is just an idea, but it seems damn good to me in my present 
+bad mood. 
+        I am sick and freaking tired of all these stupid posts on Usenet. 
+"it really works!" "easy money!" blah blah blah. and all the stupid spam. 
+it's rare that I can even find what I’m looking for anymore, much less go on 
+and not run into these irritating, repetitive, completely unrelated posts. 
+        So why don’t we just start posting the GTMHH on stopping spammers 
+every time we see a spam? make it available to every idiot with a computer. 
+I mean, put it everywhere. I want to see people just going down every day. 
+I want to see people AFRAID to post this crap. I want these people OFF the 
+Internet. 
+        I'm no Internet purist that believes newbies should be eradicated, 
+but these people prey on the stupid and make a wonderful medium practically 
+unusable without contributing anything in return. 
+        does anyone else get these urges? would anyone else like to start 
+posting this stuff everywhere? because id be only to glad to help. 
+ 
+
+ +++++++++++++++
+
+KADATH
+
+mulder@ntplx.net
+
+spoken of in whispers, seen through dreams.
+
+the most merciful thing, I think, is the inability of the human mind to 
+correlate all it's contents.
+
++++++++++++++++
+
+Moderator: I’m flattered that you would think of posting the GTMHH on zapping spammers all over the place. But it is a pretty long piece, and let’s face it, the average Usenet reader is not going to have the patience to learn how to track down these guys.
+
+But, using all his hacker wiles, Greg Bulmash has come up with a hilarious, legal and effective way to REALLY put spammers on the run. His ultra deadly to spam Web site will be fully operational on March 7th. I’ll send this list the URL that day and we can all go over and start making life horrid for Cyberpromo, Crazy Kevin, and all their ilk. Muhahaha...
+
+MORE CRACKING QUESTIONS
+
+From: (identity suppressed by moderator)
+
+Well, I am finally fulfilling a promise to myself that I would learn 
+something about hacking.  I am still a total newbie, so bear with me.
+
+I would like to hack a system for the pure challenge of it.  I have 
+found a really nice system that would be, I think, pretty easy to hack. 
+Let me explain a few things about the system first:
+
+1.  The system is at a school library.  In order to keep from having the 
+kids who use it get into programs they don't know about and therefore 
+cause harm to the system, the librarians installed a password-protection 
+device.
+
+2.  The system runs Windows 3.1.  I have tried to figure out the name of 
+the password protection program, but haven't succeeded yet.  It puts a 
+lock icon on certain program groups.  When a protected group is 
+double-clicked, a dialog box pops up stating that a password must be 
+entered to continue.  There is no username prompt; just a password 
+prompt.
+
+3.  The only programs that are not protected are Microsoft Works, 
+WordPerfect, etc. as well as the CD-ROM programs such as Encarta.  As 
+far as I know, there are no programs which let you run executables.
+
+4.  There is also a prompt for a login when a computer is turned on.  I 
+think the systems run Novell Netware.  I don't know whether this 
+password entry can be defeated or not.  I do know that there is a 
+username you can enter so that the password program does not go into 
+effect, but I don't know what the username is.
+
+Can anyone help me out?  If you do know the answer, please don't tell me 
+all of it.  Just give me a hint or two, so I at least can say I figured 
+part of the answer out. :) 
+Thanks!
+
+Moderator: First off, get permission from your school to crack the library computer. Otherwise you’re asking to get expelled -- or worse. This actually may be easy to do. Are your grades good? Do you have a good reputation? If so, you may be able to get your school to agree to let you test their security. In fact, they may be grateful to you for offering to help them out. This also can work with your local ISP. Oftentimes ISPs let high school students work as interns. They often appreciate help with security testing. But be absolutely sure they agree -- in writing -- to any kind of security testing you may want to try out.
+
+Don’t count on being able to quietly break in with no one noticing you. There are too many ways to get caught, especially if some other student who is really good at hacking has already talked some teacher into letting him or her be the school security expert.
+
+But if you have been getting in any kind of trouble at school, the administration may be already looking for an excuse to kick you out. So in this case even offering to help them test security may get you in trouble. In fact, I recently learned (from a message that I have to keep private) about a student who was suspended and may be permanently expelled from high school for just writing an email bombing program, even though there is no evidence that he has used this program.
+
+Now, if you still want get good ideas of how to break in, check out the back issues of this Digest posted at the award-winning Infowar Web site under the Hackers forum at http://www.infowar.com. But remember, this list and the Infowar Web site are both read by lots of law enforcement people and, who knows, maybe some folks at your school. I mean, we are talking about hundreds of thousands of people browsing the Infowar site!That’s why I suppressed your identity. In some high schools, just getting caught asking a bunch of hackers how to crack into the library computer system might be grounds for suspension.
+
+From: Spyder <magus@erols.com>
+
+This is probably the lamest hack ever
+
+Don't you hate things like protection programs like Foolproof (a limiter that 
+makes you not able to delete things or have access to something)? Or maybe 
+surfwatch?
+
+ I have found an easy way to hack it. I find no fun in dialing up computers 
+so I work to crack code, guess passwords, remove Internet "blockers" and get 
+past security programs that deny access to different things. 
+ 
+
+Get rid of them like this
+
+In Windows 3.1
+
+Open up the file manager. 
+Double click on C: 
+highlight system.ini 
+copy to a disk 
+Look around your hard drive so you know where 
+open system.ini the one on your hard drive with notepad 
+There should be a header that says [386Enh] 
+There will be a command line like 
+*C:\program\block.exe for example(this is an example) 
+delete the line that has that kind of information 
+or do the same thing with it the autoexec.bat
+
+Presto! it should be gone!
+
+What if there is a program that doesn't let you delete things( example: 
+Foolproof) Press F5 while the computer boots. It will go to DOS. Then type 
+edit system.ini  . Do the same as above from there. 
+ 
+
+In Windows 95
+
+This is much easier. Press Crtl+Alt+Del ONCE . You will get a little menu on 
+things you can shut off. You can also use this when a program takes to long 
+and seems to be frozen.
+
+From: Ben Woodcock <nofear@cliffhanger.com>
+
+I work with an ISP that runs the latest version of IPAD, on a DOS server. 
+I was wondering if anyone out there has any ideas on how to get in and just 
+leave a message in there saying I was here or something like that. He 
+recons it's impenetrable but I know for a fact that it isn't. I don't have 
+a shell account so I can't do anything that needs one of them. All I have 
+is normal user access so I can get to my user web page directory to 
+upload/move files. He has challenged me to crack this system (he is a 
+friend and won't press charges on me) especially if all I do is leave a 
+message for him. Any reply would be helpful either here on this list or to 
+nofear@cliffhanger.com.
+
+Any flames are welcome as well
+
+Ben Woodcock 
+(don't bother with making me anonymous) 
+I've got my whole life ahead of me (except the bit I've already had of course)
+
+Moderator: Just make sure the owner of that ISP also agrees with letting you test the security. If I were you I’d get it in writing.
+
+From: ravanello@avalon.sul.com.br
+
+As you asked, this ISN'T anonymous, so, if you wish, flare me at will. 
+Well, the point is the following: I work in a Internet server here in 
+Brazil which uses WorldGroup 2.0 as Server. My boss is another subscriber off yours, and 
+he authorized me to ask this: IS there any way to hack in a WGroup 
+server, with a normal user account? 
+thakx
+
+From: mozment@juno.com (Michael T Ozment)
+
+I was on a host, peak.org, on the finger port.  I pressed enter and I got 
+a users online list.  in the "Console Location" column, I saw that a 
+handful of consoles were supporting everyone...so I decided to see if I 
+could log onto one of the consoles.  I tried telnetting to one, 
+muspell.peak.org, on the normal telnet port (23) and I got a blank 
+screen...
+
+what I typed: 
+help <enter> 
+computer answered: 
+help 
+Error: Invalid argument.
+
+Rotaries Defined: 
+         cli             -
+
+Enter Annex port name or number:
+
+. . .so I played around with it for a while, I entered some standard port 
+numbers and got back
+
+Enter Annex port name or number: 23 
+Port 23 Error: Permission denied.
+
+Rotaries Defined: 
+        cli      -
+
+Enter Annex port name or number:
+
+. . .so I figured I might as well give it a try and typed:  cli 
+it answered:
+
+Annex Command Line Interpreter  *  © (C) 1988, 1995 Xylogics, 
+Inc.
+
+Checking authorization, Please wait. . . 
+Annex username:
+
+. . .my question is, What in the heck have I gotten into???
+
+KEY LOGGER URL
+
+From: "Xenakis" <xenakis@epix.net>
+
+-----> Keylogger95, is currently not available at Silicon's site, try: 
+http://www.rks.telia.lv/users/hack/hacking_utilities/keylog95.zip 
+It is easy to install, but it makes multiple files, and it displayed a 
+small gray toolbar 
+icon that says upon opening "Minimize this window." (good luck trying to 
+hide it!!!!)
+
+SOCIAL ENGINEERING DEBATE CONTINUES
+
+From: " Intergalactic  <--" <intergalactic@hotmail.com>
+
+>From: Marko Samastur <Marko.Samastur@fmf.uni-lj.si>
+
+>To those, that think social engineering is hacking, there are few >words I'd 
+like to say. I've been watching this conversation around >hacking and hacking 
+techniques for a while and I've had enough.
+
+Then go where the "real" hackers are.
+
+>It seems like there are too many people out there, who don't have the 
+>slightest clue what hacking was and is. It's a wish and a need to >further 
+develop your knowledge and to seek information.
+
+Yeah, everyone and their grandmother has their own definition of what hacking 
+is and isn't. To me, hacking is finding out what is wrong with something (i.e 
+why it's not working like *I* want it to), taking it apart, and figuring out 
+how to make it work the "right" way.
+
+>So, how the h*** can in that context a scam, involving a stupid >guard, be even 
+considered as important part of HACKING.
+
+Because the guard (and anyone else) IS a part of the system. A weakness was 
+found, and it was exploited.
+
+>Sure it's an important part of getting  access to a computer, but it >has 
+nothing to do with hacking. And you don't get any knowledge from >it.
+
+Okay, so getting access to a computer has nothing to do with hacking? 
+Knowledge? What do you know about people? Do you know how to tell when 
+someone's lying? Do you know how to MAKE someone lie? Can you gain a complete 
+strangers trust? Sorry to offend your hobby, but computers are NOT the hardest 
+thing in the world to hack. People are.
+
+>Almost the same goes for tricks. While they can be fun to play with, >they are 
+only that. Not much knowledge behind them and should I do it >to impress 
+people.
+
+Agreed
+
+>Actually, it's even repulsive to use both words as physical and >hacking so 
+close together. ;)
+
+...sounds like you’re afraid of something.
+
+>Not only that, will you people drive around the globe to be able to >do that, 
+or are your needs limited only to your hometown.
+
+Ever heard of a telephone? Look, obviously you have never SE'd anyone. In fact, 
+judging by your attitude, I seriously doubt you could. Using nothing but a 
+computer to hack is limiting yourself. PEOPLE make the world go around, and if 
+you can't hack one of those, well, I guess computers are the next best thing. 
+BTW You should get out more...
+
+>Please feel free to flame me, but I insist that you allow me to do >the same.
+
+...go for it.
+
+From: Bernz <bernz@ix.netcom.com>
+
+I started this thread and maybe went about wording it the wrong way. My 
+point was that social engineering is an aspect of hacking. It is an 
+overlooked aspect. It is NOT the end all and be all. It is NOT the only 
+part to hacking. 
+Real world security holes are as important to monitor as ones in a 
+computer. Don't think the computer can get you everywhere and can do 
+everything. It can't. Hacking, in a traditional sense, probably means 
+just computers. I don't like to be close minded. I just think it has to 
+do with security in general. 
+The entire, "is it hacking" argument is silly. It's like the darn "is it 
+punk rock". There's no answer because there's lots of interpretations. 
+Few of which can really be called wrong. 
+BTW it's my personal opinion that people who are so against SE are 
+people who just feel uncomfortable because real life is an aspect that 
+they can't control. It's not accessible via a modem so it's just not 
+worth it? 
+-- 
+Bernz 
+http://members.tripod.com/~bernz 
+http://www.aracnet.com/~gen2600
+
+"Tell me what you want, a zigahzigzah." 
+-From "The wit and wisdom of the Spice Girls" 
+ 
+
+RANT
+
+From: fox@edgenet.net (fox)
+
+I have a small rant that I would like to submit about this mailing list. 
+>From all the literature I have read on the net and gotten from other 
+hackers I would like to submit an opinion of this list. No while its 
+lovely list to teach newbies and so forth about this that and the other, 
+there is a serious lack of information. Sure...it will tell you what 
+this is and what it does exactly to the beginning hacker, but it really 
+fails to tell HOW to utilize it.  I mean...there are exploits, security 
+holes, and all other sorts of goodies out there just waiting to be 
+discovered by an enterprising young or old hacker. Is it because the 
+moderator doesn't want people getting caught by the feds? Or is it 
+because the moderator has no idea how to find and use these exploits? I 
+don't really care. I already know what all the legal consequences of 
+breaking into systems are and I'm sick of being reminded. Why not just 
+post a disclaimer saying that if you do this and get busted, it isn't 
+our problem?  There is a fine line between being in the know about 
+Internet functions and being a hacker. Oh yes....I'm so glad that I know 
+how to finger a user now...big deal. I very seriously doubt that knowing 
+how to finger or give a whois command makes me a hacker. For god's sake 
+why not get some posts on here explaining password or program cracking? 
+Getting INTO an actual system. If we get busted that's our problem. I'm 
+really tired of getting warnings. Its my life...I'll take the risks. I 
+suggest that if we don't have a moderator who is willing to teach us 
+something useful then we get a new one, Mrs. Meinel <sp?> is doing an OK 
+job but I want to actually sit in front of my computer and get 
+somewhere. Port surfing...bleah...once I've found a UNIX 4 system how 
+can I bypass or crack my way in using another user's account? We demand 
+free access to data. Teach something that will be useful. Not every 
+would be hacker out there wants to grow up to be a normal functioning 
+member of society. This was my Rant. Thank you.
+
+FantomPhox
+
+From: jolevano@spectra.net
+
+dear carol,
+
+        I recently subscribed to your happy hacker mailing list and was 
+very impressed.  I enjoyed the list very much and learned a lot, but 
+recently learned of a campaign started and lead by you to rid the Internet 
+of maul bomb programs and programmers.  I think that is absurd.  Censorship 
+sucks,  even the kind that you are trying to push.  It is for this reason 
+that I am asking you to unsubscribe me to your mailing list.  I have nothing 
+against you as a person, but have to voice my opinion about what you are 
+doing.  I hope that this letter has some effect on what you are doing.
+
+Moderator: When we express our opinions in a peaceful, noncoercive manner, which is *all* that I have *ever* advocated, this is not censorship. Check out the GTMHHs on fighting spammers etc. and you will see what I mean. If we were to succeed by these socail pressure techniques in ridding the Net of those email bombers who attack our freedom of speech, that would not censorship. It is the exact opposite -- we are defending freedom of speech against those who attack it. I hope you can learn to understand the value of peaceful, noncoercive protest. In fact, that is what you are exercising today by unsubscribing.

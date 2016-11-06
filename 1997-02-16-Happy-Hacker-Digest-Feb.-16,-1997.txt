@@ -1,0 +1,363 @@
+Happy Hacker Digest Feb. 16, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to . Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking! The aim of the superior man is truth -- Confucius 
+---------------------------------------------------------
+
+Erratum O' the day: It's SMTP (simple mail transfer protocol), not SMPT. See 
+RFC 821.
+
+Hoax 'O the day: Deyeenda Virus. See http://ciac.llnl.gov/ciac/CIACHoaxes.html
+
+Table of (dis)Contents:
+
+How Hackable Are Macs? 
+Telnet Troubles 
+Uptight ISP 
+More Linux Questions 
+Email Bombing/Forging  -- Technical and Legal Stuph 
+Hacker Hot Spots! 
+More Calm, Measured Discourse
+
+HOW HACKABLE ARE MACS?
+
+From: Dave Andersen <angio@aros.net>
+
+]> I'm not a Mac lover by any means, BUT their Web Servers are the most secure 
+> on the net today and I'd put one of them up against a Unix system any day. 
+> So go back to school, or work and forget about this 10,000 whatevers (it's 
+> Swedish money) because I bet they don't even have it. If someone does hack 
+> it, I'll eat a bug.......
+
+   I don't know if anyone's going to go to the effort to do it - I doubt 
+it - but I'm fairly sure it's not impermeable.  At a minimum, it may be 
+crashable.  A buffer overflow could actually kill the entire Mac, because 
+there's no protected memory in system 7.x.  Hacking it would present a 
+large technical challenge to anyone, however.  You'd almost have to have 
+it write a little server that you could connect to, or something.  Not 
+pretty.
+
+From: bbuster@succeed.net (Bronc Buster!!!)
+
+Just to make this a little clearer, I was not saying a MAC is not hackable, 
+but the WebSTAR Web server they are running at that site. I have worked with 
+it and it's very simple design leaves little to look into. It's like setting 
+up a Microsoft Front Page server on a Windows 95 run computer. (Well kinda, 
+after all it is a MAC) I'm not saying it's UN-hackable, but 99% UN-hackable ;)
+
+From: "John D. Robinson"  <Strider@mail.clarityconnect.com> 
+  
+> From: TQDB <tqdb@feist.com> 
+> 
+> > I will tell you all now, don't waste your time. Although they have 
+> > made this server a Public Domain and given the proper legal disclaimers to 
+> > the authorities on placed them on their sites, this site (I'm 99% sure) CAN 
+> > NOT be hacked into. "What?" you say. Bronc Buster saying a site is 
+> > UNhackable? Well this site in running on a MAC. 
+> 
+>     Whooptee.  People basically said the same thing about Windows NT in 
+> the beginning.  "There isn't any shell access, how can we hack it?!!" 
+> Guess what, you don't need shell access to hack a server.  And that 
+> includes Macs.
+
+True. However, a few months back, a contest was set up by Quarterdeck, the 
+makers of Webstar, the best webserver on the planet (bias? yep.) to see if 
+ANYONE could hack their site. $10,000 was the reward, all correct legal venues 
+were used: Quarterdeck lost no money. I'd like to see THAT on WinNT.
+
+> > I'm not a Mac lover by any means, BUT their Web Servers are the most secure 
+> > on the net today and I'd put one of them up against a Unix system any day. 
+> > So go back to school, or work and forget about this 10,000 whatevers (it's 
+> > Swedish money) because I bet they don't even have it. If someone does hack 
+> > it, I'll eat a bug....... 
+> 
+>     Without trying to start any OS wars, I think it is safe to claim that 
+> most technical people move on to other OSes rather than stick with MacOS 
+> and due to this there is a lack of real Mac hackers.  Give people a few 
+> months, when the become bored with Unix, WinNT and Novell and you'll 
+> start hearing about some more Mac exploits. 
+  
+I work at an ISP where, for two years, we've been running on Macs. Although no 
+one's tried on us yet, I've found that the Mac has had many attempts made on it- 
+no success yet. That may seem like a broad, sweeping statement, but it's true. 
+More people out there use Macs for serving than some people think- there's a 
+reason for that.
+
+> Moderator: Yeah, but now Mac OS is dying, dying, gone... How many Amiga 
+> hackers are there out there? On the other hand, now Apple is going to use a 
+> new, improved version of the NeXt flavor of Unix. NeXt boxes are notoriously 
+> hackable!
+
+New, improved. Not to mention the fact that it's not going to even... well, 
+you'll see for yourself, I'm sure. The hybrid OS is not going to be based on 
+UNIX, just have some of its advantages.
+
+-Strider
+
+"A mighty storm is rising, 
+a darkness in the land. 
+But surely this must be a light, 
+to those who understand..."
+
+TELNET TROUBLES
+
+From: "Roy Hasson" <candyman@voicenet.com>
+
+Hi, I was looking for a terminal program so I can access Telnet, because 
+whenever I try to log on Telnet I get a bunch of characters as the prompts 
+and as the text I input. Can anyone tell me where can I get this kind of 
+terminal program ? 
+Thanks .. 
+Candyman
+
+Moderator: Sounds like you are using a telnet program that doesn't handle a 
+PPP connection. Either get a program that does work with PPP such as the 
+Win95 or Quarterdeck telnet programs.
+
+UPTIGHT ISP
+
+From: Nils van den Heuvel <n.heuvel@pi.net>
+
+Hi,
+
+I have been looking for a provider that offers shell accounts, I have 
+found one in my country (Holland) that does, but they say: "We can't 
+allow our users to hack servers outside of our domain (www.xs4all.nl), 
+you can only hack our machines."
+
+Now, I have 2 questions:
+
+1) Is this really possible?
+
+2) Is there a way to bypass their security, so I can hack whatever I 
+want?
+
+I hope you can help me,
+
+Nils van den Heuvel 
+n.heuvel@pi.net
+
+Moderator: I don't know the law in your country as of today. But the 
+government of Holland has long been (in)famous for letting hackers do almost 
+anything. On the other hand, chances are that your ISP also has the right to 
+close your account if they don't like what you are doing.
+
+I've found it helps to make friends with the sysadmins at my ISP so they 
+feel like I'm not going to do anything horrible while hacking. On the other 
+hand, as a 50-year-old mom, I don't exactly fit the hacker profile.
+
+Perhaps some of the other Dutch hackers on this list could help Nils find a 
+friendlier ISP?
+
+MORE LINUX QUESTIONS
+
+From: root <root@ruined.all-net.net>
+
+This is to the person who was having problems with his /etc/resolv.conf.
+
+I didn't see an explanation of what to put there. So I'd thought it'd be 
+worth mentioning that the unresolved IP of his ISP's DNS servers need to 
+be there in the format :
+
+nameserver xxx.xxx.xxx.xxx 
+  
+You can list as many as you like. ;)
+
+From: "Roger A. Prata" <prata@cyber-wizard.com>
+
+Carolyn,  I hope you can help me here.  I currently downloaded (over 4 
+nights) all the /base and /rpms files for RedHat 4.0, as well as the 
+boot.img and supp.img.  I am trying to install from my HD to a dedicated 
+partition for Linux:
+
+/dev/hda1  (c:\)  is for Win95 
+/dev/hda2   is for Linux (linux native partition)
+
+when I try to choose source media, it asks which partition and DIRECTORY 
+the media is in.   The source files are on /dev/hda1   (C:\)  off the root 
+dir.  so they are c:\rpms and c:\base.   When asked which directory on 
+/dev/hda1, I have tried /, /mnt, /dos, /mnt/dos, etc..  I cannot get it. 
+can you help??
+
+TIA,
+
+Rog 
+ 
+
+LEGAL STUPH
+
+From: jericho@dimensional.com
+
+> URL O' the Day: http://www3.ns.sympatico.ca/loukas.halo8 Excellent graphics, 
+> great newbie hacking tips, some PG-13 language, hacker programs are offered, 
+> some of which are illegal to use (like the war dialer), but overall a 
+> sincere attempt at being a good guy hacker site.
+
+Since when is a war dialer software program illegal?! In some counties in 
+some states there are statutes against wardialing, but no federal laws 
+regulating the software that does it.
+
+> address all over them.  On the legal side of things, am I correct in 
+> assuming that the user is in no way liable until he cracks and makes use of 
+> passwords from the passwd file?
+
+Technically/Legally, having a cracked password with a valid login 
+constitutes having an "illegal access device". Someone verify this please, 
+but I *think* each such device is a Class 5 felony now.
+
+> In fact, I also believe it is morally acceptable to organize letter writing 
+> campaigns, to strike, picket, demonstrate, and boycott.  Those were the 
+> peaceful tactics of  the Civil Rights movement for which we honor Martin 
+> Luther King.
+
+So you consider MLK a hacker by your previous guides... interesting.
+
+Moderator: Hackers can learn a lot from MLK, Gandhi and Jesus. Too many 
+hackers get in trouble for a tendency to let being a vigilante overstep the 
+bounds of the law. Cracking and email bombing come to mind. Now possessing 
+war dialing software -- I haven't heard of that being illegal, either. But 
+using it in the US sure is.
+
+X-Sender: bbuster@succeed.net
+
+I wanted to thank k1neTiK for elaberating on my sendmail/Identd post. I 
+wanted to put it into "laymans" terms, but after thinking about it I should 
+of put it in real terms to.
+
+I also wanted to inform people that most servers, about 80% to 90%, run 
+Identd, including most (if not all) ISPs and commercial providers. The few 
+sites that are left that don't run Identd are schools/colleges, home 
+systems, old servers that were not meant to be sending mail, but have it 
+running anyway, and systems who's sysadmin are clueless. I also, after 
+looking HARD for laws that might concern e-mail bombings use of other peoples 
+servers, I found some little scraps of information. If you use another 
+server to pass mail to someone other than a user on that system, or to 
+yourself, and if you do something HARMFULL, like crash their server with 
+mail, you can be held liable, if caught. The fines and levels of the crime, 
+from with I could gather, very from state to state, and depending on the 
+damage done, if any. The only loop hole I could find was this: These was DO 
+NOT apply internationally, so you could use a server in Germany all day long 
+to punish someone here in the states. Well there are still problems if you 
+get caught on this end, like your ISP booting you for being naughty ;)
+
+PLEASE, this is NOT the law. These are scraps of information I gathered for 
+your better understanding of what could happen you get caught. The Laws 
+vary from State to State.
+
+Moderator: Email bombing is a denial of service attack. If the attack 
+crosses state lines it is illegal in the United States under 18 USC, Chapter 
+47, Section 1030. Sure, you could use a server outside the US to launch an 
+attack. But you would have to worry about getting caught if you were to be 
+found in the US. Penalty is fine and/or up to 1 year in prison for first 
+offense, and up to 10 years in prison if it is a repeat offense.
+
+Does anyone know what are the laws in some other countries? We have lots of 
+people on this list from around the world. In fact, now is a good time to 
+give some demographics from this list.
+
+HACKER HOT SPOTS!
+
+Top twenty countries with people on Happy Hacker List:
+
+US 
+Canada 
+Australia 
+Germany 
+United Kingdom 
+Sweden 
+Spain 
+Italy 
+Singapore 
+Netherlands 
+South Africa 
+Brazil 
+Finland 
+Mexico 
+New Zealand 
+Denmark 
+China 
+Indonesia 
+Peru 
+Norway
+
+MORE CALM, MEASURED DISCOURSE
+
+From: "ruben d canlas jr" <benc@skyinet.net>
+
+mulder@ntplx.net said: 
+  
+> If I see a site that I personally find distasteful, it no 
+> more gives me the right to persecute it and attempt to get it removed than 
+> it gives a nazi the right to attempt to destroy a Jewish homepage.
+
+mulder, thanks for bringing this up. it will set us to thinking 
+deeply on the philosophy of protest, which I think is a natural 
+aspect present in all hackers.
+
+I'd like to argue on two levels. here's the first:
+
+there is a big difference between arguing in the abstract and in the 
+concrete. for instance, you are using the nazi experience to validate 
+that violating children is not offensive.
+
+the nazi experience is racial. sexual abuse of children is definitely 
+a different matter. it is not just abuse, it is taking advantage of 
+the innocent. that is the concrete level of this issue.
+
+you just can't generalize based on the nazi example.
+
+the second level:
+
+our upbringing shapes the way we think. if we were brought up to 
+react against something "immoral", we can't help that unless we are 
+made to see the consequences of our violent actions.
+
+in any case, what is good about the net is that if you vandalize a 
+site, you are not creating any physical damage. since you are against 
+the idea that is on the site, you are just showing your protest 
+against that idea, by means of another idea.
+
+also: to proceed from mulder's argument, if everyone must be open, 
+then there should also be a provision for striking a balance between 
+a pro and a con.
+
+if someone puts up a website I don't like, I should be able to 
+respond to that website on equal terms.
+
+sending protest email to the offending webmaster is not equal 
+enough, because the offending website is, after all, a website. email 
+disappears in anonymity, unless of course the offending webmaster 
+publishes it in their website.
+
+arguing this way, we see that the appropriate equal response is to 
+put up a website that denounces the offensive website.
+
+and in the spirit of a true openness, I will send to the offending 
+webmaster the URL of my "anti-website".
+
+but will the offending webmaster put a prominent link to my website 
+on his own website?
+
+the answer to this question will show how open people truly are.
+
+sending protest email to the offending webmaster is not equal 
+enough, because the offending website is, after all, a website. email 
+disappears in anonymity, unless of course the offending webmaster 
+publishes it in their website. 
+ 
+
+ruben d. canlas jr. 
+http://www.skyinet.net/users/benc 
+------------------- 
+Thought for the day: 
+    The only thing that hurts more than paying income tax 
+    is not having to pay income tax.
+
+Carolyn Meinel 
+M/B Research -- The Technology Brokers

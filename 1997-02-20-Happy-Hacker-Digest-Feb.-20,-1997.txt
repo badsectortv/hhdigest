@@ -1,0 +1,532 @@
+Happy Hacker Digest Feb. 20, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to . Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking! "Nature has buried truth at the bottom of the sea" -- Democritus 
+--------------------------------------------------------- 
+URL 'O the Day: http://www.dgl.com/docs/antispam.html
+
+Table of Contents
+
+IRC GTMHH Update 
+Urgent Active Server Pages Security Alert! 
+Sue Spammers! 
+Social Engineering Dissed 
+IRC 7th Sphere Question 
+Hints for Crackers 
+More on Mac
+
+IRC GTMHH UPDATE
+
+Moderator: We have gotten some really great additional information as well 
+as corrections (and flames) on the GTMHH on IRC. Hang on, I'm wearing 
+asbestos and trying to verify and sort out the conflicting information. 
+Since so many people contributed to the writing of that Guide, to print the 
+flames would violate our rules for no flaming unless people consent. But 
+when we have agreed upon the improved version, we'll send it out again. We 
+also have two Beginner Series Guides in the works on how to get and start 
+using a shell account and how to hack from Windows.  If I could only figure 
+out how to get along without sleep we'll get soem more advanced guides out, 
+too. Remember, any one who wants to write tutorials of their own is welcome 
+to submit them to this list, or to collaborate with me.
+
+MICROSOFT IIS AND ACTIVE SERVER ADVISORY 
+                 Security Hole in ASP Discovered in Microsoft ASP 
+                                February 20, 1997 
+Description:
+
+A serious security hole was found in Microsoft's Active Server Pages (ASP) 
+by Juan T. Llibre <j.llibre@codetel.net.do>. This hole allows Web clients to 
+download unprocessed ASP files potentially exposing user ids and passwords. 
+ASP files are the common file type used by Microsoft's IIS and Active Server 
+to perform server-side processing.
+
+How it works:
+
+To download an unprocessed ASP file, simply append a period to the asp URL. 
+For example: http://www.domain1.com/default.asp becomes 
+http://www.domain1.com/default.asp. With the period appendage, Internet 
+Information Server (IIS) will send the unprocessed ASP file to the Web 
+client, wherein the source to the file can be examined at will. If the 
+source includes any security parameter designed to allow access to other 
+system processes, such as an SQL  database, they will be revealed.
+
+Defense:
+
+There are two known ways to stop this behavior:
+
+1.Turn read permissions off of the ASP directory in the Internet Service 
+Manager. This may not be a practical solution since many sites mix ASP and 
+HTML files. If your site mixes these files together in the same directories, 
+you may want to segregate them immediately. Now and in the future, treat 
+your ASP files like any other Web based executable, and keep them in 
+separate directories wherein permissions can be adjusted accordingly.
+
+2.Download this filter written by Christoph Wille 
+Christoph.Wille@unileoben.ac.at which can be located at 
+http://www.ntshop.net/security/tools/sechole.zip or from 
+http://www.genusa.com/asp/patch/sechole.zip
+
+SUE SPAMMERS!
+
+(Taken from http://www.ca-probate.com/faxlaw.htm)
+
+Broadcast Fax and Junk Email Illegal
+
+Under United States law, it is unlawful "to use any telephone facsimile 
+machine, computer, or other 
+device to send an unsolicited advertisement" to any "equipment which has the 
+capacity (A) to 
+transcribe text or images (or both) from an electronic signal received over 
+a regular telephone line 
+onto paper." The law allows individuals to sue the sender of such illegal 
+"junk mail" for $500 per 
+copy. Most states will permit such actions to be filed in Small Claims Court.
+
+Here is the text of the federal law:
+
+>From the U.S. Code Online via GPO Access [wais.access.gpo.gov] [Laws in 
+effect as of January 
+24, 1994] [Document affected by Public Law 103-414 Section 303(a)(11)]
+
+[CITE: 47USC227] 
+         TITLE 47--TELEGRAPHS, TELEPHONES, AND RADIOTELEGRAPHS 
+                CHAPTER 5--WIRE OR RADIO COMMUNICATION 
+                     SUBCHAPTER II--COMMON CARRIERS 
+Sec. 227. Restrictions on use of telephone equipment
+
+     (a) Definitions 
+     As used in this section-- * * * 
+          (2) The term ``telephone facsimile machine'' means equipment which 
+has the capacity 
+          (A) to transcribe text or images, or both, from paper into an 
+electronic signal and to 
+          transmit that signal over a regular telephone line, or (B) to 
+transcribe text or images (or 
+          both) from an electronic signal received over a regular telephone 
+line onto paper. * * * 
+          (4) The term ``unsolicited advertisement'' means any material 
+advertising the 
+          commercial availability or quality of any property, goods, or 
+services which is 
+          transmitted to any person without that person's prior express 
+invitation or permission. 
+     (b) Restrictions on use of automated telephone equipment 
+          (1) Prohibitions 
+          It shall be unlawful for any person within the United States -- to 
+use any telephone 
+          facsimile machine, computer, or other device to send an 
+unsolicited advertisement to a 
+          telephone facsimile machine; * * * 
+     (c) to use any telephone facsimile machine, computer, or other device 
+to send an unsolicited 
+     advertisement to a telephone facsimile machine; * * * 
+          (3) Private right of action 
+          A person or entity may, if otherwise permitted by the laws or 
+rules of court of a State, 
+          bring in an appropriate court of that State-- 
+               (A) an action based on a violation of this subsection or the 
+regulations 
+               prescribed under this subsection to enjoin such violation, 
+               (B) an action to recover for actual monetary loss from such a 
+violation, or to 
+               receive $500 in damages for each such violation, whichever is 
+greater, or 
+               (C) both such actions. 
+          If the court finds that the defendant willfully or knowingly 
+violated this subsection or the 
+          regulations prescribed under this subsection, the court may, in 
+its discretion, increase 
+          the amount of the award to an amount equal to not more than 3 
+times the amount 
+          available under subparagraph (B) of this paragraph. * * * 
+     (e) Effect on State law 
+          (1) State law not preempted 
+          Except for the standards prescribed under subsection (d) of this 
+section and subject to 
+          paragraph (2) of this subsection, nothing in this section or in 
+the regulations prescribed 
+          under this section shall preempt any State law that imposes more 
+restrictive intrastate 
+          requirements or regulations on, or which prohibits-- 
+               (A) the use of telephone facsimile machines or other 
+electronic devices to send 
+               unsolicited advertisements; * * *
+
+[ Amended 1992: Subsec. (b)(2)(C). Pub. L. 102-556 added subpar. (C). ]
+
+SOCIAL ENGINEERING DISSED
+
+From: jericho@dimensional.com
+
+> From: Bernz <bernz@ix.netcom.com> 
+> 
+> Maybe it's just me. It probably is. Remote exploits (unless you discover 
+> them yourself) aren't a really good way of getting into a system. They 
+> are fixed damn quick. I'm relatively experienced at this and I have to
+
+I would dare say you aren't relatively experienced. Right now I can tell 
+you of a certain college system that has just over a dozen machines 
+vulnerable to 'froot'. Some systems keep up to date with advisory info and 
+patch those holes. More often than not, they go untouched.
+
+> say that social engineering is the only way to absolutely get into a 
+> remote system. I always see that people have questions about how to get
+
+What?! Fine. Call me up and social engineer your way into my system since 
+it is "the only way to absolutely get into a remote system". When you are 
+banging your head against the wall in frustration because I won't give you 
+what you want, then reconsider your thoughts.
+
+> into systems and this aspect is continually overlooked. Sneaking in 
+> through a dumb security guard is just as good as sneaking in through a 
+> sendmail bug. People should realize that. There's a world of
+
+No it isn't. Physical trespassing is a world apart from a piece of email 
+exploiting a weak sendmail.
+
+> scamming/hacking that's hardly been explored.
+
+Hardly been explored?! Come on! I haven't run into a hacker that doesn't 
+know the value of SE attacks. And I think you will find that most Tiger 
+Teams not only do it, but push it as an essential part of security 
+testing. I know my team does.
+
+> it is running. It may say something like 8.6.4, or 8.7.5.. Those two versions 
+> mentioned are both well known for bugs/exploits which are commonly used to 
+gain 
+> illicit access to system.. Do another web search for "hacking sendmail" or 
+> something 
+> similar, and check whether the system is running an exploitable version. If 
+> so you should, 
+> as always, let your sysadmin know..
+
+You really should mention that with sendmail, versions like 8.7.5 are good 
+as a LOCAL way of getting increased access. Remote 8.7.5 vulnerabilities 
+are basically unheard of to the 'underground' as well as security 
+consultants.
+
+IRC 7th SPHERE QUESTION
+
+From: Redington <nemesis@minot.com>
+
+I went to 7th sphere the other day a downloaded their sphere.zip file. 
+I unzipped it and tried to open in and to install it inside of my mIRC 
+app, but it keeps giving me error messages like "Setup is unable to 
+find_SETUP.DLL, which is needed to complete the installation, Error 
+103."  What is that? The thing is that the SETUP.DLL file is right 
+there.  If anyone can help me out on how to set that up it is very much 
+appreciated.
+
+neMEsis
+
+HINTS FOR CRACKERS
+
+From: Tim Cilibrasi <raptor@top.monad.net>
+
+>From: k1neTiK <samk5@idt.net> 
+>Subject: RE: passswd file question
+
+>>Anonymous: 
+>>Hi, 
+>>I've found a server that allows for it's passwd file to be 
+>>read/downloaded with an anon. ftp connection.  Is this unusual, or 
+>>standard?  Is it illegal for me to download the file to my home computer? 
+>> What would one do with the passwd file? 
+>It is not unusual for a server to allow it's passwd file to be downloaded, 
+>but you will find that 99 times out of a 100, it will be shadowed.  Open it 
+>with a text file, and if you see something like this:
+
+>root:*:0:0:root:/root:/bin/bash 
+>bin:*:1:1:bin:/bin: 
+>daemon:*:2:2:daemon:/sbin: 
+>adm:*:3:4:adm:/var/adm: 
+>lp:*:4:7:lp:/var/spool/lpd: 
+> 
+>Then it is shadowed.  Normally you would see encrypted characters where the 
+>* was.  Oh yeah, and after running it through a passwd cracker, you 
+>hopefully would get some valid passwords and then you could use them to login.
+
+The passed file is NOT shadowed. The * in the password field marks that 
+login has been disabled for that account. Have you noticed that when you 
+view a password file on some systems (not through ftp), some accounts 
+have * and others have jumbled text? And in the case that you download 
+the file, it is useless. You can not "decrypt" the passwords, nor can 
+you log into the accounts. 
+-- 
+rewt@mindless.com       tim.cilibrasi@cereal.mv.com 
+rewt@bigfoot.com        raptor@top.monad.net 
+root@cereal.mv.com      r3wt@hotmail.com
+
+From: " Intergalactic  <--" <intergalactic@hotmail.com>
+
+>From: Bernz <bernz@ix.netcom.com> 
+> 
+>Maybe it's just me. It probably is. Remote exploits (unless you >discover them 
+yourself) aren't a really good way of getting into a >system. They are fixed 
+damn quick. I'm relatively experienced at this >and I have to say that social 
+engineering is the only way to >absolutely get into a remote system. I always 
+see that people have >questions about how to get into systems and this aspect 
+is >continually overlooked. Sneaking in through a dumb security guard is >just 
+as good as sneaking in through a sendmail bug. People should >realize that. 
+There's a world of scamming/hacking that's hardly been >explored.
+
+It's not just you. I find that social engineering and "physical" hacking are 
+the best ways in. Without a doubt, the human interface is the weakest link in 
+almost all systems I have ever seen. We recently had a friendly competition in 
+the CIS department at my school (professor approved) to see if any one could 
+gain root access to our experimental server. Being quite green in the area of 
+exploits, I opted for a "physical" hack. I "found" my professor's briefcase and 
+after sifting thru loads of junk, found scribbled on a post-it note
+
+user: duke 
+pass 68 81 85 77 65 88 73 70
+
+...gee I wonder. Well, no one else was able to gain access, but everyone said I 
+cheated. Is there a moral? Sysadmins, sometimes hackers cheat, patches aren't 
+everything.
+
+Moderator: I decided to approve the following post because Rogue Agent gives 
+better hints for people who need to secure their systems than he does for 
+those who want to break in. A big plus with RA is that he encourages his 
+readers to think and learn for themselves -- just enough to tantalize, but 
+not so much that you could immediately land in jail trying this stuff out. 
+And, for those of you new to the list, when you see the flames below, don't 
+worry. We only allow flames against people who *like* to get flamed on this 
+list.
+
+From: Rogue Agent <agent@l0pht.com>
+
+I'm taking a whack at several posts here; see if you can detect a common 
+thread.
+
+| From: k1neTiK <samk5@idt.net> 
+| Subject: RE: passswd file question 
+[...] 
+| p.s.s Are there any known bugs/vulnerabilities in Identd?
+
+I did a websearch at www.excite.com with "identd AND security AND hole" 
+and came up with 469 hits.  There's some overlap, duplicates and false 
+positives, but still more than enough valid hits to satisfy you.
+
+| Moderator: I made this one anonymous. Sheesh, guys, please remember what I 
+| have in the header of every digest: "Please don't send us anything you 
+| wouldn't email to your friendly neighborhood narc, OK?" Sure, this guy has 
+| an explanation for why he is trying to crack into this box, but if he is 
+| fibbing, anyone who helps him would be in danger of being charged as an 
+| accessory to crime.
+
+Oh please.  They would not, any more than you would if a bank robber asked 
+you for the fastest way to the next town because his wife had an accident 
+there, and you gave him directions.
+
+To answer his question, here's hints on some potential holes in his 
+friend's machine:
+
+|      echo on port 7 
+|      discard on port 9
+
+echo kicks out a constant stream of characters.  discard takes in any 
+characters you feed it.  Figure out how to hook one into the other, and 
+you've got an excellent denial of service attack as his machine and 
+network overload on feeding stuff to itself.
+
+|      exec on port 512 
+|      login on port 513 
+|      shell on port 514
+
+exec is for rexec, login is for rlogin, shell is for rsh.  All 3 have 
+abusable trust relationship problems ("+ +" in .rhosts or /etc/hosts.equiv 
+and anyone anywhere on the Net can do anything they want on the machine). 
+All 3 also have other problems, including hostname spoofing, buffer 
+overflows, inherited environment variables.  Don't forget the classic 
+rlogin -froot linux/AIX hole.
+
+There's a world of possibility here, if you know how to exploit it.
+
+|      finger on port 79
+
+Hey, now you know some usernames for use with the last 3.  Always a bonus.
+
+|      ftp on port 21
+
+wu-ftpd has had several problems, for instance the infamous SITE EXEC 
+hole.
+
+|      smtp on port 25
+
+sendmail -is- a hole.  It gets a security upgrade once a month, on 
+average.
+
+|      sunrpc on port 111
+
+RPC stands for Remote Procedure Call.  It's a way to run part of a command 
+on a remote machine.  NFS and NIS are the two best-known services that use 
+RPC.  Both have holes you can drive a truck through.
+
+|      telnet on port 23
+
+telnet's had a few problems too; accepting environment variables, buffer 
+overflows.
+
+|      uucp on port 540--
+
+What with all the increase in speed and connections all over, UUCP's kind 
+of a dinosaur.  But it's got its share of holes too.  Lots of way old ones 
+written up years ago in g-philes and Phrack, and probably some of the same 
+newer ones every other service is prone to (overflows, env vars, etc).
+
+| What direction should I head in next?
+
+First off I'd stop listening to Carolyn's blather about how neat "ports" 
+are, and start looking at the services behind them.  She's given the false 
+impression that finding a port that accepts connections is central to 
+breaking security on a machine.  "Hey, you've got ftp open.  ftp has 
+holes.  I can break into your machine!", "Hey, you've got ssh open.  ssh 
+has holes.  I can break into your machine!", "Hey, you've got finger open. 
+finger has holes.  I can break into your machine!".
+
+Do you notice that she never says -how- to exploit ftp, ssh or finger to 
+break into machines?  She says it's an ethics thing, that telling newbies 
+would be irresponsible.  But what she doesn't tell you is that SHE DOESN'T 
+KNOW HOW.  Carolyn Meinel is a clueless newbie of the first order.
+
+If you want to learn security (defensive or offensive), stop piddling 
+about with "ports" and start learning services; how they work, what they 
+do, what resources they use, what the known problems with each are.  The 
+most effective way to do that is to play with the program itself, both 
+client and server, on a machine you have full (root) access to.  Then do a 
+websearch for security FAQs and mailing list archives (bugtraq, 
+linux-security, best-of-security, etc.) and read up on the security 
+problems it has, taking note of what versions are vulnerable in what OS. 
+Finally start building a collection of exploits, from those same 
+websearches.
+
+If you've done all that, you can start calling yourself a hacker.  You've 
+studied the thing, played with it, understand how it works & how to break 
+it.
+
+[...] 
+| Moderator: Here's another one I figured I'd better make anonymous: 
+| 
+| I got into a system running Unix System V.The victims password was the same 
+| as his username, is this stupid or what? So I went to the /etc directory and 
+| tried the "cat" command: 
+| cat - views the inside of a file. 
+| 
+| But I was given a message something like "Permission Denied" 
+| SH**. 
+| Could this be that the victim's password is just a user right? 
+| What command do I give to know my rights in Unix? (in novel it's simply 
+| "rights"maybe, if my memory serves me right) What tricks do I do so that I 
+| can manipulated the passwd file?
+
+Hacking isn't "tricks".  I know Carolyn's given you that impression, but 
+she's wrong.  Hacking is knowing, because you looked at it yourself, 
+played with it yourself, studied it yourself.  Buy a book on Unix, get it 
+from the library or do a websearch for online tutorials (there's plenty 
+out there, some of them quite good).
+
+DIY.  You can if you want to.
+
+[...] 
+| From: Bernz <bernz@ix.netcom.com> 
+| 
+| Maybe it's just me. It probably is. Remote exploits (unless you discover 
+| them yourself) aren't a really good way of getting into a system. They 
+| are fixed damn quick.
+
+Depends on where you look.  Some places have old versions of important 
+services and even OSes that are literally years out of date.  There is a 
+definite trend towards increased security awareness on the part of admins, 
+but it's by no means universal.
+
+| I'm relatively experienced at this and I have to 
+| say that social engineering is the only way to absolutely get into a 
+| remote system. I always see that people have questions about how to get 
+| into systems and this aspect is continually overlooked. Sneaking in 
+| through a dumb security guard is just as good as sneaking in through a 
+| sendmail bug. People should realize that. There's a world of 
+| scamming/hacking that's hardly been explored.
+
+SEing takes b****, imagination and quick thinking.  Not everybody can 
+think on their feet fast enough to do it effectively.  But if you can 
+muster up the guts to give it a go, it'll amaze you how much people will 
+do for you if you just ask them.
+
+        RA
+
+agent@l0pht.com (Rogue Agent - r00t/attb) - pgp key on request 
+-------------------------------------------------------------- 
+The NSA is now funding research not only in cryptography, but in all areas 
+of advanced mathematics. If you'd like a circular describing these new 
+research opportunities, just pick up your phone, call your mother, and 
+ask for one.
+
+Anonymous post:
+
+What does the program modem jammer do exactly does anybody know? 
+I ran it then called my friend with caller I.D.  He knew who I was when I 
+called so it don't work against ESS or caller ID.  It's supposed to prevent 
+your call from being traced.  But I have not observed this happening. I 
+could mail you a copy but it's all over the place on hack pages everywhere, 
+so being conspiracy minded......I was just wondereing.....need I say more?
+
+MORE ON MAC
+
+From: Strider <Strider@baka.com>
+
+>I heard somewhere that Macs make up 20% of the servers on the Internet, 
+>which is quite large considering that they have such a small market share. 
+>I think that Macs may be hackable in the ways that NT is, with 
+>denial-of-service attacks, freezing the machine, etc. Unlike Unix, the Mac 
+>OS is not a group-oriented OS. It is a personal setup, where once you're 
+>in, you're in, but it is much harder to GET in. You can't use little 
+>loopholes like finding unshadowed passwords from a password file you get 
+>off FTP. Macs don't have password files to check groups and such. So, in 
+>this way, the Mac is a tougher nut to crack.
+
+True. Although Macs are as easy to DS as others, they also have the 
+conventions of not having been hacked much, and not having conventional 
+interfaces, conventional meaning UNIX. =) Lots of people spend their time 
+on UNIX or DOS based systems- the Mac file system and file sharing system 
+are VERY different from them, no matter how it might seem. The easiest 
+way to hack a Mac is FROM a Mac.
+
+>>     Without trying to start any OS wars, I think it is safe to claim that 
+>> most technical people move on to other OSes rather than stick with MacOS 
+>> and due to this there is a lack of real Mac hackers.  Give people a few 
+>> months, when the become bored with Unix, WinNT and Novell and you'll 
+>> start hearing about some more Mac exploits. 
+> 
+>I don't think that anyone will get bored with Unix, but I understand your 
+>point. If Apple launched a major "secure server" publicity campaign, there 
+>might be a lot of interest from hackers who want to prove them wrong. 
+>Although Apple has a disproportionate "server share," Macs are so low 
+>profile that they haven't brought any major hacking attention. Perhaps 
+>after NT gets picked over...
+
+Think, though, how long NT has been out compared to the Mac. Apple was 
+selling Mac server solutions years ago... and it's still doing it. With 
+the new system, I could see sales going even higher. All apple needs to 
+do now is buy Quarterdeck, and make webstar part of the OS... =)
+
+-Strider 
+ 
+
+-Strider
+
+"A mighty storm is rising, 
+ a darkness in the land, 
+ but surely this must be a light, 
+ to those who understand..." 
+ 
+
+http://www.baka.com/webpages/strider/ 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers

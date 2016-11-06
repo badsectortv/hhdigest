@@ -1,0 +1,460 @@
+Happy Hacker Digest Feb. 27, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is Carolyn Meinel. Please don’t send us anything you wouldn’t email to your friendly neighborhood narc, OK? 
+To subscribe or unsubscribe, use the subscribe boxes on the menu bars, please.. If you decide you just want to use the forum and not get these mailings, I promise my feelings won’t get hurt if you unsubscribe from this list. 
+Happy hacking! “ 
+______________________________________________________
+
+URL ‘O the Day: http://www.nwfusion.com
+
+Table of Contents:
+
+Linux Answers 
+Not Afraid of Narcs 
+Email Bomb Stuff 
+Flames
+
+LINUX ANSWERS
+
+From: root <abszero@epix.net>
+
+> From: "Stephen James" <sjamesflorida-wellington@worldnet.att.net> 
+> 
+>  I have the Linux packages on /dev/hda1. I mounted it with the "mount -t 
+> msdos (yes, it's a msdos drive) /dev/hda1 /dosc" command ("can't find the a 
+> series").  Setup can't recognize this pre-mounted partition.  I am sure I 
+> have gone through the proper menus.  I also tried to install from disks. 
+> Setup tells me that "this does not look like the correct disk."  I have an 
+> "a1" directory on each of the disks.  When I let Setup mount the partition 
+> for me, it still says (after I input the source directory) that it "can't 
+> find the a series.
+
+For the floppies:  You need to put the contents of the a[1-6] directories on a 
+floppy, one directory apiece
+
+For the HDD:  You don't seem to give enough info for a complete answer, 
+but... 
+  
+ 0) Download each of the a? disks into a separate directory, e.g. 
+c:\slackware\a?. 
+ 1) After partitioning, run "setup" 
+ 2) Say <S>ource 
+ 3) 1  Install from a hard drive partition 
+ 4) /dev/hda1 
+ 5) /slackwar (note the 8 character name) 
+ 6) Yes 
+  
+ That should be enough to get you through the part you've been having 
+troubles with.
+
+> Moderator: On my Win 95 system I have to turn the computer off -- not just 
+> control-alt-delete, but actually power down. Then I put the Linux Loader 
+> (Lilo) disk in the a: drive and turn it back on. This is the only way I can 
+> get it to work consistently. Several times I got going by starting off the 
+> CD-ROM basically by pretending I was installing Linux. But that s***s. 
+> Anyone know a better way to make Win95 behave with Linux?
+
+My system never had any problems.  Have you installed the "Disk Type 
+Specific Driver Update for Windows 95" upgrade from Microsloth 
+<http://www.microsoft.com/windows/download/dsktsupd.exe>?  I have the strong 
+feeling that it will help <G>.
+
+> WIN 95 QUESTION 
+> 
+> PLz post this anonymously. 
+> 
+> I would like some info on how to change win95 boot up screen. 
+> 
+> I have tried but I can't seem to achieve this. 
+> 
+> Also could someone plz explain to me what exactly can be done with Win95 
+> system registry and how it works. 
+> 
+> I appreciate your help...thank you 
+> 
+> Warlock
+
+Simple.  Run RegEdit.  Change stuff till you get interesting results.  Read 
+Resource Kit <d:\admin\reskit\helpfile> on the Win95 CD-ROM.
+
+> 
+> From: "SauRON *THe* DaRKLORD" <sauron@themall.net> 
+> 
+> I have read the last version of the Happy Hacker.  I just wanted to quickly 
+> know what is the NAME of the file on the Win '95 bootup that looks 
+> like clouds.  I have been trying to find that out for a while.   I HATE 
+> those 
+> white CLOUDS. 
+> 
+> I  am  t h e  c h o s e n  o n e 
+> 
+> Moderator: You can find that file in c:\windows\clouds.bmp. But perhaps what 
+> you really want to know is how to choose your background so you don t have 
+> to look at boring clouds any more? If that is the case, click  start  then 
+>  settings  then  control panel  then  display.  The  clouds  image is on the 
+>  background  menu. You can pick from anything there, or make your own 
+> background.
+
+Nope, that’s the desktop after booting.  the file he wants is 
+c:\windows\logo[sw].sys.  One is the startup, the other is the shutdown.
+
+> WHAT’S THIS? 
+> 
+> From: " Sebas  ." <prograss@hotmail.com> 
+> 
+> Hey Carolyn and all! 
+> I just discovered something: 
+> When I connect to my ISP after writing the login and the password they told me 
+> to write PPP default. 
+> I wrote PPP return and it said "enter IP Address" or something like that instead 
+> of default I tried telepac.pt and I got connected with telepac.pt IP address but 
+> I couldn't connect to anything but my ISP. 
+> 
+> Anyone knows why this happens and how can I make it work? If possible.. 
+> 
+> Thanx 
+> 
+> progress 
+>
+
+Try entering a numeric IP address, ex 207.12.240.31 to claim to be from 
+home.netscape.com.  Better yet, 198.137.240.91, www.whitehouse.gov!
+
+ --- James Mastros
+
+From: glinear@juno.com
+
+Linux & PPP?
+
+I've Recently Put Slackware (Kernel 2.0.26) On My Computer and Have A PPP 
+Account With Netcom. I've Tried Many Ways To Set up A PPP Connection With 
+Linux But I Can't Get It Done. I Was Wondering Should I Use A Script, 
+Minicomm, Or Something Else? If Any Of These The How Would I Get The Job 
+Accomplished. 
+You May Have Seen Me On IRC at www.infowar.com Asking This Same Question. 
+Thank You
+
+You Are Free To Comment, Flame, Respond, HELP Me At glinear@juno.com
+
+GLiNeAr
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+-   Eagles May Soar But They Also Get    - 
+- Sucked Into Jet Engines. - 
+-  -Anonymous  - 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+From: the Phreaki Tikki <phreakitikki@mercury.theonramp.net>
+
+>This is my first time posting so bear with me...I am quite the newbie and I'd 
+>like to install Linux on my PC.  I have downloaded the software and 
+>successfully set it up on a separate hard drive (d:) but my problem is this: 
+> Windows 95 (c:) seems to more or less hate the Linux Native format of drive 
+>D.  In fact, when I start the computer my pretty picture comes up as my 
+>background but it sits there...no icons, no start menu, nothing!  In order to 
+>make Win 95 act sensibly again I have to re-format the second drive as a DOS 
+>format.  I would like to have Linux accessible by boot disk and running apart 
+>from Windows.  Any help on how I can get Windows 95 to, in essence, ignore or 
+>accept the second hard drive containing Linux would be greatly appreciated. 
+> Thanks for posting this... 
+> 
+>  -=- Jackal -=- 
+> 
+>Moderator: On my Win 95 system I have to turn the computer off -- not just 
+>control-alt-delete, but actually power down. Then I put the Linux Loader 
+>(Lilo) disk in the a: drive and turn it back on. This is the only way I can 
+>get it to work consistently. Several times I got going by starting off the 
+>CD-ROM basically by pretending I was installing Linux. But that s***s. 
+>Anyone know a better way to make Win95 behave with Linux?
+
+I run both fine with Lilo as by boot.  It boots to 95 automatically except 
+when I type Linux into Lilo. I dunno what your problem is.  You might need 
+to boot Linux and type "pico /etc/lilo.conf" then set the win95 partition 
+as the first partition to boot then when you exit and type "lilo" you 
+should be OK.
+
+ the Phreaki Tikki 
+http://phreakitikki.home.ml.org
+
+From: jalexfox@wwi.net (John Beal )
+
+OK A not so quick Piece of info about Linux living inside of a Win95 
+system.... 
+# 1. You have to repartition your hard drives to make room for Linux and its 
+swap file. 
+There are currently 3 way's to do this.. 
+    A. You can Backup your entire Drive that you intend on installing Linux 
+on and then Fdisk it and create 3 new separate partitions. 1 for Win95 to 
+reside in 1 for The Linux system itself and finally 1 for the Linux Swap 
+file <tip the swap file size should be approx. twice the size of your 
+physical Ram onboard>. Now You need to set the Win95 Partition as a Primary 
+active partition that is Where you will boot from. The two remaining 
+partitions should be left unformatted at this point since if you format them 
+using DOS’s Fdisk Then You will only have to delete them and reformat with 
+Linux anyway.... The next step is to <tip 2 You should have created a Boot 
+disk Before you Fdisked the system so that once you formatted it you can 
+Reinstall The System and Files that you previously backed up> <Tip 3 Unless 
+you know what a partition is and how to use Fdisk, Backup, And create a 
+Master Boot Record Then you may as well hang it up and move on down to 2 or 
+3> 
+    B. After you have restored the Win95 system to the Primary bootable 
+partition of your system and Managed to Boot the system you will get two 
+sets of errors... They will say that Drive <so and so> and Drive <so and 
+so> Don’t appear to be valid drives but will have icons listed in the My 
+computer folder. This is because if you followed the above instructions 
+they are unformated drives and Cant be used by Win95.. your next step is 
+<did I mention that you needed to create A Linux boot disk and root 
+disk<ramdisk before you could install them?> There are hundreds of 
+resources available on the Net that explain in Complete detail how to do 
+that.... Just load your browser and type Installing Linux... :-)  You 
+should be at the point now where you have your Linux boot disk and root 
+disk handy and just need to reboot the computer with the Linux Boot disk in 
+Drive A. It will then go through a series of checks and start readying the 
+system for the Kernel install.. After that is complete it will ask you for 
+your Ramdisk <root disk> and you change disks and install the root disk and 
+press enter and it then starts umcompressing the Linux kernel installing it 
+and gives you a Login prompt... at the login prompt you need to do a 
+variety of things depending on the particular version of Linux you are 
+installing... Most of the time you will just type Login:root when it asks 
+for password you just press enter and it should log you into the system at 
+that point... if it says something like invalid password then you need to 
+read the install instructions with the version you have it may make you 
+type Login:root Password:root Once again that is version specific... now if 
+you are logged in then Congrats your 1/3 of the way to installing the 
+system. 
+   C. Now is when you Are going to hide the previously unformated drives 
+from Win95 so that it cant see them...:-) At the prompt you simply type 
+fdisk. It will then say something like Fdisk Defaulting to /dev/hda. which 
+should be the drive that you intend on installing Linux to and also the 
+drive that Win95 resides on as well... Now if you are going to be 
+installing to a different drive than you would have to tell it which 
+primary drive that you are going to need to Format like this..
+
+Fdisk /dev/hda    Where hda is your 1st physical hard drive 
+Fdisk /dev/hdb    Where hdb is your second physical hard drive 
+Fdisk /dev/hdc    Where hdc is your third physical hard drive 
+Fdisk /dev/hdd    Where hdd is your forth physical hard drive
+
+Now notice that these are not labeled as C:,D:,E:,F: That is because your 
+physical drives and your Logical drives could be very different Take my 
+system for example I have This setup: 
+/dev/hda 1st physical drive 
+  /dev/hda1 1st logical drive    Dos C: drive 
+  /dev/hda2 2nd logical drive   Dos D: drive 
+  /dev/hda3 3rd logical drive    Linux Native EXT2 drive 
+So I have 3 partitions on My /dev/hda drive 2 for Dos and 1 for Linux 
+I also have the following: 
+/dev/hdb 2nd physical drive 
+  /dev/hdb1 1st logical drive  Dos E: drive 
+  /dev/hdb2  2nd logical drive Linux Swap drive 
+/dev/hdc 3rd physical drive 
+  /dev/hdc1 1st logical drive Dos F: drive 
+  /dev/hdc2 2nd logical drive Dos G: drive 
+  /dev/hdc3 3rd logical drive Dos H: drive 
+And finally since I am using a IDE ATAPI CDROM that is connected to My 
+Secondary IDE cable I have: 
+ /dev/hdd   Cdrom
+
+That should give you the idea as to what is necessary now So when I had to 
+format my Linux Partitions that I created I did the following things: 
+Fdisk <enter> 
+Fdisk is defaulting to /dev/hda 
+Then I typed m to get a listing of available commands <help> 
+The four main commands that you will be interested in are: 
+d   deletes a partition 
+n   adds a partition 
+p   prints the partition tables 
+w  writes the table to disk 
+What you have to do is decide where your Linux swap partition and Main 
+Linux data File partitions are going to be located and format them 
+accordingly. In my case Main Linux File partition was /dev/hda3 so I did 
+the following: 
+p <enter> 
+Which gave me a listing of Partitions that are currently in use on /dev/hda 
+and there respective begin start end blocks id and system types and whether 
+or not is was a boot partition. I then did this: 
+n  <enter> 
+Command Action  <--- This was the output by Fdisk 
+ e extended          <--- 
+ p primary (1-4)     <--- to which I typed 
+p <enter> 
+Fdisk then asked which partition number I wanted to create. If you enter a 
+number that already exists then Fdisk says that you have to delete it first 
+and then create it <tip Remember That Listing I told you to get above Well 
+don’t use any of those numbers if they say Dos cause they are your Win95 
+system also you should have and I repeat should have not Formatted The 
+partitions that you intended to use for Linux when you repartitioned your 
+Hard drive with the Dos Fdisk Proggie that is what we are doing now :-) > So 
+I replied : 
+3 <enter> 
+p <enter> 
+At this point I should see that I now have the following partition table 
+listed Shortened  cause this is already to long... 
+Device       ********************************* System 
+/dev/hda1     *****************************    Dos 16-bit 
+/dev/hda2    ******************************    Dos 16-bit 
+/dev/hda3    ******************************    Linux Native 
+Next we type the following: 
+w <enter> 
+And fdisk then writes the changes to your hard disk and Dumps you out to the 
+Login prompt after saying that you have to reboot for the changes to take 
+effect but we aren’t done yet still have to create and format the Swap 
+partition too.... Like this: 
+Fdisk /dev/hdb <enter> 
+p <enter> to see what the table looks like and the numbers of the used 
+Primaries 
+n <enter> to create the Swap file partition 
+p <enter> in response to the Primary or extended formatting we need to do 
+2 <enter> Since this is the second partition on the existing drive 
+t <enter> here is a new command it tells Linux what reference to apply to 
+the partition we just created based on the following response we are going 
+to give it. 
+82 <enter> 82 tells Fdisk that we are creating a Linux Swap partition 
+p <enter> to print the table out and verify the changes we want made 
+and finally: 
+w <enter> to write them to disk
+
+OK I left out a few things too First off the sizes of the partitions are 
+strictly up to you but for a basic No frills Linux install you can get by 
+with 120 meg Main file partition and a Swap file that is twice the size of 
+your physical Ram on board< I have 32 megs of Ram so I made my swap file 64 
+megs in size>. I also Set aside 300 megs for my Main file partition for 
+Linux Because I planned on using Xfree86 the Xwindows system that runs 
+under Linux..... It took 120 megs of space with all the bells and whistles 
+added :) At this point you should have created the needed partitions for 
+Linux and also have hidden them from Win95s sight to prevent Win95 from 
+complaining about them :-) Now all you have to do is install what ever 
+package of Linux that you have Be it Slackware, Redhat, etc... Usually all 
+you have to do is this: 
+Install <enter> 
+Then follow the instructions from there :)
+
+2.  Use a experimental Proggie that is usually included with most Linux 
+systems called Fips which allows you to partition your hard drives without 
+destroying any of the existing data on your hard drives.... Although it is 
+still recommended that you Create a Set of backups just in case you make a 
+mistake :-) There are very complete and concise instructions with the Fips 
+package on how to do this so I wont make a already to long Post about the 
+wherefores and how to's.... :-) 
+after you do the repartitioning you just follow the above instructs for 
+booting the Linux system and Creating the Linux Partitions and Formatting 
+them...
+
+3. <my personally recommended Method> Get Partition Magic From 2.0 up 
+they all are very stable and very easy to use cost $40 Savings in hair 
+pulling and possibility of making a major mistake Much reduced..... 
+Basically it is a graphically mapped representation of your hard drive that 
+allows you to tweak everything from the Partitions to the Cluster sizes 
+without having to destroy your data the advantages become clear when say 
+you have a 1 gig plus hard drive and are losing about 40% of your hard drive 
+space due to the 32k clusters that you are using to store a 1k file for 
+example most of your smaller .ini files or text files anything under 32k in 
+size automatically becomes a 32k cluster in space on your hard drive start 
+adding all those small files up and the wasted space becomes clearer to 
+you... There is a very complete and concise book that comes with the 
+Program so explaining the process here is also not necessary but the 
+important thing to remember is Not and I repeat Once again to NOT format or 
+set active the partitions that you intend on creating for Linux You do that 
+from the Linux Prompt that you receive once you put the Boot and Root disks 
+into the system and Then follow the above section 1 instructions for 
+Formatting the Linux Partitions.....
+
+NOT AFRAID OF NARCS
+
+From: Mjolnir <Mjolnir@thor.pla-net.net>
+
+Hacking is gaining information.  Hacking is not "Well I had better not 
+do that, its ILLEGAL."  I don't care if every single FBI agent in the US 
+is reading this group, I would think they have bigger fish to fry than 
+someone who says "I want to hack my ISP."  I thought my hard earned tax 
+dollars are going to help the FBI track down hard core criminals.  Yes, 
+someone out there may put this information to malevolent use, but that 
+happens.  Is this a mailing list for hacking discussion or setting up 
+UNIX?  If someone asks a question, give them a straight answer.  Don't 
+say "you may be an accessory if he does something illegal."  This type 
+of responce is not a Happy Hacker response, its a "computer trickster" 
+response.  Yes some of these things may be illegal, but I challenge any 
+law enforcement official reading this letter to tell me that they would 
+track my email address and arrest me if I answered a question on how to 
+hack a system.
+
+Moderator: You’re right, so long as you don’t cause harm you aren’t too likely to get caught. But -- some people do wind up in jail for relatively harmless pranks. Kevin Mitnick is an example. Apparently his three biggest mistakes were eavesdropping on FBI agents, reading the email of _New York Times_ reporter John Markoff, and making a hacker/phreaker (Tsutomo Shimomura) mad at him.
+
+The best way of all to wind up in jail for computer crime is to make hackers mad at you. Oh, you think a hacker won’t narc on you? Look at Shimomura. That’s also how the Masters of Destruction got caught -- they p***** off the Legion of Doom. So guess who it was that gathered enough evidence to bust the MOD? Yes, it was the LOD. Five MOD guys were convicted: Phiber Optic (Mark Abene), Outlaw (Julio Fernandez), Corrupt (John Lee), Acid Phreak (Elias Ladopoulos) and Scorpion (Paul Stira).
+
+Now Eric Bloodaxe (Chris Goggins) -- the LOD guy who did the most to bust the MOD -- is a revered hacker, a successful consultant, and author of the book _The Complete Internet Business Toolkit_ which you can find in almost any bookstore. It comes with a CD-ROM full of  kewl Windows hacking tools. At hacker conventions you can buy a T-shirt with the slogan “I only hack for money -- Eric Bloodaxe.”
+
+So if you are going to break into a computer, just remember that the sysadmin of that box may well be a hacker. Or, the owner may hire a hacker to help bust vandals. If you damage his or her system, you could be in for BIG trouble.
+
+Watch and see what happens to GALF. With their file wiping blunders they’re way down the same path as the MOD. Remember: don’t hack hackers! Oh, by the way, it’s not wise to email bomb hackers, either...heh, heh...make my day...
+
+EMAIL BOMB STUFF
+
+From: "ruben d canlas jr" <benc@skyinet.net>
+
+here's my 2-cents worth on....
+
+> Anonymous post: 
+> 
+> Is there any way that I can find the identity of a prat who e-mail bombed 
+> me, shutting down AOL's UK Mail servers? 
+> 
+> He/She is a social retard, and used the anomonious.com mail server to 
+> initiate the bomb. 
+ 
+
+you can write anonymous.com and send a copy of the mail sent thru 
+them and tell them that the sender has used anonymous.com for 
+mailbombing.
+
+benc
+
+FLAMES
+
+Do you know what really pisses me off? Everyone is trying to tell 
+everyone else what hacking is supposed to be. Some say pheaking is not 
+hacking, some deny that IRC hacking is not true hacking, others claim 
+UNIX hacking is the only real hacking. 
+And then there is this whole "social engineering" thing. 
+Who cares what is real hacking and what is not. Is everyone waiting for 
+an Oxford Dictionary definition of what is and is not allowed to be 
+labeled hacking? 
+Most of us are in this game because of our love of computers and a 
+certain rebellious spirit that tells us to do things others have no idea 
+could be done, let alone how to do them. 
+We seek to learn new things and new ways of doing old things. Does it 
+really matter whether you hack UNIX via a modem, Win95 at a box or IRC. 
+Or any of the millions of other things this large and DIVERSE community 
+gets up to. 
+WE ARE ALL HACKERS. ERGO: SHUT UP AND HACK. 
+AnalOgBoy. 
+(feel free to flame my a** at will) 
+PS: please anon my E-mail address. Thanx Carolyn.
+
+Moderator: you wouldn’t by any chance be worried some self-styled hackers would demonstrate their imagined intellectual brilliance by email bombing you, would you?
+
+From: pmurgs@aztec.co.za (P. Murgatroyd)
+
+Caroline, are you stupid or really stupid?
+
+The guy below was asking about the 95 startup screen and he seemed to make 
+that pretty clear then you go off talking about W95 backgrounds.
+
+The file he wants to change is c:\logo.sys which is hidden/system/read-only. 
+Its 320x200x8. c:\windows\logow.sys is the 95 "please wait" shutdown screen 
+and c:\windows\logos.syst is the "It is safe..." shutdown screen.
+
+Caroline... you really s***.
+
+Moderator: Gee, well on my Win95 operating system, the startup screen uses the same file as the background screen. But I suppose it is possible that other versions of Win95 are not set up to do this. All I can say is I do what works. Isn’t that what hacking is?
+
+From: Mjolnir <Mjolnir@thor.pla-net.net>
+
+>By the way, I am all for freedom of speech, but Child Pornography is >NOT freedom of speech, it's visual - so it ain't speech.  Saying you >condone child porn is freedom of speech!  Get your facts right.
+
+Freedom of expression is a better term.  I can say Usenet posts are not 
+speech, they are not spoken.  We should be able to express ourselves 
+however we want, within legal (and moral) limits.  Images are 
+expression, but child porn is illegal (and sick, and immoral) 
+expression. 
+===============================================================================

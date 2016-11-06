@@ -1,0 +1,457 @@
+Happy Hacker Digest Feb. 26, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is Carolyn Meinel. Please don’t send us anything you wouldn’t email to your friendly neighborhood narc, OK? 
+To subscribe or unsubscribe, use the subscribe boxes on the menu bars, please.. If you decide you just want to use the forum and not get these mailings, I promise my feelings won’t get hurt if you unsubscribe from this list. 
+Happy hacking! “Truth is on the march; nothing can stop it now” -- Emile Zola 
+--------------------------------------------------------- 
+URL ‘O the Day: http://www.alcrypto.co.uk/java/
+
+Table of Contents 
+How to Alter Windows Bootup Screen 
+Looking for British Hackers 
+More Key Loggers 
+Novell Rescue Job 
+Over Dosed Unix 
+Win 95 Answer 
+How to Catch Email Bombers 
+Rants
+
+HOW TO ALTER WINDOWS BOOTUP SCREEN
+
+From: Saint Waldo <stwaldo@teleport.com>
+
+.>I would like some info on how to change win95 boot up screen.
+
+>I have tried but I can't seem to achieve this.
+
+>Also could someone plz explain to me what exactly can be done with 
+>Win95 system registry and how it works.
+
+>I appreciate your help...thank you
+
+>Warlock
+
+Well, the startup screen is easy.  Make a 320x400 
+(I think that’s right) bitmap. put it in your c: root. 
+Name it "logo.sys".  I think the shutdown file is 
+"logos.sys".  The originals of these files can be found 
+in your "Win95/system/" directory.  Open them up to be 
+sure the size is the same.  You don't need to delete 
+the originals, as the files on root will supersede the 
+system files.
+
+Registry is harder.  In a nutshell, the registry keeps 
+track of all the little details of the OS, program bindings, 
+document types, etc.  One cool thing the do is look at HKEY: 
+CLASS:LOCAL (fubar'ed the name, but it's close), and change 
+some of the settings in the system control panel.  I like to 
+use the registry to turn virtual memory on and off, and force 
+a boot into safe mode, etc.  It's cooler than clicking a 
+checkbox, and all your friends think you are some kinda kewl 
+d***.  My sarcasm in the last two sentences is not directed 
+at the person asking the question, but at the obscene pleasure 
+I myself am guilty of derived from showing off.  But, hey, 
+who doesn't like to ******? :)
+
+I have seen several programs that package all the cooler parts 
+of the registry in a zippy interface.  I myself am coding 
+a little wonder in Delphi to do some similar stuph.  If 
+anyone out there wants to BS about using Win32 API in Delphi 
+to do registry "whacking" (hacking for the sake of showing-off) 
+drop me a line.
+
+Saint Waldo I.P./E. 
+"Callidus ad infinitum, Magister ad nihil" 
+Return of the Bogus Latin Tags!!!
+
+From: savior28@juno.com (Savior28 . C)
+
+Someone was asking for info on how to change and edit the win95 boot up 
+screen. 
+Here's an excerpt from a text phile called "Taking Back What Bill Gates 
+Took Away" by Plowsky Phreak
+
+*** Open up a graphics program, even mspaint with work. Then file, open, 
+and go into dir c:\windows , then type in the filename box logos.sys (it wont 
+appear in the column listing you’ll just have to type it). Then u will see the image 
+that appears when u shut down your computer and it says "it is now safe to shutdown your 
+computer". Now, replace the image with whatever u want! U can put some smart remark that 
+is hard to notice unless u really read it, type it in the same orange text that it 
+there.(system) u can do the same thing for the windows logo called logow.sys in 
+the c:\windows dir. Put whatever u want, have fun.
+
+*** Now, to find the image that loads up when u load windows go to c:\ and 
+type logo.sys and that’s it, you’ll get that image. Then you just change whatever u want. I 
+know that when u load windows it has a moving strip at the bottom of the screen, but u can 
+write over that too, it wont mess anything up. I have my plowsky logo that’s on my 
+pages with a black background on this image, it looks sweet.
+
+*** Note: for your images to look rite when u replace them, scrunch the 
+image to make it thinner   (i.e. from this |   |  to this  |  |   in order for the image to look 
+rite) the image gets stretched when it loads windows. It should look scrunched up when its in the graphics 
+editor, it’ll look normal when u boot up.
+
+Anonymous:
+
+ In the last happy hacker that I read, at least two people were 
+wondering how to get control of their Win95 environments. I don't know 
+whether you would consider this too easy or not, but the evil empire's 
+web site (microsoft.com) has a program on it called "tweakUI". This 
+little gem was concocted by some programmers at microsoft who realized 
+that we subhumans may want to squirm out from under Uncle Bill's iron 
+fist and manipulate our own work spaces. In addition to being able to 
+turn off the startup clouds so that you can see your bootup, it allows 
+you to control stuff like menu speeds and shortcut appearance. It's not 
+quite like hacking the code, but you can at least have things a little 
+more "your way" quick and easy.
+
+LOOKING FOR BRITISH HACKERS
+
+From: "Hasan Salem" <H.A.Salem@btinternet.com>
+
+I've received the latest digest and my rant was in there! Thank you so very 
+much. I'm all choked up.
+
+Incidentally I'm an English wannabe hacker. Are there any more hackers in 
+England?
+
+You've made a young boy very happy.
+
+Sam 
+(A Young Impressionable Prozac Fiend)
+
+MORE KEY LOGGERS
+
+From: "Xenakis" <xenakis@epix.net>
+
+---------> Sorry to bring up this subject *again*, but another subscriber 
+to this list sent  be a email about an progie called HidWin that will hide 
+another app in Win 95. It works well, and will hide any button in the Win 
+95 taskbar. For more info, email xenakis@epix.net
+
+-Xenakis
+
+NOVELL RESCUE JOB
+
+Moderator, please make anon. 
+  
+     Mr. Todd, regarding your Novell troubles, if previous admin was 
+     careless, which is doesn't look like he was, the following may work. 
+     Look for autoexec.ncf or netinfo.cfg files.  If you are lucky, you 
+     will find the line "load remote (password)" contained in there 
+     somewhere, where (password) is whatever the password is.  From there 
+     you should be able to rconsole in and down the server.  If you are 
+     unlucky, you will have to hope someone else has the info.  Hope this 
+     helps!
+
+OVER DOSED UNIX
+
+Moderator’s note: What od^phreak is teaching in the following post is how to crack into Unix computers. However, if the owner of the computer you might target has not authorized you to test its security by breaking in, this is illegal as heck. But I give od^phreak credit for agreeing with the hacker ethic of “do no harm.”
+
+There has been some confusion over my moderation policies expressed in the usual flames on the dc-stuff hackers list (to subscribe, email majordomo@dis.org with message “subscribe dc-stuff.”) So here’s the story: I won’t approve posts in which the author incriminates his or herself, or in which the author urges us to help him or her commit a crime. In the case of od^phreak, he is presenting this information as an academic exercise. He is not saying “I am trying to break into a system and here is what I have done so far, now help me pleeeze!” His information also is really valuable for those of us who want to protect our computers from break-ins.
+
+From: od^phreak <butler@tir.com>
+
+Hacking Unix part-one by od^phreak
+
+hello everyone this is my first of many LONG..... post I will be sending dealing 
+with Unix this is part one and is for mere beginners..... 
+so Enjoy 
+----------------------------- 
+Precautions
+
+ So you don’t wanna get caught huh well here some basic 
+steps to not get caught.
+
+ I Don't know how many times it has happened I meet a 
+Beginner Hacker giving me a Passwd file. Then he gets caught. 
+Well there are many precautions to take before you even enter 
+a Unix Shell.
+
+1. Know at least the basic commands. It is a good idea to practice moving 
+around by using your shell account your ISP gave by just connecting and doing 
+basic commands to practice. Here are the Basic Gotta know Commands.
+
+DOS  | UNIX
+
+COPY = CP 
+MOVE = MV 
+DIR = LS 
+DEL = RM 
+CD = CD
+
+2. The first time you log into a Unix with a hacked shell 
+account is the most Vital and if you know what your doing the 
+only time the sysadmin has a chance.
+
+When you run a command try not to give any extra parameters
+
+EXAMPLE:
+
+Say you wanna run Telnet to connect to another system to hack on. 
+Well it would be very dumb to type telnet target.server.com 
+because that whole command would be logged and could be eventually traced 
+back!..think for a second now.....does telnet keep logs +NO!+ 
+so you would simply type telnet then open target.server.com !!
+
+ALWAYS ALWAYS ALWAYS run the sh shell if there is know SH shell 
+you are forced to use CSH but CSH on some newer system does keep 
+logs so its probably safer to edit the .bash_history file in your home dir 
+if there is no SH on the system.
+
+(Moderator’s note: This isn’t enough to hide your tracks, but it will protect you from the more ignorant of computer cops. So don’t count on these tips to protect yourself!) 
+------------------------------------------------------------------------ 
+ KNOWING YOUR FIRST GOAL AND "THE MOST IMPORTANT GOAL"
+
+On UNIX systems the file that contains the passwords for all the users 
+on the system is located in the /etc directory. The filename is passwd. 
+All the accounts in the passwd file have encrypted passwords. These 
+passwords are one-way encrypted which means that there is no way to decrypt 
+them. However, there are programs that can be used to obtain passwords from 
+the file. The name of the program that I have found to be the best password 
+cracker is called "Jon The Ripper." This program uses a dictionary file composed 
+of thousands of words. It compares the encrypted forms of the words in the 
+list to the encrypted passwords in the passwd file and it notifies you when it 
+finds a match. 
+Some wordlists can be found at- 
+sable.ox.ac.uk/pub/wordlists 
+----------------------------------------------------------------------- 
+WAYS OF ACCOMPLISHING YOUR FIRST GOAL
+
+Now we get to the more difficult part. It's common sense. If the 
+system administrator has a file that has passwords for everyone on his or her 
+system they are not going to just give it to you. You have to have a way to 
+retrieve the /etc/passwd file without logging into the system.
+
+1. Anonymous FTP cd to /etc and get the passwd
+
+2. Some systems there is a file called PHF in the /cgi-bin directory. If there is 
+then you are in luck. PHF allows users to gain remote access to files 
+(including the /etc/passwd file) over the world wide web. To try this method 
+goto your web browser and type in this URL: 
+http://,,,.,,,.,,,/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd
+
+Notice the commas and that its not a real address change all those 
+commas to the address such as www.jazthing.de or xfree86.org 
+or anything you want sometimes I spend hours just typing in random 
+servers to see if I can get there /etc/passwd file.
+
+SHADOWING
+
+  U finally get the password file and all the items in the second field are X or ! 
+or * then the password file is shadowed. Shadowing is just a method of adding 
+extra security to prevent hackers and other unwanted people from using the 
+password file. Unfortunately there is no way to "unshadow" a password file but 
+sometimes there are backup password files that aren't shadowed. Try looking 
+for files such as /etc/shadow and other stuff like that.
+
+Here is a chart I pulled of the net of common unshadowed backups 
+ 
+
+Unix                            Path                            Token 
+---------------------------------------------------------------------- 
+AIX 3                       /etc/security/passwd                 ! 
+       or                   /tcb/auth/files/<first letter        # 
+                            of username>/<username> 
+A/UX 3.0s                   /tcb/files/auth/?/                   * 
+BSD4.3-Reno                 /etc/master.passwd                   * 
+ConvexOS 10                 /etc/shadpw                          * 
+ConvexOS 11                 /etc/shadow                          * 
+DG/UX                       /etc/tcb/aa/user/                    * 
+EP/IX                       /etc/shadow                          x 
+HP-UX                       /.secure/etc/passwd                  * 
+IRIX 5                      /etc/shadow                          x 
+Linux 1.1                   /etc/shadow                          * 
+OSF/1                       /etc/passwd[.dir|.pag]               * 
+SCO Unix #.2.x              /tcb/auth/files/<first letter        * 
+                            of username>/<username> 
+SunOS4.1+c2                 /etc/security/passwd.adjunct         ##username 
+SunOS 5.0                   /etc/shadow 
+                            <optional NIS+ private secure 
+                            maps/tables/whatever> 
+System V Release 4.0        /etc/shadow                          x 
+System V Release 4.2        /etc/security/* database 
+Ultrix 4                    /etc/auth[.dir|.pag]                 * 
+UNICOS                      /etc/udb 
+----------------------------------------------------------------------------- 
+Also another method is the oldest most famous way the good old command just type.
+
+ypcat /etc/passwd
+
+NOTE: doesn’t always work 
+----------------------------------------------------------------------------- 
+OK I ACCOMPLISHED MY FIRST GOAL NOW WHAT
+
+ Well it depends Virtually Whatever you want you have access 
+to all the accounts on the system that you cracked. Here are some things 
+I do.
+
+1.E-mail
+
+ type PINE to start the Unix e mail program there are many more 
+programs but pine is my favorite.
+
+2. Web Page
+
+  You can do whatever you want to the servers http'd system 
+An example would be to ftp in as any user and if they don’t 
+already have a folder in there home dir called 'public_html' 
+just make one and upload all your files to that. And you have yourself 
+a web page. Or you can login as 'Root' if Jon cracked it very doubtful 
+and mess up The whole f******* servers www system.
+
+3. If you an gain root create your self an account with 
+the 'adduser' command.
+
+4. Type 'who' to see who else is on the system. usually one other hacker on the medium 
+and big ISP'S just look on the far right you should see there alphanumeric IP
+
+NOTE: It’s best to hack late at night because root can't type 
+who and see you don’t have the right IP. Usually he doesn't 
+feel like wasting his time baby-sitting uses so it is usually OK 
+and if they see your ipo there not gunna hunt you down 
+I mean there trying to run a business not play superhero
+
+(Moderator: This is one of the best reasons to do no harm if you do choose to crack into the computer of someone who doesn’t want you there. If you don’t cause trouble, they are likely to just ignore you. But if you erase files, make copies of sensitive material, or insult people, they may decide to try to get you thrown in jail.)
+
+5. Type ls /bin or ls /home or ls /etc to make sure what you want is 
+in that dir before switching
+
+6. Type IRC and put a bot up on IRC
+
+7. Type lynx and use that s****y Unix www browser 
+(Moderator: I love lynx! This text-only browser is lots faster than a graphical browser. Unfortunately, lately there are lots of Web sites up that make it hard to impossible to use lynx.)
+
+8. Type telnet and telnet to another shell account ;) (now that's anonymous)
+
+9. Type FTP to FTP to another server.
+
+10. Harass other Users With!
+
+(Moderator: Watch out, if you start bothering people, they may decide to get even by getting you in trouble with the law -- or they may give you a dose of “hacker justice.”
+
+11. cd to /sbin/games/ to see a list of games (pretty crappy stuff like terminal tetris)
+
+12. ls /bin/ to see a list of programs on the system for stuff like nslookup and stuff also ls /sbin/ for more
+
+13. Download free stuff for your Linux PC!
+
+14. cd /sbin/ and type gnuchess TO PLAY THE #1 chess game of all time! ;) 
+ 
+
+THERE IS SO MANY D*** THINGS TO DO I CAN'T TELL YOU ALL OF Em 
+----------- 
+Please remember this!!! NEWBIES
+
+ If you feel that you have what it takes to be a serious hacker then 
+you must first know a clear definition of hacking and how to be an ethical 
+hacker. Become familiar with Unix environments and if you are only just 
+starting to learn to hack, visit a local library and find some books on 
+various operating systems on the Internet and how they work. Or you could go 
+to a book store and buy a couple Internet security books. They often explain 
+how hackers penetrate systems and that is something a beginner could use as an 
+advantage.
+
+and hacking is not spreading Virri. 
+or E-mail Bombing. 
+or flooding or taking over channels on IRC...... 
+or anything lame like that. 
+-------------- 
+I wanna say what’s up to my friend on #hackteach
+
+Zophar,Mekilla,Frys,cyberchick,defiant,dockool,and everyone else I just forgot 
+;) 
+ 
+
+I am of CRACK 
+I am OF POH
+
+thanx defiant for the webspace
+
+http://www.elkhart.net/~sborosh/od/
+
+PEACE OUT 
+C_YA 
+OD|PHREAK
+
+WIN 95 ANSWER
+
+From: "Stephen James" <sjamesflorida-wellington@worldnet.att.net>
+
+ My win95 system (possibly others) renames identification files in each 
+package and gives them random file extensions.  These files are diska1-a8 
+and some others.  If you do not rename them as they are in the FTP 
+directory, the installation will not recognize them.  This fix is 
+applicable for installation via floppy.
+
+More install questions (I've tried for a week or more)?
+
+Steve
+
+HOW TO CATCH EMAIL BOMBERS
+
+Sender: jericho@dimensional.com
+
+> Is there any way that I can find the identity of a prat who e-mail bombed 
+> me, shutting down AOL's UK Mail servers?
+
+Possibly. You can check the mail headers to see where it was done from, 
+mail the admins of that site, have them check the sendmail logs, and start 
+tracking it from there.
+
+RANTS
+
+Sender: jericho@dimensional.com (post continued into rants section by moderator)
+
+> He/She is a social retard, and used the anomonious.com mail server to 
+> initiate the bomb.
+
+To make assumptions about someone you don't know is not beneficial in 
+tracking them down. It clouds your thinking.
+
+> My local police force are starting an investigation, but I would like to 
+> know who did it myself, so me and my many, many friends can publicly 
+> exercise him/her!
+
+Local police? You are kidding right? If not, just shoot yourself now 
+please. That is such a trivial deed in the grand scheme of things. What 
+are local police going to do to help you or stop it from happening again? 
+Quit wasting their time and our tax dollars.
+
+> By the way, I am all for freedom of speech, but Child Pornography is NOT 
+> freedom of speech, it's visual - so it ain't speech.  Saying you condone 
+> child porn is freedom of speech!  Get your facts right.
+
+Fine. By that argument we need to clear out some 25% of the art in museums 
+around the country. Wake up.
+
+(Moderator: would you care to identify by name any art museum that has even *one* kiddie porn exhibit, jericho? Are you sure you are on the right planet?)
+
+> Please keep this anon!!!!!
+
+Damn straight. After that crap you spewed I see why you would be 
+mailbombed.
+
+=3D-=3D
+
+>   This is the attitude of the experienced Hackers to the Newbies. Who the 
+> h*** do you think they are? I am a newbie and how am I meant to learn if 
+> people are always putting me down without grounds? I don't WANT your d*** 
+> information handouts! You can ********************** for all I 
+> care. Not all newbies are ignorant tosses who want to act like twits and 
+> crash every system they can find. We ARE interested in learning and share 
+> as much of a love of computers as you do. O.K? I'm going to take a long lie 
+> down in a darkened room.......
+
+Whoa. MAYBE we found the FIRST on this list. After seeing 99.9% of the 
+lamers ask for handouts, you tend to disbelieve drool like this. If you 
+are sincere, you will show it in due time. And you will get the help you 
+want without question.
+
+=3D-=3D
+
+> Moderator: Do I work for the FBI? Let’s look at the evidence. As reported by
+
+We don't know.. do you?
+
+Moderator: Oh, jericho, I’m so embarrassed to admit this -- no, the FBI has never even offered to give me money, sob...

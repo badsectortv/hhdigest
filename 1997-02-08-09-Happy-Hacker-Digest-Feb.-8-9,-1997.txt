@@ -1,0 +1,584 @@
+Happy Hacker Digest Feb. 8-9, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to hacker@techbroker.com. Better 
+yet, post to the Hackers forum at http://www.infowar.com. 
+This is a manually maintained list. To subscribe or unsubscribe, just send a 
+really nice letter to hacker@techbroker.com. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking -- and ne auderis delere orbem rigidum meum! 
+---------------------------------------------------------
+
+Moderator: the attached document, digest.027, is a big compendium of flames 
+by people who support email bombing and/or the right of people to provide 
+idiot-proof email bombing programs to every idiot with a desire to destroy 
+freedom of speech. This document has no technical content at all. But the 
+pro-email bombing folks are crying "censorship" so I'll give the them the 
+chance to persuade you that they have the right to help social misfits jam 
+your email boxes with tens of megabytes of junk per day. Read and enjoy!
+
+Table of Contents
+
+More Windows Password Hacks 
+International Hacking Law 
+Cures for Sniffles 
+Hacker Handle Choices 
+Sendmail Question 
+Linux Help 
+No More Juno Ads 
+Covering Your Tracks 
+Fork Bomb 
+A New Answer Man 
+HTML Editor for Xfree86? 
+ 
+
+MORE WINDOWS PASSWORD HACKS
+
+From: "Steven Alexander" <salexand@cell2000.net> 
+Subject: Breaking Windows Security
+
+ Last night I decided to compile a short simple list of ways to crack 
+Windows 3.1 and 95 security.  It's really not secure at all.
+
+ Windows3.1 Screensaver
+
+edit C:\windows\control.ini
+
+ Windows 95 Screensaver
+
+Right click on the mouse and go to properties, select the screensaver tab 
+and disable the Windows password.
+
+Windows Startup Password Disabling
+
+Rename all of the .PWL files in the windows directory
+
+REN *.PWL *.PW_
+
+ 3rd Party Passwords
+
+Try hitting Control+Alt+Del
+
+In Windows 95 edit the
+
+LOAD=
+
+and
+
+RUN=
+
+sections in C:\windows\win.ini
+
+Getting to DOS
+
+Use a boot disk
+
+Run c:\command.com
+
+open command.com with the Write program.  Don't use notepad. 
+Choose no conversion and save it over  c:\windows\ winhelp.exe.
+
+When you shut down Windows 95 you can still type commands because you are 
+in DOS prompt there is just a graphic over it. Type:
+
+CLS<cr> 
+MODE CO80<cr>
+
+Windows 95 Network Login
+
+HIt ctrl+esc 
+run command.com
+
+If you want to learn more read the PC Hacking FAQ.  Everyone should also 
+read the 2600 #hack FAQ it gives a lot of the necessary info for beginning 
+hackers.
+
+Please keep me anonymous (and I'm already subscribed to this)
+
+I was at the Library today, and I got very frustrated at their "At Ease" 
+like program, called WinU (I have tried to hack on it at home with the 
+shareware version).  I know that their "Staff Only" password is "winu" 
+(without the quotes).  But even after that, I was still restricted to 
+Explorer that only let me go to C:\WINDOWS\SYSTEM and all I could do was 
+boring stuff.  I did find a system file editor in that directory (lets 
+you edit autoexec.bat, win.ini, ect.).  So what I did to gain access to 
+the whole hard drive was, making some dumb extension (I don't remember 
+what it was, something like .pbl) run the command.com when I double 
+clicked on it (make the icon a tree or something).  I could then run 
+every program I wanted, but that still wasn't enough.  I finally found 
+the heart of WinU's security.  I looked into the C:\Windows\System.ini 
+and found a line that said shell= "C:\blah\blah\Winu.Exe" /startup 
+(something like that)  I made a back up of the file and made the line 
+say shell= "C:\Windows\Explorer.exe" Then I restarted windows, and I had 
+110% access to everything.  Not much to do, only fun demos, full tilt 
+pinball, and some other stuff.  Bring your own game, put it on the Start 
+Menu (no one's going to see it anyways).
+
+If "winu" isn't the password for the Staff Only desktop, try this: 
+Reboot the computer, try to hit F8 when it says Starting Windows 95... 
+or if that doesn't work (the time limit might be set to 0) try shutting 
+off the computer in the middle of the boot up of Windows.  Turn it on, 
+and hit Escape and F8 or F8 and Escape over and over... it should give 
+you a selection screen then... now you can goto Command Prompt Only! 
+And if all else fails, bring a boot disk!  There are many ways to do 
+this, but I can't promise you'll be able to get in.  (It could have a 
+Bios Password, not allowing you to add a boot disk, it also might never 
+show a "Windows 95 Did Not Boot Properly, Safe Mode?" screen, ^C may not 
+be an option, and "winu" might not be their password.) Oh, BTW, don't 
+worry about the password it asks you for when you first start windows, 
+just hit cancel.  And FYI, the password is in a .PWL file, you can 
+rename it (don't delete it, it will reset the whole thing...) and make 
+the password what you want, when you're done, delete that and rename the 
+original back.
+
+[Da-Bomb^]
+
+From: Droid <"droidmca@ix.netcom.com"@popd.netcruiser> 
+Subject: protected excel spreadsheet
+
+Is there a way to unprotect a protected excel spreadsheet without 
+knowing the password? If so where can I get a program to do this.
+
+INTERNATIONAL HACKING LAW
+
+(Please keep anonymous.  Thanks!)
+
+>Does anyone know of the laws regarding international hacking?  For example, 
+>if I sat here in Blighty (Britain) and hacked a US computer, and left a 
+>message on there with my name, address, 
+>telephone number, date of birth, national insurance (social sec.) number, 
+>bank account details... what the hell could they do about it?  Also, what if 
+>I did it from Mongolia or a remote link in the middle of the Pacific Ocean 
+>in a rubber dinghy?  I'd be interested to know.
+
+I do not know if there are any international treaties regarding computer 
+crime (if not, I'm sure they're in the works!) but you should be aware 
+that the concept of "location" and "jurisdiction" blur -- nay, disappear 
+-- when dealing with the Internet.  A hacker in Britain who breaks into 
+a U.S. government computer is in violation of U.S. law.  If that hacker 
+ever steps foot in the U.S. (or is extradited, which is highly possible 
+considering various extradition treaties in existence), that hacker is 
+headed for jail, gaol, the pokey, the brig, the Big House, or all of the 
+above.
+
+The same applies to the hacker who sits in the rubber dingy -- you've 
+eventually got to come ashore somewhere.  And if you were using, say, a 
+cellular phone on a U.S. provider, you might also be subject to wire 
+fraud provisions.
+
+Courts and prosecutors have used broad interpretations of what falls 
+under the law -- the most reliable safeguard is:  if you're not 
+specifically granted access, don't access it.  If it ain't yours, don't 
+peek.
+
+And yes, I am a lawyer, but this should not be considered legal advice, 
+merely a layman's opinion on what he reads in the news -- free legal 
+advice is worth what you pay for it.
+
+CURES FOR SNIFFLES
+
+Moderator:  please mask out my email address....
+
+At 08:31 PM 2/7/97 -0700, you wrote: 
+>Happy Hacker Digest Feb. 7, 1997
+
+>SNIFFER QUESTION 
+> 
+>From: imPulse9 <noone@nowhere.no> 
+>Subject: Sniffing Data 
+> 
+>Hey. I am a beginner hacker who is just wondering how to run a sniffer 
+>program such as esniff.c...if anyone knows, please e-mail 
+>me(creednet@cybernex.net) or if this mailing list's moderator could tell 
+>me, it would be greatly appreciated. Thanks! 
+> 
+>Moderator: why do I get the feeling everyone who asks about sniffers wants 
+>it to intercept passwords or email? Those are both illegal. Is there anyone 
+>who could enlighten us about how to detect sniffers?
+
+A sniffer works by putting the NIC into promiscuous mode, forcing the NIC to 
+accept every packet on the network.  Since sniffing only requires a physical 
+network connection and no packets are sent by the sniffer, there's very 
+little you can do to detect one.
+
+If you have a map of all NICs on your network, you can mask out known 
+ethernet addresses and monitor for "new" ones suddenly appearing on the net. 
+Chances are that's a sniffer or other hacking....
+
+Sniffers are excellent tools to analyze actual traffic on your network, and 
+analyze protocol layers.  Wanna see EXACTLY how POP3 works, a sniffer will 
+show you... 'course, you could always look up the RFC too...
+
+From: n-treeg@ix.netcom.com 
+Subject: Re: Sniffing Data
+
+On 02/07/97 20:31:58 you wrote: 
+> 
+>Happy Hacker Digest Feb. 7, 1997
+
+>SNIFFER QUESTION 
+> 
+>From: imPulse9 <noone@nowhere.no> 
+>Subject: Sniffing Data 
+> 
+>Hey. I am a beginner hacker who is just wondering how to run a sniffer 
+>program such as esniff.c...if anyone knows, please e-mail 
+>me(creednet@cybernex.net) or if this mailing list's moderator could tell 
+>me, it would be greatly appreciated. Thanks! 
+> 
+>Moderator: why do I get the feeling everyone who asks about sniffers wants 
+>it to intercept passwords or email? Those are both illegal. Is there anyone 
+>who could enlighten us about how to detect sniffers?
+
+Ask and you shall receive ;-)
+
+The following are excerpts from the ISS Sniffer FAQ.  It can be found at: 
+http://www.pris.bc.ca/tech/faqs/sniff.htm
+
+Regards -- N-TREEG  http://www.ucet.ufl.edu/~jyoung 
+P.S.  Sniffers can be an invaluable tool for diagnostics of out of whack 
+networks.
+
+How to detect a sniffer running.
+
+To detect a sniffing device that only collects data and does not respond to 
+any of the information, 
+requires physically checking all your ethernet connections by walking around 
+and checking the 
+ethernet connections individually.
+
+It is also impossible to remotely check by sending a packet or ping if a 
+machine is sniffing.
+
+A sniffer running on a machine puts the interface into promiscuous mode, 
+which accepts all the 
+packets. On some Unix boxes, it is possible to detect a promiscuous 
+interface. It is possible to run 
+a sniffer in non-promiscuous mode, but it will only capture sessions from 
+the machine it is 
+running on. It is also possible for the intruder to do similar capture of 
+sessions by trojaning 
+many programs such as sh, telnet, rlogin, in.telnetd, and so on to write a 
+log file of what the 
+user did. They can easily watch the tty and kmem devices as well. These 
+attacks will only 
+compromise sessions coming from that one machine, while promiscuous sniffing 
+compromises all sessions on the ethernet.
+
+For SunOs, NetBSD, and other possible BSD derived Unix systems, there is a 
+command
+
+     "ifconfig -a"
+
+that will tell you information about all the interfaces and if they are in 
+promiscuous mode. DEC 
+OSF/1 and IRIX and possible other OSes require the device to be specified. 
+One way to find out 
+what interface is on the system, you can execute:
+
+# netstat -r 
+     Routing tables
+
+     Internet: 
+     Destination      Gateway            Flags     Refs     Use  Interface 
+     default          iss.net            UG          1    24949  le0 
+     localhost        localhost          UH          2       83  lo0
+
+Then you can test for each interface by doing the following command:
+
+     #ifconfig le0 
+     le0: flags=8863<UP,BROADCAST,NOTRAILERS,RUNNING,PROMISC,MULTICAST> 
+             inet 127.0.0.1 netmask 0xffffff00 broadcast 255.0.0.1
+
+Intruders often replace commands such as ifconfig to avoid detection. Make 
+sure you verify its 
+checksum.
+
+There is a program called cpm available on ftp.cert.org:/pub/tools/cpm that 
+only works on Sunos 
+and is suppose to check the interface for promiscuous flag.
+
+Ultrix can possibly detect someone running a sniffer by using the commands 
+pfstat and pfconfig.
+
+pfconfig allows you to set who can run a sniffer 
+pfstat shows you if the interface is in promiscuous mode.
+
+These commands only work if sniffing is enabled by linking it into the 
+kernel. by default, the sniffer is 
+not linked into the kernel. Most other Unix systems, such as Irix, Solaris, 
+SCO, etc, do not have 
+any flags indication whether they are in promiscuous mode or not, therefore 
+an intruder could be 
+sniffing your whole network and there is no way to detect it.
+
+Often a sniffer log becomes so large that the file space is all used up. On 
+a high volume network, a 
+sniffer will create a large load on the machine. These sometimes trigger 
+enough alarms that the 
+administrator will discover a sniffer. I highly suggest using lsof (LiSt 
+Open Files) available from 
+coast.cs.purdue.edu:/pub/Purdue/lsof for finding log files and finding 
+programs that are accessing the 
+packet device such as /dev/nit on SunOs.
+
+Stopping sniffing attacks
+
+Active hubs send to each system only packets intended for it rendering 
+promiscuous sniffing useless. 
+This is only effective for 10-Base T.
+
+The following vendors have available active hubs:
+
+     3Com 
+     HP
+
+From: System Crasher <coder@reptile.rug.ac.be>
+
+> 
+> SNIFFER QUESTION 
+> 
+> From: imPulse9 <noone@nowhere.no> 
+> Subject: Sniffing Data 
+> 
+> Hey. I am a beginner hacker who is just wondering how to run a sniffer 
+> program such as esniff.c...if anyone knows, please e-mail 
+> me(creednet@cybernex.net) or if this mailing list's moderator could tell 
+> me, it would be greatly appreciated. Thanks! 
+> 
+> Moderator: why do I get the feeling everyone who asks about sniffers wants 
+> it to intercept passwords or email? Those are both illegal. Is there anyone 
+> who could enlighten us about how to detect sniffers?
+
+Well as you have no access to the computer that is suspected to run a 
+sniffer, detecting a sniffer is impossible. 
+Unless maybe if you cause packet storms and can find a relation between 
+them and the behaviour of that other machine (hard disks noises, 
+ethernetcard lights, etc....), but then again, you have no proof.
+
+There was stated that you can use some fake passwords very obviously... 
+and then check your logs regularly, if they appear, someone has to have 
+been watching you... but of course that is not a fool-proof technique 
+(and not technically inspired).
+
+If you are on the computer, all you have to do is check the process 
+list... or do an ifconfig (info on network adapter status). 
+If a network adapter is in PROMISCUOUS mode, you can bet y'r life on it 
+someone was/is running a sniffer. 
+(PROMISC mode: the network adapter is not selective and accepts all 
+packets, even these not addressed to it)
+
+Now I would like to add, that Sniffers are used for other tasks then just 
+reading mail or grabbing pwd's, all those who ever had to track down network 
+misconfigurations will all confirm this.
+
+Laterz... 
+     [Brecht] 
+ 
+
+PS: Use sniffit instead of esniff... it's much cooler ;)
+
+  
+.----- 
+ Coder, The Ultimate System Crasher      E-Mail: coder@reptile.rug.ac.be 
+  
+           Armageddon(tm): http://reptile.rug.ac.be/~coder 
+   Armageddon(tm) - Site in ExilE: http://main.succeed.net/~coder 
+  Sniffit(tm): http://reptile.rug.ac.be/~coder/sniffit/sniffit.html 
+                        Latest Version: 0.3.3
+
+HACKER HANDLE CHOICES
+
+From: mulder@jumbo.ntplx.net (Hunter Rose) 
+Subject: Handle Ideas
+
+an interesting hacking note...
+
+though this is not a technical note, hacker psychology is as interesting as 
+it's other side....
+
+handles come in many major types and sizes, but the most common is from 
+literary sources (here's a hint: real hackers read, too.) pick a favorite 
+author, story, and then character. there you go. movies, video games 
+(though more common) and bands are also good choices. also, for an instant 
+"hacker handle" try substituting numbers for letters (although this is 
+awfully played out, if ya ask me.) for instance, take my brand new nifty 
+handle CTHULHU....
+
+author: h.p. lovecraft, master of the soul asphyxiating horror tale.... 
+story: call of cthulhu, basis for the amazing cthulhu mythos works that's 
+influence spreads throughout society.... 
+character: cthulhu, indescribably horrible high priest of the hideous old ones.
+
+easy. be original, and don't worry about duplication.
+
+  ------------------------------------------------- 
+HUNTER ROSE -  mulder@ntplx.net 
+Devil By Deed 
+http://www.geocities.com/hollywood/8707 - sailor mercury homepage 
+"..the key to liberation is abstinence form the destructive escapism of 
+intoxication.." - earth crisis 
+socialism/freedom/straight edge 
+  -------------------------------------------------
+
+From: Nils Janson <wyoguys@twd.net> 
+Subject: Re: Happy Hacker Digest Feb. 7, 1997
+
+Handles- 
+Pick some name sounding vaguely melodic, something that you would hear 
+out of a fantasy book.  For example, in Tolkien Strider's real name is 
+Aragorn, there is Galadriel, Gimli, and Legolas.  And the more original, 
+the better.  Mine is Krital, my friend's is Liren, and there are many 
+other combinations of letters that no one has even stumbled upon yet. 
+You could also take your own name and contort it a little. 
+Sorry for this completely non-hacking related item, 
+-Krital Fleagle 
+ 
+
+SENDMAIL QUESTION
+
+From: ae630@freenet.unbc.edu (Tim Gutteridge) 
+Subject: Sendmail
+
+ I know how to use the basic parts of sendmail on port 25, such as 
+rcpt to and mail from, but when I type in help, I see other commands that 
+I can't figure out, such as DNS, expn (I think), and vrfy. Also, what is 
+the point of and difference between helo and ehlo? All I can get it to do 
+is say hi to me, and ehlo gives me another list of weird commands. 
+ I am using telnet://freenet.hut.fi:25. 
+ Does anybody know where I can get some documentation on sendmail, too? 
+  
+ And one more question: What's with the ^T command? On pretty much 
+any telnet system that I log onto, whether it's responsive or not, it 
+gives me some kind of status report.
+
+ By the way, for those of you trying to hack WIN95 networks, there 
+are 3 things that may be helpful:
+
+ -press F3 for a find menu 
+ -press the windows key to open programs without even logging on 
+ -press F8 when rebooting for a menu, which allows safe mode (no 
+  limitations) and the MSDOS prompt
+
+-- 
+_____    _____ 
+  |      |   __ 
+  |IM    |____|UTTERIDGE ae630@freenet.unbc.edu
+
+LINUX HELP
+
+from: Brandon Tennant <Brandon_tennant@bc.sympatico.ca> 
+Subject: Yet another LINUX ?
+
+ Hello again, 
+                  well I finally figured out the illusive PPP with Linux. 
+so what did id do once I logged on to my ISP through LINUX for the first 
+time? Well I think to myself  "I'll go play on my favorite New Mexican 
+Computer GRANDE!!" well of course like everything new in Linux it barked 
+at me "Invalid Host Name" so I eventually figure out !!! wow I have to 
+punch in the d*** DNS instead of the host NAME! well this brings me to 
+my obvious question... HOW do I configure Finger , Telnet , Lynx etc.. 
+to use Names instead of DNS #?
+
+Anonymous post:
+
+To the people that recently installed Linux on a PC. 
+Probably the best book I have gotten (for a beginner) is 
+The Linux Bible.
+
+It teaches a beginner a lot about Linux and UNIX in general. 
+It doesn't use too many large words you dot understand and it starts you off 
+like you dot know much about Linux.  It is good even if you just have a shell. 
+****************************** 
+        Free Mitnick!! 
+******************************
+
+NO MORE JUNO ADS
+
+From: "Steven Alexander" <salexand@cell2000.net> 
+Subject: No More Juno Ads
+
+ Hey everybody.  I just thought you might like to know another way to get 
+rid of those annoying Juno Ads.  All you have to do is open up all of the 
+.BMP file in your JUNO\ADS section and change each one however you want to 
+.  Then save it.  The ads flash across the screen and therefore had to be 
+configured to move so when you change them they can't any longer.
+
+COVERING YOUR TRACKS
+
+From: "Steven Alexander" <salexand@cell2000.net> 
+Subject: Editing Log Files
+
+ There is a good article in Phrack #43 called Playing Hide and Seek, UNIX 
+Style it tell which log files to edit and how to edit them.    Any issues 
+of 2600 magazine and Phrack will greatly help any hacker be it novice or 
+beginner.
+
+FORK BOMB
+
+From: "Steven Alexander" <salexand@cell2000.net> 
+Subject: Redirection and Denial of Service
+
+ Finger and Telnet can both be redirected.  You can even use the command
+
+finger @@@@@@@@@@@@@@@@@@@@@@@aol.com
+
+as a denial of service attack.
+
+Redirecting Telnet will make the your connection appear to be from the host 
+you redirected through.
+
+Whatever floats your boat.
+
+Moderator: this is known as a "fork bomb." A good sysadmin will set things 
+up to limit the number of new processes a user can spawn so as to prevent 
+fork bombs.
+
+A NEW ANSWER MAN
+
+From: nightshadow1@juno.com (Shadrack D Marcy)
+
+ For those that really want to hack you first need to know how to 
+program in BASIC, C and know UNIX/ Linux systems like the back of your 
+hand. I recently (yesterday) bought a 486 Compudyne laptop specifically 
+to run Linux. I learned that in order to know what the heck I am doing on 
+Linux I have to be able to program in Basic C or know Unix script. 
+Fortunately, at work we run a  Unix system and I know basic Unix 
+commands.  I didn't  have to learn from a text file from some 13 yr old 
+hacker trying to make a name for  himself by trying to regurgitate a 
+hacker text file from 1987 and passing it off as a current "How to Hack" 
+file. 
+  If anyone knows of a current FAQ or text file  "How To" I would 
+greatly appreciate a post to my box. If you need help on hacking you can 
+post to my box as well. I only do harmless hacking, of course (*wink*). I 
+actually do hack for the common good of removing the trash we have on the 
+net, yet sometimes that temptation to smack a site that has porn or spam 
+is just TOO tempting (*evil grin*). 
+ I would also like to say THANKS to Carolyn for helping my roommate 
+(who I believe wrote you earlier this week) for helping him learn how to 
+do what you have. Our conflicting schedules and my lack of time to teach 
+him have made it hard for me to catch him up on the latest craze of 
+hacking that is sweeping our great nation. So all you aspiring hackers 
+that are flooding Carolyn with questions, well, you can flood me too. I 
+will give you what I know, but PLEASE don't ask me about my hacks nor ask 
+me of illegalities. If you want to do illegal things you're on the wrong 
+list.
+
+Thanx Shad!!!!
+
+P.S. I'm in Atlanta...anyone out there that wants to share some ideas and 
+just hang and BS about comps and stuff, just e-mail me! Address it to 
+Shad!
+
+HTML EDITOR FOR XFREE86?
+
+From: roger prata <prata@boss1.bossnt.com> 
+Subject: HTML Editor for Xfree86
+
+Does anyone know of a good (cheap) HTML editor that runs under X-Windows? 
+I am eventually going to set up a site, but I dot wanna use Gates' World. 
+Any suggestions??
+
+Thanks, and happy hacking!! 

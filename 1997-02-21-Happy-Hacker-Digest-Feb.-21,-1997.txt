@@ -1,0 +1,677 @@
+Happy Hacker Digest Feb. 21, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don’t send us anything you wouldn’t email to your 
+friendly neighborhood narc, OK? Send posts to . Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won’t get 
+hurt if you unsubscribe from this list. 
+Happy hacking! “Truth is mighty and will prevail. There is nothing the 
+matter with this except that it ain’t so.” -- Mark Twain 
+--------------------------------------------------------- 
+URL ‘O the Day: http://ra.nilenet.com/~mjl/hacks/codez.htm 
+This site includes Mac hacking tools.
+
+Moderator: Infowar.Com just was given  a "4 StarAward" from Internet 
+Underground Magazine!!! Our thanks to the Supreme Ruler of that site, Winn 
+Schwartau, and especially to all the folks from this list who have been 
+helping make Infowar one of the top Web sites around. We have a discussion 
+group and archives hosted at http://www.infowar.com/cgi-shl/login.exe. Chat 
+with us on the Happy Hacker IRC channel. If your browser can use Java, just 
+direct your browser to www.infowar.com, click on chat, and choose the 
+#hackers channel.
+
+Table of Contents
+
+Canadian Hacking Laws 
+Vigilante Ideas 
+More on IRC 
+More on Cracking 
+Modem Jammer Hoax 
+NT Question 
+Sniffer Question 
+Hacker Ethics 
+Baghdad Sees Internet as End of Civilization
+
+CANADIAN HACKING LAWS
+
+From: "Ty & Keri - Lynn Smith" <8beaner@iaw.on.ca>
+
+Greetings all.
+
+I found you latest threads about the laws regarding computer crime and 
+hacking of interest, but also noted that they were for the American people 
+and not of those from other parts of the world. Living here in Canada I was 
+curious as to how much different our laws were on this subject. So out I 
+went and purchased myself a copy of the 1997 revision of the Canadian 
+Pocket Criminal Code.
+
+Here goes the code for computers in Canada:
+
+-------
+
+Unauthorized Use of Computers-Definitions-"Computer program"-"Computer 
+service"-"Computer system"-"Data"-Electro-magnetic, acoustic, mechanical or 
+other device"-"Function"-Intercept".
+
+Section 342.1 (1) Every one who, fraudulently and without color of right,
+
+ (a) obtains, directly or indirectly, any computer service, 
+ (b) by means of an electro-magnetic, acoustic, mechanical or other device, 
+intercepts or causes to be intercepted, directly or indirectly, any 
+function of a computer system, or 
+ (c) uses or causes to be used, directly or indirectly, a computer system 
+with intent to commit an offence under paragraph (a) or (b) or an offence 
+under section 430 in relation to data or a computer system
+
+is guilty of an indictable offence and liable to imprisonment for a term 
+not exceeding ten years, or is guilty of an offence punishable on summary 
+conviction.
+
+(2) In this section,
+
+"computer program" means data representing instructions or statements that, 
+when executed in a computer system, causes the computer system to perform a 
+function;
+
+"computer service" includes data processing and the storage or retrieval of 
+data;
+
+"computer system" means a device that, or a group of interconnected or 
+related devices one or more of which, 
+ (a) contains computer programs or other data, and 
+ (b) pursuant to computer programs, 
+  (i) performs logic and control, and 
+  (ii) may perform any other function;
+
+"data" means representations of information or of concepts that are being 
+prepared in a form suitable for use in a computer system;
+
+"electro-magnetic, acoustic, mechanical or other device" means any device 
+or apparatus that is used or is capable of being used to intercept any 
+function of a computer system, but does not include a hearing aid used to 
+correct subnormal hearing of the user to not better than normal hearing;
+
+"function" includes logic, control, arithmetic, deletion, storage and 
+retrieval and communication or telecommunication to, from or within a 
+computer system;
+
+"intercept" includes listen to or records a function of a computer system, 
+or acquire the substance, meaning or purport thereof.
+
+R.S. 1985, c. 27 (1st Supp.), s. 45
+
+-------
+
+Well if you can get through that gobblygook great. It took me a couple of 
+readings, but I don't think that the law makers intended the laws to be 
+legible to us mere mortals. Sortta like Unix or C. A secret language given 
+to only the deserving and ->patient<-.
+
+TTFN From the Great White North, Ehh!
+
+Ty Smith 
+8beaner@iaw.on.ca
+
+VIGILANTE IDEAS
+
+From: "Ryan" <c.barrett@virgin.net>
+
+Regarding the Child Porn sites:
+
+If I found a Child Porn site, I would (theoretically) have no qualms about 
+shutting it down, or even mail bombing the owner.  I can see them going to 
+the police and saying:  "Hey, this guy just trashed my website full of 
+pictures of pre-pubescent children!  I've still got the original pictures, 
+but the 2,000 visitors a week I get are being denied their fun".  I can see 
+the polices reply; "Hum, can you show us these pictures?  (After showing 
+them to the police)  your coming with us down to the station on charges of 
+possession of indecent pictures of underage children.".  The point is, if 
+they dob you in, then they will get into real trouble, far more than you 
+could- so they won't.  They'll probably just mail-bomb you back again! 
+  There is a better way to get these sites down though.  There has just 
+been formed an organization that you can report obscene and possibly 
+illegal websites to, for prosecution/removal.  I believe they have a free 
+phone number, and they have a mail address.
+
+I have and idea of how to stop mail bombs.  sendmail could be modified so 
+that it scans all messages for signs of Mail-Bomb script.  If it does find 
+it, then it sends it to the sender, not the receiver.  That would put an 
+immediate end to all of the problems, and teach the stupid kids not to use 
+mail bomb programs! 
+_______________________________________
+
+                            Ryan Barrett; 
+                       RadBite@aol.com; 
+                      c.barrett@virgin.net; 
+  
+                       42 Beaufort Road, 
+                           Wroughton, 
+                             Swindon 
+                             SN4 9HE 
+                         (01793) 812442 
+_______________________________________ 
+  
+ 
+
+MORE ON IRC
+
+From: "butler@tir.com" <butler@tir.com>
+
+WHAT THE H*** IS THIS!!!!!!!!!!!!!!!
+
+Listen I’m sure nobody here s subscribed to this list (which i thought 
+was kewl) TO hear about L****** Irc warrior s***
+
+IRC has nothing to do with hacking and i subscribed to the list to maybe 
+pickup a few more stuff on UNIX  (Unix is hacking) But know 
+you’re just becoming like everything else 
+ 
+
+hacking newsgroups are 
+....FULL OF WAREZ LAMOS....
+
+From: willm@intermind.com (Will Munslow) 
+Subject: Re: Happy Hacker Digest Feb. 20, 1997
+
+>IRC 7th SPHERE QUESTION 
+> 
+>From: Redington <nemesis@minot.com> 
+> 
+>I went to 7th sphere the other day a downloaded their sphere.zip file. 
+>I unzipped it and tried to open in and to install it inside of my mIRC 
+>app, but it keeps giving me error messages like "Setup is unable to 
+>find_SETUP.DLL, which is needed to complete the installation, Error 
+>103."  What is that? The thing is that the SETUP.DLL file is right 
+>there.  If anyone can help me out on how to set that up it is very much 
+>appreciated. 
+> 
+>neMEsis
+
+You have to figure out _where_ Setup is looking for the file and place the 
+.DLL in that directory. Here's a complete guess, but it might help: 
+1) Open a DOS window. Start Menu/Run... and type command. Or Start 
+Menu/Programs/MS-Dos Prompt. 
+2) Type SET. This will show you your environment variables. 
+3) Look at the one that says TEMP=. This is _probably_ where the setup 
+program is looking for the .DLL. 
+Note: If you don't want to/don't know how to do that, 9 times out of 10, 
+the TEMP directory is C:\windows\temp. 
+4) Copy the .DLL and throw it in that directory.
+
+This _might_ work. I've had some programs do the same thing. Basically, 
+move the .DLL around to directories that the Setup program is most likely 
+looking in. Maybe one level up? Hope this helps.
+
+From: Mike Kogelman <shmoe@snip.net>
+
+At 11:48 PM 2/18/97 -0700, you wrote: 
+> 
+>But there are other good IRC servers that are usually full of hacker 
+>channels. EFFNet is one of the oldest IRC servers. It is run by the 
+>Electronic Freedom Foundation (eff.org). But it is reputed to be a "war 
+>ground." You are allowed to do anything you want, but you may not like what 
+>others do to you. 
+> 
+It is not EFFNet, and it is not run by the EFF, It's EFNet, and was 
+originally started by the Eris FreeNet (ef.net) 
+-- 
+Shmoe 
+Quadrant Communications 
+"I wanna live with you in the fifth dimension, in a dream I've never had.." 
+http://www.quadrant.blackwood.nj.us 
+--
+
+From: "ruben d canlas jr" <benc@skyinet.net>
+
+In Undernet, they now have the bots X and W. these bots take care of 
+a channel, keep a registry of authorized ops, and can do simple tasks 
+as flood detection. as long as the server can allow, X and W will 
+stay on your channel, protecting it from takeovers. but all this is 
+ideal and sometimes, due to lagging, X disappears.
+
+benc
+
+ruben d. canlas jr. 
+http://www.skyinet.net/users/benc 
+------------------- 
+Thought for the day: 
+    Concerto (n): a fight between a piano and a pianist. 
+ 
+
+Timothy Ward ward@carl.all-net.net
+
+mIRC is not for uni*ces..
+
+IRCII however is. 
+You would want to pick that up from: 
+ftp.undernet.org
+
+in /pub/irc/clients/unix
+
+From: <nobody@www09.hway.net>
+
+Concerning IRC: I was operating under the impression that it made absolutely 
+no difference what server you logged in to, since all the comm data gets 
+routed to everywhere else.  If this is so, then why do so many seasoned IRC 
+users put such emphasis on their particular server?  I wonder if it's simply 
+because of the quicker response one gets when speaking/DCCing to another 
+user sharing the same server as oneself.
+
+ I came across a .gif somewhere that mapped out the physical location of all 
+the major IRC servers - it was rather informative.  I wonder if anyone can 
+give me a clue as to where I could find a similar map showing the backbone 
+of the Internet as well as major service providers, say, the big telcos and 
+maybe two or three branches down.
+
+From: Peter Mueller <basher@agt.net>
+
+So, the happy hacker digest finally talks about ping -f! GREAT! One 
+thing is, this is a great for all the people that have it on IRC and 
+have windows 97. I DO have mirc but, I have win3.1 and I never chat or 
+look for fights in mIRC. The problem is, I chat on a normal Internet chat 
+(yah yah with the refresh and post and all that) From time to time one 
+gets the loserz wandering in looking for the cheap thrills in disgusting 
+people, showing off their perversion, being nuisances, etc.. How can a 
+guy with an OS like mine keep these dopes off, or at least bother them 
+enough to keep them off. I've heard of ping -f (I’ve got finger utils , 
+tracers, router info utils etc.) And i don’t have a unix account to get 
+at these naughty people. Where can i get a ping -f Win3.1 util? Rest 
+assured it will be put to good use on those unfortunate enough to 
+disgust the heck outta the rest of us.
+
+Moderator: I don’t read Swedish. Could someone please translate the 
+following post, like maybe you several dozen Swedish hackers on this list? 
+Thanks.
+
+From: "Bratt, Oscar" <KB96BROS@chestud.chalmers.se> 
+Organization:  Chem. PC Lab, CTH/GU, Gothenburg 
+Subject:       Re: GTMHH: How to keep from getting kicked off IRC!
+
+ Och vad ska jag göra med den här? Är det läsförståelse i Engelska.
+
+Apropå det, vi ska ha frivilligt test i eng. i dag.
+
+OBS FRIVILLG, jag SKA inte gå men det ska alla 2:a. Vilka helyllen 
+dom är, själv får engelska bara mig att tänka på MARIE CEDERBERG
+
+MORE ON CRACKING
+
+Anonymous: hi my first post to this wondergroup.
+
+after reading many questions about how to hack past a windoze 95 screen 
+saver ,and reading many replies, it struck me that perhaps no one knew that 
+if you simply press f5 just after the ms-dos text you get a c: prompt.
+
+ next type 
+c:\windows 
+at the c:\windows type ` edit control.ini`
+
+you are then whooshed away to the edit shell, where as you scroll down the 
+screen and when you see the word...
+
+password=1
+
+change the 1 to a 0 and save then reboot!simple. 
+and when you’re finished do the same only type a 1 to activate the screen 
+saver again. 
+ 
+
+thanks to Olcay Cirit for that. text file `pc hacking faq` 7/10/96
+
+tip for newbies read as many text files as you can , that’s what i do. And 
+you be amazed at what you’ll learn.
+
+On a different note` i work for cgate and wonder if any one could tell me `
+
+if seagate has hundreds of computers and all networked some not as to stop 
+people like my self from prying.(they do it by use of a login:) 
+I’ve cracked a lot of passwords in seagate and the weakest link is the 
+password...even gave a few mates extra holidays  HO HO HO....
+
+if some one tries to access the g drive it says invalid drive specification, 
+but type logon: guest it gives the works to you...
+
+what i want to know is ,is it possible to access some else’s c:drive from 
+any computer in there, like telnetting internally?
+
+I’ve tried but got no connection, what am i doing wrong?
+
+ ...how does a newbie have the `hacker status `bestowed on him/her if only 
+newbies call them selves hackers when they are not...who bestows 
+this privilege...???????
+
+One more phun hack is to change to win95 bootup screen to any thing you want 
+,my own example being `having a little picture of a Gremlin and 
+the words `YOU`VE JUST BEEN HACKED BY  LazEdawg  THIS SCREEN IS VIRUS 
+ENCRYPTED REMOVE AT YOUR PERIL.......it sends the I.T DEPARTMENT CRAZY. 
+It doesn’t do any harm except raise a few tempers...
+
+please keep my email anonymous ,except my handle
+
+ lazEdawg......
+
+cheers
+
+From: Marko Samastur <Marko.Samastur@fmf.uni-lj.si>
+
+To those, that think social engineering is hacking, there are few words 
+I'd like to say. I've been watching this conversation around hacking and 
+hacking techniques for a while and I've had enough. It seems like there 
+are too many people out there, who don't have the slightest clue what 
+hacking was and is. It's a wish and a need to further develop your 
+knowledge and to seek information. 
+So, how the h*** can in that context a scam, involving a stupid guard, 
+be even considered as important part of HACKING. Sure it's an important 
+part of getting physical access to computer, but it has nothing to do 
+with hacking. And you don't get any knowledge from it. Almost the same 
+goes for tricks. While they can be fun to play with, they are only that. 
+Not much knowledge behind them and should I do it to impress people. 
+H*** no, the next thing you will advertise will be wearing ties I guess 
+(or even worse, wearing suits, yuck). Actually, it's even repulsive to 
+use both words as physical and hacking so close together. ;) 
+Not only that, will you people drive around the globe to be able to do 
+that, or are your needs limited only to your hometown. My sure aren't 
+(before Carolyn complains about saying too much, let me add that hacking 
+is ALMOST legal here and if I don't break one or two rules, I can do 
+almost anything I want, involving breaking into computers in my or other 
+countries). 
+Oh and btw, * in passwd file STILL CAN mean that it's shadowed (I'm not 
+sure, but I think * should be in front of the name, if you want to 
+disable user of that account). Anyway, if those users are just disabled, 
+where are the encrypted passwd then? :) 
+Please feel free to flame me, but I insist that you allow me to do the 
+same.
+
+From: Bernz <bernz@ix.netcom.com>
+
+>I would dare say you aren't relatively experienced. Right now I can tell 
+>you of a certain college system that has just over a dozen machines 
+>vulnerable to 'froot'. Some systems keep up to date with advisory info and 
+>patch those holes. More often than not, they go untouched.
+
+you're right. There are systems out there that have remote problems. But 
+most serious Sysadmins keep up with the cert (and other) advisories. I 
+find most systems i try for patch them up REALLY quickly. But i don't 
+usually go for college systems. If I do, i simply social engineer one of 
+the students in CS101 who just put upa web page.
+
+>What?! Fine. Call me up and social engineer your way into my system since 
+>it is "the only way to absolutely get into a remote system". When you are 
+>banging your head against the wall in frustration because I won't give you 
+>what you want, then reconsider your thoughts.
+
+again, you're right. But i assume that you are an experienced person 
+with computers and I would prolly know that through research. I wouldn't 
+dare to attempt to engineer you. That would be an exercise in futility. 
+As mean as it is to say it, you SE the dumb. SEing most sysops is kinda 
+silly. They'll pick it up quickly. I'm not dumb enough to try to SE 
+root, just a user pass. Root is found through local exploits.
+
+>Hardly been explored?! Come on! I haven't run into a hacker that doesn't 
+>know the value of SE attacks. And I think you will find that most Tiger 
+>Teams not only do it, but push it as an essential part of security 
+>testing. I know my team does.
+
+I don't know jackdookey about Tiger Teams. I'd love to participate with 
+one, but never have. I've run into plenty of hackers that put down SE 
+attacks as "unchallenging", "silly" and "Not hacking (which it very well 
+may not be)". I agree it is essential. That's my whole point. I see that 
+you don't overlook it, but obviously people do, or else I’d hardly be 
+even fairly successful. I wish there were more hackers (and users) who 
+knew the dangers of it. I'm just trying to expose it. Obviously you are 
+too. 
+I just think it's as good a sploit as any. That's all. 
+-- 
+Bernz 
+http://members.tripod.com/~bernz 
+http://www.aracnet.com/~gen2600
+
+"Tell me what you want, a zigahzigzah." 
+-From "The wit and wisdom of the Spice Girls" 
+ 
+
+From: PsyChadEl <oberoi@hal-pc.org>
+
+A lot of the hacking/cracking techniques/methods etc... discussed on Happy 
+Hacker seem to be completely network orientated (not that that's a bad 
+thing). However, there's a whole world of hacking/cracking out there that 
+NEEDS to be explored.
+
+Apart from the Social Engineering aspect that Bernz spoke of in the previous 
+digest, there's also the kind of access that users have: directly to PCs in 
+their offices, students in their libraries, blah blah blah. This is where 
+the keystroke recorder comes in (tada).
+
+The keystroke recorder (for those of U who don't know), is basically a 
+program that sits in memory and logs every key typed at particular computer. 
+That means: letters, memos, credit card numbers, passwords, poetry, 
+garbage... U get the idea. Therefore, U setup the recorder, leave it on for 
+a couple of days... come back and have a look - and voila! We're in luck.
+
+Now, the problem I'm writing in is this: I'm interested in a good keystroke 
+recorder for a Windows OS (meaning Win95 or Win3.11 or both). I found one on 
+the net, something called Keylogger... You'll find it at Silicon's site (me 
+thinks). However, it has the pathetic tendency to sit their, totally visible 
+as a window on your taskbar (in Win95). It also logs to many filez instead 
+of just one - which is a pain in the ass when U go looking thru 'em (that 
+problem, however I fixed thru some hexing).
+
+I'm interested in writing one and have been trying to do so for while... 
+with little luck. If anyone is aware of any APIs or Dlls that may help with 
+a program like this... or know of any other keystroke recorders for 
+Windows... then PLEAZE tell me. Some form of cloaking KeyLogger would also 
+be a good idea. I've tried a proggy called HideIT (available at 
+download.com), but then I have the problem of hiding HideIt itself - no 
+problems solved there.
+
+Think about it.
+
+"I am a firestarter... twisted firstarter." - Person with wicked, wicked 
+hair -> PRODIGY
+
+Thanx,
+
+        / 
+   ____/_\____ 
+      /   \ 
+     /     \ 
+  .AnaRchy_InC. 
+  <PsyChadEllic_SuN> 
+  http://www.geocities.com/sunsetstrip/alley/6644 
+  
+From: jericho@dimensional.com
+
+> >Then it is shadowed.  Normally you would see encrypted characters where the 
+> >* was.  Oh yeah, and after running it through a passwd cracker, you 
+> >hopefully would get some valid passwords and then you could use them to 
+login. 
+> 
+> The passed file is NOT shadowed. The * in the password field marks that 
+> login has been disabled for that account. Have you noticed that when you
+
+Depends on the shadow suite. Sometimes a * designates shadow.
+
+> view a password file on some systems (not through ftp), some accounts 
+> have * and others have jumbled text? And in the case that you download
+
+No.. he was talking about every account having a '*'.
+
+=-=
+
+> It's not just you. I find that social engineering and "physical" hacking are 
+> the best ways in. Without a doubt, the human interface is the weakest link in
+
+To you and the other person arguing these points.. think about it from the 
+learning aspect of things. What do you learn by breaking into a system via 
+physical means?
+
+> gain root access to our experimental server. Being quite green in the area of 
+> exploits, I opted for a "physical" hack. I "found" my professor's 
+briefcase and
+
+So rather than explore the system and learn more about how it works, you 
+opt for the other method?
+
+> ...gee I wonder. Well, no one else was able to gain access, but everyone 
+said I 
+> cheated. Is there a moral? Sysadmins, sometimes hackers cheat, patches aren't 
+> everything.
+
+Like I said to the other guy. Try that with my system. You can't SE me out 
+of info. You can try to break into my place, but remember that "make my 
+day" law. I will be more than happy to knee-cap you.
+
+=-=
+
+> Do you notice that she never says -how- to exploit ftp, ssh or finger to 
+> break into machines?  She says it's an ethics thing, that telling newbies 
+> would be irresponsible.  But what she doesn't tell you is that SHE DOESN'T 
+> KNOW HOW.  Carolyn Meinel is a clueless newbie of the first order.
+
+To further this point, if it were so bad to give the exploit info out, she 
+could easily take the 'full disclosure' method and post the exploit along 
+with the fix information. No harm there.
+
+> >I heard somewhere that Macs make up 20% of the servers on the Internet,
+
+Yeah. Apple had an infomercial that claimed just over 80% of the servers 
+on the net were Macs. That infomercial is no longer being played. I doubt 
+20%. 
+**********
+
+please make this anonymous (is this the right address anyway ?) 
+OK first I've got a small silly question : is there a way to execute a 
+program on a remote anonymous ftp site. See there's this site where I 
+manage to upload an exploit and change permission to 555 but I can't 
+seem to execute it. I’ve tried the obvious quote site exec ... but it only 
+works for ls ; with anything else than ls it will go 
+200 - exploit 
+200 - (end of exploit)
+
+MODEM JAMMER HOAX
+
+From: bryan_g@juno.com
+
+>Anonymous post:
+
+>What does the program modem jammer do exactly does anybody know? 
+>I ran it then called my friend with caller I.D.  He knew who I was when I 
+>called so it don't work against ESS or caller ID.  It's supposed to 
+>prevent 
+>your call from being traced.  But I have not observed this happening. I 
+>could mail you a copy but it's all over the place on hack pages 
+>everywhere, 
+>so being conspiracy minded......I was just wondering.....need I say 
+>more?
+
+LOL It's just some joker's way of messing the clueless. 
+It's a hoax program, much like APEX. A *.zip file I d'loaded once upon a 
+time had a *.com program that was an ad for a BBS that the joker was 
+promoting. In the ad, he even admits the program is a hoax.
+
+NT QUESTION
+
+Please make this anonymous.  Thank you.
+
+I have looked all over the place for Windows NT servers on the net.  I 
+can't find any.  I don't really know what to look for to know if I found 
+one.  How do I find servers that are running Windows NT and how do I know 
+if I have found a server running Windows NT?
+
+Moderator: GTMHH Vol. 3 No. 2 on how to map the Internet shows some 
+techniques whereby one may often learn what kind of box you have accessed. 
+Hey, how come most of you guys who archive the GTMHHs don’t have this one 
+up? It is at the http://www.infowar.com site, under “Hackers forum.” Or I 
+can email you a copy.
+
+SNIFFER QUESTION
+
+From: Robert Eickmann <roberte@serv2.fwi.com> 
+Subject: Win95 TCP/IP Tracing
+
+Does anybody know of a program that will show what is being sent over a 
+Windows 95 based tcip connection, and store it in a log file?
+
+I know that a packet sniffer will give me most of this information, but I am 
+trying to do this over a Win95 Dial up networking connection. Do I have to 
+patch the tcp/ip protocol to do this or is there a sniffer that will give 
+me this information. 
+Any help would be great Thankx!
+
+------------ 
+Later 
+Rob 
+"It does not take much thought to talk to teachers"
+
+  -----BEGIN GEEK CODE BLOCK----- 
+  Version: 3.1 
+  GAT GCS d s+:+ a-- c++ l e++ w+++ n++ o+>++ w+++$ O+++$ m--pe++,y++ PGP++ 
+t++ 5++ x+++ r* tv+ b+++++ di+++ d++ g++ e* h* !r !z+ 
+  ------END GEEK CODE BLOCK------
+
+HACKER ETHICS
+
+From: the Phreaked One <phreakitikki@mercury.theonramp.net> 
+Subject: Ethics....
+
+>Moderator: IMHO, trying to discuss ethics without referring to experts in 
+>ethics such as Jesus, Gandhi and Martin Luther King is like trying to 
+>discuss TCP/IP without referencing RFCs. 
+>Carolyn Meinel
+
+ Referring to Ethics without them is easy.  There is no one ethical way. 
+As one travels between cultures the ethics will change.  They don't change 
+because of different religious views (although that does help a little), 
+they change because every society is different and wants to be treated 
+differently.
+
+ Ethics also change with time.  As time changes so do peoples experience. 
+There is also not one single definition of ethics.  Everyone has there own 
+definition.  One person may be OK with going out and killing 45 people, who 
+is to say he is wrong.  Maybe someone feels he is not wronging a child by 
+molesting him/her.  What make these things wrong though to that person? 
+The same thing that makes everything else wrong, common courtesy.
+
+ The Golden Rule says, Do unto others as you would have them do unto you. 
+Basically if you wouldn't want those 45 people to murder you then don't do 
+it yourself.  I the case of the child molester though he may have actually 
+wanted adults to molest him as a child (as sick as that may sound), so he 
+just needs psychological help.
+
+ The point I am trying to get across is simple, though my jumbled writing 
+style may have confused you.  Ethics is not about, oh he's a bad man for 
+doing that.  It's why did he do that, what makes him do that.  Take 
+hacking, people fear hackers because the media portrays them (I only have 
+the mentality, not the skill) as anti-social criminals who break into 
+systems and format the hard disk or steal thousands of dollars with credit 
+card numbers stolen from TRW.  They aren’t hackers though (personally I call 
+any hacker who does malicious actions with his/her talent a cracker), 
+hackers have ethics of there own and the people on the outside don't see 
+them.  Hackers ethics say look, don't touch.  Hackers don't break into 
+systems to do damage, they do so just to do it, or possibly so that they 
+can get some sort of information off of a system (not credit reports).
+
+ Again people don't look at motives as much as they see actions.  And we as 
+hackers (well some of you, not me) are the most misunderstood of the bunch. 
+ We are mentioned on Service Merchandise commercials as liars cheats and 
+thieves.   That is just not true, people need to look at us not as hackers 
+but as curious.  We more then anyone else should understand having ethics 
+misunderstood.  Just remember next time you hack a system and decide to do 
+damage that not only is it against the law but also if you were the 
+sysadmin of that system (and don't say well I'm not so there), would you 
+want to clean up after some "cracker."
+
+ the Phreaki Tikki 
+http://phreakitikki.home.ml.org
+
+BAGHDAD SEES INTERNET AS END OF CIVILIZATION
+
+An editorial in the Iraqi government newspaper Al-Jumhuriya says that the 
+Internet -- which is not accessible in Iraq -- is "the end of civilizations, 
+cultures, interests, and ethics," and "one of the American means to enter 
+every house in the world.  They want to become the only source for 
+controlling human beings in the new electronic village."  (AP 17 Feb 97) 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers

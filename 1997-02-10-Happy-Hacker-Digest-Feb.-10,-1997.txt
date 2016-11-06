@@ -1,0 +1,380 @@
+Happy Hacker Digest Feb. 10, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to cmeinel@techbroker.com. Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking -- and ne auderis delere orbem rigidum meum! 
+---------------------------------------------------------
+
+Special Internet Bad Guys Revealed issue!
+
+Table of Contents
+
+Court Declares Spamming to Be Computer Crime! 
+Legal Question: Is it OK to Spam the Spammers? 
+Pro-spam ISP Discovered 
+Ugly Internet Hoax Revealed 
+Dc-Stuff Hacker List Flame War Rages
+
+COURT DECLARES SPAMMING TO BE COMPUTER CRIME!
+
+From: Keith Bostic <bostic@bsdi.com> 
+Forwarded-by: Sean Eric Fagan <sef@Kithrup.COM> 
+Forwarded-by: bonesg8@aol.com 
+>From Today's Philadelphia Enquirier 
+http://www2.phillynews.com/inquirer/97/Feb/05/business/AOL05.htm
+
+[A] federal judge in Ohio declared that bulk mail sent by Cyber Promotions 
+Inc. to CompuServe subscribers amounts to computer trespassing.
+
+CompuServe, of Columbus, Ohio, filed suit against Cyber Promotions last 
+year, saying that its host computers were bogged down with junk e-mail, 
+and that subscribers were complaining bitterly about having to sift 
+through their electronic mailboxes while the meter was running on their 
+CompuServe accounts.
+
+"CompuServe is entitled to restrict access to its private property," U.S. 
+District Judge James L. Graham of Ohio ruled Monday. He issued an order 
+that prohibits Cyber Promotions from sending its electronic advertisements 
+to any of CompuServe's estimated 5 million members.  Wallace, who said he 
+mails out about 1.8 million e-mail messages a day for 7,000 clients, said 
+CompuServe had a much larger target than Cyber Promotions.
+
+"CompuServe wanted to set a precedent so they could stop other companies 
+from sending commercial e-mail, and they got what they wanted," he said.
+
+In his 32-page order, Graham reflected the complaints of many Internet 
+users by writing, "High volumes of junk e-mail devour computer processing 
+and storage capacity, slow down data transfer between computers... and 
+cause recipients to spend time and money wading through messages that they 
+do not want."
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+Subject: AOL-Cyberpomo settlement: Spamford's butt kicked again 
+Forwarded-by: jstron1@umbc.edu (strong john)
+
+(The first article is the AOL version of the judgement, and the following 
+article is Spamford's spin on it.)
+
+AOL Wins Federal Court Order to Protect Members from Junk E-mail
+
+In a win for its 8 million members, AOL secured a federal court order 
+prohibiting CyberPromotions from circumventing members tools meant to 
+block junk e-mail.  The order, which comes one day after another federal 
+court in Ohio ruled against CyberPromotions, will prevent CyberPromotions 
+from sending unsolicited e-mail to AOL members who don't want to receive 
+it.  The order goes into effect Friday.
+
+"This decision is another big win for AOL members because it puts them in 
+control of their e-mail," according to David Phillips, AOL's Associate 
+General Counsel.  "They can still receive CyberPromotions junk e-mail if 
+they want; but most members don't, and CyberPromotions is now legally 
+bound to respect their wishes.
+
+"Cyberspace consumers are fed up with junk e-mail and AOL leads the 
+industry in giving its members tools like PreferredMail to help them enjoy 
+the interactive experience.  This victory validates AOL's PreferredMail 
+tool and underscores the added value consumers receive when they use AOL."
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+                 CYBER PROMOTIONS VS. AOL SETTLED 
+  
+  Feb 4, 1997 - Philadelphia -  The lawsuit between Cyber 
+ Promotions, Inc. and America Online was settled today.  Each of the 
+ parties agreed to mutual releases without monetary damages.  AOL gave 
+ Cyber Promotions permission to continue to send its commercial email into 
+ AOL's system.   Cyber can send its email from up to five different domain 
+ names, including tosguard.com, which protects AOL members from having 
+ their accounts terminated for advertising with Cyber Promotions.  AOL 
+ also agreed to periodically announce to its members that they can opt-in 
+ to the receipt of commercial email from companies like Cyber Promotions 
+ by going to keyword: PreferredMail and checking it off. 
+  
+  Cyber Promotions' president, Sanford Wallace, stated "This 
+ settlement is a victory for everyone involved.  Cyber will benefit from 
+ the fact that AOL is now permanently allowing Cyber Promotions to send 
+ commercial email into its system.  This will also benefit AOL members 
+ because AOL's preferred mail tool will now give the recipient a choice 
+ to either receive or block commercial email." 
+  
+ -------------------------------------------------------------------- 
+ ATTENTION AOL MEMBERS: 
+  
+ If you wish to continue receiving Cyber Promotions' emailings, 
+ you must follow the "preferred mail" directions below. 
+ Cyber will only send email to AOL members who disable 
+ "preferred mail" as of this Friday, Feb 7, 1997. 
+  
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+CONSENT ORDER
+
+As part of a resolution of this litigation, the parties agree to the entry 
+of this Order:
+
+It is on this 4th day of Feb. 1997, ORDERED that defendants, Cyber 
+Promotions, Inc. ("Cyber") and Sanford A. Wallace, and their officers, 
+agents, servants, employees and any persons in active concert or 
+participation with them (collectively, "enjoinees"), are enjoined 
+effective February 7, 1997, as follows:
+
+1. Unless otherwise agreed to in writing by the parties, all unsolicited 
+e-mail sent by enjoinees to AOL or any of its members must be sent from 
+one of five domain names ("cyberpromo.com, answerme.com, savetrees.com, 
+pleaseread.com, or tosguard.com") registered with InterNIC and the header 
+containing the return address of such email must bear the same one of the 
+five domain names.  In other words, enjoinees are prohibited from 
+circumventing or attempting to circumvent the filtering effects of the 
+"PreferredMail" tool.
+
+2. Cyber shall configure the computers and software they use to enable 
+any AOL subscriber to remove himself or herself promptly and permanently 
+from Cyber's mailing list by use of the e-mail reply command.
+
+By the court:
+
+Charles R. Weiner 
+2/4/97
+
+LEGAL QUESTION: IS IT OK TO SPAM THE SPAMMERS?
+
+From: "Greg Bulmash" <gbhp@worldnet.att.net> 
+Subject: Here's a question for the happy hackers...
+
+If some stupid-ass web site e-mail spammed you, could you set up a 
+script to go to one of their publicly accessible pages and constantly 
+re-load selected graphics without caching them, allowing it to eat 
+their bandwidth as fast as your modem and their server could handle for 
+as long as you were willing to tie up your system?
+
+Also, is there a way to eat their bandwidth faster than your modem 
+can download it, i.e. sending requests as fast as you can send them 
+with packet spoofing so the graphics are being sent as fast as 
+their server and line can handle right into a bitbucket?
+
+I know that this isn't necessarily a good thing because it could be 
+used against any web site you wanted to bankrupt out of existence, so 
+please don't post the answer on how to do it.  Just post whether it's 
+possible and whether it's legal.
+
+This proliferation of e-mail spam has just ticked me off too much and 
+it would be really nice to sort of say "You want to waste bandwidth? 
+Okay, then let's waste some bandwidth, s*****!" and zing these jerks 
+where it really hurts... in the wallet.
+
+-Greg
+
+PRO-SPAM ISP DISCOVERED
+
+From: "Greg Bulmash" <gbhp@worldnet.att.net> 
+Subject: Spam Encouragement?
+
+For the HH List:
+
+Got spammed, and while checking out the spammer's ISP, I found this 
+public policy.
+
+------------------------------ 
+Business e-mail
+
+Business e-mail, a.k.a. "spamming" is defined in many way by many 
+people. We choose not to enter a debate on the definition of "spam'.
+
+We allow the sending of business e-mail to legally promote legal 
+activities.
+
+Business e-mail sites downstream of Sallynet.com (either its direct 
+customers or customer's customers, ad infinitum) must adhere to these 
+guidelines noted below. The intent is not to prevent any specific 
+activity per se, but to require business e-mail senders to retain 
+responsibility for their actions:
+
+Business e-mailers on our system must have a From: or Reply-to: address 
+that reaches a valid address of the sender. The sender must offer to 
+remove the recipient from the business e-mailers list in the message. A 
+business e-mail site may not intentionally deceive or misrepresent 
+themselves in order to subvert detection or avoid this policy. Business 
+e-mail site must make reasonable efforts to check all mailing list for 
+duplicates.
+
+Sallynet.com will follow the procedure below for dealing with 
+complaints about a specific site.
+
+Complaints about specific sites will be reviewed for illegal content.
+
+Note: When submitting complaints, remember that the sending of e-mail, 
+whether deemed solicited or unsolicited is not illegal.
+
+We will not review complaints containing profanity. Threats of a 
+fiscal or technical nature will be forwarded immediately to the proper 
+state and federal authorities.
+
+-------------------------
+
+I know only "legal" hacking is encouraged, but what can be done about 
+****-offs like this?  You can find the ISP's site at www.sallynet.com.
+
+-Greg
+
+----------------------------------------------------- 
+|"If you can find a better deal, I'll eat my foot"  | 
+| -  Earl "Stumpy" Johnson's famous last words      | 
+----------------------------------------------------- 
+|Greg Bulmash                       greg@bulmash.com| 
+|  Writing, Editing, DTP, Web Design & Sympathy     | 
+----------------------------------------------------- 
+|          Check Out My Award Winning Site          | 
+|             http://www.bulmash.com                      | 
+-----------------------------------------------------
+
+UGLY INTERNET HOAX REVEALED
+
+From: "Greg Bulmash" <gbhp@worldnet.att.net> 
+Date: Wed, 5 Feb 1997 23:49:47 -0800 
+Subject: Interesting Hoax?
+
+Got this in the mail tonight.  The gbhp@ix.netcom.com account was 
+cancelled a while back and just autoforwards.  As well, I doubt after 
+the Mitnick incident, Netcom would be dumb enough to keep sensitive 
+info on a networked computer that could be hacked from outside.
+
+Looks like a mail spoof where some a**** in Germany is trying to 
+cause a panic.  Thought I'd send it your way to show to the HH people 
+to see what they think. Full headers are attached.
+
+------------------- 
+From: gbhp@ix.netcom.com 
+Apparently-To: gbhp@ix.netcom.com 
+Reply-To: gbhp@ix.netcom.com 
+Return-Receipt-To: gbhp@ix.netcom.com 
+Received: from ixmail1.ix.netcom.com ([199.182.120.61]) 
+          by mtigwc01.worldnet.att.net (post.office MTA v2.0 0613 ) with 
+          ESMTP id AAA23661 for <gbhp@worldnet.att.net>; Thu, 6 Feb 1997 
+          04:40:45 +0000 
+Received: from gimli.Informatik.Uni-Oldenburg.DE 
+(gimli.Informatik.Uni-Oldenburg.DE [134.106.1.10]) by 
+ixmail1.ix.netcom.com (8.7.5/SMI-4.1/Netcom) 
+ id UAA18159; Wed, 5 Feb 1997 20:40:17 -0800 (PST) 
+Received: by gimli.Informatik.Uni-Oldenburg.DE (Smail3.1.29.1) 
+ id <m0vsLdl-0003LtC>; Thu, 6 Feb 97 05:40 CET 
+Received: at Infodrom Oldenburg (/\##/\ Smail3.1.29.1 #29.10 Joey) 
+ by finlandia.Infodrom.North.DE from ix.netcom.com with smtp 
+ id <m0vsLe3-001ZGPC>; Thu, 6 Feb 97 05:41 MET 
+Message-ID: <m0vsLe3-001ZGPC@finlandia.Infodrom.North.DE> 
+Subject: security breached by NaughtyRobot 
+Apparently-From: gbhp@ix.netcom.com 
+Apparently-From: gbhp@ix.netcom.com 
+Registered-mail-reply-requested-by: gbhp@ix.netcom.com 
+Sensitivity: PERSONAL-CONFIDENTIAL 
+Precedence: EMERGENCY 
+Comment: Authenticated sender is <gbhp@ix.netcom.com> 
+Organization: NaughtyRobot 
+Date: Thu, 6 Feb 97 04:41:00 +0000 
+Priority: urgent 
+X-PMFLAGS: 37748864 0
+
+This message was sent to you by NaughtyRobot, an Internet spider that 
+crawls into your server through a tiny hole in the World Wide Web.
+
+NaughtyRobot exploits a security bug in HTTP and has visited your host 
+system to collect personal, private, and sensitive information.
+
+It has captured your Email and physical addresses, as well as your phone 
+and credit card numbers.  To protect yourself against the misuse of this 
+information, do the following:
+
+ 1. alert your server SysOp, 
+ 2. contact your local police, 
+ 3. disconnect your telephone, and 
+ 4. report your credit cards as lost.
+
+Act at once.  Remember: only YOU can prevent DATA fires.
+
+This has been a public service announcement from the makers of 
+NaughtyRobot -- CarJacking its way onto the Information SuperHighway.
+
+-------------------------------------------- 
+----------------------------------------------------- 
+|"If you can find a better deal, I'll eat my foot"  | 
+| -  Earl "Stumpy" Johnson's famous last words      | 
+----------------------------------------------------- 
+|Greg Bulmash                       greg@bulmash.com| 
+|  Writing, Editing, DTP, Web Design & Sympathy     | 
+----------------------------------------------------- 
+|          Check Out My Award Winning Site          | 
+|             http://www.bulmash.com                      | 
+-----------------------------------------------------
+
+Moderator: This is definitely a hoax. The best tip-off is the "disconnect 
+your phone" line. Another tip-off is that few people keep their credit card 
+numbers on their hard disks. Get real, guys. But what is really bad about 
+this hoax is that incites irrational fear of hackers.
+
+From: "Greg Bulmash" <gbhp@worldnet.att.net> 
+Subject: A bit more information... 
+Reply-to: greg@bulmash.com
+
+Decided to start seeing if there were web servers at the addresses 
+along the bounce trail to contact sysadmins.  Note the first point in 
+the trail...
+
+---------------------- 
+Received: at Infodrom Oldenburg (/\##/\ Smail3.1.29.1 #29.10 Joey) 
+ by finlandia.Infodrom.North.DE from ix.netcom.com with smtp 
+ id <m0vsLe3-001ZGPC>; Thu, 6 Feb 97 05:41 MET 
+----------------------
+
+Then I hit their front page, see a link for their "sysop team" and look 
+what I find there...
+
+---------------------------- 
+Martin Schulze alias Joey 
+     ...pflegt das System (Betrieb, Software). Unser Guru Nr. 1 in 
+     Sachen Linux. EMail: joey@infodrom.north.de Tel. : 0441-980855-6 
+     (Di, Fr, ab 17 Uhr) 
+----------------------------
+
+Maybe it's nothing, maybe it's something, but if my guess is at all 
+correct, the jig is up.  Run it by your security experts.  But if any 
+police are going to be called, I think the ones in his city will be the 
+first.
+
+-Greg
+
+----------------------------------------------------- 
+|"If you can find a better deal, I'll eat my foot"  | 
+| -  Earl "Stumpy" Johnson's famous last words      | 
+----------------------------------------------------- 
+|Greg Bulmash                       greg@bulmash.com| 
+|  Writing, Editing, DTP, Web Design & Sympathy     | 
+----------------------------------------------------- 
+|          Check Out My Award Winning Site          | 
+|             http://www.bulmash.com                      | 
+-----------------------------------------------------
+
+DC-STUFF HACKER LIST FLAME WAR RAGES
+
+Moderator: our special email bomber flame war issue, in which I let 
+*everyone* flame to the max, has started a major flame war on the topic on 
+the dc-stuff email list. Since that moderated list doesn't allow me to post, 
+it is of course the perfect forum for those who don't want argument with 
+their positions that making email bombing programs available at the click of 
+a mouse is somehow freedom of speech.  My response is that these programs 
+are weapons and no more an expression of freedom of speech than is handing 
+out loaded guns on a school playground.
+
+If you would like to get involved in a moderated hacker list in which so 
+many can make the Orwellain argument that it is freedom of speech to stifle 
+freedom of speech by the handing out of email bombing programs, you may 
+subscribe by emailing majordomo@dis.org with message "subscribe dc-stuff." 
+List moderator is Pete Shipley <shipley@dis.org.>, an extremely talented 
+hacker and a security consultant to Wells Fargo. You may be able to get in 
+some opinions contrary to his at first because his procedure is to wait to 
+see if he doesn't like your ideas, in which case he first emails you 
+privately with an insulting message. Then, if you don't toe the line, he 
+imposes a blanket ban on any further posts from you. 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers

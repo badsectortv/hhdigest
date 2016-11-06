@@ -1,0 +1,490 @@
+Happy Hacker Digest Feb. 24-25, 1997 
+____________________________________ 
+This is a moderated list for discussions of *legal* hacking. Moderator is Carolyn Meinel. Please don’t send us anything you wouldn’t email to your friendly neighborhood narc, OK? Send posts to . Confidential email should be addressed to carolyn@cmeinel.com. 
+To subscribe or unsubscribe, email . 
+Happy hacking! “No one is wise at all times” -- Pliny the Elder 
+--------------------------------------------------------- 
+URL ‘O the Day: http://www.3com.com/nsc/501302s.html  has an excellent tutorial on Internet Protocol. Tip courtesy of T.Q.D.B., posted to the dc-stuff list.
+
+FTP site ‘O the Day: ftp.dimensional.com /users/jericho/security/unsubscribe.mailist.perl is a script that will automatically fix the type of email bomb attack that subscribes you to thousands of email lists. But get it to work you need to be using a POP server on a Unix box and save the initial flood of email until all the new “welcome to the Tomato Twaddler list messages stop coming in. Also, you cna only process less than a thousand messages at a time, or else memory requiremetns get out of hand. This script searches the email for welcome messages, extracts unsubscribe information, and automatically sends out messages to unsubscribe from them.
+
+Table of Contents
+
+Email Bomb Stuph 
+Looking for French-Speaking Hackers 
+Australian Hackers Unite!!! 
+More on IRC 
+Social Engineering 
+Covering Your IP Tracks 
+Linux Questions 
+Cracker Q&A 
+Win 95 Question 
+What’s This? 
+Rants
+
+EMAIL BOMB STUPH
+
+Moderator: I got two email bombs Sunday night to the address . The ISP that handles that email address did some profoundly stupid things. They run on Unix boxes, yet two tech support guys were asking me “/dev/null? What’s that? We never heard of that device!” So until I get things sorted out, don’t use that address, I’m taking the easy (for me) way out and just bouncing all messages back at the router for a few days in the hopes that the owners of all the lists  that I got subscribed to will get tired of the bounced messages and take me off.
+
+But, seriously, even though email bombs are at most a mild annoyance to me, they are a serious problem for the average Internet user. Every time some social retard puts up a Web site full of email bomb download options and a message saying “I’m a kewl hacker ‘cuz I know how to put email bomb downloads on my site,” he or she is making hackers look like noxious dunces. Now you know and I know that there are hackers who have more brains than that and who adhere to the hacker ethic of “do no harm.” But the guys who are trying to persuade the world that hacking = email bombing are working hard to get a witch hunt going against us.
+
+You know what? If I wanted to get harsh laws passed against hackers, I’d pay people to put up those pseudo-hacker email bomb download sites. Look at history -- this is a common tactic. So is anyone paying hackers to be agents provocateurs? Or are these guys blackening the name of hackers as their idea of fun? I don’t know. but if anyone comes up with evidence that any of these guys are taking money from law enforcement agencies, I’d sure like to see it.
+
+Anonymous post:
+
+Is there any way that I can find the identity of a prat who e-mail bombed 
+me, shutting down AOL's UK Mail servers?
+
+He/She is a social retard, and used the anomonious.com mail server to 
+initiate the bomb.
+
+Does the information in the GTMHH stand, or not.
+
+My local police force are starting an investigation, but I would like to 
+know who did it myself, so me and my many, many friends can publicly 
+exercise him/her!
+
+By the way, I am all for freedom of speech, but Child Pornography is NOT 
+freedom of speech, it's visual - so it ain't speech.  Saying you condone 
+child porn is freedom of speech!  Get your facts right.
+
+Please keep this anon!!!!!
+
+Here's a copy of the 'bomb.  Not very sophisticated, I know, but it's a 
+pain in the a****!
+
+Subj: I really don't like you at all 
+Date: 23/02/97  14:39:59 
+From: Idontlikeyou@anonymous.com 
+To: (Identity suppressed by moderator)
+
+I like E-MAIL bombing, it allows you to express your 
+anger against other people without using violence, and 
+in a complete anonymous way. If you don't think so, 
+then try to track me down, I dare you!!
+
+By the way, I'm totally against child porn, but 
+that doesn't give me the right to decide the fate 
+of the webmasters of such sites, it all comes 
+with something called freedom of speech, and if you 
+don't like it, then let the authorities know, 
+let them take care of that, that's what they're here 
+for anyway.
+
+From: Inigo Gonzalez <nexus@adv.es>
+
+On Sun, 16 Feb 1997 jericho@dimensional.com wrote:
+
+> > Moderator: Email bombing is a denial of service attack. If the attack 
+> 
+> Stop. That is a blanket statement that is untrue in some cases. If you 
+> email bomb someone by subscribing them to 1000 mail lists, and they are 
+> sitting on a T3 or better, running a mail server with half a gig of RAM, 
+> and a few gigs for the mail spool, it is not a denial of service attack. 
+> You are not stopping them from using any service. You are simply being a 
+> pain in the ass. If you do the same to someone on a P5/32M/1.2g with a 
+> 28.8 static connection, you are then denying them service.
+
+IMHO the DoS/AssPain doesn't need to come just from outside:
+
+  There are some e-mail programs which reply you automatically 
+once you send something to user@foo.bar (Netscape among others).
+
+  Usually user@foo.bar is just an alias for several e-mail 
+addresses (projects and so forth) in the same organization. If 
+you subscribe user@foo.bar to 1000 mailing lists, it will fill 
+every mailing list with an auto-reply ant it will be sent back 
+to him... unfortunately there is no X-Mail-Loop or something 
+present so every e-mail coming from the list will be:
+
+  1- Resent to all aliases. 
+  2- Quoted and resent to list. 
+  3- list will repost step 1 
+  4- unless (disk full || unsubscribed) -> goto 1 
+  5- Fix the program (or just get a better one).
+
+  I don't know why; but people is too much focused on e-mail 
+bombing nowadays instead of finger-wars /etc...
+
+Peace, 
+-- 
+ I=F1igo Gonzalez <nexus@adv.es> <igonzalez@usa.net> 
+ Don't waste your money. Hire a hacker for more 
+ than "just security" stuff -- my53lf
+
+LOOKING FOR FRENCH-SPEAKING HACKERS
+
+Robert Prouse <robert@mail.pf>
+
+Hello from French Polinesia :-) 
+I'm a lonely hacker here, and I'm looking for French link, News groups... 
+Can you help me? 
+I'm looking also about TRANSPAC information and local dial-up... 
+Thanks in advance... 
+And sorry for my English cos I'm French. ;-) Congratulation for your Guide 
+to Harmless Hacking. Very interesting. 
+ Bye Bye !!! 
+   Robert
+
+AUSTRALIAN HACKERS UNITE!
+
+Sender: warpy@null.net
+
+This is in responce to Dunebuggy's call for more hackers from Australia. 
+There are plenty of hackers in Australia, and likewise just Carolyn said 
+there are plenty on this list. However the majority of them.. like myself 
+have taken up email forwarding addresses - so you may not realise it upon 
+first glance.
+
+Another thing is that we LIKE to hang out discussing  systems from the 
+US.. that way the likelihood of us getting into trouble is diminished, i.e. 
+instead of going "how do i get into telstra bigpond?" we look at systems n 
+further shores.
+
+Pop into infowar's irc server at www.infowar.com port 6667 and you'll see 
+what i mean. We may be a minority.. but we're here.
+
+Warpy
+
+Moderator: Watch out, hacking foreign computers does not make you safe. For example, in the US, if you hack from inside the country into a foreign computer, the first thing that does is give jurisdiction for the crime to the FBI. The second thing it does is create the potential for a diplomatic incident, especially if someone gets the idea you are doing industrial espionage. It doesn’t matter if you are innocent. Just ask Kevin Mitnick, who wound up as America’s most wanted computer criminal with his picture on the front page on the _New York Times_ newspaper. Mitnick’s crime was basically being a pest and getting a reporter, John Markoff, really mad at him. Note to the guys who like to hack and email bomb me: I am a reporter, too!;^)
+
+MORE ON IRC
+
+From: Cerenyx <cerenyx@mbox2.singnet.com.sg>
+
+In reply to the email,
+
+                     If they were oped by this person called "ChanServ" 
+,then it means that they were registered as ops of this channel under 
+the administrative 'bot on the server. In short, they are rightfully 
+the ops of the channel!
+
+As to how you take over a channel, 
+                     Sometimes in IRC, a netsplit occurs. For example,
+
+A----B---D 
+   | 
+   | 
+   C
+
+A, B, C and D are 4 IRC servers on the Internet. They are connected by these 
+lines "----". There are people on all 4 of the servers. When a netsplit occurs, 
+lets say, server A's lines will disappear, causing servers B , D and A itself 
+to be unable to communicate with C. B and D will also not be able to communicate 
+with A. When that happens, people in the servers will be seen quitting one by 
+one. Chances are, there will only be you left. Then you quit and rejoin again, 
+as if creating a new channel. Then you'll be ops! But the channel might have 
+been registered with ChanServ, and in that case it will deop you...
+
+Cerenyx.
+
+<snip from HH 3-3> 
+>Yes, on IRC it is possible to identify the dynamically 
+>assigned IP address of your home computer and send stuff directly to your 
+>modem! If the bully has a decent computer, he or she may be able to ping 
+>yours badly enough to briefly knock you out of IRC.
+
+Can your ISP detect a ping -l or ping -f? (would this be considered 
+illegal??)
+
+Secondly, 
+<snip from HH 3-3> 
+>If they were able to sneak into the channel and get OPs just like that, 
+then 
+>chances are they are much more experienced and dangerous than you are.
+
+Just curious, but this happened to me the other day...how do they perform 
+such an act? (it had a message that the server itself oped them)
+
+Regards...
+
+[-=Cerenyx=-]
+
+SOCIAL ENGINEERING
+
+From: Marko Samastur <Marko.Samastur@fmf.uni-lj.si>
+
+Well, congratulations. You just prove that you don't have a clue about 
+psychology. But let's get come to this a bit later. 
+First I'd like to say that I'm not against SE. On the contrary, I use(d) 
+it so often that I don't count anymore. And yes, it 's very helpful to 
+gain access to computers or even to get into one. But, it never was and 
+never will be hacking. That's all basically, what I want to make say. 
+And about my ability to hack people. My sister was with me when I was 
+reading HH digest and she couldn't stop laughing. Why? If I'm good at 
+something, then it's in manipulation and knowing people (actually, I'm 
+much better in this than in computers, but I'm working on it). And no, 
+people are not hard to hack. Actually at least for me it's nothing 
+easier then to see when someone is lying (there are dozens of different 
+signs and if you would spend just one day at library, you should be able 
+to recognize them even if you have no talent for psychology at all). Oh, 
+and the answer to other questions is yes, I can do it (but feel free to 
+doubt). In a way, people are like dogs, with little experience it 
+becomes quite obvious what they are up to. 
+And about getting out some more. Why do you think I don't know about 
+computers more than I do? ;) 
+A little test, for you intergalactic (the results you can email to my 
+address). How much you can tell about me (if at least profession and 
+aprox. age are not obvious to you, then leave SE alone)?
+
+And to Bernz. In general I agree with you. It's just that I like to have 
+words well defined (like in math), so it's less confusion out there. And 
+this is what has been done to word hacker. That's all. :)
+
+COVERING YOUR IP TRACKS
+
+From: bobbhall@hotmail.com
+
+ I was recently on the web browsing some pages when I came across a page 
+that said I was in big trouble for accessing it and that they had my IP 
+address and that it was 164.237.23.5.... Do you think that they really have 
+my IP? or is it just another HTML trick like saying “Click here to see what 
+I know about your HD” and having a link to “file://c:\”  ( I have done that 
+and its fun seeing people freak out). If they do have my IP then how can I 
+prevent this from happening in the future? 
+    Thanx                        †ØXÏ© ~®@$H
+
+Moderator: Yes, they really had your IP address. To cover your tracks while browsing, start out at one of the Web sites that anonymizes you. Several URLs for these have been posted in back issues of the Digests, archived at http://www.infowar.com under Hackers forum, under Happy Hacker Digests topic. But don’t count on those anonymizer Web sites being your friends -- cyberspace is a murky place.
+
+LINUX QUESTIONS
+
+From: "Stephen James" <sjamesflorida-wellington@worldnet.att.net>
+
+ I have the Linux packages on /dev/hda1. I mounted it with the "mount -t 
+msdos (yes, it's a msdos drive) /dev/hda1 /dosc" command ("can't find the a 
+series").  Setup can't recognize this pre-mounted partition.  I am sure I 
+have gone through the proper menus.  I also tried to install from disks. 
+Setup tells me that "this does not look like the correct disk."  I have an 
+"a1" directory on each of the disks.  When I let Setup mount the partition 
+for me, it still says (after I input the source directory) that it "can't 
+find the a series. 
+ I 'm sorry for the length of this message, but I wanted to give you a 
+clear picture of my problem so that you can possibly help me.  I have an 
+IBM PS/1, 486 SX/2 with 8 MB of RAM
+
+Please help,
+
+Steve James 
+ 
+
+Sender: Jackal332@aol.com
+
+This is my first time posting so bear with me...I am quite the newbie and I'd 
+like to install Linux on my PC.  I have downloaded the software and 
+successfully set it up on a separate hard drive (d:) but my problem is this: 
+ Windows 95 (c:) seems to more or less hate the Linux Native format of drive 
+D.  In fact, when I start the computer my pretty picture comes up as my 
+background but it sits there...no icons, no start menu, nothing!  In order to 
+make Win 95 act sensibly again I have to re-format the second drive as a DOS 
+format.  I would like to have Linux accessible by boot disk and running apart 
+from Windows.  Any help on how I can get Windows 95 to, in essence, ignore or 
+accept the second hard drive containing Linux would be greatly appreciated. 
+ Thanks for posting this...
+
+  -=- Jackal -=-
+
+Moderator: On my Win 95 system I have to turn the computer off -- not just control-alt-delete, but actually power down. Then I put the Linux Loader (Lilo) disk in the a: drive and turn it back on. This is the only way I can get it to work consistently. Several times I got going by starting off the CD-ROM basically by pretending I was installing Linux. But that s***s. Anyone know a better way to make Win95 behave with Linux?
+
+CRACKER Q&A
+
+From: PsyChadEl <oberoi@hal-pc.org> 
+Subject: KeyLoggers
+
+Thanx for the info on the keylogger Xenakis...
+
+>-----> Keylogger95, is currently not available at Silicon's site, try: 
+>http://www.rks.telia.lv/users/hack/hacking_utilities/keylog95.zip 
+>It is easy to install, but it makes multiple files, and it displayed a 
+>small gray toolbar 
+>icon that says upon opening "Minimize this window." (good luck trying to 
+>hide it!!!!)
+
+If anyone wants KeyLogger95, which dumps the keys into only one file and 
+says something else instead of "Minimize this window." (or nothing at all), 
+then please mail me and I'll pass it on to U. It's a little version of it 
+that I hexed...
+
+AGAIN: If anyone has any info on windows apis or any other dlls that could 
+help in writing a dll - or know of some way by which I could completely cloak 
+KeyLogger95, then please let me know.
+
+Thanx, Dunebuggy for the name of the man with the wicked wicked hair.
+
+** * * * * * * * * * * * 
+* I found it hard,     * 
+* It was hard to find, * 
+* A will,              * 
+* Whatever,            * 
+* Nevermind.           * 
+*                      * 
+* - Kurt Cobain 67-94  * 
+* * * * * * * * * * * **
+
+        / 
+   ____/_\____ 
+      /   \ 
+     /     \ 
+  .AnaRchy_InC. 
+  <Gaurav Oberoi> 
+  http://www.geocities.com/sunsetstrip/alley/6644 
+ 
+
+Sender: warpy@null.net
+
+I've been looking around my ISP and found a file pwd.db in the /etc dir. 
+What exactly is this..?
+
+Also, how do i detect whether a remote system is running NIS or NFS? When 
+I do rpcinfo -p hostname, and it comes up 2049/NFS or whatever.. is that 
+suggesting that it's running NFS. If it doesn't show NFS and it does 
+connect does that mean that it's NIS by default..?
+
+Warpy
+
+...Please anonymise this message...
+
+I recently read your gtmhh 1-6, and you said that you telneted to port 80 on phreak.org and received their html source for 
+an error message. I tried telneting to port 80 on some random computers, and got nothing.
+
+How did you get it? The reason I care is, couldn't you just cut && paste to your local browser and see the page? Further more, why not telnet to a port with a password-protected page, get the source and view (not for any porn, for privileged information)? The cgi password script couldn't be implemented on a port(80) daemon could it? All this has probably been thought of before, and been fixed, but I just thought it would be pretty cool...thx.
+
+  [^Belgarath^]
+
+Moderator: the point of that little experiment was to show that different Web servers, which are typically what you find running on port 80, can use different software. In that case it was fun getting that error message because that told me what software was running on that port. But the port 80 that you played with was running different software. So you didn’t hit that particular bug.
+
+As some hackers have so pointedly flamed me, I need to make it clear that once you get to a port, your phun has only begun. Next step is to figure out what is running on that port. Then the next step is to find out if there are known problems with that software. Next, and by far the most elite step, is to discover something new. But in the process of discovering something new you might cause that box to crash, hang, or even, who knows, dump you into a root shell. So I strongly advise doing the really serious probing only on your own box or that of a consenting person or company. Then if you make a significant discovery you can take credit for it and become a well-paid security guru. Sure, some people like having to sneak around an be impoverished and spend time I jail, but I could discover a serious security flaw, I’d rather take the fame and money.
+
+From: "Michael Todd" <trelane@infocom.com>
+
+      I'm sure that this is some type of hacking but it is for a good 
+cause. I need to get into a Novell 4.1 server with Admin rights. Good luck 
+you say? My reason is this: not for anything illegal, destructive or the 
+like but because of a problem. At the job where I work, our Network Admin 
+left abruptly, leaving passwords on a lot of stuff and didn't tell anyone 
+what they were. We have no way of tracking him down and we can still access 
+some programs, data and our user directories but cannot change any settings 
+on the server. I have been promoted to Network Admin with the understanding 
+that I'll get it all fixed. Ok, sure it's easy right? Down the server, edit 
+some files with a hex-editor...right? There's where the problem begins... 
+      Before he left, he also unplugged the keyboard from the server. Now, 
+you can't plug the keyboard in on this particular server. Well, you can but 
+it doesn't do any good. It's hard to down the server with no keyboard. I 
+need to be able to down the server from a remote computer or edit the 
+password list. Keep in mind that no one has any admin rights but the person 
+who left. RConsole will not work without rights. Calling Novell is an 
+option, I realize but at $200 bucks a call.... 
+       I really don't want to do that because I want the company to trust 
+and depend on me. He took out all the backdoors that the company had put in 
+so there's really nothing there. I don't want to just turn the server off 
+and watch it crash. There has to be a way to administer the server, down 
+it, or change passwords or rights from a remote station without admin 
+rights. If anyone can help with this or if anyone knows anyone who could, 
+please email me. I'd appreciate no flames or bombs....not really in the 
+mood to fight back at this time. 
+trelane@infocom.com
+
+WIN 95 QUESTION
+
+PLz post this anonymously.
+
+I would like some info on how to change win95 boot up screen.
+
+I have tried but I can't seem to achieve this.
+
+Also could someone plz explain to me what exactly can be done with Win95 
+system registry and how it works.
+
+I appreciate your help...thank you
+
+Warlock
+
+From: "SauRON *THe* DaRKLORD" <sauron@themall.net>
+
+I have read the last version of the Happy Hacker.  I just wanted to quickly 
+know what is the NAME of the file on the Win '95 bootup that looks 
+like clouds.  I have been trying to find that out for a while.   I HATE 
+those 
+white CLOUDS.
+
+I  am  t h e  c h o s e n  o n e
+
+Moderator: You can find that file in c:\windows\clouds.bmp. But perhaps what you really want to know is how to choose your background so you don’t have to look at boring clouds any more? If that is the case, click “start” then “settings” then “control panel” then “display.” The “clouds” image is on the “background” menu. You can pick from anything there, or make your own background.
+
+If you want to create an insanely great background, here’s a kewl tip. Go to some really outrageous Web site. For example, the hacked CIA Web site is archived at http://www.3rdplanet.com/~evan/gov/hacked/cia. When you have your browser on the page of your choice, hit the “print screen” button. This puts a Explorer bitmap of the page into your Windows clipboard. Next click on “start,” then “programs” then on “Accessories” then your will see the program “MSPaint.” Double click on MSPaint to run the program. Then in the MSPaint program click on “edit” then click on “paste.” That puts your image of your favorite deranged Web page into the paint program. Then you can use the program to mess around and , um, personalize the image. Then click on “file,” then click on “set as wallpaper.” Voila, instant deranged wallpaper!
+
+WHAT’S THIS?
+
+From: " Sebas  ." <prograss@hotmail.com>
+
+Hey Carolyn and all! 
+I just discovered something: 
+When I connect to my ISP after writing the login and the password they told me 
+to write ppp default. 
+I wrote ppp return and it said "enter IP Address" or something like that instead 
+of default I tried telepac.pt and I got connected with telepac.pt IP address but 
+I couldn't connect to anything but my ISP.
+
+Anyone knows why this happens and how can I make it work? If possible..
+
+Thanx
+
+progress
+
+RANTS
+
+This might sound like a rant so here goes....
+
+  This is the attitude of the experienced Hackers to the Newbies. Who the 
+hell do you think they are? I am a newbie and how am I meant to learn if 
+people are always putting me down without grounds? I don't WANT your damn 
+information handouts! You can insert them up your anal passage for all I 
+care. Not all newbies are ignorant tosses who want to act like twits and 
+crash every system they can find. We ARE interested in learning and share 
+as much of a love of computers as you do. O.K? I'm going to take a long lie 
+down in a darkened room.......
+
+Secondly I think people who don't think SE is worth investing time in.... I 
+feel sorry for you. My heart goes out. You must be THE saddest and 
+loneliest people in existence. People NEED people. You can deny your 
+emotions, try and be a machine, you can't change what you are.
+
+Rant over. Where did I leave that bottle?
+
+That's it for now. 
+Stay Happy.
+
+Sam 
+(A young impressionable Prozac fiend)
+
+From: d.boyda@virgin.net (d.boyda@virgin.net)
+
+hello all, 
+ I have to say that on this occasion I agree with that guy FantomPHox, that 
+every one should be taught how to hack ,,,properly.. I mean its all right 
+learning how to port surf and finger ,but wouldn't I suppose the majority 
+of us would like to know how to really hack,( break into systems , webpage 
+hack, leave calling cards on the system getting past passwords or ways 
+around them, or spoof your own IP address,,.)
+
+Really it is our lives and if we want to f**** it up then tough for us , you 
+did warn us after all. I also disagree with Fantomphox as whether Carol is 
+a seasoned hacker or not, it doesn't matter, many ppl have learned through 
+her experience<----??..
+
+But what I must say is ` Isn't hacking a culture only graced to those who 
+have the will and the patience to learn and read and to try out the 
+exploits they find ?.` So many text files state  `free access to all 
+information`  well this wont happen if we just get a diluted lesson on how 
+to hack. To be brutally honest Carol all you are doing is making a 
+generation of diluted hackers.   Carolyn do you work for the FBI maybe to 
+teach the next generation to become newbies and to stay newbies..??
+
+p.'s Ill end it here saying that while I wish to learn the ways of an Elite 
+hacker ,I do want the decision to use it as I see fit ,be it good or 
+destructive....
+
+thanks for listening..
+
+LazEdawg .
+
+Moderator: Do I work for the FBI? Let’s look at the evidence. As reported by Wired magazine and Internet Underground magazine, I hang out with computer crime detective Ira Winkler. I arranged for our Hackers forum, archives and IRC chat group to be hosted at http://www.infowar.com, which is probably the biggest computer security site there is, serving narcs from all over the planet. Why, I must be, I must be... duh, why that means I must be a dedicated computer criminal, yeah, heh, heh... Ms. Reno, my check is late!! Remember, you need me to keep all these newbies from discovering RFCs!!!!!
