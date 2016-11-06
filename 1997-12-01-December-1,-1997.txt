@@ -1,0 +1,819 @@
+     __ __                      __ __         __ 
+    / // /__ ____  ___  __ __  / // /__ _____/ /_________
+   / _  / _ `/ _ \/ _ \/ // / / _  / _ `/ __/  '_/ -_)__/
+  /_//_/\_,_/ .__/ .__/\_, / /_//_/\_,_/\__/_/\_\\__/_/  
+           /_/  /_/   /___/                             
+
+              ___  _              __ 
+             / _ \(_)__ ____ ___ / /_
+            / // / / _ `/ -_|_- / __/
+           /____/_/\_, /\__/___/\__/ 
+                  /___/   
+
+          December 1, 1997
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Contents:
+
+
+	* R.J. Gosselin  --  MS Office Major Encryption Problem
+	* Agent Steal --  Getting Arrested by the Feds !
+ 	* Carolyn Meinel --  Network Attack Trends Report (Fwd)
+	* Carolyn Meinel --  Major security flaw in Cybercash 2.1.2
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MS Office Major Encryption Problem -- RJ
+
+{NAME WITHHELD} discovered what looks like a major hole in Microsoft Office
+(95 and 97)passworded files.  He relayed the information to me, and I have
+tested it locally on my system.  I have been able to reproduce it.
+
+In his original message to me, he wrote 
+"While the files are encrypted (and I know that the Office 95 file
+encryption is laughably weak), *the file attachments are not.* So if you
+attach a Visio picture or Excel spreadsheet to a passworded Word file,
+they are saved in the clear. Any ASCII file viewer can be used to easily
+verify this.
+
+Needless to say, one can get a lot of information from attachments.
+
+This problem exists for both Word and Excel, 95 and 97.
+
+I e-mailed to secure@microsoft.com and never received a reply besides
+the boilerplate "if we consider this a security problem we'll contact you
+within one business day, otherwise call support."
+
+So if you really want to safeguard your MS Office files, use a third-party
+encryption package."
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+Many thanks to Betty G.O'Hearn who is the
+assistant to Mr. Winn Schwartau for forwarding this to me.  It is long, but
+insightful, so I have reproduced it inits entirety.
+
+----------------------------------------------------------------
+EVERYTHING A HACKER NEEDS TO KNOW ABOUT GETTING BUSTED BY THE FEDS
+----------------------------------------------------------------
+   Written By Agent Steal (From Federal Prison, 1997)
+      Internet E-mail, agentsteal@usa.net
+      Contributions and editing by Minor Threat and Netta Gilboa
+      Special thanks to Evian S. Sim
+   
+This article may be freely reproduced, in whole or in part, provided
+acknowledgments are given to the author. Any reproduction for profit, lame
+zines, (that means you t0mmy, el8, you thief) or law enforcement use is
+prohibited. The author and contributors to this phile in no way advocate
+criminal behavior.
+   ----------------
+   CONTENTS
+   ----------------
+   
+   PART I - FEDERAL CRIMINAL LAW
+   
+   Foreward
+   
+   Introduction
+   
+   A. Relevant Conduct
+   B. Preparing for Trial
+   C. Plea Agreements and Attorneys
+   D. Conspiracy
+   E. Sentencing
+   F. Use of Special Skill
+   G. Getting Bail
+   H. State v. Federal Charges
+   I. Cooperating
+   J. Still Thinking About Trial
+   K. Search and Seizure
+   L. Surveillance
+   M. Presentence Investigation
+   N. Proceeding Pro Se
+   O. Evidentiary Hearing
+   P. Return of Property
+   Q. Outstanding Warrants
+   R. Encryption
+   S. Summary PART II - FEDERAL PRISON
+   
+   
+   A. State v. Federal
+   B. Security Levels
+   C. Getting Designated
+   D. Ignorant Inmates
+   E. Population
+   F. Doing Time
+   G. Disciplinary Action
+   H. Administrative Remedy
+   I. Prison Officials
+   J. The Hole
+   K. Good Time
+   L. Halfway House
+   M. Supervised Release
+   N. Summary
+   
+   FOREWORD
+   
+Nobody wants to get involved in a criminal case and I've yet to meet a
+hacker who was fully prepared for it happening to them. There are thousands
+of paper and electronic magazines, CD-ROMS, web pages and text files about
+hackers and hacking available, yet there is nothing in print until now that
+specifically covers what to do when an arrest actually happens to you. Most
+hackers do not plan for an arrest by hiding their notes or encrypting their
+data, and most of them have some sort of address book seized from them too
+(the most famous of which still remains the one seized from The Not So
+Humble Babe). Most of them aren't told the full scope of the investigation
+up front, and as the case goes on more comes to light, often only at the
+last minute. Invariably, the hacker in question was wiretapped and/or
+narced on by someone previously raided who covered up their own raid or
+minimized it in order to get off by implicating others. Once one person
+goes down it always affects many others later. My own 
+experience comes from living with a retired hacker arrested ten months after
+he had stopped hacking for old crimes because another hacker informed on
+him in exchange for being let go himself. What goes around, comes around.
+It's food for thought that the hacker you taunt today will be able to cut a
+deal for himself by informing on you later. From what I've seen on the
+criminal justice system as it relates to hackers, the less enemies you pick
+on the better and the less groups you join and people who you i nteract
+with the better as well. There's a lot to be said for being considered a
+lamer and having no one really have anything to pin on you when the feds
+ask around.
+   
+I met Agent Steal, ironically, as a result of the hackers who had fun
+picking on me at Defcon. I posted the speech I gave there on the Gray Areas
+web page (which I had not originally intended to post, but decided to after
+it was literally stolen out of my hands so I could not finish it) and
+someone sent Agent Steal a copy while he was incarcerated. He wrote me a
+letter of support, and while several hackers taunted me that I had no
+friends in the community and was not wanted, and one even mailbombed our
+CompuServe account causing us to lose the account and our email there, I
+laughed knowing that this article was in progress and that of all of the
+publications it could have been given to first it was Gray Areas that was
+chosen.
+   
+This article marks the first important attempt at cooperation to inform the
+community as a whole (even our individual enemies) about how best to
+protect themselves. I know there will be many more hacker cases until
+hackers work together instead of attacking each other and making it so easy
+for the government to divide them. It's a sad reality that NAMBLA,
+deadheads, adult film stars and bookstores, marijuana users and other
+deviant groups are so much more organized than hackers who claim to be so
+adept at, and involved with, gathering and using information. Hackers are
+simply the easiest targets of any criminal subculture. While Hackerz.org
+makes nice T-shirts (which they don't give free or even discount to hackers
+in jail, btw), they simply don't have the resources to help hackers in
+trouble. Neither does the EFF, which lacks lawyers willing to work pro bono
+(free) in most of the 50 states. Knight Lightning still owes his attorney
+money. So does Bernie S. This is not something that disappears from your
+life the day the case is over. 80% or more of prisoners lose their lovers
+and/or their families after the arrest. While there are notable exceptions,
+this has been true for more hackers than I care to think about. The FBI or
+Secret Service will likely visit your lovers and try to turn them against
+you. The mainstream media will lie about your charges, the facts of your
+case and the outcome. If you're lucky they'll remember to use the word
+"allegedly." While most hackers probably think Emmanuel Goldstein and 2600
+will help them, I know of many hackers whose cases he ignored totally when
+contacted. Although he's credited for helping Phiber Optik, in reality
+Phiber got more jail time for going to trial on Emmanuel's advice than his
+co-defendants who didn't have Emmanuel help them and pled instead. Bernie
+S. got his jaw broken perhaps in part from the government's anger at
+Emmanuel's publicizing of the case, and despite all the attention Emmanuel
+has gotten for Kevin Mitnick it didn't stop Mitnick's being put in
+solitary confinement or speed up his trial date any. One thing is clear
+though. Emmanuel's sales of 2600 dramatically increased as a result of
+covering the above cases to the tune of over 25,000 copies per issue. It
+does give pause for thought, if he cares so much about the hackers and not
+his own sales and fame, as to why he has no ties to the Hackerz.org defense
+fund or why he has not started something useful of his own. Phrack and
+other zines historically have merely reposted incorrect newspaper reports
+which can cause the hackers covered even more damage. Most of your hacker
+friends who you now talk to daily will run from you after your arrest and
+will tell other people all sorts of stories to cover up the fact they don't
+know a thing. Remember too that your "friends" are the people most likely
+to get you arrested too, as even if your phone isn't wiretapped now theirs
+may be, and the popular voice bridges and conference calls you talk to them
+on surely are.
+   
+They say information wants to be free, and so here is a gift to the
+community (also quite applicable to anyone accused of any federal crime if
+one substitutes another crime for the word hacking). Next time you put down
+a hacker in jail and laugh about how they are getting raped while you're on
+IRC, remember that someone is probably logging you and if you stay active
+it's a good bet your day will come too. You won't be laughing then, and I
+hope you'll have paid good attention when you're suddenly in jai l with no
+bail granted and every last word you read here turns out to be true. Those
+of us who have been there before wish you good luck in advance. Remember
+the next time you put them down that ironically it's them you'll have to
+turn to for advice shoul d it happen to you. Your lawyer isn't likely to
+know a thing about computer crimes and it's the cases of the hackers who
+were arrested before you which, like it or not, will provide the legal
+precedents for your own conviction.
+   
+Netta "grayarea" Gilboa
+   
+INTRODUCTION
+   
+The likelihood of getting arrested for computer hacking has increased to an
+unprecedented level. No matter how precautionary or sage you are, you're
+bound to make mistakes. And the fact of the matter is if you have trusted
+anyone else with the know ledge of what you are involved in, you have made
+your first mistake.
+   
+For anyone active in hacking I cannot begin to stress the importance of the
+information contained in this file. To those who have just been arrested by
+the Feds, reading this file could mean the difference between a three-year
+or a one-year sentence. To those who have never been busted, reading this
+file will likely change the way you hack, or stop you from hacking altogether.
+   
+I realize my previous statements are somewhat lofty, but in the 35 months I
+spent incarcerated I've heard countless inmates say it: "If I knew then
+what I know now." I doubt that anyone would disagree: The criminal justice
+system is a game to be played, both by prosecution and defense. And if you
+have to be a player, you would be wise to learn the rules of engagement.
+The writer and contributors of this file have learned the hard way. As a
+result we turned our hacking skills during the times of our incarceration
+towards the study of criminal law and, ultimately, survival. Having filed
+our own motions, written our own briefs and endured life in prison, we now
+pass this
+knowledge back to the hacker community. Learn from our experiences... and
+our mistakes.
+   
+Agent Steal
+   
+   PART I - FEDERAL CRIMINAL LAW
+   
+   A. THE BOTTOM LINE - RELEVANT CONDUCT
+   
+For those of you with a short G-phile attention span I'm going to cover the
+single most important topic first. This is probably the most substantial
+misunderstanding of the present criminal justice system. The subject I am
+talking about is referred to in legal circles as "relevant conduct." It's a
+bit complex and I will get into this. However, I have to make his crystal
+clear so that it will stick in your heads. It boils down to two concepts:
+   
+   I. ONCE YOU ARE FOUND GUILTY OF EVEN ONE COUNT, EVERY COUNT WILL BE USED
+TO CALCULATE YOUR SENTENCE
+   
+Regardless of whether you plea bargain to one count or 100, your sentence
+will be the same. This is assuming we are talking about hacking, code
+abuse, carding, computer trespass, property theft, etc. All of these are
+treated the same. Other crimes you committed (but were not charged with)
+will also be used to calculate your sentence. You do not have to be proven
+guilty of every act. As long as it appears that you were responsible, or
+someone says you were, then it can be used against you. I know this sounds
+insane , but it's true; it's the preponderance of evidence standard for
+relevant conduct. This practice includes using illegally seized evidence
+and acquittals as information in increasing the length of your sentence.
+   
+   II. YOUR SENTENCE WILL BE BASED ON THE TOTAL MONETARY LOSS
+   
+The Feds use a sentencing table to calculate your sentence. It's simple;
+More Money = More Time. It doesn't matter if you tried to break in 10 times
+or 10,000 times. Each one could be a count but it's the loss that matters.
+And an unsuccessful attempt is treated the same as a completed crime. It
+also doesn't matter if you tried to break into one company's computer or
+10. The government will quite simply add all of the estimated loss figures
+up, and then refer to the sentencing table.
+   
+   B. PREPARING FOR TRIAL
+   
+I've been trying to be overly simplistic with my explanation. The United
+States Sentencing Guidelines (U.S.S.G.), are in fact quite complex. So much
+so that special law firms are forming that deal only with sentencing. If
+you get busted, I would highly recommend hiring one. In some cases it might
+be wise to avoid hiring a trial attorney and go straight to one of these
+"Post Conviction Specialists." Save your money, plead out, do your time.
+This may sound a little harsh, but considering the fact that the U.S.
+Attorney's Office has a 95% conviction rate, it may be sage advice.
+However, I don't want to gloss over the importance of a ready for trial
+posturing. If you have a strong trial attorney, and have a strong case, it
+will go a long way towards good plea bargain negotiations.
+   
+   C. PLEA AGREEMENTS AND ATTORNEYS
+ 
+Your attorney can be your worst foe or your finest advocate. Finding the
+proper one can be a difficult task. Costs will vary and typically the
+attorney asks you how much cash you can raise and then says, "that amount
+will be fine". In actuality a simple plea and sentencing should run you
+around $15,000. Trial fees can easily soar into the 6 figure category. And
+finally, a post conviction specialist will charge $5000 to $15,000 to
+handle your sentencing presentation with final arguments.
+   
+You may however, find yourself at the mercy of The Public Defenders Office.
+Usually they are worthless, occasionally you'll find one that will fight
+for you. Essentially it's a crap shoot. All I can say is if you don't like
+the one you have, fire them and hope you get appointed a better one. If
+you can scrape together $5000 for a sentencing (post conviction) specialist
+to work with your public defender I would highly recommend it. This
+specialist will make certain the judge sees the whole picture and will
+argue in the most effective manner for a light or reasonable sentence. Do
+not rely on your public defender to thoroughly present your case. Your
+sentencing hearing is going to flash by so fast you'll walk out of the
+court room dizzy. You and your defense team need to go into that hearing
+fully prepared, having already filed a sentencing memorandum.
+   
+The plea agreement you sign is going to affect you and your case well after
+you are sentenced. Plea agreements can be tricky business and if you are
+not careful or are in a bad defense position (the case against you is
+strong), your agreement may get the best of you. There are many issues in a
+plea to negotiate over. But essentially my advice would be to avoid signing
+away your right to appeal. Once you get to a real prison with real
+jailhouse lawyers you will find out how bad you got screwed. That issue
+notwithstanding, you are most likely going to want to appeal. This being
+the case you need to remember two things: bring all your appealable issues
+up at sentencing and file a notice of appeal within 10 days of your
+sentencing. Snooze and loose.
+   
+I should however, mention that you can appeal some issues even though you
+signed away your rights to appeal. For example, you can not sign away your
+right to appeal an illegal sentence. If the judge orders something that is
+not permissible by statute, you then have a constitutional right to appeal
+your sentence.
+   
+I will close this subpart with a prison joke. Q: How can you tell when your
+attorney is lying? A: You can see his lips moving.
+   
+   D. CONSPIRACY
+   
+Whatever happened to getting off on a technicality? I'm sorry to say those
+days are gone, left only to the movies. The courts generally dismiss many
+arguments as "harmless error" or "the government acted in good faith". The
+most alarming trend, and surely the root of the prosecutions success, are
+the liberally worded conspiracy laws. Quite simply, if two or more people
+plan to do something illegal, then one of them does something in
+furtherance of the objective (even something legal), then it's a crime.
+Yes, it's true. In America it's illegal to simply talk about committing a
+crime. Paging Mr. Orwell. Hello?
+   
+Here's a hypothetical example to clarify this. Bill G. and Marc A. are
+hackers (can you imagine?) Bill and Marc are talking on the phone and
+unbeknownst to them the FBI is recording the call. They talk about hacking
+into Apple's mainframe and erasing the prototype of the new Apple Web
+Browser. Later that day, Marc does some legitimate research to find out
+what type of mainframe and operating system Apple uses. The next morning,
+the Feds raid Marc's house and seize everything that has wires. Bill and
+Marc go to trial and spend millions to defend themselves. They are both
+found guilty of conspiracy to commit unauthorized access to a computer system.
+   
+   E. SENTENCING
+   
+At this point it is up to the probation department to prepare a report for
+the court. It is their responsibility to calculate the loss and identify
+any aggravating or mitigating circumstances. Apple Computer Corporation
+estimates that if Bill and M arc would have been successful it would have
+resulted in a loss of $2 million. This is the figure the court will use.
+Based on this basic scenario our dynamic duo would receive roughly
+three-year sentences.
+   
+As I mentioned, sentencing is complex and many factors can decrease or
+increase a sentence, usually the latter. Let's say that the FBI also found
+a file on Marc's computer with 50,000 unauthorized account numbers and
+passwords to The Microsoft Network. Even if the FBI does not charge him
+with this, it could be used to increase his sentence. Generally the
+government places a $200-per-account attempted loss on things of this
+nature (i.e. credit card numbers and passwords = access devices). This
+makes for a $10 million loss. Coupled with the $2 million from Apple, Marc
+is going away for about nine years. Fortunately there is a Federal Prison
+not too far from Redmond, WA so Bill could come visit him.
+   
+Some of the other factors to be used in the calculation of a sentence might
+include the following: past criminal record, how big your role in the
+offense was, mental disabilities, whether or not you were on probation at
+the time of the offense, if any weapons were used, if any threats were
+used, if your name is Kevin Mitnick (heh), if an elderly person was
+victimized, if you took advantage of your employment position, if you are
+highly trained and used your special skill, if you cooperated with the
+authorities, if you show remorse, if you went to trial, etc.
+   
+These are just some of the many factors that could either increase or
+decrease a sentence. It would be beyond the scope of this article to cover
+the U.S.S.G. in complete detail. I do feel that I have skipped over some
+significant issues. Neverthele ss, if you remember my two main points in
+addition to how the conspiracy law works, you'll be a long way ahead in
+protecting yourself.
+   
+   F. USE OF A SPECIAL SKILL
+   
+The only specific "sentencing enhancement" I would like to cover would be
+one that I am responsible for setting a precedent with. In U.S. v Petersen,
+98 F.3d. 502, 9th Cir., the United States Court of Appeals held that some
+computer hackers may qualify for the special skill enhancement. What this
+generally means is a 6 to 24 month increase in a sentence. In my case it
+added eight months to my 33-month sentence bringing it to 41 months.
+Essentially the court stated that since I used my "sophisticated" hacking
+skills towards a legitimate end as a computer security consultant, then the
+enhancement applies. It's ironic that if I were to have remained strictly a
+criminal hacker then I would have served less time.
+   
+The moral of the story is that the government will find ways to give you as
+much time as they want to. The U.S.S.G. came into effect in 1987 in an
+attempt to eliminate disparity in sentencing. Defendants with similar
+crimes and similar backgrounds would often receive different sentences.
+Unfortunately, this practice still continues. The U.S.S.G. are indeed a
+failure.
+   
+   G. GETTING BAIL
+
+In the past, the Feds might simply have executed their raid and then left
+without arresting you. Presently this method will be the exception rather
+than the rule and it is more likely that you will be taken into custody at
+the time of the raid. Chances are also good that you will not be released
+on bail. This is part of the government's plan to break you down and win
+their case. If they can find any reason to deny you bail they will. In
+order to qualify for bail, you must meet the following criteri a:
+   
+   - You must be a resident of the jurisdiction in which you were arrested.
+   
+   - You must be gainfully employed or have family ties to the area.
+   
+   - You cannot have a history of failure to appear or escape.
+   
+   - You cannot be considered a danger or threat to the community.
+   
+   In addition, your bail can be denied for the following reasons:
+   
+   - Someone came forward and stated to the court that you said you would
+flee if released.
+   
+   - Your sentence will be long if convicted.
+   
+   - You have a prior criminal history.
+   
+   - You have pending charges in another jurisdiction.
+   
+What results from all this "bail reform" is that only about 20% of persons
+arrested make bail. On top of that it takes 1-3 weeks to process your bail
+papers when property is involved in securing your bond.
+   
+Now you're in jail, more specifically you are either in an administrative
+holding facility or a county jail that has a contract with the Feds to hold
+their prisoners. Pray that you are in a large enough city to justify its
+own Federal Detention Center. County jails are typically the last place you
+would want to be.
+   
+   H. STATE VS. FEDERAL CHARGES
+   
+In some cases you will be facing state charges with the possibility of the
+Feds "picking them up." You may even be able to nudge the Feds into
+indicting you. This is a tough decision. With the state you will do
+considerably less time, but will face a tougher crowd and conditions in
+prison. Granted Federal Prisons can be violent too, but generally as a
+non-violent white collar criminal you will eventually be placed into an
+environment with other low security inmates. More on this later.
+   
+Until you are sentenced, you will remain as a "pretrial inmate" in general
+population with other inmates. Some of the other inmates will be
+predatorial but the Feds do not tolerate much nonsense. If someone acts up,
+they'll get thrown in the hole. If they continue to pose a threat to the
+inmate population, they will be left in segregation (the hole).
+Occasionally inmates that are at risk or that have been threatened will be
+placed in segregation. This isn't really to protect the inmate. It is to pr
+otect the prison from a lawsuit should the inmate get injured.
+   
+   I. COOPERATING
+   
+Naturally when you are first arrested the suits will want to talk to you.
+First at your residence and, if you appear to be talkative, they will take
+you back to their offices for an extended chat and a cup of coffee. My
+advice at this point is tried and true and we've all heard it before:
+remain silent and ask to speak with an attorney. Regardless of what the
+situation is, or how you plan to proceed, there is nothing you can say that
+will help you. Nothing. Even if you know that you are going to cooperate,
+this is not the time.
+   
+This is obviously a controversial subject, but the fact of the matter is
+roughly 80% of all defendants eventually confess and implicate others. This
+trend stems from the extremely long sentences the Feds are handing out
+these days. Not many people want to do 10 to 20 years to save their
+buddies' hides when they could be doing 3 to 5. This is a decision each
+individual needs to make. My only advice would be to save your close
+friends and family. Anyone else is fair game. In the prison system the
+blacks have a saying "Getting down first." It's no secret that the first
+defendant in a conspiracy is usually going to get the best deal. I've even
+seen situations where the big fish turned in all his little fish and
+eceived 40% off his sentence.
+   
+Incidently, being debriefed or interrogated by the Feds can be an ordeal in
+itself. I would -highly- reccommend reading up on interrogation techniques
+ahead of time. Once you know their methods it will be all quite transparent
+to you and the debriefing goes much more smoothly.
+   
+When you make a deal with the government you're making a deal with the
+devil himself. If you make any mistakes they will renege on the deal and
+you'll get nothing. On some occasions the government will trick you into
+thinking they want you to cooperate when they are not really interested in
+anything you have to say. They just want you to plead guilty. When you sign
+the cooperation agreement there are no set promises as to how much of a
+sentence reduction you will receive. That is to be decided after your
+testimony, etc. and at the time of sentencing. It's entirely up to the
+judge. However, the prosecution makes the recommendation and the judge
+generally goes along with it. In fact, if the prosecution does not motion
+the court for your "downward departure" the courts' hands are tied and you
+get no break.
+   
+As you can see, cooperating is a tricky business. Most people, particularly
+those who have never spent a day in jail, will tell you not to cooperate.
+"Don't snitch." This is a noble stance to take. However, in some situations
+it is just plain stupid. Saving someone's ass who would easily do the same
+to you is a tough call. It's something that needs careful consideration.
+Like I said, save your friends then do what you have to do to get out of
+prison and on with your life.
+   
+I'm happy to say that I was able to avoid involving my good friends and a
+former employer in the massive investigation that surrounded my case. It
+wasn't easy. I had to walk a fine line. Many of you probably know that I
+(Agent Steal) went to work for the FBI after I was arrested. I was
+responsible for teaching several agents about hacking and the culture. What
+many of you don't know is that I had close FBI ties prior to my arrest. I
+was involved in hacking for over 15 years and had worked as a comp uter
+security consultant. That is why I was given that opportunity. It is
+unlikely however, that we will see many more of these types of arrangements
+in the future. Our relationship ran afoul, mostly due to their passive
+negligence and lack of experience in dealing with hackers. The government
+in general now has their own resources, experience, and undercover agents
+within the community. They no longer need hackers to show them the ropes or
+the latest security hole.
+   
+Nevertheless, if you are in the position to tell the Feds something they
+don't know and help them build a case against someone, you may qualify for
+a sentence reduction. The typical range is 20% to 70%. Usually it's around
+35% to 50%.
+Sometimes you may find yourself at the end of the prosecutorial food chain
+and the government will not let you cooperate. Kevin Mitnick would be a
+good example of this. Even if he wanted to roll over, I doubt it would get
+him much. He's just too big of a fish, too much media. My final advice in
+this matter is get the deal in writing before you start cooperating.
+   
+The Feds also like it when you "come clean" and accept responsibility.
+There is a provision in the Sentencing Guidelines, 3E1.1, that knocks a
+little bit of time off if you confess to your crime, plead guilty and show
+remorse. If you go to trial, typically you will not qualify for this
+"acceptance of responsibility" and your sentence will be longer.
+   
+   J. STILL THINKING ABOUT TRIAL
+  
+Many hackers may remember the Craig Neidorf case over the famous 911 System
+Operation documents. Craig won his case when it was discovered that the
+manual in question, that he had published in Phrack magazine, was not
+proprietary as claimed but available publicly from AT&T. It was an egg in
+the face day for the Secret Service.
+   
+Don't be misled by this. The government learned a lot from this fiasco and
+even with the laudable support from the EFF, Craig narrowly thwarted off a
+conviction. Regardless, it was a trying experience (no pun intended) for
+him and his attorneys. Th e point I'm trying to make is that it's tough to
+beat the Feds. They play dirty and will do just about anything, including
+lie, to win their case. If you want to really win you need to know how they
+build a case in the first place.
+   
+   K. SEARCH AND SEIZURE
+
+There is a document entitled "Federal Guidelines For Searching And Seizing
+Computers." It first came to my attention when it was published in the
+12-21-94 edition of the Criminal Law Reporter by the Bureau of National
+Affairs (Cite as 56 CRL 2023 ) . It's an intriguing collection of tips,
+cases, mistakes and, in general, how to bust computer hackers. It's
+recommended reading.
+   
+Search and seizure is an ever evolving jurisprudence. What's not
+permissible today may, through some convoluted Supreme Court logic, be
+permissible and legal tomorrow. Again, a complete treatment of this subject
+is beyond the scope of this paper. But suffice it to say if a Federal agent
+wants to walk right into your bedroom and seize all of your computer
+equipment without a warrant he could do it by simply saying he had probable
+cause (PC). PC is anything that gives him an inkling to believe you we re
+committing a crime. Police have been known to find PC to search a car when
+the trunk sat too low to the ground or the high beams were always on.
+   
+   L. SURVEILLANCE AND WIRETAPS
+   
+Fortunately the Feds still have to show a little restraint when wielding
+their wiretaps. It requires a court order and they have to show that there
+is no other way to obtain the information they seek, a last resort if you
+will. Wiretaps are also expensive to operate. They have to lease lines from
+the phone company, pay agents to monitor it 24 hours a day and then
+transcribe it. If we are talking about a data tap, there are additional
+costs. Expensive interception/translation equipment must be in place to
+negotiate the various modem speeds. Then the data has to be stored,
+deciphered, decompressed, formatted, protocoled, etc. It's a daunting task
+and usually reserved for only the highest profile cases. If the Feds can
+seize the data from any other so urce, like the service provider or victim,
+they will take that route. I don't know what they hate worse though, asking
+for outside help or wasting valuable internal resources.
+   
+The simplest method is to enlist the help of an informant who will testify
+"I saw him do it!," then obtain a search warrant to seize the evidence on
+your computer. Ba da boom, ba da busted.
+   
+Other devices include a pen register which is a device that logs every
+digit you dial on your phone and the length of the calls, both incoming and
+outgoing. The phone companies keep racks of them at their security
+departments. They can place one on your line within a day if they feel you
+are defrauding them. They don't need a court order, but the Feds do.
+   
+A trap, or trap and trace, is typically any method the phone company uses
+to log every number that calls a particular number. This can be done on the
+switching system level or via a billing database search. The Feds need a
+court order for this information too. However, I've heard stories of
+cooperative telco security investigations passing the information along to
+an agent. Naturally that would be a "harmless error while acting in good
+faith." (legal humor)
+   
+I'd love to tell you more about FBI wiretaps but this is as far as I can go
+without pissing them off. Everything I've told you thus far is public
+knowledge. So I think I'll stop here. If you really want to know more,
+catch Kevin Poulsen (Dark Dante ) at a cocktail party, buy him a Coke and
+he'll give you an earful. (hacker humor)
+   
+In closing this subpart I will say that most electronic surveillance is
+backed up with at least part-time physical surveillance. The Feds are often
+good at following people around. They like late model mid-sized American
+cars, very stock, with no decals or bumper stickers. If you really want to
+know if you're under surveillance, buy an Opto-electronics Scout or Xplorer
+frequency counter. Hide it on your person, stick an ear plug in your ear
+(for the Xplorer) and take it everywhere you go. If you he ar people
+talking about you, or you continue to hear intermittent static (encrypted
+speech), you probably have a problem.
+   
+   M. YOUR PRESENTENCE INVESTIGATION REPORT, PSI OR PSR
+   
+After you plead guilty you will be dragged from the quiet and comfort of
+your prison cell to meet with a probation officer. This has absolutely
+nothing to do with getting probation. Quite the contrary. The P.O. is
+empowered by the court to prepare a complete and, in theory, unbiased
+profile of the defendant. Everything from education, criminal history,
+psychological behavior, offense characteristics plus more will be included
+in this voluminous and painfully detailed report about your life. Every
+little dirty scrap of information that makes you look like a sociopathic,
+demon worshiping, loathsome criminal will be included in this report.
+They'll put a few negative things in there as well.
+   
+My advice is simple. Be careful what you tell them. Have your attorney
+present and think about how what you say can be used against you. Here's an
+example:
+   
+P.O.: Tell me about your education and what you like to do in your spare time.
+   
+Mr. Steal: I am preparing to enroll in my final year of college. In my
+spare time I work for charity helping orphan children.
+   
+The PSR then reads "Mr. Steal has never completed his education and hangs
+around with little children in his spare time."
+
+Get the picture?
+   
+   J. PROCEEDING PRO SE
+   
+Pro Se or Pro Per is when a defendant represents himself. A famous lawyer
+once said "a man that represents himself has a fool for a client." Truer
+words were never spoken. However, I can't stress how important it is to
+fully understand the criminal justice system. Even if you have a great
+attorney it's good to be able to keep an eye on him or even help out. An
+educated client's help can be of enormous benefit to an attorney. They may
+think you're a pain in the ass but it's your life. Take a hold of it.
+Regardless, representing yourself is generally a mistake.
+   
+However, after your appeal, when your court appointed attorney runs out on
+you, or you have run out of funds, you will be forced to handle matters
+yourself. At this point there are legal avenues, although quite bleak, for
+post-conviction
+relief.
+   
+But I digress. The best place to start in understanding the legal system
+lies in three inexpensive books. First the Federal Sentencing Guidelines
+($14.00) and Federal Criminal Codes and Rules ($20.00) are available from
+West Publishing at 800-328-9352. I consider possession of these books to
+be mandatory for any pretrial inmate. Second would be the Georgetown Law
+Journal, available from Georgetown University Bookstore in Washington, DC.
+The book sells for around $40.00 but if you write them a letter and tell
+them you're a Pro Se litigant they will send it for free. And last but not
+least the definitive Pro Se authority, "The Prisoners Self Help Litigation
+Manual" 
+$29.95 ISBN 0-379-20831-8. Or try http://www.oceanalaw.com/books/n148.htm
+   
+   O. EVIDENTIARY HEARING
+   
+If you disagree with some of the information presented in the presentence
+report (PSR) you may be entitled to a special hearing. This can be
+instrumental in lowering your sentence or correcting your PSR. One
+important thing to know is that your PSR will follow you the whole time you
+are incarcerated. The Bureau of Prisons uses the PSR to decide how to
+handle you. This can affect your security level, your halfway house, your
+eligibility for the drug program (which gives you a year off your sentence)
+,and your medical care. So make sure your PSR is accurate before you get
+sentenced!
+   
+   P. GETTING YOUR PROPERTY BACK
+ 
+In most cases it will be necessary to formally ask the court to have your
+property returned. They are not going to just call you up and say "Do you
+want this Sparc Station back or what?" No, they would just as soon keep it
+and not asking for it is as good as telling them they can have it.
+   
+You will need to file a 41(e) "Motion For Return Of Property." The courts'
+authority to keep your stuff is not always clear and will have to be taken
+on a case-by-case basis. They may not care and the judge will simply order
+that it be returned.
+   
+If you don't know how to write a motion, just send a formal letter to the
+judge asking for it back. Tell him you need it for your job. This should
+suffice, but there may be a filing fee.
+   
+   Q. OUTSTANDING WARRANTS
+   
+If you have an outstanding warrant or charges pending in another
+jurisdiction you would be wise to deal with them as soon as possible
+-after- you are sentenced. If you follow the correct procedure chances are
+good the warrants will be dropped (quashed). In the worst case scenario,
+you will be transported to the appropriate jurisdiction, plead guilty and
+have your "time run concurrent." Typically in non-violent crimes you can
+serve several sentences all at the same time. Many Federal inmates have
+their state time run with their Federal time. In a nutshell: concurrent is
+good, consecutive bad.
+   
+This procedure is referred to as the Interstate Agreement On Detainers Act
+(IADA). You may also file a "demand for speedy trial", with the appropriate
+court. This starts the meter running. If they don't extradite you within a
+certain period of time , the charges will have to be dropped. The "Inmates'
+Self-Help Litigation Manual" that I mentioned earlier covers this topic
+quite well.
+
+   R. ENCRYPTION
+   
+There are probably a few of you out there saying, "I triple DES encrypt my
+hard drive and 128 character RSA public key it for safety." Well, that's
+just great, but... the Feds can have a grand jury subpoena your passwords
+and if you don't give them up you may be charged with obstruction of
+justice. Of course who's to say otherwise if you forgot your password in
+all the excitement of getting arrested. I think I heard this once or twice
+before in a Senate Sub-committee hearing. "Senator, I have no recollection
+of the aforementioned events at this time." But seriously, strong
+encryption is great. However, it would be foolish to rely on it. If the
+Feds have your computer and access to your encryption software itself, it
+is likely they could break it gi ven the motivation. If you understand the
+true art of code breaking you should understand this. People often overlook
+the fact that your password, the one you use to access your encryption
+program, is typically less than 8 characters long. By attacking the access
+to your encryption program with a keyboard emulation sequencer your triple
+DES/128 bit RSA crypto is worthless. Just remember, encryption may not
+protect you.
+   
+   S. LEGAL SUMMARY
+   
+Before I move on to the Life in Prison subpart, let me tell you what this
+all means. You're going to get busted, lose everything you own, not get out
+on bail, snitch on your enemies, get even more time than you expected and
+have to put up with a bu nch of idiots in prison. Sound fun? Keep hacking.
+And, if possible, work on those sensitive .gov sites. That way they can
+hang an espionage rap on you. That will carry about 12 to 18 years for a
+first time offender.
+   
+I know this may all sound a bit bleak, but the stakes for hackers have gone
+up and you need to know what they are. Let's take a look at some recent
+sentences:
+   
+   Agent Steal (me) 41 months
+   
+   Kevin Poulsen 51 months
+   
+   Minor Threat 70 months
+   
+   Kevin Mitnick estimated 7-9 years
+   
+As you can see, the Feds are giving out some time now. If you are young, a
+first-time offender, unsophisticated (like MOD), and were just looking
+around in some little company's database, you might get probation. But
+chances are that if that is all you were doing, you would have been passed
+over for prosecution. As a rule, the Feds won't take the case unless
+$10,000 in damages are involved. The problem is who is to say what the loss
+is? The company can say whatever figure it likes and it would be t ough to
+prove otherwise. They may decide to, for insurance purposes, blame some
+huge downtime expense on you. I can hear it now, "When we detected the
+intruder, we promptly took our system off-line. It took us two weeks to
+bring it up again for a loss in wasted manpower of $2 million." In some
+
+ases you might be better off just using the company's payroll system to
+cut you a couple of $10,000 checks. That way the government has a firm loss
+figure. This would result in a much shorter sentence. I'm not advocating
+blatant criminal actions. I just think the sentencing guidelines definitely
+need some work.
+   
+   PART II - FEDERAL PRISON
+   
+   A. STATE v. FEDERAL
+   
+In most cases I would say that doing time in a Federal Prison is better
+than doing time in the state institutions. Some state prisons are such
+violent and pathetic places that it's worth doing a little more time in the
+Federal system. This is going to be changing however. The public seems to
+think that prisons are too comfortable and as a result Congress has passed
+a few bills to toughen things up.
+   
+Federal prisons are generally going to be somewhat less crowded, cleaner,
+and more laid back. The prison I was at looked a lot like a college campus
+with plenty of grass and trees, rolling hills, and stucco buildings. I
+spent most of my time in the library hanging out with Minor Threat. We
+would argue over who was more elite. "My sentence was longer," he would
+argue. "I was in more books and newspapers," I would rebut. (humor)

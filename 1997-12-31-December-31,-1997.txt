@@ -1,0 +1,678 @@
+                __ __                      __ __         __          
+               / // /__ ____  ___  __ __  / // /__ _____/ /_____ ____
+              / _  / _ `/ _ \/ _ \/ // / / _  / _ `/ __/  '_/ -_) __/
+             /_//_/\_,_/ .__/ .__/\_, / /_//_/\_,_/\__/_/\_\\__/_/   
+                      /_/  /_/   /___/                               
+                               ___  _              __ 
+                              / _ \(_)__ ____ ___ / /_
+                             / // / / _ `/ -_|_- / __/
+                            /____/_/\_, /\__/___/\__/ 
+                                   /___/			
+							December 31, 1997
+========================================================================
+See our all-new Web site with all the Guides to (mostly) Harmless Hacking,
+Happy Hacker Digests and a sneak preview of the Happy Hacker book, coming to
+a bookstore near you in Feb. 1998. That is, unless they are too chicken to
+sell the book that will lead to the collapse of Civilization as We Know It.
+http://cmeinel.com/happyhacker.html.
+Super Swedish Happy Hacker site: http://w1.340.telia.com/~u34002171/hhd.html.
+Coming soon: Spanish translations of the Digests!
+========================================================================
+
+Table of Contents:
+
+* Am I in Trouble?
+* Static vs. Dynamic IP Addresses
+* How to Get HTML Source Code
+* LILO Help
+* I Didn't Do it!
+* Looking for Colombian Hackers
+* How to Go to Jail
+* Looking for Public Usenet Server
+* Announcing "Modern Hacker Desk Reference"
+* Header Questions
+* Errata (translation: admissions we've messed up)
+
+==================================================
+	*** Am I in Trouble?
+==================================================
+
+From anonymous:
+
+Help me!  I was reading a web site and it said if you type in a website
+followed by a bunch of junk which doesn't make sense to me it would bring up
+a password or something.  I tried this and it brought up a page that said:
+
+United States Code 2701
+
+
+2701. Unlawful access to stored Communications
+
+
+(a)Offenses -
+
+(1) intentionally access without authorization to a facility through which
+an electronic communication service is provided; or
+
+(2) intentionally exceeds an authorization to access that facility; and
+thereby obtains, alters, or prevents authorized access to a wire or
+electronic storage in such system shall be punished as provided in
+subsection (b) of this section
+
+(b)Punishment - The punishment for an offense under subsection (a) of this
+section is -
+
+(1) if the offense is committed for purpose of commercial advantage,
+malicious destruction or damage, or private commercial gain -
+
+(A) a fine of not more than ,000 or imprisonment for not more than one year,
+or both, in the case of a first offense under this subparagraph; and
+
+(B) a fine under this title or imprisonment for not more than two years, or
+both, for any subsequent under this subparagraph; and
+
+(2) a fine of not more than or imprisonment for not more than six months, or
+both, in any other case.
+
+By using this bug to obtain the password file or any other information you
+have just committed a felony. We will press charges to the fullest extent of
+the law.
+
+All log information is sent to root of this system, Computer Crimes Division
+in Washington D.C. and to root of the offending system
+
+All telephone, IP connection, reverse host lookup information, inetd is
+logged and provided to the Computer Crimes Division at their discretion. All
+investigations and criminal procedures are directed through the Federal
+Bureau of Investigation
+
+XXXXXXXX is through the Department of Information Technology and with
+Computer Crimes Division
+Command not found.
+
+***end of message***
+
+does this mean I am in a lot of trouble?  I really didn't even know what I
+was doing!
+
+[Carolyn: They are just trying to fake you out. In the United States, to
+commit a felony you have to actually download the password file, run it
+through crack, and actually get some passwords from it. A more friendly Web
+site someone pointed out to me responded to this (which is, FYI, the "phf
+exploit") with a flashing message "Smile! You're on Candid Camera!" Even if
+it were a crime, there is way too much serious computer crime out there for
+the Feds to waste their time on it. Oh, in case you guys are curious, the
+phf exploit is
+"http://victim.computer.com/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd"
+But don't expect it to work. If you do get a password file, don't go crying
+to me if you crack it and go to jail. Also, you don't have to break the law
+to get kicked off your ISP or expelled from school. So think twice about
+trying this lame hack.]
+
+==================================================
+	*** Static vs. Dynamic IP Addresses
+==================================================
+
+From: James Parrish - cyberspy@slip.net
+
+     I just discovered your mailing list, it's awesome!!! Finally,
+something that explains UNIX shell stuff in ENGLISH!!! Anyway, I have a
+friend who lives in Hong Kong, and I live in the US. I wanted to know if
+it was illegal if I would finger him and get some info. When you say
+it's illegal to telnet and "break-in" what do you exactly mean? Well,
+thanks a lot. Also, have you discussed the significance of ppp
+addresses in any of your notices?
+
+[Carolyn:  It is only illegal (at least in the US) if you break into a part
+of a computer that requires a secret password. And it is amazing how many
+computers -- millions -- on the Internet have ports that allow anyone to use
+them. 
+
+I don't recall whether I have discussed PPP addresses, but sometimes they
+are dynamic, assigned each time at random from a group of IP addresses owned
+by your ISP, and other times you might have an arrangement with your ISP to
+get the  same IP address each time you log on.]
+
+==================================================
+	***How to Get HTML Source Code
+==================================================
+
+Please anonymize this:
+
+Suppose your browser won't let you view the source.  Well that is really
+easy to fix.  The URL for the source code is very simple. In the URL box
+type:
+
+view-source:http://www.thewebpage.com
+
+
+replace http://www.thewebpage.com with the webpage you want the source
+to.  This info could be used for many different things.  here are some
+reasons to use this.
+
+
+1.  Give the URL to your source code.
+2.  Maybe you are having problems with viewing the source of a frame
+document. (then again, you could open up Netscape Communicator and right
+click on the frame window and click on open frame in new window.  it's
+something like that.)
+3.  Afraid of the page doing damage to your computer, well then, just
+type that in and you don't have to view the page but you can view the
+source.
+4.  You think of more ideas.
+
+-----------------------
+
+Sender: Bugtraq List 
+From: Brian Krahmer 
+Organization: Network Guardians Inc.
+Subject:      Viewable .jhtml source with JavaWebServer
+To: BUGTRAQ@NETSPACE.ORG
+
+It has been discovered by Min Chang that there is a security
+vulnerability in the 1.1Beta version of JavaWebServer for win32.
+Similar to the IIS viewable source bug, if you append a '.' (period) or
+a '\' (backslash) to a .jhtml URL, the server will display the source.
+.jhtml files are html files with embedded Java code that are supposed to
+be compiled and returned to the client (sans the java code).  Because
+these files can have things like jdbc queries or important server
+filenames embedded in them, it is a security risk.
+
+examples:
+http://localhost/xyz.jhtml.
+or
+http://localhost/xyz.jhtml\
+
+brian
+--
+  Brian Krahmer - brian@krahmer.com - http://www.krahmer.com
+           President, Network Guardians, Inc.
+  Makers of NetGuard.  1.0 release coming after the new year!
+               http://www.net-guards.com
+
+(To subscribe to Bugtraq, email listserv@netspace.org with message
+"subscribe bugtraq."
+
+==================================================
+	*** LILO Help
+==================================================
+From: SamWilJoe 
+
+I too, am installing Linux on my system and came across something in a book I
+was reading on the topic.  The book said that Linux didn't like it's boot
+partition being on cylinder 1023 or above of the hard drive.  You might try
+repartitioning your hard drive so that the boot partition is below that limit.
+
+From: Star Morin
+
+What that user should do is to user the boot floppy that he created to
+install the system load his system up.
+Just boot the floppy, and when it gets to the section where it asks for
+additional parameters, type:
+
+mount root=/dev/hda1
+
+if that is the partition that he has his install on. Once there, type "lilo"
+at the prompt. Once that is done, go on the net to www.linux.org and read
+the lilo howto
+
+Star Morin
+
+From: Maximo B. Salviejo
+
+Hello...I just wanted to add something to this section of the article..
+
+I'm use Linux myself...(Red Hat 4.2 running kernel 2.0.3.0) <---best kind of
+Linux I might add--anyway...I use Linux and Win95 on the same box...I had
+tons of trouble in it.  In fact, it took me like a month to install it on my
+PC until I realized my CD-ROM wasn't being recognized, so quit installing
+and waited for my new PC
+to install it into.
+
+OK, to get to the point..There are more ways to boot up Linux other than
+LILO....I boot Linux using LOADLIN... LOADLIN is a probably on that CD that
+you have..if not you can probably download it from a Linux
+site...anyway..you take that program and u save it under DOS and then you
+edit your CONFIG.SYS in DOS.
+
+This is what I did:
+
+1.I made a Linux folder in Win95 saving LOADLIN and VMLINUZ in there...
+2. This folder should be under the C: (or what ever drive your Windows/Dos O/S
+are) and it should not be a subdirectory.
+3. I went into DOS and edited my CONFIG.SYS this is what it looks like:
+
+----------------------------------------------------------------------------
+
+
+[CONFIG.SYS]
+
+[menu]
+
+menuitem=linux, "Linux 2.0.30"
+
+menuitem=win95,"Should be shot O/S"
+
+menudefault=win95,10
+
+[linux]
+shell=c:\linux\loadlin.exe c:\linux\vmlinuz
+
+[win95]
+
+----------------------------------------------------------------------------
+
+Save this and then reboot the system. This will give you a prompt to choose
+which O/S you want to boot, Linux or "the other O/S system", also giving a
+timeout to that other O/S--in this case win95
+
+Well I just thought I'd share these to you Linux-newbies...I myself am a
+newbie (really just started yesterday if you don't count that previous
+month)...I enjoy linux and I'm sure I'll enjoy it more after I learn
+everything.  Its tough but hey I like it.  Another advice is to READ..I
+always hated reading, but this is something I enjoy. So read the HOWTOs,
+buy/borrow books about Linux.  Trust me you'll need it. As for newbie
+Hackers..Linux is something to HACK..safe and LEGAL!!!! Hack the kernel,
+then recompile it.  Remember, Linux is a Unix PC-based operating system,
+after u learn LINUX.  You've practically learn most of Linux commands.
+
+Well I don't know if this is going anywhere...like I said, I thought I would
+just share this..Please no FLAMES...I get enough of that!!!
+
+HACK THE PLANET!!! ----LEGALLY
+hehe
+MAX  (look for me at #ComputerTalk, #Windows95, #linux ---mIRC)
+
+P.S.
+
+For Linux Newbies:
+
+sites to visit:
+
+http://www.redhat.com
+http://www.linux.org
+
+add your name to the mailing list
+
+linux-newbie@vger.rutgers.edu
+redhat-list@redhat.com
+
+For Linux Newbies:
+
+http://netrover.com/~pange --->my favorite site
+
+From: pc2000
+
+This is a response to the LILO problem. I myself don't use/like red hat
+but for linux newbies it is good. I don't even Like lilo either so I use
+loadlin. I have managed to make my home made boot manager using just
+loadlin and autoexec.bat. Here is how my dual boot (win95 linux) setup is:
+
+First I have a loadlin app in my c:\windows\command for path rights. 
+Then for my boot manager I modified my autoexec.bat to look like:
+----------------------- autoexec.bat start
+---------------------------------
+@echo off
+CHOICE /c:yn /T:N,30 Shall We Boot To LiNuX Instead?
+if errorlevel 2 goto win95
+if errorlevel 1 goto linux
+
+:win95
+NORMAL WIN95 START UP STUFF GOES HERE
+goto end
+
+:linux
+SET PATH=C:\windows;c:\windows\command
+loadlin d:\linux\vmlinuz root=/dev/hdb1 rw
+
+------------------------------- cut here
+------------------------------------------
+
+Now lets break this down:
+"CHOICE /c:yn /T:N,30 Shall We Boot To LiNuX Instead?"
+
+gives you a choice of booting to win95 or linux, u press y or n. then it
+has a timer for 30 seconds to default to linux ( /T:N,30 )
+You can change it to default to win95 by changing the N to Y or even add
+more/less time by changing number.
+
+"NORMAL WIN95 START UP STUFF GOES HERE"
+
+just all the stuffs that's normally there right now (i.e. path tsr apps
+whatever)
+
+"SET PATH=C:\windows;c:\windows\command"
+"loadlin d:\linux\vmlinuz root=/dev/hdb1 rw"
+
+Now I have linux installed on d: and it is the secondary hard drive (slave)
+on my system. You will have to figure out what yers falls. Here is a quick
+table of most common ones:
+
+hda1 = c: or first partition on primary hard drive
+hda2 = secondary partition on primary hard drive
+hda3 = third partition on primary hard drive
+hda4 = fourth partition on primary hard drive
+
+hdb1 = first partition on secondary hard drive.
+hdb2 = secondary partition on secondary hard drive
+hdb3 = third partition on secondary hard drive
+hdb3 = fourth partition on secondary hard drive
+
+-------------
+
+Please note that it isn't the same for everyone as far as hdb or hda because
+I have 2 hard drives installed. My 2.5 gig is split into two partitions. A
+1.0 gig c: which is hda1, then a 1.5 gig partition that is e: or hda5 yes
+that's a 5 not sure why tho. Then I have a 1 gig which makes up d: or hdb1. 
+
+This system works for me nicely and I recommend it as an alternative to
+LILO if it doesn't work for you. Or if you want a real boot manager I
+suggest getting System Commander 4 deluxe which allows multiple os's to
+boot plus allows re-partitioning hard drives w/o formatting. Need more help
+or have questions u can email me on the side at: pc2000@dangerous-minds.com
+and I will be more then happy to assist you.
+
+pc2000
+"Just a hitchhiker on the information super-highway"
+
+
+
+==========================================
+	*** I Didn't Do it!
+==========================================
+From: Modify
+
+{From the guide}
+ If you are interested in laughing yourself silly, feel free to go to
+http://www.sinnerz.com/modify and read the page he has posted up there,
+complete with a hacked picture of Carolyn.  (I would suggest that you use
+the toilet first, or you may wet yourself laughing.)
+
+[He didn't post that up there and I didn't write the article so next time
+you might wanna be more clear on your wording! Specifically where it says
+'and read the page HE has POSTED up there' -- Modify]
+
+=============================================
+	*** Looking for Colombian Hackers
+=============================================
+
+From: Pant era
+
+
+Hola! 
+Tengo 20 aqos y tengo cierta idea de como manejar los ordenadores, mas sin
+embargo me siento en capacidad de aprender lo que  sea necesario para entrar
+al gran grupo de los hackers. Mi intencion es aprender y conformar el primer
+grupo de hackers con tres amigos de la cuadra. nosotros somos de Colombia... 
+le agradeceriamos nos contestara ya sea para un no o un gran S!!!!... Le
+agradeceriamos si fuera nuestro mentor o si nos pudiera ayudar a conseguir
+uno. 
+
+Nuestro e-mail es: 
+Pantera73@hotmail.com 
+Phoe-nix@usa.net 
+
+Graacias por todo...
+
+==========================================================
+	*** How to Go to Jail
+==========================================================
+
+From anonymous:
+
+Carolyn,
+I'm a newbie to cracking, but experienced in UNIX, HP-UX and FreeBSD.  I
+have read several of your tips and am yearning for more information.  I
+tried the "finger" tip and wasn't able to get what I wanted.  It only
+allowed a users name to be put in.
+Basically, what I am looking for is on a FreeBSD school system.  I looked
+for the master.passwd file and wasn't able to find it.  The regular password
+file seems to be shadowed.  I know users names and I know their passwords
+are their Social Security Number. What I don't know is how to really get in
+deep to get that information.  I was trying to find a program (script) that
+would run from Win95 or DOS that would enter the user's name and then
+increase the number by one each time the login fails.  Have you ever heard
+of anything like that?  Can you help me?
+
+[Carolyn: You could easily write such a program in Perl or C. You also would
+get kicked off your ISP and/or out of school, and possibly end up in jail.
+This is because it would be so incredibly easy for the sysadmin of the
+victim computer to notice your activities and identify you.]
+
+=======================================================
+	*** Looking for Public Usenet Server
+=======================================================
+
+From: Vilius Kavaliauskas
+
+I have one problem and it is, that my current ISP can't afford me connection
+to USENET.
+Maybe you can tell me some server name where I can connect to USENET and get
+info from
+alt.cracks, alt.crackers etc. newsgroups. Sorry of my english, I'm from
+Lithuania.
+Hope you can help me.
+
+Thanks in advice.  Henris K.
+
+==========================================================
+	*** Announcing "Modern Hacker Desk Reference"
+==========================================================
+
+From: Alien
+
+The Modern Hacker Desk Reference is out...
+very very very very good
+
+http://x-treme.simplenet.com/files/releases/MHD.html
+
+==========================================================
+	*** Header Questions
+==========================================================
+
+From: andy vance
+
+hi, I sent some messages from a hotmail account to an aol account to
+see how long it would take but I discovered something when I was going
+through the headers. I don't know if you already know this but if I
+could figure it out then you probably do. I read somewhere, I think it
+was in the happy hacker digest, that sending email using hotmail was
+just about as anonymous as you could get (without using a remailer).
+Because you could type in fake info when you signed up.
+Here's the part of the header:
+
+    Fri, 19 Dec 1997 16:40:46 PST 
+X-Originating-IP: {206.133.70.48}
+From "my name" <my email address@hotmail.com>
+At first I thought the X-Originating-IP was hotmail's IP address but I
+wanted to be sure. So I did an NSLookup and there was nothing. So I
+tried pinging it, it was alive. Then I had an idea, why not traceroute
+it? So I did. Here's what I got:
+Friday, December 19, 1997 09:21:41PM
+
+TraceRoute to host 206.133.70.48
+
+ 
+1. 206.***.**.3 sdn-**-001fl***003t.dialsprint.net     2. No response
+from this hop                         
+3. 206.***.**.48   sdn-ts-002fl***P13.dialsprint.net
+(The parts i replaced with *'s were exactly the same)
+               
+Now I'm very new at this sort of thing but I think that means it had
+my IP address in there. If this is true wouldn't that mean its not as
+anonymous as people think? Thanks :)
+
+[Carolyn: I would need to know what your originating IP address is in order
+to find out if this is a problem., here is how we find out stuff about the
+hotmail originating IP:
+
+First I type in the command:
+
+	#nslookup
+
+It gives me a default server, but I want to pick my own:
+
+>server 206.133.70.48
+Default Server:  sdn-ts-002flmelbP13.dialsprint.net
+Address:  206.133.70.48
+
+What I just did was find out that that IP address runs a Domain Name Server
+(DNS). So with the server command I set up for my shell account to use
+206.133.70.48 as the DNS server. This automatically told me the name of that
+computer, sdn-ts-002flmelbP13.dialsprint.net. This is a Sprintnet backbone
+computer -- highly unlikely to be your ISP, as backbone providers don't
+normally give out individual accounts (unless you want something like a T1!)
+
+However, when I tried to learn more about it, I got:
+
+>206.133.70.48.
+Server:  sdn-ts-002flmelbP13.dialsprint.net
+Address:  206.133.70.48
+
+*** Request to sdn-ts-002flmelbP13.dialsprint.net timed-out
+
+This is typical behavior of an Internet backbone host. So next I try:
+
+>bash$ dig sdn-ts-002flmelbP13.dialsprint.net
+
+; &lt&lt&gt>DiG 2.1 &lt&lt&gt>sdn-ts-002flmelbP13.dialsprint.net 
+;; res options: init recurs defnam dnsrch
+;; got answer:
+;; -&gt>HEADER&lt<- opcode: QUERY, status: NOERROR, id: 6
+;; flags: qr aa rd ra; Ques: 1, Ans: 1, Auth: 5, Addit: 5
+;; QUESTIONS:
+;;      sdn-ts-002flmelbP13.dialsprint.net, type = A, class = IN
+
+;; ANSWERS:
+sdn-ts-002flmelbP13.dialsprint.net.     86400   A       206.133.70.48
+
+;; AUTHORITY RECORDS:
+dialsprint.net. 86400   NS      ns1.dialsprint.net.
+dialsprint.net. 86400   NS      ns2.dialsprint.net.
+dialsprint.net. 86400   NS      ns3.dialsprint.net.
+dialsprint.net. 86400   NS      ns.dialsprint.net.
+dialsprint.net. 86400   NS      nsb.dialsprint.net.
+
+;; ADDITIONAL RECORDS:
+ns1.dialsprint.net.     86400   A       206.134.151.45
+ns2.dialsprint.net.     86400   A       206.134.79.44
+ns3.dialsprint.net.     86400   A       205.149.192.145
+ns.dialsprint.net.      86400   A       206.134.224.4
+nsb.dialsprint.net.     86400   A       206.134.224.5
+
+;; Total query time: 134 msec
+;; FROM: mack to SERVER: default -- 198.59.162.1
+;; WHEN: Sat Dec 20 15:29:32 1997
+;; MSG SIZE  sent: 52  rcvd: 251
+
+This makes it toally obvious we are dealing with an Internet backbone
+provider. But is it Hotmail's backbone provider? If yes, no problem. If no,
+maybe it is revealing the IP address of YOUR Internet connection.
+
+So I try a traceroute to Hotmail:
+
+ 1  FOO66-gwy.foo66.com (198.59.162.254)  3 ms  3 ms  3 ms
+ 2  lawr-engint.link.nm.org (204.134.77.173)  4 ms  4 ms  4 ms
+ 3  enss365.nm.org (129.121.1.3)  9 ms (ttl=252!)  7 ms (ttl=252!)  5 ms
+(ttl=252!)
+ 4  h4-0.cnss116.Albuquerque.t3.ans.net (192.103.74.45)  11 ms (ttl=251!)  7
+ms (ttl=251!)  6 ms (ttl=251!)
+ 5  140.222.112.221 (140.222.112.221)  14 ms (ttl=250!)  12 ms (ttl=250!)  5
+ms (ttl=250!)
+ 6  h14-1.t16-0.Los-Angeles.t3.ans.net (140.223.17.9)  27 ms (ttl=249!)  27
+ms (ttl=249!)  34 ms (ttl=249!)
+ 7  h14-1.t8-0.San-Francisco.t3.ans.net (140.223.9.13)  39 ms (ttl=248!)  40
+ms (ttl=248!)  45 ms (ttl=248!)
+ 8  198.32.128.65 (198.32.128.65)  38 ms (ttl=247!)  41 ms (ttl=247!)  40 ms
+(ttl=247!)
+ 9  198.32.128.25 (198.32.128.25)  54 ms (ttl=246!)  49 ms (ttl=246!)  55 ms
+(ttl=246!)
+10  209.1.216.21 (209.1.216.21)  48 ms (ttl=245!)  44 ms (ttl=245!)  59 ms
+(ttl=245!)
+11  209.1.214.150 (209.1.214.150)  57 ms (ttl=244!)  67 ms (ttl=244!)  70 ms
+(ttl=244!)
+12  www.hotmail.com (207.82.250.251)  76 ms (ttl=243!)  96 ms (ttl=243!)
+104 ms (ttl=243!)
+
+Hmmm, looks bad. But that doesn't necessarily mean anything. For example, my
+domain name of cmeinel.com maps to a Web server address of hway.net,
+while my POP server for cmeinel.com maps to rapidsite. So it could easily
+be true that Hotmail uses different IP addresses for their outgoing email
+than you get when tracing a route to their primary web server (the www part
+of the name is the tipoff that it is their Web server we were going to, not
+necessarily their mail server.)
+
+To finish this analysis I would need to know the IP address of the computer
+that gave you Internet access when you logged on to send out this hotmail
+stuff. Here's how you can tell: do a traceroute from your computer (if your
+are on Windows 95, go to DOS and do "tracert hotmail.com" or any IP address,
+it doesn't matter, you only need to see the FIRST IP address in the route,
+for example,
+
+C:\WINDOWS>tracert foo66.com
+
+Tracing route to foo66.com [198.59.162.1]
+over a maximum of 30 hops:
+
+  1   422 ms   327 ms   328 ms  ipt-q2.proxy.aol.com [152.163.205.96]
+  2   466 ms   440 ms   323 ms  tot-ta-r5.proxy.aol.com [152.163.205.126]
+  3   312 ms   343 ms   438 ms  tpop-a3.blue.aol.com [204.148.103.7]
+  4   472 ms   321 ms   325 ms  t60-6.red.aol.com [207.25.134.7]
+  5   628 ms   488 ms   311 ms  h10-1.t64-0.Houston.t3.ans.net [140.223.61.46]
+  6   488 ms   492 ms   485 ms  h13-1.t112-0.Albuquerque.t3.ans.net
+[140.223.65.
+10]
+  7   423 ms   473 ms   543 ms  f0-0.cnss116.Albuquerque.t3.ans.net
+[140.222.112
+.196]
+  8   398 ms   422 ms   451 ms  enss365.t3.ans.net [192.103.74.46]
+  9   426 ms   381 ms   481 ms  abbey.nm.org [129.121.1.5]
+ 10   508 ms   531 ms   562 ms  lawr.nm.org [129.121.254.10]
+ 11     *      467 ms   498 ms  engint-lawr.link.nm.org [204.134.77.174]
+ 12   536 ms   547 ms   488 ms  foo66.com [198.59.162.1]
+
+
+Hope I haven't bored you to tears!]
+
+===========================================================
+* Errata (translation: admissions we've messed up)
+===========================================================
+
+In the previous Digest, mention was made of a hacker arrested in San
+Antonio. He was not arrested, but was raided, with the expectation that he
+would be arrested shortly. We are hopeful that we can prevent the planned
+arrest from being made, as we have reason to believe he may have been
+falsely implicated by the real culprit sniffing his IP address and spoofing
+it while vandalizing computers.
+
+In the December 1 Digest, an article was erroneously attributed to Carolyn
+Meinel: "Major security flaw in Cybercash 2.1.2," a Bugtraq post from "jet"
+who posted from an anonymous remaileer.
+
+===========================================================
+ with
+message "subscribe hh".  This is a list devoted to *legal* hacking! If you
+use any information in this Digest or at our Web site to commit crime, go
+away! Foo on you! We will laugh at you when you get busted! We also get
+really mad when people email us confessions of crimes. Sheesh! Get a life!
+For Windows questions, please write Roger Prata; for
+Macs, write Strider; and Unix, ">Carolyn Meinel. Editor-in-chief is R.J. Gosselin. 
+
+R.J. Gosselin, Sr.
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+Editor-In-Chief -- Happy Hacker Digest
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+
+"There is no way you're describing our system, 
+she could never have gotten past our security.  
+
+But I'm going to find her and see that she's prosecuted ...  
+she broke the law, and she's going to pay!"
+	President of "Blah Blah Bank"
+
+ --&gt&gt>Does anybody ELSE see a small discrepancy here ???????
+
+*****************************************
+For full story (and many others), download
+"External Threats to Computer Security in Networked Systems"
+from Winn Schwartau's InfoWar.com bookstore @ www.infowar.com
