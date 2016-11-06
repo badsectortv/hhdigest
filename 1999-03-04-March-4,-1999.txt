@@ -1,0 +1,351 @@
+March 4, 1999 
+_______________________________________________________________________
+
+See the Happy Hacker Web site at http://www.happyhacker.org 
+Your local firewall blocks you? Try http://happyhacker.org 
+URL of the day: http://www.antionline for the world's most accurate hacker news. 
+_______________________________________________________________________
+
+In this issue:
+
+Wargame news  
+ * New winners 
+ * A great new Web site on koan.happyhacker 
+ * New Wargame computers!!! 
+ * New Wargame administrators
+
+How to legally hack Web sites -- honest!
+
+Antionline back online
+
+Hackernews.com screws up yet again
+
+Pentium III serial number hacked 
+_______________________________________________________________________
+
+ *** Wargame News 
+_______________________________________________________________________
+
+We have two new Wargame administrators, and an entire team of Wargame winners!
+
+Those of you who have been playing the hacker Wargame have seen 
+koan.happyhacker.org taken over by the tg0d gang and allies.  They are 
+really popular winners, too.  They have added new guest accounts (guest1, 
+guest2 etc.) Each account is harder to break into than the last (guest2 is 
+harder than guest1 and so on).  Each higher level account has more 
+privileges than the previous one, as well.
+
+Want to see how tg0d's Typo got in?  Check out 
+http://koan.happyhacker.org/~typo/koan.txt.  Check out koan's main Web site, 
+too, for plenty of news and views from the victors.  Oh, yes, to win the 
+game it isn't enough to just get root -- whenback rooted koan early March 2, 
+but didn't kick tg0d off.  On the other hand, maybe whenback left behind a 
+back door:):)  Stay tuned to http://koan.happyhacker.org to find out -- will 
+whenback join tg0d and share root?  Will whenback kick tg0d off?  Who will 
+be next to root koan?
+
+Schematic <schematic@usa.net> gave me a free run on koan recently when I 
+needed to set it up on a different T1.  I am happy to report that it is 
+riddled with back doors and other fun stuff.  Whoever gets root on koan next 
+will have a merry time trying to lock the tg0d folks out!  If I had to do 
+it, I'd create a new file structure and reinstall the operating system 
+(FreeBSD) from scratch. 
+
+ *** New Wargame Computers!
+
+Schematic has just shipped out a new box for the Wargame.  Expect lots more 
+fun when it is up.  Its name will be otter.happyhacker.org.
+
+We now have a router on the Wargame -- see the main page of 
+http://www.happyhacker.org for the IP address.  The router currently is a 
+Cisco 2511, but the make and model may change without notice as new Wargame 
+administrator Corey W. Gallatin <sprint@onecom.com>swaps out routers from 
+among his impressive collection.  Gallatin is a senior data engineer with 
+Sprint, which is a major Internet backbone company.  Gallatin is also 
+assisting both Happy Hacker and Antionline with network security.   Hint: 
+the router has a guessable password if you know how to guess passwords that 
+are screwed up beyond recognition:)
+
+ *** New Wargame Administrators
+
+Yes, Corey Gallatin is one of the new Wargame administrators, working the 
+magic it takes to keep the baddies from crashing our LAN.  Way to go, Corey!
+
+And now -- introducing the new Director for the Hacker Wargame -- Vincent 
+Larsen.  He is president of a computer consulting company, and also a truly 
+twisted, mostly harmless and definitely funny hacker.  Want to see his 
+handiwork hacking a Linux kernel?  Telnet thirdpig.com and try logging in as 
+root, muhahaha! 
+
+We thank Mark Schmitz for putting in a year as Director of our Hacker 
+Wargame -- it was hard work and took lots of brains.  I (Carolyn Meinel) am 
+most definitely in awe of Mark!
+
+_______________________________________________________________________
+
+ *** How to Legally "Hack" Web sites 
+_______________________________________________________________________
+
+Everyone it seems wants to hack Web sites.  OK, OK, we'll finally tell you 
+how, keystroke by keystroke.
+
+Oh, no, you're thinking, Happy Hacker has gone bad, Meinel is really an evil 
+hackeress, they are teaching people how to hack Web sites!  Actually, there 
+is a totally legal, harmless way to hack a Web site.  However, be sure to 
+only use this trick on your friends who have a sense of humor, or you may 
+get punched in the nose!
+
+This hack is a Vincent Larsen twisted trick that works on Windows 95/98 (and 
+with slight modifications on any other operating system that is able to 
+network to the Internet).
+
+What we are going to do here is trick your victim into thinking his or her 
+Web site has been hacked, while making only a *slight* modification to his 
+or her computer. 
+
+The most common case is that your friend has a Web site of this sort:
+
+http://www.fubish.com/~yourfriend
+
+In this case your task is to set up a Web site somewhere else, for example 
+one of those free Geocities Web sites.  You will need to make sure you give 
+your new Web site the same user name as your victim.
+
+For example, let's say your friend has a Web site named:
+
+http://www.fucities.com/~yourfriend
+
+Your first step is to set up your own Web site at a different domain name 
+with the same user name, for example:
+
+http://www.mywwebsite.com/~yourfriend
+
+Next you need to find out the numerical IP address for your web hosting 
+server www.mywebsite.com.  You can discover that by connecting to your Web 
+site with your browser, then going to the MS-DOS prompt and giving the command:
+
+C:\WINDOWS>netstat -n
+
+This should show you something like:
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State 
+  TCP    198.59.176.102:1207    206.61.52.34:80        CLOSE_WAIT
+
+The "Foreign Address" is the numerical IP address of the computer that has 
+your Web site.  The ":80" means it is connected to port 80, the most common 
+port fro Web connections. (The other address is your computer's IP address, 
+at least for this connection).
+
+Now you are ready for the next step -- to get on the computer your victim 
+uses.  (See the GTMHHs on breaking into Windows 95 for instructions if you 
+aren't able to simply persuade your victim to let you briefly use his or her 
+computer.) 
+
+******************************************* 
+You can go to jail warning:  This had better be a good friend or family 
+member you are doing this to, because breaking into someone's computer 
+without permission is against the law.  Your safest way to do this hack is 
+to get permission to briefly use the victim computer and sneak in the 
+necessary changes during this use. 
+*******************************************
+
+Once you are on that Windows 95/98 computer, give the command:
+
+edit c:\windows\hosts
+
+(If the hard drive that has the windows directory is different from c:, 
+substitute the appropriate drive.)
+
+Next, type in this command:
+
+206.61.52.34   www.fubish.com/~yourfriend
+
+For 206.61.52.34  substitute the IP address of your web server, and for 
+www.fubish.com/~yourfriend substitute the URL of your friend's Web site.
+
+Now tell your friend his or her Web site has been hacked.  Sit back and 
+laugh your head off when your victim sees your Web site instead!
+
+Troubleshooting:  What if it doesn't work?  What if you just see the same 
+boring old Web site?  If that happens, it's because the browser brought up 
+an old cached copy rather than your hacked one.  So just tell your friend to 
+click "view" then "reload" and it will bring up your awful "hacked" Web site. 
+
+The amazing thing about this hack is that the window of the browser shows 
+the URL of your friend's real Web site.  If your victim gives the command 
+"netstat," under the "Foreign Address" column it will show the URL of the 
+victim's real Web site.  The only way the victim can tell his or her Web 
+browser isn't connected to the real Web site is to give the command "netstat 
+-n."  This will reveal the numerical address of your Web site instead of the 
+victim's Web site.
+
+How does this hack work?  If you have Windows 98, there is a file that 
+explains this, "hosts.sam."  However, this file gives a boring and highly 
+technical explanation.  The Happy Hacker explanation is that the "hosts" 
+file allows you to save time by having your home computer translate from the 
+name of a Web site into a numerical IP address instead of having a DNS 
+server somewhere on the Internet do it for you.
+
+Oh, yes, this hack also works on Windows NT.  The hosts file is in 
+c:\winnt\system32\drivers\etc\.
+
+If you look closely, you will find some sort of hosts file already exists or 
+can be created on almost any operating system which is capable of networking 
+to the Internet. 
+
+Have fun spoofing hacked Web sites.  However, if you get punched in the nose 
+-- remember, I warned you!
+
+_______________________________________________________________________
+
+ *** Antionline Back Online! 
+_______________________________________________________________________
+
+Want hacker news that gets the stories straight?  John Vranesevich's 
+http://www.antionline.com is back up and better than ever! Vranesevich, who 
+is only 20 years old, is already famous as one of the world's foremost 
+journalists covering hacker news.  He also is a pretty good hacker and 
+systems administrator -- a rare combination.  He knows what he is writing 
+about, unlike most reporters who are at the mercy of whatever misinformation 
+law enforcement officials and computer criminals feed them.
+
+Vranesevich even has a portion of his site where you can see the attacks 
+being made against Antionline.com.  Guess what -- someone doesn't want him 
+to be on the Internet.  These someones are obviously computer criminals -- 
+since you can watch them trying -- quite unsuccessfully -- to commit 
+computer crime against him.
+
+_______________________________________________________________________
+
+ *** Hackernews.com Screws up Yet Again 
+_______________________________________________________________________
+
+If you enjoy reading inaccurate or just plain bogus "news" about hacking, 
+http://www.hackernews.com should be entertaining for you.  In January 
+Hackernews.com was infamous for putting out a phony story about Bronc Buster 
+and his allies in the Legion of Downloading supposedly declaring war on 
+China and Iraq.  There appears that there was NO TRUTH to this story! 
+However,  the national media spread the story around, assuming that the 
+folks at hackernews.com had some  facts behind the story.
+
+Imagine how Bronc Buster must have felt when all of a sudden his name was 
+splashed across many news stories for something that apparently was just a 
+rumor started on Internet Relay Chat (IRC).  Then the L0pht (which runs 
+Hackernews.com), the Cult of the Dead Cow and several other hacker groups 
+put out a joint press statement condemning this supposed declaration of war 
+against China and Iraq -- getting themselves lots of publicity.
+
+Another phony Hackernews.com story was a report that Antionline.com was 
+hacked.  Baloney, says its owner Vranesevich!
+
+Last week Hackernews.com decided to manufacture yet more news against me 
+(yes, I'm a frequent target).   Here's the story in full:
+
+contributed by Weld Pond 
+
+Carolyn Meinel, a self-described computer security 
+consultant had this to say "It's in a foreign country, and 
+they're not gonna extradite a whole room full of geeks," 
+while attempting to crack a computer in Poland during a 
+demonstration in a crowded University of New Mexico 
+classroom to the local group New Mexicans for Science 
+and Reason.  
+Anyone who feels that this reasoning is ample 
+justification for breaking into a site is likely to have a 
+visit by some Men in Black.
+
+This story is simply baloney.  True, I gave a demonstration for a meeting of 
+New Mexicans for Science and Reason of how to "hack" a Polish computer.  It 
+was written up in a story in the Albuquerque Journal along with a careful 
+description of the difference between "hacking" (just playing and exploring) 
+and "cracking" (trying to break in).  In my demonstration I port scanned the 
+target computer, and showed how to evaluate the services running on the open 
+ports.   We found an unusual service on port 69 which looked like a back 
+door.  At the end of the demonstration I emailed the sysadmins of the target 
+computer with a list of some vulnerabilities I found.  At no time did I 
+attempt to "crack" this computer.
+
+I did make a joke about extraditing a room full of geeks.  So what?  Since 
+when is it a newsworthy crime to crack jokes?  Duh, fellas!
+
+Pond might have the excuse that he does not grasp the distinction between 
+hacking and cracking.  However, Pond is a respected computer security 
+expert.  In fact, he has demonstrated awesome abilities which I admire.  In 
+any case, he could have found out what I really did at that meeting simply 
+by emailing either me or phoning me.  The fact is, Pond has never contacted 
+me for input to any of the "news" stories he has written about me.
+
+If any one wonders what I really did at that meeting, the President of New 
+Mexicans for Science and Reason is willing to answer emails on this 
+question.  He's Dave Thomas, <det@rt66.com>.
+
+And, for the record -- I am AGAINST breaking into computers without the 
+owner's permission.
+
+_______________________________________________________________________
+
+ *** Pentium III Serial Number Cracked 
+_______________________________________________________________________
+
+Feb. 28, 1999
+
+On February 26, 1999, Owl Services, publisher of OSAll 
+http://www.aviary-mag.com released an article about security flaws in the 
+yet-to-be-released Intel Pentium III processor.
+
+The article informed visitors to the site that an OSAll writer (who asked to 
+remain anonymous) has 'cracked' the Pentium III serial number protection 
+scheme.  The flaw was uncovered in a system using a 450 MHz Pentium III 
+processor on an Abit motherboard with a beta version of an Award BIOS.
+
+OSAll Editor-In-Chief Mike Hudack (referred to on the website as Ender 
+Wiggin) has not independently verified the story, but has seen the hack in 
+action.  Although it is not news that the serial number feature can be 
+hacked, this article sheds new light on the subject: the writer was able to 
+determine the processor's serial number without activating the serial number 
+feature, without a reboot, and without warning to the user.  Furthermore, no 
+log information or any other tell tales exist.  There is absolutely no way 
+for the user to realize that he or she has been hacked.
+
+For more information, please contact Mike Hudack through his beeper: 
+203-332-2470 or through e-mail: mailto:editor@aviary-mag.com.
+
+Background:
+
+Mike Hudack, editor of OSAll, is a fifteen-year-old high school student in 
+Fairfield, CT.  He maintains the website in his spare time, juggling it 
+between babysitting and computer sales. 
+
+OSAll originally debuted on a personal site, javanet.com/~owlclone, about 
+six months ago.  Since then, the site grew both in content and visitors 
+until transferred to its own domain: aviary-mag.com.  Since then, monthly 
+page views have surpassed the 110,000 mark.
+
+Mike Hudack is also webmaster of the Happy Hacker Digest, founded by Carolyn 
+Meinel.  The website can be found at happyhacker.org.
+
+_______________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Vincent Larsen <vincent@sage-inc.com>; Wargame Sysadmin, Satori 
+<Satori@rt66.com>; Clown Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!

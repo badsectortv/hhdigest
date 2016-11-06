@@ -1,0 +1,295 @@
+Mar. 30, 1999 
+_______________________________________________________________________ 
+See the Happy Hacker web site at http://www.happyhacker.org 
+URL of the day: http://otter.happyhacker.org 
+_______________________________________________________________________
+
+***  Melissa News 
+***  Wargame News 
+***  Mac Users -- You Can Have it Both Ways -- Free! 
+***  Help for AOL Users 
+***  So you Want to Become a Computer Security Professional? 
+***  Help for Win98 Startup, Shutdown Screen Changes 
+***  Free Internet Access, Free PCs! 
+_______________________________________________________________________ 
+  
+ ***  Melissa News 
+________________________________________________________________________
+
+Melissa virus news: http://www.zdnet.com/zdnn/special/melissavirus.html
+
+You've probably heard of the Melissa virus by now.  First detected March 26, 
+it has crashed quite a few mail servers across the Internet through its 
+trick of using a macro embedded in an MS Word document to make MS Outlook 
+email copies of itself under your name to the first 50 people in each 
+address list you keep in Outlook.
+
+Early victims of the onslaught have included Microsoft, Intel, parts of the 
+US Air Force and some military contractors.  Does this suggest a 
+"hacktivist" pattern in which the first copies of the virus were released 
+into organizations the coder wanted to crash?
+
+The virus is embedded in a long list of X-rated Web sites along with 
+supposedly valid user names and passwords.  It also has been reported to be 
+embedded in other documents.  Many Melissa mutations and copycats are also 
+running loose.
+
+This virus and its mutants are almost harmless to your own computer -- if 
+you don't mind copies of other documents you write and attach to email 
+being, in some cases, copied to other people.  The majority of its damage is 
+done against the email systems of the Internet.  
+
+Don't want to be part of the Melissa mess?
+
+1) Don't use Windows or any MS Office 97 or 2000 products.
+
+2) OK, you're a sucker and use Microsoft stuff.  Your next recourse is to 
+never open an attached file with an MS Office application.  I (Carolyn) use 
+Wordpad, which won't run macros.
+
+3) You may already be infected.  Find out whether you are with this free 
+online scan at http://www.mcaffee.com. Want to get rid of Melissa?  Help is 
+at http://www.zdnet.com/swlib/hotfiles/virus399.html.
+
+Are you a sysadmin?  Are you just an ordinary user but want to help your ISP 
+avert crashes of its mail system?  If you have a shell account, you may be 
+able to keep a watch on this problem and alert tech support when things get 
+into trouble.  Try these commands:
+
+~ > df /var/spool/mail 
+Filesystem         1024-blocks  Used Available Capacity Mounted on 
+mack.fubar.com:/var/mail 
+                     2053515 1884995   161675     92%   /var/spool/mail
+
+~ > df /var/spool/mqueue 
+Filesystem         1024-blocks  Used Available Capacity Mounted on 
+/dev/sd0f             294439  108908   156088     41%   /var
+
+If you see disk usage going close to 100% on either of these -- call tech 
+support!   If you are tech support, you may want to write a script that will 
+grep mqueue and mail for the code from the virus.  Here's a sample segment 
+of the virus code: 
+
+BreakOffASlice.Subject = "Important Message From " & 
+              Application.UserName 
+         BreakUmOffASlice.Body = 
+            "Here is that document you asked for ... don't show anyone else ;-)" 
+_______________________________________________________________________
+
+ ***  Wargame News 
+_______________________________________________________________________
+
+* Koan.happyhacker.org changes hands yet again!  The new owners have 
+announced on koan's web site http://koan.happyhacker.org:
+
+Added By: grue & whenback 
+04:58:48 March 27, 1999
+
+The owners of the Koan supervisor apartment have been evicted. 
+It was quite a civilized eviction, but the matter is probably not 
+settled once and for all. The previous tenants 'tg0d' might very well 
+decide to move in again. Only time will tell. Your new landlords 
+wish you a continued pleasant stay. :)
+
+Koan.happyhacker.org is a FreeBSD box with a guest account with a really 
+stupid password -- even a stupid person can guess it!  When you break in, 
+try these commands for lots of fun:
+
+netstat -a 
+netstat -r 
+ps -auxw 
+w 
+who
+
+You can even hack the guest web site!
+
+*  Tg0d rules otter.happyhacker.org!  For a good time, check out 
+http://otter.happyhacker.org. Otter is a 486 running Slackware Linux 2.3.5 
+with a 2.0.34 kernel.  Their web site has an invitation for all of us:
+
+We now are running an IRC server on otter. That is otter.happyhacker.org:6667. 
+Come here to discuss hacking in general and to meet all of your buddies.
+
+This IRC server has attracted a superstar --  John Vranesevich of 
+http://www.antionline.com.  You can also meet the Wargame administrators on 
+Otter IRC, for example Corey Gallatin, who runs the wargame routers; Diode, 
+who built meyer.happyhacker.org and is the Happy Hacker Webmaster; and me.
+
+*  Want to learn how to break into wargame computers?  In addition to tg0d's 
+server on otter, you may use the Undernet server, channel #koan.  This is 
+usually a polite and helpful channel, thanks to the many volunteers who op 
+it.  Don't know how to use IRC?  See the GTMHH on IRC at 
+http://www.happyhacker.org.
+
+*  Technical tip:  Having trouble ftping code into the wargame?  To get past 
+our firewall, when you first make your ftp connection, give the "passive" 
+command.
+
+* Sorry, folks, but I (Carolyn Meinel) decided to nuke 
+fishbone.happyhacker.org.  It was an OpenBSD box.  For a long time it had 
+some secret tenants (or at least they *thought* they were secret).  They had 
+installed a rootkit that appeared to be almost perfect.  Only flaw I could 
+see was that /tmp looked strangely empty.  However, they couldn't hack the 
+Cisco router, which dutifully kept records of the comings and goings from 
+fishbone, revealing activities that were hidden from the process table, 
+netstat, wtmp etc.  
+
+I would have been happy to let the "secret" visitors remain, except that 
+they consistently attempted to use fishbone as a platform to commit computer 
+crime. While we like to think that we are good enough to block all attempts 
+by the baddies to use our wargame as a platform to commit crime, no one is 
+perfect.  So I finally decided to terminate them.
+
+So... since the *only* reliable way to boot nasty guests off a computer is 
+to reinstall the operating system and other programs from trusted sources, I 
+decided to reincarnate fishbone as a NT box.  Right now it's being used and 
+tested elsewhere, but expect to see my attempt to run a hardened NT box on 
+the wargame soon.
+
+* Meyer.happyhacker.org also has a secret root d00d.  We would appreciate it 
+if people who root wargame boxes would please put up web sites to advertise 
+their existence.  As long as you try to remain secret, you run the risk that 
+if we see what looks like attempts to commit crime coming out of your box, 
+we just might replace the operating system and take root back from you. 
+However, if we know how to contact you, preferably by phone, if we see nasty 
+stuff being attempted from your box, we will contact you when the baddies 
+are being busy bees.  This gives you a better chance of getting rid of them 
+yourself.  Also, we are happy to help you out by rebooting any wargame 
+computer you may control.  (Hint: try "kill (pid) HUP" first.)  We have an 
+800 number you may call for wargame tech support.  Sorry, you have to prove 
+you are root before you get the 800 number:):)
+
+* dmz.happyhacker.org is a router.  You don't need a user name to get in -- 
+just guess the password.  Hint: the password is fined up beyond all 
+recognition.  The fellow who owns it is Corey Gallatin.
+
+* Want step-by-step instruction with screen shots for the basics of how to 
+break into computers?  Buy the Happy Hacker book 2nd edition, now in its 
+second printing. It is 400 pages (up from 260 in the first edition), a large 
+format paperback book. You can read about it at the Happy Hacker bookstore, 
+http://www.happyhacker.org/bookstore.html. You can order "The Happy Hacker" 
+book, second edition (paperback, 400 pages) from anywhere in the world at 
+the American Eagle bookstore at http://www.logoplex.com/resources/ameagle 
+(or phone toll-free in the US 800-719-4957); or you can get an autographed 
+copy shipped to anywhere in the world  by sending a check or money order, 
+made out to "Happy Hacker" to PO Box 1520, Cedar Crest NM 87008.  Its price, 
+including shipment by Priority or Airmail delivery, is: 
+US: $39.95; Canada, Mexico, Ireland, Great Britain, Western Europe: US$46.90 
+Everywhere else: US$48.90 
+If you live outside the US, just ask your bank to make out a money order for 
+US$. 
+_______________________________________________________________________
+
+ ***  Mac Users -- You Can Have it Both Ways -- Free! 
+_______________________________________________________________________
+
+Do you want to be able to go online with the security of Mac OS, but be able 
+to shift to the power of Linux when you're ready to hack?  If you have a 
+Power PC Mac, you can have some serious fun.  At http://www.linuxppc.com you 
+can find out how to get LinuxPPC Live. This is a free demonstration version 
+of LinuxPPC which you can run from your Mac OS hard disk without having to 
+partition it.
+
+_______________________________________________________________________
+
+ *** Help for AOL Users 
+_______________________________________________________________________
+
+If you use America Online (AOL), it is possible that nothing in this chapter 
+will work for you.  This is because AOL is not an Internet Service Provider, 
+but an online service which lets you use some carefully selected parts of 
+the Internet.  Some versions of the AOL software won't let you use many 
+hacking tools, for example telnet, ftp, or ping.  
+
+Here are some ways you can solve your problem.
+
+1) Get a real Internet Service Provider (ISP), preferably one that will give 
+you a Unix shell account.  You can locate ISPs (including the many that 
+offer shell accounts) anywhere in the world at http://celestin.com/pocia.
+
+2) If you live in the US, Netzero.com will give you a free dialup account 
+with true Internet connectivity.  Warning: I discovered that every time I 
+dial in, Netzero resets the advanced preferences on your Web browser to 
+enable Java and Javascript.  Because there are so many ways to use Java and 
+Javascript to crash or steal information from you computer, you need to turn 
+them off before going to suspicious Web sites.
+
+3)  Can you find an old AOL installation floppy disk?  If you install from 
+one of those, when you log on to AOL you should get an online connection 
+that will allow you to use all the hacker tools of this chapter.  However, 
+the CD-ROM AOL installation disk will NOT let you hack. 
+_______________________________________________________________________
+
+ ***  So you Want to Become a Computer Security Professional? 
+_______________________________________________________________________
+
+If you get on hacker mailing lists,  or hang out on IRC, you see people 
+claiming that you can learn lots about computer security by attending 
+conventions such as Rootfest or Def Con.  Er, maybe, but I get the 
+impression most security professionals go there to see what computer 
+criminals look and act like.  Those cons are great for law enforcement 
+professionals who want to get positive identities the people they are trying 
+to arrest.
+
+OK, it is true that the tattoos and fangs set, the Goth fashion plate types 
+who dominate the hacker cons do get jobs in computer security.  But they 
+only can do so if they are superstars.  Who knows whether these d00dz will 
+still be able to hold on to their jobs 5 or 10 years from now?  But if you 
+want good jobs now that will turn into a solid profession -- learn computer 
+security at the conferences where the elite meet.  Here are some I recommend: 
+  
+SANS99 The Eight National Conference on Systems Administration, Networking 
+and Security  
+May 7 - 14, 1999   The Hyatt Regency Inner Harbor and  
+Baltimore Convention Center, Baltimore, MD 
+http://www.sans.org/sans99/index.htm
+
+Usenix: 1st Workshop on Intrusion 
+                    Detection and Network 
+                    Monitoring (ID)
+
+                    April 9-12, 1999 
+                    Santa Clara Marriott Hotel 
+                    Santa Clara, California, USA  
+http://www.usenix.org/events/detection99/
+
+_______________________________________________________________________
+
+*** Help for Win98 Startup, Shutdown Screen Changes 
+_______________________________________________________________________
+
+Keydet89 reports that many people are asking him how to change the startup 
+and shutdown screens for Win98.  Duh!  Here's what works for me.  Just 
+follow exactly the same instructions as for Win 95.  No c:\logo.sys?  Create 
+one anyhow.  Enough said. 
+_______________________________________________________________________
+
+        *** Free Internet Access, Free PCs 
+_______________________________________________________________________
+
+In the US you can get a free dialup connection to the Internet from 
+http://www.netzero.com.  Get a free PC to go with it from http://www.Free-PC.com 
+_______________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Vincent Larsen <vincent@sage-inc.com>; Wargame Sysadmin, Satori 
+<Satori@rt66.com>; Webmaster, Diode <webmaster@happyhacker.org>; Clown 
+Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
