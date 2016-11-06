@@ -1,0 +1,361 @@
+Sept. 14, 1998
+
+===================================================================== 
+===================================================================== 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska: http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS 
+**This week's posts** 
+* Help Files Actually Can Be Helpful 
+* UHA Newsletter 
+* Re: Hacker tutorial 
+* JavaScript Exploit 
+* Re-initializing hard drives
+
+**This week's Questions** 
+* mIRC v5.41 question 
+* SMTP Relay Checking 
+* XM Laroux
+
+**Answers to previous Questions** 
+* RE: How to decrypt a win95 password?
+
+**Editorial: Views from InfoWarCon 98**
+
+================================================================== 
+ *** Help Files Actually Can Be Helpful 
+================================================================== 
+From: "Reflux Acid" <reflux98@hotmail.com>
+
+In my boredom, I began exploring the windows help files (Start > Help).
+
+Now, on the computers at my school, as well as many others, the 
+"Settings" folder, which is on the start menu and contains the "Control 
+Panel" and "Printers" folders, is disabled (it doesn't appear on the 
+"Start" menu).
+
+Go to the Help option on the start menu, and click the "Index" tab. Now type 
+in the item that you are looking to change, for example, type in "Hardware 
+Settings". Press enter or double click on the highlighted option. The 
+windows help window for that particular topic will then appear. In the 
+explanation you will find a button (linked icon) to that particular topic. 
+Using our example of changing the hardware settings, the device manager 
+would appear.
+
+You can do this to access any of the items normally located in the "Control 
+Panel" or "Printers" folders. I'm sure you can find several other interesting 
+things that have been disabled as well.
+
+:)
+
+Reflux 
+"Information Regurgitation" 
+=================================================================== 
+ *** UHA Newsletter 
+=================================================================== 
+From: the file ripper <tfr@gmx.net>
+
+There is a new Newsletter out !!
+
+It talks about new exploits and how to cover your ass and stuff like 
+this.
+
+The Information they provide is not old, it's new found-out !! 
+To subscribe the UHA Newsletter (UHA = United Hackers Association) go 
+to:
+
+http://www.getreminded.com/GRA/remote.asp?list_id=248942&function=add
+
+It's really worth the time!
+
+-the file ripper [UHA] 
+Email : tfr@gmx.net 
+Homepage : http://come.to/UHA 
+[also a large archive of h/c/p related filez!] 
+ICQ # : 7010064
+
+[Dale: I have not seen this Newsletter yet - you decide if it's any good...] 
+================================================================== 
+ *** Re: Hacker tutorial 
+================================================================== 
+From: Strider <Strider@baka.com>
+
+ -snip- 
+>I have written a Tutorial on Hacking Into Linux boxes and have got a very 
+>good responce from newbies and beginners although I have got some hardcore 
+>threats from "top-gun?" hackers. 
+ -snip-
+
+Lots of people disagree with this form of 'Hacking Tutorial'.
+
+Unfortunately, some also feel the need to attack and threaten such sites. 
+Although I prefer not to use a violent means to my end, I also disagree 
+with the publication of tutorials like the one on your site.
+
+Power that is granted, not earned, is very dangerous. The tutorial is full 
+of exploits which, if used properly, could compramise root. If used 
+improperly, they could lead to being caught. Anyone who needs to use this 
+tutorial (that is, anyone who doesn't already know how to hack by 
+themselves) will most likely know too little to avoid causing damage. 
+There's a reason why the root shell is reserved for the administrator. 
+Without having to earn the privilage, a root shell tends to be rather 
+intoxicating, and carelessness is almost inevitable.
+
+Hacking isn't just a game of breaking into computers. People watch 
+"Hackers", or see someone in action, and that's all that they usually see. 
+They get the 'feel' of the world we live in, but don't understand where it 
+comes from. They don't see the hours learning those languages which aid us. 
+They don't see the everyday hacking, the programming and learning, which 
+goes on. That is the true essence of hacking.
+
+You have the Mentor's last words on your page. They speak volumes. I'm sure 
+you know the answer to this question:
+
+Who is a hacker? Someone sitting at his computer hacking root from a 
+tutorial, learning little and possibly causing damage to himself and the 
+system they attack, or someone sitting at her computer trying to break into 
+it, understand it, and learn its code and machinery so that she can create 
+those exploits?
+
+It doesn't matter whether she's doing it in order to break into systems or 
+to report the exploit to the software's author and lists like BugTraq. It 
+doesn't matter whether she's breaking her system for exploits or creating a 
+utility to enhance security. The second individual is a hacker.
+
+Hacking is a drive to learn more. It can extend beyond computing, but its 
+primary focus lies there because of an almost infinite potential. When you 
+consider that hackers can be Black Hat, White Hat, programmers, admins, FBI 
+trackers, or just some kid trying to make a web server on his Commodore 64, 
+there's only one element that is common between them. Find that element, 
+that one piece, and you know what hacking is.
+
+Tutorials like the one on your site don't promote that sort of learning- 
+they promote the idea that hacking is a big adventure, a game and a rush 
+that can't be lost, if you're good enough. They may lead some to be 
+hackers, but it's been my experience that the opposite is always the result.
+
+As for advice, either remove the tutorial from your site, or expect more 
+criticism and possibly attacks. That's the way of things. If you do take 
+down the tutorial, by all means add information that will help people learn 
+more. Programming tutorials are an excellent way of helping people learn on 
+their own.
+
+- strider corinth
+
+PS- I know that all of those exploits are available someplace else on the 
+web (rootshell comes to mind). It's promoting and distributing them in the 
+format that you do that brings you under fire.
+
+                                       | 
+                                     --+-- 
+                                       | 
+| 
+================================================================== 
+ *** JavaScript Exploit 
+================================================================== 
+From: SIR MYST <OoIMYSTIoO@aol.com>
+
+Hello Carolyn ,
+
+Well i have been reading the HHD for about 5 months now. I've been around and 
+in the Hacking scene for about 2 years now and I've been experimenting with a 
+couple things. In the Sept 9 edition of HHD, I read over the article about 
+the bug in IE4, which allows people to acces local files from a viewers 
+computer.
+
+Well I did a little experimenting with the guy's idea. I looked for a common 
+txt file that I know Everyone running Win 95 or 98 would have and I found 
+reginfo.txt. It is not nothing Great but if you use this file with a nice 
+little perl script you could easily have the users OEM number, OS, NAME, 
+Phone number, Address and lots more e-mailed to you directly. Well I just 
+thought it was a little neet to see peoples Info popup in my mail box. I've 
+created a little 2 lined script with javascrpt that should work, but I'm no 
+javascript expert.
+
+[Example]http://outrage.onza.net/local.html
+
+Well, if you have any questions or would like to submit a better use of this 
+little bug that BILL GATES and his __________ company didn't find please 
+E-Mail me at:
+
+bohamid@hotmail.com 
+================================================================== 
+ *** Re-initializing hard drives 
+================================================================== 
+From: "Lester W. Oliver" <les@sactoh0.sac.ca.us>
+
+This is note on FiReWaLL's comment in HHD, Sept. 9, 1998, about 
+reinitializing hard drives.
+
+This is an old trick, to 'sort-of' reinitialize IDE hard drives, 
+which are running on Mess-DOS/WinDoze machines. It works when 
+sector 1 has been scrambled or trashed, and essentially makes the 
+drive appear to be factory fresh. After running this routine, you 
+will need to repartition with fdisk, and then format the drive.
+
+Boot from drive a: and then start debug. (You do have a handy 
+emergency disk ready, right? Go make one.) At the debug prompt, 
+enter the following: (Enter after each line)
+
+A 
+MOV AX,0301 
+MOV BX,0020 
+MOV CX,0001 
+MOV DX,0080 
+INT 13 
+(enter) 
+G=100 10E
+
+What it does: 
+A             start assembly in debug 
+MOV AX,0301   write one 512 byte sector 
+MOV BX,0020   data address all zeros 
+MOV CX,0001   cylinder 0 and sector 1 
+MOV DX,0080   head 0 and physical drive 0 (C: is drive 0; an 
+              installed D: dirve would be drive 1, and the 
+              instruction would be 0081) 
+INT 13        interrupt 13 
+(enter)       assemble the routine, and return to debug 
+G=100 10E     do it to it. run the routine.
+
+If this doesn't work, you can try a 'mid-level' formatting 
+program. There are several available from Corporate Systems, and 
+Seagate released one several years ago called SGATFMT4. Sorry, I 
+don't remember the URL's right now. DON'T ever do a low-level 
+format on an IDE drive. That will turn it into a paperweight.
+
+Can't hurt, and beats throwing a "dead" drive at the wall (that 
+always scares my cats, then the dogs bark, and.....)
+
+Take care, 
+Les
+
+It's easy to tell the rich people in my neighborhood - they have a 
+BMW up on blocks in the front yard. 
+================================================================== 
+ *** mIRC v5.41 question 
+================================================================== 
+From: Ciaran <Ciaran.Cooney@independent.ie>
+
+Having just delved into the world of IRC for the first time this 
+morning, I have already hit upon a problem....*sigh* 
+  
+Every time I Join a channel, mIRC executes a DCC send to everyone in 
+that channel - a program called ARM311.exe is sent. I've deleted the 
+script that mysteriously appeared in the popup menu box which seems to 
+relate to it, I've deleted the program and associated file in the mIRC 
+directory which it is sending - all to no avail. Upon restarting mIRC 
+they all reappear.
+
+Just what the F*CK is going on?
+
+P.S. The happyhacker list is fab. Keep it up.
+
+Reply From: Roger Prata <rprata@yahoo.com>
+
+Hmm, that is VERY interesting.  I have been using mIRC for the past 2 
+years, and I have never seen such a thing.  Where did you download it 
+from, first of all.  The best (and most reliable) place to download 
+mIRC would have to be it's site: http://www.mirc.co.uk.  I would not 
+trust an mIRC download from anywhere else...
+
+If anyone else has had this problem, let us know.  It's  a very 
+interesting one...
+
+-Roger 
+================================================================== 
+ *** SMTP Relay Checking 
+================================================================== 
+From: Magnus Kristiansen <makris@online.no>
+
+SMTP Relay Checking, what is it, and how do you do it "by hand"?
+
+//Marius A, Kristiansen 
+================================================================= 
+ *** XM Laroux 
+================================================================= 
+From: "Jelly.." <jelly@innocent.com>
+
+I've encountered the virus detected by NAV called " XM Laroux". It's 
+infected an MS Excel file... But unfortunately NAV can't get rid of it 
+except to delete the file.
+
+Do you know of a better idea?
+
+Jelly.. 
+================================================================= 
+ ***  RE: How to decrypt a win95 password? 
+================================================================= 
+From: George Reid <george@reid.netkonect.co.uk>
+
+You didn't say what type of Windows password you were trying to crack. I 
+presume you mean .PWL (logon) files, in which case the proggie you're 
+looking for is called "Glide". Try an AltaVista search and you won't have 
+much trouble finding it (versions are available torun under 95/98 and NT).
+
+I don't know why you actually need to decrypt the password - once you're 
+logged into the machine, you can delete .PWL files at your own leisure. If 
+you want security, try NT!
+
+:-)George
+
+- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+                 George Reid 
+         george@reid.netkonect.co.uk 
+http://ourworld.compuserve.com/homepages/greid 
+- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+================================================================= 
+ *** Editorial: Views from InfoWarCon 98 
+================================================================= 
+From: Dale Holmes <editor@techbroker.com>
+
+Wow! I just spent 14 hours at InforWarCon 98 and I sure am tired...
+
+First of all, I'd like to thank the sponsers of the conference for letting 
+me in on a press pass. That was very gracious of them, and I really 
+appreciate it.
+
+I met many interesting people while I was at the conference. Hello to all of 
+them - they are probably subscribers to the HHD now if they weren't before 
+we met. I think the networking that went on between attendees was the most 
+valuable thing that happened at the conference.
+
+I saw many presentations at InfoWarCon 98, some good, some bad, and some 
+ugly! I will be writing editorials on some of these individually in upcoming 
+issues of the Digest.
+
+I got there at 6:30 am and left there at 8:30 PM, and in that 14 hours, I 
+took lots of notes, talked to lots of people, and drank lots of coffee - 
+lots of coffee! The coffee at the Hyatt Hotel was very good too.
+
+One thing I learned at the conference is that there is no free lunch - 
+literally. At least for the press, that is. The conference attendees 
+received little yellow meal tickets in order to get into the luncheon room 
+where there was an ongoing discussion of "InfoWar - point/counterpoint", or 
+something like that, as well as some sort of hot lunch. Well, with my press 
+pass, I didn't get any yellow tickets, so I missed that discussion, which I 
+really wanted to hear.
+
+Oh well, as someone famous once said, you can't have everything - where 
+would you put it? 
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write keydet89@yahoo.com; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Roger Prata <rprata@techbroker.com> 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

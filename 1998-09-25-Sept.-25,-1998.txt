@@ -1,0 +1,99 @@
+Sept. 25, 1998
+
+===================================================================== 
+===================================================================== 
+See back issues of the Happy Hacker Digest and Guides to (mostly) Harmless 
+Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska: 
+http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+ Tired of trying to break into koan.happyhacker.org?  Its sysadmin, Satori, 
+has decided koan has been too hard to break into, so he has just made it 
+much easier.  He has opened a guest account (user name: guest) with a 
+password that is so stupid you can easily guess it.  Even a stupid person 
+should be able to guess it.  If you can get into this account you can then 
+try out all those exploits that only work from inside a shell account.
+
+ Sorry for the delay in moving the Happy Hacker Web server from 
+zlliks.505.org to wargame computer fishbone.happyhacker.org. The problem is 
+we want to make it easier to break into than zlliks, but not too 
+ridiculously easy. 
+ Why do we want to make it easier to break into http://www.happyhacker.org? 
+It's a long story, so I'll just tell you a little bit of it. The Hacking for 
+Girlies gang is really, really mad at me, Happy Hacker chief pooh-bah 
+Carolyn Meinel.  Normally when a hacker gang that has criminal tendencies is 
+really mad, they express their feelings by hacking the website of the person 
+who has given them a case of the mads. 
+ Unfortunately, hacking for Girlies has never figured out how to get into 
+http://www.happyhacker.org.  So instead they have put up their protests 
+against me at two Motorola Web sites, the Jet Propulsion Lab, Penthouse 
+classified ads, and finally, on Sunday, Sept. 13, 1998, they placed one of 
+their tirades on the New York Times newspaper's Web site.  Apparently they 
+did considerable damage, because it has taken the Times over a week to 
+rebuild their site. 
+ Since the New York Times is one of the most prestigious newspapers in the 
+world, and its Web site is read by over 150,000 people every Sunday, this 
+caused a lot of excitement.  You can read about it at 
+http://www.nytimes.com/ (use their search function); 
+http://www.antionline.com (it has copies of HFG's hacked Web pages); 
+http://www.news.com/News/Item/0,4,26345,00.html?st.cn.nws.rl.ne; 
+http://www.msnbc.com/news/196053.asp; and many other places online. 
+ It is really amazing how many reporters have been calling me since that 
+hack.  After the first few interviews I began getting a bit peeved at the 
+attention, even though they have all written nice things about me.  So I'm 
+wondering whether Hacking for Girlies might be willing to simmer down and 
+stop trashing the Internet with their protests against me.  I wonder -- 
+maybe what they really want is to figure out how to break into 
+http://www.happyhacker.org? 
+ So this will be an experiment. When our web site moves from zlliks.505.org 
+to fishbone.happyhacker.org, it will finally be on a box that is an 
+intermediate hacking challenge, instead of advanced.  Once that has happened 
+(probably this weekend), if Hacking for Girlies breaks into any other web 
+site to post their gripes against me, I swear I will hold a press conference 
+and show the reporters how easy it is to break into the Happy Hacker Web 
+site.  This will make Hacking for Girlies look like lamers and losers. 
+ So if any of you Hacking for Girlies guys is reading this, remember, if you 
+break into any other Web site to protest me, I will make you the look bad in 
+many news stories. Did you guys notice how several reporters pointed out 
+that you guys must have just gotten lucky when you got into the New York 
+Times, because you couldn't break into http://www.happyhacker.org? 
+ However, if you can figure out how to break into the Happy Hacker Web site, 
+you will win the glory of mastering an intermediate challenge in our 
+Wargame, and make it impossible for me to convince any more reporters that 
+you guys have subnormal intelligence. 
+  
+ Call for volunteers: Webmaster Josh Fritsch is working overtime lately and 
+needs someone else to take over running the Happy Hacker Web site.  I'm 
+looking for volunteers who know a lot about the technical side, as well as 
+the artistic side.  We especially could use a volunteer who could coordinate 
+the efforts of others so we could enjoy the talents of many people in 
+designing our web site.
+
+ What happened to the Digest this week?  Editor Dale Holmes had a deadline 
+to complete his latest computer manual.  Patience, he will announce the 
+title when comes off the presses.  He promises two Digests next week.
+
+ Check out the October Scientific American for an article I wrote (with the 
+help of many others, credited at the end of the article) "How Hackers Break 
+in and How they Are Caught."
+
+ Happy hacking, folks! -- Carolyn Meinel 
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write keydet89@yahoo.com; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Roger Prata <rprata@techbroker.com> 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

