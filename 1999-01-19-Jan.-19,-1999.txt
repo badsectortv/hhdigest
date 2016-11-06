@@ -1,0 +1,462 @@
+Jan. 19, 1999 
+_______________________________________________________________________ 
+See the Happy Hacker web site at http://www.happyhacker.org 
+Your local firewall blocks you? Try http://happyhacker.org 
+Svenska: http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+URL of the day: http://www.all.net Play the cracker game! 
+Bonus URL:  
+http://www.itlibrary.com/reference/library/1575212684/ewtoc.html Maximum 
+Security book online, and free! 
+_______________________________________________________________________
+
+Inside this report:
+
+*  Wargame news! 
+*  PC-Help call for help 
+*  FBI vs. Meinel 
+*  IRC channels 
+*  Request for volunteer to do Lexis/Nexus search 
+_______________________________________________________________________
+
+ *** Wargame News 
+_______________________________________________________________________ 
+From: Sweasel18@aol.com
+
+First I would like to congratulate Mysidia on his/her hack.  I'm in #koan 
+(on the Undernet IRC server) all the time and have had quit a few people 
+come in and ask how Mysidia got root. I guess not everyone is able to 
+understand Mysidia's explanation (personally I thought it was pretty good). 
+I am going to try to tell you how he did it in more detail.  Since I am not 
+Mysidia I might be off on some things so don't 
+take this as 100% accurate. 
+
+Satori gave the clue that there was a permissions hole and that the hole 
+opened monthly.  The fact that it opens monthly should lead you to the 
+crontab file in /etc.  Go there and you notice monthly is run monthly and 
+monthly runs a file called monthly.local.  In monthly.local is a command, 
+build world and this compiles a lot of files including ping.c.  Now at this 
+point you don't know that ping.c is where the hole is.  This is probably 
+when Mysidia gave the command nice +20 find /usr/src -type f -perm 
+-o+w.somefile &.  I'm not real familiar with this command but I can explain 
+some of it.  The find is looking for files in /usr/src that have world write 
+permissions.  It saves the results to .somefile and the & makes the command 
+run in the background.  Now Mysidia probably opened up .somefile and found 
+ping.c in there.  Now he adds some c code of his own to ping.c and then 
+waits for crontab to compile it.  Satori noticed someone found the hole and 
+modified ping.c so he had it compile early but if Satori hadn't done that 
+the crontab would have done it at the end of the month.  Once it compiled 
+Mysidia probably just had to execute the ping command and then he obtained 
+root.  Mysidia has patched this hole so you CAN NOT use it to get root!
+
+This may not be totally accurate but it should give you a good idea as to 
+how Mysidia rooted Koan. For the newbies that don't know Unix or don't 
+understand the basics as how to hack.  Visit sites like www.antionline.com 
+and view their beginning guides to hacking Unix.  Most of these guides will 
+start by telling you the basic Unix commands. 
+
+BladerHater
+
+_______________________________________________________________________
+
+ *** PC-Help Call for Help 
+_______________________________________________________________________
+
+PCHelp needs your help!
+
+The PCHelp site is in very real danger of being REMOVED.
+
+You are one of a great many people who have been helped by me and/or my 
+website.  I am writing you because I now need your help in return.  My 
+website, the principal page of which is found at 
+http://www.nwi.net/~pchelp/bo/bo.html is at serious risk of being 
+COMPLETELY TAKEN DOWN.
+
+Why?  It is because I have chosen to expose a fraudulently advertised 
+product called Lockdown 2000.  Lockdown 2000 is a software product which 
+purports to deal with ALL Trojans (such as Back Orifice) and with ALL 
+threats to personal PC security.  The claims made for this product are 
+false, and I have exposed the facts in several pages on my site.
+
+I encourage you to read what I have written about Lockdown.  Links are 
+prominently displayed at the top right of the main BO page.
+
+The primary perpetrator of the Lockdown scam, Michael Paris, has written 
+to my ISP threatening a $100,000+ lawsuit if my site is not shut down.
+
+The full story of that threat is at: 
+http://www.nwi.net/~pchelp/bo/LDthreat.htm 
+READ THIS STORY NOW because it could be removed forever within a single 
+day! 
+_______________________________________________________________________
+
+ *** FBI vs. Meinel 
+_______________________________________________________________________
+
+From: "J.D. Abolins" <jda-ir@njcc.com>
+
+In your recent Happy Hacker email, you mentioned the problems with the FBI 
+because of false accusations. I am not an attorney but I have come across 
+many accounts of how interactions of civilians with law enforcement people 
+can go astray. 
+
+>I consulted with four lawyers.  They all said the FBI only gives lie 
+>detector tests to trick someone into saying something that will get them 
+>arrested.  Oct. 30 I told Baldwin I would not take the test.  She got pretty 
+>ugly about it, tying to persuade me I'd better take the test if I didn't 
+>want to be arrested.
+
+I am sorry to hear about the hassles you are getting from the FBI.  
+(Reminds me of the old adage that no good deed goes unpunished.  
+<groan>)
+
+I thank you and admire you for the way you handle the procedures the  
+Bureau was using. Consulting your attorney and refusing the polygraph  
+was the right thing to do. The more people give in to the pressure, the 
+more entrenched the pressure techniques become.
+
+For what it's worth, I'll state something you probably know already, it is 
+both legal and a common practice for law enforcement officers (LEOs) to use 
+their own form of social engineering. (Interestingly enough, in my neck of 
+the woods in NJ, a city's police department is adamant about not having 
+videotaping of interrogations...eh...interviews and confessions. Seems that 
+beneath the objections is the fear that jurors, seeing some of the 
+techniques, might tend to acquit.) 
+
+   "Although it is unlikely that we shall ever again experience the sort of 
+routine third-degree brutality in police stations that was commonplace in 
+the 1920s and 1930s, deceptive techniques, even more advanced than those 
+decried by the _Miranda_ majority, have become the hallmark of the police 
+interrogation trade. Among the most effective 
+and commonly used is the 'fabrication of evidence' ploy." 
+                                                      Skolnick & Fyfe, 
+_Above the Law_
+
+There are many methods of police "social engineering" people: 
+
+* "The hook" is the offer of a "rationale" to the suspect for whatever it is 
+that the person is accused of. In a homicide case, it might go like this: "I 
+read the background of the guy that got killed.... He was some piece of 
+crap.... It was good for the neighborhood that he's dead...." I haven't 
+heard of the hook lines in "hacker" investigations (maybe because law 
+enforcement officers aren't nowhere as familiar with this environment as 
+they with stuff such as murder) but one I can imagine LEOs would use is an 
+appeal to the intellectual tinkering. "...I wonder what is inside of those 
+bank computers...A lot of people must be curious..."
+
+* The divide and conquer method by playing people off of each other in  
+the case of multiple suspects.  Basically, the cliched "You partner is  
+telling us a lot of things and getting a deal with the DA...." ploy.
+
+* An interesting technique reportedly used by one police department  
+was to have a chart of "indications that the interviewee is lying" on  
+the wall.  The chart was deliberately set up with contradicting items:  
+"Subject is nervous.... Subject is too calm.... Subject is belligerent.... 
+Subject is too polite.... Subject avoids eye  contact.... Subject stares at 
+interviewer...." (The items were spaced out so not to be this obvious.) 
+
+* A very common technique is claim that evidence was found that doesn't 
+really exist. 
+
+* Another technique is to irritate the interviewee to get the person to 
+say something unwise. The LEOs can get an upper-hand by using an angry or 
+irritated outburst as a hook to manipulate a person.
+
+* Mild physical duress can be used. The classic third degree is out these 
+days but there are other ways. Chilly rooms. Allow the person to  
+drink lots of water but delay bathroom breaks. Chairs with maladjusted legs 
+to make the person feel uncomfortable.
+
+* Applying to arrests, a big tactic to have more open confession time  
+is to delay the arrestee seeing the attorney. Legally, the police have  
+to tell the arrestee that the attorney has arrived. They, however, are  
+not obligated to send up the attorney. The arrestee has to ask or  
+demand to see the attorney. Otherwise, the LEOs might well delay,  
+hoping that the person unwittingly blabs out something useful before 
+the attorney can stop him. 
+
+   By the way, the whole Miranda deal gets very interesting in regards 
+   to legal distinctions of a person being a witness, an interviewee,  
+   a suspect, and an arrestee. Miranda v. Arizona decision applies  
+   to only formal arrest and to where confessions are an issue.  
+   (Some cases don't require Mirandization. Usually cases where  
+   the possession of some item is sufficient for the case. But if the  
+   person start confessing to something, Miranda applies...)  
+   One technique LEOs may use is to keep interviewing people rather  
+   than arresting and interrogating them. Things said during the  
+   interviews can be used against the person but the Miranda  
+   protections don't apply. 
+
+These and other police "social engineering" techniques are regarded  
+by many LEOs to be so crucial to their work that if they were  
+prohibited, it would be the end of civilization. <grin>
+
+>Nov. 10, Dr. Mark Ludwig, publisher of "The Happy Hacker book," went along  
+>as a witness with me to the Albuquerque FBI office.  There we met with three 
+>agents: Doug Beldon, Roger Black, and Baldwin.  Beldon told Ludwig, "Sure, 
+>she's a suspect."  They subjected me to over an hour of browbeating, warning 
+>me that if I didn't take a lie detector test, my chances of arrest would 
+>increase. I sat there and said nothing -- and took notes.  It was a 
+>fascinating opportunity to observe how the FBI tries to intimidate innocent 
+>people into incriminating themselves.
+
+Saying nothing is the right thing to do. It may be hard to keep silent but 
+saying practically anything is risky in such proceedings. 
+
+And there is no "off the record" with LEOs. Incidentally, except for 
+arranged discussions with an attorney in law enforcement faculties, 
+conversations with friends/etc. in the faculties can be risky. The bugging 
+of some of the facility areas is a common practice (as came up in a case 
+where a suspect was talking with a priest). 
+
+Incidentally, an all common mistake people make is to ask the police if they 
+should get an attorney. Wrong people to ask. The question can be used as a 
+springboard for ploys such as "Why do you think you NEED an attorney?" or 
+"What are worried about that you want to call in a lawyer?" 
+
+By the way, the all too common cliche of "if you are innocent and have 
+nothing to hide, then a polygraph will help to show you're innocent" is 
+bunch of bovine soil enhancer. It is a psychological hook to go fishing for 
+anything useful. And in the USA justice system, the burden of proof is upon 
+the accuser, not the accused. (But, alas, this is being pushed the other 
+way.  Look at the DNA sampling push, as in New York City, where the 
+supporters claim is that getting DNA cataloged and booked will help innocent 
+people by "proving" their innocence. What next, black boxes for computers to 
+prove where one has been on the Internet? <grin & groan>)
+
+>Guess what -- Doug Beldon has a certificate in his office saying he is a 
+>graduate of the Rush Limbaugh Institute.  It figures.
+
+Is that a mental institution? <grin><sorry, couldn't resist the joke>
+
+>Does this mean that I will no longer cooperate with the FBI in bringing the  
+>Hacking for Girliez gang to justice?  Because the FBI has not backed down 
+>claiming I am a suspect, I no longer dare talk to them.   However, I am 
+>still tying to bring the Girliez to justice by helping others to catch them.
+
+Good move. Don't talk directly with the Bureau about the cracking case.  
+Besides the likelihood of the FBI using the info against you, another very 
+big problem is how the relationship can be manipulated and presented to 
+others. (Don't be surprised if somewhere down the line you are made out to 
+be an "informant" for the Bureau.) This is very ironic that the FBI hampers 
+one of the "good  guys" by its handling of the claims made by the "bad 
+guys". It is a common hazard.
+
+>I will continue to help keep the Happy Hacker message of white hat, good guy 
+>hacking on the Internet.  You have the right to know the secrets of the 
+>Internet and to learn how to protect yourself from nasty characters such as 
+>the Girliez.  I won't let criminals like them shut me down, and I won't let 
+>the FBI shut me down, either.
+
+Thank you for the Happy Hacker mailings and the perseverance in this  
+situation. Also, thank you for bearing with my unsolicited comments.
+
+J.D. Abolins (not an attorney; just a person with wide range of interests. 
+This text is not a substitute for the services of a competent legal counsel.)
+
+PS. Some background references and resources about police methods:
+
+Above the Law: Police and the Excessive Use of Force  
+by Jerome H. Skolnick & James J. Fyfe. The Free Press, 1994 
+ISBN 0-02-929153-4 
+The chapter on The Third Degree examines the interview and  
+interrogation processes and how, in many cases, lying and  
+deception are commonly used.
+
+Homicide : A Year on the Killing Streets  
+by David Simon.  Ivy Books, 1993 
+ISBN 0-80-410999-0 
+A Baltimore reporter's real life study of the city's homicide bureau reveals 
+various nitty gritty things about police procedures, including insights 
+about interview/interrogation ploys. The book was the basis for the NBC TV 
+series.
+
+The ACLU Pocket Card on Police Encounters "Bust Card"  
+(Adobe Acrobat PDF document or ASCII text) 
+http://www.aclu.org/library/bustcard.html 
+Simplistic but handy reference for dealing with the police in a variety of 
+situations. Good to study before you need the info. 
+----------------------------------------------------------- 
+From: "Mark Gerry" <markgerry@btconnect.com>
+
+I have been an avid reader of happy hacker for a number of months now, and 
+have never made a contribution.  This is because I am simply only interested 
+in the information it provides rather than wanting to learn how to become an 
+evil hacker.  I have just read about how the FBI are trying to implicate you 
+in their investigation and I think it sucks.  The only reason they are 
+trying to implicate you is because, like all police and criminal 
+investigation units the world over, they have to blame someone and they pick 
+on you because they have your name, it is as simple as that.  They cannot be 
+bothered to get off their ar$es and find the real s.o.b's so they take the 
+easy route and blame you.  I felt that I had to offer you my support as a 
+similar sort of thing happened to me not so long ago.  I was intimidated 
+just as you were, but when it came to the crunch, in a court of law, the 
+case folded and I sued the ar$e off the British version of the FBI for false 
+accusation and false imprisonment, defamation etc.  My biggest mistake was 
+that I tried to help them catch the people involved (I even gave them the 
+names) but as all good agents, they couldn't detect their heads being blown off.
+
+My advice to you is don't get involved, don't help them, just answer the 
+questions your solicitor tells you to answer and keep fighting.
+
+P.S.  Wales is a little country attached to England
+
+----------------------------------------------------------- 
+From: Rakesh Goyal <sysman@vsnl.com>
+
+Carolyn,
+
+We are with you for the injustice, you had from FBI. We fully support your 
+point-of-view and integrity. Hackers have certain principles and ethics. 
+Others are not hackers but criminals. Girliez are one of those. They are not 
+only criminals against NYT, Motorola, MCH, JPL, Penthouse, etc. but more 
+than that criminal against you. Please inform us, where you need our 
+support, help, assistance, we are always with you. 
+ 
+
+Rakesh Goyal 
+(Chartered Engineer, 
+ Certified Management Consultant, 
+ Certified Computer Crimes Investigator 
+ Certified Information Systems Auditor and 
+ Certified Information Systems Security Professional) 
+Director, National Centre for Research in Computer Crimes, Mumbai/India
+
+For and on behalf of all staff at 
+Sysman Computers (P) Ltd., Mumbai/India 
+and National Centre for Research in Computer Crimes, Mumbai/India
+
+[Thanks, it's great to hear your support! -- Carolyn Meinel] 
+----------------------------------------------------------- 
+From: <yruno2@usa.net>
+
+Hi Carolyn, just read you latest "inside happy hacker" and found it 
+interesting as always.  Your story of the FBI harassing you was 
+interesting as well, amazing how they think they can do whatever they 
+please. anyway, you might think I'm being picky, but I was a bit disturbed 
+by your rush Limbaugh comment, and the insinuation that rush would approve 
+of this activity.  As a rabid rush fan, I assure you this agent was behaving 
+in a manner that was opposite to what rush stands for.  I think if you would 
+try listening to him, you would find he is on your side on the issues of 
+maximizing freedom and limiting government intervention in our lives, which 
+your interrogation was an obvious governmental intrusion into YOUR life.  As 
+a fan of your work, I ask you to at least listen to rush before passing 
+judgment on him, much as you study victim computers before hacking them ;) 
+(legally, of course!!)
+
+Have a good one, and keep up the good work!
+
+[Thanks for pointing out that Limbaugh is no fan of FBI harassment, I'm 
+sorry to have made the snide comment -- Carolyn Meinel] 
+-------------------------------------------------------------- 
+From: Ryan Barrett
+
+I've got a nice little story about the America "Intelligence" organizations, 
+the FBI + CIA.
+
+Basically, a few years back during the Cold War they noticed that the 
+Russians had this new missile.  The bad thing was they didn't know what it 
+was.  So what did they do?
+
+They contacted the military/intelligence organizations of Canada, Australia, 
+France and Germany.  No-one knew what it was.
+
+Finally they contacted the British SS (MI5 / MI6).  Given five minutes the 
+British Intelligence service gave them FULL specs for the missile.  How?
+
+They check through the catalogue of a certain MAJOR arms dealer and there it 
+was.
+
+Doesn't it increase your confidence in the agencies? :)..
+
+Anyway I hope the stupid, in-breed morons use the single brain cell that 
+they all share to realize that your innocent.  Hell, if it WAS of your doing 
+you'd have to be the stupidest person on the planet (which you're not).
+
+I've heard a rumor that the "Hacking for Girlies" group are transvestite 
+homosexual males.  They should re-name themselves "Wanting to be Girlies" !
+
+Cheers, 
+Bob,
+
+Ps: If you print this, please don't include my e-mail address. 
+--------------------------------------------------
+
+From: "ELECTRICzero" <ELECTRICzero@prodigy.net>
+
+>Yes, I figured, there was no way anyone with as much as a double digit IQ 
+would think I had ever been one of the Hacking for Girliez gang.
+
+Well... I can't see how that statement was proved wrong ;) 
+        -ELECTRICzero
+
+------------------------------------------------------- 
+Here's the FBI situation as best as I can see it:
+
+1) They have *not* sent me (Carolyn) a "target letter." This is a letter 
+that formally tells someone that he or she is a suspect.  Since I have *not* 
+gotten one, I presume they have given up on thinking I'm a suspect in the 
+Web site hack of the New York Times on Sept. 13, 1998.  There is no news of 
+any arrests or even any raids of other possible suspects.  I have heard from 
+reporter friends that two other people have been visited by the FBI and 
+questioned and that they got the impression that they are suspects.  I also 
+have heard that the FBI asked the owner of  Denver ISP for permission to 
+view his logs but that he refused. 
+
+I'm guessing the FBI has run out of leads.  Usually if no arrests are made 
+within 90 days of a crime, the case is dead. 
+
+-- Carolyn "Grand Pooh-bah" Meinel 
+_______________________________________________________________________
+
+ *** IRC Channels 
+_______________________________________________________________________ 
+From: "Craig Harvey" <harvjcs@pcpro.net.au>
+
+I have the registered the Channel #happyhacker on NEWNET. I hope u do not 
+object to this. I did it to make a place where readers etc. can have 
+discussions/mindless chat etc.
+
+Could u please inform your readers that this is up so they will know it is 
+there and they can use it to trade information etc. and meet new people with 
+the same interests as themselves.
+
+[We don't have any "official" Happy Hacker IRC channels, but anyone is 
+welcome to use Happy Hacker as a name.  Another good channel is #koan on 
+Undernet where people discuss ways to break into koan.happyhacker.org, our 
+wargame computer.  We soon hope to get a message board up at 
+http://www.happyhacker.org which will be moderated so you don't have to 
+worry about wading through lots of flames, warez and "pron" -- Carolyn Meinel] 
+_______________________________________________________________________
+
+ *** Request for volunteer to do Lexis/Nexus search 
+_______________________________________________________________________
+
+There's something a little odd going on in the hacker scene that might have 
+roots in the old Iran/Contra scandal and which possibly could point to 
+renewed US Federal efforts similar to the "counter-subversive" activities 
+that came to light in that scandal.  Because that scandal predates the Web, 
+most of those records are buried in expensive databases such as Lexis-Nexis, 
+or on microfiche or microfilm.  Is there anyone who gets free access to 
+Lexis-Nexis who would be willing to research this problem for us?  It sure 
+would be faster than slaving over a hot microfiche reader! If you can help, 
+please email Meinel or phone her at 505-281-9675. 
+_______________________________________________________________________ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Mark Schmitz <wizard@rt66.com>; Wargame Sysadmin, Satori <Satori@rt66.com>; 
+Grand Pooh-bah: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!

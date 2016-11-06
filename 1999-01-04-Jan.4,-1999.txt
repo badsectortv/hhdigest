@@ -1,0 +1,351 @@
+Jan. 4, 1999 
+_______________________________________________________________________ 
+See the Happy Hacker web site at http://www.happyhacker.org 
+Svenska: http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+Preview Ender Wiggin's new look for the Happy Hacker website at 
+http://www.rt66.com/~tunafish/test 
+_______________________________________________________________________
+
+Inside this report:
+
+* Looking for help from El Salvadoran hackers 
+* Hacker Wargame news: we have a winner! 
+* FBI vs. Carolyn Meinel -- read all about it! 
+* Book review: Winn Schwartau's "Information Warfare" 
+* Happy Hacker book news
+
+_______________________________________________________________________
+
+ *** Looking for Help from El Salvadoran Hackers 
+_______________________________________________________________________
+
+Our former Happy Hacker Digest editor, Dale Holmes, sent us this request for 
+help:
+
+I'd like to ask you a favor... Would you be willing to put a note out 
+to the HHD list asking anyone in El Salvador to contact me (at this 
+sysguru@yahoo.com address). I am trying to help a friend locate his 
+abducted son. It happened in 1997, and he has received information 
+that his son may be in El Salvador. I thought that maybe I could point 
+any friendly HH readers toward the Wanted poster and if they know 
+anything they could send me a note. 
+
+It's not really a Happy Hacker subject, but if you wouldn't mind 
+simply inviting El Salvadoran readers to contact me, I could explain 
+it to them from there... It could make a big difference.
+
+-- Dale  
+_______________________________________________________________________
+
+ *** Hacker Wargame News -- We Have a Winner! 
+_______________________________________________________________________
+
+Check out http://koan.happyhacker.org to see who has root there now!  The 
+winner has left the guest account easy to get into.  Just guess its 
+password.  It is really stupid, even a stupid person can guess it.  Get in 
+and you can hack the guest account Web site -- check it out at 
+http://koan.happyhacker.org/~guest.
+
+We also have to give honorable mention to two hackers who figured out two 
+different ways to get telnet to work in the guest account (Satori had turned 
+telnet off). Cryptotek, who was the first wargame sysadmin, discovered read 
+permission on the telnet program.  So he copied it into the guest directory 
+and set permissions on it to make it executable!  (Use the command "man 
+chmod" to learn how to do tricks like that yourself.)
+
+Here's how the other fellow got telnet working:
+
+**************************************** 
+From: Kt0pher@aol.com
+
+hey i dont know if you really care but observe this-  [i imagine noone has 
+showed you this before or you would have disabled it, wouldn't want people 
+telnetting to whitehouse.gov trying to brute force in 80s style] 
+
+koan% cd /usr/bin 
+koan% tn3270 
+tn3270> telnet 127.0.0.1
+
+FreeBSD (koan.happyhacker.org) (ttyp7)
+
+login: 
+
+Maybe if you post this to the list let me explain what tn3270 is.  It's a 
+program similar to telnet that's really designed to communicate with the old 
+legacy IBM systems like the 370 because of some special characters on the 
+terminal keyboard, but it obviously works with BSD rather well....  thanks
+
+*********************************
+
+Meanwhile, Satori is root on wargame computer fishbone.happyhacker.org, 
+which is also the Happy Hacker Web server.  Hint: this is an OpenBSD box 
+running both Kerberos and ssh.  Not so long ago this combination would get 
+you root if you knew how to exploit it.  But no one did, aw, too bad! 
+
+He, he, we did it again, we put a new computer on the wargame and only the 
+better hackers noticed it was up.  She's smurfett.happyhacker.org, a Linux 
+box.  Sysadmin is Vasendek.  When she first went online and was relatively 
+vulnerable, it was impossible to ping her from the Internet.  The only way 
+you could tell she existed was to get in koan.happyhacker.org and ping her 
+from there (that guest account isn't as lame as you thought it was!)
+
+So here's how to spot what computers are up on the wargame.  From 
+koan.happyhacker.org's guest account, give a network ping command:
+
+ping 198.59.118.255
+
+This sends out a ping to every computer that is on our Local Area Network 
+(LAN).  You will see a whole bunch of replies coming back.  Then you can 
+double check what is there with the command:
+
+arp -a
+
+Hint: this is not foolproof. We could still hide a computer on that LAN that 
+even these commands won't uncover:)  But that's life in the Wargame.  Happy 
+hacking!
+
+___________________________________________________________ 
+
+FBI vs. Carolyn Meinel -- Read All About it! 
+________________________________________________________________________
+
+You can read a news story about Meinel's press conference in which she 
+revealed details of FBI harassment of her at the Wired web site,  
+http://www.wired.com/news/news/culture/story/16872.html
+
+Now here's the story as told by me (Carolyn Meinel)
+
+It all started in August, 1996.  I'm a middle-aged research engineer (MSIE) 
+-- and a computer hacker.
+
+When you read that I'm a hacker, maybe you are thinking that means I'm a 
+computer criminal.  Nowadays almost everything you read about hacking is 
+really about computer crime.  But it wasn't always that way.  It used to be 
+that hacking meant wanting to get inside of what makes computers work, and 
+discovering fascinating and fun things about the Internet.  People who claim 
+hacking is only about computer crime make me mad.
+
+In August 1996 I decided to help the new generation of Internet users 
+discover the good guy, harmless sort of hacking.  So I set out on a quest to 
+teach the secrets of hacking to as many people as possible.  (See 
+http://www.happyhacker.org).
+
+I figured that with my humorous style, no one would be offended by my 
+teaching people about hacking.  I was wrong.  Within days, an alliance of 
+hacker gangs mobilized to try to drive us Happy Hackers off the Internet and 
+out of business.  Computer criminals vandalized each Internet Service 
+Provider that allowed me to be a customer.  They repeatedly made clumsy 
+attempts to frame me for computer crime.  You can see examples in the hacked 
+Web site archives at http://www.antionline.com. 
+
+Despite these attacks, us Happy Hackers refuse to break the law while 
+defending ourselves.  We believe it is wrong to fight back at our attackers 
+by committing computer crime against them.  At our web site we teach you, 
+too, how to defend yourselves legally, using free software.  You don't have 
+to be a giant corporation in order to keep yourself safe on the Internet.
+
+When the criminals realized they couldn't destroy our Web site, then a group 
+calling itself Hacking for Girliez decided to try to cause trouble for us by 
+vandalizing a series of high profile Web sites: Motorola, MC Hammer, 
+Penthouse, NASA JPL, and on Sept. 13, 1998, the New York Times. 
+
+They made clumsy attempts to persuade investigators that I was responsible 
+for their crimes.  For example, at the MC Hammer web site they argued, 
+"CAROLYN MEINEL TAUGHT US TO HACK AND TO HAVE NO  
+ETHICS. BLAME HER."  At thePenthouse web site they said, "ARR3ST  
+H3R DUMB FAT AZZ AND W3 M1GHT QUIT." 
+At the New York Times they made the claim  "Speaking of FBI..  did we forget 
+to mention what Carolyn Meinel offered to do for us?  If asked who we were, 
+or if she had any  knowledge of who we are, she offered to give misleading 
+information to the FBI in order to help us continue our hacking spree.  She 
+assured us that she had plenty of other people to focus the FBI's attention 
+on, and that they would 'surely take the heat'."
+
+I thought there was no way that their silly rants could persuade the FBI 
+that I was helping their crime spree.  It was  good thing, I thought, that 
+the Girliez were so clumsy in trying to incriminate me.  Their crime spree 
+was amazingly destructive. The Girliez did $1.5 million damage to the 
+computer system of the New Your Times.  It took over a week to get their Web 
+site entirely back online. Coincidentally -- or was it coincidence? -- the 
+New York Times Web site was closed down while hundreds of thousands of 
+people were attempting to download the Starr report.  Whoever gets arrested 
+for their crimes is likely to spend a long time in prison.
+
+In early Oct. the Hacking for Girliez gang gave an interview to Adam 
+Penenberg of Forbes magazine, which hit the news stands Nov. 1. Between that 
+and gossip in the underground, the identity of the culprits became an open 
+secret.  It also became obvious to almost anyone that the Girliez hate me. 
+As Penenberg's article pointed out, one of the Hacking for Girliez criminals 
+told him "Meinel has this thought that as the Happy Hacker, she is this 
+noble leader among leaders... we thought, 'Let's make her life hell.' "
+
+Yes, I figured, there was no way anyone with as much as a double digit IQ 
+would think I had ever been one of the Hacking for Girliez gang.
+
+Oct. 26 an Albuquerque FBI agent, Tracy Baldwin, told me it was urgent that 
+I meet her at the local headquarters the next day.  I presumed she was 
+interested in getting more information to help her solve the case.  I had 
+caught the Girliez in the middle of an August 7 attack on Rt66 Internet and 
+prevented them from doing a lot more damage than they did do.  Also, I know 
+a thing or two about computer security, as shown, for example, in my Oct. 
+1998 article in "Scientific American" magazine.  It seemed logical that 
+Baldwin would want my help in solving the case.
+
+I was wrong.  In a bare interrogation room featuring manacles bolted to the 
+desk behind which she sat, Baldwin told me I was a suspect in the New York 
+Times hack.  She demanded that I take a lie detector test. 
+
+I consulted with four lawyers.  They all said the FBI only gives lie 
+detector tests to trick someone into saying something that will get them 
+arrested.  Oct. 30 I told Baldwin I would not take the test.  She got pretty 
+ugly about it, tying to persuade me I'd better take the test if I didn't 
+want to be arrested.
+
+Nov. 10, Dr. Mark Ludwig, publisher of "The Happy Hacker book," went along 
+as a witness with me to the Albuquerque FBI office.  There we met with three 
+agents: Doug Beldon, Roger Black, and Baldwin.  Beldon told Ludwig, "Sure, 
+she's a suspect."  They subjected me to over an hour of browbeating, warning 
+me that if I didn't take a lie detector test, my chances of arrest would 
+increase. I sat there and said nothing -- and took notes.  It was a 
+fascinating opportunity to observe how the FBI tries to intimidate innocent 
+people into incriminating themselves.
+
+Guess what -- Doug Beldon has a certificate in his office saying he is a 
+graduate of the Rush Limbaugh Institute.  It figures.
+
+Does this mean that I will no longer cooperate with the FBI in bringing the 
+Hacking for Girliez gang to justice?  Because the FBI has not backed down 
+claiming I am a suspect, I no longer dare talk to them.   However, I am 
+still tying to bring the Girliez to justice by helping others to catch them. 
+For example, as reported in the Forbes magazine article, I arranged with 
+Internet Security Systems (http://www.iss.net) to remotely monitor Rt66 
+Internet.  If the Girliez are foolish enough to return to attack Rt66, they 
+will walk into a trap. Or, they may fall into someone else's trap. He, he. 
+Gosh, maybe they will have to quit committing computer crime!
+
+I will continue to help keep the Happy Hacker message of white hat, good guy 
+hacking on the Internet.  You have the right to know the secrets of the 
+Internet and to learn how to protect yourself from nasty characters such as 
+the Girliez.  I won't let criminals like them shut me down, and I won't let 
+the FBI shut me down, either.
+
+Keep hacking, and keep out of trouble, folks!
+
+_______________________________________________________________________
+
+ *** Book Review: Winn Schwartau's "Information Warfare" 
+_______________________________________________________________________
+
+Information Warfare : Chaos on the Electronic Superhighway, 
+by Winn Schwartau  
+List Price:$18.95  
+Happy Hacker/Amazon.com Price: $15.16 
+(at http://www.happyhacker.org/general.htm#Information Warfare) 
+You Save:$3.79 (20%) 
+
+Availability: This title usually ships within 24 hours.  
+Paperback 2nd edition (October 1996) 
+
+    This is the book that helped me keep my head when hacker warriors 
+targeted me. Schwartau's book includes many essays by other computer 
+security experts.  But this book is best when it is Winn speaking.  He tells 
+the reader about some of his frightening experiences as the 
+target of way too many hacker wars.  Most important, he tells you exactly 
+what to do to keep yourself safe from credit card fraud, getting your power 
+and phone turned off, and many more hazards of warfare in the cyberspace era. 
+
+    Thanks in part to this book, I've never lost one cent to credit card 
+fraud (despite valiant efforts by cybercriminals to mess me up), never have 
+lost power to my home, and have managed to keep both my personal and Happy 
+Hacker Internet access alive and healthy.  It's great to be 
+able to laugh at the d00dz who think they can use computer crime to scare me. 
+
+ Now in case you think I'm a Schwartau groupie, let me make one thing 
+perfectly clear -- I can't stand him!  But so what, he wrote an invaluable 
+book, now run out and buy it if you want to fight hacker wars and win! 
+Also, it cost a lot less than my book:):) -- Carolyn Meinel 
+
+_______________________________________________________________________
+
+ *** Happy Hacker Book News 
+_______________________________________________________________________
+
+People keep on emailing me saying they can't buy the Happy Hacker book 
+because bookstores tell them it is sold out and more won't be available 
+until February.  That is just plain *wrong*.  Barnes & Noble has it in stock 
+in their distribution centers, Amazon.com usually has it in stock (despite 
+what their web page may say) and we have several boxes of them sitting in 
+the Happy Hacker office.  You can find links to buy "The Happy Hacker," 
+second edition, from your choice of Amazon.com, direct from the publisher, 
+or to get an autographed copy from me (Carolyn Meinel) at  
+http://www.happyhacker.org/ general.htm#The Happy Hacker
+
+A recent review of this book appeared at 
+http://www.itd.nrl.navy.mil/ITD/5540/ieee/cipher/reviews/Meinel.html
+
+The Happy Hacker
+
+reviewed by Bob Bruen
+
+The subtitle of this book is: A Guide to (Mostly) Harmless Computer 
+Hacking, a goal which is met. Very little of what is in the book will 
+turn you into someone breaking into banks. What I liked most about the 
+book is the sense that the old definition of hacking around with 
+computers can found all the way through. Trying out this or that, 
+learning what something means, playing around with features of 
+computers that are not so obvious. Happy Hacker turns out to be quite 
+a good introduction to exploring computers and networks for just about 
+anyone. There are lots of tidbits to try out on your Win95 box. The 
+explanation of port scanning is one of the best I have I seen. Besides 
+a lighthearted approach the description is clear and the examples are 
+meaningful.
+
+Ms. Meinel places copious warnings about getting in trouble with your 
+boss, the law and other hackers throughout the book. Just as often she 
+provides hints of fun things to try that will not hurt anyone, but are 
+useful. For example if you wondered why that annoying $MS background 
+page shows up even after you deleted the file, well a second copy is 
+contained in another startup file, so instead of deleting it, replace 
+it using her instructions. This type of hack hurts no one, but is 
+satisfying.
+
+Forging email, one of the oldest hacks, is explained along with the 
+well known email spam problem and what you can do about it. She traces 
+out some spam mail to its source as it passes through forgeries by 
+explaining mail headers. This is useful education for folks starting 
+out in the world of the Internet. Professionals may see some of this 
+as obvious, but most people do not, making this a worthwhile purchase 
+if you want to learn a few steps beyond the basics without risking 
+jail.
+
+Since the author writes well, the book reads quickly and easily, but I 
+would like to have seen more pages. There are four basic sections, the 
+first eight chapters cover Win95. The second section has seven 
+chapters dealing with Unix and networking. The four chapters in 
+section three are about mail and the last three chapters provide an 
+interesting history of hacking, hacking humor and meeting hackers.
+
+The book is priced right and I enjoyed it. As long as your 
+expectations are on target, it is a worthwhile purchase as a good 
+introductory text. I expect most readers would have at least one new 
+trick. You will not find stack smashing or crypto, but you will see 
+how to bypass Win95 passwords as well as see how email is forged. 
+__________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com 
+For Macs, write Strider <s.corinth@iname.com> 
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <
