@@ -1,0 +1,187 @@
+Jan. 31, 1998
+=====================================================================
+URL of the day: http://showdown.org. Bronc Buster is back!
+See back issues if the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://techbroker.com/happyhacker.html.
+Super Swedish Happy Hacker site (in English):
+http://w1.340.telia.com/~u34002171/hhd.html;(in Swedish):
+http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/gtmbegsvensk1.txt
+Coming soon: Spanish translations of the Digests!
+GTMHH en espanol: http://underhack.islatortuga.com
+=====================================================================
+
+Table of Contents:
+
+* Ethical Hackers against Pedophilia
+* New Happy Hacker site translated into Swedish
+* Linux Answer
+* Whois help
+* More on Raymond
+* Java chat room question
+* Free Radio
+* Eudora password bug
+* Easy way to clear Internet Explorer browsing history
+* Looking for advice
+* Forging Email with Navigator
+* How to Get Happy Hacker Book
+=====================================================================
+	*** Ethical Hackers against Pedophilia
+=====================================================================
+From: RSnake
+
+	Your child tells you about their newest friend on-line.  You're
+tired from work, and although you know you should be interested, you just
+aren't.  You have had a long day and although your child wants to tell you
+everything they know about their on-line friend, you just don't have the
+patience to listen to stories about the newest chat.  All the others have
+turned out to be harmless little children who type about 5 words per minute
+and have substandard spelling.  This time, however, you fail to realize, or
+comprehend the fact that your child is talking to a whole new breed.  The
+pedophile stalks in the most seductive means, simple chat. Through IRC, or
+hypertext/Java chat rooms, or Video Conferencing, the pedophiles of the
+earth find the anonymity of the Internet a plentiful garden in which the
+fruit is easily found and picked.
+
+	What should you do when you find out your child has been speaking
+to a pedophile, or has found some child pornography on the Internet?  You
+have many options, including speaking to local authorities, FBI, US
+customs, and the countless Internet groups designed to combat distribution
+of child pornography on the Internet.  Enter EHAP.  EHAP stands for Ethical
+Hackers Against Pedophilia (http://www.hackers.com/ehap).  EHAP was designed
+to combat production and dissemination of child pornography and assist law
+enforcement in locating the perpetrators involved.  EHAP was created late
+July 1997 by myself and Chalk, as a last ditch effort to help control the
+overwhelming problems that can readily seen on the Internet involved with
+pedophilia.  We were loosely connected with our sister group, founded by
+Se7en and Modify, but have since that time, become a completely separate
+entity while assimilating another sister
+group founded by Tattooman.
+
+	Why does EHAP exist?  EHAP exists because of the overwhelming
+problem that has recently become so prevalent.  Only in the last few years
+has it been this bad, and only in the last year, has anyone become aware
+that the problem was so bad.  The role of EHAP is to act as a go-between for
+you and the authorities.  We work with the citizens who find the child
+pornography to protect their anonymity while working closely with the US
+officials to act on your information.  We gather the information necessary,
+and present it to the proper authorities for a speedy conviction.
+
+	Soon after EHAP's creation, backups were needed.  At that point I
+mailed a letter, hat in hand, to Matt Hinze, who was the moderator of the
+Happy Hacker Digest.  The letter was asking for both recruits and for
+donations, to help our newly founded cause.  We had many qualified people
+request to be members, but were very selective about who we selected, and
+within a few months we had some of the finest talent in the hacking/security
+community.  Members currently include (in no particular order), myself,
+Chalk, Bernz, Silicon Toad, Genocide, BeastMaster V, Wrl Wnd, Lil Buddha,
+Conjuror, DoXaVG, Revelation, Troy, Wizdom, Mantis, Tattoman, Zeno,
+PhotonRain, Mercitron, Sgt. Rock, and Oracle.  We are not, however, looking
+for new members.
+
+	Since our beginning we have been quite successful.  As one of our
+members said, our success is measured not against our peers, but instead
+against our enemies (which you can imagine is quite numerous).  Excluding a
+few minor setbacks, we have become one of the most well known and respected
+anti-pedophilia groups in the world.  Tattooman has been interviewed by
+Konr@d magazine (a German publication), Oracle, and Bernz have been on
+several radio shows, Oracle and I have been interviewed by a author writing
+a book on layman's Internet security, and I have been asked to be
+interviewed by the FOX network.  More importantly, EHAP collectively wrote a
+paper that is now in use in many law enforcement agencies on finding and
+convicting on-line pedophiles.
+
+	A common question is how we go about our task when informed about
+a site.  Most of our methods and techniques are classified, however, we
+like to dispel the notion that we merely hack a site and remove whatever
+is there, and get out.  We instead like to work closely with the law, and
+use national, and in some cases, international contacts to help us put away
+these perpetrators for good.
+
+	Because of the nature of our organization and sheer vastness, we
+require outside funding and favors, both.  The task of logging everything
+alone, requires major resources.  With literally hundreds of megabytes of
+log files, this becomes even more tasking with our limited resources.  To
+help us overcome this problem, we are now a non-profit corporation, making
+us a separate tax-deductible entity, allowing more contributors an avenue to
+help us fight this worthy cause.  To date, we have been surviving only on
+the hospitality of the few system administrators who have been alerted of
+our cause, and the need for our existence.
+
+	This is where we need your assistance.  Again, I come to you, the
+people of the Internet community, and ask for your help.  Please do not
+try to find these people on purpose, as there are many laws to take into
+account.  You may be breaking a law in just receiving a picture, and we
+don't want anyone going to prison for something of this nature.  If you
+have questions about contributing, please e-mail us at ehap@hackers.com
+directly.  If you are unable to assist via monetary compensation, and you
+own a web-site, please feel free to link to http://www.hackers.com/ehap
+(please contact us if you do link to us).  If you have information on the
+whereabouts of on-line pedophilia, also contact us at that same address.
+Every bit and every child counts.  Thank you for your time.
+
+Robert S. Hansen                 RRrRRRr.            RSnake
+rsnake@ecst.csuchico.edu         RR'  `RR        EHAP, Inc. President 
+Finger above for pub.asc: PGP    RR           ehap@mail.hackers.com
+http://www.s-alchemy.com/rsnake  RR Snake  http://www.hackers.com/ehap
+
+[Carolyn: I have spoken with both EHAP president Hansen and the volunteer
+lawyer for EHAP, Troy Larsen of Computer Forensics
+(http://www.forensics.com). I believe that EHAP is using their powers to
+make the world a better place. They refused to be tricked by the Succeed.net
+attackers into thinking that Bronc Buster was a pedophile (see the GTMHH on
+Hacker Wars at http://techbroker.com/happyhacker.html for details on that
+hacker war.) EHAP also has refused to accept members whose ethical standards
+are questionable. EHAP is careful to gather enough evidence that when they
+do take action it is against serious criminals. Please help save children
+from the Internet kiddie porn industry by supporting EHAP. Email
+ehap@mail.hackers.com for information on how to make your donations.]
+
+===================================================================
+	*** New Happy Hacker Site Translated into Swedish
+===================================================================
+Date: Wed, 28 Jan 1998 15:25:53 +0100
+From: NoWorries
+Reply-To: hakan.wassberg@kungsbacka.mail.telia.com
+
+Well I have started to translate the Beginners series in to Swedish, so
+far I have translated #1 and are working on #2-1 and #2-2 .
+I haven't gotten any response for other language yet, except that most
+people want to have something in return which I can't offer them.
+Well, the only one so far was someone that wanted to translate them in
+to French.
+
+I am doing my best in the translations but as I am not a translator it
+goes slowly and I also have to check out all the names in Win95 to see
+what they are in Swedish but that's not the hard part, it is all the
+slang like Phun and kewl we don't really have any words for them in
+Swedish so I substitute them in to ordinary Swedish words.
+
+I also let some of my working friends read them so I get all the words
+in the right order.  I have noticed that when I do translate I get word
+blind if you get my drift.  What I mean is that I change places on certain
+words ...It doesn't mean it become unreadable, but it looks and sounds funny :).
+I have also checked the spellings in my word processor so there should
+not be (too many) spelling errors.
+
+My Happy Hacker Digest Archive page has now over 100 visitors a day :)
+that's brilliant ... only wish they could check out the rest of my pages
+as well but they don't :( well as I use to say s*** happens. 
+
+If you do know any Swedish person or someone who understands Swedish 
+I wish you could redirect them to that page 
+http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/gtmbegsvensk1.txt
+so you get another opinion of what it is like *S*
+
+=====================================================================
+	*** Linux Answer
+=====================================================================
+From: Johan Norrman
+
+In the Jan 12 mail Marcus Aurelius asked a question about 
+Soundblaster CD-ROM and Linux.
+
+My guess is (and I know this has the case).
+If the controller card really is IDE (check their website), and it 
+would if the CD-ROM is 8x, then all you have to do is to rip out the 
+controller and move the CD-ROM to the IDE-controller on your 
+main board. Don't forget to set the CD-ROMs master/slave correctly!

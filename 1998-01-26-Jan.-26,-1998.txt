@@ -1,0 +1,554 @@
+Jan. 26, 1998
+
+PLEASE NOTE: I apologise if you recieve multiple transmissions of this
+Digest. Due to some problems with our ISP, the initial "send" of the Digest
+failed, and several thousand digests did not go out. So, for some of you,
+this will be the third copy you recieve, for others the second; but
+(hopefully)everyone will at least get this one. Sorry for any
+inconvenience. If this really upsets you, send a flame message to IP
+address 127.0.0.1\\dev\nul. If that doesn't satisfy you, contact Shepherd's
+Fold Ministries -- counsellors are standing by to assist you in this crisis.
+--- RJ
+===================================================================
+URL of the day: http://w1.340.telia.com/~u34002171/hhd/
+See back issues of the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://techbroker.com/happyhacker.html.
+Super Swedish Happy Hacker site (in English):
+http://w1.340.telia.com/~u34002171/hhd.html,(in Swedish)
+http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/gtmbegsvensk1.txt
+GTMHH en espanol: http://underhack.islatortuga.com
+===================================================================
+Table of Contents:
+
+* Call for feedback on Hacker War Game rules
+* Feedback on recent GTMHHs
+* New free evaluation version of What's Up network analyzer
+* Best firewall?
+* Best Intel Unix?
+* Another place to find tattletale browser files
+
+===================================================================
+*** Hacker War Game Rules
+===================================================================
+We hope to get a hacker war game going with an SGI Indigo (Irix operating
+system) on a T1 soon. But before we open up for your gaming phun, we need to
+agree on some ground rules. Here are my suggestions. Please let me know what
+you thing the rules should be.
+
+1) We would start with a known insecure system that can easily be broken
+into from the outside. We would reload the original operating system every
+day (in the process deleting root kits, Trojans etc.) for the first month of
+the game so newbies could have the fun of breaking in.
+
+2) No credit for denial of service attacks.
+
+3) After first month we would get serious. We would stop reloading the
+insecure operating system and stop removing executables loaded by the
+players. Anyone who gets root would be permitted to secure the system so
+others can't break in.
+
+4) We would, however, require that the Indigo be left running services and
+software comparable to what a commercial Internet Service Provider would
+offer. The services should include at least a Web server, ftp server, email,
+secure shell and secure sockets layer telnet. It would have to include
+full-service user accounts (not some wimpy Pine shell) and allow use of
+Pagemaker (which has an exploit in the configuration we have installed, but
+it's OK to patch the bug) and other software to be determined. We will also
+require that remote syslog remain enabled and no editing of the log files.
+
+5) Anyone who gets root wins a free shell account.
+
+6) Whoever is root should not delete any user accounts.
+
+7) We would help cover the cost of the T1 by selling shell accounts on this
+computer for $10 per month. If you can figure out how to use your shell
+account to get root (it is easier than breaking in from the outside), then
+your account becomes free.
+
+8) If we get evidence that you are using your account to commit computer
+crime, we will kick you off the system. (We especially need input on this
+because of the potential for a player to cheat by making it appear that
+another player is committing computer crime from our game box.)
+
+9) All logins must be through secure sockets layer or secure shell.
+
+10) We would pipe the syslog file to both a Web site and an ftp server so
+anyone may evaluate the techniques being used to both break into and secure
+the system.
+
+11) We will allow whoever is root to post his or her boasts to a Web site on
+the Indigo. Root should leave previous boasts on the Web server.
+
+12) How would we enforce these rules? We have the boot disk!;^)
+
+===================================================================
+*** Feedback on Recent GTMHHs
+===================================================================
+From: Fyodor
+
+Nah.. Whatever you write, I wouldnt tell you there is much difference from
+Crackers and Hackers. Until you know in details how the system work, you
+wouldn't be able to get into it. The matter is only, do you want to do it or
+not.. sometimes you need this anyway......
+And that's not good to call cops anyway..
+
+Blah!
+
+----------------------
+From: Kenn Evitt
+
+>Hackerdom's most revered demigods are people who have written large,
+>capable programs that met a widespread need and given them away, so that now
+>everyone uses them.
+
+If someone has written a large, capable program, that has met a
+widespread need, then why do they give it away? Anyone willing to work
+for free seems to be implying that their work, and their time, is worth
+the price they're asking for.
+
+Sounds like a statement a "cracker" would make : that they would want
+something for free. Are you willing to give your work away for free? Why
+not?
+
+---------------------
+From: ~-_-~Un4Scene~-_-~
+
+As I have just finished reading the latest HH Digest I find myself
+feeling VERY insulted. I am wondering what has happened to the Guide To
+Mostly Harmless Hacking. I haven't missed an issue of it in at least
+two years but now I'm going to cancel my subscription to it. I remember
+when you moderated it ... anyone could send in any questions they may
+have concerning computer security, virii, encryption, cracking, etc...
+and could expect to get an excellent answer if their message was
+posted. Now the impression I get from the latest "issue" is that all
+those people who were asking questions about computer security, and make
+it a habit to routinely try to break it are no longer welcome. The
+impression I received from this latest "issue" was that any one who does
+not know a dozen different programming languages and know at least three
+spoken languages should bow down before the new moderators of the HH
+Digest and kiss their "Demigod" asses. And also anybody that follows
+the darker side of the computer underground should not be allowed to
+call themselves a hacker, as it is an insult and a blemish on the name
+of the so called "Demigods" of "hacking." Whoever this stuck-up,
+over-the-hill, egotistic, asshole is (please excuse my language) I think
+he just insulted half the english-reading worlds HACKERS, and yes, I
+mean people who break, or attempt to break, computer security. I'm sure
+I am not alone in wishing that the HH Digest could return to what it
+was. If I didn't know better I would say that the entire GTMHH family
+has sold out. Incidentally, I consider myself a hacker, and will
+continue to relate myself, as well as any others who share my interests
+in computer security, by that name. As a hacker I have made a decent
+living for myself in the system administration field, quite successfully
+I might add considering I have also been able to fund the opening of my
+own car/truck racing shop.
+I also know C, C++, VB, Perl, HTML, Java, MSQL, Delphi, and am
+starting to learn Oracle (just for the fun of it). I am very fluent in
+UNIX, BSD, Linux, Win 95/NT, DOS, MS-DOS, Macintosh, (original) Apple,
+etc... I'm also familiar with all the major protocols (i.e.: TCP/IP,
+SMTP, etc...). All this in addition to being an OK street/strip race
+mechanic?? You bet!! And I'm completely self taught!!! I didn't even
+finish high school!!! But are you ready for the real kicker??? I'm
+only 20 years old.
+
+***BIG F***IN' DEAL***
+
+So maybe I know a little more than most, you still wont ever find me
+running around calling myself a demigod, and pronouncing my own laws and
+standards to force upon others. I still attend my monthly 2600
+meeting. I still answer peoples questions on USENET. I still
+occasionally used AOL till about a month ago!! My point is that those
+with the excess knowledge should be trying to teach others who are
+willing to learn. I have always thought that to be a central theme
+throughout the hacking community, and that was the main reason that I
+always liked the HH Digest. It was very helpful to me when I first
+became interested in computer security, and I have no doubt it was very
+helpful to others with similar hobbies. SO WHAT THE HELL HAPPENED???? 
+I haven't seen so much as a foot note concerning any bugs or flaws in
+any systems in the last few issues. Not a single post from anybody,
+anywhere. All your loyal readers get is introductions to new moderators
+and supremely egotistic ass-holes who apparently have nothing better to
+do than to try to shit on the little people.
+So now I come to the end of this letter and to my main point. Ms.
+Meinel, the HH Digest was a great and wonderful thing when you were
+moderating it. I've always been under the impression that you are the
+founder of the HH Digest, if this is true, then PLEASE, I beg you, bring
+it back to what it was six months ago, or a year ago. Make the digest
+live up to its name. If you are so intent on this new guy running a
+mailing list that let him run his own. Their are thousands of readers
+out there that are begging to be filled with the knowledge that you're
+digest used to provide. Don't let them down.
+
+~-_-~Un4Scene~-_-~
+
+[Carolyn -- Sorry you are disappointed. I'm putting a little more time into
+this list now. Help! We need people who will help out by writing good stuff
+for the Digest -- and we're sorry so many good posts have disappeared. It
+wasn't that many people's posts weren't good. With the complications of
+trying to have several moderators. Please remember we are all volunteers
+
+Also, I have a Guide coming up about a fellow -- Fatal Error -- who has been
+more your kind of hacker, and is mostly self-taught, yet has risen to be
+senior network engineer at AGIS (Internet backbone).
+
+In the meantime, in defense of Eric S. Raymond, other people are the ones
+who call him, Linus Torvalds, Larry Wall and others demigods. In defense of
+the rest of us, please understand that all us hackers are arrogant. Heck,
+I'll bet I'm more arrogant than Raymond is! It's kind of like a disease that
+we try to handle by poking fun at ourselves. You guys are welcome to poke
+fun at us, too, to keep our arrogance within bounds.]
+
+------------------------------
+From: jericho@dimensional.com 
+>Guide to (mostly) Harmless Hacking
+>Vol. 5 Programmers' Series
+>No. 1: Shell Programming
+
+ 
+
+>	First, let's walk though the Pico way to create a simple script.
+>
+>1) Open an editor program. We'll use the easiest one: Pico. At the prompt in
+>your shell account, simply type in "pico hackphile." ("Hackfile" will be the
+>name of the script you will create. If you don't like that name, open Pico
+>with the name you like, for example "pico myfilename.")
+
+You should mention that very few Unix vendors put PICO on a default
+install. Linux and FreeBSD do, but Sun, HPUX, AIX, and other commercial
+Unix variants do not.
+
+>2) Write in some Unix commands. Here are some fun ones:
+>echo I am a programmer and one heck of a hacker!
+>echo Today I am going to
+>echo $1 $2 $3 $4 $5 $6 $7 $8 $9
+>
+>5) Now type in: "hackphile forge email from Santa Claus." Press "enter" and
+>you will see on your screen: "I am a programmer and one heck of a hacker!
+>Today I am going to forge email from Santa Claus."
+
+No, it doesn't. On a SunOS box with BASH, it outputs a little differently.
+
+I am a programmer and one heck of a hacker!
+Today I am going to
+forge email from Santa Claus.
+
+(Notice the line break? If you do a little creative playing, I am sure you
+can get it to output on one line though.)
+
+>	Then hold down the control key while hitting the letter "d." This will
+>automatically end the "cat" command while saving the commands "ls -alK|more"
+>and "w|more" in the file "list." Then make it executable with the command:
+>"chmod 700 list." (If chmod 700 doesn't work on your system, try the
+>alternative ways to make it executable in 4) above.)
+
+If chmod 700 doesn't work on your system, fix chmod. Octel notation is
+much more efficient.
+
+>before displaying the next screen.
+>What does "lrwxrwxrwx 1 cpm 9 Oct 27 15:35 .bash_history ->>/dev/null" mean? "l" means it is a linked file. The first set of rwx's mean
+>I (the owner of the account) may read, write, and execute this file. The
+>second rwx means my group may also read, write and execute. The last set
+>means anyone in the world may read, write and execute this file. But since
+>it's empty, and will always stay empty, too bad, kode kiddies.
+
+Take your own advice and 'man ln' and read about ln's behaviour. You
+should also mention that on several Unix boxes, a symbolic link is not
+owned by you if you link to a file owned by another user.
+
+On a Sun 4.1.4 box, here is the entry for the link:
+lrwxrwxrwx 1 root 9 Oct 1 19:42 .rhosts ->/dev/null
+
+And lets look at the file we are linking to:
+crw-rw-rw- 1 root 3, 2 Jan 5 23:22 /dev/null
+
+Notice the file ownership?
+
+Now, lets look at another example:
+
+lrwxrwxrwx 1 jericho 5 Jan 5 23:59 link1 ->test1
+-rw------- 1 jericho 0 Jan 5 23:58 test1
+
+What happens when we "echo hi &gt>link1" and then "cat test1"?
+
+-rw------- 1 jericho 3 Jan 6 00:01 test1
+
+Notice the file size? Jumped from 0 to 3.. because test1 has the word 'hi'
+in it. Not exactly as you describe above.
+
+>	Here's how you can make your bash history disappear. Simply give the
+>command "ln -s /dev/null ~/.bash_history."
+
+And that won't do anything for your bash history. Notice the extra "." at
+the end of your example?
+
+[Carolyn: News flash. In the English language we are required to put a
+period at the end of every sentence. I forgot that some people don't know this.]
+
+>supposed bash history file of mine, the stuff you type in during a "talk"
+>session does not appear in the .bash_history file. The guy who faked it
+>didn't know this! Either that, or he did know, and put that in to trick the
+
+Or it was redirected into the file. Your bash history is a plain text
+file, and can be overwritten, appended to, etc.
+
+[Carolyn: Or someone could just as easily write a file and say, "honest,
+jericho, this is really Carolyn's bash history! And I live on a planet near
+Beta Lyrae!]
+
+>people who would read it and flame me into revealing their ignorance.
+
+Enough people who doubted the file were pointed to the site it came from.
+They saw proof that the site was indeed hacked, proving that your shell
+history could have been reached very easily. I doubted it until that person
+pointed the same out to me.
+
+[Carolyn: Yeah, a secret site that was really truly hacked. If you are so
+sure this is for real, how come you are afraid to tell anyone what this
+super haxored site was? And how many assassins were on the grassy knoll? And
+how many times have you seen Elvis in 1997?]
+
+>The guys who got caught by this trick tried to get out of their embarrassing
+>spot by claiming that a buffer overflow could make the contents of a talk
+
+At no point did anyone claim a buffer overflow was responsible. Several
+people mentioned that something could have been stored in a buffer (like
+the clipboard of your windows box), and then pasted into that file very
+easily.
+
+[Carolyn: Yeah, right, I spend time pasting unlikely things into my
+nonexistent bash history file just to give you something to flame. You are
+lucking that file was fake, or you would have been committing a Federal
+felony passing it around. Admit it, the guy who gave it to you snookered
+you:):)]
+
+>	Another example of haxor Unix cluelessness was a fellow who broke into my
+>shell account and planted a Trojan named "ls." His idea was that next time I
+>looked at my files using the Unix ls command, his ls would execute instead
+>and trash my account. But he forgot to give the command "chmod 700 ls." So
+>it never ran, poor baby.
+
+Insulting people that are able to hack into your accounts (and thus have
+more knowledge of security than you or your admins), while making such
+blatant mistakes above..
+
+[Carolyn: jericho, that is the most common error of the kode kiddie. They
+think that if they can break in, they know more than the sysadmin of the
+system. Rather than argue myself blue in the face trying to educate you, I
+am about to run a little experiment, an SGI Indigo running Irix in a hacker
+war game. Who will be able to break in? Who will then be able to secure the
+box after they get in to keep others out? Will you be able to become root?
+Once you are root, will you be able to keep me out?]
+
+>	First, when you name your script, put a period in front of the name. For
+>example, call it ".secretscript". What that period does is make it a hidden
+>file. Some kode kiddies don't know how to look for hidden files with the
+>command "ls -a."
+
+According to some, you don't even have an alias to do that upon login. So
+watch who you call kode kiddie. Most Unix users I know set aliases in
+their .login or .profile like the following:
+
+alias ls="ls -alF"
+
+>	Remember to save this script by holding down the control key while hitting
+>the letter "d". Now try the command: ".lookeehere!" You should get back
+>something that looks like:
+>bash: ./.lookeehere!: Permission denied
+>That's what will stump the average kode kiddie, presuming he can even find
+>that script in the first place.
+
+If your umask is 700 as you mention above, it should run just fine. If you
+set the umask so it isn't executable by default, then the above would be
+expected.
+
+>	If neither the whereis or locate commands find it for you, if you are a
+>newbie, you have two choices. Either get a better shell account, or talk
+>your sysadmin into changing permissions on that file so you can execute it.
+
+Or learn the syntax for 'find', which comes with most Unix variants, if
+not all of them.
+
+find / -name netstat -print
+
+That should search the entire filesystem, looking in every directory you
+have permission to go in, and report back what it finds.
+
+>*****************************************************
+>Evil genius tip: Your sysadmin won't let you run your favorite Unix
+>commands? Don't grovel! Compile your own! Most ISPs don't mind if you keep
+
+Many utils will require the ability to open raw sockets (like ping or
+traceroute), and will not operate correctly if you compile it yourself.
+
+>****************************************************
+>Evil Genius tip: Bring up the file .login in Pico. It controls lots of what
+>happens in your shell account. Want to edit it? You could totally screw up
+>your account by changing .login. But you are a hacker, so you aren't afraid,
+
+Since you are fond of using BASH, and mention it above, you should also
+mention that editing .login will do nothing if BASH is your default shell.
+
+>R.J. Gosselin, Sr.
+>~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+>Editor-In-Chief -- Happy Hacker Digest
+>~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+
+So your editor Damian, RJ, *and* you missed the above?
+
+------------------------------
+From: toxik waste
+
+On Tue, 6 Jan 1998 jericho@dimensional.com wrote:
+
+: >Guide to (mostly) Harmless Hacking
+: >Vol. 5 Programmers' Series
+: >No. 1: Shell Programming
+: 
+: >	That is the heart of the hacker spirit. If you are driven to do more and
+: >greater things than your job or school asks of you, you are a real hacker.
+: >Kode kiddies who think breaking into computers and typing f*** every third
+: >word while on IRC are not hackers. They are small-time punks and vandals.
+
+That's funny, I've known some very intelligent "hackers" who have broken
+in to computers and unfortunately use the word f*** all too often.
+
+: >	First, let's walk though the Pico way to create a simple script.
+: >
+: >1) Open an editor program. We'll use the easiest one: Pico. At the
+prompt in
+: >your shell account, simply type in "pico hackphile." ("Hackfile" will
+be the
+: >name of the script you will create. If you don't like that name, open Pico
+: >with the name you like, for example "pico myfilename.")
+: 
+: You should mention that very few Unix vendors put PICO on a default
+: install. Linux and FreeBSD do, but Sun, HPUX, AIX, and other commercial
+: Unix variants do not.
+
+As noted later in jericho's comments ending all of these commands in a
+period does not in any way help the newbies which you are obviously trying
+to cater this paper towards. Also, you might try to learn some of the
+advantages of a more powerful UNIX editor such as vi (my personal 
+favorite) or emacs since you seem to be an "elite" hacker using a very
+basic editor.
+
+[Carolyn: In the English language a sentence must be ended with a period. If
+any of you newbies have been confused by this and have been trying to put
+periods on the end of your commands, please tell me and I will figure out a
+way to write that is easier for you to understand.]
+
+[..snip..]
+
+: >	Here's how you can make your bash history disappear. Simply give the
+: >command "ln -s /dev/null ~/.bash_history."
+
+You might also want to read up on bash a little bit more. The environment
+variable "HISTFILE" can be set to null so that no history file is recorded.
+This works in at least all recent versions of the bash shell.
+
+[..snip..]
+
+: >	Another example of haxor Unix cluelessness was a fellow who broke into my
+: >shell account and planted a Trojan named "ls." His idea was that next
+time I
+: >looked at my files using the Unix ls command, his ls would execute instead
+: >and trash my account. But he forgot to give the command "chmod 700 ls." So
+: >it never ran, poor baby.
+
+/* flame bait personal attack */
+You earlier insulted people for the use of profanity and now you use the
+word "haxor"? Please, spare me..
+/* end attack */
+
+[..snip..]
+
+\\!//
+|o o|
+__________________________________________________oOo_(_)_oOo___
+toxik waste int computer(char *geek);
+toxik@cappuchino.2xtreme.net #include "nospam.h"
+----------------------------------------------------------------
+(__) (__)
+
+ 
+
+ 
+
+===================================================================
+** Free New Evaluation Version of What's Up Network Analyzer
+===================================================================
+Tired of port scanning by hand? Do you run a WinNT or even Win95 box? Try
+out a free evaluation copy of WhatsUp Gold 3.5, available for download at
+http://www.ipswitch.com/products/whatsup/whatsupg.html
+
+===================================================================
+*** Best Firewall?
+===================================================================
+From: Bob Jonanson
+
+What do you think is the best firewall out there??
+
+[Carolyn -- Depends on what you use it for. An ISP needs a different one
+from a big company. TCP wrappers with secure sockets layer is good for an
+ISP, with Kerberos and no rhosts stuff for the internal LAN. But that's just
+my opinion.]
+===================================================================
+*** Best Intel Unix?
+===================================================================
+From: adam wellington (by way of Editor - Happy
+
+I just recently subscribed to the Happy Hacker Digest and the Beginners 
+Guide to Mostly Harmless Hacking and I can truthfully say that I have 
+learned more from reading it than from any other hacking mailing list, 
+page, or "How to." It's the perfect thing for people like me who have 
+never downloaded any pre made hacking programs while watching his 
+friends download things like "WinNuke" and other programs made to cause 
+people trouble, I'd rather be challenged.
+
+That being said, on to my question.
+
+I'm getting a few parts from upgrades I have scheduled for other people. 
+I plan to make a UNIX box out of them. My question is, what type of 
+Unix do the other readers of the digest prefer, also what kind of cool 
+apps and utils are there? I'm doing it to learn UNIX better than I 
+already do (I have some experience using it but not installing and 
+administrating it). Thanks in advance.
+
+-Realm
+<realm@earthling.net>ABBEY ROAD: telnet://talker.com 2500
+
+===================================================================
+*** Another Place to Find Tattletale Browser Files
+===================================================================
+From: Cool724678 (by way of Editor - Happy Hacker List)
+Subject: SOMETHING I HAVE NOTICED IN THE TEMP FILES
+
+I just finished reading your article "How to hack into windows 95 pc's" and
+I think you left out something. When kids hack into the Netscape parental
+control or Internet explorer there's a record it keeps besides the cookies
+and the netscape.ini lines there's something else. What about those little
+files that go to C:\WINDOWS\TEMP\, while you're surfing on the web some
+files including graphics, html's and http addresses save files in that
+directory so when you go back to that specific site it will load a little
+quicker. If those files are not erased the parent or boss could find out
+where you've been.
+
+My question is, Is it safe to erase all those files?
+
+[Carolyn: Thanks for the info. My browsers don't normally leave anything in
+/windows/temp after closing. But perhaps if the computer crashes or if the
+power goes out while using a browser, that might leave tattletale files in
+temp.
+
+Because my computer crashes and loses power from time to time, every few
+months I clean out /windows/temp by deleting EVERYTHING. It hasn't hurt
+anything yet. Of course, I close all programs that use /temp before deleting
+things.]
+___________________________________________________________________
+with
+message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan yo use any
+information in this Digest or at our Web site to commit crime, go away! Foo
+on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the Unites
+States operating under Shepherd's Fold Ministries. Yes! This is all a plot
+to save your immortal souls! For Windows questions, please write Roger Prata; for
+Macs, write Strider; and Unix, Carolyn Meinel. Editor-in-chief is R.J. Gosselin. Webmaster is Praying Mantis.

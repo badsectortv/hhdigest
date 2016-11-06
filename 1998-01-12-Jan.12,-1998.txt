@@ -1,0 +1,363 @@
+Jan.12, 1998
+
+ 
+
+========================================================================
+See back issues if the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://techbroker.com/happyhacker.html.
+Super Swedish Happy Hacker site: http://w1.340.telia.com/~u34002171/hhd.html.
+Coming soon: Spanish translations of the Digests!
+========================================================================
+
+Table of Contents:
+
+* How big is the Internet?
+* How much money do sysadmins make?
+* Hotmail *NOT* anonymous
+* Linux questions
+* Spanish GTMHHs
+* Telnet trouble
+* Happy Hacker book question
+* Get your tax deductions here!
+* Credit Not Given
+
+===========================================================
+*** How Big Is the Internet?
+===========================================================
+
+How big is the Internet? According to a statistical search, as of New Year's
+Day, about 30 million computers are Internet hosts. This doesn't even count
+all the people who get on the Net through dialup accounts. For more info,
+see http://www.netsizer.com/.
+
+===========================================================
+*** How Much Money Do Sysadmins Make?
+===========================================================
+
+Carolyn: Many el1t3 haxors have accused me of being in this hacking business
+out of greed. You, too, can be a greedy hacker! You are learning skills that
+can land you some of the best-paying jobs there are -- if you can resist the
+temptation to commit crime and stay out of trouble. For details, check out
+this article from Information Week's mail list:
+
+____Systems Administration, Security Demand On the Rise____
+It's a seller's market for systems administrators. That's 
+the conclusion of a survey conducted over the last six 
+months by the SANS Institute, a network and security 
+research firm in Denver. The demand for systems 
+administrators is increasing, and the supply is low, 
+according to the SANS System Administration and Security 
+Salary Survey. "There is a surge in the number of systems 
+that have to be managed due to an increased presence of Web 
+servers, as well as more implementations of financial and 
+manufacturing systems," says Alan Paller, SANS's director of 
+research and education.
+
+"There is an imbalance between supply and demand," notes 
+Paller. "Basically, there's a huge demand and no supply." 
+According to the survey, approximately 22% of the 1,600 
+administrators and managers surveyed made between $50,000 
+and $59,999 in 1997. Another 19% made between $60,000 and 
+$69,999, while 20% made between $40,000 and $49,999.
+
+Experience affects an employee's salary rate more than level 
+of education. "A person with some college and a lot of 
+experience is apt to make more money than someone with a 
+Ph.D. and less experience," says Paller. The survey showed 
+women with some college made about $48,039, while those who 
+obtained a college degree made $53,910; with a master's 
+degree the salary increased to $60,827. Men with some 
+college made $57,770, while a college degree got them 
+$56,960; a master's degree afforded them $60,671.
+
+According to the Denver company, higher-paid employees are 
+currently getting higher percentage raises than lower-paid 
+workers. Says Paller: "This reflects the terror that senior-
+level employees will leave the company, due to the high 
+demand." --Jennifer Mateyaschuk
+
+[Carolyn: for more IT news, see InformationWeek Online at
+http://www.informationweek.com. Or subscribe to their free magazine -- see
+details at their Web page.
+
+Want to pick up one of those jobs that pays bunches of money and doesn't
+require a college degree? If you are comfortable as the sysadmin of your
+own Linux or other *nix computer (see the GTMHH on Linux at
+http://techbroker/happyhacker.html), and if you love to find security holes
+and fix them, you are ready for the big time. Check out:
+
+Jan. 26-27, Hi-Tech Career Fair, Embassy Suites Hotel, Washington.
+http://www.professionalexchange.com/
+
+March 13-14, Technology Recruitment Expo, Cervantes Convention Center at
+America's Center, St. Louis. http://www.asmcorp.com]
+
+==========================================================
+*** Hotmail *NOT* Anonymous
+==========================================================
+
+I was checking out Andy's Hotmail header prob. And the answer is 
+yes, Hotmail posts your IP address in the header of the email. I sent 
+myself 3 different emails to myself using different IP addresses and all 
+of them showed the correct IP addresses. 
+If you want to remain anonymous while using Hotmail or any other web 
+based email, configure your browser with a proxy server. While using a 
+proxy server your IP address will be the IP address of the Proxy server. 
+Works for web based chat rooms as well.
+
+A brief description of a proxy server:
+
+A caching proxy server is a fast, high capacity machine dedicated to 
+handling Web, FTP or Gopher accesses and storing
+copies of documents on local disks. The first time a user requests a 
+document, the proxy server accesses it from the distant
+server, makes a copy of it in the local cache and then gives a copy to 
+the user. The next time any use of the proxy server
+requests the same document, it is served directly from the cache.
+
+Hope this helps.
+
+==========================================================
+*** More Linux Setup Questions
+==========================================================
+From: shea6@juno.com (Marcus Aurelius)
+
+Any time you might spend on this would be appreciated..
+I recently bought a book (Using Linux, 3rd SE ed., QUE) and it
+came with three distributions of Linux, Redhat 4.1, Slackware 96, and
+Caldera Open Linux Lite. I have followed all steps correctly with out
+much difficulty, but I cannot complete the installation (With Any
+version I tried all three) because Linux can't read my CD drive. I've
+tried multiple HOW-TO's, mailing-lists and other texts, to no avail. The
+drive is a Creative Labs Blaster CD 8x, Model MK4100, And supposedly
+should be covered by the sbpcd.i boot image. It isn't. It's on it's own
+prepackaged controller card, which is supposedly Ide. I've followed the
+install logs, and it finds my other two drives correctly, but no CD-ROM.
+It identifies something called ide0:(Stuff I can't recall, numbers and
+letters). Is that my CD-ROM, or the hard drive controller? I'd appreciated
+any advice any Linux guru's have for me. 
+~Marcus Aurelius
+"Illegitimati non Carborundum" -- Don't let the Bastards grind you Down.
+----------------------------------------------------------------
+From: Berd I. Skjfveland
+
+I got some questions I would like to ask. I'm thinking of installing Linux
+on my PC. I did have Linux on my old PC for a little while, but then I sold
+it. On this PC I got Win95. Yeah yeah, I hate it too. I was wondering..is
+it difficult to have both Win95 and Linux? I thought maybe I'd buy a new HD
+to have Linux on. Do I have to Install Linux first? Is all the stuff on my
+current HD safe if I install Linux on another one? Would you recommend me to
+install Linux in this situation? Last time I installed it, I thought it was
+pretty hard installing, but since I already have done it once, I guess it
+won't be that hard this time. When I installed it on my old PC I started it
+up and....hmmmm...what do I do now? I almost didn't know a thing. Can you
+tell me some places I can find beginner Linux material. Which version of
+Linux should I have. The one I installed the other time was Red Hat. 
+I was wondering...what do you think about DOS? Myself I love DOS. When it
+comes to file-managers. I don't know what I'd do without NC. It's probably
+the program I use the most. Even in Win95.
+Do you know why I can't connect to the Internet when I have my Network card
+enabled? I have to disable it to connect. If not it says that my modem is
+already in use by another program.
+Hmmmm....There's probably more I should've asked you about, but I can't
+think of them. I hope I didn't bore you to death. 
+I just want to say that I think the GTmHH is just great. About the book.
+Will it just be sold in USA? I live in Norway and I think I would buy it if
+it is sold here. But I guess it won't.
+
+From,
+Berd
+----------------------------------------------------------------
+From: Abuser
+
+I have read that it is not possible, however I am writing to see if what I
+read is true. I have a 486 and a 1.2 gig hd. I use the ONTRACK TSR so that
+DOS can use the whole hard drive not only the first 1024 cylinders(which is
+'bout 500 meg).
+
+Is there anyway I can put Linux on my system still using the ONTRACK TSR
+and still having win95. In so how? If not thanks.
+----------------------------------------
+From: David Fuller
+
+Hi I have installed Slackware in record time 10-15 minutes on a unmsdos
+file system and so far I have had only one problem. I accidentally
+installed lilo into my MBR (Master Boot record) and I was wondering if
+there was any way to erase it from there. I have Linux running on the
+same box as win95 and since my brother uses it also I need to erase it
+so it will just boot up windows and when I want Linux I just stick in my
+boot disk.
+
+***Webauthor's addition: To remove LILO from the MBR, run:
+
+fdisk /mbr
+
+===========================================================
+*** Spanish Translations of GTMHH
+===========================================================
+From: default
+
+Hiya; this is about the Spanish Update stuff mentioned on HH Digest of Dec.
+12 1997. Well, I4d like to inform you that several numbers of GTMHH
+documents have been already translated into Spanish by a number of people
+(and I am pleased to be one of them X)), so, for the ones interested in
+reading that translations, they are available at:
+
+http://underhack.islatortuga.com
+
+===========================================================
+*** Legal Question
+===========================================================
+From: livinghell@atheist.com (Jon Heifetz)
+
+Just curious, if some idiot forgets to password-protect his website, and
+someone is able to gain access to the "update" page and alters the site, can
+he be prosecuted? Keep in mind that this person isn't gaining access to
+password-protected information, although the designer's intent was obviously
+to protect his page so that only he would be able to access it.
+
+Of course, I wouldn't be involved in this kind of behavior, now, would I? :)
+
+-Jon
+
+[Strider: I've often wondered on these things myself. ATleft its
+(UNSHADOWED) password file available for guest FTP download. Maybe it was a
+fake (and that would be a very effective measure, I might add) but they may
+just have been being stupid. Downloading a public file would be legal.
+
+However, if you logged in with this person's username, and they didn't have
+a password, that would be illegal, I'm sure, especially if you had the
+intent to harm. It wasn't 'guest' or public data, it just wasn't protected
+well.
+
+Even so, if they don't have a password (and the sysadmin doesn't enforce
+that) they're probably not smart enough to catch you anyway... =)]
+
+[Carolyn: First, none of us are lawyers. So neither Strider or I are
+qualified to tell you how to stay out of jail. However, suppose someone's
+Web site is world-readable. What if the owner wasn't the one who made it
+world-readable? It's a pretty lame excuse to say "someone else hacked it
+first." Do you really think a jury would let you off for defacing a Web
+page if you used that excuse? If you want to stay out of trouble AND feel
+good about yourself, you can always follow the Golden Rule: "Do unto others
+as you would have them do unto you." Real hacking isn't being a vandal, it's
+discovering and creating. ]
+
+===========================================================
+*** Telnet Trouble
+===========================================================
+From: DumbNate
+
+I have read every one of your Guides to (Mostly) Harmless Hacking and enjoyed
+every one of them. I have been able to learn a lot about the Internet and
+other such things. But, I have a question, in one of your Beginners' Series
+articles, you told how to use the Win95 telnet command, and a connection such
+as AOL. I tried using this while logged onto my AOL account, but when I typed
+in the host name, and then clicked on connect, it brought up a window for a
+CS3 connection(whatever that is), and asked for a phone number and everything.
+Anyway, it wouldn't just connect, it wanted to dial in. My question is, how
+do I fix this so that I can just connect? Any help you can offer is greatly
+appreciated.
+
+[Carolyn: Here's how to fix the problem. Click Start, then Settings, then
+Control Panel, then Internet, then in the Internet box click on the
+Connection tab. Wait a minute for Win95 to grind away and bring up that last
+item. Near the top you will see a box labeled "connect to the Internet as
+needed." You will see a check mark in that box. Click on it to remove the
+check. Then click OK to save it. Now your should be able to use your AOL
+connection to telnet!]
+
+===========================================================
+*** About the Happy Hacker book
+===========================================================
+
+Carolyn: A number of people have asked about the upcoming Happy Hacker book.
+How different is it from what you can find in the Happy Hacker archives?
+
+Almost everything in that book can be found in our archives of Guides to
+(mostly) Harmless Hacking and Happy Hacker Digests at
+http://www.happyhacker.org. I put a few extra things in the book, not
+because I'm trying to hoard hacker secrets that you must *pay* to get, but
+just because I'm not perfectly organized (imagine that!) enough to guarantee
+that all my brilliant (yeah, just kidding about brilliant) insights will end
+up in the GTMHHs.
+
+One reason to buy the book is that it has lots of screen shots. Yes, it can
+be confusing to figure out how to do something, especially in Windows, just
+from reading words.
+
+Another reason you might want to buy the book is that it is hopefully more
+accurate than the GTMHHs and Digests, mostly because a lot of people have
+been kind enough to be technical editors. Of course that is no guarantee
+that everything in the book is perfect, but at least it should be an
+improvement.
+
+The Happy Hacker book also has more humor. It even has an entire chapter on
+nothing but hacker humor.
+
+===========================================================
+*** Get your Tax Deductions Here
+===========================================================
+
+Carolyn: It's Jan., which means time to work up our taxes. Did you or your
+company do volunteer work for Happy Hacker this year? Did you incur expenses
+while doing so? Want an itemized receipt so you can save money with a
+charitable donation deduction? We must have your REAL name and address and
+some sort of evidence of your expenses. I'm individually contacting the
+people I think may qualify for 1997: Lobo Internet Services, Rt66 Internet,
+Matt Hinze, Jon McClintock, Roger Prata, R.J. Gosselin, Ruben Canlas Jr.,
+Jesse Brown, Adam Christopher, Brian Martin, Joel Degan, and Eric Ginorio.
+If you think you should be added to this list, please contact me. Remember,
+you have to give your real info and some proof of expenses.
+
+==========================================================
+***Credit Not Given
+==========================================================
+From: jsmidnight@juno.com (JsMid night)
+
+Uh, Cryptotek forgot someone in his greets, because I wrote THE SAME
+Thing before him, and it was posted a few months ago. "How to defeat
+foolproof". Editors of happy hacker, please try to keep records of what
+was already written, so that plagiarist like CryptoTek won't get
+recognized for nothing. All he did was read some old hh's and cut and
+paste and organize them.
+
+Laters-
+JsMidnite
+
+[Carolyn -- Thanks! Sorry, there is so much that goes through the HH Digest,
+and of course we have several people dividing up the work -- Roger Prata and
+R.J. Gosselin -- that we don't always remember stuff. Sadly, plagiarism is
+becoming rampant in the hacker world. For example. Bronc Buster pointed out
+to me recently that two articles in the Jan. 1988 issue of The Havoc
+Technical Journal (THTJ) were plagiarized. The more articles an ezine runs,
+the harder it is to make sure the right people get the credit.]
+___________________________________________________________________
+with
+message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan yo use any
+information in this Digest or at our Web site to commit crime, go away! Foo
+on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the Unites
+States operating under Shepherd's Fold Ministries. Yes! This is all a plot
+to save your immortal souls!
+For Windows questions, please write Roger Prata; for
+Macs, write Strider; and Unix, Carolyn Meinel. Editor-in-chief is R.J. Gosselin. Webmaster is Praying Mantis.
+
+R.J. Gosselin, Sr.
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+Editor-In-Chief -- Happy Hacker Digest
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+
+"There is no way you're describing our system, 
+she could never have gotten past our security.
+
+But I'm going to find her and see that she's prosecuted ... 
+she broke the law, and she's going to pay!"
+President of "Blah Blah Bank"
+
+--&gt&gt>Does anybody ELSE see a small discrepancy here ???????
+
+*****************************************
+For full story (and many others), download
+"External Threats to Computer Security in Networked Systems"
+from Winn Schwartau's InfoWar.com bookstore @ www.infowar.com
