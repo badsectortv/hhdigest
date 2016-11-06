@@ -1,0 +1,378 @@
+May 26, 1998
+=====================================================================
+URL of the day:http://www.mcp.com/personal  Personal Bookshelf
+See back issues of the Happy Hacker Digest and Guides to
+(mostly)Harmless
+Hacking at http://www.Happyhacker.org.
+GTMHH en espanol: http://underhack.islatortuga.com
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html
+=====================================================================
+TABLE OF CONTENTS
+
+- Pegasus Mail Password in plain text
+- dead.letter replies
+- More Win32 Unix-like Shells
+- What libraries are you running? (LINUX)
+- More WinWord weakness
+- Unix Hints
+- Spook the wannabees...
+- #90 Update
+- Firewall and IRC client 
+- FOR Command under Windows NT 4
+- Free Technical Library on the Web
+
+==================================================================
+	*** Pegasus Mail Password in plain text
+==================================================================
+From: "Shosh Forbes (XSLF)" <xslf@netlane.com> 
+
+Here is a very easy way to decode passwords saved by Pegasus mail-
+Run Pegasus with the -Z 32 commandline  switch. This will enable TCP/IP 
+debugging mode and record the POP3 session with your ISP's mailserver
+to a 
+file called TCPDEBUG.WPM in your mail directory. Check  mail and
+closePegasus. 
+Open TCPDEBUG.WPM in any text editor. Look for a line with PASS. That
+line
+will have your password in raw format. 
+
+Don't forget to remove that commandline switch when you are finished!
+Enjoy.
+
+Shosh from israel
+Shoshannah L. Forbes, CNA
+mailto:xslf@netlane.com
+===================================================================
+	*** dead.letter replies
+===================================================================
+[Dale: Here are some responses to the dead.letter exploit we published
+last issue... The first is from the sysadmin of the machine used by
+the person who reported the exploit to us...]
+
+From:Mark Castillo <markc@relationships.com>
+I run the free OpenBSD shell server at webfreaks.com and aware of his
+doings.  They were not successful in their attempt and recieved a
+similar
+email that was posted in the digest from the person.  They claimed it
+worked, but it did not.  We are running 8.8.8, / and /var ARE on
+separate
+partitions, postmaster is an alias, and I was not able to re-create the
+exploit on my server. 
+_____________________________________________________________________
+From:Meino Christian Cramer <root@solfire.ludwigsburg.netsurf.de>
+
+Hi HappyHackers!
+We are *HAPPY* hackers, ok? The *good* guys!
+So, we do not only explain, how an exploit will work,
+we should also explain, how to avoid, that someone
+breaks into our systems, while using that exploit.
+Ok, here is how to avoid the previously mentioned 
+sendmail dead-letter exploit. 
+
+Login as root at your system, then 
+     cd /var/tmp     ls -l
+
+If there is a dead letter already, you are safe. 
+Don't delete that one. If there NO dead.letter, 
+type:
+     touch dead.letter
+     chmod 600 dead.letter
+ 
+This will create a dead.letter of null length.
+Now it is impossible to hardlink /etc/passwd against
+/var/tmp/dead.letter.
+This exploit will not work any more. 
+
+KEEP HACKING! 
+meino    
+----------------------------------
+E-Mail: Meino Christian Cramer <root@solfire.ludwigsburg.netsurf.de>==================================================================
+	*** More Win32 Unix-like Shells
+==================================================================
+From:Martin Svenningsson <emmess@bml.se.org>
+
+Another free (GPL'd) thing is the Cygnus gnu-win32 project.
+http://www.cygnus.com/misc/gnu-win32/
+It provides a "unix layer" on top of the win32 API (known as
+cygwin*.dll)
+and a lot of ported GNU tools, like bash, gawk, grep, including the 
+compiler set with gcc, g++, make, so you can easily port alot of 
+unix programs to win NT/95.
+
+dig the list -- MS
+==================================================================
+	*** What libraries are you running? (LINUX)
+==================================================================
+From:Meino Christian Cramer <root@solfire.ludwigsburg.netsurf.de>
+Here is a shell script which does work on Linux systems, 
+which let someone know more about the installed libraries. 
+It is definitely not useful to break into systems. It is 
+made for the bash shell, which is used widely on those systems.
+
+-------------------------------------------------------
+(to be stored as command "llib")
+#!/bin/sh#
+# This script shows you, which shared libraries are
+# installed on your system and where to find them.#
+# usage: llib <part or the whole name of the library to find>#################################################################
+echo "----------------------------------------------------------"
+ldconfig -p | grep -i $1
+echo "----------------------------------------------------------"
+for i in  $( ldconfig -p | grep -i $1 | awk '{ print $4 }' )do ls "$i"*
+done | sort -uecho
+"----------------------------------------------------------"
+
+KEEP HACKING!
+meino
+E-Mail: Meino Christian Cramer <root@solfire.ludwigsburg.netsurf.de>==================================================================
+	*** More WinWord weakness
+==================================================================
+From:Argus <Argus@aol.com>
+
+Hey!
+	I usually don't write to lists, but I thought I'd give it a try.
+I read the MS Office Vulnerability letter in the May 18th digest and 
+found it similar to a situation I was recently in.  First, though,
+heres 
+a little background info on the viewpoint I'm coming from.  
+
+I'm 17, attending a "technologically advanced" public high school 
+which is slowly switching its huge network over to 95 from 3.1.  
+Though I was at the keyboard since I was in diapers (ok, maybe thats a
+little bit exaggerated), I suppose you could call me a newbie,
+due to my lack of Unix knowlege.  I recently installed Red Hat Linux,
+coexisting with my Win95 installation, and am slowly learning various
+commands
+in my sparse free time.  My situation was as follows:
+
+My school was smartly using Policy Editor as well as all the standard
+security features that a Novell system has.  They had turned on the
+PolEdit function that only allows specifically listed programs to execute.
+This blocked the old Win3.1 way of using an application like Netscape,
+that calls helper apps, to run "forbidden" programs.  
+
+The way I worked around it was to first drop to DOS (via a helpful
+little feature in the Winword "Help for Worperfect Users" option on the
+help menu. It "demos" a DOS shell.  It still isn't disabled in our
+school's Office 97). Then I would go to the directory that the program I
+wanted to run was in and rename it to some file that WAS on the list of
+runable programs. (The list just has filenames, not locations).  I would
+then return to Windows and fire up a program that used helper apps and put
+the renamed program file instead of the real helper app.  I usually use
+Netscape and rename the telnet app.  The smart thing to do is to copy
+poledit.exe from the Win95 CD and bring it in on a disk.  Rename that
+sucker and you're set!
+
+Just be sure to return all the old names/policies back to the defaults
+before you leave, as to cover your tracks..  Well, I hope that helped
+someone, just as many of the past letters have helped me.  This is a
+great list, keep it up.
+
+-Argus-
+[Dale: Simply reboot the machine. The System Policy will be re-enforced
+at the next login...]
+==================================================================
+	*** Unix Hints
+==================================================================
+From:Josh Fritsch <webmaster@techbroker.com>
+
+Want to learn UN*X but don't know where to start? Here are a few
+suggestions to get you going:
+
+1) Check out the major distribution sites! My personal suggestion is to
+start with either RedHat (http://www.redhat.com) or Debian
+(http://www.debian.org). Once you know the ropes a bit better, you may
+consider trying out Slakware (http://sunsite.unc.edu). To spare
+yourself an immense headache, buy a CD-ROM with linux on it as opposed
+to trying to download the entire thing. _Trust_ me.
+
+2) There are a zillion "how-to's" out there. READ THEM! If you start
+asking questions that you could have easily found the answer to on the
+net, you are most likely to be greeted with "RTFM". What does that mean?
+Read The <insert favorite F-word here>Manual! How-to's are a lifesaver
+that can walk you through just about anything as long as you have a little
+patience...and if that's something you lack, you may want to consider
+giving up on UN*X and sticking with M$ (Microsoft). Check out these
+sites to get you started on your quest for information:
+http://www.linuxhelp.org
+http://sunsite.unc.edu
+http://www.linux.org
+
+3) Hang out on linux channels on IRC. My personal favs are #linux,
+#unixhelp, and #freebsd. All of these can be found on Efnet.
+***BEWARE***
+Do NOT get on the #unix channel unless you are prepared to be flamed for
+not being born with a shell manual in one hand and a 'C' book in the
+other!! There is zero tolerance for newbies to UN*X, and they can be
+quite rude about it. (Yes, I have been known to hang out there...rude as
+they are, there are some wizards on there that can fix damn near
+anything.....and no apologies to the #unix channel...it's YOUR turn to
+get flamed! ;)
+
+4) Read, practice, read some more, practice some more, etc.....
+Repetition is the best teacher. Once you've fought with cron for a week
+straight, you'll never forget how to use it!
+
+5) If you've read until your eyeballs are about to pop, and you haven't
+found the answer to your problem, ASK! Ask a friend, ask on IRC, you can
+even ask me (Josh, webmaster@techbroker.com). But if you write me asking
+something that is easily found, don't be offended if I give a vague
+answer.
+
+READING IS YOUR FRIEND!
+All that said, good luck!
+-Josh
+==================================================================
+	*** Spook the wannabees...
+==================================================================
+From:Josh Fritsch <webmaster@techbroker.com>
+
+A suggestion you may want to make to newbies, would be to put something
+similar to this in their .cshrc file:
+
+echo "*********************************************"
+echo "                                             "
+echo " UNAUTHORIZED ACCESS LOGGED......            "
+echo "  IP ADDRESS CAPTURE:                        "
+sleep 4
+echo "                       SUCCESSFUL!           "
+echo "                                             "
+echo "*********************************************" 
+
+I know when I first started using this, it gave me a big 'ol ego boost
+to
+think I might be fooling some wannabe hacker out there :)
+-Josh
+=================================================================
+	*** #90 Update
+=================================================================
+From:VM370x <VM370x@aol.com>
+
+In regards to the article posted in the last hh about the "new" 
+#90 scam (actually it's been around ever since SS7 was introduced), 
+to the best of my knowledge, the scam only works on PBXs 
+(private branch exchanges) or a line that has call forwarding 
+ability turned on.  Just wanted to clear things up because a bunch 
+of kids are going to be trying it on their friends lines wanting to 
+dialup the temple of the screaming electron or something and it
+won't work. 
+
+later-     
+sp3cialk     
+AnThRaX Industries
+=================================================================
+	*** Firewall and IRC Client
+=================================================================
+From:nik <fanggang@turing.grid9.net>
+
+Hi
+I wrote to U about the ConSeal Firewall from Signal9
+U can also get it from X-treme.org along with some DOS attax to 
+try out against it.
+
+Also, [A]lien does a cool version of mIRC called Darkeclipse
+which has been modified with all that 7th spere stuff...
+
+enjoy.
+=================================================================
+	*** FOR Command under Windows NT 4
+=================================================================
+From:Lars Troen <Lars.Troen@Merkantildata.no>
+
+Hey!
+
+I'm using the 'for' command quite a lot because I find it very handy,
+and you can do much more with it than you've shown here. In NT4 this
+command has become very sophisticated and can be used for many purposes
+(it's not as advanced in w95 or nt351). And the use of double %% is only
+necessary when you're using it from a batch file.
+
+The thing that it's mostly used for is when dealing with programs that
+don't handle wild cards. Wild cards in NT are not handled by the shell,
+but by the program itself, therefore not all programs notice that
+they're getting a wild card and will fail with 'File auto*.bat not found.'
+or something similar.
+
+Another thing is when you want to do something on many servers in a
+domain. Then you can put the server names in a file and use this file as
+an input set for the 'for' command. For example, if I want to copy a
+file to a directory on all the servers:
+
+servers.txt:
+\\server1
+\\server2
+\\server3
+\\server4
+etc...
+
+runme.bat:
+@echo off
+for /F %%s in (servers.txt)
+do call copyjob.bat %%ss
+
+copyjob.bat:
+@echo off
+::
+:: This is batch file copies the file 'somefile.txt' to the share
+:: 'fileshare' on the server given as a parameter. 
+net use i: /d
+net use i: %1\fileshare
+copy c:\somefile.txt i:
+net use i: /d
+
+You might think that the one 'net use i: /d' is redundant, but you might
+have mapped some drive at i: before you run this. If a program running
+from this is still active you get a message about that. I usually also
+redirect all the output to a file on one of the servers so I can go back
+and see if the copyjob was properly done.
+
+Just my $0.02
+
+Lars
+==================================================================
+	*** Free Technical Library on the Web
+==================================================================
+From:LT <ltgrant@baka.com> 
+
+Carolyn,
+	I was reading http://www.happyhacker.org/defend.htm, and saw 
+the little blurb about, "Sniffing and logging utilities.  
+We don't know of a good book on that topic."  I know of a book that may
+cover that to the extent that you want.  
+
+It is _"Maximum Security: A Hacker's Guide to Protecting Your Internet
+Site 
+and Network", and I know there is a way to get the entire book for 
+free legally.  Go to http://www.mcp.com/personal and go through the 
+registration process choosing all of the areas of interest and you will
+have access to the book, I believe it is under the Operating Systems and
+Networking area of books.  
+
+I think that the entire book seems to have a lot of good information
+and resources.  I think that this is great service to provide for free,
+and I think it would be worth notifying a lot of the list of for their use, 
+because it also has a free book on UNIX.  I have a fair deal of free
+time on my hands and would be willing to help.   		
+
+LT
+
+PS - I apologize if this e-mail is a bit incoherent and doesn't flow,
+I am quite tired, and not thinking well, or at all for that matter.
+
+[Dale: This site is an excellent resource!!! You can "check out"
+books on the Web for 90 days for free!!! How many books can YOU read
+in 90 days?!?!?!?]
+__________________________________________________________________
+
+with message "subscribe hh."     
+This is a list devoted to *legal* hacking! If you plan to use any
+information in this Digest or at our Web site to commit crime, go away!
+Foo on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the
+United States operating under Shepherd's Fold Ministries. Yes! This is
+all a plot to save your immortal souls! For Windows questions, please
+write Roger Prata <rprata@techbroker.com> for Macs, write 
+Strider <Strider@clarityconnect.com>, and Unix, Carolyn Meinel
+<">>or Josh Fritsch <webmaster@techbroker.com>.
+Other general questions go to R.J. Gosselin <rjg@techbroker.com>. 
+Happy Hacker editor: Dale Holmes <editor@techbroker.com>
+Happy Hacker email list maintainer: Jonathan D. Zerulik <jdz@ufl.edu>

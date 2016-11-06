@@ -1,0 +1,535 @@
+May 1, 1998
+
+=====================================================================
+URL of the day: http://www.hummingbird.com software to run Unix programs on
+Windows NT and vice versa.
+See back issues of the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://www.Happyhacker.org.
+GTMHH en espanol: http://underhack.islatortuga.com
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html
+=====================================================================
+
+TABLE OF CONTENTS
+
+* Hacker Wargame update
+* How to break into a Windows NT box from console
+===================================================================
+*** Hacker Wargame Update
+===================================================================
+
+The Hacker Wargame is about to get better. We will soon be able to display
+(on http://www.happyhacker.org) exciting logs of both legal game break-in
+attempts and illegal assaults against the ISP donating the T1 to our game.
+
+This improvement is thanks to two companies who have provided us with
+software for observing hacker attacks (sniffers): AG Group, which is
+providing us with EtherPeek 3.5 for Macintosh Power PC (also available on
+Windows NT and 95); and En Garde Systems, Inc., which is providing
+IP-Watcher for Unix and T-Sight for Windows NT. These packages are capable
+of identifying the true source of a spoofed IP address, and allow us to
+watch what an attacker is doing keystroke by keystroke.
+
+We also have donations of a 66 Mhz Mac and a top of the line Mac G3, which
+is capable of operations in the ballpark of a RISC box! We will be using
+the Macs for sniffing, logging and perhaps for Web servers.
+
+Macs are supposed to be impossible to hack any way other than by sniffing a
+clear text password. We are really excited to have them in the game.
+
+We will get up a newbie box that is easy to break into as soon as we have
+set up to quickly restore the operating system from CD-ROM every time the
+31337 haxors delete the operating system. For some reason they are
+TERRIFIED that newbies might be able to learn something from this game.
+
+Please understand that the Hacker Wargame relies 100% on donated hardware,
+software and volunteer labor. So please be patient with us.
+-----------------------------------
+
+From: Daniel Erick Harper
+
+I have been a reader of your happy hacker works for a few months now. I
+am the System Administrator of a Linux server for a small school for
+gifted students in Mobile, AL. I have just tracked down and crushed a
+black hat who was hacking my box.
+
+I would like to take some time from the natural high that follows such an
+action (;-&gt) to thank you for what you have done. I am a student here
+myself, do not (yet) have a degree in computer science, and am still
+learning Linux and other forms of networking. Without your website, I
+would have been completely lost as to how to kill this hacker.
+
+So... thanks a lot! You have helped me (and a lot of other young
+SysAdmins, I suspect) greatly. Keep up the good work!
+-----------------------------------------
+From: The Bl@ck Knight
+
+I have noticed on the Happy Hacker page about the Hacker War Games..I am
+wondering do I need to register to join in?? or do I just go straight
+and try and get root access to ??
+and once I do get root access what do I do? who do I inform etc..
+I would like to join in on this and am eager to try it.
+
+[You don't need to register. If you are working from a shell account at an
+ISP instead of form your home Linux, OpenBSD etc. box, you may want to
+advise your ISP that you are studying computer security just in case someone
+notices what you are doing.
+
+Once you get root, trust me, we will notice. If you want the whole world to
+notice, put your boasts up on the Web page of the Wargame computer you broke
+into. -- Carolyn Meinel]
+---------------------------------------
+From: Stephen Skubinna
+
+Subject: More ZDNet Talk Back on Hacker Wargame
+
+ 
+
+Just read Moe Dify's remarks. Are you really not liked by 98.9% of the
+hacker community? How did they get that number, mail in survey, phone
+canvassing, interviewing people in malls?
+
+Gee... 98.9% Wish I had a good hard definitive number by which to
+identify my enemies (if I had any, that is - 100% of everybody likes
+me).
+
+===================================================================
+*** Windows NT Hacking
+===================================================================
+
+From: cutelilbabyboy@hotmail.com
+
+You wanted to know how to hack WindowsNT, well here goes!
+
+1) Disconnect from the server. This sounds harder than it actually is! 
+Simply remove the network cable from the 'victim' terminal (the one 
+which looks like a phone cable).
+
+2) Reset your computer.
+
+3) After loading windows, the computer automatically tries to boot into 
+the network, but can't find the server MUHAHAHA!. It will display the 
+error message 'No server found to validate password. You may not be able 
+to gain access to some network resources'.
+
+4) Accept the error and continue. The computer figures that bad things 
+have happened and gives you the administrator password box. DO NOT press 
+'enter' at any stage here until I say so! Use the mouse to change boxes! 
+Change the username 'propagate' (system default) to Baby-boy (or any 
+kewl hacker name).
+
+5) Delete the demonstration password and replace it with any password of 
+your choice. Make it easy! you have to remember it!
+
+6) Change the network name from 'RMNETNT' or 'BORINGNET' or whatever 
+your networks calling itself, to 'NAFFNET' or any name that takes your 
+fancy.
+
+7) Press enter. This will return you to the normal logon screen. (but 
+you will now notice, this is a logon screen to 'NAFFNET', not your usual 
+network!
+
+8) Enter the username and password that you used before.
+
+9) Again, the error message 'No server was found to validate your 
+password'. Hit 'enter'.
+
+10) Bingo! the computer puts you into normal windows on that terminal.
+
+11) Replace the network cable, and you're ready to hack using Telnet, 
+or any other program stored on that terminal.
+
+[Update to Windows NT 4.0 Service Pack 3 will invalidate this bug. But you
+can still evade security with the NT rescue disk. -- Trave Harmon of Harmon
+Consulting, http://pages.cthome.net/harmon_consulting]
+-------------------------------
+
+>From anonymous:
+
+I'm fairly new to this as far as hacking goes anyway but a
+friend told me about this really easy hack with win 95 NT 4.0 or win 98.
+I don't know if you know about this or not, but here goes.
+as far as I can tell you have to have file and printer sharing enabled or
+rather the victim does at any rate for this to work. you get an IP address
+go to the start menu go to find then computer input the IP address like this
+\\000.000.000.000 then click on find now.
+this will find regular users ISP's whatever this will show you the contents
+of the shared drives files whatever. no log in no nothing as far as it's
+concerned you are on the LAN!!!!
+I got into me ISP's secondary domain server without a password or even a
+login. As far as I can see unless you password protect your shared hard
+drive you are open to this. If you know how to get around it or close this
+hole let me know I'll pass it on to my ISP.
+-------------------------------------------
+
+From: ahlternate@hotmail.com
+
+I read the file begin.html and found it most instructive. I must say, 
+however, that the method described for compromising CMOS passwords is 
+somewhat drastic. So, here is a trick witch works on at least Win3.1 and 
+definitely DOS. I would not be surprised if it worked on Win95. 
+Unfortunately Win NT blocks it, well, as far as I can tell anyhow.
+
+The principle is that you by writing to the CMOS-memory by ports 70h/71h 
+corrupt the CMOS checksum. On many CMOS's this will cause the password 
+to either be inactive, deleted or reverted to a standard easily guessed 
+one e. g. AMI.
+
+There is one easy and one hard way to do this.
+Either you write the program in debug.exe e. g.
+
+C:\debug.exe
+-a
+0C03:0100 mov al,10
+0C03:0102 out 70,al
+0C03:0104 mov ah,al
+0C03:0106 in al,71
+0C03:0108 not al
+0C03:010A xchg al,ah
+0C03:010C out 70,al
+0C03:010E mov al,ah
+0C03:0110 out 71,al
+0C03:0112 int 20
+0C03:0114
+-r
+
+Now, I am not sure that lines 010a to 010e are really necessary, but, 
+they are there anyway. This little program inverts the value (at 
+position 10h) which tells the system what sort of floppy-drive to 
+expect, fairly harmless. There are, of course, addresses which controls 
+the password itself and how it will be used. These however are rather 
+manufacturer-dependent so this, I think, is a more general method. (If 
+you as you proposed, want to reset the CMOS you should (if you can) do 
+it 'in silica' anyway, and not 'in vivo'.)
+
+The hard way of doing this is, of course, to write this in notepad, 
+using <ALT+numeric-keypad>and save it in a .COM file. I have not tried 
+that myself but if anyone wants to bother the following
+
+B0 10 E6 70 88 C4 E4 71 F6 D0 86 C4 E6 70 88 E0 E6 71 CD 20
+
+is the hex values.
+
+ 
+
+If this was new to you, especially if you plan to include it in any of 
+your articles, I would be glad you would send me a comment.
+
+/Daniel
+
+==================================================================
+*** Yahoo Password Problem
+==================================================================
+
+From: Craig Harvey
+
+I downloaded that crappy Yahoo news ticker and I believe it is a security
+threat to people who use this and/or Yahoo mail, Chat. The news ticker
+keeps the persons password in the registry in plain text, no encryption or
+anything.
+
+=================================================================
+*** Free Computer Manuals
+=================================================================
+From: DarkMaven
+
+You probably already know about this, but at 
+Personal Bookshelf you can get
+free computer books. (It's kind of like a library. You check out a book
+for 90 days) The have books like UNIX Unleashed, Learn TCP/IP in 14 days,
+Linux, and lots of books on programming and for those beginners. It might
+be a good place you can point beginners or something.
+
+~Creator
+
+==================================================================
+*** Fun with Finger
+==================================================================
+From: Magnus Kristiansen
+
+TAKING ADVANTAGE OF FINGER
+
+Some fingerd installations support redirections to another host.
+
+Ex:
+$finger @system.two.com@system.one.com
+
+finger will in the example go through system.one.com and on to
+system.two.com. As far as system.two.com knows it is system.one.com who is
+fingering. So this method can be used for hiding, but also for a very dirty
+denial of service attack. Look at this:
+
+$ finger @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@host.we.attack
+
+All those @ signs will get finger to finger host.we.attack again and again
+and again... The effect on host.we.attack is powerful and the result is high
+bandwidth, short free memory and a hard disk with less free space, due to
+all child processes.
+
+The solution is to install a fingerd which don't support redirections, for
+example GNU finger. You could also turn the finger service off.
+
+[It is hard to find finger daemons nowadays with these "features" -- Carolyn
+Meinel]
+
+===============================================================
+*** Anonymous Email
+===============================================================
+
+>From mAChIneheaD2
+
+Carolyn,
+I have been reading your web site happy hacker and here's some tip's 
+1.a while back I made a bulk email program with vb4
+I bought a Mabry ocx for mail, after trying out my bulk mailer I found that
+you can use it as a anonymous mail program or so it seems I have only sent
+myself mail I'll send you one with this letters text for a final check
+2. while messing with the "upload file" option on Netscape I did a nono on
+my ISP step1. make a dir (called say upload)on your server, I used my ftp
+account 
+step2. do a "chmod 777 upload" at this point you still own the dir called
+"upload" 
+step3. go to your upload dir with Netscape and dragany file into the
+Netscape window and the file will go to that dir(upload),now this is what
+happens, ftp will own the dir making a hole that anybody can upload to
+anonymously . this worked on redhat 4.5
+
+====================================================================
+*** 31337 Proggies Trap 
+====================================================================
+
+>From anonymous:
+
+for your information and for those who are looking around for 
+windows/dos executables of "land", "bonk" and "newtear" DoS exploits, 
+there is a website (I think it is on geocities) that has these files 
+available for downloading....!!! (wow! what's the URL????????)
+
+there is only one minor (errr...major actually!) setback. these files
+are not what it claims to be and executing them wipes out boot and ini files
+and renders your windows o/s helpless. gives a person food for thought !
+
+[Amazing -- who would ever imagine that the kind of person who would give
+away programs designed to damage computers would want to damage the
+computers of the people who download them <grin>-- CM]
+
+===================================================================
+*** Win 95 Hacking
+===================================================================
+From: Josi Tomas Robles Hahn
+
+My name is Josi Tomas Robles Hahn and I found another way to hack MS
+Internet Explorer Ratings. I delete RSACi.RAT from my windows\system
+directory and now ratings are deactivated. And I don't delete any registry
+key!!!
+-----------------------------------
+
+From:anonymous
+
+am ardent fan of the GTMHH and after reading your articles, I feel that
+I should be contribute something.
+
+further to Bruce Conklin's subject on adding the control panel to
+windows start up menu, here r several more folders that can be added.
+
+Dial-Up Networking.{992CFFA0-F557-101A-88EC-00DD010CCC48}
+Printers.{2227A280-3AEA-1069-A2DE-08002B30309D} 
+Inbox.{00020D75-0000-0000-C000-000000000046} 
+My Computer.{20D04FE0-3AEA-1069-A2D8-08002B30309D} 
+Recycle Bin.{645FF040-5081-101B-9F08-00AA002F954E} 
+Network Neighborhood.{208D2C60-3AEA-1069-A2D7-08002B30309D} 
+Desktop.{00021400-0000-0000-C000-000000000046} 
+Briefcase.{85BBD920-42A0-1069-A2E4-08002B30309D} 
+Fonts.{BD84B380-8CA2-1069-AB1D-08000948F534}
+
+for the ease of those who may have missed the Happy Hacker Digest Feb.
+11, 1998 issue, u will need to do the following;
+
+1. highlight the folder u wish to create from the list at the top
+2. copy the entire line (CTRL+C)
+3. open "windows explorer"
+4. on the left frame, double click on the "windows" folder
+5. still on the left frame, highlight "start menu"
+6. click on "File" at the top of "windows explorer" and choose
+"new/folder"
+7. when u see the "new folder" hit CTRL+V then ENTER
+
+sHNnake
+
+==================================================================
+*** Free Shell Accounts
+==================================================================
+X-Sender: corey@nextdim.com
+
+I bet you get some requests for shell accounts quite a bit...I'm not saying
+put this in the happy hacker digest but you may already have these free
+shell account services but anyway I've been looking stuff up on the net and
+putting it here
+http://www.angelfire.com/wa/NETMOB2/ohyea.html
+
+=================================================================
+*** Linux Answers
+=================================================================
+From: Aasmund Eikli
+Organization: Setec Astronomy
+
+I know these questions was asked quite some issues ago, but I'll 
+answer some of them anyway:
+
+Berd I. Skjfveland asked about Linux installing some digests ago.
+
+The first question was about having Win95 and Linux on the same 
+machine:
+
+This will work just fine. Especially if you have Win95 already 
+running on your machine it will be even easier. All you have to do is 
+to install LILO (Linux Loader, it's in both RedHat and Slackware) in 
+the MBR (Master Boot Record of your HD), and then configure LILO to 
+have two OS's. The first one is already installed and is Linux, then 
+you can configure it to run an MS-DOS partition, and on that 
+partition WIn95 resides already. It is quite easy explained in the 
+Setup process of LILO. Just follow instructions. However, on RedHat 
+(at least 4.0), LILO does not come with an external setup program 
+within the normal Install program for the system. You have to 
+configure the LILO.conf file for yourself if you want to have Win95 
+in your boot as well. In Slackware this is no problem, the setup 
+program does the job for you.
+
+The second question was about buying an extra HD to have Linux on. 
+This is just great and as far as I am concerned a requirement. You 
+can of course have two partitions on a HD, but that would eat up much 
+space which you could use for Win95. So I'd recommend to buy another 
+HD and install it on there. All you really have to do is to install 
+the HD, the BIOS finds it, and you run the Linux bootup disks. Then 
+run Linux' FDISK program and select HD2 (the partition information 
+would probably be hdb, and not hda cause its your second HD). Just 
+partition the HD and set the system to Linux Native, and you're all 
+set. As long as you select the SECOND HD your stuff on HD1 is left 
+unchanged.
+
+As for what Linux system is easiest to use, I would recommend RedHat 
+for beginners, then move on to Slackware. I use Slackware or FreeBSD.
+
+When you are experienced in DOS, but only a file-manager like Norton 
+Commander, Linux might seem like a nightmare to start with. But if 
+you choose to install a program called MIDNIGHT COMMANDER, you're 
+doing a smart thing. This program is much like Norton Commander but 
+its for Linux. Make sure to install this program.
+
+When you have a network card, and 
+a modem installed on a Linux system, the TCP/IP protocol can 
+misunderstand this and tell you that you cant use the modem cause the 
+Network card is already using those programs. What you have to do (in 
+any case what I always do), is to recompile the kernel and choose to 
+have the network card as a MODULE. It always works for me. It 
+requires some more configuring, but nothing much.
+
+A Question from Abuser caught my attention.
+It is possible to install Linux with an ONTRACK TSR. You just have to 
+make sure that LILO does NOT install on the MBR. And I'm not sure if 
+even this is necessary, cause ONTRACK uses the first cylinders of 
+the boot sector, and I'm quite sure it doesn't touch the MBR at all. 
+Either way, you cant screw up the ONTACK manager. After installing 
+LILO, just install the MSDOS partition in it, and you are all set.
+
+That's all for now.
+
+- Aasmund (The Bloody Norwegian)
+
+"..was that love in your eye I saw, or the reflection of mine.."
+- Cinderella Search , Marillion 1984.
+----------------------------------------------------------------
+Aasmund Eikli
+Kristiansand S, Norway
+IRC : Inter (EFNet, IRCNet)
+aeikli@online.no , inter@oh.kvadraturen.vgs.no
+
+==================================================================
+*** Feedback on Shell Account Security
+===================================================================
+To link your bash history to dev null, the procedure is:
+
+rm .history
+ln /dev/null .history
+
+NOT
+
+ln .history /dev/null
+
+-- Carolyn Meinel 
+------------------------------------
+
+From: Chris Chiapusio
+
+Got some corrections/tips for you:
+
+>	First, use Secure Shell (ssh) with RSA login ("password" option sends your
+>password in the clear, a big no-no) so no one can sniff anything you are
+>doing in your shell account. To get ssh, see http://www.datafellows.com/.
+>Important note: in order to use Secure Shell, your Internet access provider
+>must be running a Secure Shell server. Ask tech support at your ISP whether
+>they have it. DON'T ASK ME, only tech support at you ISP can answer that
+>question.
+>
+>	To hide your password in the Datafellows version of Secure Shell clinet for
+>Win95, first click "password," then enter your password, then click "RSA."
+>Then hit enter. If you don't click "RSA," your password will be sniffable
+>and gremlins may run rampant in your shell account!
+
+>From the man page:
+
+If other authentication methods fail, ssh prompts the user
+for a password. The password is sent to the remote host
+for checking; however, since all communications are
+encrypted, the password cannot be seen by someone
+listening on the network.
+
+[Carolyn: There must be a way to misconfigure Secure Shell, then, because I
+have a problem with clear text passwords, per the sniffer test! It's scary
+when a security program is easy to run so it isn't secure.]
+
+>
+>1) Give the command "rm .bash_history" for bash shell (or if in Bourne
+>shell, "rm .history")
+>
+>2) Give the command "ln -s /dev/null ~/.bash_history" (or "ln /dev/null
+>.history" for Bourne).
+
+for bash try this in your .bashrc/.bash_profile:
+
+export HISTFILESIZE=0
+export HISTFILE=
+
+this will set the history file size to 0 lines, and unset the HISTFILE
+environment variable, each on their own should do the job, and be less
+conspicuous than a synlink to /dev/null
+
+>
+>echo -------------------------------------------
+>echo To err is human...
+>echo To get caught is just plain stupid...
+>echo Fatal Error
+>echo -----------Big brother is watching----------
+
+the SysAdmins new motto (borrowed obviously :)
+
+echo -------------Charlie is listening-----------
+
+>
+>3) Give yourself a scary prompt. I inserted the command in the .cshrc file
+>"set prompt="`hostname`{`whoami`}\!:K-Rad Doomster of the Apocalypse;^)""
+>
+
+I use something like this for the titles of my xterms... minus the
+self-adoration
+
+___________________________________________________________
+with
+message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan to use any
+information in this Digest or at our Web site to commit crime, go away! Foo
+on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the United
+States operating under Shepherd's Fold Ministries. Yes! This is all a plot
+to save your immortal souls!
+For Windows questions, please write Roger Prata; for Macs, write Strider; and Unix, 
+Carolyn Meinel. Other general questions go to R.J. Gosselin. 
+Happy Hacker email list maintainer: Jonathan D. Zerulik

@@ -1,0 +1,626 @@
+May 6, 1998
+
+=====================================================================
+URL of the day: http://www.fsf.org Free Software Foundation
+See back issues of the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://www.Happyhacker.org.
+GTMHH en espanol: http://underhack.islatortuga.com
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html
+=====================================================================
+
+TABLE OF CONTENTS
+
+* Hacker Wargame update
+* How to block finger
+* Hacking WinNT
+* Win95 hack
+* More on CMOS
+* More on Linux
+* Shell programming permissions
+* Free Software Foundation
+* Bash history
+* Yahoo password problem
+* Yahoo bookstore
+* Call for volunteers
+
+==================================================================
+*** Hacker Wargame Update
+==================================================================
+From: Kent Davis
+
+before I decided to start my career as a harmless hacker, I heeded your
+advice to warn tech support. I was all set to take them out to dinner and
+realized that the tech crew was 100 people large! I offer a far more simple
+and pleasant way to inform your ISP that you'll be doing harmless hacking.
+A simple phone call to tech support and informing them of what your doing,
+why your doing it and that you're willing to help test your own servers
+security did the trick for me! A simple explanation has also worked at
+school while testing the network security there. I asked the administration
+if I could test the security and before I knew it, they had me running a
+windows NT webserver, Compaq proliant running Novell and a lab of 30
+computers in my free time ;) A simple "Can I do this" was more than enough
+for me, and is a good habit to follow.
+
+ 
+
+[Carolyn: It depends on your ISP how much work it takes to get them on your
+side.]
+===================================================================
+*** How to Block Finger
+===================================================================
+From: Magnus Kristiansen
+
+Stop Finger!?!
+
+Most Unix system uses GNU-finger daemons, which easily may be blocked 
+with a .fingerrc file in your home directory, like this
+
+----------- Cut ----------
+#! /bin/sh
+#
+# As I don't like ppl poking around in my privacy
+#
+echo Please get the he*l away!
+----------- Cut ----------
+
+Don't forget to:
+
+chmod +x .fingerrc !
+
+*On very few systems the sysadmin has turned off the possibility to
+run your own .fingerrc-scripts*
+
+This would not work on system who doesn't use Gnu-finger...
+
+==================================================================
+*** Hacking WinNT
+==================================================================
+
+From: Capt. Video
+>From anonymous:
+>>I'm fairly new to this as far as hacking goes anyway but a
+>friend told me about this really easy hack with win 95 NT 4.0 or win 98.
+>I don't know if you know about this or not, but here goes.
+>as far as I can tell you have to have file and printer sharing enabled or
+>rather the victim does at any rate for this to work. you get an IP address
+>go to the start menu go to find then computer input the IP
+>address like this
+>\\000.000.000.000 then click on find now.
+>this will find regular users ISP's whatever this will show you
+>the contents
+>of the shared drives files whatever. no log in no nothing as far as it's
+>concerned you are on the LAN!!!!
+>I got into me ISP's secondary domain server without a password or even a
+>login. As far as I can see unless you password protect your shared hard
+>drive you are open to this. If you know how to get around it or close this
+>hole let me know I'll pass it on to my ISP.
+>-------------------------------------------
+
+This may have exploited the stupidity of the ISP's administrative person,
+not Windows NT. I have tested this hack and got very different results. I
+will test it further.
+
+The above described process is still a network access and is subject to
+security checks and login. Also, if it is this individual's own ISP, and he
+dialed up successfully, then chances are he has an account on this machine
+and was probably already logged on. Further, like in Unix, all information
+that is available to the public can commonly be accessed (depending on what
+is allowed by the admin) from a guest account and anybody running a LanMan
+compatible networking client can wonder in and see a list of shares. For
+example, if my name were Bob and I logged on as BobB to my Windows 95
+computer, then tried to search the contents of a share on an NT system over
+the net in the above described fashion (or any other); the NT system would
+try to log me on BobB using my Windows 95 password. Failing that, it would
+log me on as Guest (if the Guest account was enabled by the admin). If the
+Guest account has a password, I would get a message telling me that the
+share is protected by a password and be prompted for it. If not, then I am
+in and allowed to view and access anything I can browse to through that
+share that has been assigned rights that would permit access to Guest. If
+all the share permissions use the default "Everyone Full control"
+permissions and the drive is a DOS compatible format (FAT) or the local
+permissions are the same as the above share, then that Admin is stupid and
+thoroughly screwed no matter how you slice it. Like Novel and Unix, there
+are Read/Write/delete/change permissions...etc. rights. But "Full Control"
+in NT means all rights.
+
+I have done this many times to NT machines and still not been able to cross
+either the share permissions or the local permissions when I did not log on
+with an account that has access to these files. No matter how you get to
+the shares, if you use the regular interface on your client, you are subject
+to login and file rights settings. If the file rights settings are looser
+than they should be then that hole is closed by the admin viewing and
+securing the access rights on those files.
+
+Be it known that, with NT:
+
+A>Many small ISPs use un-trained admins who do not fully understand NT
+share and file rights and frequently make mistakes.
+
+B>For ease of use, the default rights are always Everyone Full Control on
+all new shares and newly formatted drives until the Admin sets it to
+something else.
+
+C>Using the FAT (DOS compatible) formatting option means that the drive is
+protected by share permissions only.
+
+Any admin reading this who is concerned about share, folder, and file
+security should take a class. NT is a complex networking system comparable
+in technology to Novell Netware (at least so far as file permissions are
+concerned anyway). Or I can answer specific questions care of this list.
+
+==================================================================
+*** Win95 Hack
+==================================================================
+From: William C . Topp
+
+I read your hh on win95. you use DOS a lot. with wfw 3.11 you could
+just exit windows and be at a true DOS prompt. not so easy in win95.
+this technique appeared in PC magazine Sept. 10, 1996 on p. 339. it was
+in a letter from one Gary Tessler
+
+make sure at least the following path is included in your autoexec.bat:
+
+path c:\windows;c:\windows\command;c:\dos
+
+edit autoexec.bat so that the last line is
+
+win
+
+delete or rename c:\windows\logos.sys and c:\windows\logow.sys
+
+find c:\msdos.sys and change the attributes from hidden and read-only
+edit this file with notepad to include the statement
+
+BootGui=0 (that's zero)
+
+in the [options] section
+
+save the file and reset (if you want) to hidden and read-only. reboot.
+
+what this does is cause the system to boot to DOS but the last line of
+the autoexec.bat loads win95 so the effect is to boot to win95. however
+when you choose "exit" from the start menu and select "shut down the
+computer" boom, you're at a true DOS prompt. to get back into win95
+type win
+
+I've done this on three computers and it always works. I love it.
+
+one small problem. you now can't hit f8 or f5 or whatever that key is
+at boot time and select boot to DOS because now the autoexec.bat throws
+you into windows anyway. you need to select instruction step and say
+"no" to the win in autoexec.bat to actually boot to DOS.
+
+so this lets you exit to DOS very easily but it is a pain to boot to
+DOS. I favor the former, I seldom actually turn off my computer.
+
+please note, this isn't my "hack" or whatever you call it. I got it
+from the reference above.
+
+ 
+
+==================================================================
+*** More on CMOS
+==================================================================
+
+From: Gustavo Olaza
+
+Hi,
+this is the complete debug template for a password crack in PC CMOS memory.
+It works invalidating the CMOS configurations <save the important parameters
+before try this&gt.
+The port 70h is the byte select and the port 71h is the W/R port.
+First, we select the address for I/O via out port 70, address and late we
+R/W via port 71.
+The byte 0e is the diagnosis status byte, if the bit 5 is set the
+configuration is invalid.
+The bit 7 of port 70 is the NMI mask register <Never alter its value!>--------------------------------cut here-------------------------------
+a 100
+in al,70
+and al,e0
+or al,0e
+out 70,al
+mov al,ff
+out 71,al
+ret
+
+rcx
+d
+n killcmos.com
+w
+q
+----------------------------cut here--------------------------------
+Cut the text between the lines and paste in a text file for example cmos.txt
+and in the DOS prompt at the directory where the file is in, type: DEBUG 
+< CMOS.TXT; this create a file "killcmos.com". Execute this file, and when
+you restart the computer you will see: "CMOS configuration invalid, please
+press F1 to enter setup" or something similar.
+Enjoy it. ;-)
+
+---------------------------------
+>From anonymous:
+
+1. The post about CMOS security and debug...you can read that in one
+of the last c't magazine (Germany).
+
+2. To get into any Award Bios, there are some "Supervisor Passwords"
+which overrule every user-set password, e.g. "LKWPETER". Its only one
+of many....but if ya didn't know...now you know...
+
+----------------------------------
+From: Bastian Doetsch
+
+| At 08:59 PM 5/1/98 +0200, anonymous wrote:
+|>Make that anonymous pls....
+|>|>Something for the digest.....
+|>|>1. The post about CMOS security and debug...you can read that in one
+|>of the last c't magazine (Germany).
+
+c't is a printed medium...but you can check out the website at
+http://www.heise.de/ct/.
+As you perhaps have noticed at least one of the ct-reporters is
+subscribed to this list (He posted something about Linux security
+while booting). Btw...you remember the post about finger
+@@@@@@@@@@@@@@@@ attacked.host.com? It is copied (copy paste) from a
+paper about Denial of Service attacks, which I have attached to this
+email.
+
+|>2. To get into any Award Bios, there are some "Supervisor Passwords"
+|>which overrule every user-set password, e.g. "LKWPETER". Its only
+one
+|>of many....but if ya didn't know...now you know...
+
+btw...if ya know of supervisor passwords for other bioses....I would
+appreciate to get them.
+
+And at last a question....
+Which protocol is used to transmit information between keyboard and
+keyboard port? I know it's a serial interface, but how could I access
+it via a normal serial port of another computer?
+
+email: B.Doetsch@nordakademie.de
+url: http://home.pages.de/~ristridin/
+---------------------------------------
+
+From: Capt. Video
+
+>I read the file begin.html and found it most instructive. I must say,
+>however, that the method described for compromising CMOS passwords is
+>somewhat drastic. So, here is a trick which works on at least Win3.1 and
+>definitely DOS. I would not be surprised if it worked on Win95.
+>Unfortunately Win NT blocks it, well, as far as I can tell anyhow.
+>
+Correct, this kind of direct hardware access cannot be performed by a user
+mode application running under NT. However a system level device driver can
+(at least in theory) run low level function calls that command the OS to do
+things to the HW in it's behalf. Whether or not this would allow you to
+corrupt the checksum however I could not say. I do not know that, however I
+would doubt it.
+------------------------------------
+From: Daniel Powell
+
+Here's a debug command that will clear part of CMOS if not all of it. Good
+if your sysadmin disabled your floppy drive in BIOS. Once done, will need to
+restart, You should get a check sum error on boot, which will make it load
+default values. It will not clear password...on my machines anyway. I have
+tried this on a Pentium 75 w/phoenix bios and a 200mmx w/award bios. and
+worked both times.
+Start, run, type COMMAND hit enter.
+DEBUG hit enter
+-o 70 2e hit enter
+-o 71 ff hit enter
+-q hit enter
+exit hit enter
+Restart the computer
+
+ 
+
+==================================================================
+*** More on Linux
+==================================================================
+From: Adrian Hawkins
+
+Not to beat Linux into the ground, but I had an alternative to Aasmund
+Eikli's discussion on Linux:
+
+A man named Patrick Volkerding has put together a flavor of Slackware called
+ZipSlack that simply unzips onto a Zip(tm) disk or HD. Using UMSDOS, users
+don't have to mess around with partitioning their drives or buying more
+hardware. It just creates a new directory. To run, the user only has to
+type 'Linux' at a DOS command prompt.
+
+This is a fully functional / upgradable spin off Slackware.
+
+This option is great for those who would like an easy way to mess around
+with Linux without losing their current Microsoft setup. ZipSlack is
+available on any Slackware mirror.
+----------------------------------
+From: Cory Nickerson
+
+For the many people who are asking about running Win95 Linux and other 
+OS's on their computers at the same time, I'd like to suggest looking 
+into a relatively new program(few months old) called master booter.
+Available from download.com, the author purports it to be able to manage 
+up to 6 operating systems on 6 partitions of the hard drive without the 
+use of boot disks and the likes. From what I've seen, I'd recommend 
+using the program in conjunction with a stand alone drive partition 
+program such as partition magic. If you'd like to run more than one OS 
+like me, its worth looking into(my girlfriend would kick my a** if she 
+booted up to a Linux screen:P)
+
+ 
+
+One other thing, I, like more and more people recently switched to a 
+cable modem and will soon be getting a static dedicated connection 
+through it and running a web/ftp and telnet server on my p166. Due to 
+its unique nature and the fact that it is connected through a proxy 
+server, what kind of unique security risks and concerns are there with 
+this setup? Thanks.
+-Cory Nickerson
+
+P.S. Love the digest, just keeps getting better, tell your Wargame ISP 
+they ROCK.
+-----------------------------------------
+From: David Ney
+
+(Regarding Linux on same disk as Win95, with S.u.S.E.) A very simple setup
+program is included (Yast). The best way to do the setup is to go to msdos
+and start the setup program, make the 3 installation disks and follow the
+instructions. If it is time to repartition the hard drives it's the simplest
+to make 4 primary hd (hda1, hda2 ,hda3 ,hda4) all Linux partitions. I used
+the first as root directory (hda1: / --->size 500MB) and (hda2: /usr
+1500MB). If anything functions the best way we will come back to win95, you
+have just to introduce your msdos disks in the floppy and do no format of
+any hd!!!! Just exit setup and start fdisk from A:\, delete the two last
+hard drives and create a new (or more) DOS partitions. Now you can restart
+the computer for installing msdos. Format the hard drives, but you must pay
+attention that you format "C:" and not "the first drive.." or something like
+this. Now if msdos is installed start Linux, take root access and start #
+yast. Now it is the best to control everything (for example if the root
+drive and the usr drive is always installed right. Then you must exit and
+update your system, you will come into LILO setup again, make a new entry
+for example Win95 and choose start "msdos" and the hd to boot from is
+/dev/hda3. Now restart your PC and if LILO is booted try with TAB the
+systems which are installed. There must be Win95 and Linux start win95 (but
+MS-DOS will be started) Then install your CD ROM drive and install Win 95.
+If win95 works without problems you must reenter Linux with your Linux boot
+disk because Win 95 writes the boot configuration on the Linux system. Now
+restart yast and check everything exit it and make an update of the system
+with the LILO boot program. Now when you make a restart you will get your
+lilo prompt and you must enter the system you want to boot. I think this is
+better like starting Linux with loadlin under windows on a DOS partition,
+because it is much more stable.
+
+--------------------------------------------
+From: mea culpa
+
+>If you will let us have the source code to your joke daemons we will
+credit you on our mail list
+
+Its funny that you keep mentioning source code. I don't think you grasp
+how simple it is to make daemons like that.
+
+#!/bin/sh
+TERM=vt100
+trap 1,2,3,4,5,6,7,8,9
+
+clear
+echo " "
+echo "in.lamerd"
+echo " "
+echo "If you are portscanning this machine with Strobe or a like scanner,"
+echo "you should be aware that it does indeed leave all sorts of wonderful"
+echo "log entries. Many lamers out there don't understand the value of a"
+echo "half-open port scanner. Hell, many lamers don't even know what one"
+echo "is. If you find yourself thinking 'what is one?', then please quit"
+echo "scanning and worry more about learning something."
+echo " "
+sleep 1
+exit 1
+
+Pretty simple, no? The 'trap' command is telling it to take any input at
+all and ignore it. The rest is basic shell scripting.
+
+So, save the above as your favorite name (above is in.lamerd). Add the
+following lines to the following files:
+
+inetd.conf:
+in.lamerd stream tcp nowait nobody /usr/sbin/tcpd
+/usr/local/etc/in.lamerd
+
+services:
+in.lamerd 2145/tcp #
+
+And voila. Don't forget to HUP inetd.
+
+[Newbie note: You have to be root to do this -- Carolyn]
+
+==================================================================
+*** Shell Programming File Permissions
+==================================================================
+From: Mike Miller
+
+chmod 777 sets permissions for all users to read, write, and execute a
+file/directory (execute a directory means to change to it). chmod can be
+used two ways; either with numbers or letters. The letter way is simpler,
+simply type chmod <letterstring><filename>where <letterstring>includes is
+the following syntax <who>+/-<what> The who field can be u g or a (for user
+(the owner), group, and all). The what can be r w or x for read, write, and
+execute. So to set a file to world readable, group writeable, and user
+executable, you would type chmod u+rwx g+rw a+r <filename>. The number
+method just uses numbers instead. The three digit code (777 in your case) is
+the three permissions. The first digit is the user, then the group, then the
+world. To figure out the correct number, convert to/from binary. The number
+is a three digit binary number with the first ('hundreds') digit being read,
+the next being write, and the last being execute. So, to use my above
+example you could write it as chmod 764 <filename>. In your case, 777 sets
+the directory as readable, writeable, and executable.
+
+=================================================================
+*** Free Software Foundation
+=================================================================
+From: crunch
+
+>"**Historical Note: If you want a role model for becoming a 
+>hacker, try these names: Dennis Ritchie, Bob Metcalfe, Steve Wozniak,
+>and yes, Bill Gates."
+
+I agree with the choice of hardware hack Steve Wozniak (and some of the
+others, in an offhanded way) , but I think if we're talking about
+"role-models" ( true purveyors of "the right thing" ) I would think that
+Richard Stallman, Richard Greenblatt or anyone else that actually
+CREATES would be a better philosophical role model. MIT AI lab R.I.P.
+
+About your use of the word "hacker": 99% of your audience considers
+themselves "hackers", when the real truth of the matter is, they are 
+"crackers". A very fundamental difference. A "hacker" creates and
+disseminates. A "pirate" steals and freely distributes stolen software
+and/or data. A "cracker" gains entry to networks, and is, coincidentally,
+slang for lily-white Caucasians... Irony notwithstanding. Media
+journalists seem to enjoy the word "hacker", as "It strikes fear in the
+hearts of High Tech CEO's" but that doesn't mean anyone should buy their
+brand of ignorance...
+
+Hmmm... Bill Gates. Bright guy, bad ideals. Almost ruined true
+computing, and is the sole reason we pay for software today. (This
+slightly outweighs the value of DOS) Might ought to be burned at the
+stake for sending out code in binary state. "Hacker" he is NOT,
+"cracker" (in the "forcibly-going-to-enter-your-network" sense, I
+seriously doubt. ) Bloatware. Need I say more. Not a good choice for a
+role model for today's youth. "Get really rich via seek and destroy
+business motivations"...
+
+Microsoft may be a problem, but the true evil is with Intel: Intel, NOT
+MICROSOFT, have been the TRUE MONOPOLISTS. Socket 5, 6 7 are, whether
+they realize it or not, are now worldwide standards, in which they still
+charge other makers of semiconductors a hefty licensing fee for every
+chip sold. Semiconductor Mafioso. That is a monopoly. Bundling a browser
+with an OS, is like telling auto manufacturers they can't include a
+stereo in their new cars, as it would be unfair trade practices to other
+car stereo manufacturers. Netscape is losing, and they don't seem to be
+taking it very well... They lost focus, and started telling users what
+they would get, as opposed to listening to what they want. Microsoft
+listened. They win. The Intel would-be AMD/CYRIX/Centaur Technologies
+killer, the Pentium II, is simply a Pentium Pro (lots of L2 cache on the
+back end) in a different socket. Zero performance gain with the new
+socket, but certainly an efficient way to attempt to kill the
+competition and produce a new marketing campaign, all in one nifty
+package. Might want to enlighten your readers. Microsoft bashing, at
+this point, is just a sign of ignorance and immaturity... besides, they
+are better as a marketing firm than a software vendor... Anyone who's
+viewed "the blue screen of death" in NT can attest to that...
+
+I freely admit I use high-end Intel-based systems when I design (I'd
+love an SGI Octane, but I'd prefer to feed and clothe my wife and
+daughters), as I have neither the time, nor the inclination to recreate
+the Adobe (and others) software I utilize on the Intel platform for
+other platforms. Not Logical. That doesn't mean for one moment that I
+don't support the Free Software Foundation and the CopyLeft ideals: I'm
+creating (still working) on a multitrack audio recording system for the
+Linux/unix X11 platform, to give to the world FREE. (Not trying to sound
+self-righteous) Why don't you teach your subscribers/students about FSF?
+(http://www.fsf.org) It's free. Get them unhooked from being addicted to
+Microsoft dumbed-down OS's... "Hacking on Windows 95/98".... Pretty
+funny, in that it's quite the oxymoron... big deal... "telnet".... That,
+I suspect, is the biggest problem today with our computing youth, in
+that everyone wants their "warez", and no one wants to think for
+themselves...
+
+Big Rant Over,
+
+-- 
+crunch
+crunch@email.net
+http://shagadelic.fc.net
+it's shagadelic, baby...
+
+=================================================================
+*** Bash History
+=================================================================
+From: CyberPsychotic
+
+>Some bashes do it one way, some the other -- arghhh, I'll have to make that
+>clear, too.
+
+Well, they don't until you make them to.
+
+(from man bash)
+
+HISTFILE
+The name of the file in which command history is
+saved (see HISTORY below). The default value is
+~/.bash_history. If unset, the command history is
+not saved when an interactive shell exits.
+
+ 
+
+=================================================================
+*** Yahoo Password Problem
+=================================================================
+From: Capt. Video
+
+>From: Craig Harvey
+>>I downloaded that crappy Yahoo news ticker and I believe it is a security
+>threat to people who use this and/or Yahoo mail, Chat. The news ticker
+>keeps the persons password in the registry in plain text, no encryption or
+>anything.
+>>==============================================================
+
+Any application (virus, activeX control, etc.) could look for and extract
+that.
+
+The defense is not to save your password at the YAHOO news ticker prompt.
+Also, use a different password than what you use to access the rest of your
+system. That way, all they can hack are your news ticker choices.
+
+I use separate user names and passwords for everything.
+
+==================================================================
+*** Infowar Bookstore
+==================================================================
+Internet Attack Methodologies Countermeasures Instructed By Chris Goggans
+NOW AVAILABLE ON VHS 
+A comprehensive Network Security video including topics on:
+
+Network Mapping
+Bug Exploitation
+Advanced Network Attacks
+Denial of Service Attacks
+Masking the Intrusion
+Firewall Techniques
+Intrusion Detection Systems
+
+On sale at the www.infowar.com bookstore
+Betty O'Hearn
+Assistant to Mr. Winn Schwartau
+813-360-6256 Voice
+813-363-7277 FAX
+http://www.infowar.com
+
+==================================================================
+* Call for Volunteers
+==================================================================
+
+We need more people who could help edit our Digests. We are getting lots
+of good input and really, really hate to lose good posts when none of our
+volunteer editors have the time to put out Digests. 
+The alternative is an unmoderated mail list. But if we just send out
+everything that comes in (an unmoderated list) you would have to put up with
+lots of flames, cuss words, misspellings and off topic posts. If you love
+the English language as much as you love to hack, please contact us! Our
+basic requirements are that you give us your true identity, promise you
+don't commit computer crime, and have enough of a sense of humor to be able
+to put up with working with the rest of us Happy Hackers. 
+If you believe you are enough of a masochist to take this unpaid job,
+please email .
+
+__________________________________________________________________
+with
+message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan to use any
+information in this Digest or at our Web site to commit crime, go away! Foo
+on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the United
+States operating under Shepherd's Fold Ministries. Yes! This is all a plot
+to save your immortal souls!
+For Windows questions, please write Roger Prata; for Macs, write Strider; and Unix, 
+Carolyn Meinel. Other general questions go to R.J. Gosselin. 
+Happy Hacker email list maintainer: Jonathan D. Zerulik

