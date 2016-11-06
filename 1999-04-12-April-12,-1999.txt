@@ -1,0 +1,161 @@
+April 12, 1999 
+_______________________________________________________________________ 
+See the Happy Hacker web site at http://www.happyhacker.org 
+URL of the day: http://www.antionline.com/wargames/ 
+_______________________________________________________________________
+
+***  Wargame News 
+***  Get a Clue!!! 
+***  More on AOL Hacking 
+***  Random Insults against Hacking for Girliez 
+***  Happy99.exe 
+***  Computer Manuals Cheap
+
+_______________________________________________________________________
+
+Logs of the Wargame are now on display (almost) live at 
+http://www.antionline.com/wargames/.  This is a first in the computer 
+security industry! Shoutouts to Antionline's John Vranesevich for putting in 
+the work and expense to provide this service, and thanks to the wargame 
+winners (so far, heh, heh) tg0d and others who currently have root on the 
+wargame for being unafraid to allow their logs to be made public.  This 
+makes it easier to break in, and easier to learn how to detect break-ins in 
+progress.  Happy hacking, folks!
+
+Sorry, if you can't manage to get into any of the koan.happyhacker.org shell 
+accounts, it's because that box simply can't handle all the connections that 
+people want to make.  Instead, try the open root account on thirdpig.com, 
+and keep a watch for easy to break into accounts that might pop up on 
+meyer.happyhacker.org.
+
+Look for a WinNT server going up on the Wargame, probably by Tuesday April 
+13.  The Happy Hacksteress herself, Carolyn Meinel, is configuring the NT 
+box.  So if you take it over, you get to brag that you proved she was 
+"layme":):) 
+_______________________________________________________________________
+
+ *** Get a Clue!!! 
+_______________________________________________________________________
+
+We are AGAINST computer crime.  Yet we get email every day begging us to 
+commit crimes.  Sheesh, even if we had no morals, why would we be willing to 
+go to jail because someone emails us begging us to commit crimes?
+
+If someone emails us bragging about his or her crimes, and her crimes are 
+especially evil, we forward the incriminating email to the appropriate 
+authorities. 
+
+_______________________________________________________________________
+
+ ***  More on AOL Hacking 
+_______________________________________________________________________
+
+From: MaleAnon@aol.com
+
+ If you don't mind, I'd like to put my two cents worth in. The first thing 
+is this. Thank you for the tip on AOL. I used to be able to do quite a bit 
+of stuff from here. I could telnet, ftp, ping, tracerout, etc. etc. Then I 
+thought to add another AOL account to my computer. So, needless to say, I 
+put in the CD and ran the install from it. Whoa, all of a sudden I wasn't 
+able to do anything. In fact, I'm pretty limited on some of the websites I 
+can now visit. (Note:  I do not use AOL's browser. I minimize AOL and use 
+one of the 4 different browser installed on my computer). Seems like a lot 
+of sites are supposedly "not available on the server". I thought something 
+was weird there. It all makes sense now after reading that little tip from 
+you. Could I add one of my own? If you are installing Windows95/98 "for 
+distribution with new PC" version, and it comes with AOL 4.0, please note, 
+you cannot install a lesser version of AOL on your computer once AOL 4.0 is 
+installed. For example: I love AOL 2.5. But there are times when I prefer 
+4.0. Before I install AOL 4.0 I need to install 2.5 first. Then 3.0. Then 
+4.0 last. :-)
+
+ Now, for the second thing I'd like to comment on. This one goes out to all 
+of those who were able to break into Koan.happyhacker.org. and decided to 
+post a message saying things like, "This was too easy. I'm getting bored. 
+This is lame. You need to make it harder" and other such comments. If you 
+think it was that easy, wake up. You're breaking into the wrong box. Yes, it 
+may have been easy for you, but what does that say about your hacking 
+abilities? Woo hoo, you were able to break into a "beginners" box. Whoa. You 
+are just too cool. Now let's just see how cool you are. Why don't you try 
+breaking into a box that's not advertised as being a beginners box. The 
+beginners box is easy on purpose. It's for the beginner to get the hang of 
+it. If you think it was too easy, get root. Prove yourself by getting root 
+and then prove yourself again by "keeping" root. Once you do that, move onto 
+a harder box. Let's see how easy you think it is then. If it was too easy 
+for you, don't flame the box for it. How about writing and posting something 
+a little more encouraging for the newbies who are just learning? Maybe post 
+something like, "Whoa, I did it. I broke in. And if a moron like me can do 
+it......then so can you". 
+
+Thank you very much, 
+TheMaleMan  :-) 
+_______________________________________________________________________
+
+ *** Random Insults against Hacking for Girliez 
+_______________________________________________________________________
+
+* Hack1n9 f0r D0091ez  http://www.meydabbs.com/~jda-ir/hack4d0gz 
+  
+* Children to Learn to Quit Breaking into New York Times Web Site
+
+WASHINGTON (March 15, 1999 4:36 p.m. EST http://www.nandotimes.com)  
+- A new public-private alliance to curb online crime will teach 
+children "that hacking is the same as breaking and entering,"  
+Attorney General Janet Reno said Monday.  
+  
+Educating children about acceptable online behavior is among three 
+initiatives under the Cybercitizen Partnership, an initiative of 
+government and the high-tech industry to promote cyberspace ethics  
+and help law enforcers track down online criminals...  
+_______________________________________________________________________
+
+ *** Happy99.exe 
+_______________________________________________________________________
+
+Lots of people email Trojans and viruses such as Happy99.exe to us Happy 
+Hacksters.  Do those guys think we are dumb enough to run programs sent to 
+us by strangers?  They are probably the same people who keep on trying the 
+PHF exploit on the Wargame and who email Meinel begging her to please commit 
+crimes for them.   
+_______________________________________________________________________
+
+ *** Computer Manuals Cheap 
+_______________________________________________________________________
+
+From: "Kern, Fred" <fred.kern@lmco.com>
+
+I just wanted to pass along some info. I know that you have an arrangement 
+with Amazon.com, but the prices out of bookpool.com are usually 
+significantly better. For example the price of 52.00 for Internet Security 
+Professional Reference from Amazon is 10.00 higher than bookpool's at 41.95. 
+Most of the professional programmers and consultants I work with all love 
+bookpool, considering we spend about 800.00 to 1,000.00 a year on books to 
+keep us current.
+
+Thanks for the good work - keep it up
+
+Fred Kern 
+_______________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Vincent Larsen <vincent@sage-inc.com>; Wargame Sysadmin, Satori 
+<Satori@rt66.com>; Webmaster, Diode <webmaster@happyhacker.org>; Clown 
+Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
