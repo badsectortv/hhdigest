@@ -1,0 +1,270 @@
+June 30, 1999 
+_______________________________________________________________________
+
+Visit the Happy Hacker site at http://www.happyhacker.org 
+Crackers vs. Feds -- who's winning?  http://antionline.com
+
+Table of Contents
+
+* What happened to the Happy Hacker IRC server? 
+* Wargame improvements coming up 
+* Looking for a mentor? Try Foomentor! 
+* Hacker friendly shell accounts 
+* What is a real hacker? 
+* Microsoft threat to national security? 
+_______________________________________________________________________
+
+ *** What Happened to the Happy Hacker IRC Server? 
+_______________________________________________________________________
+
+By mutual agreement with Schematic, we have taken down the Happy Hacker IRC 
+server.  Another volunteer who has more of a taste for the thankless job of 
+coordinating the moderators will be providing a new computer to handle the 
+job.  We thank Schematic and his fellow moderators for managing to keep the IRC 
+server reasonably flame free for so long so people could use it for learning 
+about white hat hacking.
+
+Unfortunately, the people at http://attrition.org have run a news story on our 
+IRC server which is seriously misinformed.
+
+Most importantly, that story claims that the Happy Hacker IRC server was a 
+public server.  This is not true.  If you go to http://networksolutions.net you 
+can look up who runs Happyhacker.org.  Click on "whois search" on the left hand 
+menu.  When you ask about happyhacker.org, you will see that Chris at 
+sage-inc.com is the technical contact, and I (Carolyn Meinel) am the 
+administrative contact.  What that means is we are NOT a public utility of some 
+sort that people can use and abuse as they see fit.  We provide the War Room 
+and T1, and we decide how our resources will be used.
+
+Also, the Attrition.org article was quite insulting to John Vranesevich. 
+However, he was only telling the truth when he reminded the Happyhacker.org IRC 
+moderators that they needed to do a better job of handling people when they 
+behaved badly.  If we want talented hackers to visit our IRC server and train 
+people for free, we need to treat everyone politely.  If we run the place like 
+a barroom brawl, soon only trash will hang out on our IRC server.
+
+In general, anything that makes lots of people raise a big fuss will cause us 
+to take action.  It isn't easy getting support for our operation.  Price out 
+renting a 20x15 office and a T1 and you will see what we must deal with.  We 
+could easily be totally shut down, with no notice, if our backers ever decide 
+Happyhacker.org isn't worth their support.  In fact, we won't support Happy 
+Hacker, either, unless we beleive this is a worthwhile project.  Imagine that!
+
+We are the only public wargame that allows winners to keep control of our 
+Internet hosts.  There is a BIG reason that we are the only ones.  It is 
+because we work hard to avoid even the appearance of promoting crime and 
+especially juvenile crime.  To do this we must behave politely and treat those 
+who support our activities just as well as we would treat anyone else.
+
+So where can you go to get a public IRC channel where people talk about our 
+Hacker Wargame?  Try #koan on Undernet.  While this channel, too, is moderated, 
+it is not moderated by us.  So if you don't like how it is run, don't flame 
+us!  It is still up and none of us at Happyhacker.org have any plans to 
+interfere with it. Happyhacker.org has never moderated that channel and never 
+intends to moderate it.
+
+For those who don't like to waste time waiting for flaming to end and teaching 
+to begin on #koan on Undernet, we will have our IRC server back up soon, with a 
+different set of moderators.
+
+_______________________________________________________________________
+
+ *** Wargame Improvements Coming Up 
+_______________________________________________________________________
+
+We've had a lot of complaints about koan.happyhacker.org being down most of the 
+time.  Unfortunately none of the Wargame players were able to fix the denial of 
+service attack problems that kept on crashing it.  So some of the Wargame 
+administrators will be rebuilding it so you can have fun again with the guest 
+account with the really stupid password.  Meanwhile, you can still have fun by 
+telnetting into thirdpig.com, and attacking our Happy Hacker Web server. 
+Meyer.happyhackr.org is still running its popular beta account, and the Cisco 
+router, dmz.happyhacker.org, still lets you in if you can guess its password 
+that is fined up beyond all recognition.
+
+Happy hacking!
+
+_______________________________________________________________________
+
+ *** Looking for a Mentor?  Try Foomentor! 
+_______________________________________________________________________
+
+From: "ForEver Phreaker" <forever@phreaker.net> 
+Subject: New Mailing List.
+
+Hey Carolyn, I am just sending you a short note to tell you about a new mailing 
+list I am starting for newbie hackers, It's in the same spirit as HappyHacker 
+and I thought that you could possibly mention it in one of the digests or if 
+anyone writes to you looking for a mentor, the mailing list will be named 
+FooMentor and is just basically a cut down version of the happy hacker list 
+mainly aimed but not completely towards Windows Users. I already have a few 
+people I am 'Mentoring' who are interested. If you wish to include it in any 
+digests then please feel free. 
+_______________________________________________________________________
+
+ *** Hacker Friendly Shell Accounts! 
+_______________________________________________________________________
+
+Having trouble finding a mentor? Do you want to learn how to use a Unix type 
+operating system?   Do you want tech support from the man who first created 
+Koan.happyhacker.org and its infamous guest account with the really stupid 
+password?  Want someone to help you big time with playing the Hacker Wargame? 
+We soon will open an Internet Service Provider (Techbroker.com) running on an 
+OpenBSD (a type of Unix) server and offering shell accounts.  Of course we will 
+NOT train people in computer crime.  But we are happy to teach people the 
+basics of legal, harmless hacking.
+
+True, some people think someone should give them free shell accounts and free 
+one-on-one training in hacking. There are lots of places to look for this sort 
+of free stuff.  However, normally hackers get really, really nasty when someone 
+comes around begging for free stuff and not offering anything in return.  I 
+have had great experiences by first making friends, then giving them copies of 
+my books, taking them out for pizza, that sort of thing.
+
+However, not everyone is lucky enough to find a mentor, no many how pizzas you 
+buy.  Even if you do find a mentor, I have nevertheless often paid money for 
+shell accounts -- even when I had free ones, too.  That's because I meet great 
+people on commercial ISPs that offer shell accounts, both staff and fellow 
+customers.  So if you still want to learn how to be a Unix wizard, if you want 
+to learn how to have a chance of becoming a Hacker Wargame winner, and if this 
+is important enough to you to pay the people who are working so hard to make 
+this happen, please email for details.
+
+_______________________________________________________________________
+
+ *** What Is a Real Hacker? 
+_______________________________________________________________________
+
+So many people nowadays think a hacker is *only* someone who breaks into 
+computers.  No way!  Some people break into computers simply because they found 
+a poorly defended computer and a program they could run to break in.  That 
+isn't even hacking -- it's just running software.  Big "effing" deal. 
+Following is a story about a REAL hacker.
+
+From: "Prescott Ken" <prescott_ken@bah.com> 
+Subject: Death of a Hacker
+
+Carolyn,
+
+I first heard of you on rec.aviation.military NG back in 1994-1995.  IIRC, you 
+were interested in boost-glide vehicles.  I didn't know anything about beyond 
+what I read in Sweetman's Aurora book, so I kept my mouth shut.
+
+Since then, I found the Happy Hacker book, and I've enjoyed it...it's a good 
+intro to computer security issues.  I took your RTFM advice to heart...right 
+now, my bathroom reading is the Windows NT Server Networking Guide...some light 
+reading for an MCSE candidate.
+
+I'm hoping you might be able to use the following in your newsletter.  It's not 
+directly about hacking, but it's about a man who truly rated the term hacker. 
+He passed away on May 20th, and he was my father...
+
+ Death of a Hacker
+
+On May 20th, a true hacker died.
+
+You probably didn't hear of him.  He wasn't the sort to blow his horn before 
+himself in public.
+
+He was my father, and he helped bring about today's world...
+
+In the late 1950s, the Navy faced a big problem.  Combat's speed had passed 
+beyond the ability of manual tracking procedures to keep pace.  Computers were 
+the answer...but there were so many questions.
+
+Imagine taking a machine that was, at the time, a metaphor for unreliable 
+performance in even the most tightly controlled environment.
+
+Now, take that computer, and place it on a platform that pitches, rolls, and 
+yaws unpredictably--one that sails the ocean (usually the Norwegian Sea, the 
+North Atlantic, typhoon-infested portions of the Pacific, and areas where the 
+"cooling" water comes in at almost 100 degrees Fahrenheit).
+
+Further, take away that nice, perfectly arranged power setup.   Replace it with 
+one that's temperamental, mounted on that same free-moving platform, and 
+already strained by supplying power to radar, electrical lighting for a large 
+building, and the many other functions that are essential aboard a fighting 
+ship of the U.S. Navy.
+
+You can't stop there! Now, you have to have a reasonable secure means of 
+networking it to other computers on other ships...
+
+...oh, by the way, this network has to be wireless in an era that thought color 
+TV was pushing the limits of RF technology.
+
+Now, let's add in another element...
+
+The enemy.
+
+This system can expect efforts to exploit its datalink signals to detect and 
+track the ships; it can expect to come under very heavy jamming during an 
+actual attack, and it will have to keep functioning even after the ship's been 
+torpedoed or bombed. (Think shock damage). If it fails, men will die and ships 
+will sink; conceivably, a war could be lost.  In an era where cryptographic and 
+information processing technology was appallingly primitive by today's 
+standards, it had to race ahead of developments in weapons technology--and work 
+like heck to stay ahead.
+
+And these requirements had to be met at a time when Viet Nam was going through 
+$80 million A DAY, and anything that wasn't geared to fighting Mr. Charles in 
+the rice paddies was (a very distant) second priority.
+
+This system was eventually built, and it was called the Naval Tactical Data 
+System.  My father got in on the ground floor, and was part of getting it to 
+work, as well as the first deployment at sea, and keeping it up to date on a 
+budget that never seemed to be quite enough.
+
+NTDS kept a lot of American aircrews from spending a long captivity in a 
+stinking cell, or taking a long swim in the Gulf (whichever Gulf that might 
+be--Tonkin or Persian). Verily, his wonder widget even brought ME home from a 
+scary night over Khadaffi's Line of Death (it's truly amazing how brave fighter 
+jocks get when they're bouncing a lone helicopter--and how circumspect they get 
+when bounced in turn by a four-pack of F/A-18s).
+
+In the end, he helped the good guys win.
+
+He was a naval officer, and continued a hacking tradition that goes back to 
+Benjamin Isherwood (designer of the incomparable Wampanoag, fastest vessel of 
+its day), Albert A. Michelson (the first man to measure the speed of light), 
+David Taylor (whose towing tank helped put ship hull design onto a scientific 
+footing), and "Amazing Grace," the late Rear Admiral Grace Hopper (designer of 
+the COBOL programming language, and inventor of the term "computer bug").
+
+So, let's hoist a glass to Dad's memory, and remember that the difference 
+between difficult and impossible is that the latter just takes a little 
+longer...
+
+_______________________________________________________________________
+
+ *** Microsoft Threat to National Security? 
+_______________________________________________________________________
+
+While we're on the Navy theme, check out what Adam Penenberg has to say:
+
+From: "Adam Penenberg" <apenenberg@forbes.com>
+
+If you have the time, check out my column today: Is Microsoft a Threat to 
+National Security? If you think it warrants it, please post on any lists you 
+deem appropriate.
+
+<http://www.forbes.com/penenberg>http://www.forbes.com/penenberg/
+
+_______________________________________________________________________ 
+To subscribe to the Happy Hacker Digest, email mailman@antionline.com 
+with the message "subscribe happyhacker."  Unsubscribe with message 
+unsubscribe happyhacker.
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have 
+committed.  We mean it.
+
+For Unix questions, contact unixeditor@techbroker.com.
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, <editor@techbroker.com>; Hacker Wargame 
+Director, Vincent Larsen <vincent@sage-inc.com>; 
+Clown Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries.
