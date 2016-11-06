@@ -1,0 +1,633 @@
+June 1997 Digests
+
+====================================================================== 
+          Happy Hacker Digest - June 4, 1997 
+======================================================================
+
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator is Matt Hinze
+
+             Send posts to: matt@cs.utexas.edu (Matt Hinze) 
+           [if you can, include a "HH" in the subject header]
+
+             Please don't send us anything you wouldn't 
+            email to your friendly neighborhood narc, OK?
+
+To subscribe or unsubscribe, just 
+use the subscribe boxes on the menubars. 
+  
+          The Happy Hacker Digest Webpage, located at 
+ http://www.cs.utexas.edu/users/matt/hh.html, contains recently 
+          discussed web sites and past URLs Of The Day 
+            (usually updated the day after the Digest is released).
+
+         H a p p y  H a c k i n g ! 
+ 
+
+============================================================================= 
+=============================================================================
+
+Table Of Contents: 
+================== 
+* PGP 
+* FoolProof 
+* VanHacking Mac Hacking Challenge 
+* Novell Resources 
+* FreeBSD Logging Bad Logins 
+* Bypassing Caller ID, etc. 
+* U* ***** 
+* Compiling On Your Shell Account 
+=================== 
+  
+ 
+
+============================================================================= 
+*** PGP 
+From: M <Mike_ORTON_HARLECH@compuserve.com> 
+=============================================================================
+
+"clout" wrote about difficulties in using PGP.
+
+If you have got it from a proper source , it will have loads of docs with 
+it.
+
+read with t.com, list.com, or even dos type | more >prn 
+I NEVER USE MS WORD TO OPEN AND READ ANY STRANGE DOCS, I USE SHAREWARE TEXT 
+READER (associate, t.com, or list.com) This cannot be infected by macro 
+viruses !
+
+first: 
+cd\pgp262 
+pgp -h   > prn or printscreen, or pencil and paper notes if no printer! 
+this command (note the minus, you use it before anything....) gives you a 
+list of the commands. Just print it out and nail it to the wall above the PC. 
+Its always the form;
+
+PGP space -(minus sign) space some letter(s) space  some file name. some 
+users public key If I want to send a text document, atomicb.txt to AliceA, 
+assuming I have AliceA's PGP public key on my Pubring.pgp:
+
+Let us pretend, a la hollywood, that in a small text file, all the 
+information for a DIY a A-bomb can be found!!!!!
+
+<pgp -ea atomicb.txt AliceA >
+
+and it will encrypt  the -e bit, and also turn it into an ascii text 
+(better than mime, uuencode etc, the -a bit.
+
+I just send the resultant atomicb.asc file by e-mail to Alice. 
+She uses the DOS/Windoze file manager MOVE it to her pgp262 directory from 
+\...\ download, or Select|Edit|copy... EDIT|Paste.
+
+She types "pgp -d atomicb.asc" . It should look up her private key in her 
+secring.pgp and decrypt it.
+
+If it doesn;t she needs to edit with a plain text editor, I use e88.com, 
+but any will do the set up text file which tells pgp where all the files 
+are.
+
+If it is a shared PC, her secring.pgp file will be on a floppy. It will ask 
+for her pass phrase, use a long one like "zephod beetlebrox 4 prisedent", 
+using a few mispellings. I use Hebrew /Welsh/English Torah Texts using a 
+Welsh Bible/ a KJ version and a normal Hebrew version. The priestly 
+blessing or the Shema are examples of what I used . It avoids any attack 
+using any transalation, as I mix languages on a line to line basis. 
+."Oi hate skule" would also defeat a dictionary attack ![I hate school] I'm 
+an IT lecturer!
+
+If she supples the correct pass phrase, it will decrypt the message for 
+her.
+
+She then goes to the local chemist and orders a few kg of plutonium, some 
+plastic explosive etc...................or so the cheap spy stories go ! 
+You need a 486 dx33 and this takes 3.5 mins to produce your own 1024 digit 
+pgp key pair.
+
+pgp -kg  is the command.
+
+To make it work as fast as above use Ramdrive .sys and do all your 
+calculations on the imaginary E drive. It gets rid of anything that could 
+be used to break the keys, and works faster. You can of course hide the 
+secring.pgp be remaning it to a genuine , not often used dos file; 
+copy C:\pgp262 secring.pgp C:\dos\exe2bin.exe, and its unlikley that it 
+would be found easily. You just rename it back for each use. 
+Don't use less than a 1024 digit key, and use a long, miss-spalt paz fraze 
+2 buger urp snooprz.
+
+pgp -kxa MikeO mykey.txt will extract your public key to a text file from 
+the public key ring to a file, call it mykey.txt that can be sent by 
+e-mail, quite openly, as the public key is of no use in decrypting the 
+file, only the secret key pair can do this. PGP is easy to break in theory. 
+If you used a 2 digit key you could do it with a calculator, but to find 
+the two prime numbers that are multiplied together to make the 1024 digit 
+key, though simple in theory, just takes too long for a practical parallel 
+array of 10,000 pentium pro's to do in the lifetime of the NSA, or  INTEL. 
+The risks with pgp are :
+
+        1/ your private/secret key gets copied. Passphrase compromised. 
+  
+ 2/ You cannot be sure of whom you are actually exchanging keys 
+ with. i helped a journalist set up comms with a retired kgb 2 star 
+ general, but he could have been with a CIA spook pretending to be a kgb 
+ man, there is no way of telling. 
+  
+ 3/ Tempest, e/m emissions from the screen,(1/4 mile away) or bugs 
+ near/in the pc that display the plain text. 
+  
+ 4/ your friend works for the KGB/CIA/NSA, and shares your PC. 
+  
+ 5/ Someone has fitted a hard card into your PC that copies all your 
+ work. 
+  
+ 6/ You have got a castrated version of PGP via the KGB/CIA thats 
+ full of security holes, but still has Phil 's notes and docs with it! 
+  
+ 7/ By error you sent the plain text by e-mail to Alice...... 
+ atomicb.txt rather than atomicb.asc ! 
+  
+ 8/ You loose your secret and or private key... no way back, the 
+ next pair you generate will be different ! 
+  
+ 9/ The spooks steal your PC and all your disks, and eventually find 
+ your secret key ring. 
+  
+ 10/ If you send pgp encrypted messages to Abu.Nidal@ terror.net in 
+ Damascus,  Mossad, while not being able to read their content, might 
+ pay you a not too friendly visit ! Traffic analisys !!!!!
+
+There are free PGP dos and Windoze front ends, I have used them, and given 
+them up. I have been using PGP for 5 years now. 
+I get pgp by ftp from www.ifi.uio.no/pgp 
+ftp://garbo.uwasa.fi/pc/.... pgp262.zip is another source. 
+If you have e-mail you can use FTP See Dr Bobs Guide to accessing the net 
+by e-mail (Tour-bus e-mail list) 
+don't try to get it from USA if you live outside the uSA, its classed as 
+munitions, and you will get done for it, use any of the various mirror 
+sites 
+abroad, norway, finland etc, and its on many shareware collections/cd's but 
+you need version 2.6.2, this is the de facto web standard. 
+Mike_Orton_HARLECH@Compuserve.com 
+PGP privacy activist, 
+Welsh Federation of independent Ufologists mid Wales co-ordinator. 
+Ex MOD scientist. 
+IT Lecturer. 
+This is a very short note, I could easily expand it into a PGP tutorial. 
+but reading the help and docs is really all u need 2 use PGP. 
+  
+=============================================================================
+
+From: DIGITALSMEAR <digitalsmear@geocities.com>
+
+  Take a trip down to your local book store and see if you can find a 
+copy of _The Official PGP User's Guide_ ©1995 Philip Zimmermann.  It 
+should be in the computer section(a given, eh?), it's got a tan cover 
+and it's not too thick. It's got every thing from the t-files that came 
+with the prog., just organised into a much more easly readable format. 
+I don't know what it is about having a hard copy form, but it helps me 
+out. 
+  The copy that I have is for 2.6, not 2.6.2, but I think it's updated 
+with every release any ways.  If they don't have it, just ask for them 
+to order ya a coppy.
+
+Later 
+ - DIGITALSMEAR
+
+============================================================================= 
+*** FoolProof 
+From: "Michael Todd" <trelane@infocom.com> 
+=============================================================================
+
+This is in reference to the Win95 questions. I've never seen the program 
+FoolProof but I have some tips that might help. First, I assume that it 
+loads at startup through some type of password reference or might just load 
+in windows startup. A couple of ways to find out are
+
+1.  Hit F8 during boot and go to Safe Mode Command Prompt. Edit the 
+Autoexec.bat and see what is loading there. If not there, go to 
+Windows\Startm~1\Programs\Startup and see what is loading there. Should 
+have .LNK extenstion. Might be there. If so, simply holding down the shift 
+key while 95 boots will cause all things in the startup folder not to 
+start. There's a couple of others. Go to the Windows directory and edit the 
+system.ini and win.ini and see if it's listed in there. win.ini will have a 
+couple of lines that say load= and run=. See if it's in there. For all 
+this, you will need to get to DOS. The only protection that DOS has is the 
+attrib. If a file is hidden, system, read-only, the way to unprotect that 
+is to type :  ATTRIB filename.ext -h -s -r  (where filename is name of file 
+and ext is the extension, like win.ini ) That pretty much takes care of DOS 
+security.
+
+2. More than likely, if it's a decent program at all, it is booting in the 
+Windows registry. If so, things will be a little harder, but you can edit 
+the registry in Safe Mode. Be sure to back up the registry files which are 
+system.dat, system.da0, user.dat and user.da0. I think those are the only 
+ones, correct me if I'm wrong. You may want to export the registry to a 
+diskette, in case you screw it up badly and Windoze doesn't load. In case 
+you haven't worked with the Registry any, here's some basic steps. 
+a. Click start, go to run and type in regedit. 
+b. Click registry on the menu (first one, top left) then export that bad boy to 
+a disk or somewhere. You'll need it if you screw up. If you mess it 
+up, you can import it using similar steps. 
+c. Click edit then go to Find and type in the name of the string. You're 
+probably looking for FoolProof. You can check for later occurances of it by 
+pressing F3. Once you've found it, just click on it and hit the delete key. 
+By the way, doing that removes it forever until it is reinstalled and may 
+cause other problems. If so, import the registry back for a un-noticible 
+hack.
+
+3. Another way to get rid of annoying passwords and things are to go to DOS 
+again (gotta love DOS) and go to Windows directory and move (don't delete, 
+you'll need them later) all files with the extension .pwl. Then go to the 
+Windows\System directory and move password.cpl to a diskette or another 
+directory. That pretty much gets rid of all password files that Windows has 
+access to. Screensavers and log ins included.
+
+Enjoy and remember that if you do this on a computer that is not your own, 
+you will get in trouble if you are caught. Doing the above things takes 
+some time to do. Good luck.
+
+Trelane 
+trelane@infocom.com 
+ 
+
+=============================================================================
+
+From: Azrael <azrael@raid.ml.org> 
+ 
+
+        Remember me??? Well, i am answering some questions of Happy 
+Hacker Digest May 23-14, 1997... If u want to publish it (don't know why u 
+would do it  :>), feel free.. No need to post is anonymous
+
+> I'm not trying to start a big argument or anything, but saying VMS is a 
+> dinosaur while you're using a machine that still runs DOS is kind of 
+> hypocritical, isn't it? VMS is a hell of a lot more secure than Unix 
+> will ever be (if it's set up right), and it doesn't have a 640K barrier. 
+> Just a thought; I'm not trying to get posted and start a flame war or 
+> anything. Thought you might wanna hear my two bits. :)
+
+        YEAH!!!! i am not the only one that loves VMS/MVS!!!! Wanna 
+exchange some knowledge? ;)
+
+> Jason (the guy who still likes VMS)
+
+ You are not alone, pal
+
+> hi, do you guys have any ideas on how to get around foolproof for windows 
+> 95 without going into safe mode (pressing f8 during "Starting 95")??? 
+> there's a does foolproof thing so it wont let you delete rename or do 
+> anything to the valuable files and it wont let you write any files anywhere 
+> except "c:\user\startup" and im also on a network that has access to the 
+> web . help if you can!
+
+My gawd.... Win95 sekurity sux!!!!
+
+        Sometimes, F8 is protected (i protect in my office... and i am 
+the only hax0r here that is able to bypass that... ;>). If that's your case, 
+there is another way around for that:
+
+        well, here it goes.... Boot with a floppy... then u will have 
+all the access u need. Oh... U can't boot with the floppy???? Change that in 
+the CMOS (u know how to get there, don't u?).
+
+        Ops... the CMOS is requesting a password. Well, that will 
+require some hardware knowledge... let's c if i can help...
+
+- open the computer (don't care how u will do it) 
+- beside the battery, there is a jumper. Just remove the jumper from 
+there, turn on the computer and then turn off again... place the jumper 
+and you are done. This way around will work in almost all the computers 
+i know. Even those COMPAQ's! Just be carefull doint that in a PS/2 or 
+any other IBM (you all can't imagine how i hate IBM).
+
+After that, u know what to do, right?
+
+Azrael 
+-- 
+Life is short, so drive fast, die hard and 
+NEVER MARRY
+
+============================================================================= 
+*** VanHacking Mac Hacking Contest 
+From: bhootnath@juno.com (Niraj Bhatt) 
+============================================================================= 
+ 
+
+     $10,000 MACINTOSH WEB SERVER SECURITY CHALLENGE 
+  
+     From today, June 01 to July 15, 1997, VirTech Communications 
+     Inc. [ http://www.virtech-ca.com ] will challenge the global 
+     hacker community to bypass the security of its Macintosh World 
+     Wide Web server. Similar contests have been conducted 
+     previously in the US and Sweden, but VirTech's challenge is 
+     unique in that it addresses popular Internet security issues 
+     that are plaguing the media today. By launching the challenge, 
+     VirTech wants to overturn the notion that the Internet is 
+     vulnerable to credit card number snatching. Additionally, 
+     VirTech also wants to prove its server can withstand the type of 
+     vandalism attacks that have been successfully directed 
+     against the NASA and CIA Web servers.
+
+     The rules are simple and the prize is big. Whoever breaks 
+     into the server, snatches the credit card number, and 
+     changes the phrase found on the page will win a hefty CAD 
+     $10,000 or an equivalent of US$7,500 prize. The credit card 
+     number will have an extra four digits appended to it in 
+     order to verify that the credit card number has indeed been 
+     snatched from the challenge page. Moreover, there will be a 
+     special phrase in the page that a challenger must change to 
+     claim the prize. The phrase could be something like "Cats 
+     chase dogs". The hacker should change it to something else, 
+     for example "Dogs chase cats".
+
+     In anticipation of VanHacking contest, the World Wide Web 
+     server that VirTech employs will in no way be modified. No 
+     security beefing up, firewalling for example, will be done 
+     to protect the server. The server will run a network suite 
+     On the opening day of the challenge, a third party 
+     accountancy official will verify that the page exists. The 
+     page will then be immediately assigned a password in the 
+     presence of the official in order to mark the beginning of 
+     the challenge. During the course of the challenge, the 
+     official will be called upon bi-weekly to re-verify that the 
+     page is still exists.
+
+     Further information can be obtained from the VanHacking 
+     challenge Web site at [ http://www.vanhacking.com ]. 
+     (2 June, URLwire)
+
+     -----------------
+
+============================================================================= 
+*** VAX/VMS Hacking Challenge 
+From: "me you" <simbiont@hotmail.com> 
+=============================================================================
+
+>if I log in as GUEST, then my process name is always something like 
+>"GUEST_2", however, if I log in as GUEST/NOCOMM (i.e., take me straight to the 
+>shell bypass that menu) then I get a process name of this  ' Process name: 
+>"_NTY77:" .. maybe something, maybe not. Jist thought i'd share.
+
+when you login as GUEST/NOCOMM basicly you're bypassing login.com. 
+Login.com file has all world/group privilages flaged off, therfore you 
+cant even look at it. when login.com is executed then couple things 
+happen (I can tell these by doing "sh proc/full" ) another process 
+starts shadowing guest user and I persume it's recording the users 
+activities. second,  and this one is abvious, it starts the menu. what 
+else does it do? your guess is as good as mine.
+
+you can't edit login.com but you can make newer version of this 
+file(which will basicly cause a bypass of the original login.com) by 
+doing"edit login.com;2" if the original was login.com;1. you can put 
+your own initialization commands here and next time you run it (or login 
+again) this new version will run instead.
+
+there's also sys$system:sylogin.com that gets executed everytime you 
+login. if you can hack this file you can fix it to give you sys 
+privilages and therefor get challenge.txt
+
+e-mail me at <simbiont@hotmail.com> if you need more VMS info. 
+as I said before, you cant edit this file but 
+ 
+
+============================================================================= 
+*** Novell Resources 
+From: Aaron Benzick <snicker@citrine.cyberstation.net> 
+=============================================================================
+
+> I do extensive work on a Novell LAN, but I haven't managed to find any 
+> listservs where I can subscribe to a newsgroup that deals with Novell 
+> LANs and  Novell Security. I wonder if you know of any, or if you know where I 
+> can get  hold of some material on Novell security.
+
+A newsletter for Novell Lan's and security would be: 
+NOVELL@listserv.syr.edu
+
+send an email with no subject to listserv@listserv.syr.edu with 
+"subscribe NOVELL Your Full Name" in the body. You must reply to the 
+message within two days or you'll not be added to the list. The same 
+address no subject with "unsubscribe NOVELL" takes you off the list.
+
+=============================================================================
+
+From: "Aaron D. Turner" <aturner@best.com>
+
+Jesse,
+
+Check out  http://netlab1.usu.edu/novell.faq/nov-faq.htm
+
+This is the FAQ page for the Novell Netware mailing list which I used to 
+be subscribed to.  I've found it an EXCELLENT resource for any type of 
+Netware question.  I'd recommend however that before you post, that you do 
+read the very extensive FAQ that not only has instructions on subscribing, 
+but information on security, TCP/IP, e-mail, backups, the Internet, and 
+much more.
+
+Oh, and I wouldn't recommend asking "How do I hack Netware?" The sys 
+admins on the list don't like that.  :-)
+
+Aaron Turner, CNE      | Finger me for my PGP key   | Unix, Perl & Bash Hacker 
+aturner@pobox.com      | Either which way,          | Comp. Eng. Major @ SJSU 
+www.pobox.com/~aturner | one half dozen or another. | Mustang lover, M$ hater 
+  
+ 
+
+============================================================================= 
+*** FreeBSD Logging Bad Logins? 
+From: Shahzad Khan <b98086@lums.edu.pk> 
+=============================================================================
+
+>I have a question about freeBSD. Is it true that freeBSD keeps track of 
+>badlogins? If so where? 
+ 
+
+The bad logins are stored in the /var/logs/messages file... 
+(or the ./message file whereever your sysadmin likes to save the logs)
+
+Note that a hell of a lot of other junk is also stored in this file. I'd 
+suggest a grep for the words "LOGIN FAILURE"...
+
+Ciaosky!!
+
+The Shadowhawk 
+fluxhawk@hotmail.com 
+finger b98086@ravi.lums.edu.pk
+
+============================================================================= 
+*** Bypassing Caller ID, etc. 
+From: Brinley Ang <brinley@pacific.net.sg> 
+============================================================================= 
+ 
+
+Hello, here's a stupid question from a newbie, in my district, almost 
+everyone has a Caller ID*including me*, and this has been a nusiance 
+because my wardialer keeps getting human carriers and I get alot of 
+people calling my number up and screwing me... then I have to give a 
+stupid explaination about my little brother who likes to play with the 
+fone etc etc... So I was wonder is there a way to anonymise the phone 
+number so that it does not appear on the caller ID nor work on the call 
+back *U know? U receive a call, then juz press ** or something like that 
+to call back that person?*
+
+[Matt: In my area, you can make a private call by dialing *67, waiting for 
+tone, and then dialing the regular number. It might be different in other 
+areas. You can probably just dial 0 and ask the operator. So, all the numbers 
+you scan will have to be in the form of "*67,,xxxxxxx" (or something similar). 
+Keep in mind that people with Caller ID can ignore private calls or have the 
+telco block them.]
+
+Here's another question, I have access to this university, but the 
+/etc/passwd is shadowed, I think I'm supposed to look for the unshadowed 
+one rite, but those which look like it e.g /etc/passwd.old .I juz can't 
+access them.
+
+[Matt: See what you can do with just the usernames.]
+
+Pls enlighten me 
+Thanks 
+-- 
+With Love,
+
+  .,¸¸,.¤º°º¤..ooOO ClaRk kEnt OOoo..¤º°º¤.,¸¸,. 
+ 
+
+Quote of the day..."?!?!?!" 
+ 
+
+============================================================================= 
+*** U* ***** [:)] 
+=============================================================================
+
+To: [anonymous],matt@cs.utexas.edu 
+Subject: Re: Help 
+From: "Carolyn P. Meinel" <> 
+Date: Tue, 3 Jun 1997 12:56:53 -0400
+
+At 03:39 AM 6/3/97 PDT, you wrote: 
+>Well i use the U* *****! now. 
+>It works, but is it safe?
+
+Unless you can find a server that doesn't run identd, you can get caught 
+really easily. In many jurisdictions use of U* ***** is illegal as a denial 
+of service attack. Its "flamer" email list subscription attack can crash the 
+mail server of an entire ISP. According to Ira Winkler, author of the book 
+Corporate Espionage and a member of the FBI Infrastructure Task Force, angry 
+johnny (johnny xchaotic) has some warrants out for his arrest for his 
+Chistmas 1996 flamer bombings. I haven't tested some of the latest ******* 
+denial of service features such as the chargen port attack, but if they 
+work, too, they are also illegal.
+
+If you can find one of the rare servers that are not running indentd, you 
+still are not necessarily safe. You likelihood of being arrested also 
+depends on what forensic standards your nation requires for indictment and 
+conviction for computer crimes.
+
+Matt, will you please run this in the Digest, but making [anonymous] 
+anonymous? Also please foobar the name of U* ***** since a key word Web 
+search will turn up the download sites. Beleive me, we will really take heat 
+if we make it easy for our 4,300 readers to get it.
+
+Carolyn Meinel 
+M/B Research -- The Technology Brokers
+
+============================================================================= 
+*** Compiling On Your Shell Account 
+From: cL0ut <clout@widomaker.com> 
+============================================================================= 
+ 
+
+hey.. 
+on my ISP, i've been trying to compile port scanners [pscan.c and strobe] 
+without luck...i've been using the correct compiler and commands but it 
+still hasn't worked. I email the tech support guy and told him i've been 
+trying to compile an IRC bot and *he said* he couldn't help me because all 
+IRC servers have a ban on bots. So, i was wondering how i should ask him 
+about compiling sumpthin like pscan, etc. without raising supision?? and 
+thats the LAST thing i need.. =))
+
+.ù cL0ut ù.
+
+[Matt: You can't mention a port scanner to an ISP without raising suspicion. 
+They just don't like them. It makes 'em nervous. A good shell account always 
+has several interpreters and compilers, and they should all work normally. Send 
+me private email and I could refer you to a good shell account provider or 
+two.]
+
+============================================================================= 
+=============================================================================
+
+Matt Hinze <matt@cs.utexas.edu> <- finger for PGP, etc 
+ 
+
+============================================================ 
+        Happy Hacker Special Announcements 
+============================================================
+
+* Call for help for person accused of computer crime 
+* Volunteers sought for Capture the Flag team 
+* Want to crack into computers for pay? 
+* Anyone want to unsubscribe?
+
+============================================= 
+ *** Help! 
+=============================================
+
+From: Michael Robinson 
+<kaaos@teleport.com>
+
+Hiyas Carol,
+
+I'm sorry for mailing you like this, but I'm in dire straits here.  I have 
+been a subscriber to your list for quite a while now and finally have my own 
+question to ask.  I have been charged with repeatedly breaking into a local 
+college's server, a college that is in a neighboring state (I'm in 
+Washington, the college is in Oregon.)  As all know, crossing state lines 
+means big fun for the accused :(
+
+I am desperately looking for any information I can find regarding a lawyer 
+that handles such cases, or anyone that can help me.  I don't have much to 
+give, I'm certainly not the richest dope around.  I have never done anything 
+malicious towards anyone on the net, especially not to anyone's server.  I 
+don't expect you to believe me, and don't ask you to.  All I ask is that you 
+maybe broadcast my message to the Happy Hacker list to see if I can 
+hopefully get some help.
+
+[Carolyn: I figure anyone who has been on the Happy Hacker list for awhile 
+knows how easy it is to get caught if you hack out of your own account and 
+don't do IP spoofing. So it is much more likely that someone else set 
+Robinson up. Skilled computer criminals often hack into other peoples' 
+accounts to do their dirty work. For example, every time the Gray Areas 
+Liberation Front has hacked Happy Hacker, they have done so from a chain of 
+hacked accounts. If anyone wishes to step forward to defend Robinson, I will 
+be glad to assist with technical information on why one should *never* 
+assume that the owner of the account from which a computer crime originates 
+is the actual perpetrator.]
+
+================================================= 
+ *** Happy Hacker Capture the Flag Team 
+=================================================
+
+Planning to attend Def Con V, to held in Las Vegas NV USA July 11-13? 
+Organizer Dark Tangent has challenged us Happy Hacker folks to field a team 
+in the Capture the Flag competition. This is a computer break-in game. For 
+details on Def Con V and Capture the Flag game rules, see http://www.defcon.org.
+
+================================================= 
+ *** Break into Computers for Pay 
+=================================================
+
+Are you a good guy hacker type who only breaks into computers when you have 
+the owners' permissions? There is a market for your services in penetration 
+testing. If you would like to meet people who would pay you for this, please 
+email your resume to resume@cmeinel.com.
+
+================================================= 
+ *** Anyone want to unsubscribe? 
+=================================================
+
+The Happy Hacker list has 4,300 subscribers. Arghhhh! That keeps a mail 
+server pretty busy! Please consider the option of unsubscribing and instead 
+making regular visits to Matt Hinze's official Happy Hacker site at 
+http://www.cs.utexas.edu/users/matt/hh.html. Honest to gosh, we won't be 
+offended if you unsubscribe.
+
+Happy hacking, and be good! OK?
