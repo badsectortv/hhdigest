@@ -1,0 +1,515 @@
+Happy Hacker Digest April 2-3, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+            Moderator: Carolyn Meinel and Ruben D. Canlas Jr.
+                 
+            
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you decide 
+you just want to use the forum and not get these mailings, we promise 
+       our feelings won't get hurt if you unsubscribe from this list. 
+  
+                       H a p p y  h a c k i n g ! 
+======================================================================= 
+Catch a moderated discussion of denial of service attacks featuring Carolyn 
+Meinel on the Infowar IRC channel #hackers tonight, www.infowar.com:6667.
+
+Table of Contents
+
+· from the moderator 
+· Infowar Forum Errors 
+· Help Needed 
+· Getting Shell from Pine 
+· Help for Telnet and Finger 
+· Payfone Hacking 
+· calc.c 
+· My So-called Shell Acct 
+· Scanning Ports 
+· Anonymizers 
+· Flames, Flames, Flames 
+· What's Up With the Headers?
+
+----------------------------------- 
+IMHO [from the moderator Ruben D. Canlas Jr.] 
+----------------------------------- 
+I've been out of commission because of really pressing work. So I have 
+to say my piece on Galf just now.
+
+Let me clarify first that I am sympathetic to gays, working with a 
+lot of them onstage (occasionally, I am a theater artist) and doing 
+creative stuph. I am also averse to any form of censorship and do not 
+follow Carolyn's religious beliefs.
+
+However, when I volunteered to help out Carol in moderating the Happy 
+Hacker, I agreed to play by Carol's rules, which I found reasonable. 
+Carol convinced me that this is an international forum for newbie 
+hackers -- some of our readers may not be able to dig the language and 
+how it's said, hence the need for editing and bleeping. I guess 
+bleeping is Carol's compromise too, because she doesn't totally delete 
+the cusswords and you can still get an idea what the cusswords were 
+;).
+
+One basic tenet of freedom of expression is that you can always choose 
+not to read/participate in something you don't like. In between these 
+extremes, we can always make compromises. Since I liked the Happy 
+Hacker Digest, but didn't like censoring the curses, I decided to 
+accept a compromise and go ahead helping the digest.
+
+The point is, Carol left it for me to decide whether I should help or 
+not. She did not tell me to get lost or stop participating in the 
+digest.
+
+This is basic Freedom: you choose what you want to do, and you can do 
+it as long as it does not cause other people harm. You also respect 
+other people's freedoms. Freedom and power entail lots of 
+responsibility. Since hackers are free and powerful, they need to 
+realize that sense of responsibility.
+
+What makes me disapprove of the Galf attack? Happy Hacker is a newbie 
+digest, for god's sake, and it wants to distribute free information to 
+all budding hackers. To attack it is to attack what Happy Hacker 
+represents: freedom of information.
+
+Happy Hacker never once tried to force any religious belief into any 
+of its issues. If moral debates and contrary opinions were raised, the 
+digest never suppressed it and in fact encouraged debate.
+
+So IMHO, the Galf attack was lame because the Happy Hacker Digest was 
+the wrong target. Galf should pick on people their own size, or since 
+they seem like brave kids, someone bigger -- like maybe military sites 
+or microsoft.
+
+   -- benc [ruben d. canlas jr] 
+ 
+
+--------------------------- 
+INFOWAR FORUM ERRORS 
+---------------------------
+
+From: hedrek@wantree.com.au
+
+I want to use the infowar forum, but it is still a mass of 500 errors 
+etc. Is there a problem with the site or could it be my system? Any 
+advice much appreciated.
+
+Carolyn: We are negotiating with the ISP that maintains it to please, 
+please install more memory. The errors come when too many people 
+access it at once and there isn't enough memory to hold all the 
+processes so it starts swapping stuff back and forth from disk and, 
+well, we are using Win NT, enough said. But -- GALF has never hacked 
+the infowar server on account of they don't know the first thing about 
+NT, so it does have its advantages.
+
+--------------------------- 
+NEED HELP 
+--------------------------- 
+From: " Red  Baron" <the_redbaron@hotmail.com> (by way of
+
+Hi !
+
+I Am A 23 Year Old Male From South Africa
+
+I Need Help On How A Letterbomb Or 'Nastygram' Works
+
+One More Thing - You're Articles Are THE BEST !!! 
+ If You Need Info On Hacking Prime Or Pick , Then 
+I Am Your Man.
+
+I Wrote My Own "VIRUS" By Accident. The Only Way We Could Stop It Was 
+To Reboot The Machine (CHOWS HARDRIVE SPACE) Imagine Bringing A HP 
+Unix Machine Running Prime To It's Knees !
+
+CHEERZ 
+ 
+
+The Red Baron 
+Flying Low , But Shooting High 
+( The Quest For Knowledge ) 
+  
+ 
+
+-------------------------------------- 
+GETTING SHELL FROM PINE 
+--------------------------------------
+
+From: Peter Beckman <beckman@nova.org>
+
+On Tue, 25 Mar 1997, Valerie Henson wrote:
+
+> You wrote: 
+> 
+>    There are two ways to do this.  First, create a file that 
+>    contains the following: 
+> 
+>    #!/bin/sh 
+>    /usr/local/bin/tcsh 
+> 
+> Doesn't work on my system, Pine 3.95 on Linux.  It gives you an 
+> error message of "[ Alternate editor abnormally terminated (255) ]". 
+>  Just so you know (since my school lets you have shell accounts, 
+> heh).
+
+More than likely, tcsh isn't the shell you have on your system.  You 
+need to know the exact path of the shell (/usr/bin/csh, /bin/sh, etc). 
+ What sysadmins normally do is disable direct use of a shell for an 
+editor, which is why you have to use a shell script, such as above.
+
+Try replacing /usr/local/bin/tcsh with /bin/sh, and try again.  It 
+will work, you just need to massage it a bit.
+
+Peter 
+ 
+
+-------------------------------------- 
+HELP FOR TELNET AND FINGER 
+--------------------------------------
+
+From: CaBzTag@aol.com
+
+I read the list of things to  try to do to try to finger or telnet and 
+every time I try either it will say "cannot retrieve http..........."
+
+so I am using AOL and I don't know if this has anything to do with it 
+because it is not saying "access denied" or any type of message that 
+is letting me know I am forbidden. I used to have Netcom but.... My 
+mom thought that she got rid of it but the actual account is still 
+active but.....
+
+In Config PPP I lost all the info so I can't get on to it anymore. So 
+if you know the stats for config PPP, please help me, and I also need 
+the stas for the Internet Dialer. do you think it is because i am 
+using AOL??????
+
+well this is my first time ever trying to telnet or finger so i might 
+be doing something wrong. the other thing is i dont have a shell 
+account and I was wondering if you could set me up w/one thanks for 
+your time in reading this. Even though u think I'm probably another 
+loser who will just do something stupid and get in trouble! 
+ 
+
+-------------------------------------- 
+PAYFONE HACKING 
+-------------------------------------- 
+From: Adam Christopher <mjolnir@thor.pla-net.net>
+
+Does anyone know where I can find an acoustic coupler or something to 
+use with a payfone?  My friend saw one in a mag, but he can't remember 
+which one and I can't find one. TIA
+
+-------------------------------------- 
+WHERE TO GET CALC.C ? 
+-------------------------------------- 
+From: "Mac )(" <mac_x@geocities.com> 
+ 
+
+where can i get calc.c? 
+ 
+
+-------------------------------------- 
+MY SO-CALLED SHELL ACCT 
+-------------------------------------- 
+From: Twigz Wiggy <twiggy@hq.tcfarm.com>
+
+The sysop at my ISP sayz I have a shell account and he told me I just 
+have to telnet into the server and that's it. but when I telnet, a 
+window comes up with some options (Pine, Tin, an FTP thing, etc.)  But 
+I can't find anything about how I can type in thingz like 'telnet-> 
+boring.isp.net 80' I can surf around with my telnet program but I 
+can't use the 'shell account' that your talkin about (I am a newbie... 
+therefore I could be wrong :) I was just wonderin if you could help me 
+out to figure out if I actually do have a Shell account or not.  If so 
+I would really appreciate it (: 
+        -Twigz 
+PS:I just found out about yur e-zine gtmhh from Silicon toadz website 
+and I just wanted you to know that I absolutely love it!!!  And I 
+can't wait to start receivin more filez (:  so far I have read 1-1 
+through 2-1 I have more than that on my computer though (: anyway... 
+laterz
+
+benc: twigz, by the looks of it, you have a telnet account running a 
+menu program. look for an option that says Exit to Shell or something. 
+or go ask your sysop! 
+  
+ 
+
+-------------------------------------- 
+GUIDE TO SOCIAL ENGINEERING 
+-------------------------------------- 
+From: hwsnyman@medic.up.ac.za (LiquidMetal) 
+ 
+
+Hi there again!
+
+I have a few more things on my mind that only you can tell me...
+
+1 - Is it possible to get ROOT access through TELNET? If so, how would 
+I go about doing it? 2 - Do you have a "Guide to Social Engineering", 
+or something like that? I am     REALLY interested in learning more 
+about it.
+
+Thanx 
+LiquidMetal
+
+-------------------------------------- 
+SCANNING PORTS 
+-------------------------------------- 
+From: Stigmata <stigmata@geocities.com>
+
+> I use netcop to scan. What does it mean if I don't get an answer 
+> after scanning port 0 to 256. Does this mean there are no open 
+> ports?
+
+Not sure about netcop, but I'm using pscan under linux.. I *think* 
+what it generally means is that yes those ports are open, kind of.. 
+For example if I got back ..
+
+5376 (ftp) is running. 
+5888 (telnet) is running. 
+etc etc.. More standard service but on weird ports..
+
+I'd *assume* that it's a firewall running port redirection, as when I 
+telnet to one of these service on the standard port I get exactly what 
+I'd expect to see if the scan had showed smtp on port 25..
+
+Hope this clears up the subject a bit..
+
+Disclaimer: I'm a newbie so any of the above could be wrong..
+
+ o                                                                 o o 
+  |    Stigmata                                                   o o 
+ o                                                               o 
+o-\/|\/- "I'm not the one who ran out of lies.."                    o 
+o  //                                                               o 
+o  \\    The Message courtesy of the Ministry of Digital Dreaming.  o 
+o   |                                                               o 
+ o       ..oo http://yswwsb.home.ml.org oo..                       o 
+  
+  
+ 
+
+-------------------------------------- 
+ANONYMIZERS 
+-------------------------------------- 
+From: Marko Samastur <SAMASTUR@fmf.uni-lj.si>
+
+Hi!
+
+Sometimes it's not enough to use anonymizers to be anonymous. If you 
+use java, then you are vunerable (more details were revealed on one of 
+the security lists, but I can't remember which one right now).
+
+Marko
+
+benc: try to remember marko, and then share us the info ;)
+
+ruben d. canlas jr. 
+http://www.skyinet.net/users/benc 
+------------------- 
+outdo, v.t.: 
+    To make an enemy. 
+    -- Ambrose Bierce 
+ 
+
+====================================================================== 
+ *** Flames, Flames, Flames 
+======================================================================
+
+From: jericho@dimensional.com
+
+> From: " Damien  Treffs" <no0n3@hotmail.com>
+
+Just so everyone is clear, this is not me at all. At least two people have 
+made the mistake 
+of assuming it is me since this person is 'Damien' too.
+
+>Carolyn: Whoa, I am just *so* terrified of having "the wrong people mad." 
+>It's the law enforcement people that I should worry about having mad at me, 
+>and for good reason. If I ever were to let my hobby of hacking lure me into 
+>committing the destructive, childish acts of GALF and johnny angry, I'd 
+>better figure on fleeing the US, getting plastic surgery, and living out my 
+>days as a computer programmer in Wombat Swamp, Australia (no offense, Warpy 
+>and all you Oz dudes:)
+
+Please don't forget your repeated posts about how we should fear your (and 
+Winn's) 
+FBI/SS/NSA/CIA/NAACP/whatever friends. Why should I be terrified of them 
+when I am 
+only posting to a list? Why do you bring that up as some form of a quasi-threat 
+every week or so?
+
+And why do you never directly answer my questions?
+
+>From warhead@juno.com
+
+>Hmmm, you are looking for a fight aren't you?  Well, unfortunately not all
+
+No. I am looking for the truth. Something that she seems to want to disguise.
+
+>of us suffer from what you do - A huge pre-pubescent ego.  I know it may
+
+Oh, so I have an ego for correcting such careless mistakes such as the one 
+Carolyn and 
+others are making? Whatever.
+
+>seem odd to you, Jericho, but *GOOD* hackers don't go picking fights so they 
+>can boost their egos but rather use their knowledge mostly in defense from 
+>people like you.  Yes, I CAN download "Up Yours".  Yes, I CAN put in your
+
+In defense from people like me. What hacking skills can you use to defend 
+against 
+my posts to this list? You sound as ignorant as the other person who made 
+too many wild 
+assumptions. Let me also take this moment to remind you and the others that 
+you don't 
+have the first clue about my hacking skills. I may know nothing, or I may be 
+fairly decent. 
+My entire existance on this list has been to clear up mostly non-technical 
+errors. 
+Occasionally when Carolyn goes out of her way to post up something halfway 
+technical, 
+I will correct that too as it is usually wrong.
+
+>e-mail address.  Yes, I CAN subscribe you to hundreds of list-servs.  The 
+>thing is, that doesn't take a brain!  Laughing at people like you and having
+
+Oh. Threaten to mailbomb me for my opinion.. and you call ME a lamer? I have 
+never said 
+it takes a lot of know-how to mailbomb. I have simply defended their right 
+to express 
+their opinion wether or not I agree with their means. I happen to agree in 
+their case 
+this time. "I may not agree with what you say, but I will defend to the 
+death your right 
+to say it." - Voltaire
+
+>pride in your abilities and knowing when to use them does.  If you'd like to 
+>continue this in e-mail, feel free.
+
+Why? You seem too unwilling to read my messages and accept them for what 
+they are. From 
+what I can tell, you seem too quick to jump to inaccurate conclusions.
+
+>If you'd like to mail-bomb me there, feel free!  Really!  I would be 
+>overjoyed if you would because then you would simply prove to everyone 
+>on this list how much of a lamer you really are.  Now, if you'd like 
+>to hack into Juno and disable my account I would respect your 
+>abilities, I'd still hate you but I'd respect your ability to hack 
+>Juno's minor security defenses.  Catch you all later
+
+As I was saying above.. why do you assume I would mailbomb you? I haven't 
+mailbombed 
+anyone on this list (or any other) for any reason, especially not for 
+expressing their 
+opinion (which you are doing now). If I were to mailbomb anyone, don't you 
+think I 
+would have hit Carolyn a while back? As for the "how much of a lamer you 
+really are" 
+comment, I don't know what to say to you. Maybe that you shouldn't judge me 
+because you 
+know nothing of me? Or maybe that if you consider me with my skills lame, 
+then it speaks 
+volumes about your ineptness? Or just laugh at you as another 'juno' user 
+that doesn't 
+apparently even have a shell account to play with yourself? You pick 
+whatever makes 
+you happy. I will sit back here at work doing exploitation and security 
+research.
+
+=-=
+
+>Carolyn: For the record, no post on the Happy Hacker list has claimed that 
+>jericho is a member of GALF or that he is angry johnny (the mass email 
+>bomber). To make such a claim without sufficient evidence in a public forum 
+>would be libel. However, a number of posts, for example
+
+But they have insinuated that I am a member, or the person responsible for 
+their actions, 
+or other things. See below for a quote from the last digest.
+
+>wraith@dimensional.com, have noted jericho's close emotional identification 
+>with these people. But emotional identification does not equal identity. In 
+>trying to hunt down computer criminals, it is wise to keep in mind Will 
+>Rogers' dictum: "It isn't what you don't know that hurts you, it's what you 
+>know that ain't so." So please do not jump to conclusions about probable 
+>motivations for jericho's recent posts.
+
+Thank you for pointing that out to our less than cluefull members.
+
+=-=
+
+> 2)Crackers who rm system files, as GALF has done in the past at UTEP and as 
+> jericho appears to be threatening to do to them again, are breaking the law 
+        ^^^^^^^^^^^^^^^^^^^ 
+        ^^^^^ 
+  
+And you wonder why I think YOU are starting these assumptions?
+
+Carolyn: Your last post was hard to read in any other way than as a threat 
+to commit a computer crime against the University of Texas at El Paso. Your 
+corrections of technical errors that people post on this list are generally 
+typos or gripes about wording that could be misinterpreted, for which we 
+thank you for your sharp editorial talents. If you wish at some point to 
+begin posting highly technical tutorials of the quality we get from, for 
+example, Bronc Buster, you may find that the readers of this list will take 
+you more seriously as a real hacker and not just a knee-jerk sympathizer 
+with the criminal element.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: " Intergalactic  <--" <intergalactic@hotmail.com>
+
+>From: jericho@dimensional.com 
+> 
+>Don't you get it?! A lot of us don't like this forum because it >teaches 
+people incorrectly. On top of b******* opinions from a naive >moderator,there 
+is only inaccurate technical information. Who does >that help?
+
+I guess I'm gonna PO everyone on this list. Jericho is right! Not only 
+"b******* opinions" and "innacurate technical information", but, Carolyn likes 
+to disguise it as being "legal hacking". Alot of the stuff on this list will 
+have you at the least searching for a new ISP. In addition, while I don't 
+advocate massive mail-bombing, I agree with angry johnny when he said that 
+Carolyn is giving the newbies just enough rope to hang themselves with. I don't 
+know GALF. I don't know what they want. So why should I "bring them down 
+legally" or even bother with them? I'm not gonna sit here and make judgements 
+about jericho or GALF just because the moderator of this list happens not to 
+like them. Alot of people like to post to this forum and say "jericho's scared" 
+or crap like that. Please, do tell, what's he to be afraid of?? Is a gang of 
+HappyHackers going to break into his computer and change the "Its now safe to 
+shutdown your computer." message?? Or (gasp!) change the animated logo on his 
+web-browser? Of course, that would require 2 weeks of discussion in this forum, 
+so he'd probably catch on.
+
+Carolyn: Intergalactic is right, thanks to the bad name groups like GALF 
+have given to us hackers, even doing legal harmless stuff can oftentimes get 
+you booted off your ISP.  As for giving newbies just enough rope to hang 
+themselves, I'm flattered that Intergalatic thinks we are teaching enough to 
+get into trouble with. Some 31337 d00dz have been complaining that all we do 
+around here is teach rudimentary Unix and Windows. Meanwhile, will you 
+newbies please remember that if you are learning hacking by reading this, 
+you don't know enough to successfully cover your tracks if you were to 
+commit a computer crime.
+
+========================================================================= 
+ *** What's Up with the Headers? 
+=========================================================================
+
+From: n-treeg@ix.netcom.com
+
+Hey Caroline, I just got the latest issue of Happy Hacker Digest, but the 
+headers look strange.  Can you tell me why the e-mail is apparently routed 
+through escape.com?  Isn't that Netta Gilboa and her crew?  Whats up?
+
+Carolyn: I'm doing this to irritate GALF. Now what I'm waiting for is for 
+someone on this list to be elite enough to figure out exactly what I'm doing 
+with Happy Hacker mail. Who around here is a wizard at deciphering headers? 
+Oh, and that guy on the dcstuff list who thought the root@escape.com in a 
+header meant something terrible, no, that's just what you get on any 
+undeliverable mail message from escape.com. One of these days I have got to 
+write that GTMHH on how to read headers!
+
+======================================================================== 
+ *** Bye, folks, and Happy Hacking!

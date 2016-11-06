@@ -1,0 +1,684 @@
+Happy Hacker Digest April 10-11, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Carolyn Meinel
+
+                   Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or 
+        unsubscribe, use the subscribe boxes on the menu bars, please.. If you 
+  decide  you just want to use the forum and not get these mailings, 
+  we promise our feelings won't get hurt if you unsubscribe from this list. 
+  
+                       H a p p y  h a c k i n g ! 
+================================================================= URL 
+`O the Day: http://www.sun.rhbnc.ac.uk/~phac107/c50a-nt-0.10.tgz Where 
+to download Crack 5.0 for Windows NT 
+=================================================================
+
+Table of Contents
+
+· Legal Opportunity to Fight Hacker War 
+· Windoze Hacking 
+· Hacking Port 110 
+· Mapping the Internet 
+· HH Archive URLS 
+· Cracking 
+· Port 25 Stuph 
+· More on Social Engineering 
+· Linux Woes 
+· Shell Account Stuph 
+· Port 19 Woes 
+· IRC Question 
+· Guilty of Using Jargon 
+· Looking for Jakarta Hackers
+
+=================================================================== 
+ *** Legal Opportunity to Fight Hacker War!!!!! 
+===================================================================
+
+From: Warpy <warpy@null.net>
+
+This might be the opportunity to redeem yourself Carolyn.. :) Check 
+out the attached file..
+
+Warpy
+
+===============================| 
+     COREWARS                  | 
+     butler@tir.com            | 
+===============================|
+
+Mail Me to Join We Will update Results every week through Mail
+
+Now this will Be like a Hacker Internet which will make hacking on 
+these servers legal We will have competition
+
+-  6 or less hackers per team. 
+-  Each team has 1 or more system. 
+-  The system must run Linux/BSD/SunOS, and be up at least between 3pm 
+till 11:30 pm. -  The game is played for on week then expires if no 
+one one
+
+-  On systems owned by the team, each user may have one 
+   account, with any systems privileges.
+
+-  Each team has 1 account on each enemy system
+
+  - 2.5mb quota per account
+
+  - must be a normal user
+
+-must be a  file saying "you got  me" inside the 
+file must be called victory.yes
+
+-victory.yes can be chomoded to any user even root 
+but the uid or gid must exist
+
+-victory.yes can be in any dir
+
+-any find utility must must be only allowed 
+by root
+
+-to win u must change the motd to say the this
+
+"takeover by <your team name>
+
+the victory.yes location is <the location here>"
+
+then you must  contact a judge to see the MOTD 
+ 
+
+-victory.yes location has to be submitted to a judge before you 
+begin. You must let the judge login to make sure its there. 
+the judge must have a login so he can frequently check 
+and make sure victory.yes is still there and to see if anyone won.
+
+ - super users on opposing teams are NOT allowed to 
+intervene with other hackers, this includes killing, 
+writing to their terminals, or disturbing them in 
+any way shape or form, however, super users are 
+allowed to use snoop and other programs to monitor 
+opposing team members, but they cannot DIRECTLY 
+ step in and kill the user. super users CANNOT delete 
+ files created by the opposing team members. 
+ 
+
+if you shut a system down             :  100 points 
+if your system gets shut down         :  -50 points 
+ 
+
+On Sunday midnight, all points are worked out, and 
+the league positions are calculated. 
+============================================== 
+Users will be kicked  from hacknet and team will loose 50 points for:
+
+1.denial of service attacks 
+2.removing system files 
+3.rebooting a machine 
+4.e mail bombing 
+5.Killing Opponent's Connection at any time. 
+6.Echoing to opponent's tty and distracting or screwing up the 
+opponent 7.Moving Victory.yes 8.Killing judges 9.Echoing to judges tty 
+and distracting or screwing up the judge. 
+============================================== U MAY NOT INTERACT WITH 
+OPPONENTS ON A SYSTEM IN ANY WAY!!!! EXCEPT FOR SPYING!!!
+
+Carolyn: Warpy, I consider it a badge of honor that a group of people 
+who hide behind their hacker handles flame me. Especially when in 
+flaming me they are making truly egregious technical errors! So I 
+don't feel much need to "redeem" myself.
+
+Latest thing is that jericho is claiming in his dc-stuff flames that 
+keyboards are not ports! Sheesh. The *only* thing a keyboard does is 
+create an input interface with the user. If that isn't a port, I'm a 
+baked potato. Hmmm, I wonder, will this incite yet another flame war 
+over my definition of a keyboard as an "interface"?;^) At least he did 
+admit that I was right that you can hack some kinds of printers.
+
+For those of you who were on when some d00dz were flaming me on 
+Infowar IRC for saying Robert Morris Sr. invented hacking -- here's 
+the straight stuff. Guess who invented the game Core War (in the 60s, 
+no less)? It was Morris. Guess what he must have been doing that 
+inspired him to figure out a legal way to do it instead:)
+
+Note on flame policy: I only will respond to correct extreme technical 
+errors! Don't believe more than 10% of what you read on the dc-stuff 
+list. The OK to believe rate on this HH list, however, probably isn't 
+over 50%, so don't take what we say here as gospel truth either:) 
+Again, remember, we have designated the dc-stuff list to carry HH 
+flame wars. Email majordomo@dis.org with message "subscribe dc-stuff".
+
+================================================================ 
+ *** Windoze Hacking 
+================================================================
+
+Carolyn: Security alert! If you are using Norton Utilities 2.0 for 
+Windows 95 and get on the World Wide Web through Microsoft Corp.'s 
+Internet Explorer, you have a problem. Check with either McAfee 
+Associates or Norton to get the patch.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Anonymous reply to Imagekiwi@hotmail.com
+
+I've got port scanners , perl 5, telnet, tracert, ftp, visual c++ 4.2 
+pro
+
+what else to you need to hack properly. 
+These programs are all in windows 95, what else does Unix have that 
+windows 95 doesn't in the above list.
+
+Imagekiwi 
+ Continuing in my efforts to make a stable hacking envoroment in 
+ windows 95. That has all the fetures of unix.
+
+Carolyn: Folks, reply to this one without flaming if you want to get 
+posted in the Digest. Also, I'm writing a GTMHH right now that will 
+answer that question. IMNSHO: Unix rules!
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: dAVe burlingame <davidb@spl.lib.wa.us>
+
+> 
+> From: Erica Douglass <edouglas@bonwell.com> 
+> 
+> Hi! I was reading some time ago in the HH Digest that there is a 
+> book called _Secrets of Windows 95_ that tells how to edit the 
+> registry.
+
+Try _Windows 95 Secrets Gold_ by Brian Livingston, a staffer at 
+InfoWorld, an industry bible...
+
+dAVe
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: D-LUX <dlux@mitec.net>
+
+>From: Erica Douglass <edouglas@bonwell.com> 
+> 
+>Hi! I was reading some time ago in the HH Digest that there is a book 
+>called _Secrets of Windows 95_ that tells how to edit the registry.
+
+You can get all this information for free by downloading the Windows 
+95 resource kit from Microsoft's web site. (www.microsoft.com). It's a 
+help file and provides an incredible amount of information regarding 
+Win95, including the registry. I've seen better, but this one is free. 
+ 
+
+============================================================= 
+ *** Hacking Port 110 
+=============================================================
+
+From: "Johnny Johansson" <yoda@kungalv.mail.telia.com>
+
+U forgot a very important command in your list.... 
+LIST = list number of mail you have... :)
+
+/Master Yoda
+
+============================================================= 
+ *** Mapping the Internet 
+=============================================================
+
+From: hedrek@wantree.com.au
+
+I do tracert on a remote computer. It works and gives me the hops and 
+details etc., including the IP No. of the remote computer I am looking 
+at. I go to whois.internic.net and enter the IP No. of that remote 
+computer. I get the following message: No match found for ..........( 
+IP No.). Can you please tell me what is happening here?  Thank you,
+
+HedRek
+
+Carolyn: There are several possibilities. Your best bet is to use 
+either the commands dig or nslookup instead. You can find those 
+commands on most Unix boxes. For details see GTMHH Vol.3 #2, "Mapping 
+the Internet." Note that this whois trick doesn't work any more, but there is another way to do it. Click here to find out how.
+
+=================================================================== 
+ *** HH Archive URLS 
+===================================================================
+
+From: k1neTiK <samk5@IDT.NET>
+
+Announcement:  I have registered http://base.kinetik.org as my web 
+page.  It will bring you to my regular site, and is just easier than 
+typing in my entire address.  For those who don't know, I archive all 
+the GTMHHs and Happy Hacker Digests on my site since October.  Thank 
+you for not booing.
+
+Carolyn: Other archive sites include: 
+http://www.geocities.com/TimesSquare/Arcade/4594 
+http://www.anet-chi.com/~dsweir 
+http://www.tacd.com/zines/gtmhh/ 
+http://ra.nilenet.com/~mjl/hacks/codez.htm 
+http://www.ilf.net/brotherhood/index2.html 
+http://infowar.com (click "new" button)
+
+============================================================= 
+ *** Cracking 
+=============================================================
+
+From: "NK" <nk@xtasy.prestel.co.uk>
+
+More on the old old phf exploit - Theoretically one should be able to 
+execute a shell using phf , and if very lucky the web daemon will be 
+owned by root so a root shell might be obtained. I decided to try this 
+out a while back - however for a shell to operate , a silly web 
+browser obviously isn't the solution.
+
+I went to http://target.server/cgi-bin/phf?Qalias=x%0a/bin/sh%20/ with 
+a web browser to check (I already knew that this server isn't checking 
+for phf use). And got no error.
+
+Next I telnetted to port 80 of the target.server and first sent a few 
+random chars to see if I got an error and that it was working OK. Next 
+time I telnetted I used the command GET 
+/cgi-bin/phf?Qalias=x%0a/bin/sh%20/ Nothing happened. However after 
+checking all the open connections I found that there was still a 
+connection to the target.server open. Normally the connection would be 
+closed after an error , or after the operation completes.
+
+Am I to assume that a shell was actually started on the targer.server 
+, if so how would I access it. The telnet session stays open but 
+nothing happens.
+
+Cheers. 
+-NK 
+nk@xtasy.prestel.co.uk
+
+Carolyn: Thank you for fubaring the URL of your target. Your post is 
+as borderline as I ever want to run on this list. Unless you have 
+permission to hack, you need to back off NOW. Honest, guys, it isn't 
+that hard to get permission to hack somewhere. How about trying that 
+Corewars competition instead?
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: Iggy Drougge <optimus@canit.se>
+
+>        Please make this anonymous. 
+>        When you make a phf query, what do the different parts of the 
+>response mean. For example, when you try to get the password file 
+>(/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd), you get this line 
+>at the top: 
+>        /usr/local/bin/ph -m alias=x /bin/cat /etc/passwd
+
+>       What does this mean? On some systems with the bug present, the 
+password 
+>file follows, while on others, it doesn't. On one system I was on, I 
+>used ls to see the etc directory. Since the password file was 
+>shadowed, I tried /cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/shadow, 
+>which I had just proved was present. However, all I got was 
+>/usr/local/bin/ph -m alias=x /bin/cat /etc/shadow and nothing after. 
+>Why is this? Is it hidden or something?
+
+It's probably because the web server is run as a user with low 
+privileges, such as nobody. Nobody doesn't have the rights to access 
+files readable only to superusers, such as /etc/shadow, nor should he 
+have writing privileges or a homec directory.
+
+>        I know that only some UNIX commands work like this. Does rm 
+>        work 
+>(I'm curious; I would have just tried if I wanted to delete 
+>something)? What kind of commands don't work? By the way, does 
+>anybody know of any good web sites/text files on this kind of thing 
+>that they could post? Thanks.
+
+Rm would probably work if you have high enough privileges. It all 
+depends on your privileges.
+
+_____
+
+>From: "Macey's" <rpmacey@rad.net.id>
+
+>Me again, I scanned some ports with a win 95 port scanner and found 
+>the following.
+
+>202.154.1.3 port 21 
+>202.154.1.3 port 23 
+ etc.
+
+>now what do I do.  Can I get into any of these computers, how?  ( I'm 
+>a newbie remember)
+
+Try to get some info in their HINFO records, by looking at their DNS 
+records. That could tell the system type. Port 23 is telnet, so the 
+prompt should also tell you the system type. Also, some things like 
+Sendmail (25) might tell you the system type.
+
+=============================================================== 
+ *** Port 25 Stuph 
+===============================================================
+
+From: "Michael Paul" <mbp@locke.ccil.org>
+
+I think someone asked this a while ago, but Carolyn misunderstood the 
+question.  When I send mail from a program such as Eudora, the header 
+contains a sender's name and address, subject, and a from: line.  When 
+I telnet to port 25 and send mail, the header contains a sender's 
+e-mail address but NO name, NO subject, and an APPARENTLY-from: line. 
+What does Eudora do differently?  Does anyone know of a program to log 
+data transferred, so I can find out what it's sending to the server?
+
+Also, the header contains a line called X-TCP-IDENTITY that contains 
+my username on my ISP.  Is there a way to change this?
+
+Carolyn: When forging email, after the "data" command, you can insert 
+that name, subject and any other headers by typing in like this:
+
+subject: Whee, I'm forging email! 
+favorite-color: polka dot 
+X-comment: go soak your head 
+Received: from ender (slip2.worldaxes.com [206.20.145.2]) by 
+locke.ccil.org (8.8.5/8.7.3) with ESMTP id RAA16791 for 
+<> ; Wed, 9 Apr 1997 17:46:08 -0400 (EDT) 
+Message-Id: <199704092146.RAA16791@locke.ccil.org>
+
+The basic trick is to either use only one word or else link words with 
+hyphens, followed by a colon, for each entry in your forged header.
+
+As for X-TCP-IDENTITY, I don't know of any way to change it without 
+having root. Anyone have ideas?
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: csetty@ccmailpc.ctron.com
+
+Before you get worried about me wanted some major secret Hacking info. 
+Let me explain.  I am a network engineer who hacks to 1)learn a ton 
+about the systems I work with and 2) find potential problems in my 
+systems and my customer's systems.  I have a question.  What are the 
+potential methods someone would use to hack port 25.  Is there any 
+escape character that will drop them out of s-mail and into a shell. 
+Or is it a more involved process?
+
+Carolyn: It's more involved. It depends on what program is running on 
+25. While new flaws in sendmail are found with alarming frequency, I 
+have heard that smail and qmail are secure (as of today). Does anyone 
+on the list know of exploits for them?
+
+================================================================== 
+ *** More on Social Engineering 
+==================================================================
+
+Reply-To: bernz@ix.netcom.com
+
+From: "Stainless Steel Rat" <s_s_rat@hotmail.com>
+
+>I have some comments on social engineering.
+
+>It seems that a lot of misconceptions about social engineering. It 
+>sound as if people want to believe that social engineering can be 
+>learned like a new programming language or by simply reading some 
+>kind of "Beginners Guide to Social Engineering".
+
+I never tried to imply that social engineering was easy or that it can 
+be done by reading my FAQ. It requires a talent for people, pure and 
+simple. Those talents CAN be improved by practice and learning trends 
+in the way people operate. That's why I always suggest the book, 
+"Interpersonal Communication" by Joseph Devitto. It just lists the 
+trends in the way people speak and says, in no clear terms, how to 
+manipulate them. Any hacker who tries to social engineer the actual 
+sysadmin is a moron anyhow. It really cannot be done. If it can be 
+done, fire the sysadmin. You social engineer the little people (users) 
+and then use exploits and real hacking to get root or whatever it is 
+you're trying to grab. It is a skill to be used with hacking, not 
+instead of it. I suggest people read the stuff that is written about 
+it simply as an intro. It is not meant to be a guide. the only guides 
+are psychology books and practice.
+
+bern 
+http://members.tripod.com/~bernz
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: John Doe <johndoe@ykt0.attnet.or.jp>
+
+Social Engineering:
+
+  I love this word -- I'm 30 now and never was a particularly good 
+  hacker.  But I could charm the passwords off any old ditty that 
+  haplessly answered the phone.  I never spoke to the managers -- what 
+  I found useful was to find companies that used a lot of 'temp 
+  service' employees -- the end result, after talking to clueless 
+  newbies of the temp kind, was enough passwords/ID's that enabled 
+  'us' (hint) to figure out the best way to have access.
+
+The previous posts said knowing something about psychology, and that 
+is good, but I think a better aptitude would be SALES!  Yes, that and 
+a little acting skill.  We always had a dopey friend that was bigger 
+than all of us and had a deep voice that the old ladies trusted.
+
+You aren't going to social engineer anything if you're constantly 
+behind the screen.  If anything, with the people that I deal/hire on a 
+professional level, social interaction is just as important as 
+computer skill.
+
+Try doing it from a pay phone, i.e., a service rep. in the field.  Oh, 
+and don't screw up anything, case in point being whenever I need to 
+learn about new software, I call the very same business we hacked 12 
+years ago.  It's not that way because we vandalized anything.
+
+Great list, and kudos from Tokyo!
+
+John Doe 
+johndoe@ykt0.attnet.or.jp
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+From: jericho@dimensional.com
+
+From: "Stainless Steel Rat" <s_s_rat@hotmail.com>
+
+>You have to give up a little bit of that anonymity which 
+>Hackers/Phreakers/Crackers cherish so much.  On top of that, a lot of
+
+I would disagree here. Most of the SEing I have done in the past were 
+completely anonymous to some degree or another. Sure I say I am "Bill 
+in network support" or whatever, but I never give up anything that 
+would compromise my identity. I would consider that fairly anonymous. 
+If you are doing the SEing in person though, you are dead on. You have 
+to resign to the fact that you will be seen, may have to fork over 
+some kind of ID, or whatever else.
+
+>Carolyn: I agree heartily with this post. As a matter of fact, I make 
+>much of my living from social engineering. This Happy Hacker list is 
+>social engineering, a technique to discover and publicize the 
+>knowledge floating around the hacker world.
+
+Lay off the crack Carolyn. Social Engineering is roughly defined as 
+obtaining information from someone by tricking them into thinking you 
+are someone else.
+
+>Guess what: the best social engineers never lie. We use our real 
+>names.
+
+So you think. I am not the "best" by any means, but I rarely fail when 
+I set my mind to it, and I never tell them my real name.
+
+>But trust me, it is easier to get information by being honest than 
+>through deceit. That's because it is really, really hard to lie in a 
+>convincing
+
+It is obvious you have never had to try to social engineer any real 
+information out of someone then. If you call up and say "Hey, this is 
+Jason and I am just some random citizen, can I please have your switch 
+dialin?", you will get laughed at. Any serious or proprietary 
+information will not be handed out THAT easy.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Carolyn: Funny thing, I have found that if I really, really want to 
+play with someone else's computer, all I have to do is ask politely 
+and honestly and they will let me on it. In fact, people will even 
+give me permission to try to crack into root! That's the best social 
+engineering of all. Of course I go to some effort to make friends with 
+them first. It takes more time, but it's legal and no one gets hurt.
+
+The first account that Keith and I honestly social engineered (I was 
+not always perfect like I am now:):) was by putting our home up as 
+collateral for the purchase of a PDP 11/23. The owner, John Kaur, 
+responded by letting us keep a terminal in our home -- with 150 baud 
+modem -- on which the whole family played Adventure, Zork and Star 
+Trek. It cost us no money, slight risk, and kept us in computers for 
+much of the 70s, back when computers were rare and expensive. OK, we 
+got our own, an Intel microprocessor programmer, in 1975, but Kaur's 
+box had all the games:)
+
+The problem of the dishonest social engineer is you start out thinking 
+that to get information you have to trick someone. The easiest way to 
+get information, however, is to be totally honest. How do you suppose 
+I have managed to make a living at gathering information? Lying only 
+gets you so far.
+
+Besides, it's hard to keep your stories straight when you are lying. 
+Can you believe this, I actually know a guy who told me his *only* 
+communications with johnny xchaotic -- the nationally infamous email 
+bomber/spammer -- were jx's unsolicited calls from a cloned cell 
+phone. Then later this guy told me his *only* contacts with jx were 
+via email. Tsk, tsk.
+
+================================================================= 
+ *** Linux Woes 
+=================================================================
+
+X-Sender: wbdhruss@pop.netspace.net.au
+
+I recently installed Linux (Slackware 3.1). I was all geared up for it 
+to be a very difficult task, but it was actually not too difficult to 
+get everything up and running (after digging up all the docs that came 
+with my PC). Anyway, I used umsdos.  I do not recommend it. True, you 
+do not have to repartition, but it has caused me problems. I get 
+reports of lost clusters (from Norton Disk Doctor) frequently, they 
+have not contained anything important as of yet, and I do not like 
+taking too many chances :P  another reason I do not recommend using 
+umsdos is linux takes up a lot more space than it would if it were in 
+its own partition... I think this has something to do with all the 
+tiny files associated with a linux system and the FAT on an msdos 
+partition... to just give linux a try, umsdos is fine, but it does not 
+seem to be a good 'way around' repartitioning or getting another HD :) 
+BTW, if anyone knows why I get the lost clusters, I would much 
+appreciate it if they would post an answer. one more thing... anyone 
+out there live in Gippsland?
+
+============================================================== 
+ *** Shell Account Stuph 
+==============================================================
+
+From: Warpy <warpy@null.net>
+
+On whenever some dude said this...
+
+>Question2, 
+>when I use uname, it says SunOS, but when I telnet to localhost, it 
+>is SystemV. What is this?
+
+The answer to that guys question is very simple. Versions of SunOS 
+above 4.1.3 are System V Release 4 (SVR4 for short). If he were to do 
+a uname -a he would find out what version of SunOS is running, and he 
+would see that it is one higher than 4.1.3.
+
+Versions up to 4.1.3 are Berkeley Standard Derivative (BSD) and for 
+some spack reason Sun decided to hop onto the SVR4 wagon after that..
+
+If he came up with something like SunOS 5.5.x, that means that the 
+system is running Solaris 5.5.x (which is what Sun prefers to call 
+sunos's 4.1.4 upwards). He might also like to know that a Solaris 
+buffer overflow came out a while back. If he were to do sum searching 
+around in back issues of BUGTRAQ, or any of the other security mailing 
+lists he might find it.
+
+Warpy
+
+================================================================== 
+ *** Port 19 Woes 
+==================================================================
+
+From: neMEsis <nemesis@minot.com>
+
+I was wondering what I had to change to keep from getting msgs when 
+people use the write command or the msg command. I also wondered if 
+there was a way to close out peoples access to the sh >/dev/ttyp 
+command without keeping me from using it.  One of my friends learned 
+of this trick and has been telnetting me to port 19 on our server 
+(which they say they have no reason to close even when I pointed out 
+the simple denial of service attacks that can be made from them). This 
+particular acct. is a university acct. Any help is appreciated.
+
+neMEsis
+
+Carolyn: All you sysadmins out there -- CLOSE PORT 19! CLOSE PORT 19!
+
+============================================================== 
+ *** IRC Question 
+==============================================================
+
+From: playa <zeigler@ucsub.Colorado.EDU>
+
+I run an ftp on a Mac (supplied by school) and the ftp program does 
+not have a way to distinguish users, since they all log on as the same 
+login/pass.  But, it does show their IP.  The only time that my ftp is 
+up is when I am on IRC.  So everyone on is on IRC as well.  SO, is 
+there a command that will give me a nick from an IP address?  Any help 
+would be appreciated.
+
+Thanks
+
+============================================================== 
+ *** Guilty of Using Jargon 
+==============================================================
+
+From: crash31@juno.com (Shun Chit [John] Sik)
+
+ I just want to begin by saying that I really like Happy Hacker 
+but since I an a newbie, I don't understand some of the terms that I 
+have come across. Like spammers, cookie killer and IRC. I guess that 
+is it for now. Can you please explain this to me please. Thanks. 
+Crash.
+
+Carolyn: Oops, sorry for using so much jargon.
+
+1) A spammer is someone who sends out lots of unsolicited email or 
+Usenet posts. A spammer could send thousands of posts to one news 
+group, or one post each to thousands of news groups. A spammer might 
+send one email each to thousands or millions of email addresses, or 
+might send thousands or even millions of emails to one email address. 
+The most infamous Usenet spammers is the Phoenix AZ law firm of Canter 
+and Siegal. The most infamous email spammer who sends only a few 
+emails each to millions of people is Cyberpromo. The most infamous 
+email bomber -- a guy who sends zillions of emails to each of the many 
+people he likes to bomb -- is johnny xchaotic. What every spammer has 
+in common is that they have to find ways to forge email. This is 
+because most people hate spammers, so spammers are always hiding.
+
+2) "Cookie killer" refers to keeping out the stuff that Web sites put 
+on your disk when you visit them. The people who put up Web sites 
+oftentimes like to store information on your disk about what you were 
+doing when you visited them. Then the next time you surf in, they read 
+what's on your cookies file and put more stuff there. They generally 
+do this to collect market research information on you. Since lots of 
+us think it is none of their darn business and resent them putting 
+stuff on our disks, we keep them from doing this.
+
+3) IRC stands for Internet Relay Chat. It's a wonderful way to waste 
+time, make friends, and conduct flame wars.
+
+=============================================================== 
+ *** Looking for Jakarta Hackers 
+===============================================================
+
+Please reply to imagekiwi@hotmail.com
+
+any hackers in the Jakarta Indonesia area, any level, especially if 
+you go to J.I.S ( Jakarta international school ). Email the address 
+above if so.
+
+- imagekiwi
+
+=============================================================== 
+ *** That's all, folks. Happy Hacking! 
+===============================================================

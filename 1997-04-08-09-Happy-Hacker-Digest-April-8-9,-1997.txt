@@ -1,0 +1,502 @@
+Happy Hacker Digest April 8-9, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Carolyn Meinel
+                 
+            
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you decide 
+you just want to use the forum and not get these mailings, we promise 
+       our feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+================================================================= 
+URL 'O the Day: http://ntbugtraq.rc.on.ca/index.html 
+Where to find Windows NT exploits 
+=================================================================
+
+Table of Contents
+
+Awesome Web Site 
+How to Catch Email Bombers and Other Spammers
+
+================================================================= 
+ *** Awesome Web Site 
+=================================================================
+
+From: ae630@pgfn.bc.ca (Tim Gutteridge)
+
+ I just found a great WWW site. It's at 
+http://kryten.eng.monash.edu.au/gspam.html. It's a page on spammers and 
+how to decipher headers to get them. It includes a whole bunch of tools 
+that you can use over the WWW, like traceroute, whois, and DIG. Time to 
+dig out How to Map the Internet Again...
+
+========================================================== 
+ *** How to Catch Email Bombers and Other Spammers 
+========================================================== 
+Please post ANON, because this is probably asking to be spammed.
+
+From: "Kevin Macey" <imagekiwi@hotmail.com>
+
+>From Imagekiwi, 
+>      Firstly, I was Looking through a new Zealand mag that my mom 
+>bought back from N.Z for me. And It told me of a great spam-stopper 
+>Program, called... 
+>"Spam Hater", that tells you the person's name, and ISP name.. Found at 
+>www.compulink.co.uk/net-services/
+
+I have tried this program "Spam Hater" and it works great.  I don't 
+really know if it will trace everything but from my tests it works 
+great.  It is definitely worth the download and it is also easy to use. 
+It picks up on the "U* ***** 3.0" program that seems to be the most 
+popular spammer program.
+
+Thank you for your time and please keep up the great work, it has helped 
+me learn a lot and continue on the "quest for knowledge"  please keep up 
+the hacking Windows 95 selection, it is my favorite.
+
+====================================================================== 
+ *** IRC Stuph 
+====================================================================== 
+please keep this anonymous
+
+>Sounds like an mIRC trick. The mIRC client supports coloured text.
+
+Or you could simply hold down the left mouse button and move the arrow 
+over the window. (marking text) 
+The color codes are stripped as long as you hold down the button :) 
+But I really liked that coding. (Mircoscript newbie as I am :-)
+
+====================================================================== 
+ *** Social Engineering 
+====================================================================== 
+From: "Stainless Steel Rat" <s_s_rat@hotmail.com>
+
+I have some comments on social engineering.
+
+It seems that a lot of misconceptions about social engineering. It sound as 
+if people want to believe that social engineering can be learned like a new 
+programming language or by simply reading some kind of "Beginners Guide to 
+Social Engineering".  Well, this couldn't be further from the truth.  I work 
+in the business and have been on the receiving end of some seriously lame 
+social engineering attempts.  Things like: "um, hi, um, this is the sysadmin 
+and, um, the big boss wants you to, um, change some permissions on some 
+files, OK?"  Sure thing sparky, I'll get right on it after I write down you 
+number off the caller ID box, now get off your daddy's computer and leave me 
+alone!  Social engineering and using a computer to get into a system are 
+completely different ball games which require totally different skills. 
+This is not to say that 
+social engineering is particularly hard.  In fact, it's pretty easy to get a 
+person to leak important information, provided the social engineer is good 
+enough.  However, it is one of the very few aspects of hacking/phreaking 
+where direct human contact and good social skills are needed in order to be 
+successful.  You have to give up a little bit of that anonymity which 
+Hackers/Phreakers/Crackers cherish so much.  On top of that, a lot of 
+computer geeks I know have about as much social grace as a drunk monkey (no 
+offense intended I'm a computer geek myself) much less enough savior faire 
+to charm vital system security information out of somebody.  So unlike 
+programming, social engineering takes a certain amount of innate *social* 
+ability which can not be learned out of a book or off an IRC.  Well, maybe 
+studying acting and psychology might help, but as far as picking it up out 
+of a text doc, you can forget it. 
+ SS Rat
+
+Carolyn: I agree heartily with this post. As a matter of fact, I make much 
+of my living from social engineering. This Happy Hacker list is social 
+engineering, a technique to discover and publicize the knowledge floating 
+around the hacker world.
+
+Guess what: the best social engineers never lie. We use our real names. 
+World-class social engineering is helping people to *want* to give you 
+information. That's why when you join this email list I make my association 
+with the Infowar site clear (we're the guys who fight computer crime) and 
+tell you where else to learn about me (http://cmeinel.com, or read about 
+me in the book Great Mambo Chicken by Ed Regis, Addison Wesley, 1990.)
+
+The international organization for us guys who make a living on social 
+engineering is the Society of Competitive Intelligence Professionals, 1700 
+Diagonal Road, Suite 520, Alexandria VA 22314. But you can't be a member if 
+you get caught telling lies or operating under a false name.
+
+But trust me, it is easier to get information by being honest than through 
+deceit. That's because it is really, really hard to lie in a convincing 
+manner. Since lying is also a rotten thing to do, why not go around patting 
+yourself on the back for being ethical while also making lots of money and 
+having fun doing social engineering the right way?
+
+====================================================================== 
+ *** Domain Name Question 
+======================================================================
+
+From: hwsnyman@medic.up.ac.za (LiquidMetal)
+
+Correct me if I'm wrong, but only American domains end with a .com 
+South African domains would end with a .co.za 
+Mmmmmmmmmm....Then how can "The Red Baron" claim to be a hacker from 
+South-Africa and have a @hotmail.com thingy... 
+(Unless he used a re-mailer....)
+
+Later 
+LiquidMetal
+
+Carolyn: Hotmail is a Web-based email system. You surf into your account 
+from anywhere in the world.
+
+Also, there is no law that says that a domain name must reflect the nation 
+of origin. For example, skyinet.net is an Asian ISP but uses the .net 
+domain. The US domain is .us, but how many US domains end with .us?
+
+===================================================================== 
+ *** Observations on the Latest User-Friendly DOS Attack Program 
+=====================================================================
+
+X-Sender: cyoung@northernnet.com
+
+hmmmm...still don't see it yet..but soon i will!!! and yes in a way i like 
+all that a*** a**** has on u******4.0 but i don't think it should come in a 
+program...if someone wants to ping someone off the net its fine with 
+me...but learn it and do the codes don't just type in the IP and hit "bomb" 
+on some stupid program...actually to me its more fun to learn it and do that 
+type of stuff with codes anyway...makes you feel better in the end also!! :o) 
+  
+=============================================================== 
+ *** Where to Buy Computer Manuals Online? 
+===============================================================
+
+From: Erica Douglass <edouglas@bonwell.com>
+
+Hi! I was reading some time ago in the HH Digest that there is a book 
+called _Secrets of Windows 95_ that tells how to edit the registry. Well, 
+I finally got some spare time and browsed around amazon.com, but came up 
+empty. I'd really like to learn how to edit the registry. I live in a 
+rural area and buy CDs and books online. If anyone can find this or a 
+book like it, could you please let me know? Thanks!
+
+Erica Douglass
+
+================================================================== 
+ *** More on Cracking 
+==================================================================
+
+From: Bryce Lynch <bryce@telerama.lm.com> 
+> From: BJ Johnson <bjjohnson@mail.usinternet.com> 
+> 
+> I'm thinking of installing Linux but my hard-drive is too small to put 
+> that on and leave Win 95 on.  I still want to have Win 95 as my main OS 
+> since I'm not the only user of the computer.  I was wondering if anyone 
+> knew how to install it (preferably Red Hat 4.1) onto a ZipDisk.
+
+It's easily done.  The newer releases of kernels (2.0.0+) have support 
+precompiled in for the parallel port ZipDisk.  You'll either have to run 
+LILO on your primary drive (don't know how your current bootloader will 
+like that), or go the boot disk route.  Either way, use Linux's 'fdisk' 
+utility to generate ext2 partitions on the Zip Disk and install away. 
+This also works on JAZ drives, BTW.
+
+> Hopefully then I would be able to use a bootdisk to switch over to Linux 
+> when I boot up.  I've read most of the How-To's at sunsite.com but 
+> haven't found any relevant information.
+
+Just treat it like any other hard drive.  If you try to do anything 
+special, you'll just mess up.  When you boot your install disks, mount 
+the ZipDisk just like you'd mount your regular hard drive (mount 
+/dev/sda4 /mnt) and go to work.  Just remember that /dev/sd4 is where the 
+kernel will put access to the Zip Drive, and you can't go wrong.
+
+> One idea I had was if it would be possible to use UMSDOS and just make 
+> it think that the ZipDisk is another partition on my hard-drive.  (If it 
+> makes any difference, it's the parallel-port version.)
+
+See?  You already know what to do!
+
+> Also, what programs/files would I need if I just want Internet 
+> software?  Thanks!
+
+Get the basic netpackage (I forget the archive name at present), pppd, 
+and maybe tinyX if you've a mind to go graphical (and can get Netscape to 
+work.  good luck).
+
+>         /usr/local/bin/ph -m alias=x /bin/cat /etc/passwd
+
+I've never really dissected the exploit, but I'll take a shot at it...
+
+/usr/local/bin/ph is the name of the SGI script you ran.
+
+-m is a command-line switch, though I do not know what it does at present.
+
+alias=c is another parameter, though I do not know what this means, either.
+
+/bin/cat is the command to run the 'cat' command which will display a 
+file to the standard output device (your screen).
+
+/etc/passwd is the location of the password file, which you're passing to 
+/bin/cat as a parameter.
+
+>  What does this mean? On some systems with the bug present, the password 
+> file follows, while on others, it doesn't. On one system I was on, I used
+
+On the sites it works on, a flaw is utilised which lets a remote user 
+look at any file on the system (which is what you did, with the password 
+file as a specific target).  You could just as easily add a line to the 
+password file 
+(/cgi-bin/phf?Qalias=x%0a/bin/echo%20"external::0:0::/root:/bin/sh) or 
+something like that.  You could probably write a program line by line on 
+the remote system, compile, and run it as well.
+
+> ls to see the etc directory. Since the password file was shadowed, I tried 
+> /cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/shadow, which I had just proved 
+> was present. However, all I got was /usr/local/bin/ph -m alias=x /bin/cat 
+> /etc/shadow and nothing after. Why is this? Is it hidden or something?
+
+It looks like the program you were using didn't have privileges to read 
+the file where the password strings are stored (which shoots down one of 
+my theories..  oh well).
+
+>         I know that only some UNIX commands work like this. Does rm work 
+> (I'm curious; I would have just tried if I wanted to delete something)?
+
+Don't know.  Why not use the exploit to create a file in the /tmp 
+directory, see if it exists, and then erase it and see what happens?
+
+> Carolyn: Congratulations, you have a shell account. But I am puzzled by why 
+> telnet localhost (same as telnet 127.0.0.1) gives you a different operating 
+> system. Anyone have ideas?
+
+It might just be a cosmetic difference.  You can change the login banner 
+easily.  Or he might not be on a SunOS box to begin with.
+
+> On my shell account I get about the same thing...there are individual menu 
+> selections for things like telnet and ftp.  If you want to run from a prompt 
+> so you can use things like whois etc... on mine I can just press ^Z  (ctrl + 
+> Z)  This drops me at a prompt where I can just enter commands.  If I do 
+> things like telnet from the menu I have to do something like this:
+
+If that's all you need to do to get to a shell, it sounds like you're 
+logged into a shell, and then your ~/.login file contains a command to 
+run the menu shell.  Just edit that file with pico or vi or something to 
+remove it, and it should drop you into a shell by default.
+
+> something of that effect. Once you get to the a prompt of any kind, its 
+> time to buy a few UNIX/Linux books (depending on your needs), then go from 
+> there! Note: better save up for these books - a lot of the good ones that 
+> can run up to $60. Personally, I recommend O'Reilly, as most people on this 
+> list would as well.....
+
+Libraries work miracles.
+
+Regarding people looking to find like-minded people to converse with in 
+their area:
+
+Buy an issue of 2600, and look for the meeting closest to where you 
+live.  Stop by the first Friday of every month, and just start talking to 
+people.  It's a great way to make friends even if they aren't heavily 
+into the h/p scene.
+
+Autarkis Aetherjammer
+
+============================================================ 
+ *** More IRC Wars 
+============================================================
+
+From: jsevilla@globe.com.ph (J. R. Sevilla)
+
+Hi Happy Hackers,
+
+I just had a bad experience in IRC.  Some guys at #teenmature of 
+irc.qdeck.com just took over my newly created #apprentice where I was op.  I 
+was just being friendly giving op to others but I think I was a bit too 
+friendly.  I was really mad and sad (now I'm no happy hacker). 
+I read about access levels and stuff but I can't quite understand how they 
+work.  I also wanted to know how I can prevent someone from de-opping me 
+even though I give him an op.  Please try to help me regarding this and 
+please be very elaborate in giving me instructions (I'm just a newbie). 
+Also, if you can help me avenge myself to those naughty, good-for-nothing 
+guys, please tell me how.
+
+Thanks very much Happy Hackers.
+
+=========================================================== 
+ *** Perl for Win 95 
+===========================================================
+
+Please make this anonymous.
+
+There is a port of Perl version 5 for windows 95.  The best place to 
+look for Perl ports or any other Perl stuff is the Perl Home Page 
+(http://www.perl.com/perl).  If that doesn't have what you're looking 
+for, try going to your favorite search engine and typing in "CPAN" 
+(stands for Comprehensive Perl Archive Network).  Hope that helps!
+
+Carolyn: Perl is a shell programming language. It is one of the two most 
+valuable languages for hacking (C++ is the other).
+
+=========================================================== 
+ *** Looking for Local Hackers 
+===========================================================
+
+From: Gebhardt <gebfam@utech.net>
+
+  I'm looking for beginning/intermediate hackers in the Santa Barbara 
+County area, specifically the Lompoc, Vandenberg AFB, and Santa Maria 
+areas.  Santa Barbara city, also, of course.
+
+-Silicon Sorcerer
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: Bjørn Jensen <Cyberbears@vip.cybercity.dk>
+
+I would like 2 know if N E 1 knows any hacker clubs in Denmark.
+
+Cyberbears.
+
+================================================================ 
+ *** Carolyn Puts on Propeller Hat 
+================================================================
+
+Carolyn: In case any of you have been following the anti-Happy Hacker flame 
+war on the dc-stuff email list, you may have been mislead on some technical 
+topics. So it's time to put aside my jokes and put on the propeller hat.
+
+1) Those guys are making a big deal about how I have supposedly been telling 
+people to telnet into keyboards, monitors and printers. The issue is not 
+whether you can telnet into them -- you can't, and I never told anyone they 
+could. But in defense of newbies, I have not gotten even *one* report of a 
+newbie trying to telnet into a monitor, printer or keyboard on account of my 
+not having beaten this point into submission.
+
+However, these guys are dead wrong when they claim only the numbered TCP/IP 
+ports can be called ports. Monitors and keyboard are also ports! A port is 
+defined as a anything that brings data (or "stuff" in the general sense) 
+into or out of a black box -- which could be a computer. Now if you were to 
+start calling your printer port the "printer thingie" on account of 
+believing the claims of the dc-stuff flamers that it isn't a port, people 
+will laugh their heads off at you.
+
+Another confusing thing in this flame war is some comments that a printer 
+cannot be used as a route to break into a computer. Wrongo! Today's printers 
+are in themselves pretty sophisticated computers. And, guess what, there are 
+many exploits which take advantage of not only printers but also device 
+drivers, which are the programs that tell an operating system how to 
+interact with devices such as, yes, a printer, monitor or keyboard.
+
+According to some of the flames I have gotten, I must have led people who 
+install Linux into thinking that when you install it, thousands of hardware 
+thingies must have to be added to your computer to handle each and every of 
+the kind of port that is a service, i.e. something you can telnet into. But 
+I have not gotten one single post from a newbie saying he or she thought 
+this. Guess what, newbies are not as dumb as those flamer d00ds think.
+
+But just in case there are legions of dazed newbies out there trying to 
+telnet into their monitors, here's the straight answer. If you give the 
+command "telnet #" where # is any number that gets you a result, guess what, 
+you are telnetting into a service. See the GTMHH "Port Surf's Up" for 
+details on what these ports and their services are. But basically a service 
+is a program which accepts your input and reacts to it in some way. If you 
+can't find a port number assigned to a port you want to access, for example 
+hda, that means it is a device driver, in this case a piece of software in 
+Unix that tells your computer how to port data to and from a hard drive.
+
+Also, there was mass confusion and derision on the dc-stuff list about my 
+comments on the Infowar IRC channel about "black boxes." First, a quick 
+question to those of you who have recently studied computer science. Do they 
+teach you guys nowadays about finite state machine theory? To sum it up, an 
+excellent way to model a control system -- for example, a computer -- is to 
+model it as a series of black boxes connected by lines coming out of or into 
+ports representing data flow and characterized by state transition 
+functions. The reason for modeling things this way is that you can perfectly 
+characterize the system without knowing anything about what is inside the 
+black boxes. All you need to know is how many black boxes do you have, what 
+are the ports, how are the boxes connected to each other, and what are the 
+state transition functions.
+
+In the case of the Internet, the services that we like to port surf make the 
+host computers on the Internet behave like the black boxes of finite state 
+machine theory. The software that we know as services are the state 
+transition functions. IP addresses define the black boxes, and the TCP/IP 
+protocol provides the I/O.
+
+What this means is that when you telnet over to a strange computer you don't 
+need to know what hardware it uses. You don't need to know its operating 
+system, or any of the programs being run on it. All you need to know is its 
+IP address and that -- to give a specific example --  when you give the 
+command "telnet strange.computer.org 19" you are asking it to run a 
+character generator (chargen) program. (You could also give the command 
+"telnet strange.computer.org chargen" and get the same results.)If it is 
+running chargen, then you get a string of ASCII characters in order that you 
+can use to check for dropped packets between you and that computer. It's 
+that easy.
+
+2) There has been a bunch of profoundly clueless talk about encryption on 
+the dc-stuff list, following up my April 2 appearance on IRC at Infowar. For 
+starters, you don't have to decide whether you should take my word or 
+someone else's word on this topic. You can read an excellent book on the 
+mathematical underpinnings of encryption -- and of the topic in general of 
+how do you tell whether it is possible to find an algorithm that can solve a 
+problem whose answer can be summed up as either "yes" or "no" fast, or 
+whether such a problem inherently is difficult to solve. The book is 
+"Computers and Complexity." It's out of print, but your nearest university 
+library can get it for you on Interlibrary Loan.
+
+Now if you like to get seriously into math, here is a more detailed 
+explanation of what I tried to get across to the encryption "experts" on IRC 
+at Infowar on April 2. Szechuan Death had asserted that DES (data encryption 
+standard) had been proven secure. But my response was that the only way one 
+can "prove" that *any* encryption technique is secure is if and only if many 
+unprovable assumptions hold true. As I mentioned on IRC, this even includes 
+such basic assumptions as the laws of commutation and association. (For 
+example, A*B is not equal to B*A if A and B are matrices!)
+
+Most significantly, the classes of P and NP-Complete may not be distinct 
+from each other. It is conceivable that someday someone may prove, for 
+example, that NP-Complete is a subset of P. In that case the house of cards 
+will collapse for public key encryption, and many other algorithms, too. But 
+there is no possible way to prove that NP-Complete is not a subset of P. We 
+can only say that problems within NP-Complete are all transformable to each 
+other by algorithms whose upper bound on the computational steps required 
+for the transformation is no more than a polynomial function of the size of 
+the problem N.
+
+The class P means the class of optimization problems whose answer is either 
+yes or no that may be solved in a number of iterations that is a polynomial 
+function of the number N of the elements of that problem. An example of the 
+class P is the spanning tree problem, in which N might represent a number of 
+cities and the spanning tree may be the highway system that may connect them 
+all with the shortest distance of highway.
+
+The class NP-Complete is short for nondeterministic polynomial time bound 
+complete, which is the class of optimization problems whose answer is either 
+yes or no that may be solved in a number of iterations whose upper bound is 
+a polynomial function of the number N of elements of the problem if and only 
+if the solver of the problem is supplied with a lucky guess 
+(nondeterministic) on how to solve the problem (in the case of encryption 
+the lucky guess is the decryption key). Otherwise, without the lucky guess 
+or decryption key, the upper bound of the number of iterations required to 
+solve the problem is an exponential function of the number of elements of 
+the problem N. "Complete" refers to the fact that that any problem which can 
+be shown to be transformable by a P type algorithm into any one problem 
+within the set NP-Complete may also be transformed into any other element of 
+this set by a P type algorithm. An example of an NP-Complete problem is 
+traveling salesman, where the objective is to minimize travel distance 
+through a set of cities without ever retracing one's path, ending at the 
+city where one began.
+
+Is your head spinning yet? What practical use is lots of math knowledge to a 
+hacker? Have you ever seen the movie Sneakers? The plot line is a 
+mathematician discovers a means to factor numbers using an algorithm that 
+has an upper bound that is a polynomial function of the size N of the 
+problem. This meant that RSA and PGP became worthless for encryption. All 
+the car chases and crawling through attics and murders and stuff of the rest 
+of the movie flowed from that premise.
+
+So watch out for a cryptic news announcement someday having to do with 
+factoring numbers. It could turn cyberspace upside down.
+
+============================================================= 
+ *** Is your head spinning? Had enough propeller head stuff? Good, because 
+this is the end of this Digest. Bye, folks!

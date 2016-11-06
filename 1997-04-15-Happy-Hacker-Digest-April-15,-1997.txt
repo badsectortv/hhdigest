@@ -1,0 +1,768 @@
+Happy Hacker Digest April 15, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Matt Hinze
+                 Send posts to: matt@cs.utexas.edu (Matt Hinze) 
+        [if you can, include a "HH" in the subject header] 
+               
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or 
+unsubscribe, use the subscribe boxes on the menu bars, please.. 
+If you decide you just want to use the forum and not get these 
+mailings, we promise our feelings won't get hurt if you unsubscribe 
+from this list. 
+  
+        H a p p y  h a c k i n g ! 
+================================================================= 
+=================================================================
+
+Table of Contents
+
+* Cookie Crunch 
+* Psuedo-Anon Mail From Port 25 
+* IP Spoofing 
+* Unsecured Telnet Port 
+* Linux Woes 
+* Understanding Unix 
+* New Linux Bug 
+* More On Social Engineering 
+* Domain Info 
+* Dos Telnet 
+* PGP Distributed Event 
+* Phrack Magazine 
+* Fighting Spam From Behind A Firewall 
+* Corewars 
+* by-pass Needed 
+* Hacking Windows NT 
+* Local Hacker Requests 
+* Note From Matt 
+  
+ 
+
+==================================================================== 
+*** Cookie Crunch 
+====================================================================
+
+From: Greg Chamberlin <grc@dimcom.net>
+
+There is some good information about "cookies" at 
+http://www.illuminatus.com/cookie.fcgi  You should find what is in a 
+"cookie" at this site.
+
+--------------------------------------------------------------------
+
+From: Stefan Anthony <stefan@college.antioch.edu>
+
+>How do you do this, set read only attribute to the cookie? I 
+>have a Macintosh with netscape.
+
+Setting a file's attributes to read only on the Mac is very simple.
+
+Simply locate and select the MagicCookie file in the Finder (it's in 
+your Netscape folder, found in your Preferences folder of your System 
+Folder), select "Get Info" from the File menu, and click on the 
+"Locked" check box in the "MagicCookie Info" window.
+
+If there are certain sites you visit regularly that use cookies, you 
+might want to consider "customizing" your MagicCookie file by visiting
+
+those sites and logging on - the New York Times web site, for example.
+
+When you're done and you're sure that you have only the cookies you 
+want written to your MagicCookie file, quit Navigator and then do the 
+above.
+
+>Can you screw up a cookie in other ways?
+
+What do you mean by this?
+
+There are several utilities that can automatically delete your 
+MagicCookie (and cookies.txt if you use Internet Exploiter), as well 
+as utilities like Cookie Cutter that remove "unknown" cookies from 
+your MagicCookie - for example you could set up Cookie Cutter to 
+remove all but the cookie created by the New York Times website.
+
+>Does anybody have an explanation to the code inside 
+>a cookie?
+
+Try searching past articles at Wired's Webmonkey. There was recently a
+
+decent piece on exactly how cookies and their contents work.
+
+<http://search.wired.com/architext/AT-Webmonkeyquery.html>
+
+ - Stefan Anthony
+
+======================================================================= 
+*** Psuedo-Anon Mail with Port 25 
+=======================================================================
+
+>I have a question that I hope you will be able to answer for me.  In 
+>GTMHH (Vol. 1 Number 2) "How to forge email -- and spot forgeries," 
+>you go over TELNETing via port 25 so as to send pseudo-anonymous 
+>email. However, the servers (is that the correct terminology) 
+>apparently are capable of identifying one's email address.  Is it 
+>possible so as to prevent a system from identifying one's email 
+>address (name and domain)?  If so, could you please enlighten me on 
+>the method(s)   :-)
+
+That's the beauty of faking email. YOU HAVE TO FIND THE RIGHT SERVER 
+FOR THE PURPOSE. Find servers running old versions of sendmail.
+
+===================================================================== 
+*** IP Spoofing 
+=====================================================================
+
+From: [anonymous]
+
+please keep this post anonymous:
+
+ Lately I have been reading a lot about "Ip spoofing" in which 
+an person(s) can assume your IP address and thereby send packet with 
+your Ip info allowing them to have access to any and all of your 
+personal files. My question is..exactly how do people do this? Is 
+there some type of program that they make or run or is it some 
+completely easy way to do this through Win95 or Unix?
+
+=================================================================== 
+*** Unsecured Telnet Port 
+===================================================================
+
+From: "Allen C. Benson" <acbenson@cris.com>
+
+Hi everyone-- 
+  
+I was probing a subnet 206.***.021 for other assigned IP addresses and 
+got 30 hits. I telneted to the first one which was 206.***.021.065 
+(postnet1.accessnv.com). To my surprise, I connected to this machine 
+without a USER ID or password! 
+Here's the opening screen:
+
+start screen output++++++++ 
+  
++------- POSTNET1 EDIT --------+ +--------------------+ 
++--------------------+ 
+ &Main Edit Menu                & &10-100 1            & &00-200 
+05:54:04     & 
+ &>Configure...                 & & Link  D            & &>M31  Line
+
+Ch    & 
+ & 00-000 System                & & B1    *            & & LAN session 
+up     & 
+ & 20-000 Ethernet              & & B2    *            & & 
+ascend1            & 
+ & 30-000 Serial WAN            & +--------------------+ 
++--------------------+ 
+ &                              & &20-100 Sessions     & 
+&ascend1             & 
+ &                              & &>  1 Active         & & Qual Good 7 
+Days   & 
+ &                              & & O ascend1          & & 112K    2 
+channels & 
+ &                              & &                    & & CLU   0% 
+ALU   1% & 
+ &                              & +--------------------+ 
++--------------------+ 
+ &                              & &20-300 WAN Stat     & &20-400 Ether 
+Stat   & 
+ &                              & &>Rx Pkt:    1184853^& &>Rx Pkt: 
+4397076 & 
+ &                              & & Tx Pkt:    1189652 & & Tx Pkt: 
+250573 & 
+ &                              & &    CRC:       1045v& & 
+Col:        564 & 
+ &                              & +--------------------+ 
++--------------------+ 
+ &                              & &00-100 Sys Option   & &00-400 HW 
+Config    & 
+ &                              & &>Security Prof: 1  ^& &>BRI 
+Interface      & 
+ &                              & & Software +4.6C+    & & Adrs: 
+00c07b631943 & 
+ &                              & & S/N: 6486531      v& & Enet I/F: 
+UTP      & 
+  
+  
+Press Ctrl-n to move cursor to the next menu item. Press return to 
+select it. Press Tab to move to another window --- thick border 
+indicates active window.
+
+end screen output++++++++
+
+This organization's computer appears to have a security hole you could 
+drive a VW bus through.  (May not last long once all you 'happy 
+hackers' drop in for a visit.)
+
+A friend told me about an IP address on this site that sent him some 
+unsolicted porno email garbage.  Couldn't find out who they were by 
+fingering or using the 'who is' command.  Couldn't find a path to them 
+running traceroute, either.
+
+I used a windows client called NS-Batch (available in both 16- and 
+32-bit versions) to probe their subnet (the first three octets of the 
+IP address) for other IPs and found 30 assigned IP addresses.  Haven't 
+tried telneting straight into any of the other 29 IP addresses at this 
+site.  I don't think my heart could take the excitment.  The last 
+octet of the IP addresses run sequentially from .065 through .094. 
+(In-other-words, 206.029.021.065, 206.029.021.066, 206.029.021.067, 
+206.029.021.068, 206.029.021.069, etc.)
+
+This might be a good site for a little Sunday afternoon port surfing.
+
+--Allen
+
+[Matt: I telnetted to this IP, which seemed to be an Ascend Max (I'm 
+unsure of the model number... 4000?) and got no response. You stumbled 
+across what could have been a huge problem for the ISP running this 
+machine. Cool.]
+
+==================================================================== 
+*** Linux Woes 
+====================================================================
+
+From: James Mastros <root@epix.net>
+
+> >Linux refuses to recognize my internal modem. 
+> 
+> Linux does something no other OS I have ever worked with does.  The 
+> configuration files for things like modems and video often require proper 
+> ASCII order.  If you have the driver listed in the file out of sequence, 
+> Linux can't find it.  Just a thought, but give it a try.
+
+If your modem is on a funky IRQ, you may need to do something along 
+the lines of "setserial /dev/ttyS2 irq 10".  This would set the IRQ of 
+ttyS2 (com3 under DOS) to 10, where it is on my system. Then do 
+"minicom" and CTRL-Z, O to configure it.  (BTW - you likely should 
+set the "META" key to ESC (first option under keybord/display 
+settings)).
+
+I do not know what you mean by "The configuration files for things 
+like modems and video often require proper ASCII order.", could you 
+please enlighten me?
+
+James Mastros/ The Orb 
+abszero@epix.net 
+Flame me by direct e-mail, not dc-stuff.
+
+----------------------------------------------------------------------
+
+From: hwsnyman@medic.up.ac.za (LiquidMetal)
+
+I'm still trying to figure out a way to check the amount of disk-space 
+left on my hard drive. can anyone please just give me a simple Linux 
+command that can tell me how I can do just that? Thanx!
+
+----------------------------------------------------------------------
+
+From: pheesh <morgue@cloud9.net>
+
+For all the newbies who just installed Linux on their 
+home box, and have a SLIP or PPP account, try this: 
+Log in as root and use an editor to edit the file 
+/etc/HOSTNAME. Change this to any name you like. 
+example:whitehaus.gov or just run netconfig and 
+change your hostname there. Next add a user with 
+the name of your choice. Example: ThePrez. Login 
+as Theprez, and change to your root console <ALT><F?> 
+connect to you SLIPP or PPP account and change back 
+to your new user console.  Now go into pine and 
+send a letter. Voila, instant anonymous email. 
+Id suggest trying this on yourself first. 
+Don't forget to reboot after changing your hostname.
+
+Note: Id suggest before posting to any newbie 
+group, try to find the info yourself. There are 
+countless resources out there, 'sides its more 
+than asking.
+
+Thanx 
+Pheesh, 
+morgue@cloud9.net
+
+"The hardest thing to change is a persons mind"
+
+---------------------------------------------------------------------- 
+From: psst <decco@hotmail.com>
+
+Hi,
+
+I'm writing you because of finger program. 
+I explain you: I've got that program running in my linux system, and 
+don't call me newbie (please !!! nOOO  ;) But really I can't see a 
+reason to close that port. All I see is that someone can see users who 
+are log in that moment in your system, but nothing more (isn't it?) 
+Or is there a bug that I dont know, or something they can do in order 
+to obtain my passwd file..... 
+I DON'T KNOW !!!!!!!!! :(
+
+Please, let me know....   :( --->  :)
+
+And I've got some philosophic question: 
+ Why is password file with read attribs for everyone? It could 
+work perfectly without it, passwd command is suid !! 
+  
+Waiting for your answers.....
+
+PD: I'm writing you from Spain, so sorry about my english (I guess, if 
+my letter is well-written, please let me know !!!  I'll call the TV !! 
+;)
+
+Saludillos       Psst
+
+====================================================================== 
+*** Understanding Unix 
+======================================================================
+
+From: playa <zeigler@ucsub.Colorado.EDU>
+
+>I was wondering what I had to change to keep from getting msgs when 
+>people use the write command or the msg command.
+
+I am new, but i know that my commands, (at a school also), are  mesg 
+yes and  mesg no  yes and no being on and off :)
+
+======================================================================= 
+*** IRC Questions 
+=======================================================================
+
+From: [anonymous]
+
+Hello again: more answers to your IRC questions: as always if you post 
+any part of this message, please keep me anonymous. Cheers :)
+
+>I run an ftp on a Mac (supplied by school) and the ftp program does not 
+>have a way to distinguish users, since they all log on as the same 
+>login/pass.  But, it does show their IP.  The only time that my ftp is up is 
+>when I am on IRC.  So everyone on is on IRC as well.  SO, is there a command 
+>that will give me a nick from an IP address?  Any help would be appreciated.
+
+Just type: /who *domain.name (for example if I wanted to know all 
+users on your machine I would type:
+
+  /who *ucsub.Colorado.EDU
+
+The only instances where this doesn't work is where the user is +i 
+(invisible) (ie: where the User has typed: /mode User +i ) which means 
+they don't appear in /who listings.
+
+Hope that helps.
+
+=================================================================== 
+*** New Linux Bug 
+=================================================================== 
+  
+From: "OD|phreak" <butler@tir.com>
+
+LINUX SECURITY BUG IN IP Masquerade
+
+Synopsis:
+
+A problem exists in IP Masquerade under Linux which allows traffic to 
+be passed to external networks even after the gateway host has been 
+halted. As long as a connection has been established from an internal 
+machine via the IP Masquerade gateway to an external host and the 
+Ethernet interfaces inside the machine are still being supplied power, 
+that connection will stay online in a fully interactive state.
+
+Even worse, that connection will stay online even if the IP Masquerade 
+gateway machine is rebooted.  During a soft reboot, the connection 
+will stay online in a fully interactive state.  During a cold reboot, 
+the connection will lose interactivity until the IP Masquerade gateway 
+machine comes back online.  After that, the connection will regain 
+interactivity.
+
+Impact:
+
+During an incoming or outgoing attack, systems administrators may use 
+the "kill switch" tactic to stop the attack and shut down the gateway 
+machine involved in the attack.  This creates a false sense of 
+security with that systems administrator thinking that the attack has 
+been successfully stopped.  In reality, the connection in question is 
+totally unaffected by the system shutdown.
+
+C-ya 
+od^phreak 
+ 
+
+======================================================================= 
+*** More on Social Engineering 
+=======================================================================
+
+From: "Stainless Steel Rat" <s_s_rat@hotmail.com>
+
+If people are really interested in learning  more about some stuff 
+that really relates to SEing, they should check out NLP 
+(Neuro-Linguistic Programming) on the web.  NLP is the study and 
+practice of using words, body actions, proximics, and other 
+psychological techniques to prescribe human behavior.  Below are some 
+of the NLP URLs I frequent.  Unfortunately, NLP is often (and 
+mistakenly I might add) associated with hypnosis, so you might 
+have to shift through some new age garbage to find what you're looking 
+for.
+
+http://www.instatek.com/nlp/ 
+(sort of written for hippies, but it has some good stuff)
+
+http://home.earthlink.net/~jbodnar/nlp.html 
+(a whole boat load of of good links)
+
+http://www.nlpcomprehensive.com/ 
+(some reel good intro. stuff here)
+
+SS Rat
+
+================================================================== 
+*** Domain Info 
+==================================================================
+
+From: Eric Anderson <keric@fv.com>
+
+>      I am in need of a bit of help.  This is my situation:  Two of my 
+> friends are receiving e-mails from a person who will not reveal his/her 
+> identity.  These letters contain information which only someone who is 
+> observing my friends closely would know.  The person made a big mistake, 
+> though----he/she gave a real e-mail address rather than some fake one or one 
+> such as the one I am using now.  The e-mail address is waves@barint.on.ca 
+> barint.on.ca exists yet when I try to finger this address, it says that 
+> access is refused.  Whois says that the mailbox 
+> does not exist.  I have tried to reach the sysadmin with no luck and I have 
+> tried to track down the address over the Internet but with no first or last 
+> name it is rather difficult.  If you have any suggestions, I would greatly 
+> appreciate hearing them.  If you would like to post this to the Happy Hacker 
+> list, that might also help.  My friends are starting to get worried and they 
+> do not know much about computers.  I am a Newbie so am not familiar with 
+> everything yet.
+
+#N      .barint.on.ca 
+#S      .CA Domain; 
+#O      Barrie Internet Inc. 
+#C      Leanne Knebel 
+#E      sysadmin@barint.on.ca 
+#T      +1 (705) 733 2476 
+#P      Barrie Internet, 169 Bayfield Street, Barrie, Ontario, Canada 
+#L      44 53 N / 77 7 W city 
+#R      Automatically generated from a .CA domain registration form 
+#W      registry@cs.toronto.edu (UUCP Liaison); Fri May 24 19:53:28 
+-0400 1996 
+# 
+#       barint.on.ca is a For-Profit Corporation 
+# 
+#       Barrie Internet provides communication services to clients 
+#       in the Barrie and surrounding regions. 
+# 
+#       received: Wed, 22 Feb 1995 19:00:00 -0500 
+#       approved: Wed, 1 Mar 1995 19:00:00 -0500 
+#       modified: Thu, 23 May 1996 20:00:00 -0400
+
+--
+
+-------------------------------------------------------------------- 
+ Eric Anderson   First Virtual Holdings  CyberIron Bodybuilding 
+ Unix Sys Admin   <http://www.fv.com/>   <http://www.cyberiron.com> 
+ <keric@fv.com>      San Diego, CA       <keric@cyberiron.com> 
+-------------------------------------------------------------------- 
+     "..and then my doctor said my nose wouldn't bleed so much 
+      if I just kept my finger outta there!" -- Ralph Wiggum
+
+=============================================================== 
+*** DOS Telnet 
+===============================================================
+
+From: "Kevin P. Kreutzer" <kreutz@cyberia.com>
+
+Where can I get a telnet for MSDOS?  I mean I do not want the Win95's 
+telnet.
+
+Thank you for your time. 
+Kevin   8-{)}
+
+==================================================================== 
+*** PGP Distributed Attack 
+====================================================================
+
+From: Aleph One <aleph1@DFW.NET>
+
+CYBERSPACE, 31 March 1997 - This is to announce the first truly 
+distributed attack on the popular PGP encryption/authentication 
+program. In 24 hours, users all across cyberspace can assist in 
+'factoring' a 1024-bits PGP public key, using a Java applet specially 
+written by a team of 'cypherpunks'.
+
+To make this attack successful, we need as many people as we can find 
+to run this program on their computer. As Java applets can be run 
+by anyone with an Internet connection and a modern operating system 
+like Windows '95(tm), OS/2(tm) or Linux(tm) with a web browser such 
+as Netscape Navigator 2.02 or above, everyone can join in. All you 
+need to do is download the applet from the URL given below, and run 
+it. The applet will send the results of its factoring attempts to 
+a preconfigured e-mail address automatically.
+
+Some background information: a PGP key is considered unbreakable 
+because it consists of a product of two very large prime numbers. The 
+only way to 'crack' the key is to find the two prime numbers. This 
+applet does exactly that. Each user who downloads the applet also is 
+assigned a range of numbers to try. If at least 144,000 users download 
+the applet, and run it for 24 hours on a computer at least as powerful 
+as a 486, the entire keyspace will be searched. At least one of these 
+users will then find the two prime numbers that make up the secret 
+key, and then the key has been 'cracked'. 
+(Note to techies: the method used is the Distributed Special Number 
+Field Sieve, as developed by David Scott <dscott@ridgecrest.ca.us>)
+
+The URL for the factoring applet is 
+                    <URL:http://paranoia.stardot.com/>
+
+To keep track of the number of users that are running the applet, 
+and to communicate with other participants in this exciting event, 
+the IRC channel #pgp-factor will be available tomorrow all day.
+
+-----BEGIN PGP SIGNATURE----- 
+Version: 2.6.3i 
+Charset: noconv
+
+iQCVAgUBM0AZ0jyeOyxBaho1AQGNWAQA1VYMWDhmb1OAfkd3xz2lhLhqXEPx+p3T 
++rAwmrUHTaQHu3lma9QryhzlxoV+nqJIWVj/ozYaBIDNmICZG5XI+k/LhU1RNQuC 
+mbtoYH6VqQCCEmIEJcL2hIlW81NOmFVPl8TlXIoDNrnnk4gAm5BQ4DMVSG4PU5pl 
+jhXYvJmz48Y= 
+=HDo5 
+-----END PGP SIGNATURE-----
+
+-- 
+Submissions for this group: 
+<URL:mailto:pgp-announce-submit@news.pgp.net> 
+Comments about this group: 
+<URL:mailto:pgp-announce-moderator@news.pgp.net> 
+Guidelines for submission are posted weekly to the newsgroup. 
+The PGP FAQ is at <URL:http://www.pgp.net/pgpnet/pgp-faq/>
+
+==================================================================== 
+*** Phrack Magazine 
+==================================================================== 
+  
+From: G P R <route@RESENTMENT.INFONEXUS.COM> 
+-----BEGIN PGP SIGNED MESSAGE-----
+
+                    P H R A C K   M A G A Z I N E
+
+              - - [ P H R A C K   M A G A Z I N E ] - -
+
+                    P H R A C K   M A G A Z I N E 
+ 
+
+Phrack Magazine, the premier underground electronic publication, is 
+proud to announce issue 50.
+
+Some of the features in this issue:  TTY Hijacking, SNMP 
+vulnerabilities, Cracking Windows NT passwords, PC Application 
+insecurities, and much more.
+
+This issue is also much more code-laden than any previous issue, with 
+just under 5000 lines of C source code.
+
+Due to sheer volume, we are no longer mass-mailing Phrack Magazine. 
+Please trod on down to a distribution site nearest you:
+
+    ftp://ftp.infonexus.com/pub/p50.tgz
+
+    http://www.nmrc.org/compute/intrude.html
+
+    http://www.fc.net/phrack [ SOON TO BE -> http://www.phrack.org ]
+
+    ftp://ftp.ishiboo.com/phrack/p50.tgz 
+ 
+
+If you have a fast link and wouldn't mind offering Phrack Magazine to 
+the world, (we are always happy to have another distribution site) 
+please email
+
+                phrack@infonexus.com
+
+and let us know.  To be added to the mailing list, please email the 
+above address.
+
+Comments and submissions should be sent to:
+
+                phrackedit@infonexus.com
+
+- -- 
+[human acquiescence is as easily obtained by terror as by temptation]
+
+-----BEGIN PGP SIGNATURE----- 
+Version: 2.6.2
+
+iQCVAwUBM1GOrwtXkSokWGapAQFUpQP/dH/6fQYt4qUum3OX8IiC8Kv7LOeU2wRW 
+vrf2MEmc9Akg22kt+sDdz2Kl3uvXKKJZsFzRTBmQvmscZCdLomYihbAZavGkcjQc 
+QlQJ4k8MawWHYUFiw6u68tMI70FOup22s6PGCnPYFkqY1hHYagDyUcdzg22M7l5N 
+zrpvUbcLnBI= 
+=xgXT 
+-----END PGP SIGNATURE-----
+
+[Matt: I've been hooked on Phrack for years. Read every issue (even 
+the old ones; even though they're outdated, they can be useful)!]
+
+====================================================================== 
+*** Fighting Spam From Behind A Firewall 
+======================================================================
+
+From: Meino Christian Cramer <root@solfire.ludwigsburg.netsurf.de>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+
+Hi Hackers!
+
+I have a problem, which needs a "hackish", but "legal" solution.
+
+In my company I am sitting behind a firewall. The company uses 
+an intranet for information interchange and a "Company wide web". 
+Some newsgroups are mirrored inside the company. We can recieve mail 
+from outside the intranet and can answer mails to some selected 
+addresses.
+
+For whatever reason a damned commercial porn site has discovered my 
+intranet address, maybe by scanning the newsgroups, I have 
+answered some questions to Linux there.
+
+They wrote in their mail: "To remove yourself from the 
+mailing list, response this mails with ..... "
+
+The problem is: 1.) I am not allowed to write a mail 
+to theis site, the firewall says "NO!" 
+2.)  If I will forge a mail with this intranet address 
+from my home Internet access, this "company inside" 
+address becomes known outside. I better don't imagine 
+what will happen then. 
+3.) If I will answer with my private address, the "remove" 
+will fail, because it does not match the original intranet 
+address.
+
+So, WHAT? the hell should I do to get rid of this d****d 
+commercial mails ???
+
+Thank you in adnvance for all help.
+
+PS: 
+Sorry for my buggy english, next mail will be in "C"... ;-)
+
+KEEP HACKING! 
+meino 
+...who dances with modems...               ;-)
+
+- ---------------------------------- 
+E-Mail: Meino Christian Cramer <root@solfire.ludwigsburg.netsurf.de> 
+Date: 14-Apr-97 
+Time: 16:59:45
+
+This message was sent by XFMail 
+- ---------------------------------- 
+-----BEGIN PGP SIGNATURE----- 
+Version: 2.6.3ia 
+Charset: noconv
+
+iQB1AwUBM1JmZIUmyuOIWAxBAQG67wL/XHY6E5fnIxGneugsAzx0CQ9j9dvtPLcj 
+dS3TzfSneHvlARhqoVVG1IdK5GGYZxu9oghdIf6X+Gn1g3v9bZlbX/b9APMNm0W3 
+wWwA/CUikJhGhSsJHONlVDkn4K0tmope 
+=+AbS 
+-----END PGP SIGNATURE-----
+
+====================================================================== 
+*** Corewars 
+======================================================================
+
+From: Robert Finger <finger@rust.net>
+
+I love the idea of corewars, but I would like to see one more angle 
+to it. It would be really cool if the winners/ losers would publish a 
+short explanation of what they did to win. (if you don't want to give 
+details, that is cool but give at least generalizations about the 
+attack.) Also it would be really cool to hear what the other team did 
+to prevent the attack. fe: what patches etc they came up with to make 
+their system secure. 
+                                Finger
+
+====================================================================== 
+*** by-pass Needed 
+======================================================================
+
+From: ors5@aber.ac.uk (Olly S)
+
+Hi, 
+  Just a quick question. I am having trouble exploring a system which 
+is armed with visionsoft disclock v5. From what i have found it needs 
+a file called by-pass to get in. Can anyone send me a copy of this 
+file or is there such a thing as a Tsr unloader that would run under 
+windows 3.11 as i can only get to dos under a windows shell. 
+                                Cheers 
+                                  Olly S 
+P.s A system disk does not work either as the hard drives disappear. 
+**************************************************************************** 
+        I Got Places To Go........ 
+                  Things To See.............. 
+                          And A Lecturer Who's Going to Kill Me!!!!!!! 
+****************************************************************************
+
+====================================================================== 
+*** Hacking WindowsNT 
+======================================================================
+
+From: TorinEdge <the_ace@mail.klondike.com>
+
+A friend of mine (superhacker range) is able to get into a win95 or NT 
+box and edit/delete/create anything he pleases.... he uses a combo of 
+winIPcfg and a finger util. all he needs to get in is a username(I 
+think, I know he can do it if he has a username and password, it 
+doesn't matter what his access is set to.) 
+If ya can answer that then I hail to u 
+CYA L8R
+
+ ----',-@ The Ace @-,'--- 
+   ...& Company
+
+[Carolyn: It depends on how Win NT is configured. Of course, as shown 
+in the GTMHH Beginners Series No. 2 part 2, Win 95 is trivially 
+hackable. You can get a pretty good picture of almost all the NT 
+exploits that have been discovered at 
+http://ntbugtraq.rc.on.ca/index.html.]
+
+====================================================================== 
+*** Looking for Local Hackers 
+======================================================================
+
+Goldsboro, North Carolina 
+m8g7h3gb@abaco.coastalnet.com 
+Nicolos L. Mason
+
+Illinois 
+cybergod@crtelco.com 
+InSaNe-KiD 
+ 
+
+====================================================================== 
+*** Note From Matt 
+======================================================================
+
+A few things:
+
+I'm sure, if I haven't already, I will make (possibly egregious) 
+technical errors. I welcome criticism and correction. If you have 
+suggestions, please send them my way - I (generally) have an open mind 
+about most things. :)
+
+Also, I want to explicitly state the criteria for your posts making it 
+to the digest: Posts must either ask for information or provide 
+information about computer security. That includes social engineering, 
+cracking, phreaking, programming, and abstract ideas related to the 
+field. All requests for local hackers will be consolidated as above. 
+Of course, nothing is too technical, but the Happy Hacker Digest is 
+directed to computer security neophytes. Keep that in mind when 
+posting.
+
+If you have anything that you want me to see (as opposed to the whole 
+list: flames, corrections, critiques, etc..) just use my email 
+address, matt@cs.utexas.edu , I'd love to hear from you.
+
+-----------------------------------------------------------------------
+
+Happy Hacking!!!

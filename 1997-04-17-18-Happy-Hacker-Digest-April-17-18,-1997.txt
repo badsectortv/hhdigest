@@ -1,0 +1,502 @@
+Happy Hacker Digest April 17-18, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Matt Hinze
+                 Send posts to: matt@cs.utexas.edu (Matt Hinze) 
+        [if you can, include a "HH" in the subject header] 
+               
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or 
+unsubscribe, use the subscribe boxes on the menu bars, please.. 
+If you decide you just want to use the forum and not get these 
+mailings, we promise our feelings won't get hurt if you unsubscribe 
+from this list. 
+  
+        H a p p y  h a c k i n g ! 
+============================================================================= 
+URL of the day: http://www.cs.utexas.edu/matt/hh.html 
+=============================================================================
+
+Table of Contents: 
+------------------
+
+* Happy Hacker Digest Webpage 
+* No Longer Unsecured Telnet Port 
+* Anonymous Remailers 
+* Which Tool for the Job? 
+* Sheel Account 
+* IP Spoofing, etc.. 
+* mIRC Email Spoofing Update (Correction) 
+* Linux Security in IP Masquerade (Comments) 
+* More on mesg [y|n|?] 
+* REMOTE Vulnerability in PHP/FI 
+* Port 21
+
+------------------
+
+============================================================================= 
+*** Happy Hacker Digest Webpage 
+=============================================================================
+
+I have set up a Happy Hacker Digest Webpage at 
+http://www.cs.utexas.edu/matt/hh.html. The HH Webpage contains links 
+to sites discussed in recent issues of the digest, "URLs Of The Day", 
+and a link to k1netik's Happy Hacker Digest Archive. Expect updates 
+the day after the most recent digest is sent out. If you have 
+suggestions or questions regarding the webpage, send them to me, at 
+matt@cs.utexas.edu. Check it out!
+
+Thanks, 
+Matt
+
+============================================================================= 
+*** No Longer Unsecured Telnet Port 
+=============================================================================
+
+From: "Mark Obrembalski" <markobr@hrz1.uni-oldenburg.de>
+
+> I was probing a subnet 206.***.021 for other assigned IP addresses and 
+> got 30 hits. I telneted to the first one which was 206.***.021.065 
+> (postnet1.accessnv.com). To my surprise, I connected to this machine 
+> without a USER ID or password! 
+> 
+> This organization's computer appears to have a security hole you could 
+> drive a VW bus through.  (May not last long once all you 'happy 
+> hackers' drop in for a visit.)
+
+When I tried to connect, the telnet port of 206.29.21.65 wanted a 
+password but no ID. The telnet ports of the following IP-numbers were 
+closed. *.*.*.72,75,80-94 seemed to be totally down.
+
+On the web site www.accessnv.com, they write something about some 
+changes and repairs to be done this weekend. Could it be possible, 
+that you just went in when some security was switched off for 
+repairing purposes or anything like that?
+
+On 206.29.21.66, port 80 is open with a HTTP 1.0 server. Netscape 
+doesn't show anything but an image icon with a 
+big "?" on it. Is it possible to send commands to the server by 
+telnet?
+
+Mark Obrembalski, Eichenstr.107, 26131 Oldenburg 
+                  Schienerbergstr.4, 78315 Radolfzell 
+                  Anrufen zwecklos, Mail geht schneller. 
+  
+============================================================================= 
+*** Anonymous Remailers 
+=============================================================================
+
+From: John <wizard@bga.com>
+
+looking for any info on anonymous remailers -- those friendly services 
+that you send mail to, and then they send it on to its destination 
+after stripping pertinent header information (thereby making it near 
+impossible to track the letter to you).
+
+NO no no, I'm not going to spam or otherwise annoy people.  I just 
+want to be able to send mail from work without revealing my last name.
+
+john
+
+[Matt: Let me refer you to the Raph Levien's Anonymous Remailers 
+webpage at http://www.cs.berkeley.edu/~raph/remailer-list.html, it has 
+just about everything you will need.]
+
+============================================================================= 
+*** Which Tool For the Job? 
+=============================================================================
+
+From: Shapr <shapr@uab.edu>
+
+Personally, I'd like to see more hacking tools locations. 
+I've learned much from figuring out netcat from the l0pht 
+tools. Of course, tracert and nslookup. I've enjoyed 
+nbtstat under Win95 for playing with NetBEUI stuff on the 
+same wire as my machine. Also, check pwdump and the Crack 
+5.0 modified for NT passwords and PWDump output. 
+There's a nifty NetBIOS program that checks for idiotic 
+passwords on any machine reachable with NetBIOS (as far I 
+understand NetBIOS is non-routable, gotta be on the same 
+wire) hmm, where did I put that one? My current project 
+is SNMP, I'd love to hear more about the weaknesses in it. 
+I'm not picky about which platform I use for investigating 
+I equally use Unix, Win95, Win3.1, MacOS 7.5.5, whatever. 
+If you want to learn lots fast, try subscribing to BugTraq 
+NTBugTraq, of course this list :) 
+I do have a silly question thatI've never quite figured out 
+the answer to, how do you grab all the DNS names for a 
+certain domain? such as *.cmu.edu how do you find this? 
+I think it's hiding in nslookup, since I can find out 
+*.myuniversity.edu by doing ls myuniversity.edu 
+but I don't know how to switch the domain I'm using. 
+Thanks, Shapr 
+shapr@uab.edu
+
+============================================================================= 
+*** Shell Acocunt 
+============================================================================= 
+ 
+
+From: ".o0ORSNAKEO0o." <rsnake@ecst.csuchico.edu> 
+  
+> when I use uname, it says SunOS, but when I telnet to localhost, it is 
+> SystemV. What is this? 
+> 
+> Carolyn: Congratulations, you have a shell account. But I am puzzled by 
+> why telnet localhost (same as telnet 127.0.0.1) gives you a different 
+> operating system. Anyone have ideas?
+
+ I saw something similar on a remote ISP.  I telneted there and 
+it gave me a really old version of slackware, and then uname revealed 
+that it was the newest version.  The security admin hid what the real 
+version was so that people would use out-dated attacks on the IPS, in 
+an attempt to halt specific hackers.  He also did this by modifying 
+sendmail and a couple other commonly used exploitable programs.  One 
+way you can do another check is by going to 
+http://www.anonymizer.com/cgi-bin/snoop.pl 
+It should tell you the type of box you are running (if it matches with 
+SunOS or SystemV you know which one it is).  Hope that helps!
+
+============================================================================= 
+*** Ip Spoofing, etc. 
+=============================================================================
+
+From: "IO Scream" <ioscream@hotmail.com>
+
+1>  What has happened to Silicon Toad's Site?
+
+[Matt: Evidently it's being moved. Try the Austrailian mirror at 
+http://www.infinity.webhost.com.au/]
+
+2>  OK... I have a good topic for the next GTMHH.  How about "An 
+Introduction to IP Spoofing"?  I have heard a lot of talk about it.  I 
+understand TCP/IP and its purpose but I am confused as to how to send 
+a packet with a "faked" header. I do _NOT_ want to know the website of 
+some hacker who has graciously written some click button program to do 
+this for me.  I want to understand it.
+
+[Matt: There is a text on IP Spoofing at Bronc Buster's New Buckaroos 
+Page, which can be found at: 
+http://main.succeed.net/~bbuster/hacking/new/ipspoof.txt] 
+ 
+
+Thank you for your time...
+
+IOScream -----------------> Faster than a speeding electron!
+
+============================================================================= 
+*** mIRC Email Spoofing Update (Correction) 
+=============================================================================
+
+From: pc2000 <pc2000@hooked.net>
+
+Happy Hackers:
+
+Well after I posted my spoof on sending email via mirc I got quite a 
+few emails telling me it didnt work, I looked at the code and I forgot 
+to add one thing. SO below is the right code that will work.
+
+Here it is:
+
+/mail { 
+  raw -q privmsg $me : 
+DCC CHAT CHAT $$1 $$2 $+
+
+}
+
+/long /echo 6 $longip( $$1 )
+
+Copy and paste it directly as I have it here cause the little box 
+makes a difference. Try it now it will work. you will dcc chat 
+yourself, accept it and follow my instructions from my last post.
+
+PS. I also got emails sayn "mail command don't work" Well you have to 
+paste my lines of code into your alias section in mirc to use the 
+/mail command. Have fun and email me if it don't work right (maybe 
+word wrapping in yer email program screws up my code so it looks 
+different) If that is the case I will email anyone who asks me a text 
+file with it all instead.
+
+:pc2000
+
+[Matt: Thanks for the update.]
+
+============================================================================= 
+*** LINUX SECURITY BUG IN IP Masquerade (Update) 
+=============================================================================
+
+From: pmurgs@iafrica.com (P. Murgatroyd)
+
+>LINUX SECURITY BUG IN IP Masquerade 
+> 
+>Synopsis: 
+> 
+>A problem exists in IP Masquerade under Linux which allows traffic to 
+>be passed to external networks even after the gateway host has been 
+<snip> 
+>been successfully stopped.  In reality, the connection in question is 
+>totally unaffected by the system shutdown. 
+> 
+>C-ya 
+>od^phreak
+
+More info from od^phreak. Wouldnt it be nice if he actually credited 
+the person who posted this to the sneakers/dc-stuff/bugtraq list two 
+days ago (cant remember which list I recieved it from or from who). By 
+not crediting anyone else, he is makeing it look like he found it out 
+and is revealing it to the public.
+
+BlueRain
+
+============================================================================= 
+*** Response to Warpy's Advice (In HHD 4/16/97) 
+=============================================================================
+
+From: "BeAvEr" <beaver11@themall.net>
+
+This is BeAvEr.  I was reading the April 16 GTMHH, and was "ROTFL" 
+when I read Warpy's comments towards the "Newbie Community"  Shame on 
+you Warpy, for being so rash and predejust (Excuse the Spelling) 
+towards a community of newbies you have never met and assume to know. 
+God-forbid if I am not as intelligent as you are.  And God-forbid you 
+can't have one ounze of empathy towards people who aren't as 
+experienced as you.  If you haven't figured it out yet, Warpy, YOU are 
+a rolemodel.  All the newbies look up to people like you.  We want 
+what you have; knowledge and experience.  But instead of helping us, 
+instead of being friendly.  You pull out a torch and we end up 
+discouraged w/third degree burns.
+
+Beyond all the expectations of how you "should" treat newbies, you 
+should realize that we are ALL individuals.  We shouldn't get flamed 
+for asking a question YOU know the answer too.  There are always other 
+ways of finding out infomation.  But if you know the answer, why make 
+it harder.  Why make something hard when it has the possiblity of 
+being easy.  Warpy, can you honestly expect every newbie to install 
+Linux, when they don't even know what it is.
+
+It is crazy to think that this is what boils down too.  Bitter hackers 
+who flame newbies for asking questions.  I know I am trying.  I get an 
+E for effort.  I want knowledge, and I shouldn't have to worry about 
+who to ask for it Wheither we use Windows, Linux, VMX, or any other 
+O/S, we are still aiming towards the same goals.  If anything we 
+should help each other. That is what this list was started for.  I 
+praise the GTMHH.  It has helped me fa beyond what I ever asked of it. 
+And my sastisfaction comes with knowing that I did with all the 
+"Elite" hackers laughing in my face.  With your knowledge comes a 
+responsibility.  You should learn to harness it, instead of abusing it 
+with FLA(\/)eS.
+
+[Matt: I think that Warpy was actually trying to help the newbie 
+community. By finding out information on your own, you retain it (plus 
+you learn other stuff in finding out what you originally wanted to 
+know!), as opposed to just being told, or having someone else do it 
+for you.]
+
+=============================================================================
+
+From: Dave Weir <DWeir@NFA.Futures.Org>
+
+Having read the 4/16 HH digest I have to agree with Warpy about silly 
+(dumb) questions that are being fielded by some of the readers.  Since 
+I have started hacking, and started getting the digest I have had to 
+laugh at some of the questions that posted and asked.  Warpy is right 
+in regards to the amount of information that is asked for by ppl.
+
+Yahoo and AltaVista weren't developed for the hell of it.  Use them. 
+Many times I have been temped to ask questions in this forum, but have 
+thought against it because I can find what I'm looking for faster 
+through the search engines.  There is so much information out there 
+that it is overwhelming.  It might take some time to find what you are 
+looking for, but its there.
+
+What I enjoy about the HH digests are the hacks that people find and 
+share, or the insight of security or other issues that are faced by 
+the computer world.  I'm not asking for a sessacation (sp) the silly 
+questions, just that ppl take the time to research the internet first, 
+if you cant find then post the question.  But only after you have 
+exhausted all the resources that are available to you.
+
+Peace
+
+Skurp
+
+=============================================================================
+
+From: Warpy <warpy@null.net>
+
+>(Carolyn: Warpy, all us people who enjoy legal hacking are happy to 
+>identify ourselves and help others to learn. True, recently it has 
+>become a big deal among certain elements of the hacker world to 
+>believe that if something is legal, it isn't real hacking. I say 
+>"pooh" to them.)
+
+Hrmm.. Carolyn, I LOVE legal hacking, there is nothing more fun than 
+busting root on Leprekon's box when he calls himself a "unix security 
+consultant". Mind you however his OVERALL knowledge is heaps better 
+than mine and in all honesty, i'm not much more than an exploit kiddy. 
+Though I have made an effort recently to learn to code.
+
+Another thing. I have always made it clear to newbies that I will help 
+them to learn, however I have also made it clear that I will NOT 
+spoon-feed them. They MUST use their brains first. If they come onto 
+#hackers at infowar asking: "how do i hack a web page" i feel the urge 
+to shout, rant, rave, and throw things at them, because there is SOOO 
+much you need to know before you can even contemplate hacking a web 
+page. You would need to know the system which is hosting the web pages 
+OS, you would need to know and understand how that particular OS 
+works, then you would need to know both remote and internal exploits 
+and how to clean up your tracks once your done. Answering all that is 
+just a tad too much for one person, especially when you can collect 
+most of that info from the net itself.
+
+In regards to improving security. I would be very interested 
+(philosophical question approaching) to see just how many of these 
+raving fanatical newbies out there actually read this to see how they 
+can "improve their security" rather than how they can bust past the 
+security. See, I believe most of them are more interested in the 
+breaking of security than the improvment of it. I myself have more 
+recently been looking into "why" the exploits work and how to protect 
+my own system from it, whereas b4 all i used to be was an exploit 
+kiddy running around phf'ing every bloody system i could find, and 
+getting root with exploits written by other people, which I had NO 
+understanding of how they worked. I however now recognise this as lame 
+newbiesh behaviour, and am currently trying to rectify that.
+
+Perhaps if you could espouse this kinda attitude to the readership, 
+which you already do to a point. And bring out the darn intermediate 
+guides.
+
+Warpy :)
+
+--------------------------------------------------- 
+A great hack is accomplished before it has begun... 
+(paraphrased from Sun Tzu)   -[warpy@null.net]- 
+   http://jolt.dyn.ml.org/~warpy 
+---------------------------------------------------
+
+[Matt: I know I've heard enough of this argument. :) Keep this in 
+mind: Before you post a question to the Happy Hacker Digest, try to 
+type in your subject in Yahoo! or AltaVista. However, if you think 
+it's something a lot of people want to know, send it, and if I agree, 
+I'll make sure it gets read/answered. :)]
+
+============================================================================= 
+*** More On mesg [y|n|?] Stuff 
+=============================================================================
+
+From: Argent <Argent1@post1.com>
+
+If you really want to send a message to someone on the same system 
+that you're on but they have mesg n, you can still send them a 
+message.  first do a who -Hu|more (-H for headers, -u for extra info, 
+and the |more so that you can take your time scrolling through it) and 
+look down the first column until you find the login of the person you 
+want to send a message to.  Then look over to the next column on the 
+right (the "line" column).  this tells you how the person is connected 
+to the computer.  it should be tty?? where ?? should be some 
+alphanumeric.  Because Unix and its flavors are SO nifty, there are 
+symbolic links to all the possible devices that people could be 
+connected to the computer with.  They're in /dev and appear as files 
+of the same name as the device.  the way they work is that anything 
+that you try to save to the files goes to the device and anything you 
+try to read from the file comes in from the device's input.  So if you 
+redirect a banner into /dev/ttyd11 by typing $banner HAPPY BIRFDAY > 
+/dev/ttyd11 anyone connected to the computer through ttyd11 will get a 
+nice big messege saying HAPPY BIRFDAY.  This lets you do all sorts of 
+fun stuff like $echo You have mail in /users/mail/[login] > 
+/dev/tty??.  When they start their mail reader, however, they'll be 
+dissappointed with an empty inbox.  I've seen code for a program that 
+will sit in memory and wait for a particular person to log on.  When 
+they so, it'll grep a who command for their login name and find 
+the tty?? they're on and send a backspace to their tty every minute. 
+And I've even seen a program that reads from the tty after prompting 
+someone to type their password in again.  So there's all sorts of fun 
+you can have.
+
+John 
+--- 
+Even the paranoid have enemies.
+
+[Matt: Elite hackers hardly have time to annoy people like this. We 
+need to eat and stuff after a night of coding. :) ]
+
+============================================================================= 
+*** REMOTE Vulnerability in PHP/FI 
+=============================================================================
+
+From: [As seen on the BUGTRAQ mailing list. To subscribe to Bugtraq, 
+send an email message to listserv@netspace.org with "subscribe 
+bugtraq" in the message body.]
+
+============================================================================ 
+[DiS] Advisory 97-347.1 
+Issue date: April 16, 1997 
+Topic:  REMOTE Vulnerability in PHP/FI 
+----------------------------------------------------------------------------
+
+A vulnerability has been found by DiS in PHP/FI, a NCSA httpd cgi 
+enhancment. This vulnerability allows unauthorized users to view 
+arbitrary file contents on the machine running httpd by sending the 
+file name wishing to be displayed as the QUERY_STRING.
+
+I. Exploit
+
+   simply use any web browser to send the following URL:
+
+   http://boogered.system.com/cgi-bin/php.cgi?/file/to/view
+
+   Note: this exploit has not been tested on a system that hascompiled 
+         PHP/FI as an apache module. This information may or may not 
+         be applicable on such a system.
+
+II. Impact
+
+    Remote, unauthorized users can view arbitrary file contents on the 
+    system with the same privileges as the httpd (HTTP daemon) child 
+    process. 
+ 
+
+III. Solution
+
+    The author has propsed the following sollution:
+
+>> ...The workaround is to set the following in php.h 
+>> 
+>> #define PATTERN_RESTRICT ".*\\.phtml$" 
+>> 
+>> This will limit the php.cgi parser to only display files ending in .phtml 
+>> 
+>> The exact same adviasory applies to any other parser someone might decide 
+>> to stick in their cgi-bin directory.  This is in no way specific to PHP/FI. 
+>> 
+>> You can also avoid the problem by using either CGI redirection or 
+>> by using the Apache module version. 
+>> 
+>> -Rasmus
+
+----------------------------------------------------------------------------
+
+The current PHP/FI distribution may be obtained from 
+http://www.vex.net/php
+
+J-Man Th' Shaman [DiGiTAL iNFORMATiON SOCiETY] 
+jshaman@m-net.arbornet.org 
+jamin@avatar.ml.org
+
+============================================================================= 
+*** Port 21 
+=============================================================================
+
+From: [anonymous]
+
+Please post from anonymous.. 
+While port scanning I found an interesting thing. 
+When I telneted to port 21 I was presented a prompt. When I typed in 
+the name of an ISP it forwarded me to it. What exactly is the purpose 
+of the service?
+
+------------------------------------------------------------------- 
+Matt Hinze <matt@cs.utexas.edu>

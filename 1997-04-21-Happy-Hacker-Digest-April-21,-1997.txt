@@ -1,0 +1,486 @@
+Happy Hacker Digest April 21, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator is Matt Hinze
+                 Send posts to: matt@cs.utexas.edu (Matt Hinze) 
+        [if you can, include a "HH" in the subject header] 
+               
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or 
+unsubscribe, use the subscribe boxes on the menu bars, please.. 
+If you decide you just want to use the forum and not get these 
+mailings, we promise our feelings won't get hurt if you unsubscribe 
+from this list. 
+  
+         H a p p y  H a c k i n g ! 
+============================================================================= 
+http://www.ecst.csuchico.edu/~jtmurphy/localusers.html 
+This one lists not only exploits, but their fixes, as well. 
+=============================================================================
+
+Table of Contents: 
+------------------ 
+* Monkey 
+* Domain Name? 
+* More Windows95 Net Utils (what are they for?) 
+* Disconnecting From Telnet 
+* Hacking a PC 
+* Linux Woes 
+* Vulnerability in sperl 5.003 (and other versions) 
+* Getting Started Hacking: Step-by-step 
+------------------ 
+ 
+
+============================================================================= 
+*** Monkey 
+=============================================================================
+
+From: Warpy <warpy@null.net>
+
+To those of you who have emailed me asking for info on how to hack and 
+places to look, umm - did you miss the point altogether!? I mean, the 
+information is OUT THERE, go and find it. Admittedly there is a steep 
+learning curve, but that comes with most new things. From now on 
+anyone emailing me with a silly request for info without appearing to 
+have attempted to find it yourself will get the one line reply:
+
+http://www.altavista.com ;)
+
+And now on to monkey. In my eternal search to find a simply way to 
+install linux on my i486, 4meg Ram, and 200meg hdd laptop, I 
+discovered a thing called monkey. Buried in the depths of sunsites ftp 
+I found it. The following are it's specs:
+
+----
+
+Monkey Linux can be extracted to the DOS filesystem (also to the 
+FAT32). This is complete small ELF distribution with latest kernel on 
+5 diskettes. Monkey can run on this minimal HW: 386SX, 4MB RAM, 30MB 
+on IDE HDD. Contain X Window for any SVGA videocard, support for 
+network, support for 3C5x9, 3c59x, 3c900, NE2000/NE1000, WD80x3 
+ethernet cards, ATAPI/MITSUMI CD.
+
+There is some ready-to-install packages: 
+   Netscape 3.01                    Apache WWW server 
+   GCC 2.7.2 for kernel compiling   Dosemu 0.64.4 for console 
+   Linux kernel 2.0.29              Sendmail 8.8.5 with Pine 
+   Accelerated X server Mach 64     Manpages 
+   Accelerated X server S3
+
+Monkey has a lot of basic utilities such as: 
+   telnet, ftp, ssh, lynx, finger, talk, nslookup, ... 
+   bootpd, bootpgw, cron, ftpd, ... 
+   perl, awk, sed, bash, tcsh, vi, joe, ...
+
+Monkey has not: 
+   GCC compilator for everyday use (but kernel can be compiled) 
+   Documentation, many ready-to-install modules 
+   Monkey is not really complete - you may use Slackware, RedHat, etc.
+
+Primary site: ftp://ftp.spsselib.hiedu.cz/pub/linux/monkey/ 
+Mirror sites: ftp://ftp.vslib.cz/pub/unix/linux/monkey/ 
+              ftp://sunsite.mff.cuni.cz/OS/Linux/Distributions/Monkey/
+
+----
+
+Now monkey isn't complete yet, so there will be some things you will 
+need to install yourself. But if you haven't got a cdrom, and you 
+can't be bothered downloading the slackware disksets from sunsite, 
+then this might be the thing for you. One of the most attractive 
+features of this system is that on my piddly 200megz on my laptop - it 
+doesn't require a partition. Hence I can run both linux and dos on my 
+laptop and let them fight it out for space, instead of having a fixed 
+partition.
+
+However in exchange for install simplicity, you will need to do a lot 
+of internal configuration to get it up and running the way you want 
+it. However if you have a spare 386 or 486 around, that doesn't have 
+to much on it, chuck it in and see how it goes.
+
+Warpy
+
+PS: I tried mini-linux b4 hand.. now it might be that little bit more 
+stable, but would yu swap a 2.0.29 kernel for an ancient 1.0.9 one? I 
+think not.. (well thats the kernel i found).
+
+--------------------------------------------------- 
+A great hack is accomplished before it has begun... 
+(paraphrased from Sun Tzu)   -[warpy@null.net]- 
+   http://jolt.dyn.ml.org/~warpy 
+---------------------------------------------------
+
+============================================================================= 
+*** Domain Name? 
+============================================================================= 
+ 
+
+ANONYMOUS ------ Please make it so...
+
+I was just curious as to how one would go about getting there own 
+domain name....??  Any help would be greatly appreciated.
+
+[Matt: Go to InterNIC at www.internic.net for more information about 
+domain aquisition.]
+
+============================================================================= 
+*** More Windows95 Net Utils (What are they for?) 
+=============================================================================
+
+From: pmurgs@iafrica.com (P. Murgatroyd)
+
+>1. Arp.exe - Displays and modifies the IP-to-Physical address 
+>translation tables used by address resolution protocol (ARP). 
+>2. Net.exe - This is not probably 4 'net but 4 windows 4 
+>workgroups(IMHO). 
+>3. Netdde.exe - ? 
+>4. Route.exe - Manipulates network routing tables.
+
+>If somebody knows about these commands please post ur explainations.
+
+1. ARP.EXE
+
+IP address to MAC (Media Access Control, the unique address of the 
+network device (ie: Network Card)) address resolution for outgoing 
+packets is performed by ARP (Address Resolution Protocol). As each 
+outgoing IP datagram is encapsulated into a frame (a frame is the 
+actual signal that will pass along the network connection (ie: network 
+cable)), source and destination MAC addresses must be added. 
+Determining the destination MAC address for each frame is the 
+responsibility of ARP.
+
+ARP compares the destination IP address on every outbound IP datagram 
+to the ARP cache for the NIC (Network Interface Card) that frame will 
+be sent over. If there is a matching entry, then the MAC address is 
+retrieved from the cache. If not, ARP broadcasts an ARP Request Packet
+
+onto the local subnet, requesting that the owner (machine) of the IP 
+address in question reply with its MAC address.
+
+If the packet is going through a router, ARP resolves the MAC address 
+for that next-hop router rather than the final destination host. When 
+an ARP reply is received, the ARP cache is updated with the new 
+information, and it is used to address the packet at the link layer 
+(see: OSI Networking model for more information on the link layer. All 
+good networking books have a chapter on the OSI Networking model).
+
+Entries in the ARP cache may be viewed, added and deleted using the 
+ARP.EXE. For more information, see RFC 826 (Address Resolution 
+Protocol) or get one of Microsofts Whitepapers on Windows 95 and 
+Windows NT Networking that covers ARP.
+
+2. NET.EXE
+
+NET.EXE is a very usefull program. It is very simple to use and has a 
+lot of functionality. "NET USE" and "NET VIEW" are probably the two 
+most commonly used "NET" commands. I suggest experimenting with 
+NET.EXE as it very easy to use. Just type "NET" to see a list of its 
+commands.
+
+3. NETDDE.EXE
+
+DDE (Dynamic Data Exchange) and is one of the ways applications 
+running under Microsoft Windows 3.1x, 95 and NT can share data in 
+memory. NETDDE.EXE enables applications (which support it) running on 
+different hosts to share data in memory over a network.
+
+4. ROUTE.EXE
+
+Route is used to view or modify the route table. Route print displays 
+a list of current routes known by IP for the host. Route add is used 
+to add routes to the table, and route delete is used to delete routes 
+from the table.
+
+In order for two hosts to exchange IP datagrams, they must both have a
+
+route to each other, or use a default gateway that knows of a route. 
+Normally, routers exchange information with each other using a 
+protocol such as Routing Information Protocol (RIP) or Open Shortest 
+Path First (OSPF).
+
+Routing is the primary function of IP (I mean IP as its singlar part 
+of the TCP/IP protocol suite. See RFC 791).
+
+Datagrams are handed to the IP protocol from UDP and TCP transport 
+above, and from the NIC(s) below (see the OSI Networking Model). Each 
+datagram is labeled with a source and destination IP address. The IP 
+protocol examines the destination address on each datagram, compares 
+it to a locally maintained route table, and decides what action to 
+take. There are three actions which can be taken for each datagram.
+
+1. It can be passed up to the protocol layer above IP on the local 
+host (ie: On to an application running on the machine). 
+2. It can be forwarded by one of the local NIC's (sent out onto the 
+network via a network device). 
+3. It can be discarded.
+
+The route table maintains four different types of routes. 
+1. host (a route to a specific destination IP address) 
+2. subnet (a route to a subnet) 
+3. network (a route to an entire network) 
+4. defualt (used when there is no other match)
+
+Hope this wasnt too technical (even though its actually a very brief 
+overview). I learnt all this from Microsoft Whitepapers, Microsoft 
+MSCE study guides and RFC's.
+
+BlueRain 
+ 
+
+============================================================================= 
+*** Disconnecting From Telnet 
+=============================================================================
+
+From: ".o0ORSNAKEO0o." <rsnake@ecst.csuchico.edu>
+
+> I'd love 
+> to know how to lose the login prompt of the telnetted computer and get 
+> back to my own shell prompt!  Anyone know how to do this?  And while 
+> I'm at it, I'll ask this: what's the deal with the "Escape Character 
+> is '^]'" ?? How do I use that? It certainly doesn't get me out of the 
+> login screen predicament!  Point, please? 
+> 
+> Thanks all -- since this is my first post, I'll mention how much I 
+> love this list and love reading all of your informative posts.  Thanks 
+> especially to people like Bronc Buster who put up oodles of fun 
+> information on the web for the rest of us.... 
+> 
+> [Matt: To end a telnet session type '^]', or more simply, hold the 
+> 'Ctrl' button down while hitting the ']' key. You'll then get a 
+> "telnet>" prompt, or something similar. You can connect to another 
+> host or just exit the telnet program at this point.]
+
+ Something to remeber when you use this command:  YOU ARE STILL 
+CONNECTED!  You have to type in "close" to actually un-connect 
+yourself from the host and to get out of the telnet program you have 
+to type "quit" after that.  There is another way, however.  Often you 
+will find yourself attached to a term that eats up CPU time or is 
+REALLY lagged and you know it will take a while to get to a TMOUT 
+response.  This happens often when MUDs go down because the hubs allow 
+you access but the actual machine is still down. So if you are running 
+a LINUX/UNIX account you can still get rid of the prompt (or any other 
+problems for that matter).  Open another window and review your 
+process reports (ps -u username) and it should give you a report 
+something like this:
+
+$ ps -u rsnake 
+ 23814 ttyp1     0:00 ps 
+ 22369 ttyp2     0:00 telnet 
+ (modified for simplicity)
+
+ now you know the PID number (Process IDentification) and you 
+can do a remote kill on it:
+
+$ kill -9 22369 
+[1]+  Killed                  telnet
+
+ (The -9 switch is called a SIGKILL and is used to force 
+termination immediatly without trapping, which can often kill off more 
+stubborn programs where SIGTERM cannot). This method can also be used 
+to kill off any run-away process, including run-away netscapes, pines 
+or anything else.  As far ast '^]' is concerned, that is called a 
+control character.  Most control characters do nothing, however there 
+are three that you should know.  '^]' will get you out of a login 
+prompt. '^C' (interrupt) will stop a process that you are currently 
+running, and '^Z' (suspend) will (often) suspend a process which you 
+can later re-start with the fg command (this is often handy when you 
+get a talk-req while you are in the middle of doing something really 
+important and you don't want to lose your place).  Hope that helps. 
+Hasta!
+
+x http://www.ecst.csuchico.edu/~rsnake
+
+============================================================================= 
+*** Hacking a PC 
+=============================================================================
+
+From: Peter Beckman <beckman@nova.org>
+
+One fine day, Drith@Icon.co.za wrote:
+
+> Can someone tell me if it is possible to connect to someone else's PC 
+> while this persone is connected to the internet, without him knowing, 
+> how to do it or where to start ? I have been thinking about this for a 
+> while know and this what I have found out about the persone's 
+> connection ... 
+> 
+> 1) He/she is assigned a dynamic IP address, but this I can figure out 
+> by fingering the persone.
+
+ You cannot finger a person if you do not know their IP address, 
+ unless they have a single place to finger them (user@x.org) which 
+ tells you if they are dialed in and tells you their current IP 
+ address.
+
+> 2) I can also get the tty port the persone is connected to (I am 
+> pretty sure it is the servers tty port) by fingering the persone.
+
+ The tty port is useless unless you are on the machine.  If you were 
+ on the machine, and were able to install a program or two, and run as 
+ root, you could watch all of his connections.  Or just sniff them at 
+ the interface.
+
+> 3) The service provider runs Linux 
+> 4) They use a PPP connection for their users 
+> 
+> There must be a way to access this computer. The persone must 
+> send/recieve data via a port/connection. How do I open a connection to 
+> him without him/her know about it, or use the same port/connection to 
+> get access to the box.
+
+ There are hacks that allow you access to his/her machine if they are 
+ using MSIE and you have a server and the person connects to your 
+ server.  You can use the connection to snoop around on their system. 
+ But that requires them to have a Win95 box.
+
+ If you have their IP address, you can use a port snooper (like 
+ strobe) to see what services they have running on their box.  If they 
+ have something you can use turned on (like anon ftp, and they are 
+ dumb enough to have it open to the entire filesystem -- I've seen 
+ this open!), then you have free run of their box until they terminate 
+ either their service (ftp here) or their ppp connection.
+
+ You must keep in mind that just because a persons PC is connected to 
+ the net, it does not mean that you can get into it.  First off learn 
+ about services that are insecure -- sendmail, ftp, rlogin (r* for 
+ that matter).  Then learn how and why they are insecure -- read CERT 
+ alerts, get on some security mailing lists.  Then learn how to find 
+ out if they are running on a remote system (whether dialed in or 
+ physically connected) -- strobe, port watchers, etc.
+
+ These tools will help you figure out how to snoop around undetected 
+ on a system.  Sorry, there is no easy way to do it, other than to 
+ learn.  By the way, security may be implemented on these systems, so 
+ you also might want to learn about the OS you will be attempting to 
+ compromise BEFORE you try to break in.  Remember, unauthorized access 
+ to ANY computer is a felony in the US.
+
+ Peter <beckman@purplecow.com>
+
+============================================================================= 
+*** Linux Woes 
+=============================================================================
+
+From: [anonymous]
+
+Please post this message anonymous
+
+Hey all
+
+I'm having a bit of trouble with Linux setting up a ppp connection I 
+have managed to figure out what the problem is so now I need help to 
+fix it. I have read through the linux-ppp faq and all the others and 
+haven't found anything on it.My problem is not actually in pppd but in 
+the chat program used to set it up.I have written my own pppd and chat 
+script but now here's where the problem comes in.My modem is set in 
+win95 to blind dial (dial without looking for a dial tone) because for 
+some reason my modem doesn't detect the dial tone in my country.But 
+now in linux when I initiate chat using my script it by default checks 
+for a dial tone before dialing the number and since it cant detect one 
+it cancels the operation and so wont even dial the number.Does anyone 
+know of a way that I can make chat blind dial or maybe there's an AT 
+command to do it.At the moment I'm just using the atdt command to try 
+and dial.
+
+Oh yeah and changing my modem's internal configuration to set it to 
+blind dial is not an option.
+
+Thanks to anyone willing to help
+
+============================================================================= 
+*** Vulnerability in sperl 5.003 (and other versions) 
+=============================================================================
+
+Here is a general recap of the situation:
+
+A critical security bug in /usr/bin/sperl* (buffer overflow) has been 
+found. This affects sperl on all platforms. Supposedly, a new, patched 
+version, Perl 5.003_97g has been released, which is not affected by 
+the exploit.
+
+The precompiled Linux exploit can be found at: 
+http://www.ecst.csuchico.edu/~jtmurphy/localusers.html which is an 
+excellent site for hackers and sysadmins alike.
+
+Anyway, if you are running sperl5.003, make sure that it is not SUID 
+root.
+
+Matt
+
+(Most of this info has been compiled from various posts I read on the 
+Bugtraq mailing list. To subscribe to Bugtraq, send an email message 
+to listserv@netspace.org and include "subscribe bugtraq" (without 
+quotes) in the message body.)
+
+============================================================================= 
+*** Getting Started Hacking: Step-by-step 
+=============================================================================
+
+Please make this post anonymous.
+
+I've been noticing several similar posts lately regarding getting 
+started. I'm going to take you farther than that. Here is a 
+step-by-step formula to become a hacker. But there is a catch: you 
+*must* read and follow these instructions exactly. Any attempts to 
+take short-cuts or anything like that will guarantee your failure at 
+becoming a hacker.
+
+*1. Read *all* the back issues of the Guide To (mostly) Harmless 
+Hacking, if you haven't already. They can be found at:
+
+http://base.kinetik.org 
+http://www.anet-chi.com/~dsweir 
+http://www.tacd.com/zines/gtmhh/ 
+http://ra.nilenet.com/~mjl/hacks/codez.htm 
+http://www.ilf.net/brotherhood/index2.html
+
+*2. Spend a few hours browsing and reading through the pages linked 
+from Yahoo!'s Unix category, found at:
+
+http://www.yahoo.com/Computers_and_Internet/Operating_Systems/Unix/
+
+Make sure you check out:
+
+http://www.yahoo.com/Computers_and_Internet/Operating_Systems/Unix/Linux
+
+...especially if you are thinking about running Linux.
+
+Don't stop reading stuff from here until you have a good grasp on 
+Unix! Remember, no short-cuts!
+
+*3. Skim through the back issues of the Happy hacker Digest and read 
+anything that you think might be valuable. The HHDigest archives are 
+at:
+
+http://www.geocities.com/TimesSquare/Arcade/4594
+
+*4. Check out all the URLs Of The Day, which are found at the Happy 
+Hacker Digest Webpage at:
+
+http://www.cs.utexas.edu/users/matt/hh.html
+
+Follow links from those to other hacking web pages. Print or save 
+stuff you don't totally understand so that you can read it later.
+
+Okay, now you know some terminology, some exploits, and you have a 
+good grasp of Unix. If you don't, go back to step 2. The next step 
+never ends. It is what hackers do:
+
+*5. Explore on your own. Type some of the stuff you learned into a 
+search engine, see if a cool site comes up. Join some mailing lists. 
+Post a legitimate question to the Happy Hacker Digest or another list. 
+Wow! At this point you might be able to answer a few questions! Do 
+that too. Try to put up a machine running Linux on your own. Then try 
+to use some of the exploits you learned on it. Try to find some new 
+exploits. Go to a few hacker conventions.
+
+Good luck.
+
+[Matt: Some of these ideas are good. If you are unsure about exactly 
+how to start hacking, give this a shot.]
+
+============================================================================= 
+Happy Hacking, 
+Matt Hinze <matt@cs.utexas.edu>

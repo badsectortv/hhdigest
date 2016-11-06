@@ -1,0 +1,718 @@
+Happy Hacker Digest April 4-5, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Carolyn Meinel
+                 
+            
+Digest archives are held under the “New” button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you decide 
+you just want to use the forum and not get these mailings, we promise 
+       our feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+================================================================= 
+URL ‘O the Day: http://get.your.exploits.org Unix exploits 
+=================================================================
+
+Table of Contents
+
+· Permission to Hack? 
+· Covering Your Tracks 
+· Cookie Killer 
+· Hacking SMTP 
+· Linux Woes 
+· Serious NT Hacking 
+· Serious IRC Hacking 
+· Looking for Local Hackers
+
+================================================================== 
+ *** Permission to Hack? 
+==================================================================
+
+From: "mojoe" <mojoe@wko.com>
+
+ My first hack and staying outa trouble.
+
+ I have found the IP address of the first person I want to friendly hack, I 
+have ask if its OK and they said yes, What should I do now? The server is 
+running Novell netware and I have and account on it that is only accessible 
+though school, but there main t1 IP is open to traffic though the Internet I 
+think no web page or anything.. This is worth 20 bonus points please help. 
+I only want to get in and leave a msg. saying that I made it that’s it. The 
+staying out of trouble comes from all the recent post on the port 19 It is 
+killing me to find out this exploit is there any more info on it? I don’t 
+want to keep experimenting and end up in trouble. thanks
+
+mojoe@wko.com
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Please make this anonymous thanks...
+
+Here’s the story...
+
+Me and my roommate at school both have computers.. we are both on an 
+Ethernet network.. now we have a little contest going... just for 
+fun.. strictly no damage ever caused.. but the idea is to get into 
+the others computer, files, email.. etc and leave messages.. 
+If we are successful we teach other how we did it. 
+Now I just happened to get on this list and its been great so far.. I 
+have succeeded in scoring a few points by getting by the password 
+block... however we both now have cmos passwords...
+
+What I was wondering is if I have his IP address is there anything I 
+can do to get in through it..??   I have used a port scanner and I 
+only get 139 open... any ideas on this would be great...  I did have 
+one idea but didn’t want to try it without running it by you first. 
+Would it be possible to repeat ping his address and do anything 
+without getting the sysadmin p******....  i.e. say he was using Netscape 
+or something and I pinged him would it cause problems..??
+
+That’s all for now.. Thanks
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=
+
+Carolyn: To mojoe: that port 19 exploit merely makes a computer slow to a 
+crawl. It isn’t a way to break in.
+
+To anonymous: ping your buddy’s IP address enough and you have a denial of 
+service attack. If your sysdamin discovers you, he or she may get mad. But, 
+heck, I flood killer pinged jericho’s box the other day and even he didn’t 
+raise a fuss. The trick is, do it from your home computer from either Win 95 
+or some kind of Unix instead of from a shell account and your sysadmin 
+probably won’t have a clue about *anything* you do.
+
+But the biggest problem for both of you is that it doesn’t matter whether 
+your friend has given you permission to break into his account. His ISP 
+hasn’t given you permission and will be rather bent out of shape if they 
+catch you.
+
+Now if you are determined anyhow to risk trouble, the safest way is to crack 
+your friend’s password. Whatever you don’t, don’t try to get into your 
+friend’s account by first gaining root access to his ISP. Your problems can 
+snowball so fast you’ll get dizzy. You’ll certainly be breaking the law, and 
+could accidentally do major damage to your ISP.
+
+IMHO our best info on cracking passwords has been posted in past Digests by 
+OD Phreak. Digests are archived under “New” at http://www.infowar.com and 
+http://www.geocities.com/TimesSquare/Arcade/4594.
+
+=================================================================== 
+ *** Covering Your Tracks 
+===================================================================
+
+From: Valerie Henson <val@nmt.edu>
+
+The best way to (a) not leave a history file and (b) still be able to use 
+that wonderful convenient history function is to make your history file 
+/dev/null.
+
+In bash, type
+
+bash$ HISTFILE=/dev/null
+
+In tcsh, it *says* that the history file is kept in a variable named 
+histfile, which is the full pathname of the history file.  But it doesn't 
+work that way on my system.
+
+In tcsh, *theoretically* type
+
+tcsh% unsetenv histfile
+
+And maybe that will work.  Of course, I've *never* heard of a cracker who 
+was busted with his history file.
+
+-VAL
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ 
+
+From: Charlie ROOT <root@ruined.buttnet.net>
+
+Re: .bash_history / .history -- history files in general. 
+ 
+
+I've found a easy and most of the time, possible, method is this:
+
+ln -s /dev/null .bash_history
+
+==================================================================== 
+ *** Cookie Killer 
+====================================================================
+
+From: "Dave Weir" <dsweir@anet-chi.com>
+
+Hey gang, after reading some posts about cookies, and some responses to 
+Netscape, and setting the read only attribute on the cookie.txt file, I 
+decided to try that on the cookie files within Internet Explorer.
+
+Now there isn't a cookie.txt file like you find in Netscape, but there are 
+separate files for all the URLs you have visited.  There are two .dat 
+files, now here is the interesting part, when you set the attribute to read 
+only on these dat files you will get an interesting error message: 
+Error Initializing the cache.  Shutdown all programs and run scandisk or 
+chkdsk.  Delete the cache, cookies and history directories in your windows 
+directory and then restart IE.  If the problem persists reinstall IE.
+
+Turn the ready only attribute off and the error message goes away.  The dat 
+files are Mm256.dat and Mm2048.dat.  The Mm2048 file has a list of the urls 
+that you have visited.
+
+Now if you remove these files or delete them, and launch IE the error 
+doesn't appear. So my thinking, and I might be wrong is these dat files are 
+used with the txt files.  How, I don't know.
+
+Editing one of the dat files I found this inside: 
+Client UrlCache MMF Ver 3. (characters that wouldn’t go through email 
+deleted)cookie:nfisdsw@www.mot.com/ nfisdsw@www_mot.txt 2).txt
+
+Looks interesting doesn’t it?
+
+Ok I have hacked as much I possibily know.  Tried looking around for other 
+sources to cookies within IE. I know cookies work the same for all 
+browsers, just that each browser stores them differently.  Would be 
+interested in knowing if anyone else has fooled with cookies and EI.
+
+Lates Dudes and dudettes.
+
+Skurp
+
+Carolyn: I have found that if I delete those dat files without also altering 
+the Registry, Win 95 simply rewrites them with their former contents every 
+time I delete them.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Please keep this anonymous.
+
+I was wondering about something in regards to my user details being stored 
+in Netscape 3.01 
+I ran Nucleon and it came up with my email address and some other stuff 
+about me.
+
+So I decided to have a look in the registry of my Windex PC and opened up 
+the HKEY_users directory and then the software directory, I burrowed into 
+Netscape’s directory and then the user directory where I found a number of 
+strings with the same details.
+
+Am I on the right track if I edit the strings containing my email address 
+and name and stuff to read something like screwu@pig.com.au. 
+Hopefully this would anonymise me to cookies and server inquiries to my 
+browser, I guess if I had been switched on when I did the install I would 
+have put bogus details in the first place.
+
+I am really enjoying the Happy Hacker and I am learning a lot:) so thanx to 
+all those hoon hackers who show us older newbies how its done, by the way 
+I’ve just started my first year in adult college in Information Technology 
+and I’m 38 yrs young, but I’m learning a lot more from the  16 yr old geniuses 
+who I quake with and go to school with than the teachers. 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ 
+
+From: "Dallas Vogel" <dallas@midwest.net>
+
+I was readin one o' your files on begining hacking and it was telling how 
+to delete the history file by way of registry 
+I think i know an easier way:
+
+1:click on View then Options. 
+2:Click on the Navigation tab 
+3:Click on View History button 
+4:Click on Edit then Select All 
+5:then press delete 
+Viola a empty history folder
+
+Carolyn: It works if the snoopers you are trying to foil aren’t hackers:)
+
+============================================================= 
+ *** Hacking SMTP 
+=============================================================
+
+From: Padgett 0sirius <padgett@gdi.net>
+
+As to those asking about SMTP Port 25, the best source is RFC 821, 
+everything is defined and if you can handle four letter words, the 
+syntax is in English. Retrieve rfc821.txt via ftp from ds.internic.net 
+in the rfc directory. Warning, do *not* try to dir or ls that directory 
+unless you have a lot of time on your hands. RFC 822 is also on SMTP 
+but 821 is what you are looking for.
+
+For those who like to roll your own utilities and work from DOS, I've 
+been using the Waterloo Utilities for some time now (University of 
+Waterloo). All you need is a C compiler (I use Turbo C  mostly - 
+archaic but does what I need & doesn't use much room), DOS packet 
+driver, and NIC.
+
+BTW, did you know that the "Happy Hacker" was the villain in 
+Commonwealth 
+Films "Invasion of the Data Snatchers" c.a. 1989 ? 
+-- 
+     A. Padgett Peterson, P.E. Cybernetic Psychophysicist 
+    Anti-Virus, Cryptographics, & Antique Radio Researcher 
+  http://www.netmind.com/~padgett/index.html 
+      mailto:padgett@gdi.net     PGP 4.5 Key on request 
+all that is necessary for evil to triumph is that good (wo)men do 
+nothing
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: Andrew Price <thanos@imsa.edu>
+
+In one of your guides you talked about fake e-mail.  Using Netscape Mail, 
+you can give any username and e-mail address as long as you have access to 
+a valid mail server.  The header of the received mail does not say 
+apparently to/from.  How does Netscape do this? does it use the port 
+technique?
+
+Timothy Ward 
+ward@carl.all-net.net
+
+Carolyn: Most email programs allow you to specify a different email address 
+than the one from which you send it. Your right with your thought that they 
+use the “port technique.” They all ultimately use the same commands on the 
+SMTP port that you use when you forge email using the techniques of the GTMHH.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: "John Beck" <blue13@hotmail.com>
+
+     Hi first off I would like to say that I love your mailing list, 
+keep up the great work :) Do you know of any other good hackers mailing lists 
+that are worth signing up for?? Ok now for the question at hand I have tried 
+and tried and tried to use remailers and I just can't do it. I use the right 
+procedure using Request-Remailing-To: and the :: in the messages but still I've 
+had no success.  I think the remailers that are posted on the web are either 
+closed or don't work. Do you know any that work?? I'd really appreciate the 
+help. Please e-mail me back as soon as possible.
+
+Carolyn: The creme de la creme of mailing lists that are good for hacking 
+are Bugtraq and NT Bugtraq. That presumes, of course, that you are looking 
+to actually do hacking. Now if your idea of hacking is “fashion statement” 
+and “nuclear flame war” you may do better with the dc-stuff list.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: Duncan Mak <vulcan@asiaonline.net>
+
+hi, 
+ when i look into my isp's (SunOS/System V) /etc/profile, there is 
+this chunk of code,
+
+/bin/mail -E 
+case $? in 
+0) 
+echo "You have new mail." 
+;; 
+2) 
+echo "You have mail." 
+;; 
+esac
+
+I copied it and found out that case 1) is empty mailbox. Are there any 
+other cases? I tried man-ing mail and csh, but the flag '-E' does not 
+exist.
+
+Duncan MAK    vulcan@asiaonline.net
+
+=============================================================== 
+ *** Linux Woes 
+=============================================================== 
+ 
+
+From: "Stephen James" <SJAMESFLORIDA-WELLINGTON@WORLDNET.ATT.NET>
+
+  This is a technical question, but, in a way in pertains to hacking.  For 
+some reason Linux refuses to recognize my internal modem. (If the modem 
+doesn't work you can't very far with hacking :-) I've read documentation on 
+the 'net from here to kingdom come.  I have DOS/win95/win3.x drivers, but 
+you guessed it...Linux can't do "squat."  I've jumpered my bocamodem 
+MV.34AI in every way I can think of.
+
+   I've read that I have to do a warm boot with Linux.  If so, then how?
+
+As I said before, this is highly technical, if you don't know, please 
+forward it to someone who may.
+
+Many thanks to all of you, 
+Steve
+
+Carolyn: On an Intel box (80x86) a warm boot is control-alt-delete. Cold 
+boot is turning off the power.
+
+============================================================== 
+ *** Serious NT Hacking 
+==============================================================
+
+Reply-To: Vytautas Vysniauskas <vytasvy@OSF.LT> 
+Sender: Bugtraq List <BUGTRAQ@NETSPACE.ORG> 
+Comments:     RFC822 error: <W> DATE field duplicated. Last occurrence
+
+Subject:      Fatal bug in NT 4.0 server 
+To: BUGTRAQ@NETSPACE.ORG
+
+Hi,
+
+   There exists very serious bug NT 4.0 server. A user who is 
+   granted r/o access to any point of a failsystem can easily 
+   crash NT 4.0 server. 
+ 
+
+   EXPLOIT:
+
+   Client user (who is granted r/o access) resides on Linux box 
+   with root privileges. Client mounts NT server disk as follows
+
+   linux# smbmount //ntserver/service /mnt -U client_name
+
+   "df" shows mounted volume like
+
+    //ntserver/service            530176  458224    71952     86%   /mnt
+
+    Now when you try to list the volume with  ls /mnt 
+    the command hangs (but is possible to kill the process from 
+    another root shell).  NT server switches to blue console 
+    screen and crashes immediately showing diagnostic message
+
+    *** STOP 0x0000000A (0x00000000, 0x00000002, 0x00000001, 0x8012C28A) 
+    IRQL_NOT_LESS_OR_EQUAL 
+ 
+
+---- 
+***  NOTE: to exploit this situation you must have incorrectly 
+    working smbmount utility:
+
+    Linux version 2.0.25 
+    smbmount utility from smbfs-2.0.1.tgz package 
+    (available at ftp.gwdg.de /pub/linux/misc/smbfs or 
+     sunsite.unc.edu /pub/Linux/filesystems/smbfs )
+
+    This package requires at least Linux version  2.0.28 
+    and contains fixes of a standard smbfs module. So, 
+    it is not expected to work correctly with 2.0.25 version. 
+    However, smbmount crashes NT server completely...
+
+    The situation was tested several times on two  NT 4.0 servers, 
+    always ending up with strictly the same system crash.
+
+    It would be interesting to see does somebody else can reproduce 
+    this result ? 
+ 
+
+QUESTION:
+
+    Additionally, I would like to ask: 
+    It is known about big hole in NT 4.0 security system 
+    that allows for a user without any access permission to mount NT 
+    server root directory (disk C:) in r/w mode and to take a 
+    complete control over NT system ? I heard only some little 
+    comments but haven't seen a demonstration and/or description 
+    of this vulnerability.
+
+    It makes very big doubt about usability of NT 4.0 system. 
+    Maybe, it is time to switch to Unix/Samba platform ?
+
+=-=-=-=-=-=-=-=-=-=-=-= 
+Hi,
+
+System crash  was performed on NT 4.0 server and NT 4.0 workstation 
+platforms upgraded with the following patches:
+
+Windows NT version 4.0, build 1381, Service Pack 2
+
+   Q135707Q141239NTOSKRNLFIX was installed on Feb 23, 1997 at 16:41:21. 
+   Q163213 TCPIP DRIVER UPDATE was installed on Feb 23, 1997 at 16:41:47. 
+   Q163333SERIALFIX was installed on Mar 03, 1997 at 21:43:42. 
+   RPC SERVER CPU USAGE FIX was installed on Feb 23, 1997 at 16:41:33. 
+ 
+
+I think it is VERY ESSENTIAL that Linux client smbmount/smbumount 
+utility (from smbfs-2.0.1.tgz package) was compiled using 2.0.29 kernel 
+version but used with incompatible 2.0.25 kernel. I have tested that 
+smbmount/smbumount works just fine with Linux 2.0.29 client (installation 
+of smbfs-2.0.1 package patches smbfs kernel module, so it must be done 
+before 2.0.29 kernel is compiled). Compiled binaries (smbmount/smbumount) 
+are available at
+
+ftp://puni.osf.lt/pub/windows/ntmount.tgz (~8Kb) 
+(md5sum is 3e053ae7d51954c96032aa91ead5364c )
+
+Use it at your risk. It should work correctly with 2.0.29 (patched) kernel 
+version, but produces NT system crash when used with 2.0.25 Linux system. 
+Probably, something is wrong at filesystem level of NT system...
+
+How this bug was discovered ? 
+----------------------------
+
+Initially my goal was to integrate disk space resources of our NT server 
+and NFS server (Linux 2.0.25). At the first stage I have installed Samba 
+package (version 1.9.16p1) on the NFS server and configured Samba password 
+server to be NT server. In such a way Win 95/NT clients can access 
+transparently dedicated space of the NFS server. 
+The result was very encouraging: 
+Samba server (P5/100, 64Mb RAM, 3c579 EISA card, OS=Linux) performance over 
+10Mbits/sec LAN was  really better than NT server (P5/133x2, 64MB RAM, 3c595 
+PCI card).
+
+I didn't make precise measurements, but copying of large files was up to 
+1.5 times faster when exchanging data with Samba server. From a client 
+point of view the difference was noticeable in multimedia applications 
+(like playing remote MPEG files).
+
+At the second stage my plan was to have disk space integration for 
+a UNIX client. I ftp'ed smbfs-2.0.1.tgz package. This package requires 
+Linux version 2.0.28 but our Linux servers & workstations were equipped 
+with 2.0.25 version. Before recompiling new kernel version ( it is 
+quite a long work to do) I have compiled this package using fresh source 
+code of the 2.0.29 kernel version (symbolic link /usr/src/linux was changed 
+to the top of 2.0.29 source directory). Then my thought  was to test 
+compiled smbmount/smbumount binaries on the older kernel version 2.0.25. 
+I expected my risk should  be to crash  Linux system rather NT server. 
+And ... I was really surprised that nothing wrong happened with Linux 
+box (only 'ls' process was hanging up) but NT server was crashing 
+immediately.  System crash was reproduced both on NT 4.0 server and 
+NT 4.0 workstation  platforms. When a disk mount was performed from 
+Linux 2.0.29 client (using the same compiled smbmount/smbumount binaries) 
+everything was working just fine.
+
+=============================== 
+Vytautas Vysniauskas       e-mail: vytasvy@osf.lt 
+                              tel: +370-2-611408 
+UNIX systems administrator 
+Open Society Fund of Lithuania, 
+===============================
+
+Carolyn: The above is forwarded from the NTBugtraq list. To subscribe email 
+listserv@netspace.org with message “subscribe NTBugtraq”.
+
+=========================================================== 
+ *** Serious IRC Hacking 
+===========================================================
+
+From: "Crazy J" <crazyj@earthlink.net> 
+Howdy Hey Folks;
+
+Well after my last post about writing your own brute force 
+like program for Excell in Visual Basic. I have been getting 
+allot of questions about Visual Basic in general most of 
+which have the common theme of writing programs that 
+interact with the Internet. Thus to share the wealth I decided 
+to share another source code example with you all and a little 
+information on how to write Internet enabled applications with 
+Visual Basic.
+
+First we need to cover the topic of talking to the winsock.dll 
+(i.e. the Winsock API). There our many ways that one can 
+accomplish this, one of which you will need to buy a bottle 
+of aspirin before you attempt it for it is error prone. That is to 
+port the Winsock header file (winsock.h) that is included with 
+Visual C++ and many other windows C and C++ compilers to 
+a Visual Basic BAS file (.bas). The second option is to use 
+one of the many Internet OLE controls, one of which is used in 
+the Internet Relay Chat Client that follows. It is included in the 
+Crescent Internet ToolPak Version 3.0 which their is a fully functional 
+shareware version located at 
+http://crescent.progress.com/crescent/n-citp.html 
+which will allow you to try the example below. I like their control pack 
+for it gave me the most bang for my buck averaging a little over 10 dollars
+
+per control and ease of use(i.e. no migraines).
+
+Anyway once we got the part of talking to the winsock.dll covered 
+we can move on to the fun part coding our application. This is a simple 
+example of an Internet Relay Chat Client and will show you not only the 
+basics 
+of how to work with an Internet OLE control, but will show you the basics 
+of establishing a raw IRC connection with a server, staying connected to 
+the server, and how to program the functionality into the client to 
+automate 
+the raw IRC commands.
+
+Form1 (General) (declerations) 
+    'RAWIRC by Crazy J (a.k.a.Jeffrey L. Nelson) this program is of the 
+public domain 
+    'distribute freely. This is and example of how to write an Internet 
+Relay Chat Client 
+    'In Visual Basic. This Example was Compiled And Tested With 
+    'Visual Basic 4.0 Pro And Windows 95 This Example Uses 1 Form 
+    '2 Text Boxes and 1 CITCP Control From the Crescent Internet ToolPak 
+    'Version 3.0 Text1 has its multiline property set to true 
+Dim myCHAN 
+Dim myNICK
+
+Private Sub Form_Load() 
+    CITCP1.HostName = "www.infowar.com" 'IRC server to connect to 
+    CITCP1.Port = "6667" 'port on server to connect to 
+End Sub
+
+Private Sub Text1_Change() 
+    'Auto Scroll To End Of Text When The Text Changes 
+    On Error Resume Next 
+    Text1.SetFocus 'Give Text1 The Focus 
+    SendKeys "^{END}", True 'SendKeys To Text1 
+    Text2.SetFocus 'Give Text2 The Focus 
+End Sub
+
+Private Sub Text2_KeyDown(KeyCode As Integer, Shift As Integer) 
+    'this sub is primarily for automating the raw IRC commands 
+    'and to add some program functionality 
+    If KeyCode = vbKeyReturn Then 'when enter key is pressed 
+        'get first 2 keys which our the client commands 
+        myCMD = Mid$(Text2.Text, 1, 2) 
+        'code for a connect command 
+        'type '/c' in Text2 and hit enter 
+        If myCMD = "/c" Then 
+            nRESULT = CITCP1.ConnectToHost 'connect command 
+            DoEvents 
+        'code for a join command 
+        'type '/j #hackers' in text2 and hit enter 
+        ElseIf myCMD = "/j" Then 
+            myCHAN = Mid$(Text2.Text, 4) 'get channel to join 
+            CITCP1.Send ("JOIN " & myCHAN & vbCrLf) 
+        'code for listing channels 
+        'type '/l' in text2 and hit enter 
+        ElseIf myCMD = "/l" Then 
+            CITCP1.Send ("LIST" & vbCrLf) 
+        'code for messaging a channel 
+        'type '/m your message' in text2 and hit enter 
+        ElseIf myCMD = "/m" Then 
+            myMSG = Mid$(Text2.Text, 4) 'get message 
+            CITCP1.Send ("PRIVMSG " & myCHAN & " :" & myMSG & vbCrLf) 
+            Text1.Text = Text1.Text & Chr(13) & Chr(10) & myNICK & ">" & 
+myMSG & Chr(13) & Chr(10) 
+        'code for a part command 
+        'type '/p' in text2 and hit enter 
+        ElseIf myCMD = "/p" Then 
+            CITCP1.Send ("PART " & myCHAN & vbCrLf) 
+        'code for a quit command 
+        'type '/q quit meassage' in text2 and hit enter 
+        ElseIf myCMD = "/q" Then 
+            myMSG = Mid$(Text2.Text, 4) 'get message 
+            CITCP1.Send ("QUIT :" & myMSG & vbCrLf) 
+        'code to exit the program 
+        'type '/x' in text2 and hit enter 
+        ElseIf myCMD = "/x" Then 
+            End 
+        Else: 
+            myRAW = Mid$(Text2.Text, 1) 'get all the text in text2 
+            CITCP1.Send (myRAW & vbCrLf) 'send to the server 
+        End If 
+    Text2.Text = "" 'clear text2 
+    End If 
+End Sub
+
+Private Sub CITCP1_Connection(ByVal address As String) 
+    'This Sub executes when the connection to a server is established 
+    Text1.Text = Text1.Text & Chr(13) & Chr(10) & "connected" 'show status 
+    myNICK = "crazyj" 'nick to use on server 
+    myNAME = "crazyj" 'name to use on server 
+    myHOST = "cjs.my.net" 'name of host to say your using 
+    mySERVER = "cjs.my.net" 'name of server to say your using 
+    CITCP1.Send ("NICK " & myNICK & vbCrLf) 'send nick message 
+    CITCP1.Send ("USER " & myNAME & " " & myHOST & " " & mySERVER & " :" & 
+myNAME & vbCrLf) 'send user message 
+    Text1.Text = Text1.Text & Chr(13) & Chr(10) & "sent login info" & 
+Chr(13) & Chr(10) 
+End Sub
+
+Private Sub CITCP1_PacketReceived(Packet As Variant, ByVal bytes_in As 
+Integer) 
+    'This is where you add code to determine whats being sent 
+    'to you from the server and how you want to handle it. 
+    'Right now it only looks to see if it is a PING and if 
+    'so will send a pong back to the server who pinged this is 
+    'the very least you need to do to establish a connection 
+    'and stay connected. 
+    On Error Resume Next 
+    myPING = Left$(Packet, 4) 
+    mySERVER = Mid$(Packet, 7) 
+    If "PING" = myPING Then 
+        CITCP1.Send ("PONG " & mySERVER & vbCrLf) 
+    End If 
+    'This next section of code will see if the text1 text box is at 
+capacity 
+    'and if so clears it and the displays the new packet if not it just 
+    'displays the new packet. 
+    If Len(Text1.Text) < 32000 Then 
+        Text1.Text = Text1.Text & Packet & Chr(13) & Chr(10) 
+    Else 
+        Text1.Text = "" 
+        Text1.Text = Text1.Text & Packet & Chr(13) & Chr(10) 
+    End If 
+End Sub
+
+Further refrence information would be RFC1459 which 
+outlines the internet relay chat protocol you can get a 
+copy at http://www.win.net/~cjc/fear/rfc1459/rfc1459.txt.
+
+Later;
+
+ Crazy J 
+ 
+
+================================================================= 
+ *** Looking for North Dakota Hackers 
+=================================================================
+
+From: Redington <nemesis@minot.com> 
+I am also looking for a mentor (like the person in St. Louis) except I 
+am at a MAJOR disadvantage, I live in Minot North Dakota! If anyone 
+knows of any good hackers in Minot or in North Dakota at all please let 
+me know.
+
+neMEsis 
+ 
+
+================================================================ 
+ *** Looking for Hackers in Coquitlam, British Columbia, Canada 
+================================================================
+
+From: " Aramageddon  †††" <devilhaircut@hotmail.com>
+
+Hello...I have a hacking group called Digital Freedom....we are in need of a 
+virii expert and a graphic designer...
+
+http://members.tripod.com/~Dfreedom/digit.htm
+
+PLEASE FORGIVE US BECAUSE OUR PAGE S**** RIGHT NOW...ITS UNDER SERIOUS 
+CONSTRUCTION....
+
+on another note
+
+I am looking for a hacker that lives near Coquitlam British Columbia 
+Canada!!!!!!!!!!!
+
+email me at devilhaircut@hotmail.com
+
+==================================================================== 
+  *** Looking for UK Hackers 
+====================================================================
+
+From: comserv@spectus.u-net.com (Dave)
+
+Just a quick message to say that I appreciate you sending me out the 
+information on Hacking it is great, as I am very new to it and it is 
+explained in detail. I am based in the UK do you have anyone over here who 
+would be able to help me follow my new found hobby.
+
+Once again thanks for all the great stuff :)
+
+Dave Moss
+
+thanks 
+ 
+
+================================================================== 
+ *** Looking for Santa Barbara hAcKeRz 
+==================================================================
+
+From: "Mac )(" <mac_x@geocities.com>
+
+N E 1 know if there r n e hackers/Phreakers in the Santa Barbara CA. 
+area?
+
+================================================================== 
+ *** That’s all for today, folks!

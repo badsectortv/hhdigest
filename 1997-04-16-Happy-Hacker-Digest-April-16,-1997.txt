@@ -1,0 +1,774 @@
+Happy Hacker Digest April 16, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Matt Hinze
+                 Send posts to: matt@cs.utexas.edu (Matt Hinze) 
+        [if you can, include a "HH" in the subject header] 
+               
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or 
+unsubscribe, use the subscribe boxes on the menu bars, please.. 
+If you decide you just want to use the forum and not get these 
+mailings, we promise our feelings won't get hurt if you unsubscribe 
+from this list. 
+  
+        H a p p y  h a c k i n g ! 
+============================================================================= 
+URL of the day: http://main.succeed.net/~bbuster/hacking/new/ 
+One of the best, if not *the* best web sites for those new to hacking. 
+A must read! 
+=============================================================================
+
+Table of Contents 
+-----------------
+
+* GTmHH Strikes 
+* Miscellaneous Questions 
+* Learning Linux 
+* More Denial Of Service 
+* Other Mailing Lists 
+* Cracking DES 
+* Stopping Spam 
+* Using mIRC to Spoof Email 
+* Restricting talk/write Using mesg 
+* Uncrackable Passwords (or pretty close..) 
+* Dos Telnet 
+* Hacking Rental Cars 
+* Hacking WindowsNT 
+* Netstat and IP Spoofing 
+* General Advice
+
+----------------- 
+ 
+
+============================================================================= 
+*** GTmHH Strikes 
+=============================================================================
+
+From: [anonymous]
+
+ You may be interested to know that my school has shut down its 
+Internet connection indefinitely.  The cause?  No, we weren't infected 
+by some sUpEr 31337 haxor's virus.  In fact it was the administrators, 
+themselves, that shut it down!  They were a bit concerned that the 
+most use it was getting was for students who were eager to print out 
+all of the GtMHH.  I, for one, am relieved in a way: at _least_ they 
+got their information from an ethically responsible source... I've had 
+some very disturbing conversations that have me fearing for our 
+future. Now if the administrators had only read them, as well, this 
+may have never happened!
+
+[Matt: Ignorance isn't always bliss.]
+
+=============================================================================== 
+*** Miscellaneous Questions 
+===============================================================================
+
+From: Iggy Drougge <optimus@canit.se>
+
+>>I was wondering if you know the correct commands to enter once you 
+>>connect to the incoming mail port? anything that I type says error!!!! 
+>>Also is there a way to get my mail from the server through a certain 
+>>port, if so what are the commands? Thanks!
+
+>>Since you said incoming mail, I assume you mean port 110.
+
+>Read the RFC for that service.  That's how I learned ALL the commands, 
+>and good stuff on that and other services.
+
+It's just a shame that RFCs can be *so* bloody boring and complicated 
+over-the-top. This of course depends on the RFC in question, but 
+sometimes you just want a list of the commands.
+
+>>Also, what programs/files would I need if I just want Internet 
+>>software?  Thanks!
+
+>Minicom (for dialing your ISP) [note, i beleive this only works if the 
+>ISP has Unix boxes, It doesnt seem to work with NT crap]
+
+Minicom is a terminal program, right? It should connect to all modems 
+which answer.
+
+>pppd (for the actual ppp connection)
+
+>I'm not sure about SLIP.  I beleive a program called DIP works for 
+>slip only.
+
+Isn't dip for dialing in? If you're referring to Minicom as the tool 
+for for connecting and setting up a PPP connection, it seems like 
+overkill.
+
+-------------------------------------------------------------------- 
+ 
+
+YO! Happy Hackers ;-) 
+1. Is C++ the same as Borland Turbo C++? Is Turbo C++ a good 
+programming language for hacking?
+
+[Matt: Borland Turbo C++ is just a compiler (with some extra stuff) 
+for standard C++. There are other compilers, though, like gcc, Watcom, 
+etc.]
+
+2.  I can telnet to a server running unix from my WIN95 Box and then I 
+can run  unix commands on it.  Is this a shell account?
+
+[Matt: Yep.]
+
+Which address should we email for posts (hacker@... or matt@...)? 
+Carolyn, are you quitting this list?  PLEASE DON'T QUIT.  What 
+happened to HHdigest Apr. 14, 1997, I didn't get it or was there any?
+
+[Matt: Don't worry, Carolyn is still very much involved with the Happy 
+Hacker Digest. I'm just helping her; she's very busy. Send your posts 
+to matt@cs.utexas.edu (and try to stick "HH" in the subject header). 
+There wasn't a HH Digest for Apr. 14; It's not strictly a daily thing; 
+it gets sent out whenever we have enough good posts and have time to 
+format it and everything.]
+
+==================================================================== 
+*** Learning Linux 
+====================================================================
+
+From: James Mastros <root@epix.net>
+
+> I am proud to announce that I have actually gained my very first ROOT 
+> access yesterday......my OWN! 
+> I have installed Linux onto my other computer and have done a trillion 
+> stuff with it so far. 
+> Compared to DOS or Windows, I would personally think that Linux 
+> RULES!!!!! ;) 
+> But with a new OS, comes a whole bunch of new questions that needs to 
+> be answered. 
+> (Thank goodness that I'm a fast learner!) ;););) 
+> I have figured out about most of the stuff that I need to know for 
+> now, but I have a few questions. 
+>   one# What is a segmentation fault, and how can I fix it?
+
+A segmentation fault happens when a program makes a big mistake. 
+In general, there are only three reasons for this to happen 
+1) Poor programing - the program does somthing very invalid. 
+2) Poor programing - the program doesn't check its arguments, and you 
+   gave it bogus input. 
+3) Extreme low memory - do a 'free', and look at the results 
+4) I said there were only three!
+
+>   two# How can I check the amount of hard disk space left on my drive?
+
+"df" ("df -h" will look better, but you loose some data)
+
+>   three# I like DOOM and Abuse, but where can a person find some other 
+> good games on the internet for Linux?
+
+Try QUAKE!!! (Check out 
+http://www.bluesnews.com/files/idstuff/quakeworld/unix/squake-0_992-i385-unk 
+nown-linux2_0_tar.gz) 
+(It's based on 1.09) 
+Where did you find Abuse?
+
+   James Mastros 
+   The Orb
+
+---------------------------------------------------------------------------- 
+-----
+
+From: Blake Leonard <theender@jcn1.com>
+
+Sorry, I new to this Linux stuff. I just got it installed last night 
+and I want to dial out from my modem. How do I do this( I didn't 
+install X Windows so if I need that I'm going to have to do the 
+install all over again). I have Red Hat 3.0.3
+
+---------------------------------------------------------------------------- 
+-----
+
+From: Iggy Drougge <optimus@canit.se>
+
+>I'm writing you because of finger program.
+
+You mean the finger daemon.
+
+(Carolyn: let's get off this habit of insisting other people use one's 
+favorite subset. Finger is a class of programs, some of which run in a 
+way that is called a "daemon." [My half dozen Win 95 finger programs 
+aren't daemons.] But every daemon is a program of some sort, so it is 
+correct to call even those finger programs that run as daemons 
+"programs." So program is a correct designation.)
+
+>I explain you: I've got that program running in my linux system, and 
+>don't call me newbie (please !!! nOOO  ;) But really I can't see a 
+>reason to close that port. All I see is that someone can see users who 
+>are log in that moment in your system, but nothing more (isn't it?) 
+>Or is there a bug that I dont know, or something they can do in order 
+>to obtain my passwd file..... 
+>I DON'T KNOW !!!!!!!!! :(
+
+I agree, I like having the finger port open, if only for my own use, 
+even. However, your finger daemon can be vulnerable, I turned mine off 
+after hearing of a bug which allowed people to run any command on my 
+computer through the daemon, even formatting my harddrive if they 
+wished. Don't know if your deamon is secure, but if it isn't (is 
+anything?), then you might want to turn it off or get another one.
+
+>And I've got some philosophic question: 
+>       Why is password file with read attribs for everyone? It could 
+>work perfectly without it, passwd command is suid !!
+
+It's checked for things like file privileges and ownership and 
+checking whether you have access to certain binaries and the such.
+
+================================================================================ 
+*** More Denial Of Service (DOS) 
+================================================================================
+
+From: Jason Petrone <petrone@uiuc.edu>
+
+>[Matt: The thinking behind lame DOS attacks is that even if your 
+>machine suffers as a result of shutting down another machine, it's 
+>worth it. For the most part, flood pinging isn't that strenuous on 
+>your machine. Avoid DOS attacks, though; the elite don't bother 
+>themselves with it.]
+
+While DOS for the sake of DOS is lame, it can have some powerful 
+applications.  For instance, every ip spoofing technique I've seen 
+RELIES on a DOS attack! Besides, often a DOS attack does not crash the 
+computer, only denies it of service.  In the case of ip spoofing, the 
+DOS is generally only necessary for a short time, therefore its not 
+really destructive or irresponsible.
+
+   ._   __  _ 
+  //_|_\/_// / 
+|/
+
+[Matt: I agree.]
+
+============================================================================ 
+====== 
+*** Other Mailing Lists 
+============================================================================ 
+======
+
+From: ae630@pgfn.bc.ca (Tim Gutteridge)
+
+I'm looking for some other mailing lists to subscribe to. It's 
+hard to find them on the internet, and when I do, the e-mail address 
+isn't usually in operation. Does anybody know of some good lists or 
+some websites with links to them? 
+ 
+
+-- 
+_____    _____ 
+  |      |   __ 
+  |IM    |____|UTTERIDGE ae630@pgfn.bc.ca 
+ 
+
+[Matt: Geez - there's *so* many. Again, do a web search.]
+
+============================================================================= 
+*** Cracking DES 
+=============================================================================
+
+From: "Mishari \"CykiX\" Muqbil" <mishari@thepentagon.com>
+
+Hello all. I just wanted all you people with cpu's to know that 
+there're massive projects going on to crack the "Legal" encryption 
+scheme called 56-bit DES. I have found this really cool place at 
+solnet http://www.des.sollentuna.se/ which is co-ordinating one of the 
+projects. I prefer this one because it is for the whole 'net (the sad 
+folks who host it in the US cannot get participants from outside 
+because of the export law). So all of you who read this, go there, 
+grab your client and run it (WITH PERMISSION) on as many pc's, 
+workstations and servers as you possibly can. Another thing about this 
+is that at default setting, it takes up IDLE cpu cycles ONLY! So it 
+doesn't bother with your browser rendering the images on those porno 
+sites ;-)But, you can use the -n 1 option (like I do) to speed things 
+up.
+
+What are yaz waiting 4? Go get those CRACKERS!
+
+Platform support for Win95/NT, Alpha(linux), Alpha(OSF/1), MIPS(IRIX), 
+Linux(intel), NextStep(m68k), Solaris(sparc), SunOS(Sparc), ULTRIX
+
+If your platform isn't supported, you can give them a guest account on 
+your machine, and they'll compile one just 4 u! After it's all done, 
+you can put your grandchildren on your lap and say "I helped them 
+break the 56-bit DES key" ;-)
+
+-- 
+Reg'dz 
+[MÍ§hÄrí mÜQßî¦] (MiShArI MuQbIl) 
+Go to my homepage http://mishari.home.ml.org 
+Apple Computers: If you make a computer that morons can use. 
+only MORONS will want to use it.
+
+---------------------------------------------------------------------------- 
+-------
+
+From: "Mishari \"CykiX\" Muqbil" <mishari@thepentagon.com>
+
+Apparently, winner gets 1000 US$ 'nuff said. :-)
+
+-- 
+Reg'dz 
+[MÍ§hÄrí mÜQßî¦] (MiShArI MuQbIl) 
+Go to my homepage http://mishari.home.ml.org 
+Apple Computers: If you make a computer that morons can use. 
+only MORONS will want to use it.
+
+---------------------------------------------------------------------------- 
+-------
+
+From: Tom Guptill <tgpt@PAS.ROCHESTER.EDU>
+
+Just wanted to point out that there are multiple competing efforts to 
+crack DES.  A more non-profit effort (which is not as far along) is up 
+at:
+
+http://www.des.sollentuna.se/
+
+(plug, plug: this is the one my machines are involved with)
+
+A list of a bunch of them is available from:
+
+http://www.des.crypto.org/ (I think.)
+
+- Tom
+
+-- 
+Tom Guptill                         tgpt@pas.rochester.edu 
+UNIX SA                             104 B&L RC 
+Department of Physics and Astronomy, University of Rochester
+
+============================================================================== 
+*** Stopping Spam 
+==============================================================================
+
+From: GR8GUY <cyoung@northernnet.com>
+
+don't know if you know about this but i found it very interesting...
+
+Spam Ban 
+spamming-the practice of sending unsolicited e-mail advertising, 
+usually in bulk-would become a misdemeanor under a bill being 
+considered by the state of Nevada. If passed, the bil would make a 
+Nevada the first state to outlaw spamming. Critics say that the bill 
+would hurt small businesses, wich can't afford more expensive 
+advertising media. The Nevada senate's judiciary committee is 
+considering the proposed revisions of the bill and at press 
+time had not set a timetable for a vote. California and virginia are 
+considering similar e-mail advertising bans.
+
+PCworld 
+May 1997 
+pg 55
+
+-----------------------------------------------------------------------------
+
+From: [anonymous]
+
+Is about "Spam Hater*. I checked the site 
+www.compulink.co.uk/net-services, but I had only a "the URL you 
+request is not on this server" message. After wandering around, I 
+found the correct address which is the following: 
+www.compulink.co.uk/pub/net-services. Another problem: I found TWO 
+"Spam Hater" files, named spam.exe and spam1.exe. Which one is to 
+download? Perhaps both?
+
+Thanks 
+  
+======================================================================== 
+*** Using mIRC To Spoof Email 
+========================================================================
+
+From: pc2000 <pc2000@hooked.net>
+
+Hello all Happy Hackers:
+
+ I see the latest craze is to spoof email. Well there is another way 
+to do it via irc. I can send spoofed email from a dcc chat session. It 
+is pretty easy. I use mirc so I havent tested it with anything else. 
+Here is how I do it: 
+ 
+
+First paste this into alias section: 
+ 
+
+/long /echo 6 $longip( $$1 )
+
+/port { 
+  raw -q privmsg $me : 
+  DCC CHAT CHAT $$1 $$2 $+ 
+} 
+  
+ 
+
+Next step is to convert the domain to ip then to long ip: 
+say we wanna send email through lava.net's deamon you do this (all 
+from mirc)
+
+/dns lava.net 
+ 
+
+*** Looking up lava.net
+
+-
+
+*** Resolved lava.net to 199.222.42.2 
+ 
+
+Now we must convert the IP to long IP 
+ 
+
+/long 199.222.42.2
+
+3353225730  = long ip 
+ 
+
+Then you type: 
+ 
+
+/mail 3353225730 25 
+ 
+
+You will get a dcc chat request from yourself. Accept it and you 
+will see
+
+220 malasada.lava.net Smail3.1.28.1 #9 ready at Tue, 15 Apr 97 
+14:08 WET
+
+You can type HELP and get the help menu put to quickly show you how to 
+do it 
+  
+first type:
+
+HELO someone@somewhere.com
+
+You will see the response:
+
+250 malasada.lava.net Hello someone@somewhere 
+ 
+
+Next input who it is from:
+
+MAIL FROM: bgates@microsnot.com
+
+Then say from who it goes to:
+
+RCPT TO: santa@north.pole.org
+
+Now type: DATA and you will see:
+
+354 Enter mail, end with "." on a line by itself
+
+Now type whatever body message you want and when you finish the email
+
+put a "." by itself w/o " " and you will see:
+
+250 Mail accepted
+
+Then type: QUIT to exit the system and close the dcc chat 
+session.
+
+You can also use this to port surf places to and find new ports.
+
+Just use this syntax:
+
+/mail <<long ip> <<port>
+
+Remember you have to convert a regular ip to long ip and that is 
+it. Have fun. BTW I have found many ports surfing like this. And I 
+didnt have to use a shell account. (I get lazy sometimes..hahahah =) ) 
+ 
+
+:pc2000 
+ 
+
+================================================================================ 
+*** Restricting talk/write using mesg 
+================================================================================
+
+From: ".o0ORSNAKEO0o." <rsnake@ecst.csuchico.edu>
+
+  
+> >I was wondering what I had to change to keep from getting msgs when 
+> >people use the write command or the msg command. 
+> 
+> I am new, but i know that my commands, (at a school also), are  mesg 
+> yes and  mesg no  yes and no being on and off :)
+
+ There is another mesg setting.  It is mesg g.  Mesg g allows 
+for talk requests and for writes (assuming the sender has mesg g or 
+mesg y) but not for banners cats or echos that are re-directed to your 
+terminal. (I am not quite sure where wall comes in because I don't 
+want to piss off everyone here at Chico...).  Mesg g is considered to 
+be the safest of the three, when combined with .talkdeny and 
+.talkallow, however there are still programs to mess with terminal 
+settings that work through talk-requests.  IE: 
+http://www.ecst.csuchico.edu/~rsnake/flash.zip 
+Personally I always have mesg n, and tell people to send me e-mail if 
+they want to talk to me (using newmail -i 10 to notify).  You can send 
+a talk request as mesg n but cannot recieve one, so you can send a 
+talk request as mesg n, and then have the recipient turn their mesgs 
+to n before responding to the request, to have secure chatting.  Just 
+some thoughts.
+
+====================================================================== 
+*** Uncrackable Passwords (or pretty close..) 
+======================================================================
+
+From: "Alan C. Ramsbottom" <acr@ALS.CO.UK>
+
+This is based on insights gained by writing a brute-force "cracker" 
+attacking the SAM hashes. In the *worst case* with typical hardware, 
+I currently believe that it will take a few hundred years to 
+brute-force a password that obeys all the following rules:
+
+1) It contains upper and lower case alphas i.e. characters 
+   from 'A'..'Z' or 'a'..'z'.
+
+   (Mixing the case does not help much in this attack but it 
+    may hinder other approaches)
+
+2) It contains a numeric i.e. '0'..'9'.
+
+3) It contains a punctuation symbol i.e. '!','&','>' etc. 
+   Don't just use these three, there are many more to chose 
+   from.
+
+4) It contains a character entered with an ALT sequence selected 
+   from the following list *only*. Type ALT then one of the four 
+   digit numbers below to enter these characters in your password.
+
+   0131    0199    0224    0231    0237    0244    0252 
+   0135    0201    0225    0232    0238    0246    0255 
+   0149    0209    0226    0233    0239    0247 
+   0196    0214    0228    0234    0241    0249 
+   0197    0220    0229    0235    0242    0250 
+   0198    0223    0230    0236    0243    0251
+
+5) It is exactly 7 *or* exactly 14 characters long. It will give you 
+   extra protection against random luck if you use 14 characters but 
+   each half (7 characters) must conform to the above rules *and* 
+   contain some different characters.
+
+Note the stress on "worst case", the program might get your password 
+with its first lucky guess. Oh, and there are no guarantees for any 
+of this :-(
+
+PS: I will send an extremely pretty table showing the "password 
+entry process Windows Character Set (Unicode above 0x007F) to ASCII 
+translations" to anyone who can convince me that they know why it 
+is relevant and asks nicely :-)
+
+PPS: I'm part way trying to document the aforementioned "logic" 
+behind the brute-force aspect of the SAM attack issue and will post 
+it ASAP. Are there any potential contributers/"pre-publication" 
+reviewers out there?
+
+--Alan-- 
+acr@als.co.uk
+
+=========================================================================== 
+*** Dos Telnet 
+===========================================================================
+
+From: ".o0ORSNAKEO0o." <rsnake@ecst.csuchico.edu>
+
+> Where can I get a telnet for MSDOS?  I mean I do not want the Win95's 
+> telnet.
+
+ Uhm, I personally always use Q-modem for DOS.  It is really 
+nice. It has the fastest re-dialer I have seen, and is only mildly 
+clunky when you aren't used to it.  I don't know where to pick it up, 
+since I just got a copy from a friend.  There is a newer version for 
+Windows, but I haven't used it so I can't recommend it.  Hasta!
+
+============================================================================= 
+*** Hacking Rental Cars 
+=============================================================================
+
+From: "E-mail Anonymous" <anonymouszzzz@hotmail.com> 
+ 
+
+So the other day I went on vacation with my family and we rented a car 
+from Hertz, and the car had one of those Global Tracking Computers 
+built in.  Well this got me thinking: I bet this thing is hackable!! I 
+played around with it a bit but everytime I started to mess with the 
+wires my mom got p*****d.  On the back of the console ( the part that 
+is in the front of the car) there is a small serial port plug thing 
+with no label or anything but It can be easily removed...and plugged 
+into something else...say a laptop..But I don't have much experience 
+with this kind of stuff and I was wondering if anyone out there has 
+ever tried to hack one of these, or if it is even possible?? I think 
+we're renting a car again in a month or so and next time i want to be 
+prepared..if anyone has any info on hacking one of  these please post 
+it to this list or e-mail it to me at anonymouszzzz@hotmail.com, 
+  
+                                      Thanx 
+                                             -- PsyKe
+
+================================================================================ 
+*** Hacking Windows NT 
+================================================================================
+
+From: Fireforge <forge@binary.net>
+
+>A friend of mine (superhacker range) is able to get into a win95 or NT 
+>box and edit/delete/create anything he pleases.... he uses a combo of 
+>winIPcfg and a finger util. all he needs to get in is a username(I 
+>think, I know he can do it if he has a username and password, it 
+>doesn't matter what his access is set to.) 
+>If ya can answer that then I hail to u 
+>CYA L8R
+
+Well if the admin of the nt box is stupid then it is so easy its not 
+funny log into the guest account and look at the registry to see if he 
+has set up an auto logon if so you get his password i think your fried 
+just pulled the wool over your eyes with some easy tricks and made it 
+look good ;) if you configure nt properly it is much harder to get 
+access to...ie rename admin/guest accounts ... disable guest account 
+... restrict registry access...NEVER use auto logon etc etc to give 
+you an idea.
+
+fireforge
+
+============================================================================= 
+*** Netstat and IP Spoofing 
+=============================================================================
+
+From: [anonymous]
+
+If posted please make anonymous
+
+Hello, whenever i do a netstat in dos on any server it always brings 
+up my user name and nothing else, why? i want to get information on 
+places but my computer wont let me do netstat... is there any better 
+ways to track down ppl? I ahve used tracert, nbtstat, ping and ftp, 
+but i dont know how to really use them to my advantage. Also where can 
+i get more information on IP spoofing?
+
+[Matt: For more information on any of the topics discussed here, try a 
+web search.]
+
+========================================================================== 
+*** General Advice 
+==========================================================================
+
+From: Warpy <warpy@null.net>
+
+This email is basically a general note to all of you "happy hackers" 
+on why you get flamed and how to avoid it. There might also be some 
+replies about questions from previous hh's that i couldn't be bothered 
+writing about.
+
+Please note: Carolyn and readers this is NOT a flame, though it may 
+seem like it. This is just me getting something off my chest which has 
+been bothering me for a while.
+
+Why does this list and those who subscribe to it get flamed so much? 
+This is a pretty easy question to answer actually. I have been "with" 
+hh since close to the beginning and I have seen the actual content 
+quality decrease in that time due to ppl asking blatantly DUMB 
+questions. To begin with it was good, people asking newbiesh 
+questions, but at least they were regarding Unix, and not that pseudo 
+32-bit wannabe OS known as Win95. The GTmHH's (guides to mostly 
+harmless hacking) were good too. I think the point were they started 
+going under was right after the mapping the internet guide, when 
+*puke* Win95 began the hot topic.
+
+People write in and ask questions on modifying pretty pictures on 
+their bloody IE 3.0 browsers. I mean, this digest is SUPPOSED to be 
+about hacking, and whereas hacking might have been getting a printer 
+to bump and vibrate across the floor in wierd patterns using some 
+interesting code back when Carolyn was younger.. the definition has 
+since changed. I realise that, a lot of the readers of hh realise 
+that, and the majority of those who read dc-stuff realise that, but 
+Carolyn appears not to.
+
+But then again perhaps she does. Perhaps she realises that if she had 
+continued on with her guides in the way she was doing so her 
+readership would/could get their newbie-selves into trouble, and by 
+restricting what is published she could possibly hope to avoid that. 
+But while she can restrict what she publishes here, she cannot 
+restrict what is out there on the Net. If someone has got enough 
+incentive to learn, then they will find what they are looking for.
+
+Yet ANOTHER reason why you guys get flamed so much is that you ask so 
+many STUPID questions. Or rather, the questions themselves are not 
+stupid, but did you think to spend that 10-20-30 minutes longer to 
+take the time to look the answer up on the Net yourself? I mean this 
+digest gets innundated with the same questions over and over again. 
+Don't you think that somewhere out there, someone has taken the time 
+to sit down and write put the answer to your very question. The answer 
+is yes. You need help installing linux, goto one of the hundreds of 
+linux sites and read the HOWTO's. Need help finding Win95 software for 
+*cough* hacking? Look at www.tucows.com, one of the largest archives 
+of GOOD Win95 software, all of which is either freeware or shareware. 
+Looking for general info on hacking, try entering "hack" at YAHOO or 
+Altavista. I mean, for crying out loud ppl, the information is out 
+there at your fingertips, why not spend those terrible extra minutes 
+to look for it yourself instead of posting to hh-digest. If you've 
+legitimately got a problem which you have looked for the answer 
+yourself, and were unable to find, then sure post. But if your post is 
+like "how do i find the amount of disk space left on my partition in 
+linux" AYE CARUMBA. Five minutes if not less in #linux or #linuxhelp 
+will get you the answer. The reason why you get flamed so much is 
+because the answer is out there and you're all to lazy to find it. 
+Btw, the answer to the dudes question is by typing "df" at the command 
+prompt.
+
+Well I think i've managed to encapsulate both why the hh-digest and 
+the people who post to it get flamed so much, and how it can be 
+avoided. Use COMMON SENSE. As a very funny but too true quote said: 
+"Invent something idiot-proof, and they will invent a better idiot".
+
+Now for some responses to questions..
+
+*To anonymous - IP spoofing is difficult enough to understand for most 
+Unix heads, how do you think a Windows programmer will be able to 
+comprehend it? In other words, no there is NO (as far as i know) Win95 
+application for ip spoofing.
+
+(Carolyn: I got a Win 95 IP spoofer:):)
+
+*To Psst - The reason you should close the finger port (79) is mainly 
+because it gives away too much information to any casual remote user. 
+Not only that but on older versions of finger daemon you could crash a 
+system by finger @@@@@@@@@@@@host.com
+
+*To Robert Finger - In regards to your question about Corewars and 
+winners publishing how they managed it. NO! This is one of my biggest 
+worries about it. That corporate security will turn it into some 
+"let's learn what the hackers are using now". As for regular hackers 
+watching the competition, i think a descritption like - used a buffer 
+overflow, incorrect permissions, or old sendmail should be more than 
+enough information.
+
+(Carolyn: Warpy, Warpy, this list is about *legal* hacking. We want to 
+make it easier, not harder, for people to make their systems secure.)
+
+*To EVERYONE asking about local hackers - No sensible hacker is going 
+to announce "I'm here!" to the world. If you want to look for hackers 
+in your local area why not try looking at the 2600 Meeting list at:
+
+http://www.2600.com/magazine/meetings.html 
+  
+That's about all I have to say today... :)
+
+Warpy
+
+(Carolyn: Warpy, all us people who enjoy legal hacking are happy to 
+identify ourselves and help others to learn. True, recently it has 
+become a big deal among certain elements of the hacker world to 
+believe that if something is legal, it isn't real hacking. I say 
+"pooh" to them.)
+
+--------------------------------------------------- 
+A great hack is accomplished before it has begun... 
+(paraphrased from Sun Tzu)   -[warpy@null.net]- 
+   http://jolt.dyn.ml.org/~warpy 
+---------------------------------------------------
+
+[Matt: I agree with most of this, Warpy. Thanks for the post.]

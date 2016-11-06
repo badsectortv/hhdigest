@@ -1,0 +1,717 @@
+Happy Hacker Digest April 6-7, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Carolyn Meinel
+                 
+            
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you decide 
+you just want to use the forum and not get these mailings, we promise 
+       our feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+================================================================= 
+URL 'O the Day: http://www.cyberlaw.com 
+=================================================================
+
+Table of Contents
+
+· IRC Wars Lead to DOS Attacks on Infowar Server 
+· New Flame War Policy 
+· New Hacker List 
+· Spam Buster News 
+· Hacking Port 110 
+· Linux Woes 
+· Cookie Killer 
+· IRC Stuph 
+· Cracking Questions 
+· Shell Accounts 
+· Jericho Archives Meinel 
+· Social Engineering 
+· Looking for Local Hackers 
+· Computer Security Awareness Conference
+
+================================================================= 
+ *** IRC Wars Lead to DOS Attacks on Infowar Server 
+=================================================================
+
+TO:     Happy Hackers 
+FROM  Infowar.Com 
+RE:      DOS Attacks
+
+On Friday, April 5, and Saturday April 6, infowar.com, and thereby tens of 
+thousands of users, suffered 3 DOS (denial od service) attacks on our IRC. 
+This attack took out the router, bringing the entire network down, several 
+unrelated domains that sat on the same server, and numerous innocent folks 
+having dial-up accounts.
+
+Guess what? We are royally disturbed! (Polite version.) We put up the IRC 
+Server in part to requests from the hacker/programming community who want to 
+share in the legitimate infosec dialog with professionals; not to act like 
+uncouth stepchildren of a screeching Banshee.  This server was put up as a 
+tool of enjoyment and education for all participants and lurkers, not as a 
+battleground for war.  The vast majority of the users on out IRC server are 
+responsible and follow the guidelines of common decency. But, there are 
+always one or two who think it is real cute to mess with other people's lives.
+
+Wrongo Moose breath(s)!
+
+Many security professionals have been critical of the interaction between 
+hackers and the professional community and it is malicious behavior like 
+this that proves them right. Many of us choose to disagree on many issues, 
+and that is much of what the infosec field is about: growth, evolution and 
+refinement.  But - and hear this clearly - personal or professional 
+differences or "boredom" do not constitute permission to act like total 
+fools! If you're bored, get a life.
+
+DOS attacks against our server WILL NOT be tolerated. The IRC server will be 
+down for several days while we enhance security, build in more restrictions 
+and determine if it's even worth it. When the server is brought back up, if 
+similar DOS attacks occur, we may well choose to close the server down and 
+open for our events only. The choice is yours.
+
+Police your own community. If you have any information regarding these 
+attacks, we urge you to speak to your friends and acquaintances.   As a 
+responsible user, and in keeping with wanting the Internet to be a better 
+place, you should consider that you are ethically bound to bring forward any 
+and all information relevant to those who launch DOS attacks against a 
+server.  All information shall remain CONFIDENTIAL
+
+The Hacker and Programming Community NEEDS to address these acts with their 
+own. DOS attacks are just plain and simple INEXCUSABLE and LAME . You're 
+making it hard on the users who stay within the guidelines of responsible 
+use of the Internet and IRC.
+
+We have also received many negative comments about our rule "No Profanity". 
+Many of you are accustomed servers that have very loose rules.  Our "No 
+Profanity" rule stands.  Think of our server as "PG-13".  If you don't like 
+that, by all means, we invite you to go somewhere else.
+
+It is not our intention to be mean or hard.  It is our intention to keep 
+within the mission of our IRC server, and that is to promote education and 
+awareness in the infosec community. Volunteers run this server, and they do 
+not need the grief. (You should hear what they want me to do! Some were 
+creatively painful, others constituted cruel and unusual punishment. I am 
+going to bide my time, though, and hopefully let the H/P community deal with 
+this in your own, eminently effective manner. We made this place for you. 
+Help us keep it open - for you.
+
+Regretfully,
+
+Winn Schwartau 
+WebWarrior 
+MsInfoWar 
+The rest of the staff at Infowar.Com, Info-sec.Com and the 
+Great team of IRC Volunteers. 
+`````````````````````````````````````````````````````````````
+
+Carolyn: Some hackers say that if an Internet host such as the Infowar 
+server is vulnerable to attack, it is the fault of the sysadmins of that 
+server for allowing these vulnerabilities. However, the measures needed to 
+make the Infowar server invulnerable to attack would also prevent  the 
+public -- you people -- from using it. Do you want Infowar restricted to 
+just a select few who would get one-time passwords? Do you want the IRC 
+server shut down? These will increase security. But if we want it open to 
+all, we have to make those who abuse the privilege feel like they *NEVER* 
+want to try those lame stunts again.
+
+If you would like to review the logs of the IRC sessions in which certain 
+individuals made threats of DOS which were followed within minutes by 
+successful attacks, email me.
+
+==================================================== 
+ *** New Flame War Policy 
+====================================================
+
+Because of the many complaints about excessive flaming on the list, we 
+request that further flames be conducted over the dc-stuff list. It 
+specializes in flame wars and regularly conducts them on topics from this 
+Happy Hacker list. To subscribe email majordomo@dis.org with message 
+"subscribe dc-stuff." Note: the list moderator has requested that Carolyn 
+Meinel refrain from posting to the list.
+
+==================================================== 
+ *** New Hacker List 
+====================================================
+
+From: ph.uk.list@emarkt.com
+
+A new moderated mailing list is up and running mainly for UK hackers and 
+phreaks.
+
+It is designed to compliment the newsgroup alt.ph.uk (phreak/hack in UK) 
+with is the Brit equivalent to alt.2600.
+
+To subscribe send a nice message to
+
+ph.uk.list@emarkt.com
+
+Also send posts to this address.  You will be kept anonymous on request.
+
+Happy ph.uk-ing!
+
+-------------------------------- 
+       /\             /\ 
+    6R6CHN0PH1L3 
+     //   \\o   o//    \\ 
+    //       / ^ \       \\ 
+             \    / 
+--------------------------------
+
+==================================================== 
+ *** Spam-Buster News 
+====================================================
+
+From: "Kevin Macey" <imagekiwi@hotmail.com>
+
+>From Imagekiwi, 
+      Firstly, I was Looking through a new Zealand mag that my mom bought back 
+from N.Z for me. And It told me of a great spam-stopper Program, called... 
+"Spam Hater", that tells you the person's name, and ISP name.. Found at 
+www.compulink.co.uk/net-services/ . I haven't tried It yet, but it sounds cool.
+
+================================================== 
+ *** Hacking Port 110 
+==================================================
+
+From: arachnophile@emarkt.com
+
+>I was wondering if you know the correct commands to enter once you 
+>connect to the incoming mail port? anything that I type says error!!!! 
+>Also is there a way to get my mail from the server through a certain 
+>port, if so what are the commands? Thanks!
+
+Since you said incoming mail, I assume you mean port 110.
+
+The commands are:
+
+USER <username> (first part of the e-mail address) 
+PASS <password> (you'll need to find this out or guess) 
+RETR <message> (each message is numbered, usually from 1 but may be 0) 
+DELE <message> (if you can't work this one out, unsubscribe!) 
+QUIT
+
+You can telnet to your own ISP's mail server on port 110 and login using 
+your username and password and retrieve your own mail, if you really enjoy 
+doing that type of thing.
+
+-------------------------------- 
+       /\             /\ 
+    6R6CHN0PH1L3 
+     //   \\o   o//    \\ 
+    //       / ^ \       \\ 
+             \    / 
+-------------------------------- 
+=========================================================== 
+ *** Linux Woes 
+===========================================================
+
+From: "Keith L. Palmgren" <keithp@netinfopro.com>
+
+>From: "Stephen James" <SJAMESFLORIDA-WELLINGTON@WORLDNET.ATT.NET> 
+>Linux refuses to recognize my internal modem.
+
+Linux does something no other OS I have ever worked with does.  The 
+configuration files for things like modems and video often require proper 
+ASCII order.  If you have the driver listed in the file out of sequence, 
+Linux can't find it.  Just a thought, but give it a try.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: BJ Johnson <bjjohnson@mail.usinternet.com>
+
+I'm thinking of installing Linux but my hard-drive is too small to put 
+that on and leave Win 95 on.  I still want to have Win 95 as my main OS 
+since I'm not the only user of the computer.  I was wondering if anyone 
+knew how to install it (preferably RedHat 4.1) onto a ZipDisk. 
+Hopefully then I would be able to use a bootdisk to switch over to Linux 
+when I boot up.  I've read most of the How-To's at sunsite.com but 
+haven't found any relevant information.
+
+One idea I had was if it would be possible to use UMSDOS and just make 
+it think that the ZipDisk is another partition on my hard-drive.  (If it 
+makes any difference, it's the parallel-port version.)
+
+Also, what programs/files would I need if I just want Internet 
+software?  Thanks!
+
+BJ Johnson 
+bjjohnson@usinternet.com
+
+==================================================== 
+ *** Cookie Killer 
+====================================================
+
+From: k1neTiK <samk5@IDT.NET>
+
+> Anonymous: 
+>I was wondering about something in regards to my user details being stored 
+>in Netscape 3.01 
+>I ran Nucleon and it came up with my email address and some other stuff 
+>about me. 
+> 
+>So I decided to have a look in the registry of my Windex PC and opened up 
+>the HKEY_users directory and then the software directory, I burrowed into
+
+========-cut-=========
+
+Jeez, haven't any of you guys ever heard that the closest distance between 
+two points is a straight line?  Think about it.  Netscape has a mail program 
+installed.  It needs your Email address and account in order for you to use 
+that program.  So you think whenever you switch accounts your gonna haveta 
+edit the registry in order to change your Email address???  Go OPTIONS, go 
+to Mail and News preferences, go to Identity, and change your info to 
+whatever the hell you want!  I mean, do you think Netscape would really 
+design a product that would require you to edit the registry in order to 
+change your info?  We're not talking about Micr0$oft here.  Well, hope I 
+haven't offended ya, considering I'm more than twenty years your junior. See 
+ya!  And happy hacking.
+
+k1 (that's a one, not an L!) 
+p.s.  Thanks to the popularity of Happy Hacker, my web site 
+(http://www.geocities.com/TimesSquare/Arcade/4594) has gotten over 1400 hits 
+in 2 months.  I'm averaging over 50 hits a day.  Planned improvements to my 
+page, ratings for the digests, and monthly schedule on Infowar IRC events. 
+See ya!  and Happy Hacking! 
+"...But other nations - including Australia, Canada, Denmark and Finland - 
+have policies that protect individual freedom." (New York Times; March 27; 
+the only intelligent thing John Markoff ever wrote.)
+
+========================================================= 
+ *** IRC Stuph 
+=========================================================
+
+If you're gonna post this reply, please keep me anonymous. 
+Thanks :)
+
+>From: " john  smith" <outfield@hotmail.com> 
+> 
+>I Was in a 'chat forum' the other day, and something I've never seen 
+>before happened. Someone entered the forum with NO ISP numbers or 
+>identification?(nothing, not a thing, blank space!) 
+> 
+>How the heck did he do this ? Are there site s on the web that will 
+>strip away your ISP identification?
+
+Sounds like an mIRC trick. The mIRC client supports coloured text. So 
+in File | Setup | Localinfo , you can input your Localhost in the 
+following format: Type [Ctrl]+k 0  then your user@host.domain address 
+followed by [Ctrl}+k 0 again. This has the effect of making your 
+user@host appear in white text, which, on mIRC's white background, 
+looks invisible :) So instead showing:
+
+***R337_D00d (Lamer@some.loser.com) has joined #IRCHelp
+
+What you appears on screen is something along the lines of:
+
+***R337_D00d (~
+
+Tip #1 : Most IRC servers won't allow you on with control codes in your 
+address....at most you should expect to be let on without ident. 
+Tip #2 : You will only be invisible to mIRC users who don't read tip #3. 
+Tip #3 : Get round this problem by setting in: Tools | Remote | Events :
+
+1:ON JOIN:#:if $chr(3) isin $fulladdress { echo 12 -a $nick at 
+$strip($address) has joined $chan } 
+1:ON PART:#:if $chr(3) isin $fulladdress { echo 12 -a $nick at 
+$strip($address) has left $chan }
+
+This looks for a control code in the address and echoes a message to the 
+screen:
+
+R337_D00d at Lamer@some.loser.com has joined #IRCHelp
+
+Hope that helps :)
+
+============================================================ 
+ *** Cracking Questions 
+============================================================
+
+        Please make this anonymous. 
+        When you make a phf query, what do the different parts of the 
+response mean. For example, when you try to get the password file 
+(/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/passwd), you get this line at the 
+top: 
+        /usr/local/bin/ph -m alias=x /bin/cat /etc/passwd
+
+ What does this mean? On some systems with the bug present, the password 
+file follows, while on others, it doesn't. On one system I was on, I used 
+ls to see the etc directory. Since the password file was shadowed, I tried 
+/cgi-bin/phf?Qalias=x%0a/bin/cat%20/etc/shadow, which I had just proved 
+was present. However, all I got was /usr/local/bin/ph -m alias=x /bin/cat 
+/etc/shadow and nothing after. Why is this? Is it hidden or something? 
+        I know that only some UNIX commands work like this. Does rm work 
+(I'm curious; I would have just tried if I wanted to delete something)? 
+What kind of commands don't work? By the way, does anybody know of any 
+good web sites/text files on this kind of thing that they could post? 
+Thanks.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: "NiNo FuNk-MaStA" <nino@main.rgv.net>
+
+I hear much talk of surfing ports but what good will that do a clue-less 
+person.  I mean, I could surf ports till I was blue in the face and still 
+not have accomplished much other than knowing that <insert your favorite 
+port here> was open.  What is there to do as far as being out side trying 
+to get IN?  Are there exploits, techniques...?  As far as being inside, my 
+ISP has it's shadow file locked in a root read-only attrib mode. Aren't 
+there other ways....it seems every exploit I try is futile. Each day, I 
+scour the net for new ones. (I have plenty of time, I am a "Lab Consultant" 
+<in house computer-geek who fixes/upgrades/installs hard/software...>) I 
+would like to get root some day...=)  I have been at it for 1.5 month(s) 
+and well......Any suggestions?
+
+Val: This is one of my monthly questions ;)  Hahahah 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+**  Nino@rgv.net  --  SkaNKiN' yO' WaY sOoN'   ** 
+http://www.rgv.net/~nino  -Knowledge is POWER! 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: "Macey's" <rpmacey@rad.net.id>
+
+Me again, I scanned some ports with a win 95 port scanner and found the 
+following.
+
+202.154.1.3 port 21 
+202.154.1.3 port 23 
+202.154.1.3 port 25 
+202.154.1.5 port 13 
+202.154.1.5 port 9 
+202.154.1.5 port 21 
+202.154.1.5 port 25 
+202.154.1.5 port 23 
+202.154.1.5 port 19 
+202.154.1.6 port 7 
+202.154.1.6 port 9 
+202.154.1.6 port 13 
+202.154.1.6 port 19 
+202.154.1.6 port 23 
+202.154.1.6 port 21 
+202.154.1.6 port 25 
+202.154.3.2 port 21 
+202.154.3.2 port 19 
+202.154.3.2 port 23 
+202.154.3.2 port 25 
+202.154.3.2 port 13
+
+now what do I do.  Can I get into any of these computers, how?  ( I'm a 
+newbie remember)
+
+Is Perl Availible for win 95 yet? if so where can i get it, and if not 
+where can I get the NT version of it.
+
+Imagekiwi
+
+Carolyn: Perl has been ported to Win NT, but I'm not sure if it will rin on 
+Win 95.
+
+Now, since I'm the Supreme Moderator, I get to rant awhile before telling 
+you more technical stuff. If you break into these computers and you don't 
+have permission from their owners, you are breaking the law. But it is good 
+practice for learning security to play break-in games with computers that 
+you do have permission to hack.
+
+If you have permission, the next thing you do is find out what services are 
+running on each port. For example, on 25 you might find sendmail, smail or 
+qmail. There are automated programs such as Satan that will tell you what 
+services are on each port. But -- if you run Satan from a shell account your 
+ISP will probably catch you and cancel your account! It is best to run these 
+programs from some sort of Unix on your home computer. Sorry, there aren't 
+any good ones I know of for Windows.
+
+Once you have figured out the services, the next step is to find out whether 
+there are any exploits known for them. Lots of exploit code is floating 
+around on Web sites and lists such as this one. Or, if you happen to be a 
+genius, you can create your own exploits.
+
+Next step is to get the code for your exploit to run on your computer. Most 
+exploits are written to run under the Unix operating system. But there are a 
+zillion slightly -- and greatly -- different brands of Unix. There are also 
+many Unix shells, most notably bash (Bourne Again Shell), ksh (Korn shell) 
+and tcsh(tektronic C shell). You may have to make some alterations in an 
+exploit before it runs on your computer. Also, that kewl exploit you 
+download from Deadly Evil Haxors of the Global Poohbahs may contain 
+malicious code that makes a big mess of your computer.
+
+Now if you get the exploit to run, the next thing is to figure out how to 
+tiptoe around your or your friend's computer in such a way as to not make a 
+mess. When you are the root user in Unix or in the  Administrative account 
+of a Windows NT system it is easy to accidentally make a mess. That's why 
+people are being so slow to offer computers for anyone on this list to try 
+to hack.
+
+Thank you to all you guys (and I won't tell  you who they are because we 
+don't want strangers playing hacking games) who have given me permission to 
+hack your computers! Several people have promised to open up some computers 
+for anyone to hack soon. I'll let everyone on this list know s soon as they 
+are ready.
+
+=========================================================== 
+ *** Shell Accounts 
+===========================================================
+
+Reply-To: Duncan Mak <vulcan@asiaonline.net>
+
+hi, 
+Question 1, 
+My ISP, asiaonline has 3 dial in phone numbers. One of them are 
+extensively used for PPP connections, it provides automatically switch to 
+PPP. The other 2, can also do PPP but it does not do automatically switch 
+to PPP. I dialed into that number yesterday, and found out it does 
+traceroute and a whole lot more. The help file is forwarded to you. 
+Do any of you know what these stuff do? A lot of the commands are disables 
+or 'you do not have enough security privilege to do so'.
+
+Question2, 
+when I use uname, it says SunOS, but when I telnet to localhost, it is 
+SystemV. What is this?
+
+Carolyn: Congratulations, you have a shell account. But I am puzzled by why 
+telnet localhost (same as telnet 127.0.0.1) gives you a different operating 
+system. Anyone have ideas?
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: Jackal332@aol.com
+
+In a message dated 97-04-04 01:10:58 EST, you write:
+
+<< From: Twigz Wiggy <twiggy@hq.tcfarm.com> 
+  
+ The sysop at my ISP says I have a shell account and he told me I just 
+ have to telnet into the server and that's it. but when I telnet, a 
+ window comes up with some options (Pine, Tin, an FTP thing, etc.)  But 
+ I can't find anything about how I can type in things like 'telnet-> 
+ boring.isp.net 80' ... 
+  
+ bench: twigs, by the looks of it, you have a telnet account running a 
+ menu program. look for an option that says Exit to Shell or something. 
+ or go ask your sysop! 
+  >>
+
+On my shell account I get about the same thing...there are individual menu 
+selections for things like telnet and ftp.  If you want to run from a prompt 
+so you can use things like whois etc... on mine I can just press ^Z  (ctrl + 
+Z)  This drops me at a prompt where I can just enter commands.  If I do 
+things like telnet from the menu I have to do something like this: 
+   Enter a selection: 2 
+  
+   Telnet>open server.com  ##
+
+At the shell prompt I can just type: 
+   telnet server.com ##  instead. 
+  
+   Hope this helps.
+
+-=- Jackal -=-
+
+From: "Xenakis" <xenakis@epix.net>
+
+(In answer to same shell account question)
+
+Some syops put it under a key combo such as SHIFT + 1 (!). Then a message 
+displays such as "Spawning your default shell". If you get that, you should 
+see a prompt such as "peach[1]% ". If that doesn't work, you could use an 
+option that they sometimes put telnet under "Login to Remote Systems", or 
+something of that effect. Once you get to the a prompt of any kind, its 
+time to buy a few UNIX/Linux books (depending on your needs), then go from 
+there! Note: better save up for these books - a lot of the good ones that 
+can run up to $60. Personally, I recommend O'Reilly, as most people on this 
+list would as well..... 
+Please keep in mind that I am a newbie as well, so correct if I am wrong on 
+*anything*
+
+============================================================== 
+ *** jericho Archives Meinel 
+==============================================================
+
+From: jericho@dimensional.com
+
+ftp.sekurity.org /users/jericho/meinel
+
+The start of the complete "Meinel" archive! All of the GTMHH's, HH 
+digests, and more!@#$!
+
+If you have anything you want to add to the archive, dump it in /incoming!
+
+whee.
+
+============================================================== 
+ *** Social Engineering 
+==============================================================
+
+Reply-To: bernz@ix.netcom.com
+
+>2 - Do you have a "Guide to Social Engineering", 
+>or something like that? I am     REALLY interested in learning more 
+>about it.
+
+>Thanx 
+>LiquidMetal
+
+I've tried to bring about interest in social engineering about a year 
+ago by publishing a Social Engineering FAQ. That can be found all around 
+(specifically on silicon toad's or my site). Also, pick up the latest 
+issue of 2600 for another article I wrote on social engineering or check 
+out my site: http://members.tripod.com/~bernz/soceng.html
+
+As far as other guides? Use books on communication, as they are the root 
+of this art. "Interpersonal Communication" by Joseph Devito is my 
+favorite.
+
+That's it, I guess.
+
+bernz
+
+============================================================== 
+ *** Looking for local hackers 
+==============================================================
+
+From: jester120@juno.com (Joshua A Chastain)
+
+      Hello, I'm looking for a local hacker that lives in VA or D.C. 
+Thanx 
+      And does anyone know a site that you could download some really 
+good hacker books? 
+The Jester King
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: mhenni81@cybertrails.com (Mina Henning)
+
+I was reading through the newest HH and a lot of people were asking for 
+hackers in there local area... so I figured I would ask also, Is there and 
+Arizona hackers out there ??? E-Mail me and tell me what part.!! maybe we 
+could get together !!
+
+_ATLien_
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: killerb@nyct.net
+
+Hey, 
+   I need members to join my group that are newbies to any subject. 
+However, I need more people who create great graphics.  My group, the 
+East Coast Prodigies is only for newbies.  This group is only for people 
+on the east coast.  We are dedicated to learn from other people and 
+other groups.  Thanks a lot.  Later.
+
+                                          Killer Bee
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: Silver` <silverhack@usa.net>
+
+I am wondering if there are any hackers in the Oklahoma City, OK area. 
+Around the Putnam City school district.
+
+Silver` 
+silverhack@usa.net 
+/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\/_\
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: savior28@juno.com (Savior28 . C)
+
+Hey! I'm looking for North Texas Hackers/Phreakers.  I know for a fact 
+that I'm not the only one so speak up!!!
+
+Remember:  Knowledge is power.  Contacts are also good tools.
+
+ -Savior28-
+
+==================================================== 
+ *** Computer Security Awareness Conference 
+====================================================
+
+Regal Harvest House Hotel 
+Boulder, Colo.
+
+May 15th and 16th 1997
+
+IGN Inc. of Boulder, Colorado would like announce CSAC 97'. This two day 
+conference will 
+inform and educate business owners, managers and office professionals, by 
+introducing and 
+explaining a wide variety electronic security issues facing most businesses 
+today. We feel our conference will be of benefit to any business which uses 
+the internet, telephones, computers, networks, cellular phones, PBX or other 
+electronic devices or systems to store, transmit or receive sensitive or 
+confidential matter.
+
+With the recent popularity of the Internet and world wide web anyone with 
+computer access to the Internet can download hundreds of different espionage 
+related software programs and thousands of pages of text describing in 
+detail how to gain access to almost any type of electronic system or 
+computer network.
+
+As a result electronic crimes are being committed by a wider variety of 
+people. Anyone with a basic understanding of computers and electronics can 
+learn to defeat security and passwords on almost type of computer, gain 
+access to and monitor your telephone and modem, generate valid credit card 
+numbers from specific banks, monitor your access to the Internet, access 
+your private files or credit report and in general learn anything they want 
+to about you all by following simple instructions or using underground 
+software available on hundreds of sites on the Internet.
+
+Today any employee or outsider can quickly learn to defeat passwords, PIN 
+and access codes, access e-mail accounts, generate company credit cards, use 
+telephone accounts or create calling cards, gain network privileges, access 
+confidential information, and even monitor telephone activity all from 
+either inside or outside of your business. It is our goal to help you create 
+a secure environment by showing you how to identify weaknesses and prevent 
+them from being 
+exploited.
+
+Admission for CSAC 97' is 799.00 for both days, this single fee covers 
+admission for one or two representatives. Additional representatives will be 
+admitted for 299.00 each. You must register 7 working days before the 
+conference to be eligible for admission.
+
+Some of the topics we'll cover at CSAC 97' 
+ 
+
+· Practical security for PC's and PC based networks (DOS Win3.1, Win95, Win 
+NT,).
+
+· Internet Security for the business user.
+
+· Legal discussions regarding Internet law.
+
+· Resources for keeping up to date on known defense loopholes.
+
+· Understanding what to protect and how to protect it.
+
+· Live demonstrations of techniques used to crack Windows and UNIX security.
+
+· Identifying and utilizing the "legal hacker".
+
+· Inter-office security policy and procedure.
+
+· Security concerns related to surfing the world wide web.
+
+· What your options are when you've been compromised.
+
+CSAC will feature lectures and workshops by internationally known net 
+vigilante and proponent of "harmless hacking" Carolyn Meinel, Computer 
+security expert Valerie A. Henson , Attorney Jon Miller, Networking and 
+policy consultant David Gray and other experts in the field of electronic 
+security. We will also employ workshops and discussion groups to address 
+these issues. We encourage our attendee's to participate and ask questions. 
+It is our goal to offer a structured and well mediated forum for 
+professionals to learn from experts, how to maintain an effective computer 
+security policy for any size business or corporation.
+
+For more information see http://www.planetnetwork.com/csac/index.html
+
+================================= 
+ *** That's all, folks! 
+================================= 
+Carolyn Meinel 
+M/B Research -- The Technology Brokers

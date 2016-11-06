@@ -1,0 +1,485 @@
+Happy Hacker Digest April 19-20, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Matt Hinze
+                 Send posts to: matt@cs.utexas.edu (Matt Hinze) 
+        [if you can, include a "HH" in the subject header] 
+               
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or 
+unsubscribe, use the subscribe boxes on the menu bars, please.. 
+If you decide you just want to use the forum and not get these 
+mailings, we promise our feelings won't get hurt if you unsubscribe 
+from this list. 
+  
+         H a p p y  H a c k i n g ! 
+============================================================================= 
+URL of the day: http://main.succeed.net/~coder/ 
+Packet sniffing and IP Spoofing by Brecht Claerhout (thanks for the 
+heads-up, Bronc Buster!) 
+=============================================================================
+
+Table of Contents: 
+------------------
+
+* Happy Hacker Digest Webpage 
+* [NTSEC] ALERT - NT security flaw announcement (with fix ;>) 
+* Disconnecting From Telnet 
+* SMTP COmmands for Cisco Multinet 4.0 
+* PGP Question 
+* Do I Need a Domain Name? 
+* More Windows 95 Net Utils (What are the for?) 
+* Beta Testers Wanted 
+* Sometimes it is just that easy. 
+* Linux & Netscape 
+* Note From Matt
+
+============================================================================= 
+*** Happy Hacker Digest Website 
+=============================================================================
+
+Ok, ok, I messed up. The correct URL for the Happy Hacker Digest 
+Website is: http://www.cs.utexas.edu/users/matt/hh.html
+
+This will not be my last mistake. :)
+
+Matt
+
+============================================================================= 
+*** [NTSEC] ALERT - NT security flaw announcement 
+=============================================================================
+
+From: Aleph One <aleph1@DFW.NET> [As seen on the BUGTRAQ mailing list. 
+To subscribe to Bugtraq, send an email message to 
+listserv@netspace.org with "subscribe bugtraq" in the message body.]
+
+    April 18, 1997 
+    Announcement
+
+    MWC, Inc.- NTsecurity.com would like to inform Internet Community 
+that MWC, Inc. has discovered a security flaw ("RedButton Bug") in 
+Microsoft Windows NT v 3.5x, 4.0. The security problem affects the 
+majority of NT based networks.
+
+    The "RedButton Bug" enables a remote user to get unauthorized 
+access to a part of the NT system including registry and file system. 
+The "RedButton" utility, which is available for download at 
+http://www.NTsecurity.com/RedButton/ demonstrates the possibility of 
+such an access:
+
+   * It logs on remotely on a Target computer without presenting any 
+     User Name and Password 
+   * gains access to some of the resources available to Everyone 
+   * determines the current name of Built-in Administrator account 
+     (thus demonstrating that it is useless to rename it) 
+   * reads several registry entries (i.e. displays the name of a 
+     Registered Owner) 
+   * lists all shares (including the hidden ones)
+
+    Microsoft has already been notified about this flaw.
+
+    MWC, Inc - NTsecurity.com 
+    Network Security Team 
+ 
+
+=============================================================================
+
+From: Russ <Russ.Cooper@RC.ON.CA>
+
+Here's more on how to fix (hopefully) the Red Button problem.
+
+First of all, some important notes;
+
+1. YOU CAN COMPLETELY STOP THE RED BUTTON PROGRAM by stopping or 
+unbinding the Server service. Andy points this out in his help file 
+(together with other useful security suggestions). Clearly this is 
+very difficult for many, but in an Internet situation it is something 
+you should be doing already. Of course unbinding the Server service 
+means that no shares will be available from that box. This IS 
+effective for Workstations, however, and is something that should be 
+considered.
+
+2. HKLM\SYSTEM\CCS\Services\LanManServer\Parameters\AutoShareServer 
+(or AutoShareWks for workstations) will disable the default hidden 
+administrative shares in NT 4.0 (i.e. c$, admin$), however, this does 
+not prevent Red Button from getting other information as it accesses 
+IPC$.
+
+3. 
+HKLM\SYSTEM\CCS\Services\LanManServer\Parameters\RestrictNullSessions 
+is enabled by default, but does not restrict Red Button at all. I am 
+still working through the combinations in NullSessionPipes to see if 
+something there can prevent access.
+
+--------
+
+I have set up two methods to retrieve David's program, 
+Everyone2user.exe
+
+1. Go to http://ntbugtraq.rc.on.ca/david.htm
+
+2. Send an email to mailto:Everyone2user@rc.on.ca and the program will 
+be emailed back to you in UUEncode format. Most MIME capable email 
+clients will automatically convert this to an executable for you.
+
+Please note, I personally have tested David's program on my own NT 4.0 
+machines. It did not adversely affect my ability to use any of the 
+machines. HOWEVER, despite the wide variety of applications which I 
+use on these machines, its not possible for me to test it with all 
+applications that run on NT. It is EXTREMELY possible that there may 
+be applications in use on your machine which DEMAND that the group 
+Everyone has access. Should you be using such a program (and no, I do 
+not know of any programs that do this today but that doesn't mean they 
+do not exist), then using David's program on your machine WILL STOP 
+THAT APPLICATION FROM WORKING.
+
+I give you this strong caution because neither David nor I have any 
+desire to have any of you find yourselves in the unenviable position 
+of not being able to use one, or more, of your currently running 
+applications.
+
+Therefore, before you run this program make sure that you do a 
+complete backup of your Registry. Update your Emergency Repair 
+Diskette by using RDISK /S, or better still, use a backup program 
+capable of backing up the registry to tape. Make sure that you test 
+this on a NON-PRODUCTION system first if at all possible.
+
+You have been warned, so please be smart and use caution BEFORE you 
+use this program (or any program for that matter). If you are at all 
+unsure about whether or not you have received the real program, then 
+retrieve the program using BOTH methods above, and then compare them. 
+They should both be the same size and show the same modified date of 
+Friday, April 18th, 1997 at 11:21:22pm, yet they will each have 
+different creation dates.
+
+To my knowledge, this program has yet to be tested on an NT 3.51 
+system, and the NT 4.0 systems it has been tested on may not have the 
+same combination of Service Packs and Hotfixes as yours. Feedback 
+would be appreciated from those of you who decide to run this program, 
+stating your system configuration (OS version, Service Packs, and 
+Hotfixes installed) as well as indicating which applications you have 
+verified work properly after running this program. Send these messages 
+to mailto:Russ.Cooper@rc.on.ca and I will make sure David gets the 
+information. 
+  
+BE CAREFUL! Despite its lack of thorough testing, I still recommend 
+you back up your registries and run it, as its benefits extend beyond 
+just what Red Button can do.
+
+It would seem that my bold statement about being able to stop Red 
+Button by just getting rid of Everyone access is not true, as Andy 
+pointed out. To use a Mudge-like phrase, I have strong suspicions that 
+I know how to prevent this program from getting anything but further 
+testing and discussion is required.
+
+For those that have asked, "network access" as used by Andy, means 
+access to TCP139 the NBSessions port. No existing authentication is 
+required to exploit this information from a server, and nothing short 
+of disabling the SERVER service will prevent it from retrieving at 
+least the Administrator name and available shares. The risk is that if 
+you have not enabled account lockout for your Administrator account 
+(whatever it is called), someone could attempt to brute force their 
+way into that account by connecting to the well-known share c$, or any 
+of the shares that it can enumerate (hidden or otherwise).
+
+Cheers, 
+Russ 
+R.C. Consulting, Inc. - NT/Internet Security 
+owner of the NTBugTraq mailing list: 
+http://ntbugtraq.rc.on.ca/index.html 
+ 
+
+=============================================================================
+
+From: David LeBlanc <dleblanc@ISS.NET> 
+>MWC, Inc.- NTsecurity.com would like to inform Internet Community 
+>that MWC, Inc. has discovered a security flaw ("RedButton Bug") in Microsoft
+
+>MWC states on their web page that they have currently not found any 
+>method that will 100% prevent these exploits. IMO, the common suggestion 
+>to remove Everyone access from everywhere and replace it with Domain 
+>Users should definitely do the trick. Guess their either saying this is 
+>too difficult or that they don't know how to do it.
+
+The problem appears to be in the well-known user of ANONYMOUS.  One 
+problem I cannot overcome at the moment is the ability of this user to 
+attach and gather Lan Manager information which includes shares and 
+user names.  Note that the user information does include such things 
+as comments and whether the user is the admin, guest, and which 
+well-known groups they belong to.
+
+Alas, a fix for this one will have to come from Microsoft.  However, I 
+do have code here to read and set registry permissions.  Once I finish 
+this app later this evening, I will post it for FREE, instead of 
+trying to extort $95 as MWC is doing.
+
+The source code for this app is based on code contained within the ISS 
+scanner, belongs to ISS, and unless someone gives me permission, I 
+can't post it.  At any rate, once a fix is tested, it will be made 
+available.
+
+----------------------------------------------------------- 
+David LeBlanc                   | Voice: (770)395-0150 x138 
+Internet Security Systems, Inc. | Fax:   (404)395-1972 
+41 Perimeter Center East        | E-Mail:  dleblanc@iss.net 
+Suite 660                       | www: http://www.iss.net/ 
+Atlanta, GA 30328               |
+
+[Matt: Well, well; it looks like WindowsNT has another flaw. Don't be 
+suprised if another one pops up in the next weeks. All of you running 
+NT: follow the advice of the preceding posts to make sure that, even 
+though still vulnerable, your machine is as secure as you can get it.] 
+ 
+
+============================================================================= 
+*** Disconnecting From Telnet 
+=============================================================================
+
+From: Elizabeth Genco <genc7199@sparky.cs.nyu.edu>
+
+Hi everybody--
+
+Since I'm in such a good mood (doing the Linux happy dance because I 
+just got PPP configured and up and running), I'll be brave and post my 
+probably obvious question.  Say you're happily port surfing, be it 
+from a shell account or a Linux box of your very own, and all of a 
+sudden you forget the port number.  You could very well end up in 
+front of a login prompt, and -- oh no! -- it expects you to login. 
+Since I'm not in the business of trying to crack passwords, I'd love 
+to know how to lose the login prompt of the telnetted computer and get 
+back to my own shell prompt!  Anyone know how to do this?  And while 
+I'm at it, I'll ask this: what's the deal with the "Escape Character 
+is '^]'" ?? How do I use that? It certainly doesn't get me out of the 
+login screen predicament!  Point, please?
+
+[Matt: To end a telnet session type '^]', or more simply, hold the 
+'Ctrl' button down while hitting the ']' key. You'll then get a 
+"telnet>" prompt, or something similar. You can connect to another 
+host or just exit the telnet program at this point.]
+
+Thanks all -- since this is my first post, I'll mention how much I 
+love this list and love reading all of your informative posts.  Thanks 
+especially to people like Bronc Buster who put up oodles of fun 
+information on the web for the rest of us....
+
+Elizabeth
+
+-- 
+Elizabeth Genco 
+.....to know, to will,                      finger genc7199@cs.nyu.edu 
+     to dare, and to keep silent.....                ebessh@walrus.com 
+     Rosabelle, believe.                            fiddlegrrl@aol.com
+
+============================================================================= 
+*** SMTP Commands for Cisco Multinet 4.0 
+=============================================================================
+
+From: the.mind.of.madness@mailrelay.tiac.net
+
+I was wondering if anybody knows the SMTP commands for CISCO Multinet 
+v4.0?  I tried looking all over for them, and I can't seem to find'em. 
+It doesn't work like normal SMTP, and it doens't support help 
+"command" either.
+
+============================================================================= 
+*** PGP Question 
+=============================================================================
+
+From: "John Doe" <infoflux@hotmail.com>
+
+I kept seeing the public pgp keys on the posts to the dc-stuff list, 
+and it finally piqued my curiosity.  So, I downloaded the program off 
+of the MIT site and installed it and started fooling around.  I read 
+all of the .txt files and faq's and I figured out how to make a key 
+and encrypt and decrypt messages, amd I think I understand the basic 
+principles of encryption.  What I don't understand, is how do 
+integrate the encrypted file into my e-mail and then how does the 
+receiver of my e-mail decrypt the file out of the e-mail body.  I am a
+
+definite newbie, and I would appreciate it if someone could explain 
+this to me as the text files and faq's are a little hard to 
+understand.
+
+[Matt: Well, there are several programs to do just this, depending on 
+what OS you use. So my advice is this: go to Yahoo 
+(http://www.yahoo.com) and do a search for "PGP". You can narrow the 
+search and use "PGP shell". Of course, if you want to do all this 
+manually, you can save your email message as a file, use PGP 
+(command-line-like) and cut-and-paste it back into your email program. 
+What you'll find yourself doing the most is signing plaintext files 
+(email messages) and having them readable to others (everyone on the 
+list). This ensures that you are the author of the message. If you 
+want to practice sending PGP signed/encrypted messages, send them to 
+me, at matt@cs.utexas.edu. My public PGP key is:
+
+-----BEGIN PGP PUBLIC KEY BLOCK----- 
+Version: 2.6.2
+
+mQCNAzM4Ey0AAAEEANwtVkKJtjCXc7ZHLEnOPaW3mD/Ac8sYoi+Bx02DtxGgOnVt 
+VuS81V/p8rwaJHBhelGjsKJpKZuWJA8MPofJjr6WrQNn1DVxNPad+e2tjhPYrP/5 
+faVpyP6fr7Q+MvUYD1XGN0KIbw3fUND81k5t8XdsQR7HlE8Loed7IWB3RoB5AAUR 
+tB9NYXR0IEhpbnplIDxtYXR0QGNzLnV0ZXhhcy5lZHU+ 
+=9Kqp 
+-----END PGP PUBLIC KEY BLOCK-----
+
+.]
+
+============================================================================= 
+*** Do I Need a Domain Name? 
+=============================================================================
+
+From: deviant <biteme@en.com>
+
+I have a computer that I want my friends to be able to telnet into 
+from other places. It has an ip address, but no domain name. Do I have 
+to register a domain name in order for others to access it? Any help 
+would be appreciated. Thanks.
+
+-jonathan
+
+[Matt: Nope. The can just telnet to the IP, like:
+
+$ telnet 222.222.111.222 
+.]
+
+============================================================================= 
+*** More Windows 95 Net Utils (What are the for?) 
+=============================================================================
+
+From: jopee@mozcom.com
+
+'More Win95 internet commands found in MS-DOS mode'
+
+YO! Happy Hackers ;) 
+We all know about d ping, tracert, netstat, etc. commands from d GTmHH 
+beginners series. I found other commands for d 'net in my windows dir 
+that were not mentioned in the GTmHH's I have read. These r run in 
+MS-DOS mode. I don't know what exactly they do but here they r:
+
+1. Arp.exe - Displays and modifies the IP-to-Physical address 
+translation tables used by address resolution protocol (ARP).
+
+2. Net.exe - This is not probably 4 'net but 4 windows 4 
+workgroups(IMHO).
+
+3. Netdde.exe - ?
+
+4. Route.exe - Manipulates network routing tables. 
+  
+Ex. route -f print   (IMHO - ur 'net connection screws up  @$%@&$%*)
+
+Active Routes:
+
+Network Address     Netmask  Gateway Address        Interface  Metric 
+127.0.0.0        255.0.0.0        127.0.0.1      127.0.0.1        1 
+207.0.117.0      255.255.255.0    207.0.117.132  207.0.117.132    1 
+207.0.117.132    255.255.255.255  127.0.0.1      127.0.0.1        1 
+207.0.117.255    255.255.255.255  207.0.117.132  207.0.117.132    1 
+224.0.0.0        224.0.0.0        207.0.117.132  207.0.117.132    1 
+255.255.255.255  255.255.255.255  207.0.117.132  207.0.117.132    1
+
+If somebody knows about these commands please post ur explainations.
+
+7hankz...jopee@mozcom.com
+
+============================================================================= 
+*** Beta Testers Wanted 
+=============================================================================
+
+From: Alfred Huger <ahuger@SECNET.COM>
+
+For those of you who are interested in network security auditing 
+tools, SNI (Secure Networks Inc.) is making an open call for Beta 
+testers. The software we are offering for Beta is our upcoming network 
+auditing tool Ballista.
+
+Interested parties should view :
+
+http://www.secnet.com/beta/opencall.html
+
+or FTP to :
+
+ftp://ftp.secnet.com/pub/beta/beta-form 
+ 
+
+/************************************************************************* 
+Alfred Huger                                            Phone: 
+403.262.9211 
+Secure Networks Inc.                                    Fax: 
+403.262.9221 
+**************************************************************************/
+
+============================================================================= 
+*** Sometimes it is just that easy. 
+=============================================================================
+
+From: [anonymous]
+
+     PLEASE KEEP THIS ANONYMOUS!!! 
+  
+  
+     This is just to give hope to any luckless newbies out there like 
+     myself.  I do not advocate breaking into other peoples systems 
+     unless it serves some purpose - mainly to find security flaws or 
+     holes in the setup. The only problem was I hadn't yet succeeded 
+     in finding one. The other day however I actually was able to get 
+     in and copy the password file of a unix host.  And the way I did 
+     it couldn't have been any simpler.  I merely used the tftp client 
+     to go retrieve /etc/passwd.  I thought "you have got to be 
+     kidding me, it can't be that easy"  I ran the file through 
+     crackerjack and called the guy with his passwords - no I did not 
+     use them.  This is what hacking is about, not deleting files or 
+     making sysop's lives miserable.  Where would they be without us?
+
+============================================================================= 
+*** Linux & Netscape 
+=============================================================================
+
+From: John Beal <jalexfox@www.cococreations.com>
+
+Netscape And Linux, 
+Here is something of a oddity that I have been dealing with concerning 
+running Netscape For linux version 3.01.Also I am running the 
+Slackware 2.0.27 kernel that I custom compiled for my system. For some 
+odd reason when I get to large of a bookmark file or something ??? and 
+I attempt to run netscape it Just locks up. I get this in my ps -a:
+
+1234  Netscape 
+1235  netstat (Zombie)
+
+So then I type Kill -9 1234 and Boom netscape and the netstat zombie 
+disappear it happens every time too. So then I started looking around 
+to see what is causing it and I noticed that I had a modified 
+bookmarks file so when I rm bookmarks.html and then restart netscape 
+bingo it loads up and runs perfectly. Any one have any ideas about 
+whats happening? Cause I like having a bookmark file and the only way 
+I can now is to bookmark things and then rename them to something else 
+and then use my web browser to view the bookmarked file and then can 
+choose the URL from there. Kinda a the hard way around it but it 
+works. Was mainly wondering if anyone else had the same problem and if 
+rm'ing the bookmark file in their home dir fixed it too??
+
+Jalexfox 
+A ever curious Fox searching Learning Yearning and Hacking his way 
+thru the Internet One Exploit at a time. 
+  
+============================================================================= 
+** Note From Matt 
+=============================================================================
+
+Whew! What a day, security-wise. The digest, though, is shorter than 
+usual. This is common in the newsmedia when there is a big breaking 
+story. For example, In the days up to a Presidential election, that's 
+basically all you hear about, even though there is other news. I guess 
+it has to do with what has priority with your audience. Also, I've 
+been busy offline. My parents are in town and, well, I'm exhausted 
+from keeping them busy here in Austin.
+
+By the way, expect the HHDigest Webpage to be fully updated the day 
+after you get the digest.
+
+Happy Hacking, 
+Matt Hinze <matt@cs.utexas.edu>

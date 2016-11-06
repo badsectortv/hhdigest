@@ -1,0 +1,622 @@
+Happy Hacker Digest April April 29-30, 1997 
+======================================================================
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator is Matt Hinze
+
+             Send posts to: matt@cs.utexas.edu (Matt Hinze) 
+           [if you can, include a "HH" in the subject header]
+
+             Please don't send us anything you wouldn't 
+            email to your friendly neighborhood narc, OK?
+
+To subscribe or unsubscribe, just 
+use the subscribe boxes on the menubars. If you decide you 
+just want to use the forum and not get these mailings, we promise our 
+feelings won't get hurt if you unsubscribe from this list. 
+  
+          The Happy Hacker Digest Webpage, located at 
+ http://www.cs.utexas.edu/users/matt/hh.html, contains recently 
+          discussed web sites and past URLs Of The Day 
+            (usually updated the day after the Digest is released).
+
+         H a p p y  H a c k i n g !
+
+============================================================================= 
+=============================================================================
+
+Table Of Contents 
+=================
+
+* Note From Matt 
+* pwd.db File? 
+* Programming Languages 
+* Windows Telnet Daemon 
+* Shell Account 
+* SUID? 
+* For Further Reading... 
+* HyperTerminal 
+* fg And bg 
+* Miscellany 
+* Cyberspace Shell Account 
+* Rental Car GPS 
+* Covering Your Tracks 
+* Phreaking In Oz 
+* Accessing That Darned shadow File 
+* List Demographics 
+* Working With Security Consultants
+
+===================
+
+============================================================================= 
+*** Note From Matt 
+=============================================================================
+
+I'm sorry that this digest took so long to send out - it's the last 
+week of classes here at The University of Texas. I've been swamped. 
+Keep an eye out for a lot of changes to the Happy Hacker Webpage and 
+the Digest next week, I have a lot of ideas, but most of them take 
+some time to implement.
+
+So continue to send your posts, suggestions, and nominees for URL Of 
+The Day to me, at matt@cs.utexas.edu Thanks!
+
+Matt
+
+============================================================================= 
+*** pwd.db File? 
+=============================================================================
+
+From: Tom Mucha <tmucha@usa.net>
+
+Hi
+
+I was FTP-ing around one day and I stumbled across a "pwd.db" file. 
+What is this file?  It's 40KB, and when I try to view it with a text 
+editor, it's only odd looking characters.  If this is a password file, 
+what would I use to view it?  I thought "passwd" files were the only 
+password files. Is it crackable?
+
+Thanks for any help, keep up the good work!
+
+Tom Mucha 
+ 
+
+============================================================================= 
+*** Programming Languages 
+=============================================================================
+
+From: Jason Terwilliger <jterwill@hotliquid.com>
+
+Hi... 
+I got a question. It's generally agreed that C++ is the language of 
+choice for hacking. I was wondering if anyone had opionions on other 
+languages. In particular, I was interested if anyone had an opinion on 
+how appropriate JAVA was since that's the only other major 
+Object-Oriented language around that I'm familiar with (besides 
+Eiffel). Thanks!
+
+Jason
+
+                           Do I believe in the bible? 
+                           Hell man, I've seen one!!
+
+[Matt: Well, it's *not* generally agreed that C++ is the best language 
+for hacking. I think it's up there, though. Among the best are Perl 
+and C (csh and tcsh included). I haven't been too impressed with Java 
+thusfar. Most of the Java applets or applications I've seen have been 
+used cosmetically. I wouldn't make learning it a priority. You should 
+look into Haskell for *nix. It's object-oriented, but functional (as 
+opposed to languages like C++ and Pascal, which are imperitive), so 
+learning it might be difficult, especially if you have an imperitive 
+background. Check out comp.lang.functional for more info about 
+functional programming.]
+
+============================================================================= 
+*** Windows Telnet Daemon 
+============================================================================= 
+  
+From: "Mr. Snoid" <snoid@geocities.com>
+
+> This touches on a  topic about which I've been very curious;  I 
+> would like to expand on it.  Could deviant's friends telnet into his 
+> box if he had a dialup account, and, therefore, a 
+> dynamically-assigned IP?  Assuming, of course, that he was using one 
+> of the little find-your-dynamic-ip progs and could relate it to them 
+> during the session.  In a sideways-related vein, could one telnet 
+> (or otherwise gain access remotely) into a Windows box?  Exactly how 
+> do Windows' ports work, in comparison to UNIX ports?
+
+I found a telnet daemon for Windows 3.1 called WinTD. 
+You can set to listen on the default telnet port (23) or any other 
+port. It allows someone who is logged in to your machine to look 
+around your harddrive, read files, and even "exec" or "kill" programs 
+running on your computer (if they have the right command privileges 
+that is) The daemon is "freeware" but the help file costs $10. 
+(sheesh) I'm not sure where I found it; it was either TUCOWS 
+  http://www.tucows.com/ 
+or Stroud's 
+  http://cws.iworld.com/
+
+later 
+Mr. Snoid 
+ 
+
+============================================================================= 
+*** Shell Account 
+=============================================================================
+
+From: me <umeatoug@cc.UManitoba.CA>
+
+just wondering, is every directory on my shell account that I can "cd"
+
+myself into legal to acs? will going into any directories cause the 
+sysadmins to cancel my account?
+
+-tricolore
+
+[Matt: If you have access to a directory, it's legal to 'cd' into it.]
+
+============================================================================= 
+*** SUID? 
+=============================================================================
+
+From: Warpy <warpy@null.net>
+
+>What's the big deal with suid?  I know what it means, but I don't see 
+>how this could be used to gain root.  If a suid program crashes, it 
+>terminates itself, right?  Or is there a way to get to a prompt from 
+>it?
+
+>From my limited understanding (and a great article by Aleph1), suid 
+root programs are a problem. Suid itself stands for (S)et-(U)ser-(ID), 
+which means at some stage in the programs operation, a suid root 
+program is operating at root.
+
+The recent spate of buffer overflow programs exploit this. What these 
+buffer overflow exploits actually do, is "exploit" poor coding in the 
+programs being overflowed. These programs do not "check bounds" which 
+allow someone to stuff more data into a buffer than the program can 
+handle. These buffer overflows allow someone to change the return 
+address of a function, this way someone can possibly get the program 
+to execute arbitrary commands - such as /bin/sh, and if the program is 
+suid root then you have now got a root shell.
+
+If I have fuxored up the explanation feel free to correct me, or 
+better yet if you still have questions why not read article 14, in 
+Phrack 49.
+
+Warpy
+
+--------------------------------------------------- 
+A great hack is accomplished before it has begun... 
+(paraphrased from Sun Tzu)   -[warpy@null.net]- 
+   http://jolt.dyn.ml.org/~warpy 
+--------------------------------------------------- 
+ 
+
+============================================================================= 
+*** For Further Reading ... 
+=============================================================================
+
+From: Jason Terwilliger <jterwill@hotliquid.com>
+
+Hi..
+
+The series on Shell Accounts is excellent. One suggestion though is on 
+books for newbies on UNIX. Though "UNIX in a Nutshell" is an excellent 
+reference..it's definately not an easily understood thing for people 
+unfamiliar with the system. (the author even states in the intro that 
+it's not meant to be a tutorial) To give a new person a good solid 
+knowledge of beginning UNIX, I'd like to suggest two books:
+
+UNIX in 7 Days" by Dave Taylor (SAMS): Gives lots of examples and is a 
+good step by step tutorial for those new to UNIX. Teaches you pretty 
+much everything you need to know for basic knowledge in getting 
+around.
+
+"A Student Guide to UNIX" by Harley Hahn (McGraw-Hill): I think this 
+is the most reccomended book around for novices..Cover everything the 
+other book does, but doesn't give it to you like a tutorial-based 
+lesson.
+
+Just wanted to give my 2cents worth, hope this helps:)
+
+Jason
+
+                           Do I believe in the bible? 
+                           Hell man, I've seen one!!
+
+============================================================================= 
+*** HyperTerminal 
+=============================================================================
+
+From: WaXbOaRd <ak1128@onslowonline.net>
+
+me again (and again and again...)
+
+Ok, In the GTMHH 1.1 you said that win95 has a Terminal Emulation 
+Program (vt 100) included in the access. program.   Is that the 
+HyperTerminal proggie?  If it is, when i log on to my ISP, it gives
+
+[Matt: You might be thinking of TELNET.EXE.]
+
+welcome to onlsowonline 
+user name: 
+password:
+
+when i type all the appropriate stuph, all that comes on is a series 
+of ^H^H^H^H^H^H^H^H^H^087888^H^H^H (which scrolls down about 5 pages) 
+then it boots me off.  Am i doing something wrong?  I'm trying to find 
+some info on a person and everytime i try something i run into a 
+deadend..
+
+[Carolyn: Your ISP is trying to set up a PPP connection with 
+Hyperterminal. All I can say is complain to tech support. I've never 
+had any luck with tech support when that happens with my ISPs.  But 
+sometimes Hyperterminal will successfully set up a connection to your 
+shell account, and sometimes all you get is a failed PPP connection 
+attempt. Solution: use a better program, for example Ewan, which is 
+free. You may download it from the /utils directory at 
+obscure.sekurity.org, courtesy of jericho.]
+
+============================================================================= 
+*** fg And bg 
+=============================================================================
+
+From: Xenakis <xenakis@epix.net>
+
+<snip> 
+>'^C' (interrupt) will stop a process that you are currently 
+>running, and '^Z' (suspend) will (often) suspend a process which you 
+>can later re-start with the fg command (this is often handy when you 
+>get a talk-req while you are in the middle of doing something really 
+>important and you don't want to lose your place) 
+<chop>
+
+With doing ^Z, fg will run the program in the ForeGround, and bg will 
+run the program in the BackGround.... 
+(I believe that you meant bg instead  ;)
+
+-- 
+-Xenakis xenakis@epix.net 
+http://www.epix.net/~xenakis/
+
+============================================================================= 
+*** Miscellany 
+============================================================================= 
+  
+From: jericho@dimensional.com
+
+> (I have read all the phreaker's box specs and they look like so 
+> much fun!! I want to try them all, but will they work in Oz?? 
+> I know they obviously do with ol' ma bell's phone system...
+
+Actually, 90% of the box plans out there never did work on any phone 
+system.
+
+------------------------------------------------------------------------
+
+> However, I wanted to correct several problems with the guide.  First 
+> of all, in your file permissions tutorial (which incidently neglects 
+> the arguably important information of HOW to CHANGE them), you write: 
+> 
+> >If you were to someday discover your permissions looking like: 
+> > 
+> >       drwx--xrwx      newbie user     512 Apr 22 17:36 www/ 
+> > 
+> >Whoa, that ^r^ in the third place from last would mean anyone can hack 
+> >your Web page! 
+> 
+> This is not correct.  AFAIK, every UNIX variant has exclusive 
+> permissions. In the example above, you have DENIED read and write 
+> permission to everyone in the "user" group.  This this person:
+
+That should have been talking about the last 'w', and both of you are 
+wrong I think :)  The last 'w' shows "other" write access. That means 
+anyone on the system can write to that file. Even if someone is in 
+your group, I think on most systems they will also fall under "other" 
+and be able to write that way.
+
+> would NOT be able to tamper with your files.  Presumably most users on 
+> the system would fit this description.  Thus it is not correct that 
+> "anyone can hack your Web page!".
+
+"anyone" because the last 'w'.
+
+> Also you claim that "Jericho is a security consultant runs his own 
+> Internet host, obscure.security.org".  If you had used those 31337 
+> haxx0r T00lz 'nslookup' and 'whois' which you always talk about, you 
+> would have found that the host doesn't exist, and the domain is run by 
+> Marc Tobias. I think you mean "sekurity.org".
+
+sekurity.org is the correct spelling. 
+ 
+
+============================================================================= 
+*** Cyberspace Shell Account 
+=============================================================================
+
+From: LGPryor@worldnet.att.net
+
+Hey,
+
+On your Mon, April 28, 1997 issue you had "Free Shell Account" listed 
+on your table of contents. I checked it out, and it's nothing big. You 
+can't access anything off of the Account Provider's system unless you 
+pay them $6 a month and give them proof of a valid ID. If you're into 
+chatting and BBS stuff, then you should check it out. With the free 
+account you don't even have to give your real name. But for hackers, 
+this ain't the thing.
+
+That's it. Todo es amor, adios. 
+Wayfarer X 
+WayfarerX@TheVortex.com
+
+[Matt: Right. It's not very useful, but it is a shell (with compilers 
+;> ) nonetheless.]
+
+============================================================================= 
+*** Rental Car GPS 
+=============================================================================
+
+From: [anonymous]
+
+This is a response to Hacking Rental Car GPS for the Happy Hacker 
+mailing list.  If you decide to post it, please make it anonymous.
+
+> On the back of the console ( the part that is in the front of the car) 
+> there is a small serial port plug thing with no label or anything but 
+> It can be easily removed...and plugged into something else...say a 
+> laptop..But I don't have much experience with this kind of stuff and I 
+> was wondering if anyone out there has ever tried to hack one of these, 
+> or if it is even possible??
+
+The presence of a serial cable implies at least two devices, one the 
+display/console/computer and at the other end a GPS 
+receiver/processor. The GPS probably sends data to the console as NMEA 
+(National Marine Electronics Association) sentences.  These sentences 
+include all kinds of locational data including lat, long, elevation, 
+time etc. You should be able to find definitions on the web somewhere. 
+I think the standard transmission is 4800BPS/8/N/1.  To check this 
+out, connect the serial cable to your laptop and run a terminal 
+emulator with those settings on the serial port.  You should see some 
+sort of formated data.  It is also ossible that Hertz is keeping track 
+of more than just GPS data.  If you do get identifiable GPS data, 
+check to see if there is anything else that does not fit GPS 
+parameters.  If there is, take some samples, post them here and lets 
+see what we can make of them.  If you don't get any data, try 
+switching pins 2 and 3 (you might be trying to receive on the 
+transmit pin). If you get garbage, change the comms settings.
+
+Going in the other direction, connect a serial cable up to your laptop 
+and the console unit.  If it just receives and displays the GPS data, 
+you should not see anything.  If you get any kind of activity in your 
+terminal emulator, it possibly (wild speculation here) means that the 
+computer is polling several different devices for input or is storing 
+data to a third device (a hidden hard disk perhaps?).  If this happens 
+you might try sending some control characters at the computer 
+something might throw it into command mode (after all, Hertz has to 
+have a way of servicing the unit right?).  If you get the response 
+"OK" to something you type, you probably hit the jackpot!
+
+If it were me, I wouldn't put a computer in a car just for the 
+convenience of the driver, I'd use it to double check mileage and 
+otherwise keep track of the car and its use (max speed time at 
+location, hours of travel etc.).  Lets hear from the truely paranoid 
+here, what can Hertz learn about these travelers just by logging trip 
+data in an on-board computer???
+
+[Matt: Ooo, interesting. I'm in rental cars all the time - next time 
+I'll bring my laptop. :) ]
+
+============================================================================= 
+*** Covering Your Tracks 
+=============================================================================
+
+From: n-treeg@ix.netcom.com
+
+>Ok i have a question...I know your probaly really busy so answer this 
+>as soon as you can. Well with my ISP i use it gives me a domain 
+>name..and i see this as Not good and a problem...Becasue whenever i 
+>connnect to a remote computer..in the logs or whatever it will say 
+>logged in "my domain name" and if my domain name is logged on abunch 
+>of computer systems i will get cought right? And if this is true is 
+>there a way to get rid of or hide my domain name? And if this is not a 
+> 
+>problem please say so...I would love any info u can give me on this 
+>THANKS ALOT! 
+> 
+>Marty 
+> 
+>[Matt: I'm assuming (since this is a digest about legal hacking) that 
+>it won't be problem. Everything you're doing is legal, right? ;> ]
+
+<N-TREEG> 
+In the event that you may have cracked a password or two and have 
+actually logged on to these sytems, you may want to cover your tracks. 
+A simple method that will make you a little less obvious to the 
+casual, average user is to telnet, open localhost  after you've logged 
+in so that they won't see your IP in the "last login from: etc... 
+etc..." blurb the next time the legitimate user logs in.  This won't 
+hide you from a who and it won't remove your presences from the logs. 
+For info on how to do this you can peruse 
+http://www.geocities.com/CapeCanaveral/3498/cover1.htm for a tutorial 
+on covering your tracks.  [NOTE: Must be root to edit those files.  In
+
+addition, if you are discovered, editing files will most certainly put 
+you in hot water with the sysadmins. IMPORTANT: NEVER DELETE SYSTEM 
+FILES.]  Do no damage and hopefully no damage will come to you. I hope 
+you gain some knowledge and insight from that web page.  Be good now! 
+;-) 
+</N-TREEG>
+
+============================================================================= 
+*** Phreaking in Oz 
+=============================================================================
+
+From: Warpy <warpy@null.net>
+
+Hrmm Phreaking in Oz, once thought a dying age..
+
+Alright, I'm going to go thru the various forms of phreaking which are 
+applicable in Oz (as far as I know) and some sites you "might" be able 
+to find further info.
+
+Ok, the number one Oz phreaks tool is the beige box. These simply 
+connect you phone to a phone line via alligator clips. However, that 
+phone line could either be in your own house.. or down the road in 
+some telstra pit.
+
+Redboxes do NOT work. How do I know? Next time you're at a payphone 
+and put in some coins. Do you hear any tones? Nope.
+
+Blue Boxes. I would hope that the majority of you realise that they 
+(for the larger part) do NOT work. However if you can manage to call 
+some third world country, it is often possible to blue box of them as 
+their switching technology is often ancient. The problem is the cost 
+of the call to the third world country. Can anyone say "1800"? ;)
+
+Hrmm what other boxes are there...
+
+There is the black box, which makes it so the caller doesn't have to 
+pay for their call. However now that i think about it, it probably 
+works, but as most calls get timed out within a certain period of 
+time, it may not work for long.
+
+Now on to some general info about phreaking in Australia. It is a very 
+secret art. Literally. The reason American phreaking techniques still 
+work years after how to do them have been published is due to the 
+makeup of the US telecommunications industry, and the costs involved 
+of replacing existing telecommunication networks. HOWEVER. In 
+Australia up until recently Telstra (formerly known as Telecom 
+Australia and OTC) was the sole provider of telecommunications. This 
+meant that they could upgrade the ENTIRE system around the country 
+when these faults are discovered, not just small pockets (which is 
+what happens in the US). Hence any knew phreaking knowledge and/or 
+techniques are limited to a select few to prevent Telstra getting wind 
+of it.
+
+One example occured when I was at the movies one day. I was walking 
+past a bunch of teenagers at the payphone (around 13/14 years old) 
+playing with the keypad. After they walked off I looked at the phone 
+display. "PHONE OUT OF SERVICE". Now I had seen this done once before 
+by a friend of mine, but whereas he did a similar "hack" which lasted 
+only about three minutes, these kids must've done the permanent one 
+which required a Telstra service dude to come out and reset it. I had 
+not personally read about how you can do this, but these kids had. And 
+I had one guess where they got it from. A bulletin board.
+
+Needless to say this kind of childish behaviour is the EXACT thing 
+which causes the phone system to be patched, and once again be reduced 
+to beige boxing from your local telstra pit.
+
+Oz Phreaking Resources: Look up an emag called Neurocactus, you will 
+either find it on local boards, or there is a site on the net 
+somewhere. Very good info for the beginning Aussie phreak.
+
+That's about it, if you find anything of interest please feel free to 
+email me..
+
+Warpy
+
+--------------------------------------------------- 
+A great hack is accomplished before it has begun... 
+(paraphrased from Sun Tzu)   -[warpy@null.net]- 
+   http://jolt.dyn.ml.org/~warpy 
+---------------------------------------------------
+
+[Matt: Note: Stealing phone calls is illegal.] 
+ 
+
+============================================================================= 
+*** Accessing That Darned shadow File 
+=============================================================================
+
+From: "Joe Rowe" <Joe.Rowe@btinternet.com>
+
+Help!, i am having troubles with accessing the shadow password file on 
+my college UNIX system (any system for a matter of fact). There is a 
+small program that makes use of getpwent() however this get entries 
+from the passwd file and not the shadow file, i edited it to use 
+getspwent() or whatever (the shadow equiverlent) which of course 
+denies access. In text's it mentions that successive calls to 
+getpwent() have to be made, are they just refering the the while no 
+more entries loop (which brings up a big *0*) or do you have to try 
+this many times ? I would like to now of any exploits or methods of 
+aquiring the contents of the shadow pword file a) on a local system 
+without using browser exploit or b) without using the phf exploit. 
+Also i enquired to my lecturer could i read directly from the file 
+systems/HD for the contents of the shadow pword file, he says NO, is 
+this correct is or their a way ?? :-( if not, surely systems closed to 
+exploits are secure :-(
+
+NB : I have about 3 years of 'C' experience so im not that thick :-)
+
+also...
+
+has any one got a.. 
+ Port Scanner, 
+ IP/Packet sniffer. 
+if they have or know of the location of a *good* *working* one(s) 
+could you 
+let me know (please...)
+
+[Matt: Do a web search, and scan through the past URLs Of The Day.]
+
+Joe
+
+============================================================================= 
+*** List Demographics 
+=============================================================================
+
+From: "Carolyn P. Meinel" <>
+
+A search for country domain names (which is an undercount, since many 
+people have email addresses that don't include their country's ISO 
+domain code) reveals:
+
+Sweden..........436 
+Norway..........117 
+Canada..........108 
+Australia.......69 
+Spain...........57 
+United Kingdom..50 
+Germany.........36 
+Singapore.......24 
+Italy...........22
+
+Total subscribers as of 4/29/97 = 3,631
+
+[Matt: This will interest everyone, especially the journalists and law 
+enforcement officials subscribed to the list.]
+
+============================================================================= 
+*** Working With Security Consultants 
+============================================================================= 
+  
+From: Warpy <warpy@null.net>
+
+This is just a short note to newbies. Recently I emailed a local 
+security consultant about doing work experience with him. I had spoken 
+to him via email a couple of times previously, and to my shock and 
+delight he was open to the idea.
+
+So if any of you guys are SERIOUS about getting into computer security 
+work, and have more than an ounce of experience, I suggest you contact 
+your nearest computer security firm and enquire about possibly doing 
+some work experience for them (make sure you mention the word FREE).
+
+Good luck,
+
+Warpy
+
+--------------------------------------------------- 
+A great hack is accomplished before it has begun... 
+(paraphrased from Sun Tzu)   -[warpy@null.net]- 
+   http://castle.dyn.ml.org/~warpy 
+---------------------------------------------------
+
+============================================================================= 
+=============================================================================
+
+Matt Hinze <matt@cs.utexas.edu>

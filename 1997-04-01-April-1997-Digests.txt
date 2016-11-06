@@ -1,0 +1,748 @@
+April 1997 Digests
+====================================================================== 
+                   Happy Hacker Digest April 1, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Carolyn Meinel
+
+                 
+            
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or unsubscribe, 
+  use the subscribe boxes on the menu bars, please.. If you decide 
+you just want to use the forum and not get these mailings, we promise 
+       our feelings won't get hurt if you unsubscribe from this list. 
+                       H a p p y  h a c k i n g ! 
+================================================================= 
+URLs'O the Day: http://www.geocities.com/TimesSquare/Arcade/4594 
+The most extensive Happy Hacker archives around! 
+=================================================================
+
+Table of Contents
+
+o  NT Crack Version 2 Released 
+o  Preventing Denial of Service Attacks 
+o  Telenet it *Not* Telnet Misspelled 
+o  Deleting Bash History File 
+o  Oh, no, did I really surf THERE??:(:( 
+o  Hacking Sendmail 
+o  Update from the Front on the War Against Spam 
+o  More Phreaking 
+o  Customize Your Internet Explorer Animated Logo 
+o  Outrage Certain People by Scanning their Ports 
+o  Call for Finger Lakes NY Hackers 
+o  Flame Wars
+
+=============================================================== 
+ *** NT Crack Version 2 Released 
+===============================================================
+
+Sender: Windows NT BugTraq Mailing List <NTBUGTRAQ@RC.ON.CA> 
+From: Jonathan Wilkins <jwilkins@SECNET.COM>
+
+NT Crack version 2 has been released.
+
+I apologize for how soon it follows the initial release but I 
+think that a massive optimization in speed in the new version 
+justifies a new release.
+
+We ran a user list of length 1006 with a word list of around 860,000 in 
+5 minutes 30 seconds on a Pentium 133 with 32MB RAM running 
+Windows NT Server.
+
+Roughly 2,606,000 cracks per second.. 
+The old version seemed to get around 15,000 cracks per second..
+
+This is due to Windows NT's lack of any salt functions as well as a 
+few optimizations regarding the encryption routine and a change in 
+the way NTCrack processes user files.
+
+The new version is also independent of the cygwin.dll and so is 
+much smaller but it seems that the cygwin libraries are marginally 
+faster. When NTCrack is compiled and linking in the cygwin 
+libraries it was somewhat faster but I decided to release the smaller 
+version because our little ISDN net connection was getting a little 
+choked.  Anyone who wishes to mirror this program should contact 
+me via email at jwilkins@secnet.com
+
+Speed freaks are encouraged to compile their own copies 
+for various UNIX platforms rather than deal with the 
+overhead of Windows.
+
+One other feature was added, the program now attempts to use 
+the username as the password.  I have found in many smaller 
+offices, especially ones that run NT or Netware, that users are 
+generally uneducated about what constitutes a good password 
+and so will often use their username. 
+ 
+
+                                        Jonathan Wilkins
+
+again, I am sorry to re-release so soon, but I really believe that 
+the improvements justify it..
+
+the new files are only ~22k
+
+-=-=-=-=-=-=-=- 
+Jonathan Wilkins      |  Futuaris   | If only they had used their 
+jwilkins@secnet.com   | Non Irresus | terminals for niceness instead 
+http://www.secnet.com |  Ridebus    | of evil ...-Maxwell Smart
+
+(To subscribe to NT Bugtraq, email listserv@rc.on.ca with message "subscribe 
+ntbugtraq")
+
+Carolyn: I just spoke with Dead Addict, a famed hacker and Microsoft 
+employee, on this issue. DA says that while a password of a given length is 
+easier to crack on NT systems, NT will accept passwords of much greater 
+length than Unix systems. There are also utilities which prevent an NT user 
+from entering a password that is too short or too easy to guess. But NT 
+sysadmins must remember to install a program that will force users to choose 
+these high-power passwords.
+
+================================================================== 
+ ** Preventing Denial of Service Attacks 
+==================================================================
+
+From: "Mishari \"CykiX\" Muqbil" <mishari@thepentagon.com>
+
+Hi. I've got more stuff on port 19 :-) 
+Basically, instead of using telnet and piping it to port 7, another 
+HIGHLY effective way is to just use good ol' lynx. That's right, the 
+good little goody goody hostile java applet-proof browser has a deep 
+dark secret: 
+lynx http://localhost:19/ 
+Notice the number of bytes transferred increasing rapidly? 
+Use screen to have several sessions of lynx running. That UNIX box is 
+gonna Crawl! Here's another something which works: 
+lynx http://my.isp.net:19/ 
+Seems to disconnect the modem from the ISP. Anyone here has the same 
+problem? 
+And... *drumroll please* MSiE! Yes! Micro$0ft hasn't been doing their 
+homework. Port 19 hasn't been disabled and it has a much more drastic 
+effect than lynx on a windows NT environment (http://localhost:19) Check 
+it out, it's worth a few laughs. NetScape has done their homework well 
+and disabled access to the major ports with security hazards. e.g. port 
+19 and port 7. Three cheers to Netscape!
+
+-- 
+Reg'dz 
+[MÍ§hÄrí mÜQßî¦] (MiShArI MuQbIl) 
+Go to my homepage http://mishari.home.ml.org for the Ultimate Collection 
+of full length 28.8 Streamable Weird Al Yankovic Mpeg3's!
+
+=-=-=-=
+
+Carolyn: Thanks for the warnings! I can't emphasize too much how important 
+it is to close not only 19 -- the worst of the lamer denial of service ports 
+-- but let's add 7 (echo) to the list, too. It would be soooo easy for some 
+self-styled "kewl dood" to offer a download site for a program that any 
+idiot with Win 95 and AOL could use to crash a major ISP.
+
+===================================================================== 
+ *** Telenet is *Not* Telnet Misspelled 
+=====================================================================
+
+From: brian <brianzad@asan.com>
+
+I thought Telenet was a misspelling of telnet until the question about 
+the two was posted.  I couldn't find the Telenet/Telnet article at 
+infowar.com so I put a link to the article that describes Telenet at 
+http://www.asan.com/users/brianzad. 
+The article was written by Revelation of LOA.  It explains Telenet. 
+ 
+
+================================================================ 
+ *** Deleting Bash History File 
+================================================================
+
+From: "OD|phreak" <butler@tir.com>
+
+>I recently found that I could delete the contents of the bash-history file 
+>on my ISP using telnet. Logon to your shell using telnet then do something 
+>like a bunch of finger's and whois's. When you're finished,  use the up 
+>arrow to scroll back through each command you made deleting each command 
+>with the del key as you go, then  use the down arrow to scroll back to the 
+>present. You must scroll all the way back to the present for this to work 
+so 
+>count the number of commands you delete if there are a lot of them. 
+> 
+>Then type quit and logoff and the only thing that will be left in the 
+>bash_history file is the last quit command you did. 
+> 
+>Does this work on other operating systems? I'd be curious to know if 
+>anybody can reproduce this on their ISP. 
+> 
+>Carolyn: It doesn't work on my account at escape.com, which uses BSDI 
+BSD/OS 2.
+
+I found it works on almost any system that uses BASH I just have a fake 
+.bash_history on my comp 
+for when I use BASH but I usually use SH cause it doesn't log but here is how I 
+have it on my comp 
+for fake bash files 
+  
+|----BASH---===================|1-hour_on 
+$Home-----Fakelogs------| 
+  |2-hour_on 
+                                   |-----SU----- 
+          |20-minutes_on 
+                                   | 
+                                   |----lastlog--
+
+AND the 1 hour log is about 1 hours worth of stuff like saying harmless 
+things like and u can make it 
+switch shells if you run out of ideas.
+
+PINE 
+LYNX 
+IRC 
+ls 
+rm work_paper 
+ksh
+
+After you upload this rm .bash_history (in a shell other than bash) then 
+rename 1-hour_on to .bash_history 
+its really no big deal
+
+C-ya 
+od^phreak
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: "Xenakis" <xenakis@epix.net>
+
+<snip> 
+| Anonymous post: 
+| 
+| I recently found that I could delete the contents of the bash-history 
+file 
+| on my ISP using telnet. Logon to your shell using telnet then do 
+something 
+| like a bunch of finger's and whois's. When you're finished,  use the up 
+| arrow to scroll back through each command you made deleting each command 
+| with the del key as you go, then  use the down arrow to scroll back to 
+the 
+| present. You must scroll all the way back to the present for this to work 
+so 
+| count the number of commands you delete if there are a lot of them. 
+| 
+| Then type quit and logoff and the only thing that will be left in the 
+| bash_history file is the last quit command you did. 
+| 
+| Does this work on other operating systems? I'd be curious to know if 
+| anybody can reproduce this on their ISP. 
+<chop>
+
+What gain you gain by deleting your history file? You would then later have 
+to waste additional time typing in repetitious commands! If you want to 
+*edit* your .bash_history just use fc [-e editor_name] [-n] [-l] [-r] 
+[first] [last]
+
+e - editor name (vi or emacs) 
+n - suppress command #s 
+l - lists matched commands 
+r - reverse order 
+first/last - # range of commands
+
+OR 
+to use another .bash_history, use history [-r|w|a|n] [filename] 
+r - read the content of the current history file and make them the current 
+history file 
+w - write the command history to the history file (overwriting) 
+a - appends the history file 
+n - range
+
+            ||=====================================|| 
+ || xenakis@epix.net    o0xenakis0o@hotmail.com    || 
+ || http://www.epix.net/~xenakis/         [SPROCKET] || 
+ || http://www.geocities.com/BourbonStreet/3407/      || 
+            ||=====================================|| 
+  
+There are two Bills running this country, and few like any of them...
+
+=-=-=-=-=-=-=-=
+
+Carolyn: Our discussions of bash history logs has inspired a great deal of 
+derision on the dc-stuff list. If you want to join in the incessant flame 
+wars that list cultivates, email majordomo@dis.org with message "subscribe 
+dc-stuff".
+
+============================================================= 
+ *** Oh, no, did I really surf THERE??:(:( 
+=============================================================
+
+From: gtmhh@juno.com (M. A David)
+
+This is a tip for the Win95 Netscaping community :)
+
+Here's a fast way to clear your URL History in Netscape (the list of 
+domains that you see when you click on the down arrow to the right of the 
+Enter URL box).  The basic idea has already been "put on the table", but 
+its much faster than editing the registry every time.
+
+The idea (in case you didn't get a chance to read it when it was put out) 
+is to get into the registry (Run => Regedit) and get to the Netscape 
+directory which contains what was previously in the Netscape.ini file. 
+It is under "HKEY_CURRENT_USER\software\netscape\netscape navigator". 
+When there, you will be looking for the folder that says "URL History". 
+When there, DO NOT delete URL_1, URL_2, etc., (if you do, don't worry -- 
+Get out of registry editor, Load Netscape, Exit Netscape, load registry 
+-- Go to folder listed above)  Press enter for each of the URL_?? and 
+clear out the Value Data.  Do that for them all, and the history in the 
+pull-down menu will be cleared.
+
+Now, to do this in 2 mouse clicks: 
+1)  Load registry 
+2) Go to HKEY_CURRENT_USER/software/netscape/netscape navigator/URL 
+History and then clear it out as listed above. 
+3) Click on the URL History folder. 
+4) Click on Registry (on the menu bar) and select "Export registry file" 
+5) I'd save it on tha desktop.  Name it anything you want. 
+6)  Next time you want to clear your History, 2x click on the file you 
+just made!
+
+M. David
+
+=========================================================== 
+ *** Hacking Sendmail 
+===========================================================
+
+From: Robert Finger <finger@rust.net> 
+Subject: hack ?
+
+when I made a hard link from /etc/passwd to /var/tmp/dead.letter, 
+dead.letter became owned by root, with the read only mods to match. How does 
+this help me? Send mail must have root authority but unless it deliberately 
+changes the mods, it still cant write to that file????
+
+- IF YOU DECIDE TO POST MY REPLY: 
+- PLEASE USE MY EMAIL ADDRESS AS "seva@techie.com" 
+- AND MY NAME AS "seva" 
+- THANKS... 
+  
+ 
+
+>    Hello! 
+> 
+>    I have currently installed Slackware Linux at the office.  The 
+>    installation went out fine but the problem I encountered was 
+>    how am I going to connect to the Internet and also to our LAN? 
+>    I have used netconfig and IMHO, I was able to input the 
+>    correct values.  Still if I try to ping our DNS, Linux says 
+>    that the network is not reachable or something to that effect. 
+>    I am using Ethernet 3Com 509 and I have another box using 
+>    NE2000.  What should I do?  I've skimmed through Linux 
+>    Unleashed and it assumes that we are connected properly.  I 
+>    tried GNU Linux too but the same thing happens. Please help. 
+>    Thanks in advance! :) 
+>
+
+make sure you load the Ethernet card driver.  if you have a newer (2.x) 
+kernel you can use command like "insmod 3c5x9" in one of you start-up 
+files (like rc.inet1) of better yet recompile you kernel with the card 
+support...
+
+-seva
+
+man insmod 
+read ethernet-faq
+
+================================================================= 
+ *** Update from the Front on the War Against Spam 
+=================================================================
+
+From: k.p@snet.net
+
+> SPAM BLOCK 
+> 
+> A California software engineer takes the annoyance caused by unsolicited 
+> e-mail messages seriously, and has developed an anti-spam weapon he plans to 
+> unveil next month.  Dead Bolt allows online users to share their 
+> "blacklists" of spam purveyors so that they can more effectively filter 
+> offending e-mail.  "The problem now is that everyone who is filtering is 
+> keeping their own blacklists and they're not working together to tie their 
+> lists together in a meaningful way," says Dead Bolt's creator.  "What I hope 
+> my package will do is allow people to work together over the Net and filter 
+> all this stuff out and finally put these people out of business....The 
+> problem is that it costs the sender virtually zero dollars to send out a 
+> million messages, and even if the response rate is minuscule by all 
+> standards -- say .001 percent -- they've made money.  So from an economic 
+> selfish point of view, it's in their interest to annoy the other 99.99 
+> percent of the people."  (Miami Herald 24 Mar 97)
+
+ ... Which leads to a very interesting Denial Of Service attack: What 
+happens if I blacklist (along with various other 
+"undesirable" accounts) and share my blacklist with everyone who 
+chooses (foolishly) to run Dead Bolt?  White Supremacists will blacklist 
+*@*naacp.org, Christians will blacklist *@*athiest.org, and anyone with 
+half a brain will blacklist *@*aol.com.  Or are there mechanisms in 
+place to keep these abuses from happening?  I should hope so.
+
+"What a pretty thing man is when he goes in his doublet and hose and 
+leaves off his wit." 
+  
+     -Don Pedro in "A Much Ado About Nothing" 
+     By William Shakespeare
+
+# Exit The System. # 
+#--------><--------# 
+#   k.p@snet.net   #
+
+Carolyn: I approve of these blacklists as long as the users are aware of 
+their existence. But you point out a great danger, that people could join an 
+ISP that blocks major regions of the Internet and not realize their access 
+is being censored.
+
+============================================================= 
+ *** More Phreaking! 
+=============================================================
+
+From: "Chris " <pbx@crackhouse.com>
+
+I use a program called scavenger dialer..
+
+ftp.fc.net /pub/defcon/SCAVENGER/sca-072.zip
+
+The PBXPhreak 
+pbx@crackhouse.com 
+http://www.crackhouse.com/~pbx
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: Tom Nelson Scott <tom-scott@veda-home.com>
+
+> Carolyn: Thanks!!!! We have had almost no info on phreaking on this list. 
+> Please continue to contribute!
+
+I might as well follow up on my own posting: Hackers young and old 
+like to play with computers and peripherals. Oddly enough, I don't see 
+many who get their phones into the game. That's what I'd like to 
+encourage. You don't need a T1/DS1 line; all you need is ISDN (well it 
+could probably be done with analog but I'm more interested in 
+digital). So why don't you hackers take a look at the whitepaper on 
+"The Java Telephony API: An Overview" at:
+
+http://www.javasoft.com/products/javatel/Overview.html (whitepaper) 
+http://www.javasoft.com/products/javatel (home directory for JTAPI)
+
+This is an opportunity to be ultra cool: ISDN, Java, esoteric 
+hacking, ... All you need is an ISDN NT1 box like an Ascend P50 or 
+something a heck of a lot less expensive (anybody know about that?) 
+and some software. Then you can start to record phone conversations on 
+various storage devices (hard disks or whatever you like) and edit 
+them, or delete them, ... As in most hacking adventures, there is an 
+element of risk: You can't record interstate conversations unless you 
+inform all parties. Usually intrastate recording is okay with the 
+narcs as long as one party knows it's being done.
+
+Disclaimer: I'm not an attorney. I don't know for sure what is legal 
+and illegal so I advise you to contact your local exchange company 
+(LEC) before you start recording.
+
+Anyway, doesn't this sound like hacker heaven? Who will write the 
+first JTAPI code for the rest of us? Not me; I'm just learning Java. I 
+can help with the ISDN signaling protocols but an experienced Java 
+hacker will have to get us going with the code. Better know your beans 
+too.
+
+You can get my ISDN UNI signaling files by anonymous ftp to 
+alpha2.uwm.edu: cd to the /pub/Veda directory and get the gzip'ed files. 
+One is the AutoCAD diagram, the other the first chapter of the manual in 
+html and gifs. Plot the gunzip'ed isdn.dwg on D size paper. I think it's 
+36"x48" but it may actually be 24"x36" -- you can figure it out if you 
+play with the plotter long enough.
+
+Let me make another statement for the sake of the university cybercops: 
+This is an educational exercise. I'm not selling anything. Nada. Rien.
+
+Let me know how you progress. Happy Hacking, mes amis!
+
+------------------------------------------------------------------------- 
+Tom Nelson Scott                  Phone/Fax: 1-414-966-2902 
+[company name]                    Business email: tom.scott@veda-home.com 
+W330 N8357 West Shore Drive       Academic email: veda@csd.uwm.edu 
+Hartland WI 53029-9732            Academic web: http://www.uwm.edu/~veda 
+                     "Do less, accomplish more." 
+-------------------------------------------------------------------------
+
+============================================================= 
+ *** Customize Your Internet Explorer Animated Logo 
+=============================================================
+
+From: "Tom Ben-Yehoshua" <tom@lightnet.co.il>
+
+This is for all the guys and gals querying about customizing the 
+IE-rotating logo... 
+Well, sorry this took so long, but I've recently re-installed MS-IExplorer 
+and this cleared the registry entries 
+required to make this change... so.. here we go.. 
+To customize the rotating logo or/and the toolbar background image in IE 
+follow these steps:
+
+Step 1 : get into the registry (typically by typing REGEDIT in the 
+Start>Run box. 
+Step 2 : open HKEY_CURRENT_USER > Software > Microsoft > Internet Explorer 
+and    place the cursor on +Toolbar (this should so you Default, Layout, 
+NoText and VisibleBands at the right frame. 
+Step 3 : click on the right frame and then choose from the Edit menu New > 
+String Value
+
+NOW ....
+
+to change the rotating logo add the following string/s :
+
+Effect                   |  String                  | Value 
+-------------------------------------------------------------------- 
+change the small  |SmBrandBitmap    | path to bitmap* 
+ie rot. logo            |                           | 
+--------------------------------------------------------------------- 
+change the normal | BrandBitmap       | path to bitmap* 
+ie rot. logo            |                           | 
+---------------------------------------------------------------------- 
+change the toolbar |BackBitmap         | path to bitmap** 
+backgroung gfx      |                           |
+
+* for this to work you need to make a strip in BMP format containing the 
+  images to animate (if you want an example, e-mail me)
+
+** just any image in BMP format
+
+Have Phun, 
+Tom Ben-Yehoshua 
+tom@lightnet.co.il
+
+============================================================= 
+ *** Outrage Certain People by Scanning Their Ports 
+=============================================================
+
+From: wysedom@juno.com (Nicholas D.)
+
+For all the win95 and winNT hackers who need a port scanner go to: 
+http://www1.samara.co.zw/peter/software.html 
+This program works great and the best part about it is that its free!!! 
+Have fun and play safe. Later.
+
+-Wyseguy
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: k.p@snet.net
+
+> Say I do a telnet to AOL.COM *just an example*...If AOL.COM has this new 
+> program,  it automatically dispatches a remailer to my host ISP.  This is 
+> not funny either.
+
+ For more information on the headaches this daemon has caused, please read 
+http://www.dhp.com/amusement.html
+
+# Exit The System. # 
+#--------><--------# 
+#   k.p@snet.net   #
+
+================================================================= 
+ *** Call for Finger Lakes NY Hackers 
+================================================================= 
+  
+From: rydell@juno.com (Lupus C Kiyoti)
+
+ I've been wondering if anyone in the Fingerlakes Region of NY 
+would be interested in starting some sort of meeting if we're close 
+enough.  This area used to have a large hack scene back in the early 
+nineties and late eighties but well after a LARGE crackdown everyone 
+disappeared. 
+ Things have changed now most of the old ones have moved away 
+(read: grown up, got married, got jobs) except for one who runs a local 
+bbs, I've taught what I've learned to two or three other kids and there 
+is one mac hacker nearby (hello!  I know your reading this) but it'd be 
+good if we were able to get in contact. 
+ Email me if your somewhere near the Finger Lakes (I'm closest to 
+Cayuga) and yes I KNOW there are ppl in NYC... let's organize some of the 
+others =)
+
+Lupus Kiyoti
+
+================================================================ 
+ *** Flame War 
+================================================================
+
+Carolyn: When you read this stuff below, don't worry that you will be the 
+next to get flamed if you post to Happy Hacker. We only conduct flames among 
+people who have consented to being flamed. Both jericho and I have agreed to 
+be flamed. If you haven't, you won't get flamed.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: " Damien  Treffs" <no0n3@hotmail.com>
+
+>From jericho@dimeonsional.com 
+Carolyn: 
+1) The supposedly dire hacking attempt on jericho from the University of 
+Texas at El Paso (UTEP) was merely a port scanner. Word to the wise -- 
+please don't port scan jericho's obscure.foobar.org, it gives him 
+conniptions! However, it is legal to do so. Watch out, jericho, my next 
+visit may be from the account galfina@escape.com.
+
+where in jericho's post did he say anything about "dire hacking attempt"? 
+please CM point that out to me.  my eyes seem to be failing.
+
+2)Crackers who rm system files, as GALF has done in the past at UTEP and as 
+jericho appears to be threatening to do to them again, are breaking the law 
+and acting REALLY lame. Besides, that buffalo.utep.edu box that GALF
+
+you should watch what you say CM.  you are beginning to make the wrong 
+people mad. computers are such a small part of the world.
+
+go back to writing. 
+ 
+
+3)Both GALF and angry johnny -- both of whom jericho so emotionally defends
+
+how does he 'so emotionally defend' them?  please show the emotion CM.  you can 
+do it.
+
+no0n3
+
+Carolyn: Whoa, I am just *so* terrified of having "the wrong people mad." 
+It's the law enforcement people that I should worry about having mad at me, 
+and for good reason. If I ever were to let my hobby of hacking lure me into 
+committing the destructive, childish acts of GALF and johnny angry, I'd 
+better figure on fleeing the US, getting plastic surgery, and living out my 
+days as a computer programmer in Wombat Swamp, Australia (no offense, Warpy 
+and all you Oz dudes:)
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+From: jericho@dimensional.com
+
+> From: wraith@dimensional.com
+
+Post s*** as anon instead of lying about your email address.
+
+> Ahhh!  GALF speaks.  I assume from the tone of his last post that Jericho 
+> speaks on behalf of GALF or is directly a representative of that 
+> organization.  If not, I write in vain.
+
+You write in vain you ignorant fool. I am NOT associated with GALF in any 
+way. Don't make assumptions off someone else's opinion. Duh?
+
+> 1.) COOL and FOOL are only 1 letter apart...... didn't take much to turn 
+> your peers against you did it?  GO figure.
+
+Who turned against GALF? To 'turn' implies that it was a former member or 
+friend, and that they betrayed the group, or gave up information to help 
+bust them. Did that happen?
+
+> 2.) Messing with the Happy Hacker, who is the one who graciously provides 
+> this forum for you to expectorate upon in the first place, is the same as
+
+Don't you get it?! A lot of us don't like this forum because it teaches 
+people incorrectly. On top of bullshit opinions from a naive moderator, 
+there is only inaccurate technical information. Who does that help?
+
+> 4.) I propose we meet and discuss amongst ourselves the possibilities and 
+> concerns of all involved before GALF gets itself put out of commission.
+
+You sound stupid.
+
+> 
+> Carolyn: 
+> 1) The supposedly dire hacking attempt on jericho from the University of 
+> Texas at El Paso (UTEP) was merely a port scanner. Word to the wise -- 
+> please don't port scan jericho's obscure.foobar.org, it gives him 
+> conniptions! However, it is legal to do so. Watch out, jericho, my next 
+> visit may be from the account galfina@escape.com.
+
+That isn't the point monkey. The point is our agreement was for YOU to try 
+to hack the box. It doesn't give me conniption fits to get scanned, but for 
+you to bring others in on it. I have had about 5 serious attempts a day 
+recently. I am not worried about that either. Today I gave another person 
+permission to try to hack the box, just as a challenge to him and me.
+
+Oh.. if anyone comes from escape.com, I imagine it will be GALF again. And 
+GALF like everyone else who asks, has permission to try.
+
+> 2)Crackers who rm system files, as GALF has done in the past at UTEP and as 
+> jericho appears to be threatening to do to them again, are breaking the law
+
+That is slander you stupid bitch. Quit your pathetic monkey shit out. "to 
+them again" implies I have a) threatened them already, or b) actually done. 
+I have done neither. Your f****** "uber-friends" have port scanned me. That 
+is more than I have done to them.
+
+> fourletter worded over was set up with the sole purpose of acting as a lure 
+> to get data on GALF. GALF is easy to social engineer, and I am patient:)
+
+When you catch GALF, then I MIGHT believe you.
+
+> 3)Both GALF and angry johnny -- both of whom jericho so emotionally defends 
+> -- have been far more destructive than Kevin Mitnick or even Kevin Poulson 
+> ever were. And look where those guys are now. GALF, angry johnny, do you 
+> quit while you're still free, or do you find out how compatible you are with 
+> your future cellmate "Spike"?
+
+Dare to evolve Carolyn. I am not scared to state my opinion. I respect 
+both because they are doing what they feel is right, at risk to 
+themselves, to get a message out that they believe in. I do the SAME THING 
+in my own way, through my zine. We each chose a different way to make our 
+marks on the world, theirs is just different than mine. Besides, you are 
+under this stupid impression that I am the only one who feels the way I do. 
+There are a lot more, but they don't waste their time explaining simple 
+concepts to you.
+
+Your continued threats of "collimate spike" are getting really old. Your 
+attempt to link me to being a member of GALF or a partner in crime to 
+Johnny are getting older. Now, your attempt to imply I have threatened or 
+rm'ed UTEP are enough. 1) I do not know who GALF is.  2) I have only had 
+email contact with johnny (which you and I have discussed at greater 
+length) 3) I have never even 'pinged' UTEP. Remember that.
+
+=-=-=
+
+> Carolyn: Thanks!!!! We have had almost no info on phreaking on this list. 
+> Please continue to contribute!
+
+Because Carolyn has no experience with phreaking.. just like hacking.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+>From warhead@juno.com
+
+> jericho said:
+
+>No.. because you CAN'T take out GALF. Don't front Carolyn. It has been 
+>proved several times you are incompetent when it comes to hacking.
+
+Hmmm, you are looking for a fight aren't you?  Well, unfortunately not all 
+of us suffer from what you do - A huge pre-pubescent ego.  I know it may 
+seem odd to you, Jericho, but *GOOD* hackers don't go picking fights so they 
+can boost their egos but rather use their knowledge mostly in defense from 
+people like you.  Yes, I CAN download "Up Yours".  Yes, I CAN put in your 
+e-mail address.  Yes, I CAN subscribe you to hundreds of list-servs.  The 
+thing is, that doesn't take a brain!  Laughing at people like you and having 
+pride in your abilities and knowing when to use them does.  If you'd like to 
+continue this in e-mail, feel free.
+
+If you'd like to mail-bomb me there, feel free!  Really!  I would be 
+overjoyed if you would because then you would simply prove to everyone 
+on this list how much of a lamer you really are.  Now, if you'd like 
+to hack into Juno and disable my account I would respect your 
+abilities, I'd still hate you but I'd respect your ability to hack 
+Juno's minor security defenses.  Catch you all later 
+ 
+
+=-=
+
+Carolyn: For the record, no post on the Happy Hacker list has claimed that 
+jericho is a member of GALF or that he is angry johnny (the mass email 
+bomber). To make such a claim without sufficient evidence in a public forum 
+would be libel. However, a number of posts, for example 
+wraith@dimensional.com, have noted jericho's close emotional identification 
+with these people. But emotional identification does not equal identity. In 
+trying to hunt down computer criminals, it is wise to keep in mind Will 
+Rogers' dictum: "It isn't what you don't know that hurts you, it's what you 
+know that ain't so." So please do not jump to conclusions about probable 
+motivations for jericho's recent posts.

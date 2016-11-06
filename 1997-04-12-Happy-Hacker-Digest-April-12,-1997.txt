@@ -1,0 +1,340 @@
+Happy Hacker Digest April 12, 1997 
+====================================================================== 
+      This is a moderated list for discussions of *legal* hacking. 
+                        Moderator: Carolyn Meinel
+                 Send posts to: matt@cs.utexas.edu (Matt Hinze) 
+            
+Digest archives are held under the "New" button at the Infowar site
+
+               Please don't send us anything you wouldn't 
+              email to your friendly neighborhood narc, OK?
+
+        To subscribe or 
+unsubscribe, use the subscribe boxes on the menu bars, please.. 
+If you decide you just want to use the forum and not get these 
+mailings, we promise our feelings won't get hurt if you unsubscribe 
+from this list. 
+  
+        H a p p y  h a c k i n g ! 
+================================================================= 
+=================================================================
+
+Table of Contents
+
+· Acoustic Coupler 
+· Remaining Anonymous 
+· Cookie Killer 
+· .DLL File? 
+· Denial Of Service 
+· Learning Linux 
+· Miscelaneous Questions 
+· Newbies Need Lovin' Too 
+· Pondering Pine 
+· Windows 95 
+· Note From Matt 
+ 
+
+=================================================================== 
+*** Acoustic Coupler 
+===================================================================
+
+From: Cybrdroyd <cybrdroyd@net1plus.com>
+
+To the person who asked about where to find an accoustic coupler: 
+I was thumbing through the "BLACK BOX" catalog and they have one in 
+ther for $149.  Plus they have a selection of "cups" to fit over 
+different style phones.  I'm not sure how to contact them but I think 
+if you do a web search for BLACK BOX you might dig up some contact 
+info.
+
+'droyd
+
+=================================================================== 
+*** Remaining Anonymous 
+=================================================================== 
+ 
+
+From: "morphic" <morphic@accesscom.com>
+
+  I have a question that I hope you will be able to answer for me.  In 
+GTMHH (Vol. 1 Number 2) "How to forge email -- and spot forgeries," 
+you go over TELNETing via port 25 so as to send pseudo-anonymous 
+email. However, the servers (is that the correct terminology) 
+apparently are capable of identifying one's email address.  Is it 
+possible so as to prevent a system from identifying one's email 
+address (name and domain)?  If so, could you please enlighten me on 
+the method(s)   :-)
+
+Thanks so much, and have a great day! 
+morphic
+
+=================================================================== 
+*** Cookie Killer 
+=================================================================== 
+ 
+
+From: Ingemar Hard <uysihr@slottsberg.educ.goteborg.se>
+
+>Hey gang, after reading some posts about cookies, and some responses to 
+>Netscape, and setting the read only attribute on the cookie.txt file, I 
+>decided to try that on the cookie files within Internet Explorer. 
+ 
+
+How do you do this, set read only attribute to the cookie? I have a 
+Macintosh with netscape. 
+Can you screw up a cookie in other ways? Does anybody have an 
+explanation to the code inside a cookie?
+
+Thanks; 
+Ingemar
+
+=================================================================== 
+*** .DLL File? 
+===================================================================
+
+From: anonymous
+
+please post as anonymous:
+
+What is the purpose/what is the job of a .dll file? Thanks...
+
+[Matt: .dll (Dynamic Linked Library) files have mulitiple purposes. 
+Basiclly, they're software code that can be used with many different 
+programs. ]
+
+=================================================================== 
+*** Denial Of Service 
+=================================================================== 
+ 
+
+From: jopee@mozcom.com
+
+One way of DOS attack is the flood ping (from GTmHH). D syntax would 
+be ping -f <ip address>'. How will one know that d ip address being 
+flooded is down? How exactly does -f work 'coz after around 3 to 4 
+replies from d ip address d pinging stops (does this mean d flooding 
+has stopped) or doesn't it? Wouldn't it be a waste on ur modem 'coz u 
+keep sending useless bytes? In a way u would also be denying urself? 
+Curios 'coz of 'IRC Wars Lead to DOS Attacks on Infowar Server'. 
+7hankz...HH and sorry for d wrong interpretation of d email header.
+
+[Matt: The thinking behind lame DOS attacks is that even if your 
+machine suffers as a result of shutting down another machine, it's 
+worth it. For the most part, flood pinging isn't that strenuous on 
+your machine. Avoid DOS attacks, though; the elite don't bother 
+themselves with it.]
+
+==================================================================== 
+*** Learning Linux 
+====================================================================
+
+From: hwsnyman@medic.up.ac.za (LiquidMetal)
+
+Hi there! 
+I am proud to announce that I have actually gained my very first ROOT 
+access yesterday......my OWN! 
+I have installed Linux onto my other computer and have done a trillion 
+stuff with it so far. 
+Compared to DOS or Windows, I would personally think that Linux 
+RULES!!!!! ;) 
+But with a new OS, comes a whole bunch of new questions that needs to 
+be answered. 
+(Thank goodness that I'm a fast learner!) ;););) 
+I have figured out about most of the stuff that I need to know for 
+now, but I have a few questions. 
+  one# What is a segmentation fault, and how can I fix it? 
+  two# How can I check the amount of hard disk space left on my drive? 
+  three# I like DOOM and Abuse, but where can a person find some other 
+good games on the internet for Linux?
+
+That will settle it for about now, Thanx! 
+Oh yeah, all hackers in South-Africa (Pretoria) may contact me. 
+Thanx again! 
+LiquidMetal
+
+==================================================================== 
+*** Miscellaneous Questions 
+====================================================================
+
+From: "prata@bossnt.com" <prata@boss1.bossnt.com>
+
+>I was wondering if you know the correct commands to enter once you 
+>connect to the incoming mail port? anything that I type says error!!!! 
+>Also is there a way to get my mail from the server through a certain 
+>port, if so what are the commands? Thanks!
+
+>Since you said incoming mail, I assume you mean port 110.
+
+Read the RFC for that service.  That's how I learned ALL the commands, 
+and good stuff on that and other services.
+
+>Also, what programs/files would I need if I just want Internet 
+>software?  Thanks!
+
+>BJ Johnson
+
+Minicom (for dialing your ISP) [note, i beleive this only works if the 
+ISP has Unix boxes, It doesnt seem to work with NT crap]
+
+pppd (for the actual ppp connection)
+
+I'm not sure about SLIP.  I beleive a program called DIP works for 
+slip only.
+
+>I hear much talk of surfing ports but what good will that do a clue-less 
+>person.  I mean, I could surf ports till I was blue in the face and still 
+>not have accomplished much other than knowing that <insert your favorite 
+>port here> was open.  What is there to do as far as being out side trying 
+>to get IN?  Are there exploits, techniques...?  As far as being inside, my 
+>ISP has it's shadow file locked in a root read-only attrib mode. Aren't 
+>there other ways....it seems every exploit I try is futile. Each day, I 
+>scour the net for new ones. (I have plenty of time, I am a "Lab 
+Consultant" 
+><in house computer-geek who fixes/upgrades/installs hard/software...>) I 
+>would like to get root some day...=)  I have been at it for 1.5 month(s) 
+>and well......Any suggestions?
+
+Yes i have suggestions.  First, RTFM. (if moderator chooses to 
+translate, fine) Second, read the RFCs for the ports or services that 
+you are interested in.
+
+>2 - Do you have a "Guide to Social Engineering", 
+>or something like that? I am     REALLY interested in learning more 
+>about it.
+
+>Thanx 
+>LiquidMetal
+
+Read 'Takedown!' by Tsutomu Shimumura.  Very good examples.
+
+[Matt: RTFM = Read The Fine Manual (almost) :) ]
+
+=================================================================== 
+*** Newbies Need Lovin' Too 
+=================================================================== 
+ 
+
+From: bean@audiophile.com
+
+i want to hack my own website and see if i could crack my own passwd 
+but i haven't a clue where to start. i read somewhere that u have to 
+get the passwd file and then run this against a list of passwords 
+using bruteforce but i don't have unix installed and have no 
+programming knowledge so how do i go about this? 
+many thanks, 
+-ac.
+
+[Matt: That's the $10 question. There are several possible ways, of 
+course, but the best (although not as easy as having someone tell you, 
+but more elite) way to learn stuff like this is to find out on your 
+own. You'll discover tons of other cool stuff in the process, taboot. 
+Try a web search, lurk in some hacker mailing lists, and read, read, 
+read. Of course, helping newbies is fine and that's why we posted your 
+message. ]
+
+==================================================================== 
+*** Pondering Pine 
+==================================================================== 
+  
+From: Peter Beckman <beckman@nova.org>
+
+On Fri, 4 Apr 1997, vIERJa wrote:
+
+> Hi, I just subscribed to the Happy Hacker Digest and so that you wrote: 
+> > You wrote: 
+> > 
+> >    There are two ways to do this.  First, create a file that 
+> >    contains the following: 
+> > 
+> >    #!/bin/sh 
+> >    /usr/local/bin/tcsh 
+> > 
+> > Doesn't work on my system, Pine 3.95 on Linux.  It gives you an 
+> > error message of "[ Alternate editor abnormally terminated (255) ]". 
+> >  Just so you know (since my school lets you have shell accounts, 
+> > heh). 
+> 
+> More than likely, tcsh isn't the shell you have on your system.  You 
+> need to know the exact path of the shell (/usr/bin/csh, /bin/sh, etc). 
+>  What sysadmins normally do is disable direct use of a shell for an 
+> editor, which is why you have to use a shell script, such as above. 
+> 
+> Try replacing /usr/local/bin/tcsh with /bin/sh, and try again.  It 
+> will work, you just need to massage it a bit. 
+> 
+> You were talking about spawning a shell from within Pine, right? Since I 
+> lost the beginning of that conversation could you please tell me what do you 
+> do with that shell script? How do you execute it? 
+  
+ ALrighty.  You need to put the above two lines in a file called 
+ 'blah' (could be anything, but we'll use this).
+
+ Now, assuming you cannot create this on the system you want to use it 
+ on, but you DO have FTP access, create this with notepad (or whatever 
+ STRAIGHT TEXT EDITOR you happen to have -- please don't insult 
+ yourself and try to use MS Word).
+
+ Then, FTP it to your site.
+
+ Then, make it executable.  I'm not sure how to do this through FTP (I 
+ thought you could change the r/w/x bits in FTP, but I don't recall 
+ how).  Do this: at a command line using chmod +x blah, but hey, if 
+ you got a command line, what do you need this for?
+
+ Whatever the case, set /path/to/file/blah as your editor, then try to 
+ compose a message (with the use_external_editor_explicitly flag on in 
+ pine).  Then BOOM.  YOu have a shell.
+
+peter 
+--------------------------------------------------------------------------- 
+Peter Beckman      Webmaster, Northern Virginia Internet Access 
+Cooperative 
+beckman@purplecow.com 
+http://www.purplecow.com/ 
+---------------------------------------------------------------------------
+
+==================================================================== 
+*** Windows 95 
+==================================================================== 
+ 
+
+From: The_PhAnToM <the_phantom@usa.net>
+
+Hello, 
+ I first would like to say that I have been reading the posts 
+regarding telnetting in windows95. And, I wanted to see if everyone 
+was aware that there is an excellent telnet program that comes with 
+win95? In the windows directory there is telnet.exe It will let you 
+specify remote system, port setting, and terminal type. I have read 
+several of the posts and I think that people may think that under 
+the port setting since there is a pull down list you can't type in a 
+specific port but this "is" possible.
+
+The question I had was, I have been reading, and seeing reports on 
+television about being able to find peoples personal info on the 
+internet; i.e. Social Security Numbers, bank accounts, medical 
+records? I was wondering if this "is" possible or if this is just more 
+negative hype? If so how would someone find a persons SSN? And what 
+can you do make sure your privacy is protected?
+
+Thanks, 
+The_PhAnToM
+
+[Matt: IMO, most of it is negative hype. Personal info about us is out 
+there, however; so don't take for granted that it won't be exploited.] 
+ 
+
+=================================================================== 
+*** Note from Matt 
+===================================================================
+
+I hope you guys enjoy reading the digest as much as I like helping 
+moderate it. Don't forget about all the great information sources at 
+our fingertips, like web searches and Usenet searches. And remember: 
+hacking is about knowledge, and the best way to get that (aside from 
+experience) is to read. All of your questions and answers are 
+appreciated.
+
+Matt
+
+(Carolyn: And please, folks, let Matt know how much you appreciate his work.)
