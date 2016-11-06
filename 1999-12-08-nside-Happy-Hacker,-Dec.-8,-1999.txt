@@ -1,0 +1,156 @@
+nside Happy Hacker, Dec. 8, 1999
+_______________________________________________________________________
+
+Table of Contents
+· Why you haven't been getting email from us
+· New at the Happy Hacker web site
+· Want to be part of the Uberhacker! book?
+· fourth edition of The Happy Hacker book released!
+
+*** Why you haven't been getting email from us
+
+Most of you will have missed the last two mailings -- a Unix Digest from new
+Unix editor Mike Miller (see http://happyhacker.org/hhlist/index.shtml), and an
+Inside Happy Hacker.
+
+Our problem has been -- too many subscribers. There are now over 38,000 on
+this mailing list! The problem was the Antionline DNS server couldn't
+handle the load until it got more memory. Also, there are constant, massive
+attacks against that network that require lots of computing horsepower to
+deflect. The first priority of Antionline has been to keep our web site up
+-- which they have done quite well. We expect the mailing list problem to
+be solved shortly. Since the computer muscle needed to run this mail list
+has been provided to us by Antionline 100% free, we could hardly complain.
+Thank you, JP Vranesevich, for giving us the support of your company!
+
+*** New at the Happy Hacker web site
+
+· Our web site now has a search engine so you can find out where everything
+is on the topic you are interested in. All those archived happy Hacker
+Digest are full of hacker secrets, check them out! And for those of you
+looking to make friends with other hackers, you can email the people who you
+discover in those Digests who have similar interests to yours.
+· We've updated Vol. 1 of the Guides to (mostly) Harmless Hacking. They
+were written back in 1996, and a lot has changed since then. Most important
+-- we have updated the email forging section to show you how to find
+computers fast that will still let you forge email. See
+http://happyhacker.org.gtmhh.html for the updated Vol. 1!
+· We have shut down our Amazon.com affiliate bookstore on account of too
+many complaints of slow, really slow shipments of books. We have replaced
+it with a Barnes & Noble affiliate bookstore. Want to get a computer manual
+that gives step by step instructions and screen shots of how build a war
+computer -- how to install and run programs that help you break into and
+defend computers? Read our review of "Maximum Linux Security" at
+http://happyhacker.org/general.htm#Linux. Want a way to install and get
+online with Linux (which is the world's most deadly hacker warfare operating
+system)? We've discovered a computer manual complete with a Linux
+installation CD-ROM that makes it as easy as Windows. Read about it at
+http://happyhacker.org/unix.htm#Caldera.
+· We now have a "Help for Beginners" section for everything you need to move
+from pitiful newbiehood to serious hacker -- fast! Check out
+http://happyhacker.org/begin.html.
+· How to set up a home Windows hacker lab. Did you maybe think that hackers
+learn how to break into and defend computers by committing computer crime?
+Heck, only nasty losers do that! The fastest way to learn is to set up a
+home hacker lab and invite your friends to come visiting, whether in person
+or over the Internet. It's so much more fun to play breakin games this way,
+and you make lots of friends! Learn how at http://happyhacker.org/winlan.html
+· Get laughs at all the people who plead with Meinel to help them commit
+computer crime, updated every few days at http://happyhacker.org/sucks.html.
+Look for Meinel's answer that begins, "Whoops --- you are so much more
+talented than Brenda and Tyme that you just social engineered me! OK,
+here's how all you pitiful wretches can risk going to prison by snooping on
+your lovers' and enemies' email…" Meinel tells how even your PGP encrypted
+material can be compromised - and tells you how to prevent people from
+snooping on your email.
+· Read email from people who are using the information at our web site to
+make the world a better place and to develop meaningful, good paying careers
+at http://happyhacker.org/greatlife/index.shtml.
+
+*** Want to Be Part of the Uberhacker! Book?
+
+Preview Meinel's upcoming book, Uberhacker! Would you like to contribute your
+knowledge? As with The Happy Hacker book, you will be credited by name (if
+you wish). If you contribute a great deal, you will get a free autographed
+copy. For example, one problem Meinel is working on right now is how to
+detect hidden shares in NT boxes. They are easy to make - just add a $ to
+the end of the share name. Users who create hidden shares are a major
+hazard - could a malicious user be setting up back doors for confederates
+outside the network? How does the administrator of an NT network find these
+hidden shares without knowing their full file names? Explain how, and you
+get in the book.
+
+Meinel is looking for simple, but often overlooked ways to break into and
+defend computers. OK, OK, to be a book for Uberhackers, it will include the
+more sophisticated techniques. But it's awfully lame to spend weeks
+breaking into (or setting up) defenses for a network while overlooking some
+incredibly easy holes - like a hidden share of an NT file that holds stuff
+that looks like this:
+
+[HKEY_LOCAL_MACHINE\SAM\SAM]
+"C"=hex:03,00,01,00,00,00,00,00,84,00,00,00,02,00,01,00,01,00,14,80,64,00,00,\
+00,74,00,00,00,14,00,00,00,30,00,00,00,02,00,1c,00,01,00,00,00,02,c0,14,00,\
+0e,00,05,01,01,01,00,00,00,00,00,01,00,00,00,00,02,00,34,00,02,00,00,00,00,\
+00,14,00,31,00,02,00,01,01,00,00,00,00,00,01,00,00,00,00,00,00,18,00,3f,00,\
+0f,00,01,02,00,00,00,00,00,05,20,00,00,00,20,02,00,00,01,02,00,00,00,00,00,\
+05,20,00,00,00,20,02,00,00,01,02,00,00,00,00,00,05,20,00,00,00,20,02,00,00
+
+[HKEY_LOCAL_MACHINE\SAM\SAM\Domains]
+@=hex(0):
+
+[HKEY_LOCAL_MACHINE\SAM\SAM\Domains\Account]
+"F"=hex:02,00,01,00,40,01,14,00,70,85,18,10,d9 etc. etc.
+
+So… if you know, please share your knowledge!
+
+*** fourth edition of the Happy Hacker book just released.
+
+The publisher told Carolyn Meinel she can't make the book any bigger, so
+this time she took out some chapters in order to add new ones, and rewrote
+many other chapters to keep them up to date.
+
+· Want to know how to legally hack your friends' web sites? 
+· Learn how to build a home hacker laboratory! 
+· Learn yet more ways to break into your school's computers -- along with
+tips form other teenagers on how to get your teachers to actually reward you
+for doing it. There are plenty of teen hackers running Quake servers at
+their schools, legally, while being heroes to their teachers. You, too, can
+be like them.
+
+Are you one of the many people who ordered The Happy Hacker book from
+Amazon.com and they haven't shipped it for weeks and weeks? You can cancel
+your order and get the book fast from Barnes & Noble. Hundreds of copies of
+the fourth edition have just arrived at their warehouse, and any day now they
+should be on the bookshelves of your local Barnes & Noble store. The also
+sell it cheaper than anyone else. If the fourth edition isn't in yet at your
+nearest Barnes & Noble, you can order it delivered to you care of that
+bookstore or from their web site at
+http://shop.barnesandnoble.com/BookSearch/results.asp?sourceid=0013355712033
+4059230&bfdate=11-03-1999+15:53:53&title=The+Happy+Hacker&match=exact&option
+s=and.
+
+You can get an autographed copy of The Happy Hacker shipped to anywhere in
+the world by sending a check or money order, made out to "Happy Hacker" to
+PO Box 1520, Cedar Crest NM 87008. Its price, including shipment by
+Priority or Airmail delivery (usually only takes two days), is: US: $39.95;
+Canada, Mexico, Ireland, Great Britain, Western Europe: US$46.90 Everywhere
+else: US$48.90. If you live outside the US, just ask your bank to make out a
+money order for US$.
+
+Happy hacking, folks. May us white hats rule!
+_______________________________________________________________________
+To subscribe to the Happy Hacker Digest, email mailman@mailout.antionline.net
+with the message "subscribe happyhacker." Unsubscribe with message
+unsubscribe happyhacker.
+
+This is a list devoted to *legal* hacking! If anyone plans to use any
+information in this Digest or at our Web site to commit crime, go away! We
+like to put computer criminals behind bars where they belong!
+
+Unix editor Mike Miller unixeditor@techbroker.com;
+Hacker Wargame Directors, Vincent Larsen vincent@sage-inc.com and John
+Vranesevich <jp@antionline.com>;
+Clown Princess: Carolyn Meinel <>
+
+Happy Hacker is part of a 501 (c) (3) tax deductible organization
+_______________________________________________________________________
