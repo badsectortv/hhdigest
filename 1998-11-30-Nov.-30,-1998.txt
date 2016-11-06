@@ -1,0 +1,260 @@
+Nov. 30, 1998 
+_______________________________________________________________________ 
+See the Happy Hacker web site at http://www.happyhacker.org 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+_______________________________________________________________________
+
+Inside this report:
+
+* New at the Happy Hacker web site! 
+ -- Help for people whose home computers have been hacked 
+ -- Screen shot of EtherPeek detecting "stealth" port scan 
+ -- Happy Hacker bookstore opens 
+ -- New hacker news links 
+* Dale Holmes needs someone to fill his shoes 
+* New Webmaster 
+* Book review: The Watchman 
+_______________________________________________________________________
+
+ New at the Happy Hacker Web Site! 
+_______________________________________________________________________
+
+ Check out http://www.happyhacker.org.  It has new material, and a new look! 
+Highlights:
+
+* Has some idiot been breaking into your computer and acting like he or she 
+is three years old? If it's a Windows 95, 98 or NT box, it has probably been 
+infected by either the Back Orifice or Netbus Trojans (back doors). Get rid 
+of your unwanted visitors with help at 
+http://www.nwinternet.com/~pchelp/bo/bo.html.  There is a link to it from 
+our home page.
+
+* Have you been following Fyodor's complaints in assorted hacker forums 
+against me (Carolyn Meinel)? My Scientific American article, "How Hackers 
+Break in ... and How they Are Caught" (Oct. 1998) reported that EtherPeek 
+3.5 for the Mac G3 (from AG Group, http://www.aggroup.com) can detect a 
+so-called "stealth" port scan of Fyodor's nmap program.  Fyodor implies that 
+I lie.  
+
+ Oh yeah?  At http://www.happyhacker.org/EPscreen-fin.JPG, you can click to 
+a screen shot of EtherPeek capturing an nmap stealth scan.  
+
+ One of the reviewers of the Scientific American article complained that I 
+made the fin scanner look too good by showing it penetrate a firewall.  He 
+argued that today most firewalls will block nmap's stealth scanner.  This 
+may well be true.  However, nmap did slip through both the Cisco router 
+firewall and custom firewall I tested it against.  So that's what went into 
+my article.  Don't assume nmap can penetrate any firewall, however.  
+
+ Meanwhile, on hacker email lists and on IRC, lots of guys saying they are 
+computer security experts have been flaming my Scientific American article. 
+And, yes, they wrote many outraged letters to the editors of Scientific 
+American.  Do these self-described experts know what they are talking about, 
+or are they clueless?  Sometime around Christmas, letters on "How Hackers 
+Break in ... and How they Are Caught" that the editors thought had any merit 
+will appear in the Jan. issue of Scientific American.  Will the editors of 
+Scientific American run letters that will destroy my reputation, build it, 
+or just plain entertain you?  Check the newsstands to find out!  Their 
+website is http://www.sciam.com.
+
+* Want some books for Christmas that will give your hacker career a boost? 
+See the Happy Hacker bookstore at http://www.happyhacker.org/bookstore.html. 
+It features reviews of books good for beginners, with some for intermediate 
+and advanced hackers as well.  It also includes books about both harmless 
+white hat hackers and computer criminals. Each book review is linked 
+directly to the Amazon.com bookstore so that if you have a credit card, you 
+can order it from them online.
+
+ Some of you readers are under 18 and have parents who would get really mad 
+if you were to ask them for a hacker how-to book such as The Happy Hacker, 
+second edition.  Fortunately, most of the books at the our bookstore look 
+totally harmless.  So you can order them, or request them for Christmas, 
+without raising suspicions.  Besides, you are studying these books to be a 
+white hat hacker, right?
+
+* New hacker news links are on our home page and also at 
+http://www.happyhacker.org/news.html.  In particular, be sure to check out 
+http://www.antionline.com, which recently got an infusion of venture 
+capital.  Oh, no, John Vranesevich is going yuppie!
+
+_______________________________________________________________________
+
+ Dale Holmes Needs a Successor 
+_______________________________________________________________________
+
+ The problems of a wife expecting twins any day now are getting to Happy 
+Hacker editor Dale Holmes.  It isn't easy carrying twins -- sheesh, I've had 
+four babies, fortunately only one at a time, and every time about the eighth 
+month I would tell everyone I would *never* get pregnant again.  (Obviously 
+I was a slow learner.) I can hardly imagine what carrying twins must be like!  
+
+ Anyhow, Dale is being the perfect helpful expectant father, which means no 
+time for the Digest.  And us experienced parents know that it will only get 
+more tiring after the twins arrive.
+
+ Despite all this, we hope to get more special reports from Dale, and will 
+let you know whenever another of his computer manuals is published. He has 
+been a fantastic editor.  We will miss him badly.  
+
+        So -- who could take his place?  If you are interested, please write 
+me, .  
+
+ What are the requirements for the editor?
+
+ * You must reveal your true identity to those of us who run Happy Hacker. 
+We realize, however, that there are a lot of computer criminals who hate our 
+work.  So we will understand it if you prefer to work as editor under a 
+hacker handle or pen name. Nevertheless, if you hunger for a career as a 
+writer, using your real name will help build your reputation.  That's how I 
+got my start, writing and editing for free.
+
+ For free?  OK, I admit the pay is lousy.  All you will get is a free POP 
+account (editor@techbroker.com), and a shell account on a Hacker Wargame 
+computer.  (I mean your own account, not that busy, chaotic open guest 
+account on koan.hapyhacker.org!)
+
+ * You must be AGAINST computer crime. This is an ezine for *LEGAL*, mostly 
+harmless hacking.
+
+ * In case you have been vacationing on some other planet lately, we have a 
+big news flash. Computer criminals really, REALLY hate Happy Hacker.  Expect 
+them to first try to seduce you.  Then if you don't join them, expect to be 
+insulted, then threatened, etc. etc.  If you brave candidates want more info 
+on these bad actors who might bother you, I'll give you the email addresses 
+of the worst offenders.  Then you can ask them to tell you why you should 
+join them, f33r them or whatever.  But, what the heck, if they don't scare 
+an old lady like me, it can't be too bad.  We hope.
+
+ * You must be a good writer, and be willing to follow standards of 
+journalistic excellence.  No dirty words, no flames, no libel.  A sense of 
+humor is a definite plus. And, yes, you need to know a great deal about 
+computers.
+
+ If this sounds like you, please email Carolyn Meinel <>.
+
+_______________________________________________________________________
+
+  New Webmaster 
+_______________________________________________________________________
+
+ We have a new webmaster: Ender Wiggin.  He's already webmaster of 
+http://www.aviary-mag.com.  As you will see when you visit, he is impressive 
+in his ability to build a visually pleasing Web site, in his writing talent, 
+and his principles.
+
+ He also knows a thing or two about hacking -- good guy, white hat hacking. 
+As he wrote to me, "Since I first stumbled across your page a couple years 
+ago, I've learned everything from C++ to HTML to Perl, and UNIX...  I've 
+taken your 'harmless hacking' idea to heart, and even started my own site at 
+www.aviary-mag.com... thank you for inspiring me... take a look at 
+www.aviary-mag.com and tell me what you think.  I've put some Happy Hacker 
+digests up, along with lots of original content.  Currently, there are 115 
+pages worth of content..."
+
+ So check out Ender's site for some great hacker reading!
+
+ In case you were wondering, Ender was not the one who recently updated the 
+Happy Hacker web site.  What happened was I finally decided to put in some 
+time learning a bit more about HTML.  You can expect a lot more changes in 
+the Web site as Ender puts his stamp on it.  For example, he has already 
+tested a link that allows anyone (with the right browser) using Windows to 
+click on it and get a telnet connection to the guest account on the Hacker 
+Wargame computer koan.happyhacker.org.  Expect to see it, and many other 
+fascinating hacker HTML tricks, at our Web site soon. 
+
+        Ender is looking for a CGI expert to assist him.  If you are 
+interested in volunteering your CGI expertise, or have other ideas for how 
+to improve our Web site, please email Ender at webmaster@techbroker.com.
+
+ Now, here are some words from Ender himself:
+
+Hi... I figured I may as well say something myself in response to what seems 
+to be a sterling recommendation from Carolyn.
+
+I've been in computers for only about three years, in which time (as you can 
+see in what Carolyn's written), I got very interested in the inner workings 
+of the machines themselves, and of the software.  I've mantained over a 
+dozen websites, some of them very high-traffic.
+
+My major project, up until Carolyn asked me to work for Happy Hacker, was 
+aviary-mag.com, which sports lots of original content & some cool HTML 
+design (if I do say so myself).  I'm looking forward to bringing my work to 
+Happy Hacker (and, for those of you who look at my source, those pages are 
+created with NetObjects Fusion for the sake of saving time -- I can code in 
+true HTML, if you're curious).
+
+I plan to impliment two versions of the Happy Hacker site.  One version will 
+be fully backward-compatible, working with Lynx and the older Netscape 
+browsers.  The second version will use HTML 4 or 3.2 (depending on how I 
+decide to work the two-version setup), and will have lots of nifty tricks in 
+it -- along with some cool easter eggs.
+
+I look forward to making a version of the new Happy Hacker site public in 
+about two weeks... So stay tuned :-)
+
+_______________________________________________________________________
+
+  Book Review: The Watchman 
+_______________________________________________________________________
+
+The Watchman : The Twisted Life and Crimes of Serial Hacker Kevin Poulsen 
+
+by Jonathan Littman.
+
+    The Watchman is the story of the man, Kevin Poulsen, who holds the US 
+world record for the most time spent in prison for computer crime!  Poulsen 
+is the only US hacker ever indicted for espionage!  He was a good buddy of 
+Kevin Mitnick, who is called "America's most wanted computer fugitive" by 
+the national bestseller book Takedown!  Poulsen sounds like a scary dude, huh? 
+
+    As the woman who is in the running for the world record of having the 
+most computer crime in history committed against her (or in protest against 
+her), IMNSHO I am qualified to argue that Kevin Poulsen may have gotten an 
+unfair deal from the FBI and Federal prosecutors.  Littman's book suggests 
+that Poulsen was at worst a petty computer criminal, and at best a daring 
+prankster who committed funny, (mostly) harmless but somewhat, um, er, 
+non-legal pranks against the wrong people and companies.  
+
+ I hate to admit it, but Poulsen reminds me of myself when I was in my 20s. 
+(Yes, I wasn't always as perfect as I am now:):) As I read this 
+well-researched book, I kept on thinking, "There but for the grace of God..." 
+
+    The Watchman also contains some rather, um, er, detailed material about 
+the, um, er, love life of Agent Steal, the narc who helped bust Poulsen.  I 
+found myself rooting for Poulsen to get away. 
+
+ Since his release from prison, Poulsen has been working as a journalist. 
+You can read some of his excellent articles at 
+http://www.zdnet.com/zdtv/cybercrime/chaostheory/.  Nowadays he's getting 
+his revenge in the American way, writing news stories on Peterson's flight 
+from the authorities who are trying to imprison him for violation of parole. 
+Morals of this story: a computer criminal should NEVER get on the bad side 
+of a journalist.  And a narc should NEVER get on the bad side of the FBI.
+
+ Poulsen also has done a sympathetic and remarkably well-researched job of 
+covering the upcoming Kevin Mitnick trial.
+
+     "The Watchman" also is fun to read, yet will give us hacker pranksters 
+sobering food for thought. -- Carolyn Meinel
+
+For more book reviews, see http://www.happyhacker.org/bookstore.html
+
+Happy hacking, folks!  
+ -- Carolyn Meinel 
+__________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
+
+For Windows questions, email keydet89@yahoo.com 
+For Unix questions, contact Roger Prata<rprata@techbroker.com>  
+For Macs, write Strider <s.corinth@iname.com> 
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

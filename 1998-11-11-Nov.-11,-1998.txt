@@ -1,0 +1,223 @@
+Nov. 11, 1998 
+_______________________________________________________________________ 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+_______________________________________________________________________
+
+* Dale Holmes news 
+For all you people who have been wondering why the Digest hasn't come out 
+for two weeks -- sorry, our fearless editor, Dale Holmes, has been busy with 
+some health problems of his wife.  She's only seven weeks away from her due 
+date for delivering twins, which is not an easy job. Meanwhile, your Grand 
+Pooh-bah, Carolyn Meinel, is expecting twin granddaughters this spring .. 
+what is it about the Happy Hacker scene that is making all these twins happen? 
+
+* New, up-to-date web site!   
+Check out http://www.happyhacker.org for archives of recent GTMHHs and 
+Digests, and lots of great links and Wargame information.  Not only have we 
+finally revamped the Happy Hacker Web site, it's on a new server, 
+fishbone.happyhacker.org.  Our beloved fishbone is an OpenBSD box just like 
+its predecessor zlliks.505.org.  (OpenBSD is a form of Unix.)  Because 
+zlliks has performed so well in the hacker wars, it is soon going to work 
+for our sponsor Rt66 Internet doing, let's just say, cool stuff.
+
+* Wargame news!   
+All you folks who wanted an easy to attack computer, where were you the last 
+several weeks when we had a relatively vulnerable fishbone.happyhacker.org 
+lurking on the Happy Hacker T1?  Take heart, fishbone is still much more 
+open that zlliks -- time to study the archives at http://www.rootshell.com 
+and http://www.netspace.org/lsv-archive/bugtraq.html for exploits!  For your 
+best shot at taking over fishbone, install OpenBSD on your own computer (it 
+runs on most varieties of computers). You can download OpenBSD for free at 
+http://www.openbsd.com.  Then try out whatever you plan to do to fishbone on 
+your own computer first.  That way, if something you try doesn't work, you 
+can figure out what went wrong from your own OpenBSD box while logged in as 
+root. Expert hackers say this is a much faster way to learn how to break in 
+than attacking an uncooperating box like fishbone.  Plus -- remember, to win 
+the Wargame, you need to keep control after you break in.  To make sure you 
+know in advance how to fix whatever hole you use to get in, you need to 
+practice on your own OpenBSD box first.
+
+* How do you find out what Wargame computers are on the Happy Hacker LAN?  
+Actually, soon after fishbone went up on the T1, I (Carolyn) was delighted 
+to see a number of people already trying to break into it.  That means some 
+of you Wargame players are keeping track of what we have on the Happy Hacker 
+LAN.  For the rest of you, here's how to spot a new Wargame box.  
+
+1) The only way to break into one of our Wargame boxes is to use a Unix type 
+computer for the attack.  The best attack Unix is probably Linux.  One 
+reason for this is that the majority of the attack programs (exploits) you 
+find at Rootshell etc. were written for Linux.  So first install Linux and 
+get on-line with it.  OK, maybe you really need two or more computers to 
+learn to be a great hacker, one to practice using for attacks, and the other 
+being your defender computer.
+
+2) To keep track of what is on our Wargame, use your Linux box (or a Unix 
+shell account at an ISP of your choice) to give the nslookup command on a 
+box you already know is in the game.  For example:
+
+~ > nslookup fishbone.happyhacker.org 
+Server:  chili.rt66.com 
+Address:  198.59.162.6
+
+Name:    fishbone.happyhacker.org 
+Address:  198.59.118.60
+
+2)  Now try nslookup on nearby IP addresses, for example: 
+~ > nslookup 198.59.118.61 
+Server:  chili.rt66.com 
+Address:  198.59.162.6
+
+Name:    unused61.happyhacker.org 
+Address:  198.59.118.61
+
+4) Wowie, is "unused61.happyhacker.org" a newbie box on the Wargame?  Don't 
+get all excited yet.  The Wargame is run by the 505 gang, and they like to 
+fool people.  So the next step is to use the ping command see if there 
+really is a computer named unused.happyhacker.org in the game: 
+
+~ > ping unused61.happyhacker.org 
+ping: unknown host unused61.happyhacker.org
+
+See, they were just faking you out. However, if there really is a computer 
+at an address on our LAN, you will get:
+
+~ > ping koan.happyhacker.org 
+koan.happyhacker.org is alive
+
+Or depending on your ping program, something similar, for example:
+
+Pinging koan.happyhacker.org [198.59.118.51] with 32 bytes of data:
+
+Reply from 198.59.118.51: bytes=32 time=149ms TTL=252 
+Reply from 198.59.118.51: bytes=32 time=141ms TTL=252 
+Reply from 198.59.118.51: bytes=32 time=126ms TTL=252 
+Reply from 198.59.118.51: bytes=32 time=129ms TTL=252
+
+5) Now suppose you find a live computer while checking out nearby IP 
+addresses.  How do you know it is really in the game, instead of a computer 
+that you can get into trouble for attacking?  Nslookup comes to the rescue 
+again:
+
+~ > nslookup 198.59.118.62 
+Server:  chili.rt66.com 
+Address:  198.59.162.6
+
+Name:    knight.505.org 
+Address:  198.59.118.62
+
+Notice this is a 505.org box instead of a Happy Hacker computer.  That means 
+it isn't in the Wargame.  Only computers with "happyhacker.org" in their 
+name are OK to attack.
+
+* Rules for fishbone.happyhacker.org 
+OK, suppose you get root on fishbone.  What can you get away with doing to 
+her?  Obviously, if you want to keep control, you'd better leave the Happy 
+Hacker website there.  We work on it in the home/cmeinel directory, which 
+has a symbolic link to var/www/htdocs/ where the actual web page files 
+reside.  If you are good enough to take over fishbone, you'll be good enough 
+to figure out how to put your own Web site up at 
+http://fishbone.happyhacker.org while leaving it so requests for 
+http://www.happyhacker.org go to var/www/htdocs/.
+
+Other than that, the general Wargame rules apply, as posted at 
+http://www.happyhacker.org/hwgstart.html.  Most important, you can't use 
+fishbone for any illegal activities.  Also, our firewall, knight.505.org, 
+will prevent you from making telnet or ftp connections to any computer 
+outside the Wargame.
+
+How do we enforce the rules?  Ask anyone who has spent much time on 
+koan.happyhacker.org.  Hint: while on koan's guest account, give the command 
+"man lart".
+
+How do you get into koan.happyhacker.org's guest account?  Hint: the 
+password is really stupid.  Even a stupid person can guess it.  To see what 
+the people who have broken into the guest account have to say, check out 
+http://koan.happyhacker.org/~guest/.  If you break in, you get to add your 
+say to this Web page.
+
+* How to break into koan.happyhacker.org? 
+Koan is a FreeBSD box (a kind of Unix).  Your first step in getting root on 
+koan is to install FreeBSD on your own computer.  You can download FreeBSD 
+from http://www.freebsd.org.  Then -- sorry, you won't find exploit programs 
+for koan anywhere.  You have to create your own!  This is a tough box -- it 
+has been up since mid-September and no one has rooted it!  It will probably 
+take a team effort to win the game.  To meet others who are trying to root 
+koan, go to the IRC channel #koan on Undernet.
+
+If you really want fun, when you break into koan's guest account, try this: 
+koan% who 
+guest    ttyp0   Nov 16 22:44   (208.250.172.216) 
+guest    ttyp3   Nov 16 22:56   (152.203.210.91) 
+guest    ttyp4   Nov 16 22:58   (shell.rt66.com) 
+koan% w 
+10:59PM  up 1 day,  7:39, 3 users, load averages: 0.27, 0.13, 0.05 
+USER     TTY FROM              LOGIN@  IDLE WHAT 
+guest    p0  1Cust216.tnt40.d 10:44PM     - vi any-erect.c 
+guest    p3  203-210-91.ipt.a 10:56PM     - -tcsh (tcsh) 
+guest    p4  shell.rt66.com   10:58PM     - w
+
+That tells you where the other players are and what they are doing.  In this 
+case, the fellow on "tty0" is using the vi editor to write a C program (vi 
+any-erect.c).  Since vi is a somewhat advanced editor program, we hope this 
+fellow may know a thing or two.  So.. you want to meet this guy, huh?  Just 
+give the command "talk tty0" and if he or she wants to talk with you, you 
+will soon have a private conversation going.
+
+* How are people doing on koan?   
+Satori is doing a magnificent job maintaining root on koan.happyhcker.org. 
+Normally, by allowing people easy access to a guest account, Satori should 
+have quickly lost koan to someone else.  There are many more ways to get 
+root starting from inside a shell account than there are from outside a 
+computer.  However, as anyone who has played with the koan guest account has 
+discovered, Satori has figured out many ways to keep control.  Even so, one 
+player did manage to at least get telnet going from the guest account. 
+Cryptik (who ran the first Wargame computer cyrptotek.happyhacker.org) 
+looked in the file usr/bin/telnet and saw:
+
+-r-xr-xr--   1 bin   wheel    69632 Sep 17 15:08 telnet*
+
+The last three spaces of that "-r-xr-xr--" means that people who are 
+ordinary users such as "guest" could "r" (read) this file but not "x" 
+(execute, which means run) the telnet program.  Oh, yes, we know it is a 
+program because of the asterisk after the word "telnet".  
+
+So Cryptik copied that file into the guest directory and got it to run and 
+was telneting around our LAN -- until Satori caught him.  Now that trick 
+won't work any more.  Satori, you are a tough man to try to beat!
+
+* Big news is coming up soon with Happy Hacker.  You may have been hearing 
+rumors about Happy Hacker Grand Pooh-bah Carolyn Meinel (yes, me). Stay 
+tuned for interesting revelations:):)
+
+* The second edition of The Happy Hacker book was shipped from the printer 
+(after much delay) Friday 13, 1998 -- a truly auspicious day!  The second 
+edition is a 400 pages, large format paperback book, up from 262 pages in 
+the first edition.  For more details see 
+http://www.happyhacker.org/hhbook.html.  What does the new cover look like? 
+Beats me, I haven't seen it yet!  The publisher says he wants to surprise 
+me.  Last time he surprised me by using a cartoon of me wearing a nose ring 
+on the cover.  Bletch, I *hate* nose rings. What did he do to me this 
+time????  Hey, maybe this time you are on the cover!
+
+OK, I, the Grand Pooh-bah, am signing off now.  Happy hacking against 
+fishbone and koan! 
+__________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
+
+For Windows and Unix questions, please write Roger 
+Prata<rprata@techbroker.com>;  
+for Macs, write Strider <s.corinth@iname.com>,  
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>
