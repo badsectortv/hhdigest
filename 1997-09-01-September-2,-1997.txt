@@ -1,0 +1,1124 @@
+September 2, 1997 
+  
+  
+            This is a moderated list for discussions of *legal* Windows 
+                                  95/NT hacking. 
+                                  Moderator is Roger A. Prata 
+  
+ Contents: 
+  *URL Of The Day 
+  *Moderator's Note 
+  *Trojan Horse Question 
+  *Modifying Windows 95 
+  *Win95 Screensaver Password 
+  *Mini Network? 
+  *Network Q + A 
+  *Legal Stuff 
+  *Looking For Proggies 
+  *Full Armor Tutorial 
+  *FTP in DOS 
+  *FoolProof Facts... 
+  *Ping Question 
+  *More Network Stuff... 
+  
+  
+ ----------------------------------------------------------------------- 
+  
+ URL Of The Day:  http://happy-hacker.ml.org will take you to the Happy 
+ Hacker web page. 
+ ----------------------------------------------------------------------- 
+  
+ Moderator's Note: 
+  This is a quite large Digest.  I was away (camping) for the weekend, 
+ and my 
+  e-mail built up.  I was away from my PC and the Internet for 3 whole 
+ days, 
+  so I was unable to produce a digest. 
+  
+ ---------------------------------------- 
+         Trojan Horse Question 
+ ---------------------------------------- 
+  
+ To: "'hh@happy-hacker.ml.org'" <hh@happy-hacker.ml.org> 
+ Subject: [hh]  win95 passwords via trojan horse     (please do not post 
+ return email address...) 
+  
+ I was reading a column in the august issue of Windows NT magazine that 
+ said: 
+  
+ "Your Win95 password may be at risk if you log unattended Win95 
+ computers on to your network.  Hackers can obtain a user's network 
+ password by programmatically examining the computer's memory. 
+ Ordinarily, for such an attack to be possible, the hacker must have 
+ physical access to the computer.  However, from the Internet, a user can 
+ unknowingly download a Trojan horse that scans for passwords.  The 
+ Trojan horse affects the logged-on user.  Win95 encrypts password before 
+ sending them over the network, but it temporarily stores the network 
+ password for the logged on user in memory in an unencrypted state. 
+ Microsoft confirmed this problem in Win95 and OEM Service Release 2 
+ (OSR2).  To address this problem, the company has released an update 
+ that's available on Microsoft's website...." yadda yadda yadda....... 
+  
+ Question: 
+  
+ I know what a Trojan Horse does, but i'm not sure why it does what it 
+ does....  my experience with them is very limited... (Theoretically, of 
+ course..) how does one go about embedding a Trojan Horse in a 
+ downloadable program?  Is the information form the TH written to a log 
+ file, which can be retrieved?  Or, in the above instance, is that 
+ password information transfered back via internet to the person 
+ "inquiring"?  And what's usually the most common way a TH is used?  Is 
+ it used in conjunction with a "real" program, but running the TH on the 
+ side, out of view?  Many questions... :) 
+  
+ domo arigato 
+ orbital 
+  
+ ---------------------------------------- 
+   Modifying Windows 95 
+ ---------------------------------------- 
+  
+ From: sinewave <timmcg@airmail.net> 
+ To: hh@happy-hacker.ml.org 
+ Subject: modifying windows 
+  
+ Does anybody know how to really modify Windows' look and feel? Something 
+ like changing the actual shapes of windows from having squared edges to 
+ round ones, or animating the drop down menus as they appear, something 
+ along those lines.  How would you go about breaking down the kernel to 
+ modify it in this way? 
+  
+ Thanks, 
+ sinewave 
+ timmcg@airmail.net 
+  
+ [Roger:  Some changes can be made using a program called TweakUI.  The 
+ program 
+ is available from Microsoft's web site.  Look for something called 
+ PowerToys.  It 
+ lets you tweak some of your user interface settings!] 
+  
+ ---------------------------------------- 
+       Win95 Screensaver Password 
+ ---------------------------------------- 
+  
+ From: Jonatan Lindstrom <jonatanl@algonet.se> 
+ To: The Happy Hacker <hh@happy-hacker.ml.org> 
+ Subject: Screensaver 
+  
+ I have heard that there is a way to get around the pasword in the 
+ windows 95 screensaver. How? 
+  
+ Marvin 
+  
+ ---------------------------------------- 
+  Wierd Windows 95 Error 
+ ---------------------------------------- 
+  
+ From: loads@erols.com 
+ To: hh@happy-hacker.ml.org 
+ Subject: hh 
+  
+ I'm runing Windows 95 on part of my computer, and whenever I go and 
+ double click on a FOLDER to open it, the find menu comes up.  For 
+ example: if I'm opening up the "HH" folder, when I would click on it, it 
+ would bring up a "Find _____ in the HH folder"  Please help me, I am a 
+ dedicated Happy Hacker reader. 
+ Thanks again. 
+  
+ ---------------------------------------- 
+     Mini Network? 
+ ---------------------------------------- 
+  
+ To: The Happy Hacker <hh@happy-hacker.ml.org> 
+ Subject: help with hh 
+  
+ Can u tell me if it is possible to link 2 home puters together through 
+ the net. Me and a friend tried it, gave each other our ip address's, 
+ tried ftp, tried finger prog's, but the only way we could link up 
+ together was through IRC, but obviously couldn't check out what was on 
+ each others machine, which was our main objective. I'm sure that it is 
+ possible, but how to do it? 
+  
+ my friend works in IT but he still didn't have a clue. 
+  
+ any help would be kindly appreciated :-) 
+  
+ I have been through most of the GTMHH's before you refer me there. 
+  
+ ********if u r going 2 post, please post annon.********* 
+  
+ ---------------------------------------- 
+     Network Q + A 
+ ---------------------------------------- 
+  
+ From: PacmaN <pacman@mindless.com> 
+ To: hh@happy-hacker.ml.org 
+ Subject: HH: PcLockout 
+  
+ >From:   dtfoster@iinet.net.au (Dion Foster) 
+ >Date: 97-08-26 09:10:29 EDT 
+ > 
+ >Hi, 
+ > 
+ >at our school we have a network of 19 machines.  Just recently though, 
+ our 
+ >teacher has put on pclockout.  I have tried hard at getting past 
+ pclockout 
+ >so I can play quake again.  Is there any files specifically for 
+ breaking 
+ >pclockout? or is there a way of getting past the password? 
+  
+ gday, there's a few different ways of getting past PcLockout. And most 
+ of them have to do with miss-configurations in the setup of it. (The 
+ *teachers* don't know enough) 
+  
+ On boot up you can try pressing SHIFT and by-passing the startup files. 
+ Then you'll find you can't type anything but the numberpad. You'll also 
+ find that you can only press ENTER once before the machine appears to 
+ lock itself. 
+ Basically what you need to do is press ALT-### and type out the whole 
+ command line you want to execute. 
+  
+ The mainfiles to pclockout are pcl.sys and pcl.exe (from memory) 
+ btw. don't delete these files, i think that the machines stuff up when 
+ you do. 
+  
+ There's an easier way to do things but, 
+ if the machines are networked through windows, just share the C: of the 
+ machine you want to get into and make it Read-Write (write is what we 
+ need). Then get onto another machine and access the shared drive... you 
+ can now copy files to the drive (i.e. overwrite config.sys so as it 
+ doesn't load pcl.sys???). One drawback is that you can't delete files 
+ from the shared drive. 
+  
+ if all else fails, use that lill' program called 'debug' and start 
+ working out how ta alter pcl in memory. I've heard that you need only 
+ write over 1 byte. 
+  
+ If if all else fails, befriend the admin (teacher) and ask for the 
+ password... else run a keylogger and tell the teacher to change 
+ something with the config. 
+  
+ Btw: there's also a pclockout main disk, I think that this needs a 
+ password but. A thought of mine would be to make a linux bootdisk and 
+ try to mount the MSDOS partition and then see if it's Read-writable... 
+  
+ That's about all I can think of. Except, make your school get a better 
+ OS... I managed to sneak a copy of linux onto the server at school, and 
+ no one can tell except it says "LILO" on bootup :) 
+  
+ Now that's over. 
+ I have a question. At my latest educational institute I'm at, we are 
+ installing/trialling Cytrix networking. It is installed on a 2xP6200 
+ using NT 3.51 Service pack 5. does anyone know of any half decent 
+ vunerabilities I could try on it... 
+ the ports open are: 
+     19 (chargen)-- already had fun with that, network chugged with a few 
+     telnets open to it. 
+     7 (echo) don't know what to try. 
+     qotd -- lotsa fun (actually just a waste of class time) 
+     daytime - pretty boring. 
+     139 (netbios) - soon to try WinNuke (but I don't like my chances of 
+     success.) 
+  
+ The network is connected to the inet, and has about 15 computers on it.. 
+  
+ problems I have already found: 
+     telnet to 127.1.1.1 19: can't close telnet window without ending 
+     task (of which 90%  of the students cant do) 
+     opening many programs: crashes the server in 10 seconds flat. 
+     3 trys and you're banned: keeping ppl from logging on (lame) by 
+     entering bogus passwords (NT default crod) 
+  
+ also Cytrix WinFrame uses the local hdd to boot off... therefore 
+ allowing for a login spoof, does anyone have one made, or have a .bmp of 
+ the Cytrix background. 
+  
+ PacmaN (sorry about the length) 
+ please post to pacman@mindless.com 
+  
+ ---------------------------------------- 
+  
+ From: Jeremy R Rahe <jeremy_rahe@juno.com> 
+ To: hh@happy-hacker.ml.org 
+ Subject: HH 
+  
+ According to the Code of Student Conduct for HISD: 
+ "Use of school computers, facsimile equipment, or other electronic 
+ devices to transmit, receive, view or display ... 
+ information which advocates unlawful activites or provides guidance on 
+ the construction of weapons or other illegal devices."  is considered a 
+ Level 3 Offense -- Suspension or Optional Removal to an Alternative 
+ Education Program 
+  
+ I want to print out large files concerning hacking, phreaking, etc. 
+ (especially the Rainbow series) from the school library because my 
+ printer is pathetically slow.  All of the school computers are hooked up 
+ to some kind of network which controls the printers.  My question is if 
+ anybody could monitor what I acutally print out?  And would there be any 
+ log file to alert them to do this if somebody printed out a 100 page 
+ document? 
+  
+ Thanks for your time, 
+ Jeremy 
+  
+  
+ ---------------------------------------- 
+               Legal Stuff 
+ ---------------------------------------- 
+  
+ From: Merlin Kauffman <merlink@vnet.net> 
+ To: hh@happy-hacker.ml.org 
+ Subject: WinNuke 
+  
+ I was wondering what the punishment would be if you were caught for 
+ WinNuking??  I know that it is against the law because it is a DOS 
+ Attack 
+ (Denial Of Service) and is not letting people have access to their 
+ computers, or the internet.  But then again, what are the chances of 
+ getting caught, it is nearly impossible.  Even if people do get the bug 
+ fix, and it tells them the IP that is trying to Nuke them, the only 
+ thing 
+ they could do is e-mail root at that domain and hope something happens 
+ to 
+ the user.  Most likely root wont even know who the user is, unless you 
+ know 
+ the exact time that the Nuking occured, and its not like root is even 
+ gonna 
+ give a flying F*CK about it. root wont wanna waste the time to look back 
+ in 
+ all of the logs of incoming connections, dial-up or telnet.  If people 
+ really want to avoid WinNuking and pingfloods, you might as well get a 
+ real 
+ OS like Linux, and then setup a firewall and be safe.  If you dont want 
+ Linux, then   just get the bug fix for either Win95 or WinNT. 
+  
+  
+ -MerlinK 
+  
+ [Carolyn's Remark:  Groan. This hits a sore point. Computer crime laws 
+ are 
+ rarely enforced. So kids discover they can get away with stuff, power 
+ goes 
+ to their heads, and pretty soon you have a Kevin Mitnick in jail for 
+ many 
+ years because he committed a long series of basically trivial crimes 
+ which 
+ eventually irritated too many of the wong people, most notably the New 
+ York 
+ Times journalist John Markoff.] 
+  
+ ---------------------------------------- 
+  Looking For Proggies 
+ ---------------------------------------- 
+  
+ From: Kitten8003@aol.com 
+ To: hh@happy-hacker.ml.org 
+ Subject: HH Telnet NUA scanner 
+  
+ Does anyone happen to know where i can find a Telnet NUA scanner For 
+ DOS/Win31(besides NUA Attacker by Dr.Discector...cause it doesn't work 
+ properly)?  I have been looking For months with no success...thought 
+ someone 
+ may be able to help  :) 
+  
+ Thanks for anyhelp anyone can give :) 
+  
+ Handleless 
+  
+ ---------------------------------------- 
+  Full Armor Tutorial 
+ ---------------------------------------- 
+  
+ From: Dave Manges <dmanges@epower.net> 
+ To: hh@happy-hacker.ml.org 
+ Subject: HH 
+  
+ For all of those going up against a PC security program called "Full 
+ Armor", I ran up against this program 8 months ago at school, they 
+ attempted to prevent people from writing to the hard drive. It presented 
+ itself as a challenge....for about 5 minutes. 
+ To crack it..... 
+  
+ 1. In the properties of the program it mentions the thread file (can't 
+ remember the name of the file) it was something.vbx 
+  
+ 2. Ok...this is easy enough, open notepad, open something.vbx 
+  
+ 3. Just because I can't write to the hard drive doesn't mean I can't 
+ edit something already there, delete the first character from the file. 
+  
+ 4. The file (opened in notepad) looks like garbage, but if memory serves 
+ the first letter was M. 
+  
+ 5. Save the File and restart the computer, it should come up with an 
+ error like "Unable to Initialize Full Armor". 
+  
+ 6. Now you can go into add/remove programs and uninstall it. 
+  
+ Enjoy.....Dave 
+  
+ ---------------------------------------- 
+       FTP in DOS 
+ ---------------------------------------- 
+  
+ From: Thomas Skoldemar <thomas-7@algonet.se> 
+ To: The Happy Hacker <hh@happy-hacker.ml.org> 
+ Subject: ftp in dos 
+  
+ Hey my name is Peter Josefsson from Sweden. 
+ I´m 15 years old and I wonder what u can do in ftp after u have 
+ write ftp 
+ open ftp.dalnet.com 
+ user 
+ anonymous 
+ thomas-7@algonet.se 
+ dir 
+ then after that I mean I don´t have a clue? 
+ (snip) 
+  
+ [Roger:  If you type help at the ftp> prompt once connected to the 
+ server, it 
+ will return all the commands that the server accepts.  Once you read 
+ thru the 
+ list of commands, type:  help (command) to get help on a specific 
+ command!] 
+  
+ ---------------------------------------- 
+  
+ From: M a C <gtmhh@juno.com> 
+ To: hh@happy-hacker.ml.org 
+ Subject: Re: [HH]  August 26, 1997 FTP from DOS 
+  
+ Also, before you transfer ANY file that isn't text, make sure you type 
+ BINARY so the transfer comes through in a usable format.  Also, the hash 
+ command is nice, as it lets you know that the transfer is still in 
+ progress and the computer hasn't hung. 
+  
+ MaC 
+  
+ ---------------------------------------- 
+  FoolProof Facts... 
+ ---------------------------------------- 
+  
+ From: dante <dante@suffer.tusculum.edu> 
+ To: hh@happy-hacker.ml.org 
+ Subject: HH 
+  
+ I just read a post on getting past fool-proof in win95, which was 
+ accurate, but only to a degree.  It wasn't very helpful, because it 
+ lacked the details. 
+  
+ Ironically, my comp. science teacher asked me to show her exactly HOW I 
+ managed to print the "the universe revoles around me" image I made to 
+ all the network printers in the school. C'mon, it's my hs senior year, 
+ and i wanted to leave a lasting impression. 
+  
+ So anyway, with her persmission, and watching closely behind me: 
+  
+ As far as i know, the newest fp software was the hardest to get by 
+ because it was in the registry, and to edit the registry, and to hack it 
+ in one sitting, you have to change the registry. 
+  
+ First thing to do, is reboot, hitting f8 when starting windown 95... 
+ shows up. 
+  
+ Select safe mode command prompt. 
+  
+ edit autoexec and config.sys, remarking any reference to "fp", (should 
+ be one device= in config.sys, and one fptsr.exe in autoexec) 
+  
+ After that, reboot again, and hit f8 again, this time, just selecting 
+ safe mode. This bypasses the registry, which i accidentally found out. 
+ At least it doesn't load the fp devices.  Type in regedit at either a 
+ command prompt or from the 'run' menu. 
+  
+ Search for 'fp' and delete any line that has any kind of resemblence to 
+ foolproof or fpsetup.exe. 
+  
+ (Did you backup the registry so when yer done you can re-import it and 
+ not get kicked out of school?) 
+  
+ save the registry, and reboot, this time, as normal. 
+  
+ Fool-proof should not show up whatsoever. 
+  
+ If your admin was smart enough to put in msdos.sys the nof8 thingy, i 
+ forget what it is exactly, then you'll have to make a boot disk. If they 
+ enabled c:, a: boot seqence then you'll have to edit the bios, and if 
+ there is a password for admin on bios, then you'll have to open the 
+ case, pull off the battery, and put it back on.  But that's trivial 
+ stuff at this point. 
+  
+ I just added drivers for all the network printers on this particular 
+ computer and reprinted to each device.  10 minutes later i got a message 
+ from the assistant principle to go see him. 
+  
+ We laughed. 
+  
+ Anyway, fp is a fairly simple hack, but with work, it could be more 
+ secure. the hardest part it the deal wth the registry. 
+  
+ have fun. 
+  
+ [Roger:  Sounds like phun, but BE CAREFUL!  Remember, we only discuss 
+ *LEGAL* 
+ hacking.  Be sure to read the text at the bottom of every Digest!!] 
+  
+ ---------------------------------------- 
+  
+ From: SteveMidd@aol.com 
+ To: hh@happy-hacker.ml.org 
+ Subject: hh - getting past foolproof2 
+  
+ A way to gain access to the control panel with foolproof is to: 
+ Hit F3 to bing up the Find menu, then search for *.cpl in the 
+ windows directory, all the files it finds are for the control 
+ panel, just click on the one that says 'display.cpl' for Display 
+ and so on and so fourth... 
+  
+ Steve 
+  
+ ---------------------------------------- 
+    Ping Question 
+ ---------------------------------------- 
+  
+ From: garsi <garsi@dcdu.com> 
+ To: hh@happy-hacker.ml.org 
+ Subject: 'HH' Another PING question, or few. 
+  
+ When a ping is sent to an IP address, is there a record of that ping on 
+ that IP as a matter of course?  And, if not, is there a way to record 
+ the 
+ origins of incoming pings?  I have heard that pings can be used to 
+ disable 
+ other computers and that nasty trick should have a defense.  Is there 
+ one? 
+ What kind of damage to hardware can a ping do? 
+  
+ George Rosquist 
+ garsi@dcdu.com 
+ www.dcdu.com/garsi 
+  
+ ---------------------------------------- 
+  More Network Stuff... 
+ ---------------------------------------- 
+  
+ Date: Wed, 27 Aug 1997 23:30:47 +1000 (EST) 
+ From: krazilek@anon.nymserver.com 
+  
+ Hi there, 
+ ok...just a few things.... 
+ In the August 15 HH thingo a guy called Sitepu Orang said that he 
+ changed the IP address on a machine and he couldn't browse the network 
+ in network neighbourhood, i believe this is because nethood doesn't 
+ support browsing outside the subnet mask, eg. 
+ if you are on a LAN, and you IP was 192.168.0.1 with a ubnet mask of 
+ 255.255.255.0 then you would only be able to see computers in the same 
+ subnet..192.168.0.*. 
+ you changed your ip to something else...192.0.0.1 for example, you can 
+ only access computers in 19w.168.0.* so you couldn't get to your old 
+ computers.. 
+ There is still a tcp connection though so you can still ping it or 
+ access a server running from it. (web/ftp/mail/news/gateway/etc..) 
+  
+ Also, could the ppl at HH tell me what sorta mail server they are 
+ running, i noticed that it is off a dynamic ip address through monlith, 
+ possibly not a dynip but i need a mail server for my computer... 
+  
+ KRAZilEK! 
+  
+ ----------------------------------------------------------------------- 
+  
+ Send posts to: hh@happy-hacker.ml.org and include a 'HH' in the subject 
+ header 
+ somewhere. Your posts are the lifeblood of the Digest; keep 'em coming! 
+ But, 
+ plase don't send us anything you wouldn't email to your friendly 
+ neighborhood 
+ narc, OK? 
+  
+ To subscribe or unsubscribe, an email to 
+ majordomo@happy-hacker.ml.org 
+ with 'subscribe happy-hacker' in the body.  To unsubscribe, enter 
+ 'unsubscribe happy-hacker' 
+ in the body. 
+  
+ The Official Happy Hacker Digest Webpage is maintained by Adam 
+ Christopher and 
+ can be found at http://happy-hacker.ml.org 
+  
+ ---------------------------------------- 
+ Material discussed in this digest is controversial. Those who produce, 
+ distribute, or contribute to the Happy Hacker Digest will not be held 
+ responsible for anything you choose to do with the information contained 
+ in 
+ this, or any other, Happy Hacker Digest. Parental discretion advised. 
+  
+ Posts submitted to this Digest, along with material collected from 
+ various 
+ electronic sources, remains the copyright of the original author. And 
+ unless otherwise noted, complete issues or portions of any issue of the 
+ Happy 
+ Hacker Digest may not be republished in any for-profit medium without 
+ the 
+ consent of the copyright holder and the moderator. 
+  
+                                            H a p p y   H a c k i n g ! 
+  
+ -- 
+ Roger A. Prata           <prata@cyber-wizard.com> OR <r3w7@usa.net> 
+ PGP: Contact me for my PGP key. 
+                   Please encrypt anything important. 
+ -- 
+  
+  
+  >> 
+  
+ 
+               __ __                      __ __         __ 
+              / // /__ ____  ___  __ __  / // /__ _____/ /_____ ____ 
+             / _  / _ `/ _ \/ _ \/ // / / _  / _ `/ __/  '_/ -_) __/ 
+            /_//_/\_,_/ .__/ .__/\_, / /_//_/\_,_/\__/_/\_\\__/_/ 
+                     /_/  /_/   /___/ 
+                              ___  _              __ 
+                             / _ \(_)__ ____ ___ / /_ 
+                            / // / / _ `/ -_|_-</ __/ 
+                           /____/_/\_, /\__/___/\__/ 
+                                  /___/               September 9, 1997
+
+  
+           This is a moderated list for discussions of *legal* Hacking. 
+                                 Moderator is Roger A. Prata
+
+Windows 95/NT Contents: 
+  *Fortres101 Facts... 
+  *Sending Anonymous E-Mail.. 
+  *Answers... 
+  *Help With Routers... 
+  *Dial-Up Networking Help
+
+Unix/Linux Contents: 
+  $Mini-Linux Difficulties 
+  $Connecting to the 'net with Linux 
+  $Passwd File Questions 
+  $Shell Scripting Question 
+  $Partitioning Using FIPS 
+  
+----------------------------------------------------------------------- 
+URL Of The Day:    http://sunsite.unc/edu/pub/Linux 
+-----------------------------------------------------------------------
+
+Moderator's Note: 
+  Ok!  I have started to include Unix/Linux posts in the Digests.  There 
+  May be a separate digest for Unix/Linux some day in the near future, 
+but 
+  Until so, because of everyone's requests, I will start including 
+  Linux/Unix posts.  Unfortunately, I will not be able to answer as 
+  many questions as I would like to, so we will have to leave that 
+  up to all you 31337 d00dz on the list!  The more Linux/Unix posts 
+  that we get, the easier it will be to branch off a separate Digest 
+  dedicated to the *NIX OS! 
+ 
+
+---------------------------------------- 
+       Fortres101 Facts... 
+----------------------------------------
+
+From: Aaaaargh@aol.com 
+To: hh@happy-hacker.ml.org 
+Subject: HH about Fortres 101
+
+My school just got a bunch of Win95 computers.  They set up Fortres101 
+on all 
+of them for security.  For those of you who don't know fortres (with 1 
+s) is 
+a security program for different versions of windows, it uses existing 
+windows and dos commands as well as a few programs of it's own, and puts 
+them 
+into a very user friendly, menu driven format.  Win95 comes with IE 3.0 
+which, as we all know is full of holes, one of which can be used to get 
+around Fortres101.  If you type a drive letter followed by a colon into 
+the 
+"adress" box of IE 3.0 then it will act as a shell and display the 
+contents 
+of that drive, it also allows you to navigate it without many 
+restrictions. 
+ Some folders that are specifically locked by Fortres will remain 
+protected 
+but other files that were thought to be unnaccessable because of the 
+security 
+program can be accessed.  For example I accessed Regedit without any 
+hassle 
+what so ever.  I told the guy in charge of computers about the hole and 
+he 
+gave me a job :-)  If anyone else has any info on Fortres101 please 
+either 
+post it to this list or E-mail me at Aaaaargh@aol.com. 
+Thanks, Ben
+
+---------------------------------------- 
+       Sending Anonymous E-Mail.. 
+----------------------------------------
+
+From: techmh@cyberspace.org 
+To: hh@happy-hacker.ml.org 
+Subject: Email 
+ 
+
+Hello,
+
+Ive been wondering a few things .. First, how come when I telnet into a 
+smtp server and send fake email the email never shows up? I have tried 
+several times to send a message (following instructions from the GTMHH 
+that covered it) and it seemed to work ok .. But, I would never receive 
+the message I sent ... (I sent to another email address of mine) Any 
+ideas?
+
+Second, how would you go about intercepting email? I hear people say it 
+can be done but I dont know where to start .. could someone point me in 
+the right direction? of course, i will be intercepting my own email just 
+for the sake of learning .. No other particular reasons.. :)
+
+---------------------------------------- 
+      Answers... 
+----------------------------------------
+
+From: Victor Boivie <boivieab@algonet.se> 
+To: hh@happy-hacker.ml.org 
+Subject: HH - A to a Q
+
+hmm,
+
+this answer is to an old question, but I hope it's OK anyway.
+
+To "Crack" Wingroove v0.9, do like this:
+
+1. Open Wingroove Setup 
+2. Click on Register 
+3. Choose the last option 
+4. Enter this...
+
+The first text-box: "ZAAAAAAA" 
+The second box: "BJG70109" 
+The third box: "Your name" e.g. "Mister Smith"
+
+That's it!
+
+Have a nice Day!
+
+Victor - "Victorious"
+
+----------------------------------------
+
+From: Dmitry Markushevich <Dmitry@mail.bc.rogers.wave.ca> 
+To: hh@happy-hacker.ml.org 
+Subject: HH: Re ICMP'd
+
+Re: Ping Attacks
+
+ICMP :) There is no way to protect your self from that. ICMP Unreach is 
+used on IRC to kick you out, but usually a server is supposed to send 
+you 
+that. It's like can't contact the host so close the connection. So, one 
+way 
+to protect yourself from being kicked out of the IRC is 
+a) sit behind a firewall (unreach from other people doesn't work) 
+b) choose another server/port. for example on EFnet irc.nwlink.com seems 
+to 
+be unfloodable :) 
+ 
+
+-Dmitry
+
+----------------------------------------
+
+From: Methane <ch4@methane.org> 
+To: hh@happy-hacker.ml.org 
+Subject: HH
+
+(I am answering questions here :)
+
+THE QUESTION WAS:
+
+From:  xDeath <ashufelt@mhv.net>
+
+Hello, 
+        I have become aware of little wanna-be hackers going around to 
+IRC 
+EFnet servers and "smurfing" them (killing them with packets) and they 
+are not going to come back up. 
+        I am sending this e-mail to ask why are these people stooping so 
+low to 
+remove an IRC server.  What do they gain by doing so?  I do not see that 
+they are doing it for any worthy cause, it seems they are just doing it 
+to get their "jollys" by preforming such a malicious act.  I would like 
+to know if there is any way to prevent this so that the EFnet don't not 
+soon become non-existant.  (effected and non-returning servers: 
+irc.texas.net and irc.gate.net)
+
+Sincerely, 
+xDeath
+
+ANSWER:
+
+        Seems that some people just hate everything.  I think it's the 
+whole 
+anarchy/rebelion thing.  I'm not sure why they would want to take down 
+servers for good.  Although you can make a server split (not to be 
+confused 
+with killing it).  These people might be trying to split the server to 
+takeover a channel. 
+        As far as EFnet going down, I don't think so.  There is always 
+more 
+servers that want to link to EFnet.  In fact, we just set up the 
+miami.fl 
+server here. 
+        In any case, 2 out of every 3 "irc hackers" are total lamers. 
+So, don't 
+worry about it.
+
+THE QUESTION WAS:
+
+From: cdcd <cdcd@thepentagon.com> 
+To: The Happy Hacker <hh@happy-hacker.ml.org> 
+Subject: Ping Attacks
+
+hh I am currently being iCMP'd as I sit down to write this... I am off 
+of a Win95 machine, is there a fix for iCMP?
+
+ANSWER:
+
+        ICMPs or Nukes or whatever you want to call them are just lots 
+of big 
+pings really.  There is no patch that I know of that can stop them 
+because 
+it's not a bug in any code, it's just ping packets.  But that doesn't 
+mean 
+you can't protect yourself. 
+        What you need is something called an ICMP Scanner to see who is 
+nuking 
+you.  I recomend ICMP Watch 2.1 by Rhad Ware.  You can get it at 
+http://www.7thsphere.com along with other stuff to help protect 
+yourself.
+
+Hope that helps
+
+- methane
+
+----------------------------------------
+
+From: jopee@mozcom.com 
+To: hh@happy-hacker.ml.org 
+Subject: HH - Answers
+
+>---------------------------------------- 
+>       Wierd Windows 95 Error 
+>---------------------------------------- 
+> 
+>From: loads@erols.com 
+>To: hh@happy-hacker.ml.org 
+>Subject: hh 
+> 
+>I'm runing Windows 95 on part of my computer, and whenever I go and 
+>double click on a FOLDER to open it, the find menu comes up.  For 
+>example: if I'm opening up the "HH" folder, when I would click on it, it 
+>would bring up a "Find _____ in the HH folder"  Please help me, I am a 
+>dedicated Happy Hacker reader. 
+>Thanks again.
+
+Solution 
+        Open Explorer, click View then Options. Click File Types. In the 
+Registered File Types look for Folder and edit its properties.  In the 
+Actions click open and set it to default. DONE.
+
+pointman
+
+  
+>---------------------------------------- 
+>          Mini Network? 
+>---------------------------------------- 
+> 
+>To: The Happy Hacker <hh@happy-hacker.ml.org> 
+>Subject: help with hh 
+> 
+>Can u tell me if it is possible to link 2 home puters together through 
+>the net. Me and a friend tried it, gave each other our ip address's, 
+>tried ftp, tried finger prog's, but the only way we could link up 
+>together was through IRC, but obviously couldn't check out what was on 
+>each others machine, which was our main objective. I'm sure that it is 
+>possible, but how to do it? 
+> 
+>my friend works in IT but he still didn't have a clue. 
+> 
+>any help would be kindly appreciated :-) 
+> 
+>I have been through most of the GTMHH's before you refer me there.
+
+Why don't you check out your network properties?  Try sharing your HDD 
+by 
+adding new network components.  Just an idea if there's a telnet daemon 
+for 
+WIN95, you could use that.  Hope this helps...
+
+pointman
+
+---------------------------------------- 
+ Help With Routers... 
+----------------------------------------
+
+From: Dmitrij Holomjov <major@mailbox.riga.lv> 
+To: The Happy Hacker <hh@happy-hacker.ml.org> 
+Subject: Re: [HH] HH - Question about ROUTING
+
+-- [ From: Dmitrij Holomjov * EMC.Ver #2.5.02 ] --
+
+Hello. I'd like to find out about ROUTING stuff. 
+Our educational institution has 12- 20 computers running Win 3.11 and 
+Dos. 
+The server is Novell for 25 Users . One day we decided to set up an 
+internet 
+and we have to install a ROUTER. I wonder what Os and Software we have 
+to 
+Install on the ROUTER? I work with Linux and i know that it supports 
+some 
+kinda routing stuff. So I'd appreciate any information about routing on 
+mashines for Internet.
+
+P.s I think that we will use Dial Up for connecting to the I-NET.
+
+Thanx alot 
+--
+
+---------------------------------------- 
+       Dial-Up Networking Help 
+----------------------------------------
+
+From: Jose M Garcia <tost@juno.com> 
+To: hh@happy-hacker.ml.org 
+Subject: dial-up networking help
+
+my post?
+
+Hello, 
+        First off, I think you guys are really doing a public service 
+(grin..) 
+  
+        I have msplus! and have tried to use the dial-up networking 
+server so that my school buds and I can share our files.
+
+I setup an account fpt my friend and told him to call my house.  The 
+modem picked it up but nothing happened.  Anyone who knows anything 
+about 
+this proggie please send me some info.  Anyone know how to share filez 
+between to puters by just calling into each other or that can direct me 
+to some bbs like program please contact me
+
+Curly@cyberdude.com
+
+-------------------------------------------------------------------------------- 
+ And Now, Ladies and Gentleman, For Your Hacking Pleasure... Unix/Linux 
+Posts!! 
+--------------------------------------------------------------------------------
+
+---------------------------------------- 
+ Mini-Linux Difficulties 
+----------------------------------------
+
+From: Shade <shade@tir.com> 
+To: hh@happy-hacker.ml.org 
+Subject: MiniLinux
+
+Recently I went and downloaded minilinux to install on my 486. But it 
+just won't work... It has no strange readings at startup until it gets 
+to the following line: 
+        VMS:Mounted Root 
+And then is freezes, and won't move. 
+Heres the stats on the computer I'm trying to install it on.
+
+486DX - ~133mhz 
+350Meg Total Harddrive - 30-40Megs left after minilinux install. 
+Modem 28.8 on Com1 
+Running - DOS 6.22 & Win3.1
+
+I've looked through the rc.s files and can't really see anything wrong 
+there, but doesn't this problem take effect before it gets to the 
+initialization files? I'm really a complete newbie to linux and thats 
+why I've been trying to find an answer, so I can learn the system.
+
+Well, I've floated this question around the Happy Hacker Chat List for a 
+while now, and noone seems to know what the problem is. I hope I can 
+find the answer here. Thanx.
+
+---------------------------------------- 
+   Connecting to the 'net with Linux 
+----------------------------------------
+
+From: Joan Hill <joanhill@gte.net> 
+Reply-To: <@gte.net> 
+To: hh@happy-hacker.ml.org 
+Subject: HH 
+ 
+
+----WOO WOO (I think?)---- 
+I finally got Linux installed on my computer.  Now all I need to know is 
+where to go now.    What do I need to setup and how do I connect to the 
+Internet and other computers?  Also, if there is anyone in San Angelo 
+that 
+would be willing to take a newbie under their wing, I would appreciate 
+it. 
+                                                Thanx, 
+                                                Blue B. Hill
+
+[Roger:  Read the PPP-HOWTO and SLIP-HOWTO located at: 
+http://sunsite.unc.edu/mdw. 
+These are also located as a part of all Linux distributions.  You can 
+find them at 
+/usr/doc/faq/howto.  Some of them are VERY informational!  I acutally 
+learned how to 
+make a PPP connection by reading the PPP-HOWTO.]
+
+---------------------------------------- 
+ Passwd File Questions 
+----------------------------------------
+
+From: Matthias Keller <matti@zh.wings.ch> 
+To: hh@happy-hacker.ml.org 
+Subject: [HH] FTP-Logins...
+
+hi...
+
+I have downloaded from a FTP-Server a File with login names&pwds, but I 
+cannot use it! Is there somebody who can explain to me, what is each 
+part of a 
+line for?! 
+root:x:0:1:Super-User:/:/bin/true 
+ftp:x:500:2:Anon Ftp:/ftp:/bin/true
+
+----------------------------------------
+
+Please put my e-mail address as Perhillion@mail.hackers.com please.
+
+As many of you know, the life line of unix based hacking is the old 
+passwd 
+file.  Well, now there is a page dedicated to the distribution and 
+collection of passwd files and shells.  You can visit this page at: 
+http://www.etc.simplenet.com/passwd/
+
+Thanks, and Happy Hacking 
+ 
+
+    ____                __     _    __   __   _ 
+   / __ \ ___   _____  / /_   (_)  / /  / /  (_) ____   ____ 
+  / /_/ // _ \ / ___/ / __ \ / /  / /  / /  / / / __ \ / __ \ 
+ / ____//  __// /    / / / // /  / /  / /  / / / /_/ // / / / 
+/_/     \___//_/    /_/ /_//_/  /_/  /_/  /_/  \____//_/ /_/ 
+ 
+
+---------------------------------------- 
+ Shell Scripting Question 
+----------------------------------------
+
+From: cLOut <clout@widomaker.com> 
+To: hh@happy-hacker.ml.org 
+Subject: HH question
+
+I've recenlty been looking into shell scripting, and was wondering if 
+anyone had or knew of a good tutorial on it? 
+btw, i was wondering why is there a Happy Hacker winbl0ze95/NT list? 
+Personally, I think the "older" list was MUCH better... thanks for your 
+reply.  And feel free to flame me Carolyn or Adam about me ranting on 
+your 
+digest.
+
+latz, 
+cl0ut
+
+==/==/== 
+           cL0ut 
+    clout@widomaker.com 
+[finger for PGP public key] 
+  
+ 
+
+---------------------------------------- 
+ Partitioning Using FIPS 
+----------------------------------------
+
+From: Chris Steketee <spook@recorder.ca> 
+To: hh@happy-hacker.ml.org 
+Subject: HH Linux installation question
+
+Good day,
+
+I just spent the last 2 days learnign about the probelms and 
+installation 
+processes involving Linux (Slackware)  I had a similar problem to yours 
+where i didn't want to wipe out the info I already had on my HD by 
+partitioning it.  (Needless to say I found out after erasing all of my 
+data 
+and the 70MB download of Slackware) that there is a program that runs 
+under 
+DOS called fips.exe that will let you move things around within your 
+existing partition without deleting it and create a partition for 
+Linux. 
+  There was also a way to install Linux in an MS-DOS directory and have 
+it 
+work but other thatn that I haven't seen any usefull info on it.
+
+Ciao
+
+Chris
+
+spook@recorder.ca
+
+P.S. Try sunsite.unc.edu (in the pub/distributions/slackware/slakwar/) 
+dir 
+for tons of information on how to install and run Linux 
+ 
+
+-----------------------------------------------------------------------
+
+Send posts to: hh@happy-hacker.ml.org and include a 'HH' in the subject 
+header 
+somewhere. Your posts are the lifeblood of the Digest; keep 'em coming! 
+But, 
+plase don't send us anything you wouldn't email to your friendly 
+neighborhood 
+narc, OK?
+
+To subscribe or unsubscribe, an email to 
+majordomo@happy-hacker.ml.org 
+with 'subscribe happy-hacker' or 'unsubscribe happy-hacker' in the BODY 
+of the 
+message.
+
+The Official Happy Hacker Digest Webpage is maintained by Adam 
+Christopher and 
+can be found at http://happy-hacker.ml.org 
+ 
+
+---------------------------------------- 
+Material discussed in this digest is controversial. Those who produce, 
+distribute, or contribute to the Happy Hacker Digest will not be held 
+responsible for anything you choose to do with the information contained 
+in 
+this, or any other, Happy Hacker Digest. Parental discretion advised.
+
+Posts submitted to this Digest, along with material collected from 
+various 
+electronic sources, remains the copyright of the original author. And 
+unless otherwise noted, complete issues or portions of any issue of the 
+Happy 
+Hacker Digest may not be republished in any for-profit medium without 
+the 
+consent of the copyright holder and the moderator.
+
+                                           H a p p y   H a c k i n g !
+
+-- 
+Roger A. Prata           <prata@cyber-wizard.com> OR 
+<prata@happy-hacker.ml.org> 
+PGP: Contact me for my PGP key. 
+Please encrypt anything important.
