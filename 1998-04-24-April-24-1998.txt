@@ -1,0 +1,698 @@
+April 24 1998
+
+=====================================================================
+URL of the day: http://www.cco.net/~jcurtis/latin.htm Si hoc legere scis,
+nimis eruditionis habes. So when do we get Latin translations of Happy
+Hacker? OK, OK that was a joke, real URL of the day:
+http://www.filemine.com/showPack?id=105 Windows privacy tools.
+See back issues of the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://www.Happyhacker.org.
+GTMHH en espanol: http://underhack.islatortuga.com
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html
+=====================================================================
+
+TABLE OF CONTENTS
+
+* Hacker Wargame update
+Kudos to Rt66 Internet for courage under fire
+First winner: Spaghetti!
+Polite rule breakers in game
+How to play Hacker Wargame
+* Computer security for shell accounts
+* Wingate, oh no!
+* Looking for Latin American hackers
+* Sniffer/logger tools
+* Shell account blues
+* Mac OS Buffer Overflows
+* Linux Answer
+* How to order Happy Hacker book if outside US
+
+===================================================================
+*** Hacker Wargame Update
+===================================================================
+
+Kudos to Rt66 for Courage under Fire
+
+The big first winner in the Hacker Wargame is Rt66 Internet, which has
+donated the use of a T1 and the dedicated Webserver for the Happy Hacker and
+505 gang Web sites! They fought off an intense battle in which hackers
+attacked not the Wargame computers, but instead went upstream to try to shut
+down Rt66 -- the largest ISP in New Mexico. This battle lasted over a
+month. At first there were hundreds, if not more, attackers It simmered
+down after two weeks to ten persistent baddies, most of whom appear to have
+now given up.
+
+Several members of the Rt66 staff put in 12 hour days, seven days a week,
+for over a month, defending the principle that the Internet shall allow
+freedom of speech for all. Even freedom for us Happy Hacker folks. Rt66
+could have taken the easy way out and told us to find another company for
+Internet access. They didn't. They proved that there are Internet access
+providers who put principle ahead of profit.
+
+-----------------------------
+First Winner in Hacker Wargame
+
+We are delighted to announce the first winner in the Hacker Wargame:
+Spaghetti!!! This individual hacked cryptotek.happyhacker.org, an advanced
+challenge FreeBSD 2.2.6 box! In contrast to the 31337 h4x0r d00dz who early
+in the game erased system files on two beginner challenges in the game (a
+Linux box and an Irix 5.3 box), Spaghetti politely announced his feat by
+altering the login screen:
+
+Last login: Wed Apr 22 00:13:11 1998 from mack.rt66.com
+FreeBSD 2.2.6-RELEASE (GENERIC) #0: Wed Mar 25 02:28:49 GMT 1998
+
+ 
+
+ooo$$$$$$$$$$$$oooo
+oo$$$$$$$$$$$$$$$$$$$$$$$$o
+oo$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$o o$ $$ o$
+o $ oo o$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$o $$ $$ $$o$
+oo $ $ "$ o$$$$$$$$$ $$$$$$$$$$$$$ $$$$$$$$$o $$$o$$o$
+"$$$$$$o$ o$$$$$$$$$ $$$$$$$$$$$ $$$$$$$$$$o $$$$$$$$
+$$$$$$$ $$$$$$$$$$$ $$$$$$$$$$$ $$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$ $$$$$$$$$$$$$ $$$$$$$$$$$$$$ """$$$
+"$$$""""$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ "$$$
+$$$ o$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ "$$$o
+o$$" $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $$$o
+$$$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" "$$$$$$ooooo$$$$
+o$$$oooo$$$$$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $$$$$$$$$$$$$$$$$
+$$$$$$$$"$$$$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ $$$$""""""""
+"""" $$$$ "$$$$$$$$$$$$$$$$$$$$$$$$$$$$" o$$$
+"$$$o """$$$$$$$$$$$$$$$$$$"$$" $$$
+$$$o "$$""$$$$$$"""" o$$$
+$$$$o oo o$$$"
+"$$$$o o$$$$$$o"$$$$o o$$$$
+"$$$$$oo ""$$$$o$$$$$o o$$$$""
+""$$$$$oooo "$$$o$$$$$$$$$"""
+""$$$$$$$oo $$$$$$$$$$
+""""$$$$$$$$$$$
+$$$$$$$$$$$$
+$$$$$$$$$$"
+"$$$"""" 
+
+Welcome to Cryptotek.happyhacker.org.
+
+This system is being upgraded all the time. Shutdown may occur without
+early notice.
+
+If you are running telnet please download ssh (secure shell)!
+
+Mail has been fixed!
+
+If you want to get rid of your history file, rm .history, ln /dev/null
+.history
+
+...As hacked by Spaghetti...
+
+----------------------------
+Polite Breakers of Hacker Wargame Rules
+
+It's against the rules to hack zlliks.505.org, which is the Web server for
+http://www.happyhacker.org and http://www.505.org. However, if you simply
+CANNOT RESIST breaking the rules, the anonymous fellow who recently got to
+zlliks did it the right way. He or she simply altered the login screen,
+which used to say "This computer is the property of New Mexico Owning
+Services" to read "This computer was the property of New Mexico Owning
+Services."
+
+Those of you with sharp eyes may have noticed a banner at the top of your
+browser when at the opening page of http://www.happyhacker.org. It reads
+"As Hacked by the 505 d00dz - You mean you can hack without breaking the
+law?" The culprit managed to catch our Web server unattended with it left
+logged in as root while the fellow who had been logged in stepped out to run
+an errand. Us 505ers know who the culprit is and have retaliated by feeding
+him chocolate fudge laced with jalapeno peppers.
+
+----------------------------
+How to Play the Hacker Wargame
+
+Everyone wants to know how to play the Hacker Wargame. The first thing you
+need to do is study! A list of computer manuals that will give you a black
+belt in computer defense/offense is at
+http://www.happyhacker.org/defend.htm. Remember, http://www.amazon.com is a
+great place for anyone in the world to order computer manuals.
+
+You uber types reading this, please send us reviews of additional manuals
+that you have found useful. Thanks!
+
+Of course, the best way to practice for the Wargame is to install the
+operating system you want to attack/defend on your own computer. Remember,
+it is one thing to break in -- but a much harder problem to fix the hole you
+used to gain entry -- and hardest of all to fix ALL the holes so other
+players can't oust you from root!
+
+FreeBSD, the operating system of cryptotek.happyhacker.org, is freeware
+available from http://www.freebsd.org/. It only runs on PCs. However, its
+developers are working on DEC Alpha and UltraSPARC versions.
+
+Soon we expect to get sparc.happyhacker.org going in the game. It is a
+SPARC running Solaris. This operating system runs on both PCs and SPARCs!
+To get Solaris, see http://www.sun.com/solaris/. If you are a college
+student, you can get Solaris X86 for Pentium PCs for $99. To order Solaris,
+in the US call 800 786-0404; in all other countries call 1-972-788-3150.
+For lots of free software that runs on Solaris, see
+http://smc.vnet.net/solaris_2.5.html.
+
+When we get fantasia.happyhacker.org up, it will be running Irix 6.2. Irix
+only runs on Silicon Graphics machines. If you don't have an SGI but want
+to play with this box, you still can get lots of information on security
+issues at http://www.sgi.com/Support/security/security.html. All security
+patches at that site are free regardless of whether you are an SGI customer.
+
+For searchable archives of free offense/defense tools for all forms of
+Unix, see http://www.rootshell.com/ and
+http://www.netspace.org/lsv-archive/bugtraq.html.
+
+---------------------------------------
+
+How Do I Know What Hacker Wargame Computers Are Up?
+
+1) Give the command "ping cryptotek.happyhacker.org" (or whatever box you
+are looking for) at your DOS or shell account prompt WHILE ONLINE.
+
+2) If it tells you "host unreachable," DON'T EMAIL US ASKING WHAT IT MEANS.
+It means the host is unreachable. You will just have to be patient until it
+becomes reachable again.
+
+Sorry for being a grouch -- Carolyn
+
+===================================================================
+*** Computer Security for Shell Accounts
+===================================================================
+
+If you are like me [Happy Hacker Grand Pooh-Bah Carolyn Meinel], every now
+and then someone breaks into your account and sends out obnoxious email in
+your name and messes with your files. OK, maybe that doesn't happen all the
+time to you. But maybe you'd still like to do something to protect your
+shell account.
+
+Since us mere users don't have control over the security policies of our
+Internet Access providers, there isn't a whole lot we can do. But there are
+a few things that are effective, or at least fun.
+
+First, use Secure Shell (ssh) with RSA login ("password" option sends your
+password in the clear, a big no-no) so no one can sniff anything you are
+doing in your shell account. To get ssh, see http://www.datafellows.com/.
+Important note: in order to use Secure Shell, your Internet access provider
+must be running a Secure Shell server. Ask tech support at your ISP whether
+they have it. DON'T ASK ME, only tech support at you ISP can answer that
+question.
+
+To hide your password in the Datafellows version of Secure Shell clinet for
+Win95, first click "password," then enter your password, then click "RSA."
+Then hit enter. If you don't click "RSA," your password will be sniffable
+and gremlins may run rampant in your shell account!
+
+Or, perhaps your ISP has a Kerberos server. If you can get it, it is more
+foolproof than Secure Shell. Ask tech support at your ISP whether they offer
+Kerberos logins. Kerberos is free from http://www.mit.edu/kerberos.
+
+Next, prepare for the worst. What do you do if someone breaks into your
+account? First, don't let them see what you have been doing. (This also is
+important if you have snoopy tech support guys.) If you use the bash or
+Bourne shells, you can keep your shell activities secret by piping the
+history of your shell commands to bit limbo. To do this:
+
+1) Give the command "rm .bash_history" for bash shell (or if in Bourne
+shell, "rm .history")
+
+2) Give the command "ln -s /dev/null ~/.bash_history" (or "ln /dev/null
+.history" for Bourne).
+
+3) If this doesn't work, give the command "ls -al". This will show who owns
+all your files. This should give something like this:
+
+total 32
+drwx-----x 4 cmeinel cmeinel 512 Apr 23 12:46 .
+drwxr-xr-x 22 root wheel 512 Apr 22 17:04 ..
+-rw-r--r-- 1 cmeinel cmeinel 0 Apr 3 10:06 .addressbook
+-rw-r--r-- 1 cmeinel cmeinel 2285 Apr 3 10:06 .addressbook.lu
+-rw-r--r-- 1 cmeinel cmeinel 800 Apr 23 12:30 .cshrc
+crw-rw-rw- 3 root wheel 2, 2 Apr 23 12:30 .history
+-rw-r--r-- 1 cmeinel cmeinel 0 Apr 23 12:22 .junk
+(snip)
+
+Alright, who's the smarty pants at root who made my Bourne shell history
+world-readable?
+
+You also may want to make hidden directories to make life a teeny bit
+harder on snoops who might get into your shell account. To hide a directory,
+just create a name with a dot in from ot it, for exampl /.directory.
+
+One cool thing is to arrange to get an email warning at a different account
+than your shell account every time someone logs in. Sure, you could always
+have a message at login saying "last login Fri....etc" telling when someone
+last used your shell account. But a smart intruder can edit the logs so you
+would never see a record of Mr. Baddie's visit. So here's what I use for
+paranoid monitoring of users of my C shell (csh).
+
+1) Give the command "pico .cshrc" (substitute "vi" or "emacs" if you prefer
+those editors). This opens the program that runs every time you start up
+your C shell.
+
+2) Add this line: "/usr/lib/sendmail x@techbroker.com <.tin/tinrc.old" (for
+"x@techbroker.com" substitute an email address of yours that is NOT the one
+for your shell account.) Also, you must create the file .tin/tinrc.old (it
+actually can be any arbitrary unused file) to hold a temporary version of
+your email before sending it. You can create an empty file with the command
+"touch .tin/tinrc.old".
+
+WARNING: this command varies according to the configuration of your ISP.
+You might have to substitute a different path for "sendmail" (use command
+"whereis sendmail" to find it), or substitute mail for sendmail, etc. etc.
+If you can't make this command work, DON'T EMAIL US! Only tech support at
+your ISP can answer your questions.
+
+3) Save the new .cshrc file.
+
+Why send this warning to a different email account? An intruder can simply
+delete your warning email if it goes back to your shell account. You can
+get free email accounts at Hotmail and several other places on the Web.
+
+Here's what that shell script sends me whenever someone uses csh in my account:
+Received: from Rt66.com (198.59.162.1)
+by mail02.rapidsite.net (8.8.5/8.8.5) with ESMTP id NAA24145
+for <x@techbroker.com> Thu, 23 Apr 1998 13:08:38 -0400 (EDT)
+Received: (from cpm@localhost)
+by Rt66.com (8.8.7/8.8.6) id LAA23890
+for x@techbroker.com; Thu, 23 Apr 1998 11:05:51 -0600 (MDT)
+Date: Thu, 23 Apr 1998 11:05:51 -0600 (MDT)
+From: cpm <cpm@Rt66.com>Message-Id: <199804231705.LAA23890@Rt66.com>X-Loop-Detect: 1
+
+Next, I wage a little psychological warfare. OK, I admit it, this part is
+lame, but fun. So hold your flames.
+
+1) Open .cshrc with your favorite editor.
+
+2) Insert something like this:
+
+echo -------------------------------------------
+echo To err is human...
+echo To get caught is just plain stupid...
+echo Fatal Error
+echo -----------Big brother is watching----------
+
+3) Give yourself a scary prompt. I inserted the command in the .cshrc file
+"set prompt="`hostname`{`whoami`}\!:K-Rad Doomster of the Apocalypse;^)""
+
+That "whoami" is just to remind myself whether I am being a mere user or
+root -- not that I would ever be a meanie and root my ISP! If you have your
+own Unix computer, this is a great safety measure so that you don't
+accidentally do something drastic while root.
+
+Next, if you are really obsessively paranoid like I sometimes get, you can
+keep a lookout for the baddies with three cool Unix commands: w, who, and
+netstat.
+
+Netstat is really great because it tells you so much:
+
+Active Internet connections
+Proto Recv-Q Send-Q Local Address Foreign Address (state)
+tcp 0 0 cryptotek.http sol7.cs.wisc.edu.33089 FIN_WAIT_2
+tcp 0 0 cryptotek.http sol7.cs.wisc.edu.33088 FIN_WAIT_2
+tcp 0 20 cryptotek.ssh pmd05.rt66.com.1753 ESTABLISHED
+Active UNIX domain sockets
+Address Type Recv-Q Send-Q Inode Conn Refs Nextref Addr
+f05e7f00 dgram 0 0 0 f03dcf14 0 f03dcb14
+f05f9200 dgram 0 0 0 f03dcf14 0 f03dcd14
+f05e9600 dgram 0 0 0 f03dcf14 0 f03dcd94
+f05eba00 dgram 0 0 0 f03dcf14 0 0
+f05a9000 dgram 0 0 f05ab680 0 f03ecc94 0 /var/run/log
+
+This readout tells us is that a guy from the University of Wisconsin is
+reading our Web site at http://cryptotek.happyhacker.org, while I am logged
+in with an ssh connection.
+
+The commands "w" and "who" only tell you who is actually logged into a
+shell account and what they are doing just now. Here's the "w" command readout:
+
+1:05PM up 2 days, 17:42, 2 users, load averages: 0.00, 0.00, 0.00
+USER TTY FROM LOGIN@ IDLE WHAT
+cryptik p0 206.206.108.7 1:02PM - (pine)
+cmeinel p1 pmd05.rt66.com 12:31PM - w
+
+This means Cryptik is in his shell account reading his email using the Pine
+program while I am snooping on him with the "w" command.
+
+If your ISP has logs readable by users, a shell script like this might tell
+you everyone who has used ftp or logged into their shell account lately:
+
+last | grep -v rt66.com | grep -v ftp | grep -v "^U"
+
+Of course you should substitute the domain name of your Internet service
+provider for "rt66.com". That part of the command excludes everyone logging
+in from your dialup line, which eliminates a whole bunch of yo8ur own logins
+which you know were OK anyhow. Note: this doesn't work in the bash shell.
+To get a shell that is good for hacking, try the commands "csh" or "tcsh"
+
+Here's what I get with this command on cryptotek.happyhacker.org:
+cmeinel ttyp0 152.172.76.111 Thu Apr 23 14:25 - 16:30 (02:05)
+(snip)
+cryptik ttyp0 206.206.108.7 Thu Apr 23 13:02 - 13:06 (00:04)
+mrcurt ttyp1 152.166.28.22 Thu Apr 23 01:23 - 02:02 (00:38)
+(snip)
+cryptik ttyp0 152.167.87.187 Wed Apr 22 19:18 - 19:20 (00:02)
+cryptik ttyp0 152.173.170.182 Wed Apr 22 17:55 - 17:56 (00:00)
+root ttyv0 Wed Apr 22 17:02 - 17:04 (00:02)
+cryptik ttyp0 152.171.172.203 Wed Apr 22 15:25 - 15:29 (00:03)
+protocol ttyp1 152.204.20.98 Wed Apr 22 01:43 - 01:59 (00:16)
+cryptik ttyp0 152.170.244.211 Tue Apr 21 23:41 - 02:28 (02:47)
+cmeinel ttyp1 bofh.foobar.org Tue Apr 21 22:09 - 22:17 (00:08)
+xmyth ttyp0 152.203.67.27 Tue Apr 21 18:11 - 18:12 (00:00)
+(snip)
+420smk ttyp0 152.172.97.237 Tue Apr 21 14:35 - 14:36 (00:01)
+root ttyv0 Tue Apr 21 14:03 - 14:04 (00:00)
+root ttyp2 152.171.159.158 Tue Apr 21 01:25 - 02:10 (00:45)
+cryptik ttyp1 206.206.108.7 Tue Apr 21 00:24 - 00:25 (00:00)
+skullz ttyp1 152.166.74.235 Mon Apr 20 23:55 - 23:59 (00:04)
+skullz ttyp1 152.166.74.235 Mon Apr 20 23:48 - 23:53 (00:05)
+cryptik ttyp0 152.171.255.221 Mon Apr 20 23:24 - 01:33 (02:08)
+cryptik ttyp0 152.167.139.204 Mon Apr 20 23:16 - 23:16 (00:00)
+cmeinel ttyp1 152.170.227.210 Mon Apr 20 22:17 - 22:19 (00:02)
+(snip)
+
+Aha! Now you know the handles of all the folks that have been using ftp or
+logging into shell accounts from outside the ISP (Rt66) hosting this
+computer lately.
+
+That root login with no IP address after it was done from the console,
+meaning someone was actually physically at the keyboard to log in. The
+numbers after the other handles are the IP addresses from which they came
+in. For example, "cmeinel ttyp1 152.170.227.210" means I actually came
+in from an America Online dialup! (To see what those IP numbers mean, read
+the GTMHH "How to Map the Internet" for lots of ways to figure them out.)
+Fortunately, I remember I did that, so it's cool.
+
+Now if I were to see my user name on this list at a time that I know I
+didn't log in, I would know someone has gotten my password and is making
+merry with my account! But that IP number would tell me where Mr. Baddie is
+coming from (unless he or she is using IP spoofing.)
+
+So -- what's this? It says cmeinel telneted in from bofh.fubar.com! I
+know that computer. "Bofh" stands for the owner's handle, Bastard Operator
+from Hell. Actually I was expecting that. He promised me a prank program
+or two in exchange for use of my account. Since this is an account on a
+Hacker Wargame computer, I said "what the heck." Besides, I trust anyone
+with such a neato handle.
+
+But, oh, my, look at this! 
+cmeinel ttyp0 152.172.76.111 Thu Apr 23 14:25 - 16:30 (02:05)
+
+Who is this cmeinel who logged into my account from America Online for over
+two hours? Wasn't me! Maybe this individual will soon be able to use
+access to my shell account to get root and be the next winner! Nah, I'll
+make it hard and change my password. The command is simply "passwd."
+That's what you should do often anyhow, and definitely do whenever you
+discover an intruder was in your account.
+
+Now are you convinced that was a k-rad 31337 shell script I just used? To
+make it into a simple one-word command, do this:
+
+1) Open your favorite editor.
+
+2) Paste that line into it.
+
+3) Save as "check" (or whatever you want to call it)
+
+4) Give command "chmod 700" to make it executable (that means to make it so
+you can run that shell script when you simply enter the name of that file.
+
+5) Give the command "check". (Note: this command will not work in a bash
+shell. Get into a decent shell first with the command "csh" or "tsh.") If a
+baddie is at work, he will probably turn up here.
+
+I can't guarantee this command will work with your ISP. If it doesn't
+work, and you used csh or tsh shells -- COMPLAIN TO YOUR TECH SUPPORT STAFF,
+NOT TO US. Only your tech support staff can tell you how to read their logs
+of ftp and shell account activity.
+
+Tech support isn't helpful? Feed them pizza, candy and caffeinated soft
+drinks until they crack and reveal their secrets. People who do this to
+tech support have even been known to get free accounts with static IP addresses.
+
+Last, and most important: encrypt anything you don't want other people to
+read! PGP is popular and so hard to break that exporting the program from
+the US can get you in big trouble! So I'm not going to tell you guys where
+to get it. However, you just might happen to stumble across a zillion free
+download sites that even people outside the US can use if you were to do a
+Web search from some place like http://www.hotbot.com:):)
+
+The most common mistake in using PGP is to leave your private key and
+passphrase in your shell account. NO, NO, NO! Keep your private key hidden
+away on a floppy -- even without a passphrase it gives snoopers an easy way
+to decrypt your stuff. Hide the passphrase in your brain.
+
+------------------------------
+
+Quote of the Day:
+
+For my culture and my people, this is the moment we've been waiting for
+for 20 years.
+-- Eric Raymond, hacker and author of "The Cathedral and the
+Bazaar", which influenced Netscape to publicly release the
+source code to their browser.
+
+===================================================================
+*** Wingate, Oh, No!
+===================================================================
+
+From: ai@praha.czcom.cz (Alexander Ivanchev)
+
+Hello!
+
+I recently tried out the WinGate bouncing technique... Just using a
+simple domain scanner I was able to find about 100 hosts running WinGate
+which had their port 23 (telnet) open and unprotected. Using such
+unprotected WinGate machines a spammer (or a hacker) is able to bounce
+off hundred of hosts through-out the world. Tracing proves to be
+difficult if not impossible. If a sysadmin is careless enough not to
+protect his/her server, after all this talk about the WinGate bug (which
+according to Deer. Comm. is not a bug), it's likely he/she is not
+logging this activity. I believe after some time this exploit will
+become a much more rare occurrence to come across (just like the PHF
+exploit) but my question is: Is there a way to stop such spoofing
+attempts NOW? If anyone has more information on this, please let me
+know!
+
+===================================================================
+*** Looking for Latin American Hackers
+===================================================================
+From: BurnedBrain
+
+Last night I found a web page of Spanish Phreakers, named C.P.N.E "Compaqia
+Phreakers Nacional de Espaqa" and got me an idea.
+You'll see, there's no place to Latinoamerican Hackers or Phreakers on the
+net; and I wish to make a little space for them on it.
+I write you because I need some help and guidance to make it possible.
+First, I write an E-mail to spread the word of my purpose to meet all the
+Latinamerican Hackers and I'll be very grateful if you can include my letter
+on your E-mail list.
+
+Please support this noble intention.
+I'm Silent Bob and thanks for your attention.
+
+P.D Excuse me if my English is too bad.
+
+[Carolyn: Es mejor que mi espanol:)]
+
+===================================================================
+*** Sniffer/Logger Tools
+===================================================================
+
+From: Mario Tadey
+
+Hi there!
+
+>* Sniffing and logging utilities. We don't know of a good book on that
+>topic.
+
+There is a good CD-ROM available from the German "Utech Verlag"! It's
+named "Datenschutz-CD Hacker's best friend", aktually already the
+version 3. You can order it on the ISBN-Number 3-932782-21-6.
+
+On this CD you will find many many Tools, Textes and and and...
+
+Bye-bye
+
+===================================================================
+*** Shell Account Blues
+===================================================================
+
+From: Christian Blair @ C2
+
+Carolyn,
+
+Don't get me wrong...I think you are the coolest but
+how come whenever us sysadmins deny shell accounts
+you guys make us out to be paranoid control freaks?
+
+People need to understand that we are just trying to keep
+our jobs and trying to keep our jobs from ruling our lives.
+I like to go home and sleep content without the fear of
+a 14yr old with a chip on his/her shoulder and unresolved sexual
+energy turning our money making enterprise into his/her personal
+playground.
+
+I'm also sure that many find themselves in the same scenario:
+We'd love to provide everything you want but the boss
+won't pay for system upgrades to protect the network from
+people with bad intentions and he/she is way too slow to accept
+overtime...something we will certainly need if we open
+the doors and the black hats walk in.
+
+This doesn't mean we are little napoleons. It comes down
+to cash money...paying the rent. It's about protecting our interests.
+
+Most small ISPs are just that: Small and there's little room
+(profit-wise and otherwise) for another headache.
+
+I'd say the best way a person could be granted shell access
+at an ISP where it's a no-no is very similar to establishing good
+credit. Join up and show yourself to be responsible. Where do you
+think tomorrow's sysadmins will be coming from?
+
+Regards,
+Christian Blair
+
+[Carolyn: That is a great post. We are hoping our work on the Hacker
+Wargame will show us some ways to safely give shell accounts. We have high
+hopes for OpenBSD and the latest Solaris, as they are supposed to prevent
+buffer overflow exploits. But only real world tests will prove or disprove
+these claims.]
+
+===================================================================
+*** Mac OS Buffer Overflows
+===================================================================
+
+From: Netstat Webmaster
+
+Eudora Internet Mail Server vs. 1.2, 2.0, 2.01 DoS
+
+Telnet to port 106 of an EIMS server.
+Type USER xxxxxxxxxxxx(at least a 1000+ char string). EIMS will crash.
+Occasionally taking the entire machine with it.
+
+---
+
+Apple's Web Sharing DoS
+
+Telnet to port 80 of a Web Sharing server (built into system 8.0+).
+Upon connect enter any string of at least 3000+ characters. Hit return
+twice, Web Sharing will stop servicing. It does not seem to make the
+server any less stable and Web Sharing seems to be able to be restarted
+with out a reboot and without any ill effects.
+
+Phanty.
+
+===================================================================
+*** Linux Answer
+===================================================================
+
+From: Juergen Schmidt
+
+>Linux systems using LILO to boot are not vulnerable although Sparc
+>Linux with SILO is vulnerable to a similar "boot-modified-kernel-attack"
+>unless they are utilize a boot a password in the /etc/silo.conf
+>configuration file.
+>(thanks to Jon Paul Nollmann for Linux Q A)
+
+While it is true that Linux/LILO is not vulnerable to this specific attack,
+it should be noted, that gaining root on a Linux box via LILO boot-prompt is
+even easier: you don't even need a modified kernel. Giving an init=/bin/sh
+as boot parameter invokes the shell instead of init. After executing the
+necessary init-scripts manually, you have full root-access to the machine.
+
+To avoid this, you should add "RESTRICTED" and set a password in your
+lilo.conf, which is then required to set any boot-options (don't forget, to
+make /etc/lilo.conf read-only for root, it contains the password in clear text)
+
+bye, juergen
+Juergen Schmidt Redakteur/editor c't magazin
+Verlag Heinz Heise GmbH Co KG, Helstorferstr. 7, D-30625 Hannover
+EMail: ju@ct.heise.de - Tel.: +49 511 5352 300 - FAX: +49 511 5352 417
+
+===================================================================
+*** How to Order Happy Hacker Book if Outside the US
+===================================================================
+
+FOR SHIPPING ADDRESSES OUTSIDE OF THE UNITED STATES, 
+here are the instructions for you.
+
+Send a money order payable in US Dollars payable to HAPPY HACKER BOOK to:
+
+HAPPY HACKER BOOK
+P.O. Box 820
+Albemarle, NC 28002-0820
+
+Calculate the amount of your money order as follows:
+BOOK	$29.95
+SHIPPING:	See Your Shipping Rate Below
+
+All orders outside of the United States will be shipped by Global Priority
+Mail. We can currently ship to the following destinations:
+
+NORTH AMERICA: Shipping Rate is $10.95
+Canada
+Mexico - Guadalajara, Mexico City, Monterrey ONLY
+
+WESTERN EUROPE: Shipping Rate is $10.95
+Austria
+Belgium
+Denmark
+Finland
+France - includes Monaco
+Germany
+Great Britain - includes England, Gurnsey, The Isle of Man,
+Jersey, Northern Ireland, Scotland, Wales
+Iceland
+Ireland
+Luxembourg
+The Netherlands
+Norway
+Portugal
+Spain
+Sweden
+Switzerland - includes Liechtenstein
+
+PACIFIC RIM: Shipping Rate is $12.95
+Australia
+China - Beijing, Dalian, Guangzhou, Qingdao, Shanghai, Shenzhen,
+Suzhou, Tianjin, Wuxi, Xiamen and Zhuhai ONLY
+Hong Kong
+Japan
+New Zealand
+Philippines
+Singapore
+South Korea
+Taiwan
+Thailand
+Vietnam
+
+SOUTH AMERICA: Shipping Rate is $12.95
+Brazil - Rio de Janerio and Sao Paulo ONLY
+Chile - Santiago, Valparaiso and Vina del Mar ONLY
+
+MIDDLE EAST: Shipping Rate is $12.95
+Israel - Haifa, Jerusalem and Tel Aviv ONLY
+Saudi Arabia - Dammam, Jeddah and Ryadh ONLY
+
+Allow two to three weeks for delivery.
+R.J. Gosselin, Sr.
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+Editor-In-Chief -- Happy Hacker Digest
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+__________________________________________________________________
+with
+message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan to use any
+information in this Digest or at our Web site to commit crime, go away! Foo
+on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the United
+States operating under Shepherd's Fold Ministries. Yes! This is all a plot
+to save your immortal souls!
+For Windows questions, please write Roger Prata; for Macs, write Strider; and Unix, Carolyn Meinel. Other general questions go to R.J. Gosselin. 
+Happy Hacker email list maintainer: Jonathan D. Zerulik 
+________________________________________________________________________________
+Carolyn Meinel
+M/B Research -- The Technology Brokers
+http://techbroker.com

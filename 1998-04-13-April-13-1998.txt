@@ -1,0 +1,612 @@
+April 13 1998
+
+=====================================================================
+URL of the day: http://www.openbsd.com -- the volunteer project that created
+the operating system for the Happy Hacker Web site -- an operating system
+that so far survived thousands of computer crime attacks.
+See back issues of the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://www.Happyhacker.org.
+GTMHH en espanol: http://underhack.islatortuga.com
+Svenska: http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/gtmbegsvensk1.txt
+=====================================================================
+
+TABLE OF CONTENTS
+
+* Why we fight
+
+* Inside the Hacker Wargame
+-- "some folks can be so smart and so stupid at the same time"
+-- planned downtime for our Web site and game
+-- who are the 505 gang, anyhow?????!
+-- when will newbie and intermediate boxes be up for play?
+-- when do we get to watch the live logs of break-in attempts?
+-- how do you learn how to break in?
+-- how do you secure a computer against attack?
+-- live hacking lessons!
+-- how to keep from getting into trouble for playing the game
+
+* Call for volunteers
+
+* Inside Story on the Happy Hacker book
+-- table of contents
+-- who helped Meinel write it?
+-- what people are saying about the book
+-- how to order it
+
+* Windows NT *Can* IP Spoof!
+* Lynx Hack! -- and Poledit Workaround
+* How to trick spammers into throwing away their junk email
+
+========================================================================
+*** Why We Fight
+========================================================================
+by Carolyn P. Meinel
+
+Happy Hacker has made the news again:
+http://www.zdnet.com/zdnn/content/zdtv/0409/305787.html
+
+We continue to be the targets of what may be the largest massed assault of
+computer criminals in history. Over the last four weeks, thousands of
+attackers have hit Rt66 Internet. They are the Internet provider that has
+served us by setting up a dedicated LAN and Internet host computers for our
+Web site and Hacker Wargame. Their staff of uberhackers has worked around
+the clock defending against these attacks. Yet Rt66 has received no money
+from us. They have donated this equipment and hard work to Happy Hacker --
+and risked their business -- because they share our cause.
+
+Why do we fight to stay on the Internet? Why do we fight for the right for
+you to learn how to hack? We believe the Internet should be free. But our
+opponents want the knowledge of how to hack to remain in the hands of a
+narrow elite that by day work as computer security experts, and many of whom
+by night commit computer crime of the most filthy sort.
+
+Early this morning our attackers vandalized the Rt66 Web site and sent out
+email from a shell account they set up at chili.rt66.com attempting to
+blackmail me. They also sent offensive email from this account to many
+other people. They weren't there long (about an hour) before getting kicked
+out. They also were too lame to get into my real shell account, on
+mack.rt66.com. This time they called themselves "Grey hat" hackers, but
+everything else about them reminded us of the old Grey Areas Liberation
+Front (GALF).
+
+Some people are also campaigning to get Rt66's Internet backbone providers
+to cut them off by alleging that the Hacker Wargame is training computer
+criminals.
+
+On Easter I was also hit with massive credit card fraud.
+
+Please do not volunteer your services to commit crimes against our
+attackers. This happens every time I announce Happy Hacker is under fire.
+If we use their own tactics to get back at them, we become no better than
+they are. The issue is not which gang will rule cyberspace, but whether
+cyberspace shall be free.
+
+We shall overcome. We will make the Internet a place where everyone, no
+matter who they are, no matter where they live, no matter what they believe,
+may gather to learn, to speak out, and do business. This is the true spirit
+of hacking.
+
+========================================================================
+*** Inside the Hacker Wargame
+========================================================================
+"Some Folks Can be So Smart and So Stupid at the Same Time"
+
+From: Bill Housley
+
+You made the news again.
+[http://www.zdnet.com/zdnn/content/zdtv/0409/305787.html]
+
+Let me get this right, these black hat hackers who claim that you don't know
+anything could not successfully hack the contest target "king of the hill"
+site, so they picked on the upstream site and now might be up on charges.
+
+Interesting how some folks can be so smart and so stupid at the same time.
+
+By the way, this incident has only given you more press coverage, will sell
+more books, make more people aware of your web based information sources and
+in general make life that much harder for black hat hackers everywhere while
+further benefiting you, their enemy.
+
+What idiots.
+
+<tee hee giggle snort>
+[Carolyn: That story at Zdnet.com about us was only half right. Rt66
+Internet was not taken totally down for 36 hours. They only shut down
+telnet on one of their computers for that length of time while making sure
+they had thoroughly shut that criminal out.]
+
+-----------------------------------------------
+Planned Down Time for http://www.happyhacker.org and the Hacker Wargame
+
+Please don't email and phone when we go down shortly for upgrades. Thanks
+to the phenomenal assault we have just survived, and the logs we have been
+studying, the volunteers who have been securing our systems now know much
+more about how to block assaults by the gangs that are trying to turn
+cyberspace into their private playground.
+
+-----------------------------------------------
+Who Are the 505 Gang, Anyhow?
+
+by Carolyn Meinel
+
+The latest story making the rounds of the hacker scene is that the 505
+gang, which is running the Hacker Wargame (see http://www.happyhacker.org)
+is just me, your fearless leader and grand pooh-bah, Carolyn Meinel.
+However, anyone with rudimentary hacking skills can see that the Hacker
+Wargame, 505's web page (http://www.505.org) and Happy Hacker web page
+(http://www.happyhacker.org) are all on computers on a dedicated local area
+network -- on a T1 high speed connection to the Internet! Furthermore, no
+one (so far) has managed to break into zlliks.505.org, which holds both the
+505 and Happy Hacker Web sites -- despite logs revealing thousands of
+attacks. (Note: if you attack zlliks.505.org, and if you are smart enough
+to actually get a telnet, ftp or ssh connection, you will see our warning
+that you do NOT have permission to attack it.)
+It took a lot of money and skilled systems administration to set up and
+administer the Hacker Wargame and our Web server. Sorry, folks, I'm not
+rich, generous or talented enough to have done that all by my lonesome. I'm
+certainly not talented enough to hold off the horde of cybernasties
+attacking http://www.happyhacker.org by myself.
+
+It's time for the real 505 gang, the people that have held off what is
+probably the most massive hacker blitzkrieg in history, to step forward.
+Only, sigh, they want to be known only by their handles. If you want to ooh
+and ahh at the uberhackers of the 505 gang, you will just have to be content
+with knowing we all live in the Albuquerque, New Mexico area. Check out our
+Web page at http://www.505.org to learn whatever any of the other 505ers are
+willing to tell about themselves.
+Actually, you can figure out who some of us are by carefully reading the
+section below on the Happy Hacker book.
+
+------------------------------------------------------------
+When Will Newbie and Intermediate Boxes Be up for Play?
+
+Funny thing, keeping a round the clock watch on all those cyberbaddies
+trying to punish Rt66 Internet uses up a lot of volunteer time. But now
+that there's only about ten of them against five 505ers, we're in better
+shape. So now we are working on how to run boxes that newbies and
+intermediate hackers can break into.
+Here's our problem. It only took two days for one out of the hundreds of
+black hat hackers raising hell against us to finally break into and erase
+the hard disk of our first newbie box. (Does that tell you something about
+the skill level of our attackers?) So we have to be prepared to quickly
+restore everything so we can get a newbie box back online every day or two. 
+Because of the ease of reinstalling the Solaris operating systems, we've
+decided sparc.happyhacker.org, running Solaris, will be our next newbie
+challenge. We hope to have it up within a week (still working on fixing
+other problems, sorry). We promise to leave lots of holes open. What is
+really cool about Solaris is that once you fix the holes in the operating
+system itself, you should be safe from buffer overflow exploits in any of
+the programs you run under it. This is because Solaris is designed to
+prevent buffer overflows from causing security holes.
+So if you get root on sparc.happyhacker.org, be sure to be ready to patch
+Solaris fast! Then you can put up a Web page and let everyone know you beat
+the black hat baddies to the challenge.
+The intermediate challenge will be fantasia.happyhacker.org, an Indigo Iris
+running Irix. Since we suspect that someone out of the hundreds of baddies
+wanting to shut down the Hacker Wargame will eventually figure out how to
+root an intermediate challenge, we are waiting for delivery of an SGI CD-ROM
+first so we can do fast restores. Irix also is a pretty good operating
+system once you patch the holes. We look forward to seeing the first boast
+from a white hat who manages to get in. (Black hats seem to be unable to do
+anything but erase files once they get in -- too bad.)
+
+NEWBIE NOTE: Instead of emailing us to ask whether these boxes are up yet,
+you can learn this yourself while online by giving the command "ping
+sparc.happyhacker.org" or "ping fantasia.happyhacker.org" while either in a
+Unix shell account or at a Windows 95 DOS prompt. Remember, you have to be
+online for these commands to work.
+
+------------------------------------------------------------
+When Do We Get to Watch the Logs of Break-in Attempts?
+
+Thanks to the Rt66 staff, Harold Willison (senior network engineer at the
+AGIS Internet backbone provider), and the Sniffit program (available at
+http://www.rootshell.com), us 505 gangstahs now have fantastic abilities to
+watch break-in attempts live! But, wow, we have so many players to watch
+that disk space is an issue. We're getting another hard disk so all you
+folks can soon go to http://www.happyhacker.org and prowl through gigabytes
+of fascinating records of break-in attempts. Of course we will also archive
+on tape.
+Special treat: we also will make public all the logs of the *illegal*
+attacks against zlliks.505.org. See how all those k-rad elite criminal
+d00dz try to break in! Guess who else will be studying these logs! 
+If you are in law enforcement, we give free tours of the Hacker Wargame
+premises. It's super fun to sit at the console of a computer under illegal
+attack! Learn how to bust the bad guys fast! Sorry, black hat hackers, we
+detest computer crime.
+To schedule a visit to Rt66 (for law enforcement professionals only) please
+call 505-343-1060 and ask for Lynne.
+
+------------------------------------------------------------
+How Do You Learn How to Break in?
+
+* "The Happy Hacker" book (see order info below)
+* "Maximum Security: A Hacker's Guide to Protecting Your Internet Site and
+Network," (1997, Sam's Publishing) written anonymously. Order it from
+http://www.amazon.com
+* Bugtraq archives: http://www.netspace.org/lsv-archive/bugtraq.html
+* http://www.rootshell.com
+
+---------------------------------------------------
+How Do You Secure a Computer against Attack?
+
+Aha! This is the hard part!
+Once you break in, you not only have to fix the hole you used to get in --
+you have to fix all the holes the other players might find!
+In addition, by the rules of our game, you must maintain the same services
+we were running when you broke in -- and our user accounts. For example,
+cryptotek.happyhacker.org has about a dozen user accounts, email, ftp,
+telnet and ssh logins, finger and a web server. 
+(If you don't follow the rules, bye-bye root shell.)
+In order to secure a remote Unix-type computer, some of the things you
+should learn are:
+* Unix systems administration. We recommend reading "Essential System
+Administration" by Aeleen Frisch (O'Reilly) and "Unix in a Nutshell" by
+Daniel Gilly (O'Reilly).
+* Unix shell programming. Read "Unix Shells by Example" by Ellie Quigley
+(Prentice Hall). Includes a CD-ROM with shell programming utilities. 
+* How to use ftp to bring patches and programs into your computer. (You
+may even have to learn how to ftp over high number ports, perhaps under
+cover of an IRC session).
+* Sniffing and logging utilities. We don't know of a good book on that
+topic. However, you can find some good utilities at
+http://www.rootshell.com. I (the infamous Meinel) will write a Guide to
+(mostly) Harmless Hacking on sniffing and logging soon if no one can point
+us to a good book.
+* Set up a firewall. The Rt66 people recommend "Internet Firewalls and
+Network Security" by Karanjit Siyan, for beginners.
+* How to write, link and compile C programs. How to write Perl programs.
+Get the book "Unix Programming Tools" by Eric Foster-Johnson (MBooks).
+Includes a CD-ROM with programming tools for C, Perl and other languages.
+"Learning Perl" (O'Reilly) is good for beginners. For advanced C
+programming, see "The C Programming Language" by Brian W. Kernighan and
+Dennis Ritchie (Prentice Hall). Since Ritchie is the ubergenius who first
+created what is the most powerful hacking language on the planet, this has
+got to be the *best* book on C. For advanced Perl programming, get
+"Programming Perl" by Larry Wall (O'Reilly). Yes, you guessed it, we think
+this book is the best because Wall is the ubergenius who invented the
+language that is the fastest way to program amazing hacking feats.
+* Learn how to install OpenBSD. Better yet, join the team of volunteers
+that is constantly improving what is (in our non-humble opinions) the most
+secure version of Unix we have yet seen. That's what we run on
+zlliks.505.org, which is the Web server for both the 505 and Happy Hacker
+Web pages. No one has hacked it so far! OpenBSD is designed to prevent
+buffer overflows from compromising the system -- a super start on security.
+There are versions of OpenBSD for PCs, Macs, Amiga, Sun SPARC, DEC Alpha and
+MIPS -- and even Vax! (Sorry, no SGI version yet.) OpenBSD supports binary
+emulation of most programs from SVR4 (Solaris), FreeBSD, Linux, BSDI, SunOS,
+and HPUX. The OpenBSD 2.2 release is available on two CDROMs for $30 USD +
+postage. To order, email Austin Hook, austin@canuck.com. For more
+information on OpenBSD, see http://openbsd.org/.
+Remember, though, that if you replace the operating system in the Hacker
+Wargame, you should make sure to save the user accounts and all the programs
+and data on the system. When you install the new operating system, make sure
+that you preserve the user partitions.
+* "The Happy Hacker" book (see order info below) We have lots of security
+tips in this book.
+
+------------------------------------------------------------
+Live hacking Lessons!
+
+Keep a watch on the Hacker Wargame section of http://www.happyhacker.org
+for announcements of additional live hacking lessons. If you missed the
+first one, that's what you get for not checking out our Web site more
+often:) Class members who don't have shell accounts get free temporary accounts.
+In the first lesson, some participants expected to be immediately taught
+how to break in to computers. Sorry, we are trying to teach real hacking,
+not cheap, mindless tricks to assault poorly defended computers. Only sign
+up if you are serious about learning how operating systems work and how to
+make them secure.
+
+------------------------------------------------------------
+How to Keep from Getting in Trouble for Playing the Hacker Wargame
+
+From: scott stevens
+
+When the newbie box comes up again for the war games I'm considering giving
+it a try. But I'm kinda spooked by your warning about the ISP shutting me
+down if they get wind of it somehow and think I'm doing illegal stuff. If I
+call em up what are chances they'll shut me down right there, or if I don't
+tell em, will 50 FBI agents be at my door. Suppose you can give me a
+suggestion on what's best? 
+thanks
+Ez2kill
+
+[Carolyn: The FBI won't bother you for playing the Hacker Wargame. We have
+let the FBI know all about us, so they realize we aren't training people to
+become criminals. Your only problem is whether your ISP might mistakenly
+think you are planning to become a computer criminal. The way you solve
+this problem is to make friends with the people who run your ISP. Pizza,
+candy, and Jolt make great gifts. Rt66 people prefer strawberries dipped in
+chocolate and US Space Command mouse pads. Honest, it is much easier to
+persuade a friend that you are a white hat hacker than it is to persuade a
+stranger. Also, the friends you make at your ISP might offer you a job there.]
+
+=====================================================================
+*** Call for Volunteers
+=====================================================================
+
+* How would you like to be one of the few folks with a password to
+zlliks.505.org? Simple -- just take on the job of Webmaster. Here's what
+the job needs:
+
+1) You must reveal to us your true identity.
+2) No illegal hacking. We are *against* crime.
+3) You should know serious html programming.
+4) You need enough free time to add GTMHHs and Digests to the archives
+promptly and make other updates.
+
+* Now here's an obnoxious task: manual processing of subscriptions. We
+hope soon -- and for a looong time have hoped -- to be able to get listproc
+running on a dedicated OpenBSD box with one time passwords on a LAN with all
+network traffic encrypted. Maybe that will keep you folks from getting
+unsubscribed against your will, as has happened before several times when we
+have used majordomo.
+Gee, golly gosh, why do you suppose our volunteers haven't gotten listproc
+going yet? Thousands of attacking black hats have anything to do with it? 
+RJ and Meinel have been sharing the mail list job for a long time. If you
+would like to see us put out more Digests and Guides to (mostly) Harmless
+Hacking -- please, please help us out!
+
+* More Hacker Wargame computers. Here's what you need to get your computer
+into the game:
+
+1) You need permission from your Internet service provider. Ours put many
+months of hard work into getting their security ready for the assault
+against them by computer criminals that we knew would come. (Criminals
+fight us because they know our game will train lots of people to fight them.) 
+2) Be open about what you are doing. The problem is that once a group
+decides to hide its activities, some people might wonder what they have to
+hide. Why make people suspicious?
+3) Once you have told the public that it is OK to try to break into your
+computer, don't change your mind! It isn't fair one day to invite people to
+attack, and call the police on them a few months later.
+
+=====================================================================
+*** Inside Dope on the Happy Hacker book
+=====================================================================
+
+The Happy Hacker book is finally here! It got printed in late March, but
+the books took so long to arrive, the printer must have shipped them by pack
+goat train. So that's why all you people who paid for the book, or were
+expecting a free copy (free copies only go to our hard working volunteers),
+relax. RJ Gosselin and I (Carolyn) are sending them to you now by Priority
+mail or Airmail.
+
+So just what is the big deal with The Happy Hacker book, anyhow? Time to
+pull back the curtain and reveal what is in it and who are behind it.
+
+Table of contents:
+
+Introduction
+
+Section I:
+How to Turn your Windows 95 Computer into a Haxor Box
+How to Break into Windows 95 Computers
+How to Use Windows to Hack the Internet
+Mac Hacking
+How to be a Hero in Computer Lab
+Hacker Wars on Internet Relay Chat
+How to Find Hacking Information on the Internet
+
+Section II:
+Introduction to Section II
+How to Get a Good Shell Account -- and Keep it
+Hacking with Finger
+Heroic Hacking in Half an Hour
+How to Decipher Headers -- Even Forged Headers
+Linux!
+Port Surf's Up!
+How to Map the Internet
+
+Section III:
+Introduction to Section III
+How to Break into Computers -- or Keep the bad Guys Out!
+How to Fight Spammers
+Email Bombs
+Hacker War
+
+Section IV
+The History of Hacking
+How to Meet Other Hackers
+Hacker Humor
+
+Why buy the Happy Hacker book? In case you aren't just totally awed
+by it being written by yours truly, Carolyn Meinel (shock, shock!), here are
+some other reasons to get it.
+The Happy Hacker book is much more than just reprints of old GTMHHs. They
+have been expanded, improved, and totally new material added.
+This book was made possible in part by the work of hundreds of
+hackers who contributed their knowledge to the Happy Hacker email list. For
+archives of their contributions, see http://www.happyhacker.org. 
+Special thanks go to the technical editors of this book: John D. Robinson,
+Roger A. Prata, Daniel Gilkerson, Damian Bates, and Mark Schmitz. They
+worked long hours to make sure the Happy Hacker book would be easy to
+understand and accurate.
+We also thank Mark Ludwig, who owns this book's publisher, American
+Eagle. Ludwig distinguished himself by being courageous enough to publish a
+book that editors at three major publishers had at one time begged me to
+give to them. But in each case upper management had a fainting spell. A
+hacker how-to book? Eek! 
+If you wonder why Ludwig wasn't afraid of Happy Hacker, run out and buy his
+Big Black Book of Computer Viruses. Yes! Honest! The owner of this
+publishing company is an uberhacker.
+I want to especially point out those who have served as moderators of the
+Happy Hacker list, who played the essential role of keeping it from drowning
+in flames, nonsense and crime. They have included Matt Hinze, Jon
+McClintock, Strider, Roger Prata, Strider, Ruben D. Canlas, Jr., and R.J.
+Gosselin, Sr. 
+We also have relied on those who volunteered their services to keep us on
+the Internet, despite incessant attacks by those computer criminals who
+don't want you to learn what is in this book. Our knights in shining armor
+have included Tobin Fricke, Patrick Rutledge, Carl Muhlenweg, and Gerard
+Cochrane, Jr. 
+Most importantly, we owe thanks to the staff of Rt66 Internet, the
+largest and oldest Internet service provider in New Mexico. It is not only
+hosting our Web site, but also working around the clock keeping our Hacker
+Wargame running. In particular, Rt66 vice president Mark Schmitz took the
+initiative to donate equipment, the use of a T1, and the expertise of Rt66's
+computer security gurus. In fact, Schmitz personally built the Happy Hacker
+Web server and built and designed its custom firewall. Despite our logs
+showing attacks from thousands of hackers, not one has managed to break into
+it yet. (Of course, there is no such thing as perfect security, so we won't
+be shocked if someone does eventually get in.)
+We also thank the army of volunteers who have put the Guides to (mostly)
+Harmless Hacking on Web sites around the world, even translating them into
+other languages. It is thanks to their help that many talented hackers
+joined our mail list and contributed their knowledge.
+
+What are people saying about the Happy Hacker book?
+
+"Carolyn has a delightful wit and engaging style... We even picked
+up a few hints to help us secure our systems." -- Mark Schmitz, Vice
+President, Rt66 Internet.
+
+"We should be thankful that Carolyn has a good heart, or we'd be in a lot
+more trouble than we are." -- Larry Lasker, writer, producer of the movies
+Sneakers and War Games.
+
+"Now you can join the ranks of hackerdom and learn how to use your
+computer the way it was meant to be used! Do things you never dreamed
+possible with the Internet ... break into computers ... track down bad guys
+... and have a fun time without getting into trouble with the law. Pull up
+your chair, turn on your computer, and crack this book!" -- Mark Ludwig,
+PhD., author of "The Little Black Book of Computer Viruses."
+
+"This book will show you how to become a super hacker, yet not have
+the FBI or the Secret Service knocking on your door. But your neighbors
+sure will!" -- Ian A. Murphy (Captain Zap), first person ever arrested for
+computer hacking, now President, IAM Secure Data Systems, Inc.
+
+How to buy "The Happy Hacker"
+
+1) Go to the nearest bookstore and ask a clerk for "The Happy Hacker" by
+Carolyn Meinel. If they have it in stock, you're in luck.
+
+2) If your local bookstore doesn't have The Happy Hacker, tell them to order
+it for you from American Eagle Publishing. If they say they don't order
+books from American Eagle, tell them Loomponics also distributes it.
+
+3) In the US, you can get an autographed copy shipped to you by Priority or
+Airmail by sending $34.95 to Happy Hacker, PO Box 1520, Cedar Crest, NM
+87008. In Canada or Mexico, send $36.98. Make the check out to "Happy Hacker."
+
+4) Or, if in the US, Canada or Mexico, email RJ Gosselin Jr. (moderator of
+the Happy Hacker Digest) at rjg@techbroker.com with BOOK ORDER as the
+subject. In the body of the message provide him with two things -- 
+
+1. Your name and shipping address 
+2. The two sets of numbers on the bottom of your check. 
+These are the bank ABA number and your account number.
+
+5) If you live outside the US, Canada or Mexico, you may order The Happy
+Hacker from http://www.amazon.com. They will ship it anywhere in the world.
+But you will need a credit card for this.
+
+6) RJ is figuring out ways to get the book to people without credit cards
+who live outside the US, Mexico and Canada. Patience:)
+
+=====================================================================
+*** Windows NT *Can* IP Spoof!
+=====================================================================
+From: Bill Housley
+
+I have been reading on your page and I have some comments.
+
+Windows NT is Posix compliant, therefore any hacker software designed for
+use in a Posix compliant UNIX environment should run from the command line
+of Windows NT after re-compile on that platform and a minimal of changes to
+the code.
+
+Also, I was told by someone that IP address "spoofing" is only possible from
+Unix. This is a statement made no doubt by Unix people who do not know
+windows. Any dialup account that allows a packet with a spoofed IP from a
+dialup client to get out to the net will receive such from any client,
+regardless of the OS at the client.
+
+For DOS and 16 bit Windows platforms a special dialer could be written that
+will substitute any IP in the sender's offset of the packet. Existing
+WINSOCK source code could be re-written for this purpose.
+
+For OS/2, since it can share a COM port, may have a way to insert a packet
+into the data stream with anything at all in it.
+
+For any PC based package operating on a LAN that is using NT as a router, NT
+could be setup with multiple logical networks allowing any client to have
+any IP on any network address and get it's packets out. Also, the newest
+versions of both NT and 95 can dynamically reassign their IP address at the
+client without rebooting. If you like I could demonstrate this from a
+system at my ISP which has no Unix boxes on their LAN. You could see the
+spoofed packets using a Windows or Unix based ICMP monitoring program on
+your end.
+
+=====================================================================
+*** Lynx Hack! -- and Poledit Workaround
+=====================================================================
+
+From: Lori or Nathan
+
+UNIX STUFF
+
+Okay, if anyone out there is using a UNIX Shell account and cannot browse
+root because the sysadmins have some kind of menu up or something that only
+lets you run certain programs, here's how to get around it. If you have
+access to the lynx browser, just do the following:
+1)Open up lynx
+2)Type "G" for go
+3)Type "/" and hit enter.
+
+That's right, you don't have to type in a URL, you can use it to browse the
+system it is running on. Lynx also comes with some pretty handy features
+for local drives like changing permissions (chmod) and editing files. When
+I told my sysadmin of this, he had the program disabled within the hour.
+
+[The ISP I use is super careful with file permissions so this trick doesn't
+do much good. Sysadmins reading this, please don't turn off my favorite Web
+browser! -- Carolyn Meinel]
+
+WINDOWS 95
+
+If the programs you can run are restricted by a program such as
+Poledit.exe, here's how to get around it. First, realize that Windows is
+not very smart. It only cares what the program is named, not how big it is
+or where it is located. In my case, the only program I was allowed to run
+was Netscape.exe. One thing to note is that since Explorer.exe is both your
+shell and your Windows Explorer, in cannot be restricted. If you have a
+Windows 95 keyboard you can run explorer by hitting the Windows key and 'E'
+at the same time. Now just rename the program you want to run to whatever
+is allowed to run, ie. Netscape.exe and viola! Security bypassed!
+Have Phun!
+
+=====================================================================
+*** How to Trick Spammers into Throwing away their Junk Email
+=====================================================================
+
+If you are the sysadmin of a Unix Internet host computer running Sendmail,
+you can download a patch from http://www.rt66.com/spam that not only keeps
+spammers from relaying off your site (forging email), but also tricks them
+into throwing away their junk email.
+
+Here's how this patch works. If someone telnets to your smtp server from
+outside domains that you have specified, Sendmail acts as if it is accepting
+commands and sending out email. But instead, it sends the spammer's email
+to byte heaven.
+
+In accordance with RFC 822, this patch does give back one, but only one,
+bounced email message to the spam sender per mail session. Some of the
+smarter spammers may figure out that their emails failed to go out to their
+entire victim list. However, if you don't mind violating RFC 822, a trivial
+change to the code will eliminate even that one bounce message. -- C. Meinel
+__________________________________________________________________
+with
+message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan to use any
+information in this Digest or at our Web site to commit crime, go away! Foo
+on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the United
+States operating under Shepherd's Fold Ministries. Yes! This is all a plot
+to save your immortal souls!
+For Windows questions, please write Roger Prata; for Macs, write Strider; and Unix, Carolyn Meinel. Other general questions go to R.J. Gosselin. 
+________________________________________________________________________________
+Carolyn Meinel
+M/B Research -- The Technology Brokers
+http://techbroker.com

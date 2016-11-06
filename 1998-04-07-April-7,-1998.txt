@@ -1,0 +1,301 @@
+April 7, 1998
+
+=====================================================================
+URL of the week: Portsurfer' new website at www.portsurfer.demon.co.uk
+See back issues if the Happy Hacker Digest and Guides to (mostly) Harmless
+Hacking at http://www.Happyhacker.org.
+Super Swedish Happy Hacker site: http://w1.340.telia.com/~u34002171/hhd.html.
+GTMHH en espanol: http://underhack.islatortuga.com
+=====================================================================
+
+TABLE OF CONTENTS
+
+** WarGame Update
+** Telnet and Trojans
+** Book Hilarity (and an update)
+** "Enforcers" agree to a truce
+** OLE exploit
+
+=====================================================================
+** WarGame Update
+
+QUESTION: from "Someone..."
+snip...
+>Hey! I can't make any kind of contact with this computer! I realize that 
+>I have a lot to learn about the world of hacking, but I can't be that 
+>bad!
+snip...
+
+RJ - You're right, the newbie box was taken down several times by folks
+who thought that they were being "3l33t haxxors" by rming a box with big
+holes. {note: begin tirade here} (Wow, we are ALL certainly impressed
+with their skillz. [Gag, choke, barf] This is right up there with high
+schoolers beating up on first graders. These people are all class ....
+low.) {note:end tirade}. We're in the process of setting up a "quick
+recovery" install CD, so we should be able to put the newbie box up and
+keep it up.
+
+An interesting note here, several of these "pro's" tried to take down the
+hosting ISP. There are two things that are utterly hysterical about this.
+First, (with one exception) not one of these wonder-dudes managed to get to
+first base! Second, and even funnier in my opinion, was that the one
+person who did manage to get in was (as Carolyn described it) like the
+proverbial monkey typing classic Shakespeare -- he did it purely by luck.
+this was evident from watching what he did when he was in. He was never
+able to install his root kit, he wandered aimlessly about looking for
+things that were outin the open, and (best of all) while he *thought* he
+had root on one of the ISP servers he was in a virtual machine that was
+logging his illegal activity so his stupidity could be reported. {Oh, but
+then, he knows that by now}.
+=====================================================================
+This next post is in relation to cryptotek.happyhacker.org . The
+following is copied from and email $inapse sent carolyn meinel, and her reply.
+
+$inapse:
+>When i did a whois on cryptotek, it told me that it had two servers:
+>mack.rt66.com, and chili.rt66.com. This also,coincidentaly happens to be
+>the approximate location of the 505 gang webserver, running sunos...
+
+>i did a small service scan on mack, and found that it had anonymous
+>ftp access available.. and i poked around. I noticed that there is a
+>token-shadowed password file in /etc, and was thinking that perhaps we
+>could find a logon for cryptotek through there..(perhaps nobody or
+>cryptik or knight)[hacker hint]. Would this be within the rules of the
+>game, as long as i didn't break any laws to obtain the shadowed file? and
+>if it is ok, would i be able to post any findings to the list?
+> -$inapse
+
+In reply, Carolyn wrote:
+
+That is a great idea! Except -- trust me, we don't have any of this
+trusted host business here. Actually it would also be legally a bit dicey to
+crack mack's password file as you would inevitably get some forbuidden
+passwords. So please don't try that.
+
+$inapse:
+>$ianpse: inother words, have all the fun you want, but dont hack the
+>passwords on mack specifically.. but perhaps if some stupid user put a
+>password in plaintext, and they have priveleges on machines where you
+>could find cryptotek's password(unlikely), by all means do so. Also
+>note that cryptotek hosts 5 daemons.. ssh(secure shell), smtp, telnet,
+>www, and ftp(no anon access)
+> have phun!!!!!!!!
+> -$inapse
+=====================================================================
+
+** Telnet and Trojans
+From:	Brendan Callaghan
+
+Hi there
+
+Im glad to see that there is someone trying to educate the uneducated
+I have read your Mostly Harmless hacking series and wish that there was more 
+detail. I do understand that you can give out too much detail because of the
+wanna be crooks out there, but I have one question for you that has been
+eating me.
+
+Your section on port surfing was very interesting, but I found it almost
+useless, so my question is can you gain further access to a computer by
+some or other port that you telnet to if you can't then what is the point, if
+you can then just say yes and ill try and found out how myself feel free to
+give me some hints or direction to go.
+
+[Carolyn: Yes:):)]
+
+Anyway enought of that. I also remember you talking about some hacker
+sending you ls trojan hoping that you would run and do some damage. Well im
+on a performance tuning and trouble shooting course for UNIX and they deal
+with that problem in very easy way. Set your PATH variable with the period
+at the end so that when a UNIX command is issued it will find the real one
+first before it searches in your home directory for the possible trojan
+command.
+
+=====================================================================
+
+** Book Hilarity (and an update)
+
+RJ: Carolyn got this message about two days after I sent out the last
+digest. She forwarded it to me; and I thought I'd share it with the entire
+world. (I'll keep the original sender anon):
+
+&gt>I know what you're up to...and I fully intend on exposing your
+&gt>little plot with the checking accounts!!! Unless you mail every
+&gt>user that you sent the scam email to...your little scheme
+&gt>will be shut down!!! If you have no prior knowledge of this...
+&gt>then talk to your editor of your digest...he definately knows what's
+&gt>going on!!!
+&gt>&gt>Itz over now!!
+
+Well, now that my "litle plot" is about to be exposed ---- uhhmm, well, I
+can hardly wait to find out what my little plot IS! Carolyn and I laughed
+at this. And we're shaking in our boots as we wait to see my "scheme" shut
+down; I'm "definately" interested.
+
+Seriously, folks, if I were going to try a plot, scam or scheme somewhere,
+this would be the last place I'd try it. There's this little problem with
+anonymity, not to mention morals, judgement and personal convictions. A
+quote from our welcome letter might be in order here: "If you happen to own
+a bank, his "External Threats To Computer Security In Networked Systems"
+will make your hair stand on end. It's a good thing R.J. gets bored by the
+idea of becoming an expatriate billionaire." Once you know how to get the
+payments group of one of the top 10 banks in the country at the other end
+of an anonymous keyboard, pipping accounts for $35 bucks a pop while using
+your real name just kind of loses its pizzaz, you know what I mean?
+
+Anyway - here's the update about shipping of the books:
+
+1- They will go out to the US, Canadian and Mexican orders within about two
+weeks. Carolyn is going to ship some to me after she autographs them, and
+I'll begin sending them out as soon as I receive them from her.
+
+2- I'm working on a way to get the book out to overseas folks. The
+shipping may run a little extra, but I think I can work out the details
+depending on where we get orders from. I'll keep the list informed.
+
+3- A clarification as to WHAT BOOK we're discussing. All of this ordering
+is for Carolyn's new book called "The Happy Hacker". This is a printed and
+bound softcover book. We're not talking about my book, but hers.
+
+=====================================================================
+
+** Enforcers Make Peace
+
+ 
+
+Infowar.Com was notified last week by the "Enforcers" Computer Hackers
+Group, that an agreement was reached with chief negotiator Ian A. Murphy,
+aka Capt. Zap, to cease and desist their cyber destruction witnessed in the
+recent attacks and intrusions that have rocked the Internet in past weeks.
+The Enforcers began their massive assault on corporate and military
+websites after the arrest of "Pentagon Hackers" here in the US and Israel.
+
+Ian Murphy, CEO of IAM/Secure Data Systems, and the first US hacker
+arrested back in 1981, issued press releases during negotiations. (see
+www.prnewswire.com) Murphy began the process to begin deliberations out of
+a sense of duty. Murphy's dialogue with members of the Enforcer group
+pointed to the fact that the destruction was counter productive. He urged
+the group to consider halting this activity. "The destruction of
+information systems for an alleged cause is not the way to go about such
+things in defense of Hackers and Crackers."
+
+Murphy has been pontificating for years that the government and corporate
+entities need to take the powers and strength of hackers seriously. With
+the attacks and intrusions on the rise, and information losses at a all
+time high, Murphy added, "It is high time that the alleged powers that be
+in information security bow to the wonderment of the hackers and their
+alleged silent, awesome power. It is time that we as a society realize
+that one individual is equal to an entire armed nuclear offensive force and
+is able to bring about global chaos if they choose to, from a simple
+computer keyboard. It strikes me as being so simplistic and yet so
+invasive of all society that such things may occur. And we have become so
+dependent and enamored with -- and our society so rests upon -- our silicon
+lives and slaves. We have become the servants of our own information
+society and still do not see the reality of the situation at hand."
+
+The Enforcers defended their activities with claims that they were calling
+attention to system administrators to wake up and 'fix' their system flaws.
+
+Statement from a Enforcers representative is below.
+
+<copy and paste>
+To: Adam
+From: Betty@infowar.com
+Date: March 26, 1998
+Subject: Recent Events
+
+I have been following the press releases by Mr. Murphy. I would like
+confirmation from you that there is a cease and desist.
+
+Capt. Zap (Ian A. Murphy) is chief negotiator in talks to cease
+unauthorized actions against Internet web sites and corporate systems.
+Enforcers ComputerHackers Spokesperson states that peace terms will be
+abided by and for the Computer Hacker community to cease and desist from
+current attacks of web sites.
+
+Betty
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+From: Adam
+Reply-To: adamb1@flash.net
+Date: March 26, 1998
+Organization: Adam's Asylum
+To: Betty G.O'Hearn
+Subject: Enforcers Press Release/Announcement
+
+ 
+
+STATEMENT OF THE ENFORCERS
+
+We, the Enforcers, have decided that it would be in the best interest of
+the hacking community and the security community at large to cease and
+desist all web site hacking of external businesses as advised by Mr. Ian
+Murphy (Captain Zap.) We agree that our actions are not productive and
+are doing more harm than good towards the security community. Therefore,
+as an agent of the Enforcers, I hereby state that all web site hacks on
+external sites will be immediately halted. We feel that there will be
+other avenues opening to achieve our goal of a substantial reduction in
+child pornography and racist web sites and netizens. We also support the
+larger goals of the hacker community and in the future we will work to
+augment the public's view rather than detract from it. All members of
+Enforcers who hacked the web sites have agreed to this release and will
+stop hacking external web sites. [13:51 GMT -0600 26 March 1998]
+
+We thank you for your time and assistance in this matter.
+
+Paralyse, Immunity, and |DooM|
+Members of the EnforcerS 
+=====================================================================
+
+** OLE exploit from Roman
+
+Hi
+
+I'm really enjoying to read the HH-articles. They are great and the best
+thing to learn more about the net. Keep on like that!
+
+Enough of small-talk; here's some work:
+I've found a nice and easy exploit for the chapter "how to be a hero in
+computer lab". It uses WordPad and OLE-Embedding for getting access to
+DOS in Win95.
+
+1. If you don't have command.com on the harddisk, make a floppy with it
+2. Start WordPad
+3. Choose "Object" from the "Insert" menu
+4. Select "Create from File"
+5. Search command.com and insert it
+
+Now you have an icon in your document which launches a command.com -
+shell. Have phun with it.
+
+Greetings from Switzerland:
+Roman aka. WireWizard
+
+__________________________________________________________________
+with
+message "subscribe hh." 
+This is a list devoted to *legal* hacking! If you plan yo use any
+information in this Digest or at our Web site to commit crime, go away! Foo
+on you! Happy Hacker is a 501 (c) (3) tax exempt organization in the Unites
+States operating under Shepherd's Fold Ministries. Yes! This is all a plot
+to save your immortal souls!
+For Windows questions, please write Roger Prata; for
+Macs, write Strider; and Unix, Carolyn Meinel. Editor-in-chief is R.J. Gosselin. Webmaster is
+Praying Mantis.
+
+R.J. Gosselin, Sr.
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+Editor-In-Chief -- Happy Hacker Digest
+~+~+~+~~+~+~+~+~+~+~+~~+~+~+~+~+~+~+~+
+
+"There is no way you're describing our system, 
+she could never have gotten past our security.
+
+But I'm going to find her and see that she's prosecuted ... 
+she broke the law, and she's going to pay!"
+President of "Blah Blah Bank"
+
+--&gt&gt>Does anybody ELSE see a small discrepancy here ???????
+
+*****************************************
+For full story (and many others), download
+"External Threats to Computer Security in Networked Systems"
+from Winn Schwartau's InfoWar.com bookstore @ www.infowar.com
