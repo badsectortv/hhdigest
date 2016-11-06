@@ -1,0 +1,402 @@
+Oct. 6, 1998
+
+===================================================================== 
+===================================================================== 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+Portuguese: http://www.inf.ufsc.br/barata/micro$.html 
+=====================================================================
+
+TABLE OF CONTENTS 
+**This week's posts** 
+* What happened to the last 2 Digests?!? 
+* Send me your Questions 
+* Windows Scripting Host 
+* *FREE* NFR Technical Workshops 
+* Translation please... 
+* Solaris for cheap 
+* HH in Portuguese 
+* Smart Browsing not so smart 
+* TRINUX - A Linux Security Toolkit 
+* Another trojan found
+
+**Editorial: Infowar - Male-Only Sport?** 
+================================================================== 
+ *** What happened to the last 2 Digests?!? 
+================================================================== 
+From: Dale Holmes <editor@techbroker.com>
+
+As you might have noticed, there have not been any Digest's for the past 2 
+weeks. I apologize for the interruption of service - it is entirely my 
+fault. As usual, I got myself in over my head again. No, I didn't destroy 
+any laptops this time. I simply commited to a submission deadline for my 
+newest book that was completely insane. After 2 weeks of working nearly 24 
+hours a day, it is finished and I can resume my regularly scheduled life 
+already in progress.
+
+I had originally planned to issue a few Digest's in a row to catch up, but 
+looking at the current list of messages, I think I'll just pick up this week 
+where I left off and we'll just skip the last 2 weeks.
+
+Thanks for being patient. And if you're planning to get your MCSE, rush out 
+in a buying frenzy for my upcoming book on the Windows 98 test from Macmillan 
+Computer Publishing, or simply send your entire wallet to me... (just 
+kidding). The book will be on the shelves before Christmas. The other 4 
+books I've worked on are already available.
+
+[-End shameless self promotion here-] 
+=================================================================== 
+ *** Send me your Questions 
+=================================================================== 
+From: Dale Holmes <editor@techbroker.com>
+
+Another note from me:
+
+I'd like to hear what people new to computer security are most interested 
+in. Please send me, care of the editor@techbroker address, your questions 
+regarding computer security specific issues.
+
+A question like "How do I hack?" is not really a good one, but a question 
+like "What is PGP?" or "How does PPTP work?" is more what I am looking for. 
+I would like to really boost the question and answers section of the Digest 
+into a useful resource for learning rather than a forum for quick fixes to 
+simple problems (although those are OK too...).
+
+I need your help to do this. If you are at all curious about these kinds of 
+subjects, chances are lots of other people are too. Share your curiosity, 
+and together we'll gather more resources and information to develop a real 
+knowlegde base in computer security, or at least we'll make a start toward 
+that end.
+
+So ask away...
+
+Thanks. 
+Dale 
+[=`) 
+================================================================== 
+ *** Windows Scripting Host 
+================================================================== 
+From: "Bill" <billh@lgcy.com>
+
+I have been studying "Windows Scripting Host" (WSH for short).  It is a 
+scripting engine which is run at the command line of Windows NT and seems to 
+be an attempt to equal the command line power of the Unix Command line shell.
+
+With it one can run a JScript or VBscript from the Windows NT or Windows 
+95/98 command line.  Other scripting languages can be plugged into it.  It 
+is part of the Windows NT option pack.
+
+Bill 
+================================================================== 
+ *** *FREE* NFR Technical Workshops 
+================================================================== 
+From: "Deborah A. Greenberg" <dag@nfr.net>
+
+[Dale: This notice was posted to the Network Flight Recorder users mailing 
+list. I thought it would be of interest to readeers of the HHD, so I am 
+copying it here. For more infor on NFR, please visit the web site at: 
+http://www.nfr.net]
+
+Network Flight Recorder is pleased to announce the *FREE* NFR Technical 
+Workshopsto be held in two locations in the United States:
+
+09 Nov 1998 (Monday)  16 Nov 1998 
+8:30 AM - 4:30 PM               8:30 AM - 4:30 PM 
+Marriott Fairview Park  Westin Santa Clara 
+Falls Church, Virginia  Santa Clara, California 
+(Washington, DC Area)  (Silicon Valley Area)
+
+As the name suggests, these will be technical discussions.  NFR staffers 
+will provide a half-day tutorial on creating backends and packages. 
+They'll explain the basics of N-Code to get you up and running with your 
+own backends.  They'll provide tips on using some of the features and 
+statements that'll really help you get what you need from your datastream. 
+We also invite NFR users to present case studies on how they're using 
+NFR at their site.  Chances are, there are others who will benefit from 
+the knowledge you gained about protocols, programming, or office 
+politics.  We encourage you to present a case study.
+
+Registration is required and seating is limited.  More information about 
+the conference, including registration forms and what to do if you 
+want to present a case study, can be found on the NFR Web site:
+
+ http://www.nfr.net/forum/workshop.htm
+
+We look forward to seeing you at the workshops!--
+
+http://www.nfr.net
+
+Deborah A. Greenberg    Communications Director   301.765.7945 (phone) 
+dag@nfr.net             Network Flight Recorder     301.765.7946 (fax) 
+================================================================== 
+ *** Translation please... 
+================================================================== 
+From: "Fällström" <mt20436@tellus.swipnet.se>
+
+[Dale: I don't know what this means, but it is probably useful to somebody. 
+If you can translate this, I'd be interested in finding out what it really 
+says...]
+
+Tjaba!
+
+Mitt namn är Oskar Fällström, och jag är tolv år (inte straffmyndig). 
+Jag satt och läste Guide to (mostly)harmless hacking Nybörjar serie #2 
+sektion 3 Hacka från Windows 3.x, 95, NT.
+
+Jag lärde mig det som stog i texten,och satte igång med att hackawestwood.com .
+
+Det gick som på rälls ända tils det stog
+
+Login
+
+Password
+
+Faan vad är nu detta för skit tänkte jag, jag började testa lite 
+kombinationer men insåg snart att det var omöjligt.
+
+det jag vill veta vad gör jag.
+
+Säg inte det kann du åka i fängelse för, för det skiter jag i (jag är ju 
+bara 13 år) En sak till hur skall jag hacka mig in på min olidliga kommpis 
+Crycks dator?
+
+Jag kan ge dig lite hjälp på att svara på frågan. 
+Jag vet hanns E-mail adress, den är CUDA69@toreboda.telia.mail.com
+
+Snälla svara på mitt brev tänk inte bara vad är detta för liten fjant som 
+tror han kan börja hacka jag vill järna ha svar på brevet.
+
+Från @skar 
+E-mail        orre1985@hotmail.com 
+================================================================== 
+ *** Solaris for cheap 
+================================================================== 
+From: "phantom" <phantom@shreve.net>
+
+You may already be aware of this but if not, I thought you would be 
+interested.  Sun is offering a single client version of Solaris for personal 
+use for only the price of the media, shipping and handling!!  This gives a 
+few newbies (like myself) a taste of real unix/solaris on our own computer 
+for practicaly NOTHING!  I pretty much threw my redhat/x-windows into the 
+dusty closet.  Anyway, if you wanted to go check it out, it's at www.sun.com 
+and listed under their special promotions.
+
+Take care.
+
+By the way, the HappyHacker org is coming a long way.  I've been following 
+you guys for a while and I'm still as impressed as the day I found you all. 
+I still haven't gotten involved in the wargames yet (lack of confidence I 
+guess) but I plan on it very soon.  I'm just learning so much about 
+networking and programming everyday that sometimes I feel like my head is 
+going to explode with all this jumbled up info.  You ever feel like that?
+
+See you in cyberland soon.
+
+Clint Bodungenphantom@shreve.net 
+================================================================== 
+ *** HH in Portuguese 
+================================================================== 
+From: BarataEletrica@ThePentagon.com
+
+Some of the Happy Hacker work has been translated to Portuguese. You can 
+access it at the following site:
+
+http://www.inf.ufsc.br/barata/micro$.html
+
+================================================================= 
+ *** Smart Browsing not so smart 
+================================================================= 
+From: Marquis de carvdawg <carvdawg@patriot.net>
+
+Carolyn, 
+Here's a document that I came across recently that will be of great 
+interest to your readers...
+
+http://www.interhack.net/pubs/whatsrelated/
+
+Summary:  If you are using the 'Smart Browsing' feature of Netscape 4.06 or 
+the beta of 4.5, then the URLs you visit are being reported back to a server 
+on Netscape.
+
+If this information is to be believed (you can always verify it for 
+yourself) then we're in for a rude awakening.
+
+So much for privacy, eh?  Sure, Netscape can say what they want, but me, 
+I'd rather NOT have 'Smart Browsing' if it means that EVERY URL I visit is 
+reported back to, well... anyone.   Shame on you, Netscape, for taking a 
+step closer to Redmond...
+
+Keydet89 
+================================================================= 
+ *** TRINUX - A Linux Security Toolkit 
+================================================================= 
+Ken Williams <jkwilli2@unity.ncsu.edu>
+
+[Dale: I picked this post up from another list - it is a really cool tool!!! 
+Check it out!]
+
+TRINUX - A Linux Security Toolkit
+
+Trinux Developer:  M.D. Franz
+
+What is Trinux? 
+--------------- 
+Trinux is a portable Linux distribution that boots from 2 HD floppies 
+(or a FAT 16 partition) and runs entirely in RAM.  Trinux contains the 
+latest versions of popular network security tools and is useful for 
+mapping and monitoring TCP/IP networks.  Trinux allows you to transform 
+an ordinary x86 PC into a powerful network [security] management 
+workstation without modifying the existing hardware or operating system. 
+The default configuration of Trinux supports a number of popular network 
+interface cards as well as DHCP. Additional features and hardware 
+support may be added through kernel modules.
+
+Current Features 
+---------------- 
+Intel 486 or compatible with at least 16MB of RAM.  Kernel 2.0.34. 
+Built-in support for 3Com 509/589/900, ne2000, epic100 NIC cards.  IP 
+firewalls, masquerading, and aliasing.  Includes a complete set of 
+tools for remote information gathering including connect() scan, SYN 
+scan, FIN scan, SNMP scan, RPC, NFS, as well and DNS queries and zone 
+transfers.  Several high quality sniffers for capturing network headers 
+and data complete the package.  Nearly a half-dozen curses-based 
+network monitors are provided to provide the clearest picture of your 
+network.  The network interface may be manually configured or use 
+Microsoft of ISC DHCP.
+
+For more information...
+
+visit the Trinux home page at: 
+http://www.trinux.org/Trinux
+
+FTP sites: 
+ftp.trinux.org/pub/trinux 
+ftp://www.sunsite.unc.edu/pub/Linux/distributions/trinux/Trinux
+
+ListServ: 
+majordomo@ark.com 
+subscribe trinux abc@123.com
+
+Trinux Developer:  M.D. Franz
+
+--- 
+Ken Williams 
+Packet Storm Security http://www.Genocide2600.com/~tattooman/index.shtml 
+E.H.A.P. Corporation  http://www.ehap.org/  ehap@ehap.org info@ehap.org 
+NCSU Comp Sci Dept    http://www.csc.ncsu.edu/ jkwilli2@adm.csc.ncsu.edu 
+PGP DSS/DH/RSA Keys   http://www.genocide2600.com/cgi-bin/finger?tattooman 
+================================================================= 
+ *** Another trojan found 
+================================================================= 
+From: <yruno2@usa.net>
+
+Hi again Carolyn,
+
+Seems I have stumbled upon another almost identical trojan horse like the 
+icqrevenge I wrote about before.  I dont know a lot aobut this one yet, and 
+it is still active.  The file is called jm-poker.zip, called "Jenny McCarthy 
+strip-poker" (a friend got it, not me... I swear!) The program file which is 
+installed is called OCE.EXE.  This one also connects to the irc, and logs 
+you into a channel, and it is a bit more sophisticated than icqrevenge 
+(although writtin in VB).  It also downloads files from a geocities account, 
+which I haven't determined what their use is yet.
+
+Anyway, wanted to give a heads-up, and warn you users in case they were 
+looking to play some poker with Jenny one time, they probably have this 
+running on their machine, and are vulnerable to snooping.  I would assume 
+this one also installs in the auto-run section of the registry, so search 
+for oce.exe and delete the key.
+
+I'll send more info as soon as I dig it out.
+
+YRUno2
+
+[Dale: A friend of yours got it, eh? OK, sure... I'd personally enjoy a game 
+of strip poker with Jenny (if she is reading this she should feel free to 
+email me to set a date and time), but I don't think it would be fair to 
+frighten her that way!] 
+================================================================== 
+ *** Editorial: Infowar - Male-Only Sport? 
+================================================================== 
+From: Dale Holmes <editor@techbroker.com>
+
+I recently attended the InfoWarCon 98 in Crystal City, VA. It was a great 
+con. I met lots of people and saw many interesting things. The conference 
+was attended by hundreds of people from around the world.
+
+I got there very early so that I could get myself oriented with the place 
+before it started to get crowded, and so that I could get a good spot to 
+watch the goings on... I started on the coffee about 6:30 am, and found a 
+nice corner where I could watch the room fill up. And it did fill up. By the 
+time the keynote addresses began, around 8:30 am, the conference was 
+starting to get packed. As I looked around the room, I saw something that 
+startled me a little. The room was filled with middle-aged men, in blue 
+suits, with close cropped hair and tight lips.
+
+There they were, hundreds of them, like the IBM drones in an old Macintosh 
+TV commercial I saw in the 80's. I started to feel uncomfortable, and I 
+started to wonder: Where are the women?
+
+I scanned to room again, this time looking specifically for females. 
+"There's one... there's another... hmmm... wait, there's another" I started 
+to say to myself out loud. "Another what?" asked the guy sitting next to me. 
+"Another woman", I answered. He started to scan the room with me. Together 
+we counted 14 women in attendence. There might have been more women 
+registered for the conference, I have not seen the registration statistics, 
+but throughout the day, I can honestly say that I did not see them. And 
+that's too bad, because some of the women that were there were *FAR AND 
+AWAY* the most knowledgeable people at the conference.
+
+Two women in particular stood out during the conference: Rhonda MacLean, 
+Senior VP of Security for NationsBank, and Delores Quade from Network Flight 
+Recorder. Both of these women gave presentations that were substantive and 
+focused. They presented their material with authority, and left the audience 
+more informed than they were at the start. Compare that with the 
+presentation on Middle East Info Warfare from Ariel Sobleman, which was 
+embarrassingly bad, factless, and uninteresting, and it became clear that 
+these women had something special.
+
+Rhonda MacLean gave a speech on the Future of Banking Finance as a Critical 
+Infrastructure, and brought to light many of the issues that the finance 
+industry is wrestling with in the information age, and also how that 
+industry is handling those issues. As she spoke, you got the feeling that 
+she had her shirt sleeves rolled up, and was right there in the trenches 
+every day. She spoke from experience, and it showed. She handled questions 
+from the audience with ease, and was not thrown when a man from the audience 
+repeatedly tried to back her into a corner and force her to disclose 
+potentially embarrasing statistics. The assumptions of that person were in 
+error, and she took no pause in saying so.
+
+Delores Quade represented Network Flight Recorder in the Live Attacks and 
+Detection session of InfoWarCon 98. She was called to the conference at the 
+last minute, and was forced to work from someone else's presentation, but 
+still managed to give a speech that was informative and technical in nature, 
+not filled with marketing fluff and hype. She didn't try to play on the 
+fears of the members of the audience - she never once mentioned Back Orifice 
+- she just represented her company's product for what it is. She too spoke 
+from experience, and left the room with a strong impression of her, her 
+company, and the Network Flight Recorder product.
+
+I was dissapointed to see so few women at the conference, but I was highly 
+impressed by the women I did see there. Hopefully this is an emerging trend. 
+If these women are any indication of the future - look out guys. It is time 
+to get off your butts and get serious about your work! 
+__________________________________________________________________ 
+
+  
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization 
+in the United States operating under Shepherd's Fold Ministries. Yes! 
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>; 
+for Macs, write Strider <Strider@clarityconnect.com>, 
+and Unix, write Josh Fritsch <derr@satlug.org> 
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

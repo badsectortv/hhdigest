@@ -1,0 +1,274 @@
+October 19, 1998
+
+** Please excuse the delay in getting this Digest to you -- hardware 
+problems.  In the process, some of the email sent to me went to bit heaven. If you wrote in regarding the GTMHH on Introduction to Hacker Wargaming, please send your messages again.  Several people wrote about setting up their own LANs for wargaming, and they are now vanished -- please resend as I really want to get your posts to Dale for the next Digest! -- Carolyn Meinel
+
+** Check out the Nov. 16, 1998 Forbes magazine for "Tracking the Hack" in which reporter Adam Penenberg interviews what may be the most wanted 
+computer fugitives today: Hacking for Girliez.  These are the guys who 
+hacked the "New York Times" web site Sept. 13, 1998 in protest, so they say, against reporters John Markoff (for writing "Takedown" about Kevin Mitnick) and Carolyn Meinel (for writing "The Happy Hacker" book), whom they say is their "number one" enemy.  See http://www.forbes.com for the on-line version of the story.  Or buy the print version to see Happy Hacker Grand Pooh-bah Meinel posing with a horse. 
+===================================================================== 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS 
+**This week's posts** 
+* The Rainbow Books 
+* RE: GODMIRC.EXE 
+* RE: + + +ATH0 bug 
+* The Cleaner 
+* Update on the Cuartango Security Hole 
+* RE: Hacking Win95 from the Internet 
+* Caterpillar LAN hack: A lesson in security 
+* RE: ickiller trojan and a new trojan found 
+* Re: GTMHH: more on How Break into Win95 from the Internet 
+* In response to the article about 'godmirc.exe'
+
+**This week's Question** 
+* What is a "port"?
+
+================================================================== 
+ *** The Rainbow Books 
+================================================================== 
+From: Alexei <alexei@germany.gelitten.org> 
+
+Hey Dale- 
+I was reading yesterday some text file and it mentioned something called the Rainbow Books. Supposedly some gov dept at Fort Meade called Infosec puts out free technical books on all kinds of computer stuff for free. I would like to know:
+
+1. Is that true? 
+2. How do I get them?
+
+Out,Alexei
+
+[Dale: They are kinda old now, but still very useful. 
+Try getting them from here:
+
+http://www.geocities.com/SiliconValley/Haven/6647/rb.htm
+
+or here: 
+
+http://www.geekstreet.com/rainbow.html
+
+Happy reading!] 
+=================================================================== 
+ *** RE: GODMIRC.EXE 
+=================================================================== 
+From: shade@tir.com 
+
+I'm responding to my own post entitled GODMIRC.EXE
+
+I eventually found out that the loss of control I was experiencing was 
+from Back Orifice.
+
+The whole godmirc.exe was just a mirc trojan and the assembly at the end was to display the flashing colors and lights I saw when I ran the program. Didn't want to worry anyone. I just started to panic when I lost control of  my system. I took care of B.O. using a program downloadable at http://www.spiritone.com/~cbenson/current_projects/backorifice/backorifice.htm
+
+If you have any problems with other mirc or irc related trojans, visit: 
+www.irchelp.org
+
+[Dale: I thought it sounded like BO...] 
+================================================================== 
+ *** RE: + + +ATH0 bug 
+================================================================== 
+From: Lord Chr0n0s <hismajesty@portzer0.8m.com>  
+
+Want to see if your modem is affected by the + + +ATH0 bug that lets 
+other people control your modem?
+
+Go to http://portzer0.8m.com/security
+
+There is a cgi script there that tests your modem for the bug.
+
+-- Lord Chr0n0s 
+hismajesty@portzer0.8m.com 
+http://portzer0.8m.com 
+================================================================== 
+ *** The Cleaner 
+================================================================== 
+From: Mach5 <machfive@ptd.net>  
+
+Ok, this is a program for all you guys to clean all those nasty 
+back doors that these so called h4x0rs code because they think they are 
+cool.  Its called The Cleaner, and it works REAL good at detecting and 
+cleaning over 21 back doors, including ICKiller, every known variant of 
+BO (deep bo, bo hack, control, sokets des trois), DMSETUP, the ICQ 
+trojans, HELLIRC, NetBus, script.ini, etc etc etc.  It wasn't made by 
+me, it was made by the cool guy who made NukeNabber (another great 
+program), so like don't email me for help, ;) 
+BTW, I hope your computers get better.
+
+Carolyn - I emailed this to some infected people on your last HHD and 
+to you, the real copy of this program is found on:
+
+http://www.dynamsol.com/puppet/ 
+
+So point the people there, I also suggest that you put this in your next HHD  so other people wont get backdoored.
+
+Thanks
+
+[Dale: Sounds cool - use at your own risk...] 
+================================================================== 
+ *** Update on the Cuartango Security Hole 
+================================================================== 
+From: "Richard M. Smith" <rms@PHARLAP.COM>  
+
+Hello,
+
+I have a quick update on the Cuartango Security Hole in Internet 
+Explorer 4 which I reported yesterday to NTBUGTRAQ:
+
+- Microsoft has officially confirmed that there is a bug in a News.com 
+article:
+
+http://www.news.com/News/Item/0,4,27482,00.html?st.ne.fd.mdh
+
+- Mr. Cuartango's demo is out of commission because it was being hacked yesterday by outsiders.  The demo page also got more than 15,000 hits and the Web server wasn't able to handle the load.
+
+- I've put together a simple test page which will detect if an IE browser has the bug or not.  The URL of the test page is:
+
+http://security.pharlap.com/cuart/test.htm
+
+The test page will not upload any files to a Web server, but does check 
+to see if the file name field of a file uploader form can be set by 
+JavaScript. The results of the test are for your eyes only.
+
+Richard M. Smith 
+================================================================== 
+ *** RE: Hacking Win95 from the Internet 
+================================================================== 
+From: Hugh Joergen <keydet89@yahoo.com> 
+
+Dear Readers...As a follow-up to the Guide regarding accessing Win95 
+shares via the Internet, here is the answer to a question that I was not immediately able to answer...
+
+The question regards the fact that when 'Client for Microsoft Networks' is installed, and the box rebooted, the user is asked for a username and password.  Well, to keep that from happening in the future, DO NOT  enter a password...rather, just click 'OK'.  When the password confirmation dialog appears, just click 'OK' again.
+
+An excellent site to find out other information regarding setting up your Win95/8 box for dialing into the Internet is:
+
+http://ourworld.compuserve.com/homepages/j_helmig/  
+
+This site includes screen shots, so that you can see what everything is supposed to look like!!  Check it out!
+
+Keydet89 
+================================================================== 
+ *** Caterpillar LAN hack: A lesson in security 
+================================================================== 
+From: Hugh Joergen <keydet89@yahoo.com> 
+
+I thought the HHD readers would be interested in seeing this article...
+
+http://www.zdnet.com/pcweek/stories/news/0,4153,361425,00.html
+
+For anyone who has read "The Cuckoo's Egg" by Cliff Stoll... are you 
+surprised that this is still happening 10 yrs later???  If newbies think that the security knowledge they have at this point is useless, think again...
+
+Keydet89 
+================================================================= 
+ *** RE: ickiller trojan and a new trojan found 
+================================================================= 
+From: Anonymous <nobody@replay.com> 
+
+There is NO trojan in the "Gateway Chat System" from 
+http://www.puruca.com.br/gcs
+
+and it's not coded by brazilian guys.
+
+Guy, I think u don't understand portuguese...
+
+the FAQ in the page explains the open door... The gateway chat system allows connections between users. IT'S NOT A TROJAN! You can use this little program without takin' any danger.
+
+S|ayer       -< slayer2000@gmx.net >- 
+================================================================= 
+ *** Re:GTMHH: more on How Break into Win95 from the Internet 
+================================================================= 
+From: Eric <no@mail.tiac.net>  
+
+I have been receiving your digest mailing list for a while now, and have yet to contribute anything. I just read the first part of this digest, and have some info to add.
+
+Many people have both a LAN and dial-up networking at home, and so it's a bad idea to just disable file & printer sharing. What I do, and seems to be just as effective, is to limit File sharing to just over my LAN, by un-binding the File and Printer Sharing from the Dial-Up adapter and just binding it to the ethernet card.
+
+-Eric
+
+[Dale: This is the recommended way to do it. In fact, the installation of IE 4 can detect if you have File and Printer sharing bound to the Dial-up Adapter and will warn you about it, giving you the option to let it unbind the service for you...] 
+================================================================= 
+ *** In response to the article about 'godmirc.exe' 
+================================================================= 
+From: "Gao Sin" <gaosin@hotmail.com> 
+
+Hi, I'm writing in response to the article about 'godmirc.exe' trojan.  This trojan is more widely known as 'Dmsetup.exe' which sends itself when  people join a channel. I have some information which some people might  
+find interesting, and also what I think Shade was talking about. It is at:
+
+www.arctik.com/hack/philez/dmsetup.ini
+
+If this program was ever run on my system (which i highly doubt), it would not take affect, due to my Windows directory being in a non-standard place. I advise everybody to make the install directory non-standard to make lame  trojans like this one harder to take hold of your system. Thanks for your time.
+
+Nirak of the Arctic League,  
+www.arctik.com   
+nirak@arctik.com 
+================================================================== 
+ *** What is a "port"? 
+================================================================== 
+From: Dale Holmes <editor@techbroker.com>
+
+So many people wrote in asking variations of this question that it just had to be answered first. There is apparently much confusion about just what exactly a port is, and what it is used for, and how it works, etc. - so here's the scoop:
+
+A port is a really cheap wine.
+
+Just kidding!
+
+In the world of the TCP/IP protocol suite, computers send messages to each other using IP addresses. Two IP hosts (computers using TCP/IP) might have the following IP addresses: 10.10.10.1 and 10.10.10.2, and might want to communicate with each other. The computer at address 10.10.10.1 will send an IP packet addressed to 10.10.10.2 with some information it intends for 10.10.10.2 to use somehow. When it receives this packet, 10.10.10.2 might want to send a message back to 10.10.10.1 to acknowledge that it received the packet successfully. And so on, and so on, the two computers might "converse" like this for some time.
+
+The user of computer 10.10.10.1 might wish to have more than one connection to the computr at 10.10.10.2 - suppose there was a Web server, and FTP server, and a Gopher server running on 10.10.10.2 and the user at 10.10.10.1 wanted to simultaneously connect to each of those services. The computer 10.10.10.1 would then be having several simultaneous "conversations" with 10.10.10.2 and there needs to be some way of distinguishing one conversation from another. Without this, packets intended for one conversation might get mixed into one of the other conversations and make things very confusing.
+
+This is where ports come in. A port is a virtual address for a specific service. This information is "appended" to the IP address in packets sent between systems. Some services run on "well known" ports by default. For instance, an http server (a Web server) runs by default on port 80. So a contestation between 10.10.10.1 and the Web server on 10.10.10.2 might start with a packet from 10.10.10.1 sent to 10.10.10.2:80 - port 80 on computer 10.10.10.2. The combination of the IP address and the port number is known as a "socket".
+
+In a TCP based contestation, all communication between two computers is done using a "socket pair" - the IP address plus the port number for either side of the conversation. For example, the conversation between 10.10.10.1 and the Web server on 10.10.10.2 might use the socket pair of 10.10.10.1:2784 and 10.10.10.2:80. All packets from 10.10.10.1 in that specific conversation are sent to 10.10.10.2:80 (port 80 on 10.10.10.2). This is the virtual address on which the http server (Web server) is listening. In turn, it will send all packets in that specific conversation to the port on 10.10.10.1 where the web browser is waiting for a response - in this case, 10.10.10.1:2784.
+
+Is that confusing enough? It really shouldn't be. The main thing to remember is that different ports help to distinguish one conversation from another.
+
+There is a list of "well known" ports available on the Internet, that lists the default ports on which many popular applications listen for input. All port numbers below 1024 are reserved for well know applications. Not all of them have been assigned though. Well known port numbers are assigned by the IANA (the Internet Assigned Numbers Authority). Check out the IANA web site here:
+
+http://www.iana.org
+
+There is also a fairly complete list of port numbers here:
+
+http://www.netcettera.com.br/tip7.htm
+
+or here:
+
+http://www.isi.edu/in-notes/iana/assignments/port-numbers
+
+Now here's the thing that most Happy Hackers do - they port surf. You have probably read about this in one of the early Guides to Mostly Harmless Hacking (GTMHH). Basically what this means is that the hacker will use the Telnet program to attempt to connect to some port on a remote computer. The Telnet program, by default, will attempt to connect to the well known port on the remote computer where is expects to find a Telnet server listening for input. The well know port for Telnet is 23. You can tell the Telnet program to attempt to connect to a different port. An example might be port 25, which is the well known port for the SMTP protocol, and you might expect to find the sendmail application listening there. This is a popular target because the SMTP protocol is easy to understand and allows you to use English text commands to send an email message. Many people do this in order 
+to send "fake" email - messages that appear to be from some other user or location.
+
+Another popular target for port surfing was 79. This port was where the finger application would be listening. Much information could be found out using finger - so much so that most sites have discontinued using it.
+
+Many hackers will use scripts or applications that will automatically probe a remote computer's ports one at a time, rapidly, in an attempt to determine which applications are running on that computer. This information helps a hacker to determine any vulnerabilities the machine might have to an outside attack. Many administrators will consider a port scan of their system(s) as a precursor to an attack, kinda like a burglar cruising around a jewelry store, "casing the joint", before a robbery attempt.
+
+Telneting into a port that is listening for data other than text can produce some interesting results. Sometimes it can result in problems for the server you connect to. There was an old Denial of Service attack that worked on NT computers where telneting into port 135 and typing a bunch of text caused the NT server CPU utilization to shoot up to 100%, and often could only be resolved by rebooting the NT server. A Perl script called poke was circulated  to "test" this.
+
+Usually, however, port surfing is harmless, try it - you'll like it.
+
+I hope that this exploitation helped some of you who were confused about ports. Please check out the web sites listed above - I am positive that you will find more food for thought there, and maybe some more links to help you study Ports and Sockets in more detail.
+
+I am sure that many people will find this an incomplete exploitation, and maybe somebody might find a mistake or two in it. If so, good for you. Try to resist the urge to flame the hell out of me, though. If you find an error that you simply can't abide, feel free to email me with the correction.
+
+Happy port surfing! 
+__________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
+
+For Windows and Unix questions, please write Roger 
+Prata<rprata@techbroker.com>;  
+for Macs, write Strider <s.corinth@iname.com>,  
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>

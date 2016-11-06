@@ -1,0 +1,285 @@
+October 12, 1998
+
+===================================================================== 
+See back issues of the Happy Hacker Digest and Guides to (mostly) 
+Harmless Hacking at http://www.Happyhacker.org. 
+GTMHH en espanol: http://underhack.islatortuga.com 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+=====================================================================
+
+TABLE OF CONTENTS 
+**This week's posts** 
+* ickiller trojan and a new trojan found  
+* Phantom's info on Sun Solaris 
+* The Cuartango Security Hole in IE4 
+* GODMIRC.EXE 
+* + + + ATH0 modem bug 
+* National Information Systems Security Conference 
+* Winnuke 2 
+* Re: GTMHH: PGP for Newbies 
+
+**Editorial: Questions, Questions, Questions ** 
+================================================================== 
+ *** ickiller trojan and a new trojan found 
+================================================================== 
+From: "Script Mansion" <scumm82@hotmail.com>  
+
+I discovered another interesting trojan, just like the ickiller one. 
+This other trojan is located in a chat program called "Gateway Chat  
+System", made by some brazilian guys.
+
+It can be downloaded in:
+
+http://www.puruca.com.br/gcs
+
+There's another detail - this gateway chat system, is supposed to be a  good program, designed to be a webchat, and it isn't even free! The creators charge 15$ to register!
+
+There's another thing... I only discovered this new trojan because I was  infected with it.
+
+I realized that my 2115 port was open, but didn't know why.  
+This trojan copies one file, system.exe to windows directory and runs  
+it. It opens port 2115, allowing access to the entire computer.
+
+So, as happened to the ickiller trojan, i hope you publish this one 
+your site, as I am sending it to other sites as well.
+
+[Dale: This is an unconfirmed report... The author of this message goes on to  slander some individuals he claims are involved in the distribution of this trojan. I have removed that information because it serves no purpose here, and may even be untrue... Since the authors of the Gateway Chat System are selling it, I'd rather a report like this be confirmed before smearing their names around the 'Net. PS - if this report *is* true, the trojan looks like Back Orifice...] 
+=================================================================== 
+ *** Phantom's info on Sun Solaris 
+=================================================================== 
+From: John Priest <John_C_Priest@csi.com>  
+
+Just to let other folks now, I ordered Solaris from Sun. It took a couple of months to get it but it was worth it. This is not some CD in an envelope like Microsoft sends out, this is the full blown boxed version (2.6) with all the manuals & 3 cds. I'm not trying to shill for Sun, just trying to provide some more info for those that may still be on the fence about getting it.
+
+Also it can be a bit of a pain trying to find it so here is a more 
+specific URL:
+
+http://www.sun.com/developers/solarispromo.html
+
+John 
+***************************************************** 
+John Priest  
+jpriest@ne.mediaone.net 
+john_c_priest@csi.com 
+ICQ - 6345817 
+"Imagination is more Important than Knowledge" 
+***************************************************** 
+================================================================== 
+ *** The Cuartango Security Hole in IE4 
+================================================================== 
+From: Richard M. Smith <rms@PHARLAP.COM>
+
+Date: Sun, 11 Oct 1998 15:17:41 -0400 
+From: Richard M. Smith <rms@PHARLAP.COM> 
+To: NTBUGTRAQ@LISTSERV.NTBUGTRAQ.COM 
+Subject: The Cuartango Security Hole in IE4
+
+Hello,
+
+Juan Carlos G. Cuartango of Spain has discovered an extremely serious 
+security hole in Internet Explorer 4.  With a small amount of JavaScript code on a Web page, a Web site operator can steal any file from a user's hard disk and automatically uploaded the contents to a Web server.
+
+More worrisome is that fact that the security hole can be also exploited in an HTML-based Email message in Outlook Express.  Simply by reading a booby-trapped Email message, private files can be stolen from one's hard disk.  Most computer users, I suspect, will consider this unacceptable product defect.
+
+Details of the security hole were posted late last week at Mr. Cuartango Web site:
+
+http://pages.whowhere.com/computers/cuartangojc/cuartangoh1.html
+
+The Web site also contains a demo of the security problem. The demo is based on a standard file uploader HTML form. Normally only the user can manually set the name of the file to uploaded but IE4 inadvertently allows JavaScript to execute cut and paste functions to set the file name.  After the file name is set, JavaScript auto-submits the form to upload the file.
+
+I've tested the demo on three different systems and it worked on two of them.  The one system in which the demo failed was running the original 
+release of IE4 which came out September of last year.  The two systems in which the demo worked on were running IE 4.01 which started shipping earlier this year.  The demo appears to work both on Windows 95 and Windows 98.  It should also work on Windows NT, but I haven't had time to test it.
+
+The bug is also reported to be present in the preview version of IE5. 
+According to Juan Carlos's Web site, Microsoft has confirmed 
+the bug and is looking now how to fix it.
+
+Richard M. Smith 
+rms@pharlap.com
+
+[Dale: The demo on Mr. Cuartango's page is no longer functional because it included in it's source the id and password for the ISP account he was using to store the demo results. Too many people decided to whack that account and he became frustrated fixing it all the time. Even though you can't test is at his site, the bug does exist...] 
+================================================================== 
+ *** GODMIRC.EXE 
+================================================================== 
+From: shade@tir.com  
+
+Dear Carolyn...You are not gonna believe this!!!
+
+Recently I've been getting these attacks on my computer over the 
+Internet where someone, using a some sort of trojan, has gained access 
+and control over my entire system. The extent of the damage was minimal.
+
+I knew it was an Internet attack so I just disconnected when I saw these things happening. Using some sort of error message control, this person has been able to send me little messages which pop up on the screen saying things like, "Your Ass is Mine." I'm convinced it is an outside attack because the person told me the name of a directory I had been storing files in and had dumped all the files into my root directory. He was also able to close Netscape while I was searching the internet for a solution.
+
+I started thinking about a little program I had gotten rid of a while 
+back. It was a trojan too, (don't blame me, a friend was d/l'ing all this stuff) but it was low skill level. A simple mirc program that changed the ini's so an outside party could control my account. I started looking through my download directory and sure enough, I found a file called GODMIRC.EXE.
+
+I ran it, it showed me some pretty colors flashing, and ended with an 
+error message when I hit space. I knew there was more to it. I looked in the download directory and there where two new directory's - "Suck_It" and "_DM2IYF". Of course I couldn't access them, they had that damn <ALT>255 character in them. So I went to command.com to get rid of 
+them... 
+
+It was gone. I'm not sure if that was because of the trojan or 
+not but it p***ed me off. After getting a new copy of command.com off the internet, (as quickly as possible, so he couldn't get me) I got rid of the directories and found the same directories under the root directory. I also found it in c:\windows\system directory. Now I'm getting worried.
+
+I decide to go to the source. Using nothing more then Notepad, I open 
+the file GODMIRC.EXE that was in my download directory. Upon scrolling 
+down I get to a list of commands. And some C or Assembly programming, I 
+start browsing through and I realize just how in depth this program is. 
+When you run the program it randomly generates a new name for itself 
+from a list of words. Here are the words -
+
+BUNY LOVE SEX TOE PEE INST GOD FUN ICQ IRC MIRC POWR JNK NUKE UDP LIM 
+SET CFG HELL PUSY TIT DICK 69 101 YES ARM 311 BUD FUCK EAT
+
+It combines 2 of these words to form the new name. For Example - 
+YESDIK.EXE or ARM311.EXE. It then writes its new name (and some gibberish - maybe monty python?) into a file located at c:\ni.cfg.
+
+It then adds a line to your autoexec so that it runs the program 
+every time at startup. It proceeds to copy itself into a long list of 
+directories, here they are:
+
+C:\ 
+C:\WINDOWS 
+C:\MIRC 
+C:\WINDOWS\SYSTEM 
+C:\YOUARENOTSURPOSEDTOBELOOKINGATTHIS 
+C:\PROGRAM FILES 
+C:\DOS 
+C:\QUAKE 
+C:\DOOM 
+C:\DOOM2 
+C:\GAMES 
+C:\PICS 
+C:\DM2IYF 
+C:\SUCKIT
+
+It proceeds to change your original mirc.ini but kindly backs it up in 
+C:\mirc\bakupwrks.ini.
+
+After that, the file is all computer lingo with brief mentions to asm 
+files. I don't know enough about C or Assembly to know what this is or 
+even if its contributing to the other odd attacks on my computer. The 
+appearances of both symptoms coincided so I can only assume.
+
+The two may be unrelated, I don't know. If you've ever heard of anything like this and know how to solve it, please, tell me!!!
+
+I did however think people should know about this mirc trojan, whether 
+or not it is responsible for this huge backdoor opened in my system.
+
+Carolyn, please post this. I am attaching a copy of the file. I doubt it has any viral effects and I hope you can pass it on to someone who can do more with it. 
+
+Thanks.
+
+-Shade
+
+[Dale: I didn't get a copy of the file with this post, but I am not sure how the poster was able to see C or assembly source code by opening the executable in Notepad. Perhaps he simply does not recognize what he sees and assumes it must be code. Still, he seems to have determined a lot about the activity of this program from looking at the executable in Notepad - that's kinda strange. Also, I am not aware of a copy of command.com being available (legally) on the 'Net... Nevertheless, this may be a real trojan - be on the lookout.] 
+================================================================== 
+ *** + + + ATH0 modem bug 
+================================================================== 
+From: Lord chr0n0s <chr0n0s@toosexyforyou.com>  
+
+Note: In "+ + +ATH0", take out the spaces between the +'s. 
+I had to put them in for my modem to send this message :)
+
+As everyone on bugtraq already knows, a bug in approximately 40% of 
+modems out there was recently made widely know. Basically, if you can 
+get one of the affected modems to send out + + +ATH0 in plain text, the modem hangs up, because ATH0 is the machine code for "hang up."
+
+If you have access to a unix shell, you can get other people's modems 
+to send out + + +AHT0 against their will by using the ping program.
+
+Just type at your shell:
+
+ping -p 2b2b2b415448300d 000.000.000.000
+
+and if their modem is affected, it will hang up and you won't get the 
+ping returned!
+
+Note: that 2b2b2b thing is the hex value for + + +ATH0. Put their ip in place of the 000.000.000.000.
+
+Note: you can also use this to do things like make their modem dial other numbers and things like that if you know the machine code.
+
+--Lord Chr0n0s 
+hismajesty@portzer0.8m.com 
+http://portzer0.8m.com 
+================================================================== 
+ *** National Information Systems Security Conference 
+================================================================== 
+From: Dave! <dgarn@osf1.gmu.edu>  
+
+I recently had a chance to go to the 21st Annual NISSC Conference in 
+Crystal City, VA. (The company where I work as a security specialist sent everyone on my team.)  It was amazing.  
+
+The most interesting thing was the Information Systems Security Exposition. Hundreds of IT security companies had booths set up with demos and info about their products.  I was surprised to see that over half of the technology there dealt with encryption, authentication, smart-cards, and digital signatures.  I knew they are on the up-and-up right now, but I didn't know they were being researched THAT fully.  
+
+I also should say that I was surprised at the amount of women that were there.  (I just read your article in the last HH Digest that talked about InfoWarCon 98.)  I saw a few of your IBM clones running around (the old men in blue suits) but there seemed to be just as many women as men there.  And all ages of professionals.  Additionally, the ratio of men to women in the area of speakers or panelists was almost equal as well.  And the women I talked to there really knew their stuff!
+
+The other good thing about this conference is that they had free books 
+that contained all of the papers presented and talks given for the last five years of this conference.  I came home with over 30 pounds of books! I would encourage anyone out there to try to get your managers to let you go to these conferences.  I'm just a university student co-oping at the company I work at, but they treat me like a permanent employee.  They let me go to this.  I would encourage any and all of you to try to find some way to go to these in the future.  The info is good, you get to see cutting edge technology, and you can brush shoulders with the big people of the IT-Sec area. 
+================================================================== 
+ *** Winnuke 2 
+================================================================== 
+From: "RC Johnson" <johnson@umr.edu>  
+
+No, this is not a new exploit....it is a cheap trick to play on script  kiddies. [Which, by the way, I am not.  Here at my house on  
+campus we have an intranet, and I was testing the security of my  
+machine, and my room-mate's machine]
+
+You see I downloaded Winnuke 2 without much background research on it, 
+actually with none at all.  It promised to be able to nuke a Win95 computer, even if it has been patched.  In turn it actually deleted, or messed with in some way my tcp/ip drivers.  I had to reinstall these drivers.  That is not my complaint.  
+
+I was wondering if anyone has any clue how I can double check to make  
+sure this was not a trojan I would be greatly in their debt.  I seriously  doubt that it is, but I want to make sure just in case.
+
+Thanks a ton.  
+
+The URL for Winnuke 2 is:
+
+http://www.angelfire.com/wa/nuke2kill/
+
+Love in Christ, 
+RC 
+ICQ # 8450535 
+johnson@umr.edu 
+================================================================= 
+ *** Re: GTMHH: PGP for Newbies  
+================================================================= 
+From: Criptyk Hayz <CriptykHayz@bitsmart.com>  
+
+Speaking of PGP, you might be interested in knowing about a coding project that is going on right now...
+
+We have 6 highly experienced programmers and cryptographers working together to create a secure Communications package including file transfer, and secure chat conversations without the need for a server! (unlike IRC) You can find more information at:
+
+http://www.mts.net/~ssoroka/project.html
+
+UK mirror site to follow...
+
+The site is very new, so it may not be complete... (or may eventually link to another page), but the point is, it's coming! :-)  hehe... just thought you might want to know. 
+================================================================= 
+ ***  Editorial: Questions, Questions, Questions 
+================================================================= 
+Boy did I ask for it!
+
+Last week I asked you all to send in your questions about Computer Security so that together we can use this Digest to explore some of the issues that arise when you begin to study Computer Security.
+
+You sure did answer the call! I am currently sorting through the hundreds of questions that came in. Remember that I asked for questions pertaining to Computer Security in some way. I was primarily looking for questions like "What is x?" or "How does x work?", with x representing some technical or security related concept. I got lot's of those questions - thanks to all who submitted them.
+
+I also got lots of questions like "My computer won't do x. How do I fix it?" or "The computers at my school/place of business/etc look like x. How do I break into them?". I know that issues like that can be very troublesome and time consuming, but they are not the sort of questions I was looking for, and I won't be including them in the Digest. Gaining an understanding of how things work, and then applying that understanding to real world problems is the goal here, and with that in mind, I will begin to address the questions I have received in next week's Digest. 
+
+Until then (and after next week too), keep the questions coming. 
+__________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
+
+For Windows questions, please write Roger Prata<rprata@techbroker.com>;  
+for Macs, write Strider <Strider@clarityconnect.com>,  
+Happy Hacker Digest editor: Dale Holmes <editor@techbroker.com>
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>
