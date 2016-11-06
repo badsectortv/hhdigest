@@ -1,0 +1,158 @@
+Dec. 8, 1998 
+_______________________________________________________________________ 
+See the Happy Hacker web site at http://www.happyhacker.org 
+Svenska:http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+_______________________________________________________________________
+
+Inside this report: 
+* Press conference to detail FBI harassment of Happy Hacker 
+* New editor 
+* New at the Happy Hacker web site 
+* Book review: Maximum Security (and some other book info) 
+_______________________________________________________________________
+
+ *** Press Conference to Detail FBI Harassment of Happy Hacker 
+_______________________________________________________________________
+
+ At 11 AM Dec. 16 we will hold a press conference in New York City to unveil 
+evidence of serious FBI harassment of Happy Hacker.  If you are with the 
+media and wish to be invited or get on our press release list, please 
+contact us at 505-281-9675.
+
+ To get the news from this press conference fast, listen to Geek Radio at 
+Http://www.audiocast.net/HomeTemplate.cfm?page=topic_page.cfm&code=tech&scod 
+e=geek.  Starting at 11 AM Dec. 16th, David Lawrence will air his audio 
+interviews of both Meinel and Dr. Mark Ludwig, owner of American Eagle, 
+which publishes "The Happy Hacker" book and who is a witness to the FBI 
+intimidation efforts.
+
+ At the press conference we also will unveil good news for Hacker Wargame 
+players. 
+_______________________________________________________________________
+
+ *** New Editor 
+________________________________________________________________________
+
+ You will soon be seeing new Happy Hacker Digests, this time with two 
+editors. We haven't yet decided on who will edit a Digest series on Windows 
+and beginner hacking.  However, those of you who are more advanced will be 
+excited to learn that Gerry Mullins will put out a Digest on Unix and 
+advanced hacking topics.  We got many other offers fro help from talented 
+and knowledgeable people, and hope that they will also help out by writing 
+for the Digests, or perhaps even writing GTMHHs.
+
+ Gerry Mullins has experience with the Linux, HPUX, SUN OS 4.3.1, Solaris 
+2.6, and AT&T SVR3 varieties of Unix.  As an "Engineering and Scientific 
+Consultant" he runs a Unix help desk as his daily job, and moonlights 
+teaching "UNIX for Advanced Users" at a technical college.  Mullins also 
+edits the Avatar MUD weekly newsletter, and writes editorials for each issue. 
+
+ Please email your questions about Unix and other advanced topics to Mullins 
+at unixeditor@techbroker.com.
+
+_______________________________________________________________________
+
+ *** New at the Happy Hacker Web Site 
+________________________________________________________________________
+
+* Don't want people snooping on you when you go online?  See Lady 
+Whitewolf's privacy tips, linked from our home page, http://www.happyhacker.org.
+
+* And, while you are at our home page, click on the link to the FBI files on 
+humor columnist Mike Royko.  It will take you to an archive at 
+http://www.apbonline.com/gfiles of FBI files on many celebrities.  It seems 
+that the FBI just cannot resist snooping on famous folks.  Gosh, now that 
+the FBI is bothering her, does this mean Meinel is getting famous too?
+
+* Erratum:  In the last Inside Happy Hacker announcement we gave the URL for 
+the screen shot of EtherPeek detecting a stealth ports scan as 
+http://www.happyhacker.org/Epscreen-fin.JPG.  The correct URL was 
+http://www.happyhacker.org/Epscreen-fin.jpg. 
+_______________________________________________________________________
+
+ *** Book Review: Maximum Security 
+_______________________________________________________________________
+
+Maximum Security : A Hacker's Guide to Protecting Your Internet Site and 
+Network 
+
+List Price:$49.99  
+Amazon.com price: $39.99  
+You Save:$10.00 (20%)  
+Availability: This title usually ships within 
+2-3 days. 
+
+Paperback - 829 pages 2nd Bk&cdr edition September 1998)   
+Sams; ISBN: 0672313413 ; Dimensions (in inches): 2.19 x 9.07 x 7.36  
+                                         
+   You can tell right away that the author of Maximum Security knows a thing 
+or two about the hacker scene because he (yes, it is a "he") decided to 
+write anonymously.  According to the first edition, "In the late 1980s, the 
+author was convicted of a series of financial crimes after developing a 
+technique to circumvent bank security in Automatic Teller Machine systems." 
+
+  However, Maximum Security is not just another haxsploitation book such as 
+Secrets of a Superhacker or Forbidden Secrets of the Legion of Doom Hackers. 
+It is up to date.  It discusses how to break into and defend Unix, Windows 
+NT, Macintosh, Novell and VMS systems.   It covers everything from port 
+scanners to denial of service attacks.  Most important, it provides URLs 
+which can be linked from the CD-ROM that comes with the book to the best 
+sites to get tools to attack or defend all of today's most important 
+computer systems. 
+
+    If you are a newbie, Maximum Security will leave you scratching your 
+head.  It offers no keystroke-by-keystroke explanations of how to break into 
+computers. This book assumes the reader is already familiar with networking 
+and programming.  However, anyone who is a systems 
+administrator, or who has absorbed the basics taught at the Happy Hacker web 
+site or in The Happy Hacker book should find Maximum Security to be the most 
+valuable hacker handbook on the planet. 
+
+    It's one of the best-selling computer security books today.  Its first 
+printing is said to have sold out in just two weeks! -- Carolyn Meinel 
+
+PS.  Just who is "Anonymous"?  According to Winn Schwartau, he's William Wagner.
+
+You can find Maximum Security for sale at the Happy Hacker bookstore at 
+http://www.happyhacker.org/general.htm#Maximum Security.  This provides a 
+click through to purchase it directly from Amazon.com.
+
+____________________________________________________________________________ 
+__________ 
+   
+      *** More Book Info 
+____________________________________________________________________________ 
+__________ 
+  
+From: Lord Chr0n0s <hismajesty@portzer0.8m.com>
+
+http://www.developer.com/reference/r_library.html contains lots of books on 
+Unix, Linux, TCP/IP, programming, and more, and is better than mpc.com in my 
+opinion.
+
+From: "ELECTRICzero" <ELECTRICzero@prodigy.net>
+
+    I just read your review of "The Watchman" and basically agreed with your 
+analysis, Littman seemed to be on Paulsens side. Kevin; however, seems to be 
+against this book... (at) http://catalog.com/kevin/ there is a quite amusing 
+quiz on the book there also. 
+ 
+
+Happy hacking, folks!  
+ -- Carolyn Meinel 
+__________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contactunixeditor@techbroker.com 
+For Macs, write Strider <s.corinth@iname.com> 
+
+Happy Hacker Grand Pooh-bah: Carolyn Meinel <>
