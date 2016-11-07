@@ -1,0 +1,482 @@
+Feb. 24, 1999 
+_______________________________________________________________________ 
+Visit the Happy Hacker site at http://www.happyhacker.org 
+Chat about how to play the Happy Hacker Wargame at #koan on Undernet 
+_______________________________________________________________________
+
+Opening Comments 
+URLs 
+Reader Submissions 
+Cookies 
+Tiramisu! 
+Viruses 
+Sniffers 
+Perl Corner 
+Editor's Comments
+
+****************************************************************** 
+Opening Comments
+
+I've gotten a lot of email asking me to address certain issues in 
+the digest...see the article on cookies below.  I approached the 
+solution for the article on cookies the way I did, b/c I wanted to 
+show the readers how easy it is to find information on their own. 
+If you haven't noticed, that's my goal, pretty much, for the  
+Windows edition of the HHD.
+
+I've noticed a couple of trends recently in the emails I have 
+received, and I'd like to address them individually:
+
+1.  Please don't ask me how you can break into a machine.  I've 
+said time and again, that's not the purpose of the HHD.
+
+2.  Many readers start by saying something like "I've been  
+reading the digest for some time now..." and then they ask a  
+question that was answered in a recent digest.  I still haven't 
+figured that one out yet.
+
+3.  Folks like Carolyn and I, and others involved with the HHD,  
+all have day jobs.  The HHD is a voluntary effort on our parts... 
+so please don't ask us to do your web surfing for you.
+
+4.  If you have a question, I am more than happy to help, if I  
+can.  However, many readers make it very difficult to help...they 
+don't provide enough information, or they write their emails using 
+'h4x0r skript'...which I instantly delete.
+
+Thanks!
+
+****************************************************************** 
+URLs
+
+Some free tools from the NT Resource Kit  (URL wraps...) 
+http://www.microsoft.com/ntserver/nts/downloads/recommended/ 
+ntkit/default.asp
+
+For readers of The Perl Journal, here are the programs that 
+accompany the best Perl magazine yet! 
+http://orwant.www.media.mit.edu/tpj/programs/
+
+Some good reading for anyone interested in security.  
+http://www.icsa.net/library/research/index.shtml 
+**I highly recommend the InfoSec Year in Review papers, as well 
+as Ira Winkler's 'Assignment Espionage'...just b/c it's 'way 
+cool'!!
+
+Excellent magazine...subscribe for free! 
+http://www.webtechniques.com/ 
+**Great links to articles on Perl by Randall Schwartz!
+
+Great link from <rjohns@otenet.gr> 
+http://www.nwi.net/~pchelp/bo/bo.html
+
+Want to use internal commands in your Perl scripts and batch 
+files on 95/98? 
+http://log.on.ca/users/rhwatson/dos7/
+
+Do you want to see what other people are typing into  
+search engines? 
+http://webcrawler.com/SearchTicker.html 
+http://www.metaspy.com 
+http://aj.com 
+http://voyeur.mckinley.com/cgi-bin/voyeur.cgi 
+ 
+
+****************************************************************** 
+Cookies
+
+Cookies...what are they?  More importantly, what do they mean to 
+the security of my computer?  Well, I started by doing a search 
+on Yahoo -> Computers and Internet -> Internet, and boy, did I find 
+a LOT of information!!
+
+One of the best sites that was returned was: 
+http://www.cookiecentral.com/
+
+There is an interesting FAQ with other links at: 
+http://www.vermontguides.com/faqteg14.htm
+
+Okay, given that, just what the heck is a cookie?!  A cookie is an 
+HTTP header that is entered into the memory of your browser by the 
+server, so that state information can be maintained.  Things such 
+as last access date, etc, are stored in cookies and then read by 
+the server the next time that you go back to the site.  So there  
+does seem to be some legitimate use for the cookies...to prevent 
+the user from having to remember data entered at a site 6 months 
+ago, or having to type a TON of information into a form time and  
+time again.
+
+But what about security issues?  Well, I checked the FAQ at  
+CookieCentral (see the above URL) and the response there was:
+
+"2.4 Are Cookies Dangerous to My Computer? 
+
+NO. A cookie is a simple piece of text. It is not a program,  
+or a plug-in. It cannot be used as a virus, and it cannot access  
+your hard drive. Your browser (not a programmer) can save cookie 
+values to your hard disk if it needs to, but that is the limit of  
+the effect on your system."
+
+For more info, and the answers to many of your questions, check 
+the FAQ out at:
+
+http://www.cookiecentral.com/faq/index.shtml
+
+Here are some other URLs of interest:
+
+Web Review article on cookies 
+http://webreview.com/wr/pub/98/08/07/perl/index.html
+
+ICSA white paper on cookies (dtd '96, but still useful) 
+http://www.icsa.net/library/research/k.shtml
+
+More on cookies from ICSA 
+http://www.icsa.net/library/research/cookie_issues.shtml
+
+[Editor:  I found SO MUCH information with regards to cookies,  
+I thought it best to present some of the best links so that  
+readers can browse the information on their own.  Wow...you'd 
+be amazed at some of the info you can find out there!!  The  
+FAQ at CookieCentral also addresses creating and retrieving 
+cookies, using JavaScript, VBScript, and Perl!!] 
+
+****************************************************************** 
+Tiramisu!
+
+Not too long ago, I received an email from "Balduin Butterkeks" 
+<meierk@weiden.de> or <butterkeks7@yahoo.com>, in which he  
+attempted to review the product known as Tiramisu!  Well, largely 
+due to the language barrier...our friend Balduin is German...I 
+didn't think it wise to post the review 'as is' in the Digest,  
+but I want to thank him for pointing the product out and bringing 
+it to my attention.  So, all credit, recognition, and kudos for  
+this entry in the digest go to Balduin!
+
+This tool is used in an area of computer security called 'digital 
+forensics'.  In digital forensics, you use tools and knowledge 
+to determine what happened in a security incident.  This basically 
+involves either determining how a security compromise was  
+accomplished (ie, how someone 'rooted' a box) or gathering data 
+from systems (hard drives) as part of an investigation.  As you 
+probably guessed, this is something that a lot of law  
+enforcement people (FBI, Secret Service, etc) do.  But just b/c 
+the police do it, doesn't mean that you can't learn about it! 
+Let's take a look at Tiramisu!...
+
+Tiramisu! can be found at http://www.recovery.de
+
+Tiramisu! is a data recovery tool that allows you to access  
+information on your hard drive that you didn't think you could. 
+The product information page is pretty comprehensive, and you 
+can download a demo of the product, but only after you register. 
+I think it's definitely worth a shot, even just to try out for 
+a trial period.
+
+OnTrak Software has some other products in addition to the data 
+recovery software, so take a look at some of them.
+
+Tools like Tiramisu! work by reading the unused blocks on your 
+hard drive.  Here's how it works:  your hard drive is broken up 
+into many smaller sections, sometimes as small as 4k.  The  
+programs and data on your hard drive are stored in these blocks. 
+The end of the first block contains a pointer to the next  
+sequential block in your program or data:
+
+    -------------                    ------------- 
+    | 0x00c123   |         --------> | 0x00c134   | 
+    -------------         |          ------------- 
+    |            |        |          |            | 
+    |            |        |          |            | 
+    |  <data>    |        |          |  <data>    | 
+    |            |        |          |            | 
+    |            |        |          |            | 
+    |            |        |          |            | 
+    |            |        |          |            | 
+    -------------         |          ------------- 
+    | 0x00c134   |   -----           | 0x00c147   | 
+    -------------                    -------------
+
+This goes on until your program or data is ends.  Now, when you 
+delete the data, the first block is marked as unused...which 
+makes all sequential blocks unused, as well.  But the data 
+remains...and this data can be read by tools like Tiramisu!
+
+Now, this was a very simple, very general description of what 
+happens, with regards to digital forensics and deleted files.   
+To find out more detail regarding how a particular operating  
+system handles blocks and deleting data, you need to read up  
+on the particular file system in question.
+
+Along the lines of data recovery and computer forensics, here is  
+another interesting site:
+
+http://www.forensics-intl.com/
+
+This site has a lot of great information regarding computer  
+forensics.
+
+What about deleting files from your hard drive so that they  
+can't be recovered by tools like Tiramisu!?  One such app I  
+ran across is WipeClean, from JCL Software: 
+http://www.jcldev.com/wipecln.htm
+
+There are other such tools available...and I'm not going to  
+list them all here.  If someone has one or two links, please 
+don't send them in.  If you have many links, to apps and info 
+on the subject at hand, put that all on a web page, and send  
+me _that_ URL.  Thanks!
+
+****************************************************************** 
+Viruses
+
+I got a call the other day from someone regarding the CIH virus  
+affecting Win95 and 98 systems.  Well, I hadn't heard too much  
+about it, so I decided to look into it.  I started with a quick 
+search for 'cih' on DejaNews, and I paid particular attention to 
+any posts to the alt.comp.virus newsgroup.  Well, I found some 
+really interesting links!  No, I'm not going to go into how viruses 
+are written...I won't make it that easy for you!  But I will  
+provide the links I found, b/c they make some very interesting  
+reading...
+
+First, check out the DataFellows site.  Reading this site is like 
+a cross between a zoo and a medical research lab...have you  
+ever heard someone describe a computer virus as being "in the  
+wild"?? 
+http://www.datafellows.com/v-descs/
+
+The DataFellows site should be part of your library, if you are 
+at all interested in computer security...
+
+Also, for anti-viral solutions, check out: 
+E-Safe:  http://esafe.com
+
+Command Central:  http://www.avp.com/
+
+F-Prot:  http://www.complex.is/
+
+With the proliferation of viruses on the Net, you need to be 
+very careful.  Some viruses are annoying, but harmless.  Others 
+are very destructive.  From my experience, military and government 
+sites are not only the biggest targets, but the biggest offenders 
+when it comes to keeping anti-virus software up to date.  If you 
+must swap disks and CD-ROMs and programs with outside sources, and 
+you absolutely cannot afford to loose any data, I would highly  
+suggest that you have at least two anti-virus packages, one of them 
+being F-Prot.  And keep them up to date!!
+
+Who am I talking to?  Lawyers.  Anyone who is a military  
+reservist (I have friends who have yet to return from a drill w/o 
+a virus!!).  Anyone who does a lot of outside work or trading 
+of documents, especially anything from Microsoft Office, via 
+diskette...or any other means.  
+
+What about IRC?  Yes!  ICQ?  Yes!  Do you need to be paranoid 
+and run out and buy the latest thing?  No.  But play it smart. 
+Many home users don't make backups...but even some small  
+businesses do.  By the time you discover a virus, you have no idea 
+how far back your backups are infected.
+
+I know with all this talk about viruses, someone is going to want 
+me to mention NetBus again...even though it's NOT a virus.  I  
+have a URL for you (NOTE: URL wraps...): 
+http://www.genocide2600.com/~tattooman/exploits-Feb-99/ 
+windows.backdoors.txt
+
+(Also check out this ISS X-Force Alert Summary: 
+http://www.genocide2600.com/~tattooman/iss/alerts/vol-3_num-5.html)
+
+So be careful out there.  Practice safe surfing.
+
+****************************************************************** 
+Sniffers
+
+I've received several emails from readers asking about packet 
+sniffers.  Just to make sure we are on the same sheet of music, a 
+'packet sniffer' is a tool that makes your ethernet adapter listen 
+for and copy ALL of the frames that go by on the wire, not just the 
+ones destined for that machine...or, more technically, put the  
+NIC in 'promiscuous mode'.  
+
+Now, I don't do surfing for lazy readers, but this topic got me 
+curious, so I started with a search on DejaNews (notice a pattern 
+here?  That's how I started when looking for info on the CIH  
+virus, too).  I found an interesting app at:
+
+ftp://ftp.lantronix.com/pub/jvsniff/jvsniff.exe
+
+but I haven't tried it out.  I'm not going to beta test this 
+one out.  I have experience using the full version of NetXRay 
+from Cinco Networks (which was bought by Network Associates), 
+and I found the current page for NetXRay at (URL wraps...):
+
+http://www.nai.com/products/network_visibility/ 
+network_visibility.asp
+
+The interesting thing about NetXRay is that it's supposed to  
+support PPP frames as well as ethernet frames...which means you  
+could run NetXRay on your machine when dialed into the Internet. 
+For those of you who aren't familiar with the subject, when you  
+dial into the Internet via DUN, you are using PPP as your framing 
+protocol to send and receive IP packets.  When you are on a LAN, 
+you generally use ethernet (though some dinosaurs might use token 
+ring).  Like I said, NetXRay is supposed to support PPP, but I 
+haven't tried it yet.
+
+Then I thought, hey, wait a minute.  NetXRay is a demo, and you 
+have to buy the full version from NAI.  What about freeware or  
+shareware sniffers?  Well, there aren't many for NT...though there 
+are some for DOS (which may run on 95...).  Then I remembered the 
+BO plug-in, BUTTSniffer, from Dildog... 
+
+http://www.cultdeadcow.com/~dildog/BUTTSniffer/
+
+The page for 'sniffer says that one of the future additions to  
+the app will be to support PPP frames.  Cool!  
+
+Now, supporting PPP frames doesn't mean you can sniff traffic over 
+your ISPs connection.  But you can use it to troubleshoot your Perl 
+or Java network apps, or see how DNS works, etc.
+
+If anyone has a web page up that discusses and evaluates various 
+sniffers for 95/98 and NT, I'd appreciate a URL!!
+
+****************************************************************** 
+Perl Corner
+
+In this edition of the Perl Corner, I decided to present a very 
+simple web server benchmark utility.  Recently at work, one of the 
+engineers couldn't get a freeware benchmarking package compiled on 
+Linux, so he 'rolled his own' in C.  I figured that I could do the 
+same in Perl, and that's what became webbench.pl.
+
+Now, I've only provided a very simple benchmarking script.   
+Basically, a socket is created and connected to port 80 of the  
+server, and the HTTP GET request is sent.  The request and the  
+time to download the page (into an array) are timed, with no 
+checking of file size.  
+
+How is this a benchmarking utility?  Well, with simple additions 
+and modifications to the script, you can add the 'sleep n' command, 
+where 'n' is the number of seconds to pause, and you can access 
+the same page every 'n' seconds.  By using the time command as well, 
+and saving the output to a file, you can then run this script all 
+day, and pull the data into a graphing program, such as gnuplot or 
+MS Excel.  This will show you the latency of request throughout the 
+day...or how long it takes the server to respond.  The response time 
+will be affected by such things as overall network traffic, server 
+load, etc.
+
+Also, notice that no checking is done in the script to see if the 
+proper page is returned...the server could be returning '404 Not 
+Found'.  But does that matter?  I made the assumption that it  
+doesn't...the server still has to process the request and return 
+something.
+
+-----  begin webbench.pl  ----- 
+#! c:\perl\bin\perl.exe
+
+####################################################### 
+# webbench.pl 
+# 
+# Benchmarking utility for a web server 
+# Uses IO::Socket instead of LWP 
+# Returns # of secs required to GET the requested page 
+# 
+# copyright 1999 Keydet89 
+#######################################################
+
+use IO::Socket;
+
+print "Webbench.pl, by keydet89\n"; 
+print "copyright 1999 keydet89\n\n"; 
+print "usage:  [perl] webbench.pl [host] [page]\n"; 
+print "\t[perl]\toptional call to interpreter\n"; 
+print "\t[host]\tname of web server (default = Microsoft)\n"; 
+print "\t[page]\tpage to GET (default = /)\n\n";
+
+# Set defaults if nothing entered at the command 
+# line 
+$server = shift || 'www.microsoft.com'; 
+$page = shift || '/';
+
+# Simple error checking...make sure that the  
+# page begins with a / 
+if (!($page =~ m/^\//)) { 
+  $page = "/" . $page; 
+} 
+$port = 80;
+
+print "[host]:\t$server\n"; 
+print "[page]:\t$page\n\n";
+
+# Set up the socket 
+$remote = IO::Socket::INET -> new ( 
+          Proto => "tcp", 
+          PeerAddr => $server, 
+          PeerPort => $port) ||  
+    die "Could not open socket: $!\n";
+
+# Start our timer 
+$start = time; 
+
+# Send HTTP query...asking for default page 
+print $remote "GET $page HTTP/1.0 \n\n";
+
+# Read file into array 
+@lines = <$remote>;
+
+# End our timer 
+$end = time;
+
+# Close the connection 
+close($remote);
+
+# $start and $end hold the number of seconds  
+# since Jan 1, 1970 
+$total = $end - $start; 
+print "End time:\t$end\n"; 
+print "Start time:\t$start\n"; 
+print "Total time:\t$total sec\n"; 
+-----  end webbench.pl  -----
+
+That's it!  The script itself is pretty well commented, but if 
+you have any questions, consult the Perl documentation (that you 
+downloaded with ActivePerl if you're on 95/98/NT) or email 
+me with your question.
+
+****************************************************************** 
+Editor's Comments:
+
+Okay, another one out the door!  Just to reiterate...don't ask me 
+about breaking into a system, don't ask me to do your web surfing 
+for you, and if you have a question, be clear.  I get a TON of email 
+and anything with 'h4x0r skript' gets deleted!
+
+Hasta! 
+ 
+
+______________________________________________________________
+
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Mark Schmitz <wizard@rt66.com>; Wargame Sysadmin, Satori <Satori@rt66.com>; 
+Grand Pooh-bah: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!

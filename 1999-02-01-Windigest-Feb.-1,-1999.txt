@@ -1,0 +1,651 @@
+Feb. 1, 1999 
+_______________________________________________________________________ 
+Happy Hacker web site http://www.happyhacker.org 
+Svenska: http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+URL of the day: http://dailynews.yahoo.com/headlines/ap/technology/story.html?s=v/ap/19990121/tc/hapless_hacker_
+_______________________________________________________________________
+
+Reader Submissions 
+A Cup of Java 
+Firewalls...Again 
+Perl Corner 
+Editor's Comments
+
+****************************************************************** 
+Reader Submissions
+
+From:  "Fam. Engelen" <fam.engelen@worldonline.nl> 
+Hi,
+
+In the last issue of the HHD/Win (Jan. 25) you cover ftp-ing 'by hand'. 
+A good thing for newbies to get to know the language a bit better is to 
+take a look at the FTP program 'FTP Explorer'. It has a graphical explorer-like 
+interface, but you can directly see how you pressing the buttons is 
+convertred to FTP code. Check it out. (www.ftpx.com)
+
+Arnout
+
+[Editor's Note:  For all of you who are trying to access friend's 
+Win95/98 shares, and you're getting all sorts of errors, such as 
+3787, try:
+
+http://www.patriot.net/users/carvdawg/win95.txt      ]
+
+From:  "Rod Johnson" <rjohns@otenet.gr> 
+**Note:  Rod sent this email encrypted via PGP.  Great job, Rod, 
+and thanks for reading the Digests.  Now, would you mind sending 
+along _your_ key?
+
+I tried out the HH info on netstat a couple of weeks ago.  It worked 
+just the way it was supposed to but since I did not know that much 
+about IP etc, I quit playing.  After much reading, I went back to try 
+netstat, ping etc agian.  Imagine my surprise when Win98 kept telling 
+me the programs were performing illegal operations and were being shut 
+down.  Since I had installed MS mail and faxing, I thought that was 
+the problem.  When I removed the faxing and mail, no dice.  I then 
+appealed to the newsgroups for advice, only silence.  I removed all 
+networking, adapters etc and reinstalled them.  Nothing.  Then I 
+explored the CAB#8 and extracted ping.exe to a temp directory. 
+SURPRISE! the ping I extracted was 8 KB smaller than the ping on my 
+system.  The ping I extracted manually worked just fine. Then I 
+checked netstat and found the same thing.  I then manually checked 
+each executable in the CAB and found that the files on my disk were 
+all exactly 8 kb larger.
+
+ARP.exe 
+FTP.exe 
+IPCONFIG.exe 
+NETSTAT.exe 
+PING.exe 
+TRACERT.exe
+
+Unfortunately, I didn't think to keep the larger files, I just 
+overwrote them with the files from the cab.
+
+Any thoughts?
+
+Rod
+
+[Editor:  Hhhhmmm...I don't know.  You said you installed 
+fax and mail...did you install anything else?  I don't know if 
+you were infected with anything, but you may have gotten bad 
+copies of files or something...]
+
+From:  Jonah <jonah.braun@schoolofhope.org>
+
+Hello.  I have been reading the HH digest for quite some time now and 
+decided to ask a question.  If this isn't the right address to do 
+that... 
+my apologies!
+
+Anyway, my question that I would like you to cover in the digest 
+is a bit of info about being a server.  That's pretty general and 
+probably naive, but anyway.  Specificly, I want to have port 80 
+open on my computer and be able to have people type in my ip 
+address and serf there!  Is this possible at all on a win95 box?
+
+Thanks for your time,
+
+Joe E. B.
+
+[Editor:  Joe, yes, it is possible...if you have a web server 
+installed.  Keep your eye on future Perl Corners...we'll be dealing 
+with servers!!]
+
+From:  Mullder85@aol.com
+
+thank you for taking the time to read this. i have a few questions. 
+1 where can i get info on programing and free software? I am 
+intrested in learning. 
+2 how do i use eudora pro with aol how do i find out smtp and 
+the hole aol name?? 
+3 how do i get free easy to understand info on hacking like the 
+happy hacker witch is (my bible)? thank you!
+
+[Editor:  1.  Well, we have been covering programming and giving 
+away free software here in the HHD.  2.  I don't know if you can use 
+Eudora with AOL.  Maybe one of our other readers can help.  3.  Uhm... 
+stay tuned!!  Oh, and please be more careful with the spelling...I 
+don't know that Carolyn will appreciate the reference in the last 
+line...  ;-)  ]
+
+From:  nickord <nickord@netcologne.de>
+
+Dear Carolyn,
+
+I sent you a question recently concerning Netbus and BO and whether 
+sommething like McAffe virus scan would defend against them. However ! 
+That bit in the new windows digest on Perl and how you can see if they 
+are there is brilliant ! Maybe I still don´t understand the difference 
+between a straight virus and BO, but putting two and two together, it 
+looks like a virus scanner won´t deal with BO and Netbus, but you can 
+check them out yourself with what you showed today . Thanks,
+
+Nick
+
+[Editor:  Thanks, Nick!  Glad you found something to be of use. 
+Some virus detection firms have jumped right on top of the BO issue 
+and can 'detect' it...though how they do so, I have no idea.  But if 
+you read up on BO and NetBus, you'll find out what the 'fingerprints' 
+are for each.  Any readers want to contribute about any of the other 
+'trojans' besides NetBus and BO?  Signatures, files, default ports, 
+anything?] 
+ 
+
+From: "Marc S. Hernandez" <sushix2@gate.net>
+
+hello, im subscribed to the Happyhacker comlumn
+
+I have a question.....is it possible to open another pc's CD-ROM 
+remotely with a script or command....It has to be because a friend 
+of mine downloadied a canned hacking tool and it worked...the only 
+problem with canned programs id that i dont trust them....
+
+I was wondering if you knew if this was possible to do it manualy 
+....if you do.  how - so?
+
+Thanks 
+Marc S. Hernandez
+
+[Editor:  yes, Marc, there is a way.  Of course, I think we all 
+know how to do this manually...push the button.  But ever since Coca 
+Cola came out with a nifty little .exe that offered the user a 
+free cup holder as a promotion...and neatly opened their CD-ROM 
+drive...other little gems from the Net have been offering the same 
+functionality.  Namely...BO, NetBus, etc. ]
+
+From:  "Bob" <ulysses@twcny.rr.com> 
+Subj:  FTP Hacking
+
+I read a short file on getting root access to an FTP using three easy 
+commands, after hitting enter at both the login and password prompts:
+
+quote user ftp 
+quote cwd ~root 
+quote pass ftp
+
+I've tried this several times, and it has only worked twice; once on an 
+already completely public FTP, and the second, well, it still said I 
+didn't have enough credits to download. Obviously that isn't right, 
+'cause it's suppose to be root access. Most of the time I either just 
+get disconnected, or a "bad sequence of commands" type error. Is there 
+a better way to get access to an FTP, if not, just a different way? 
+Sorry to bother you 
+~Bob
+
+[You can got to jail warning!  Get permission to try to break into a 
+computer before you try this ftp server trick.  Use koan.happyhacker.org, 
+fishbone.happyhacker.org, or smurfette.happyhacker.org, they are all legal 
+targets.  Or get a friend to give you permission to break into his computer. 
+-- Carolyn Meinel]
+
+[Editor:  I ran across this file a while ago, and tried it out 
+on a couple of ftp servers.  Like you, I found that it didn't 
+work on everyone, and I also found it to be more successful when 
+I took out the middle command.  I suspect that what happened here 
+is that the person who wrote the file found that it worked once 
+on a very, very badly misconfigured server...and then posted it 
+as a guaranteed method of getting root.  If any of our readers 
+would care to write up an explanation of what the commands do, 
+and maybe do some legal testing of the sequences, I'd be more than 
+happy to post it here...]
+
+****************************************************************** 
+A Cup of Java
+
+I've received a few emails about Java, mostly from people asking 
+how to start programming in Java.  Okay, I thought I would just 
+present a little taste here (without a biscotti...  ;-)  )  and 
+see what the reactions of our readers are...eh...is...whatever.
+
+The best place to get started with Java is from the people who 
+brought you JAVA!!
+
+http://www.javasoft.com
+
+If you're interested in tutorials, links, games (there's even 
+a version of Tron in Java!!) then drop by the Yahoo site, and 
+follow the links...Computers -> Programming Languages -> Java.
+
+****************************************************************** 
+Firewalls...Again
+
+After the last HHD for Windows, I received several emails asking 
+about how to get around firewalls and proxy servers.   So I 
+thought I would revisit the subject briefly to clarify a point or 
+two...
+
+First, a proxy server is a sort-of firewall, in that it can be 
+used to perform some of the functions of a firewall.  Now, this is 
+not to say that MS-Proxy 2 is as good a firewall as, say, 
+WatchGuard's FireBox or NAI's Gauntlet.  No, I am not here to 
+rate firewalls and similar products.
+
+Usually when a company installs a firewall, it puts the firewall 
+on the connection out onto the Internet, so that all traffic 
+going either to or from the Internet must pass through it:
+
+   Internet  <--> [ Firewall ] <-->  LAN
+
+Now, this isn't always the case...but this is generally how it 
+happens and how it should be.
+
+Many readers ask me if they are on the LAN, and they want to 
+surf hacker sites on the web, and the firewall blocks them from 
+doing that...how can they surf the hacker sites?
+
+Well, as I pointed out in the last HHD...if the firewall is 
+configured properly, you can't.  Not *through* the firewall. 
+Your options include:  wait to do your surfing when you get 
+home, or install a modem (**NOT RECOMMENDED AT ALL...but it is 
+a solution).
+
+****************************************************************** 
+Perl Corner
+
+NOTE:  To best experience this edition of the Perl Corner, I 
+strongly suggest that you read through the article first, 
+then copy the files that are listed here over to a directory. 
+I am using "c:\perl\md5" here...but whatever you wish to use 
+is up to you.  Then, go back through the article again, this 
+time looking at the files and scripts, and making any changes 
+as you go...
+
+In this edition of the Perl Corner, we're going to build a non- 
+real-time intrusion detection system!!  But before we do that, 
+we need to go over a few concepts, and get a couple of things set 
+up.  At this point, I am going to assume (I know, it's a dangerous 
+thing to do!!) that everyone has ActiveState's ActivePerl build 
+509 installed...well, you don't need exactly build 509, as an 
+earlier build will do.  If you don't, then go to:
+
+http://www.activestate.com
+
+and follow the links for the latest build.  Download and install 
+ActivePerl, and for Win95/98 users, make sure that you PATH is 
+correct.  To do this, start by typing "set" at a command prompt, 
+and look for the "PATH" environment variable.  If you don't see 
+"c:\perl\bin" in that statement (you should see "c:\windows" and 
+"c:\windows\command"...), then go to the command prompt and type:
+
+c:\>notepad autoexec.bat
+
+Now, add the line:
+
+PATH=%PATH%;.;c:\perl\bin
+
+...and save the file.  The "." tells the environment to look in 
+the current working directory (whichever one you're in) and the 
+"c:\perl\bin" tells the environment to look in...well, that 
+directory...when searching for commands.  Your Perl interpreter, 
+"perl.exe" is in "c:\perl\bin".
+
+Now, reboot.  Of course, you could just type "autoexec.bat" at 
+the prompt, but that would only update the environment for that 
+session.
+
+For NT users...all you should need to do is update your 
+environment via the System icon in the Control Panel.
+
+Okay, by now I hope we're just about ready to get started.  Now, 
+we need to talk a little bit about what we're going to be doing. 
+As we all know, one thing that intruders like to do to systems is 
+alter files.  For example, add something like "deltree /y c:\" 
+to the autoexec.bat file...which is bad, VERY BAD!!  On Unix 
+systems, there are rootkits that trojan many of the commands, 
+such as ls, ps, etc, so that they perform some additional function. 
+So, one thing we can do to detect that someone has been 
+intruding in our system is by detecting changes in specific 
+files.  There is a system for Unix called "Tripwire" that does 
+just that.  So what we are going to do is use ActivePerl to build 
+a rudimentary intrusion detection system for Win95/98/NT.
+
+So how do we detect changes in files?  Well, let's look at what 
+we have available.  Part of the error checking used by TCP/IP is 
+something called a checksum.  A checksum is generated for header 
+or data information, using a mathematical function, so that 
+when the receiving end gets the data, it also generates a checksum. 
+If the checksums match, the data is considered to be free of 
+errors.  One such function that can be used to generate checksums 
+in general is the MD5 checksum.  I won't go into any detail about 
+the MD5 checksum...that's something for the reader to investigate!
+
+The first thing we need to do is get the MD5 module for Perl.  I 
+haven't found that it comes as part of the default install...but 
+not to worry!  It's really easy to get...just follow these simple 
+instructions:
+
+1.  Go to:  http://www.activestate.com/packages/zips 
+2.  Locate and download the file "MD5.zip". 
+3.  On your local system, create a directory called 
+    "c:\perl\mods". 
+4.  Using Winzip, extract the contents of MD5.zip into the new 
+    mods directory...make sure that you tell Winzip to use the 
+    directory structure in the archive.  Now, you should have, 
+    at least, a ".ppd" file and a readme file in the mods dir, 
+    and another directory called "x86".  This directory will 
+    contain another zipped archive. 
+5.  Go to a command prompt, change to the c:\perl\bin dir, and 
+    type "ppm".  This will put you in the Perl Package Manager, 
+    in interactive mode...your prompt will now look like "ppm>". 
+6.  At this prompt, type:  "set repository LOCAL c:\perl\mods".
+
+NOTE:  For all the skript kiddies and newbies...in the Perl Corner, 
+spelling is VERY important!!
+
+7.  Again at the ppm prompt, type "install MD5".  Choose "y" when 
+    prompted...and wait.
+
+If you don't get an error message at this point...you might have to 
+wait a couple of seconds, the package should be installed.  To see 
+if this is the case, type: "query MD5" at the prompt, and you should 
+see "MD5" as the response.  NOTE:  Type "help" to see what the 
+various commands are...
+
+Okay...we should be just about ready to get started.  Now, for 
+this project, we're going to use a couple of different parts. 
+This is how the project will be set up:
+
+1.  We're going to have a list of files that we're going to 
+    check.  This is going to be our configuration file. 
+2.  We're going to have a Perl script that will go through the 
+    config file and for each file, will generate an MD5 checksum 
+    and save that, with other info, to a log file. 
+3.  We're going to have a second Perl script that will go through 
+    the log file and verify that each checksum is correct.  If 
+    not, a message will be printed to both the screen and to 
+    a separate log file.  If everything checks out fine, then 
+    a message to that effect will be printed to the screen.
+
+Note:  The important thing to remember here is that the config 
+file should consist of files that are not expected to change. 
+This includes autoexec.bat and config.sys for Win95/98 systems, 
+web pages (if you're running a web server), system files, etc. 
+If any of these files do change, then you need to re-run the 
+script to generate the checksums, so that the log file is updated.
+
+**NOTE:  A couple of things I want to point out here...first, 
+if we were writing these files for NT only, we could very easily 
+send all messages to the Event Log, rather than to a separate file. 
+But as we're writing it for 95 and 98 as well, we have to use 
+the files.  Also, there is nothing in this project that is specific 
+to Windows...so these files can be run on any system that has 
+Perl (and the MD5 module, of course) installed...including Linux, 
+Amiga, Mac, etc!!
+
+Our first file is called "filesentry.pl".  I've provided comments 
+in the code to explain what's going on:
+
+-----  begin filesentry.pl  ----- 
+#! c:\perl\bin\perl.exe
+
+# Make absolutely sure that the preceeding line is 
+# the FIRST line in the file...all the way at the 
+# top, with NO blank lines prior to it!!
+
+# Okay, these are the modules we want to use 
+# We installed MD5 previously, and the stat module 
+# is part of Perl 
+use Digest::MD5; 
+use File::stat;
+
+# This is a subroutine call that prints some info 
+# to the screen 
+usage();
+
+# These are our files that we'll be using.  I've hard- 
+# coded them for ease of use.  Feel free to change them 
+# if you like. 
+$config = "md5_conf.txt"; 
+$log = "md5_log";
+
+# Try to open the files...if we can't we want to quit. 
+open (CONF, "$config") || die "Could not open config file: $!\n"; 
+open (LOG,"> $log") || die "Could not open log file: $!\n";
+
+# Now that we have the configuration file opened, we'll read 
+# the lines of the file...which are just filenames with 
+# complete paths. 
+while (<CONF>) { 
+  $file = $_; 
+  chomp $file;
+
+# The '-d' operator checks to see if the filename is 
+# really a directory.  If it is, we skip it. 
+  if (-d $file) { 
+    print "$file is a directory.  Skipping...\n"; 
+  } 
+  else {
+
+# The '-e' operator checks to see if the file 
+# exists...if it doesn't, we can't generate a 
+# checksum, now, can we? 
+    if (-e $file) {
+
+# Use the baseline subroutine to generate the 
+# the checksum.  Also get other information about 
+# the file, such as size, modification and creation 
+# date, last access time.  Check the HTML docs in 
+# Perl for the File::stat function 
+      $base = baseline($file); 
+      $size = stat($file)->size; 
+      $atime = stat($file)->atime; 
+      $mtime = stat($file)->mtime; 
+      $ctime = stat($file)->ctime;
+
+# Generate comma-delimited output to the screen and 
+# to the log file...this makes it easy to separate 
+# the information in the log file for verification 
+      print "$file,$base,$size,$atime,$mtime,$ctime\n"; 
+      print LOG "$file,$base,$size,$atime,$mtime,$ctime\n"; 
+    } 
+    else { 
+      print "$file does not exist.\n"; 
+    } 
+  } 
+}
+
+# Tidy up by closing the files...this is good 
+# programming practice. 
+close(CONF); 
+close(LOG);
+
+# This is our baseline subroutine.  This code was 
+# taken directly from the HTML docs that were 
+# generated when we installed the module. 
+sub baseline { 
+  my ($file) = @_; 
+  open (FILE, $file) or die "Can't open $file: $!\n"; 
+  binmode(FILE); 
+  $digest = Digest::MD5->new->addfile(*FILE)->b64digest; 
+  return $digest; 
+}
+
+# My usage subroutine.  This shouldn't change if you plan to 
+# use and distribute this code. 
+sub usage { 
+  print "FileSeNTry, by Keydet89\ncopyright 1998-1999 Keydet89\n\n" 
+}
+
+-----  end filesentry.pl  -----
+
+Okay, to run this all we need is the config file.  Here's an 
+example that I used...please notice a couple of very important 
+things about this file...first, all files are accompanied by 
+their complete path.  Second, there are NO comments...the only 
+lines in this file are the paths and filenames themselves.  For 
+this project to work as is, this must be the case.  However, 
+you should feel free to modify these files and scripts to meet 
+your own needs.
+
+Now, here's my config file:
+
+-----  begin md5-conf.txt  ----- 
+c:\tadau.txt 
+c:\jam.bat 
+c:\perl.txt 
+c:\cam 
+-----  end md5-conf.txt  -----
+
+Notice, I'm keeping things very simple.  I'm using files that I 
+have on my system for this example.  Feel free to use any files 
+of your own.
+
+To run this, go to the directory that the files and scripts are 
+in and type:
+
+c:\perl\md5>filesentry.pl
+
+You'll see the results printed to the screen, but I'll include the 
+results from my logfile here:
+
+-----  begin md5_log  ----- 
+c:\tadau.txt,Pckmx+Mso6xW/gEd+aDk5Q,6291,917617488,916953603,916953602 
+c:\jam.bat,/fIJSjyhFTTxJD7kG+gvBQ,53,917617608,907588950,907588950 
+c:\perl.txt,uF4oQ+6iL4C1KOGO1eaOmQ,596,917617520,908370748,908370748 
+c:\cam,tmXzIgJ+0agg0WGdmpnEOw,265,917617540,916087470,916087088 
+-----  end md5_log  -----
+
+Okay, now we've got a comma-delimited log file.  Now let's look 
+at what we need to do to verify that the checksums are correct.
+
+-----  begin md5ver.pl  ----- 
+#! c:\perl\bin\perl.exe
+
+# We need to use the MD5 module again 
+use Digest::MD5;
+
+# Print out some text to the screen 
+usage(); 
+print "This file verifies MD5 checksums.\n";
+
+# Open the files we need to use. 
+$log = "md5_log"; 
+$warn = "warn.log"; 
+open(LOG,"$log") || die "Could not open log file.\n";
+
+# Notice how we've opened the warning file...we 
+# are using the redirection operator to open it for 
+# for writing.  Using ">", the file is overwritten 
+# each time...to save warnings cumulatively, use ">>" 
+open(WARN,">$warn") || die "Could not open warning file.\n";
+
+# Loop through the log file, reading in the info 
+# from each comma-delimited line. 
+while (<LOG>) {
+
+# Notice how easy it is for us to separate 
+# the items in the comma-delimited file 
+# using the split() command. 
+  ($f,$md,$size,$atime,$mtime,$ctime) = split(/\,/); 
+  if (verify($f,$md)) { 
+    print "$f verified.\n"; 
+  } 
+  else {
+
+# If a file is found to not have a correct 
+# checksum, we want it printed to the warning 
+# file!! 
+    print "Warning:  $f checksum has changed!.\n"; 
+    print WARN "Warning:  $f checksum has changed!.\n"; 
+  } 
+}
+
+# Tidy up a bit by closing the files 
+# Again...good programming practice. 
+close(LOG); 
+close(WARN);
+
+# Here's our subroutines.  Notice that 
+# we re-used the baseline() subroutine 
+# from filesentry.pl...and why not?  It 
+# works just fine, and does what we want 
+# it to do! 
+sub verify { 
+  my ($file,$md5) = @_; 
+  if (baseline($file) eq $md5) { return 1;} 
+  else { return 0;} 
+}
+
+sub baseline { 
+  my ($file) = @_; 
+  open (FILE, $file) or die "Can't open $file: $!\n"; 
+  binmode(FILE); 
+  $digest = Digest::MD5->new->addfile(*FILE)->b64digest; 
+  return $digest; 
+}
+
+sub usage { 
+  print "FileSeNTry verify, by Keydet89"; 
+  print "copyright 1998-1999 Keydet89\n\n" 
+} 
+-----  begin md5ver.pl  -----
+
+Again, notice that I've commented the file with explanations 
+of the hows and whys along the way.  Now, when you run this 
+file:
+
+c:\perl\md5>md5ver.pl
+
+you should see the names of each of the files followed by 
+"verified".  Ah, but let's test this little script and see 
+if we can detect file changes.  To do this, open one or two 
+of the files in your md5_conf.txt file in Notepad, and make 
+some changes...anything will do.  Now, don't run filesentry.pl 
+...instead, run md5ver.pl again.  I altered two of the files 
+in my test config file, and my warning file contains:
+
+Warning:  c:\tadau.txt checksum has changed!. 
+Warning:  c:\cam checksum has changed!.
+
+Well, those are the files I changed!!  So we've verified that 
+these scripts do, in fact, detect changes to files.  As an 
+exercise for the reader, I'll leave it up to you to make 
+comparisons of file sizes, access and modification times as 
+part of the check, as well.  That way, you can display the 
+old settings, as well as the new, in your warning log.
+
+Now, some of the things we've covered here include opening 
+and closing files, reading to and from files, and some general 
+Perl things.  As I stated earlier, if you're using NT, it might 
+be a good idea to send all your warnings to the Event Log.
+
+If anyone is a sysadmin, and uses this example, even as a 
+starting point, please let me know.  I would like to know the 
+feasibility of using this example in a networked environment, 
+with files on mapped shares, etc.
+
+Stay tuned for upcoming editions of the HHD...in the Perl Corner 
+I plan to cover two subjects.  Next time, we're going to write 
+some scripts using sockets...for example, we'll write a script to 
+implement a finger client (this is something the Win95/98 users 
+will be interested, as those os's don't ship with their own 
+implementation of a finger client).  After that, we'll create 
+a server...maybe a finger server, or maybe a server to trick the 
+skript kiddies into thinking that you've got NetBus running!!  So 
+read up on TCP/IP sockets!!
+
+_________________________________________________________________
+
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Mark Schmitz <wizard@rt66.com>; Wargame Sysadmin, Satori <Satori@rt66.com>; 
+Grand Pooh-bah: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!

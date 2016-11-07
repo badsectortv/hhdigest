@@ -1,0 +1,513 @@
+Feb. 14, 1999 
+_______________________________________________________________________ 
+See the Happy Hacker web site at http://www.happyhacker.org 
+Your local firewall blocks you? Try http://happyhacker.org 
+Svenska: 
+http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+_______________________________________________________________________
+
+Opening Comments 
+URLs 
+Reader Submissions 
+More Trojans 
+Web Server for 95 
+A little bit about netcat 
+Perl Corner 
+Editor's Comments
+
+****************************************************************** 
+Opening Comments
+
+Here's another edition of the digest.  Some recent news stories, 
+via The Hacker News Network, have shown what can happen if you 
+try to hack into computers without permission.  Analyzer, a 20 
+yr old from Isreal, was indicted for his hacks of the Pentagon 
+and NASA.  On top of that, a 15 yr old from Vienna, VA, was 
+_arrested_ for doing thousands of dollars worth of damage to 
+systems at Clemson University.  Know how he got in initially? 
+An 18 yr old Computer Science student gave the kid his USERNAME 
+AND PASSWORD!!
+
+****************************************************************** 
+URLs
+
+The Nessus Project 
+http://www.nessus.org/
+
+VanDyke Technologies...some good tools here... 
+http://www.vandyke.com/
+
+The Freefire Project 
+http://sites.inka.de/sites/lina/freefire-l/index.en.html 
+**I know it's Unix-oriented, but it's still a good place 
+to start...
+
+Don't believe everything you read (URL wraps...) 
+http://dailynews.yahoo.com/headlines/technology/zdnet/story.html 
+?s=n/zdnn/technology/19981223/199812231303
+
+Self-proclaimed "hacker" hacks the media 
+http://www.wired.com/news/news/culture/story/17789.html
+
+****************************************************************** 
+Reader Submissions
+
+From: "Anonymous" 
+Subj: BO question
+
+Hello
+
+I am using BO and the help file for all the commands isn't that 
+descriptive.  Is there someone who has a help file that would help me 
+out with some of the commands?  I am looking for help especially with 
+the copy command.
+
+Thank You 
+Java
+
+[Editor:  I don't have BO...no, seriously, I don't!!  ;-) 
+Anyway, I am sure that there are plenty of help files out there. 
+If another reader would be kind enough to send a URL in...]
+
+From: MadMan <madman593@yahoo.com> 
+Subj: just wanted to let you know
+
+just wanted to let you know that the "space lan" link in your last 
+digest was wrong.  the correct address is
+
+http://cnn.com/TECH/space/9902/01/space.lan.idg/index.html
+
+================================= 
+i've got a question.  i finally got the hardware for a lan and am 
+trying to connect a win98 box and redhat 5.1 to a freebsd 3.0 box. 
+what files would i need to configure on each.  thank you.
+
+]v[ad]v[an
+
+[Editor:  Hhhhmmm...thanks for being alert, but the link is, in 
+fact, correct.  The index.html page is simply the default.  I 
+clicked on the link in the HHD, and I was presented with the 
+page immediately.  Now, that aside...to your LAN question.  I 
+hope that there are readers out there with who can help...and 
+I'd really appreciate it if one or more would put the info on a 
+web page and send me the URL!!]
+
+From:  "Jim Noble" <jimnoble@mindspring.com> 
+Subj:  RE: Happy Hacker Digest, Windows edition
+
+As a Network Manager, I love to read your digest.  I am keeping a 
+running list of sites that contain hacking tools *(ie Sam Spade, 
+L0pht Crack, etc). 
+I thought you might like to share with your readers.  I am mainly 
+an NT environment, but I am also moving towards Linux.
+
+You can see my site by viewing 
+http://jimnoble.home.mindspring.com/security.htm .
+
+Happy hunting...
+
+Thank you, 
+Jim Noble
+
+[Editor:  Thanks!  And I'm glad to see sysadmins and network 
+managers read the Digest!!]
+
+From: Geoffrey Greene <teiresias@monmouth.com> 
+Subj: Thanks
+
+Hi, 
+I would like you to print a response to the enourmous amounts of 
+responses. Number One. STOP. I figured it out. Number Two. Thanks 
+to all the people who sent me suggestions and tips, they were all 
+helpful. If I have any other questions I now know where to send 
+my query. Thanks for the support. 
+Geoff
+
+[Editor:  Sometimes, you need to be careful what you wish for!!]
+
+****************************************************************** 
+More Trojans
+
+From:  The Reaper <thereaper666@gmx.net> 
+Subj:  Trojans
+
+Here I am again. 
+Thanx for the perl url first. 
+The reason for my mail is a big collection of Trojans I found, I 
+thought you may want to warn your readers, it are more then I would 
+have expected. 
+Well, check out (NOTE:  The URL wraps...) 
+http://www.hackcity.com/public/version_1/security/win958/ 
+win958_trojen.html
+
+Bye 
+TheReaper
+
+****************************************************************** 
+Web Server for 95
+
+From:  "Dennis Wildbore" <denniswildbore@hotmail.com> 
+Subj:  Web servers for 95
+
+Hello,
+
+I have found a really good and small(67k) web server 
+for windows 95. It's called tinyweb and can be obtained 
+at http://www.ritlabs.com/tinyweb/ . Oya it is free 
+and it runs in the background and it works really well 
+with perl for your cgi scripts.
+
+Dennis W. 
+****************************************************************** 
+A little bit about netcat
+
+A while back, I wrote a Guide To (mostly) Harmless Hacking about 
+using telnet.  A copy of that Guide can be found at:
+
+http://www.patriot.net/users/carvdawg/telguide.txt
+
+In that Guide, I also briefly discussed a nice little app called 
+netcat, from Weld Pond of L0pht.  Recently a reader asked me 
+to provide a brief "how-to" on this amazing little tool.
+
+First of all, to get the 95/NT version of netcat, go to:
+
+http://www.l0pht.com/~weld/netcat
+
+>From this page, you should read the readme files for both the 
+95/NT and the Unix versions...I suggest you read them.  I will 
+try to run through the various switches and provide some 
+examples.
+
+Some of the switches for netcat are:
+
+-d  detach, or stealth mode 
+-e<prog> program to execute upon connection 
+-l  listen for connections 
+-L  same as -l, but listen again after the 
+  connection is closed 
+-n  specific numeric addresses; don't do a DNS lookup 
+-o<logfile> get a hexdump of the action 
+-p<port> port to bind to 
+-s<ip addr> bind to a specific source IP address 
+-t  Answer telnet negotiations upon connection 
+-u   specify UDP 
+-v   verbose mode (add another -v for even more...) 
+-w  specify timeout
+
+Now, let's look at you to use this tool.  From here on out, 
+the following examples will assume that you've copied the netcat 
+executable, nc.exe, into a directory in your PATH; c:\windows 
+for 95/98, or c:\winnt\system32 for NT.  Also, the examples 
+will be demonstrated from the command line, or the c:\> prompt.
+
+For help, type:
+
+c:\>nc -h
+
+This will display the switches above, plus some others.
+
+To connect to a port on a server, or to check if the port is 
+open:
+
+c:\>nc -v <IP or hostname> <port>
+
+or
+
+c:\>nc -v -n <IP addr> <port>
+
+You can use this to connect to ports like 21, 25, and 110, and 
+the commands you enter will be sent to the server.  Notice that 
+the second command above uses the '-n' switch to restrict netcat 
+to IP addresses and not use DNS lookups.
+
+You can use netcat as a simple finger client by typing:
+
+c:\>nc -v <host> 79 < user.txt
+
+For this example to work, you need to have a file on your 
+computer called 'user.txt'.  The file simply contains the 
+username you are interested in.  You can also add '> log.txt' 
+to the end of the command to capture the output of the command 
+to a file called 'log.txt'.
+
+You can download web pages with netcat.  I do this sometimes, 
+using two files.  The first file is called 'get.txt', and 
+contains the command that I want netcat to send to the HTTP 
+server:
+
+-----  begin get.txt  ----- 
+GET / HTTP/1.0
+
+-----  end get.txt  -----
+
+**NOTE:  The '/' is the default web page on the server, usually 
+'index.html' or 'default.asp'.  The text on the first line MUST 
+be followed by 2 carriage returns (ie, hit Enter twice) for this 
+to work.  That's how the HTTP protocol works.  If you were writing 
+this in Perl, the code you would use would look like:
+
+print $socket "GET / HTTP/1.0\n\n";
+
+The second file is a batch file:
+
+-----  begin jam.bat  ----- 
+@echo off 
+nc -v %1 80 < get.txt > index.txt 
+notepad index.txt 
+-----  end jam.bat  -----
+
+Pretty simple.  You run this batch file by typing:
+
+c:\>jam www.happyhacker.org
+
+The nc command will connect to port 80 on the server you 
+entered as a argument, send the contents of 'get.txt', 
+which is our HTTP command, and store the results in 
+'index.txt'.  Then, the contents of 'index.txt' will be 
+displayed in a Notepad window.  This allows you to see the 
+headers and source of the web page, without worrying about 
+malicious JavaScript or VBScript...and you can see the 
+comments, if there are any.
+
+To create a simple server:
+
+c:\>nc -l -p 1234 < file
+
+This example listens on port 1234 on you computer, and when 
+someone connects to that port, the contents of the file named 
+'file' are sent to the client.  You can use this as a simple 
+finger server...simply use different files of edit the contents 
+of 'file' to suit your needs.
+
+A very simple web server would look like:
+
+c:\>nc -L -d -p 80 < file
+
+Where file contains the text you want to send to the browser. 
+It's not the greatest web browser, but it works!
+
+A little more sophisticated server, like a telnet server, looks 
+like:
+
+c:\>nc -L -d -p 525 -t -e cmd.exe
+
+This command tells netcat to listen for connections on port 525, 
+answer telnet negotiations, and execute cmd.exe (if you are on 
+95, you'll want to use 'command.com') upon a connection.  The 
+'-d' runs the connection in stealth mode.  One thing you need 
+to keep in mind is this...this is basically a telnet server that 
+doesn't ask for a username and password.  When someone connects 
+to port 525 (in this case...you can use any port you choose) 
+they are presented with a prompt on YOUR MACHINE!  So you can 
+see how this can make a pretty dangerous trojan...
+
+When you're using netcat for network testing, you can include 
+the '-o' switch along with the name of a log file in order to 
+get a hex and ASCII record of the communications.
+
+Now for the reader challenge...what innovative ways do YOU 
+use netcat?  If you have another way of using netcat, something 
+different what's been presented here, or something other than 
+sending fake email through port 25, let me know!  I'll post 
+some of the most unique ways of using netcat in an upcoming 
+digest!
+
+****************************************************************** 
+Perl Corner
+
+Okay, in this edition of the Perl Corner, we're going to create 
+a server.  That's right...we're going to write code that will 
+sit and listen for connections, and when one is detected, will 
+respond in a predetermined fashion.  For this Perl Corner, we'll 
+write a finger server to go along with our finger client from 
+the last edition.
+
+First, a quick word about client-server computing.  This is the 
+model adopted by the Internet...there are servers out there, just 
+waiting for connections.  They sit and 'listen' all the time.  On 
+your computer is the client...telnet, ftp, even your browser. 
+These tools request services and support from the servers.
+
+That being said, here's how our server is going to work...first, 
+we create a server socket that will listen for connections.  The 
+server socket listens on a specific port (in other words, it's 
+bound to that port) for incoming connections.  Ports below 1024 
+are referred to as 'well-known' ports...see RFC 1700 for a list 
+of 'well-known' ports.  As we are creating a finger server, we 
+will bind our server to the 'well-known' finger port, 79.  Once 
+a connection is made, we will service that connection, and then 
+close the socket connection to the client.  Simple.  In servicing 
+the connection, all we expect to get is a single input...a 
+username to be queried.  In this example, all we do is output the 
+hostname, IP address and query back to the client.
+
+-----  begin fingerd.pl  ----- 
+#! c:\perl\bin\perl.exe 
+# Simple finger daemon 
+use IO::Socket;
+
+# listen on the well-known finger port 
+my $port = 79;
+
+# create a server socket to listen for 
+# connections 
+$sock = new IO::Socket::INET (LocalPort => $port, 
+                       Proto => 'tcp', 
+                              Listen => 5, 
+                              Reuse => 1) || 
+     die "Socket error:  $!\n" unless $sock;
+
+print "Finger server started...\n";
+
+# listen for connections 
+# don't disconnect after the first connection 
+# just keep listening 
+while (1) {
+
+# new connection accepted 
+  $new_sock = $sock->accept();
+
+# get the IP of the client, and the hostname 
+  $ip = $new_sock->peerhost(); 
+  ($name,$alias,$addrtype,$length,$new_addr) = 
+      gethostbyaddr(inet_aton($ip),AF_INET);
+
+# print the hostname and IP to the screen 
+  print "Connection from:  $name [$ip]\n";
+
+# get the query from the client and display it 
+  $query = <$new_sock>; 
+  print "Query: $query\n";
+
+# send a message back to the client 
+  print $new_sock "$name [$ip] queried $query\n";
+
+# close the socket 
+  close($new_sock); 
+} 
+-----  end fingerd.pl  -----
+
+Great!  What've we've got is a very simple finger server (daemon 
+for the Unix-philes among us).  From here, you can modify the 
+info that is sent back to the client.  Just copy the line that 
+starts with "print $new_sock" and add what information you want to 
+appear to the client between quotes.  Be sure to add the new line 
+character (\n) at the end of each line.
+
+Then, try testing the server.  Run it on your system, and have 
+your friends connect via: 
+(a) telnet, 
+(b) the finger client from the last edition of the HHD, or 
+(c) any other finger client.
+
+NOTE:  If your computer is not listed in the DNS tables with 
+some easy-to-remember name, then the finger command would need 
+to look something like this:
+
+finger [user]@[a.b.c.d]
+
+where [user] = the username you are querying, and [a.b.c.d] is 
+the IP address of the computer that the above finger server is 
+running on.  If you are using the finger client from the last 
+edition of the HHD, the command would look like:
+
+perl finger.pl [user]@[a.b.c.d]
+
+Other ways to adapt this server: 
+-> use if-else statements to display different text or take 
+   various actions based upon the username that is queried. 
+   Here's a quick code snippet to do just that: 
+   ----  begin code  ---- 
+   if ($query =~ m/root/i) { 
+     print $new_sock "You've fingered the root account.\n"; 
+   } 
+   elsif ($query =~ m/test/i) { 
+     print $new_sock "You've fingered the test account.\n"; 
+   } 
+   else { 
+     print $new_sock "User $query unknown.\n"; 
+   } 
+   ----  end code  ---- 
+-> remove the code that sends a response back to the client, and 
+   you have a rudimentary port scan detector!  Once you have the 
+   IP of the person who scanned you, you can use code from the 
+   last Perl Corner to port scan and finger them! 
+-> modify the above code to do specific things, such as log the 
+   connection to a file, or to the EventLog (for sysadmins who 
+   are using audit reduction and analysis tools). 
+-> far more complicated versions of this server could open a file 
+   based on the username queried, and output the contents of 
+   that file to the client, much the same way a .plan or .profile 
+   file is used on Unix accounts.  Or, a connection could be made 
+   to a backend database for the information...
+
+PERL TIP 
+I wanted to add a quick note here about making things easier for 
+yourself when running Perl scripts, like the finger client from 
+the last edition of the HHD.  By now, most of you have seen that 
+you have to type "finger.pl user@host" or "perl finger.pl 
+user@host" to execute the script.  Well, if you use the script a 
+lot, that can be a lot of typing, can't it.  We have another tool 
+that we can use...batch files!
+
+Now, let's say that your finger.pl script is in the c:\perl 
+directory.  Using the DOS prompt, go to that directory, and 
+type "notepad finger.bat".  A Notepad window will open, and you 
+should choose "yes" on the dialogue box to create the file (if it 
+doesn't already exist).  This file should contain the lines:
+
+-----  begin finger.bat ----- 
+@echo off 
+c:\perl\bin\perl.exe finger.pl %1 
+----- end finger.bat -----
+
+That's it.  Save the file, and go back to the command line.  Type 
+"finger user@host".  The batch file will call the Perl script and 
+pass the argument, in this case "user@host", to the script.
+
+For other tips, check out:
+
+http://www.patriot.net/users/carvdawg/perl.html
+
+****************************************************************** 
+Editor's Comments
+
+That's it.  Let me close by saying that I really enjoyed the 
+recent issue of the Unix version of the digest.
+
+If you're going to help out and answer a question posted here, 
+please feel free to do so...and make sure that you send it to the 
+person who wrote the question.  I can't tell you how many answers 
+I've received over the past couple of weeks, and I'm the only one 
+in the recipient list of the email!  Also, if you have a question, 
+please be clear about it...give enough info to support the 
+question, use decent spelling/grammar/punctuation.  I'm getting a 
+lot of email just from the Digest now, and if I can't understand 
+what it is you want, I have to just delete it.  Help me to help 
+you!!
+
+___________________________________________________________________
+
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Mark Schmitz <wizard@rt66.com>; Wargame Sysadmin, Satori <Satori@rt66.com>; 
+Grand Pooh-bah: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!

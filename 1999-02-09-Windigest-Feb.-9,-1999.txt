@@ -1,0 +1,467 @@
+Feb. 9, 1999 
+_______________________________________________________________________ 
+Happy Hacker web site http://www.happyhacker.org 
+Svenska: http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html 
+_______________________________________________________________________
+
+Opening Comments 
+URLs 
+Reader Submissions 
+Alternative Searches 
+MuLinux 
+Tools You Need 
+Perl Corner 
+Editor's Comments
+
+****************************************************************** 
+Opening Comments
+
+Okay, another issue is here!!  If you're interested in helping out 
+a reader with a question, make sure that you send your help to 
+that reader, and not just the Editor!  All you have to do is add 
+that reader's email address right next to mine.  And thanks to  
+all the readers who responded to questions in the last HHD!
+
+****************************************************************** 
+URLs
+
+Here's what Microsoft thinks of Perl 
+http://www.microsoft.com/sitebuilder/magazine/clinick_perl.asp
+
+Here's someone you DO NOT want to emulate!! 
+http://www.montrealgazette.com/PAGES/990130/2229372.html
+
+Some browser tips... 
+http://cnn.com?/TECH/computing/9902/01/50browse.idg/
+
+Wanna build a really cool LAN...in space? 
+http://cnn.com?/TECH/space/9902/01/space.lan.idg/
+
+Interesting article regarding TCP/IP vulnerabilities in 
+Win9x (NOTE:  URL wraps...) 
+http://www.genocide2600.com/~tattooman/exploits-Feb-99/ 
+tcp_chorusing.html
+
+AOLs AIM, written in TCL!! 
+http://www.aim.aol.com/tik 
+**Okay, this one will take a little explanation...TCL is a 
+scripting language.  This version of AIM is written in TCL 
+and comes with source.  TCL/Tk 8.x for Win32 is free...so 
+you can run it on Windows just as easily as Linux...
+
+****************************************************************** 
+Reader Submissions
+
+From:  "Shaun Kerr" <shaun4228@hotmail.com> 
+Subj:  War gameing
+
+I'm pretty much a newbie and I had a question.  I have a cable  
+modem(Cable company)I'm hooked up to a LAN and i have win98.I was  
+wondering how i can look at the other computers on the newtwork.   
+I've tried everything i knew how to do, i've looked at books and i  
+still can't figured it out. I might be going about it wrong, so  
+could you please help?  If you could it would be graetly appreciated.
+
+ANother question i had is how can i set a wargaming game? my friend  
+has a phone modem and i have a cable modem.  Is there anything i  
+need to buy or pay for? And how would I go about setting it up?
+
+[Editor:  Generally, cable systems that I have seen have been  
+shared mediums...which means that everyone shares the same physical 
+medium or wire.  In this case, one would simply have to click on 
+'Network Neighborhood' to see other machines.  Since you didn't  
+mention _which_ company does your cable, I don't really know.  As to 
+the WarGame...you're all set.  All you have to do is set up a  
+machine on the Net someplace, and make sure that everyone involved 
+has permission to try to 'get root'.  I say this...because more than 
+one security assessment by a consultant has ended suddenly due to 
+the presence of the FBI!!]
+
+From:  "Weazel" <weazel_@gmx.net> 
+Subj:  other TROJANS!
+
+In the latest Happy Hacker Digest, you wrote:
+
+>Any readers want to contribute about any of the other 
+>'trojans' besides NetBus and BO?  Signatures, files, default ports, 
+>anything?]
+
+Another trojan, perhaps not the most common one, is called "ICQ Trogen" 
+and it's a tricky one. First: The filesize is very small (39k) so you 
+won't notice if it comes together with a small file... However: It's 
+not used very much and it can't really do much (get, send, execute and 
+delete files). The tricky part is that you can't detect it by using 
+"netstat -an" (which is far more faster than netstat -a! = UPDATE YOUR 
+PERL-SCRIPT!!!) but it has a port open, and it can be detected with 
+help by a port scanner. The port# is 4950. Now I come to the SPECIAL 
+PART! I disassembled the executable and one strange thing I noticed is 
+an unfamiliar IP hardcoded in the EXE. "206.129.11.16". What happens? 
+Does the trojan send files to that IP when it's started? What is 
+"206.129.11.16"? Why? I will upload the file to the web later so that 
+you can do some work too. The URL will be 
+http://members.xoom.com/weazel_/icqt.zip
+
+Any comments... Ideas? Anything? By the way: I'll take a deeper look on 
+BO and NetBus later (spy, SoftIce, W32DASM etc) and I'll try to dig 
+deeper into the [bleep]. Anyone wanna help? Together, we can make a REAL 
+trojan-hunter! ASM-coders are welcome!
+
+[Editor:  I did some looking, and that IP is the address for a 
+machine called swarm.mosquitonet.com.  Hhhmm...well, with regards 
+to the Perl script...that one isn't going to be changed anytime 
+soon.  Sorry.  And for future reference, please don't use any bad 
+language...I [bleep]ed it this time...]
+
+From:  "fat man" <roodey99@hotmail.com> 
+Subj:  hi need help
+
+hi my name is sam i would like to know how to gain root to a web  
+site, please with basic words. later..
+
+[Editor:  Looks like sam was fishing...strange, though, as I've 
+always thought that it's pretty clear that we don't do that...]
+
+From:  Geoffrey Greene <teiresias@monmouth.com> 
+Subject:  Question
+
+Hi, 
+I was not sure which category this landed under so I sent to both of 
+you. My problem has to do with my password in Netscape Navigator running 
+on Windows 95. A couple months back I subscibed to an ISP and started 
+using Netscape as my browser. The first couple of times I had to log my 
+password but then I had it saved in the browser. Now I want to reformat 
+my hard-drive(long story on that one). Stupid me I forgot what my 
+password was or is(dumb isp madeup password makes no sense and 
+impossible to remember). I was wondering if there was a place in 
+Netscape Navigator where I could find my password. If you know of a  
+way to fix this problem please e-mail me. thanks 
+Geoff
+
+[Editor:  Just a thought...but if the ISP generated it, and you 
+didn't change it...did you try calling the ISP?  If anyone can 
+help...email Geoff with the answer and cc: me if you would  
+please...]
+
+From:  Anonymous 
+Subj:  Web servers for 95
+
+I response to the reader who submitted a request for information about 
+operating a web server in Windows 95...
+
+I am not so sure about Win95, but it's probably the same,  Microsoft, 
+shipped with Explorer 4.0 a little daemon called "My Personal Webserver" 
+(or something to that effect). Interestingly, as a result of haphazard 
+programming, occasionally, I have stumbled onto dialup users that are 
+running this, (and most likely they don't know it). Funny thing, the 
+server runs as a background process on a Mac, that is, it doesn't  
+show up as an active process in the application menu. To boot, it can  
+be set to allow web access to the entire drive(s) (Filesharing must  
+be enabled)!  Wonder how many unsuspecting users out there have their  
+drives wide open? [Microsoft par for the course!]
+
+Anyways, the server is controlled from a control panel on a Macintosh 
+and probably has a similar device on a Win box. Besides allowing you  
+to run a little webserver, it also comes with an asp parser, so you  
+can learn asp, get a job, and become a real web-geek.
+
+For those who prefer more industrial apps, Apache has released  
+v1.3.4 with a win32 build. Although it is reportedly not as stable  
+as the UN*X version, it is probably fine to work with, (Apache don't  
+mess around...). 
+According to a site survey by Netcraft, Apache is running on 53% of  
+the webservers out there, so if you're gonna mess around with  
+technology, you might as well use the best ;-) --Oh yeah, I forgot  
+to mention Apache is shipping with Mac OS X & it's open source, i.e.  
+*free* (bet Microsoft can't even pronounce that word.)  
+(For the already-web-geeks with a job, check out Apache + PHP3, 
+(www.php.net; available for win32), for some real backend geeky fun!)
+
+[Editor:  Ouch!  Quite a bit of Microsoft bashing...but I think 
+the point comes across.  If you want a free web server, maybe 
+you would consider Apache.  But isn't IIS free, too?  Maybe I've 
+been out of the loop too long...]
+
+****************************************************************** 
+Alternative Searches
+
+Ever been looking for something and just can't find it?  Have 
+you done a search and gotten a ton of links back that have had 
+nothing to do with what you're searching for?  Well, Yahoo has 
+always been a good place to start, because the sites are broken 
+down by topic categories.  Even if you don't find exactly what 
+you're looking for, you can at least get started on a site like 
+Yahoo.  And now there are several alternatives.  Sure, search 
+engines at AltaVista, Lycos, Excite, etc, all work great...as 
+long as you use the right search string.  Well, as long as you're 
+searching, here are a couple of other sites to try out:
+
+Snap To It 
+http://www.snap.com
+
+Smart Looking 
+http://www.looksmart.com
+
+Encyclo. Britannica 
+http://www.eBLAST.com
+
+[Editor:  This is provided as information for the reader.   
+Please don't inundate my mailbox with your favorite search  
+site...] 
+****************************************************************** 
+MuLinux
+
+From:  "Jonathan Philpott" <philpott@bigwig.net> 
+Subj:  MUlinux
+
+You might want to mention it, but a hacking newbie can a version  
+of linux that can run of a disks and contains all the networking  
+tools, (ping,ftp,telnet,lynx,httpd,firewall software) and also  
+include  modules for sound and with an extra you can have X windows.
+
+This version is called "MUlinux" and be downloaded @  
+www4.pisoft.it/~andreoli/mulinux.html
+
+[Editor:  I know this is the Windows edition, and I don't 
+usually cover Linux, but an alert reader sent this in, and I  
+was impressed with what I saw on the web page!] 
+****************************************************************** 
+Tools You Need
+
+One of the readers asked me to provide a list of tools that one 
+would need on Windows to be a super wargaming "hacker".  If you  
+and your friends are going to set up a wargame, what kind of tools 
+do you need?  Hhhmmm...let's take a look at that one...
+
+Well, the first thing I'd say you would need is a printer.  Yep, 
+to get started, you want to print out all of the Happy Hacker 
+Digests and Guides To (mostly) Harmless Hacking that you can  
+find!!
+
+You have a telnet client on your Windows boxen, but you might be 
+more comfortable with some other version, so try looking at:
+
+http://www.tucows.com
+
+...for a 'terminal client', or any replacement for telnet. 
+It might also help to have your favorite FTP client, too. 
+Then, of course, you'll need a portscanner...Sam Spade, from 
+http://www.blighty.com is my favorite.  It has a lot of other 
+great utilities, as well.  Also, get netcat from:
+
+http://www.l0pht.com/~weld
+
+...it's indispensible.  And then I would recommend...Perl.  Yep, 
+with Perl, you can tie together a lot of command line tools, 
+of the kind you find on the Net and the Resource Kits.  You  
+can use Perl to automate tasks, detect and respond to portscans, 
+and a million other things.  It's all up to you.  Get the  
+latest version of Perl from:
+
+http://www.activestate.com
+
+Remember, though...regardless of whether you have tons of tools, 
+of you have five or six of the best tools...none of this matters 
+if you have no idea what you're doing!!  The most important tool 
+you can have is knowledge!  Know what you're doing.  Start a  
+small 'wargame' with your friends. And as always, make sure  
+that whatever box you're wargaming against, you have permission  
+to do so!! 
+
+And to find other tools:
+
+Go to: 
+http://www.softseek.com
+
+...and look for ClickSave, and also look in the Utilities 
+section.  The PCMagazine site has a lot of free utilities, 
+as well:
+
+http://www.pcmag.com
+
+Here are some neat tools for NT: 
+http://www.mensk.com/software/other/other_software.htm 
+http://www.sysinternals.com/
+
+Check out the Forensic Toolkit from: 
+http://www.ntobjectives.com/
+
+****************************************************************** 
+Perl Corner
+
+Okay, as promised, we're going to do some socket programming! 
+We're going to write a couple of network client programs, so I 
+hope you studied up on TCP/IP sockets.  If you didn't, there is 
+some rudimentary explanation in the Perl HTML help docs that 
+were installed with ActivePerl.
+
+The Internet operates primarily on the principle of client- 
+server networking.  This means that for you to connect your 
+client application (telnet, ftp, web browser, etc) to a host, 
+there must be the appropriate server running on that host.  So  
+for all of you who are telneting around the Internet and wondering 
+why you're not connecting to anything...
+
+Many initial programming examples that I have seen have started 
+out with echo or daytime clients...well, I decided to start out 
+with a finger client, since you be able to easily modify the 
+example for other uses.  
+
+Before we get into the code let's briefly go over how finger 
+works.  Finger is a service that lets you query information  
+about a user on a system.  Now, Unix and VAX systems ship with 
+a finger service ('fingerd' for Unix types), but NT and 95  
+don't.  So, generally speaking, if you are able to finger  
+someone, they are likely on some sort of Unix system.  The 
+'well-known port' for finger is port 79...finger servers will 
+(almost) always listen on port 79.  So we are going to write a  
+client script that queries a finger server for information 
+about a user.  We can query such users as a username, root, bin, 
+or 'null' (sent as a carriage return to the system), which  
+asks the server who is logged in to that system.  Finally, our  
+client is going to as closely resemble a real finger client  
+as possible, so we are going to have to do some parsing (ie,  
+separating) of parts of a text string. 
+
+-----  begin finger.pl  ----- 
+#! c:\perl\bin\perl.exe
+
+use IO::Socket;
+
+# This line does some very simple checking 
+# to see that the proper number of arguments 
+# (ie, 1) are passed.  Admittedly, it's a  
+# little messy if it exits... 
+$test = shift || die usage();
+
+# Separate the username and the host from 
+# the argument string 
+($user,$host) = split(/\@/,$test);
+
+# If no username was given (ie, @domain.com) 
+# then use a carriage return as the username 
+$user="\n" if ($user eq "");
+
+finger($user,$host);
+
+################################################# 
+# Send data to a port, read back all data 
+# (finger) 
+################################################# 
+sub finger { 
+  my ($user,$host) = @_; 
+  print "Finger [$host]...\n"; 
+  $remote = IO::Socket::INET -> new ( 
+          Proto => "tcp", 
+          PeerAddr => $host, 
+          PeerPort => 79) || 
+    die "Could not connect to $host: $!\n"; 
+   
+# Now that the socket is set up and connected, 
+# we just need to send the username to the server. 
+# That's how a finger query is done... 
+  if ($user eq "\n") { 
+    print $remote "\n"; 
+  } 
+  else { 
+    print $remote "$user\n"; 
+  }
+
+# Read in data as long as the server continues to  
+# send it to us...and print it out to the screen. 
+# Notice that we're going to let the remote server 
+# close the connection...we're not using a close() 
+# method call. 
+  while(<$remote>){ 
+    print; 
+  } 
+  print "\n"; 
+} 
+################################################# 
+# usage() 
+################################################# 
+sub usage { 
+  print "finger.pl, by Keydet89\n"; 
+  print "copyright 1999 Keydet89\n\n"; 
+  print "finger.pl user\@host\n"; 
+} 
+-----  begin finger.pl  -----
+
+To use this script (assuming that it's in the c:\perl  
+directory), change to that directory and type:
+
+c:\perl>perl finger.pl user@host.com
+
+or
+
+c:\perl>finger.pl user@host.com
+
+NOTE:  A couple of things here.  First, you DO NOT type 
+the part "c:\perl>"...that is used to indicate a command  
+prompt.  Second, instead of "user@host.com", use a real user- 
+name and host...this is just an example.
+
+That's it.  You now have a working finger client for Win95/98 
+systems.  Now, we could easily expand this to do checks on the 
+argument string for finger forwarding...that is, sending a  
+finger query through an intermediate server, and masking our 
+query.  A finger forwarding query looks like:
+
+c:\perl>finger.pl user@example1.com@example2.com
+
+This forwards a finger query for 'user@example1.com' through 
+the server at 'example2.com'.  Using the above example, feel 
+free to do so.
+
+Another interesting use of the above finger client would be to  
+modify it to do expn and vrfy queries against an SMTP server. 
+I'll leave that as an exercise to the curious reader...
+
+Next time, we'll build a server.  That's right...we'll use  
+Perl on Win32 to build our own finger server!  So stay  
+tuned...some future topics I'm interested in are:
+
+-- Writing a port scan detector 
+-- Win32 extensions 
+-- Using Win32 modules 
+
+Please feel free to send in topics you'd like to see covered.
+
+NOTE:  I always appreciate reader input.  If you have some code 
+that you're trying to get working, then go ahead and send it in. 
+Make sure you mention what platform you're using and send the  
+snippet of code along...
+
+****************************************************************** 
+Editor's Comments:  
+
+Okay, I hope you've enjoyed this edition of the HHD, Windows  
+edition.  Keep your suggestions and comments coming!  Also, if  
+you've got something you'd like to see in the HHD, then write it 
+up and send it in.  Or, post it on the web and send me the URL. 
+There are a lot of smart readers out there with some good ideas, 
+and a lot of knowledge!
+
+******************************************************************
+
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Mark Schmitz <wizard@rt66.com>; Wargame Sysadmin, Satori <Satori@rt66.com>; 
+Grand Pooh-bah: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
