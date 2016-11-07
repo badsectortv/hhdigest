@@ -1,0 +1,551 @@
+March 3, 1999 
+_______________________________________________________________________________ 
+Visit the Happy Hacker site at http://www.happyhacker.org 
+_______________________________________________________________________________
+
+Opening Comments 
+URLs 
+Reader Submissions 
+TCP/IP Resources 
+Telnet, and why it doesn't work 
+How Password Crackers Work 
+Building a Library 
+Exploits Explained 
+Perl Corner 
+Editor's Comments
+
+****************************************************************** 
+Opening Comments
+
+For all those new readers (and some of our old, faithful readers, 
+too), please understand that the folks at the Happy Hacker site 
+are not here to help you break into a site, or 'hack a web page'. 
+We are here to help you learn, and take some of the mystery out 
+of this 'hacking' thing, but we are NOT here to help you commit 
+a crime.  So please stop sending me email asking me to help you 
+'hack a web page', boot someone off of IRC, or anything like 
+that. 
+ 
+
+****************************************************************** 
+URLs
+
+O'Reilly's 'Learning the BASH Shell' has examples available 
+for download 
+http://www.oreilly.com/catalog/bash2/noframes.html
+
+Want some help with domain names? 
+http://www.alldomains.com
+
+Look up ISPs all over... 
+http://www.herbison.com/herbison/iap_meta_list.html
+
+****************************************************************** 
+Reader Submissions
+
+From:  HanzStandz <webmeister@v-wave.com> 
+Subj:  RE: Happy Hacker Digest, Windows Edition, Feb. 23, 1999
+
+HI.  After reading your section on "Secure M$IE Part 1 of Many"  
+I fooled around with attemping to delete the history and temporary  
+internet files folders and discovered a few things.  One way of  
+removing these folders and deleting the DAT files without Norton  
+Diskdoctor, is to simply remove the system attribute, and MOVE  
+them to another location, where you can thenDELTREE them with  
+impunity.  For example, I wrote a simple batch file that 
+does the trick:
+
+md c:\wipetemp 
+attrib -s c:\windows\history 
+attrib -s "c:\windows\temporary internet files" 
+move c:\windows\history c:\wipetemp\temp1 
+move "c:\windows\temporary internet files" c:\wipetemp\temp2 
+deltree /y c:\windows\cookies 
+deltree /y c:\wipetemp
+
+The above removes the temporary internet files folder,  
+as well as all those pesky system-named subfolders under it.  
+
+Hanz Broden.
+
+[Editor:  Great!  Small enough to fit into the HHD.  This is 
+just another way of doing things...and we're always glad to 
+get readers submissions!]
+
+From:  King of the Mack III <joshmcree@rocketmail.com> 
+Subj:  Need a file find A file
+
+Hello from denver,
+
+I would just like to say if you ever need a file goto 
+the following web adress
+
+http://ftpsearch.lycos.com/?form=medium
+
+This will have every single file you may ever need. 
+For example ( I know im not supposed to do this but 
+here goes )let look for windows 95 instead of typing 
+win95 or windows 95 you type in win95_23.cab how 
+about windows 98 type in win98_62.cab. i hope you get 
+the drift of what im saying 
+
+joshmcree
+
+ps: the editor asked for something called 'strings' i 
+need to know more about the  file to find the right 
+one. there are millions of files called string.* or 
+strings.* your search needs to be precise.
+
+[Editor:  I am familiar with the search engine, and have  
+used it in the past.  Thanks for bringing it up again.]
+
+From:  james_241@juno.com 
+Subj:  Reply to Active Desktop
+
+I've been messing around with the Active Desktop in my free  
+time and there's been one thing that I've been wanting to do  
+that I haven't found a way yet.  I want to put My Computer on  
+the desktop.  Not just an icon, but the actual My Computer.   
+I've put some VBScript buttons on the desktop (Try messing  
+around with various VBScript things on your desktop. It's fun.) 
+, but I have not yet been able to find or write a script that 
+will put My Computer on the Active Desktop.  Anybody got any  
+ideas?
+
+-pg 
+
+http://www.hotwired.com/members/profile/punkgeek
+
+[Editor:  Again, if someone has a good answer for this, please 
+send the URL of the web page it's on.  The URLs are much easier 
+to deal with than a lot of text that needs to be reformatted 
+to the digest, etc.]
+
+From:  "Robin Keir" <robin@keir.net> 
+Subj:  Reverse Engineering and Strings
+
+In Feb 23rd Windows HH digest "Ezzy" mentioned he was looking  
+for a URL to give him a start into reverse engineering programs  
+("insert your own codes..."). The most comprehensive site for  
+this kind of stuff can be found at Fravia's site. If you can  
+manage to work through literally hundreds of pages and deal  
+with the rather aloof and esoteric writing style then try the 
+main page at http://fravia.org/ (which appears to be down right  
+now) or one of it's several mirrors such as: 
+http://www.phase-one.com.au/fravia/
+
+Note to editor: I wrote a kind of "strings" equivalent for Win32  
+files that runs on Win9x and I'm fairly sure will work on NT.  
+It is not a command-line driven utility, instead it has a nice  
+graphical user interface. It is of particular interest to programmers  
+since it will show Ascii, Unicode and Resource strings together  
+with information such as the memory address at which the strings  
+are referred to at run time i.e. as shown by a decent disassembler.  
+Grab this utility at: 
+http://members.home.net/rkeir/download/bintext.zip
+
+Rob Keir
+
+[Editor:  I've been playing with bintext, and it works really 
+well on my NT box.  I'll have to work with it some more, though, 
+to see if it's what I'm looking for...
+
+Also, SubZero "SuBZeROKX@aol.com" sent in this URL: 
+http://www.tbcnet.com/~clive/vcomwinp.html ]
+
+From:  ToFly2Die@aol.com 
+Subj:  Recycle Bin Icon
+
+I was wondering if you could please help me with a problem  
+I am having.  Somehow I lost the recycle bin icon on my desktop  
+and have the lame flying window as the icon now.  I have windows  
+95 and have no idea how to get the icon back.  Thanks a lot for  
+your help.
+
+Scott 
+ 
+
+**This one was forwarded to me by the UnixEditor: 
+From: "David Thomas" <david@iecnc.org> 
+> 
+>Hi HH Team, 
+> 
+>I've been reading through HH, website and digest, for a while now and 
+>I must say you guys are doing a FABULOUS job. 
+> 
+>I'm looking for a program (preferably a small *free* util for Win 
+>9x/NT) that does the same job as Etherpeek's Capture feature; so I can 
+>see where the computers on the LAN are connecting to on the Internet 
+>(and which port they're using to connect). I know you've probably 
+>mentioned something like this in one of your web pages/digest, but I 
+>must have missed it. I have been searching the net like crazy, but I 
+>have not found one that works. 
+> 
+>Hoping you can help me, keep up the good work. 
+> 
+>David T. Thomas 
+>
+
+[Unix Ed- EtherBoy, of the NetMan suite, is shareware that does  
+something like what you're looking for. Check  
+http://www.ndgsoftware.com/ for more info and a download.]
+
+****************************************************************** 
+TCP/IP Resources
+
+URI's TCP/IP Resources list... 
+http://t2.technion.ac.il/~s2845543/tcpip_rl.html
+
+Here's a URL from Yahoo (URL wraps...) 
+http://dir.yahoo.com/Computers_and_Internet/ 
+Communications_and_Networking/Protocols/ 
+*This URL is an excellent source of information...a great place 
+to start reading about just about any protocol.
+
+****************************************************************** 
+Telnet, and why it doesn't work
+
+Several readers have asked me this question...and I think I have 
+an answer that everyone could use.
+
+Many (yes, many...as in a lot of) readers have emailed me telling 
+me that they are trying to telnet to their friend's computer and 
+they can't connect.  I have had one or two that were sent to the 
+Grand Poo-bah (ie, Carolyn) and then forwarded on to me.  Well, 
+I'm here to tell you why it's not working...
+
+The Internet operates on a client-server model of communications. 
+This means that your PC has client software (browser, telnet, ftp, 
+etc) and somewhere out there, on the wild, wide Internet, there  
+are servers...web servers, email servers, ftp servers, etc.  To 
+communicate to a server, you opent the appropriate client software. 
+We'll use the web browser in our example.  You open your browser, 
+and type in a URL.  Your browser then looks up the IP address of  
+the server in question, and if it exists, tries to make a  
+connection.  If the connection is made, the browser then requests 
+that the server 'serve up' the appropriate page.  Easy enough,  
+right?
+
+Now, this works b/c there are web browsers, and web servers.  In 
+the case of telnet, all of the Microsoft platforms ship with  
+a telnet client...except DOS.  However, NONE of them ship with  
+telnet servers!  Not even NT Server!  NT Server ships with an  
+FTP server, and you can get other tools and servers, but  
+Microsoft doesn't ship a telnet server with NT, 95, or 98.   
+Therefore, when you try to connect to your friend's machine 
+with your telnet program and you don't specify a port to connect 
+to, the program tries to connect to the default telnet port; ie, 
+23.  Since there is no server running there (not by default anyway) 
+you won't get a connection.
+
+****************************************************************** 
+How Password Crackers Work
+
+Ever wondered how password crackers like John the Ripper and  
+L0phtcrack work?  Well, I'm not going to tell you where to get 
+them...b/c, well, you can John the Ripper from any number of  
+sites, and truthfully, it's pretty obvious where you can get  
+L0phtcrack.  I thought I would simply discuss how the crackers 
+do what they do, and talk about the usefulness of such things.
+
+Okay, anyone who uses a computer is pretty familiar with passwords. 
+Passwords are what's used as a form of security...the assumption 
+is that a user has a password that only they know, and when used 
+in combination with the username, the sysadmin can be pretty sure 
+that only that user is logging in and accessing resources.
+
+However, this isn't always the case.  Every since passwords were 
+first used, the users themselves have always been the weakest 
+link in the chain.  They use easy to guess passwords...like  
+their username, for example, or the name of a spouse, child, 
+pet, etc.  Some passwords are actually written down and pasted to 
+the monitor!  There is the old joke about the difference between 
+a secure and an insecure LAN being that on a secure LAN, you have 
+to turn the keyboard over to see where the passwords are written 
+down!  With the advent of cracking tools, sysadmins can check to 
+see if passwords are easily cracked.  Then there are methods of 
+protecting the passwords themselves...on Unix, there are  
+'shadowed' password files.  Microsoft issued a dll in Service Pack 
+2 that checks certain parameters of the password, and the User 
+Manager on NT allows the sysadmin to set other conditions on  
+passwords, such as requiring the user to change the password at 
+certain intervals, minimum length of a password, etc.
+
+When the sysadmin creates a user account, it often has a default 
+password.  Many organizations use the username, or the username 
+with a number, as the default password...and some don't use  
+technical controls to require the user to change it.  That pass- 
+word is encrypted using a one-way encryption algorithm...this  
+means that the text password is encrypted, and you can't run  
+the encrypted password through an algorithm to get the original 
+text password back.  
+
+When you sit down at the computer and type in your password, you 
+see '*''s echoed back...that's how the textbox is programmed  
+in case someone is shoulder-surfing.  What happens then is that 
+the password you enter is encrypted with the same one-way  
+algorithm used on your original password, and this new encrypted 
+password is compared to the one that is stored.  If they are 
+the same, then you are 'authenticated' by corresponding the  
+username you entered to the correct password.
+
+Now, since the passwords are encrypted by a one-way algorithm, 
+the way a password cracker 'finds' passwords is by using a  
+dictionary, or via brute force.  Using a dictionary works by 
+taking a word from a list, encrypting it, and comparing it to 
+the stored, encrypted password.  A brute force cracker works 
+by trying combinations of keys, from the entire key-space (ie, 
+all numbers, lower-case letters, upper-case letters, symbols, 
+etc), encrypting each combination, and comparing that one to  
+the stored, encrypted password.  You can see how using a strong 
+password, one that you won't find in ANY dictionary, and isn't 
+a name, would be very difficult to crack.  Not impossible, just 
+very, very difficult.  A strong enough password will take far 
+longer for a cracker to crack than someone is willing to wait.
+
+****************************************************************** 
+Building a Library
+
+You've been surfing the net for a while, and you've got a lot 
+of text files...to include the back issues of the GTMHH and HHD. 
+Some of the files just don't make any sense to you...either the 
+spelling and grammar are so bad they're just too confusing, or 
+the files were grabbed from universities, and they are just WAY 
+too technical.  So what do you do?  
+
+Well, I would start at the library...you can get an understanding 
+of the basics there...as well as a lot of other great stuff.  
+Most libraries have a computer section and there are all sorts 
+of books available.  Even though 4-6 months is a lifetime in the 
+computer industry, some very basic things, like TCP/IP and net- 
+working, haven't changed in a while.  So reading a book on net- 
+working from 5 years ago is a good start.  Also, some of the  
+older books on programming languages, such as C, are an  
+excellent starting point.
+
+Another resource that is available is the MacMillian Publishing 
+site at: 
+http://www.mcp.com
+
+Here, you can create a 'personal bookshelf', and evaluate books 
+for a period of time.  You can read 'Maximum Security', for  
+example.  I recently added 'Upgrading and Repairing PCs' to my 
+personal bookshelf...there are several excellent chapters about 
+how hard drives and memory work.  If you are interested in  
+programming, you can find books for VB, Perl, Java, etc.  There 
+are many categories available.
+
+A quick note on back issues of the GTMHH and HHD:  A reader  
+recently asked me to compile an archive of back issues of the 
+HHD b/c the archive at the Happy Hacker site is, well, a little 
+behind.  The reader said that he'd been to the HHD archive site 
+in Finland: 
+http://w1.340.telia.com/~u34002171/hhd/gtmhh/svenska/hhdsvensk.html
+
+However, the reader wanted the ASCII versions of the digests.   
+Well, my first response was to go ahead and put the archive  
+together.  But then it dawned on me...there is an easier way, and 
+I don't have to duplicate the efforts of our Finnish friends. 
+When you access the above site, just choose Edit -> Select All... 
+in your browser, and copy the text of the page.  Then paste it 
+into Notepad.  There, you're done!
+
+If you have a library that you'd like to share with other HHD 
+readers, put the information on a web page, and send me the  
+URL.  Reader submissions are always welcome.  DO NOT send me  
+a long list of links...just ONE URL, please.
+
+****************************************************************** 
+Exploits Explained
+
+I get a lot of email from readers that starts of by saying "I'm 
+an avid reader of the HHD...", but then the very first question 
+has an answer from the last edition of the HHD!  Well, given some 
+of the questions I have received recently, I thought I would cover 
+a topic that I presented in a Guide a while back...just what is an 
+exploit?  Here's the link to the Guide:
+
+http://patriot.net/~carvdawg/exploits.txt
+
+All the info here is still good.  Take a look at it...and if you 
+still have questions, or still don't understand why you can't 
+get telnet to work when you try connecting to your friend's  
+95 box, let me know.
+
+****************************************************************** 
+Perl Corner
+
+Well, I've promised this in the past, so it's about time I got  
+around to presenting an example of creating GUIs under Perl! 
+In this edition of the Perl Corner, I'll create a script that  
+grabs information from system, and presents it in a nice GUI.
+
+For beginners, O'Reilly and Assoc. has a 'Learning Perl/Tk'  
+book available.  Check their web site for a sample chapter to 
+the book, as well as an archive of the examples from the book: 
+http://www.oreilly.com/catalog/lperltk/
+
+Also, the 'Web Client Programming' book from O'Reilly's has  
+example available...a great Tk example is the 'webping.pl'  
+script.  
+
+Before we get started with Perl/Tk programming, we need the Tk 
+module.  Go to:
+
+http://www.activestate.com/packages/zips
+
+...and download Tk.zip.  Use WinZip to open this archive into 
+a directory called 'c:\perl\mods' (this assumes that you  
+installed Perl into the default directory of 'c:\perl').  When 
+you extract the archive, make sure you check the 'Use Folder 
+Names' box...I am using WinZip 6.3.
+
+Once you have extracted the archive, open a DOS prompt, and  
+change directories to 'c:\perl\bin' and type: ppm.  You will 
+recieve a ppm prompt:  PPM>
+
+Type the following commands
+
+set repository LOCAL c:\perl\mods 
+install Tk
+
+You may have to wait a few minutes, but the package will 
+eventually be installed.  When you get the prompt back, 
+type: query Tk
+
+This will show you if Tk is installed.  Type 'quit' to exit 
+the interactive PPM shell.
+
+Okay, now we have Tk installed.  Let's put together our first 
+script...and just like our first Perl script, we'll start  
+with a 'Hello, World' implementation...
+
+-----  begin tkdemo1.pl  ----- 
+#! c:\perl\bin\perl.exe
+
+# This script was taken from 'Advanced Perl Programming',  
+# by Sriram Srivivasan, published by O'Reilly
+
+# Use the appropriate module 
+use Tk; 
+$top = MainWindow->new(); 
+$top->title("TkDemo");
+
+# Put together our window 
+$l = $top->Label(text => 'Hello, World!', 
+                 foreground => 'red', 
+                 anchor => 'n', 
+                 relief => 'groove', 
+                 width => 15, 
+                 height => 3);
+
+# Display the window 
+$l->pack();
+
+# This ends our event loop 
+MainLoop(); 
+-----  end tkdemo1.pl  -----
+
+Okay, what we'll do next is build a little window that 
+uses the Win32.pm module to show us some of the info 
+about our system.  Now, this script can only be run on 
+a Win32 system...it will NOT run on Linux (unlike many of 
+our previous scripts).  Also, I have only tested this on  
+NT...I don't have a Win95 or 98 system to test this on, so 
+I have no idea if there are any problems.  I also don't  
+know how this will work on 98...notice the array '@os'  
+doesn't have an entry for 'Win98'.
+
+-----  begin tkdemo.pl  ----- 
+#! c:\perl\bin\perl.exe
+
+# Import the necessary modules 
+use Tk; 
+use Tk::LabFrame; 
+use Win32;
+
+# Get our variables 
+($string,$maj,$min,$build,$id) = Win32::GetOSVersion(); 
+@os = qw(Win32s, Win95, WinNT); 
+($drive,$fs,$flags,$maxpath) = Win32::FsType("C:"); 
+$bp = Win32::BuildNumber(); 
+$ln = Win32::LoginName(); 
+$nn = Win32::NodeName(); 
+$dn = Win32::DomainName();
+
+$mw = MainWindow->new(); 
+$mw->title("SysInfo");     
+my $f1 = $mw->LabFrame(-label => "Operating System", 
+         -labelside => "acrosstop");    
+
+$f1->Label(text => "$os[$id] $maj\.$min $string  
+                   Build: $build")->pack;     
+$f1->pack;
+
+my $f2 = $mw->Label(text => "File System:  $fs")->pack; 
+$f2->pack;
+
+my $f3 = $mw->Label(text => "Perl Build:  $bp")->pack; 
+$f3->pack;
+
+my $f4 = $mw->Label(text => "Login Name:  $ln")->pack; 
+$f4->pack;
+
+my $f5 = $mw->Label(text => "Node:Domain:  $nn:$dn")->pack; 
+$f5->pack;
+
+MainLoop(); 
+-----  end tkdemo.pl  -----
+
+Again, this script was not fully tested...I just don't have 
+the systems available.  The purpose is just to give you a  
+brief introduction to Tk.  Later, we will look at event bindings 
+and other ways to make use of this GUI system.
+
+Check out this site for some links to Perl info: 
+http://www.patriot.net/users/carvdawg/perl.html
+
+****************************************************************** 
+Editor's Comments
+
+Again, I'd like to ask the HHD readers...if you have a response to 
+a question posted in the Reader's Submission section, make sure  
+that you email the response to the reader who asked the question.
+
+If you have a long response, or a mini-guide as a response, please 
+post it on a web page, and send me the URL.
+
+Finally, if you have an article submission (which is always  
+appreciated), please follow a couple of simple guidelines:
+
+- Check your spelling and grammar 
+- NO PROFANITY!! 
+- Be explicit and explain things clearly 
+- Post it on a web page and send me the URL
+
+Thanks... 
+______________________________________________________________
+
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Vincent Larsen <vincent@sage-inc.com>; Wargame Sysadmin, Satori 
+<Satori@rt66.com>; 
+Clown Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!

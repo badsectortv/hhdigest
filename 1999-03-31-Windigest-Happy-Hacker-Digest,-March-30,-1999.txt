@@ -1,0 +1,627 @@
+Happy Hacker Digest, March 30, 1999
+
+Visit the Happy Hacker site at http://www.happyhacker.org
+
+Opening Comments 
+URLs 
+Reader Submissions 
+I want my PGP! 
+SamSpade Update 
+NT Commands (Unix-like and networking) 
+Win9x shares on the Internet 
+NT Tools You Can Use 
+Perl Corner 
+Editor's Comments
+
+****************************************************************** 
+Opening Comments
+
+I guess you could say that this edition of the HHD is sort ofthe NT 
+sysadmins' edition.  Yes, most of what's in this edition seems to be 
+directed toward NT sysadmins...but hopefully this sort of thing will open up 
+opportunities for our readers...as NT sysadmins.  After all, isn't that the 
+only 100%, guaranteed method of 'getting root'?
+
+****************************************************************** 
+URLs
+
+Project Independence - Linux with the newbie in mind... 
+http://www.independence.seul.org/  
+Having trouble with nbtstat?  Can't get it to work? Packet 
+<scottn@iodine.ucia.gov> suggests you try Essential Net Tools: 
+http://www.tamos.com/soft/features.htm 
+Want to see what mobile code can do?  Want to see Java applets that can 
+write to your hard drive?  Be lucky none of these pages include an ActiveX 
+component that turns the security of your IE browser off: http://www.signal7.com
+
+An analysis of web-page hacking (URL wraps): 
+http://www.genocide2600.com/~tattooman/hacking-textfiles/whoever.html
+
+Remove GUIDs from MS Office files: http://www.vecdev.com/guideon.html
+
+Common System Intrusion Methods (URL wraps): 
+http://www.genocide2600.com/~tattooman/infosec-faq/common.attacks.html
+
+Using IE5?  One of many things to be aware of (URL wraps): 
+http://www.genocide2600.com/~tattooman/exploits-Mar-99/msie.5.previous.input 
+s.txt
+
+Articles on all sorts of web-based programming: 
+http://www.webresource.net
+
+****************************************************************** 
+Reader Submissions
+
+From: kliber@eldish.net 
+Subj: netcat
+
+Hi Happy Hackers! :) in the feb. 14 HH Windows edition our editor put 
+something about Netcat, an Interesting and Obscure Network Tool; this tool 
+like Hobbit say in his .txt, had many uses (1001) heh! well i found this 
+tiny sotfware very interesting, and I had made many experiments with it. 
+Waiting for the promised "Innovative ways to use" i put here some of the 
+uses i had discovered for NetCat:
+
+C:\nc11nt>nc -v -v -L 127.0.0.1 -p 23
+
+DNS fwd/rev mismatch: localhost != darkstar listening on [any] 23 ... 
+DNS fwd/rev mismatch: localhost != darkstar connect to [127.0.0.1] from 
+localhost [127.0.0.1] 1131 
+login: sniff password: Hehe!!
+
+Well, what we have here? it looks like a sniffer!!! :) the option -v 
+(verbose) in combination with the option -L (listen and listen again) Let 
+netcat listen in any ports for conections , then if i do telnet to localhost 
+(127.0.0.1) from another window, netcat let me see what its happening in 
+this port. B-]
+
+         A quick one:
+
+C:\nc11nt>nc -v -v -z 127.0.0.1 53 25 21
+
+DNS fwd/rev mismatch: localhost != darkstar 
+localhost [127.0.0.1] 53 (domain): connection refused 
+localhost [127.0.0.1] 25 (smtp): connection refused 
+localhost [127.0.0.1] 21 (ftp): connection refused 
+sent 0, rcvd 0: NOTSOCK
+
+Hmmm... A little Port scanner!. Yes, you can scan any port you want, or you 
+can do a simple scan-range of ports like in this example:
+
+C:\nc11nt>nc -v -v -z 127.0.0.1 1-53
+
+DNS fwd/rev mismatch: localhost != darkstar 
+localhost [127.0.0.1] 53 (domain): connection refused 
+localhost [127.0.0.1] 52 (?): connection refused 
+localhost [127.0.0.1] 51 (?): connection refused 
+localhost [127.0.0.1] 50 (?): connection refused 
+localhost [127.0.0.1] 49 (?): connection refused 
+etc... 
+ 
+
+Also, you can use netcat as a "Doctor_X Scanner Detector" (tm), let him 
+listen in any port and redirect the input to a file:
+
+C:\nc11nt>nc -v -L  hostname  -p 54 > intrudres.txt
+
+Yes, if someone is scanning your Box, netcat capture his IP address and put 
+it in a file called "intruders.txt" Hehe!! then you can use your favorite 
+LART againts the little one who spy you... B-] 
+ 
+
+There are many others uses for this proggie, any one with others "Innovative 
+Ways"?? :) 
+ 
+
+         Saludos! 
+___________________________ 
+===========================          \   \   \   \    \ 
+  \    /   / 
+         Kliber                       \  \    \  \     
+\  \   /  / 
+         Hackers Venezuela             \  =====\  \     
+\  \ /  / 
+         members.xoom.com/kliber/hack   \  \=====  \    
+ \  x  / 
+         El Conocimiento es Poder!!!     \  \    \  \   
+  \   / 
+___________________________               \   \   \   \ 
+   \  / 
+=========================== 
+ 
+
+From: kazantsev@mail.primorye.ru 
+Sugj: Boot execute program potential vulnerability
+
+Howdy,
+
+that's me again. I think you have a lot of post from the list subscribers, 
+so it's a good idea to not bother you without a reason. I've been studying 
+some books on Windows programming, but I still can't get the things 
+together. Maybe I am too dumb for that.  However, I noticed something that 
+had attracted my attention. There is a kind of NT programs, called "Boot 
+execute" 'cause they run at the system sturtup, like CheckDisk does. Since 
+the LSA subsistem hasn't started yet, the processes run by those programs 
+can bypass security restrictions. Now the hard part. For a boot execute 
+program to be executed, it must have a matching string in the registry, but 
+Write access to that part of the  registry is restricted to the privilegied 
+users. However, there  is a possibility (at least, theoretically) to 
+exchange chkdsk.exe  with a Trojan due to defaul permissions to this file. 
+Hence, an attacker writes a Trojan which is intended to copy  contents of 
+SAM file to a file with Full Control for Everyone,  compiles it as Boot 
+execute, calls it chkdsk.exe and overwrite  the original chkdsk.exe file 
+with it.  When the system is rebooted,  the trojan is being executed. Since 
+SAM file is not locked yet (I suppose so), it contents can be easily copied.
+
+Unfortunately, I don't have enough programmer's skills to prove or refute 
+this. Would it be a good idea to ask the list for help in  this matter?
+
+Regards, 
+Vladimir.
+
+[Editor:  Sure, there are lots of ways to 'trojan' NT, even if you are just 
+a user.  Changing the Aedebug Registry key, etc. I haven't seen this 
+one...maybe you could send an email to L0pht and see if they've done any 
+work in this area.  Of course, there are other things you can do...run rdisk 
+to get the latest SAM file, etc.]
+
+****************************************************************** 
+I want my PGP!
+
+Having trouble finding the freeware PGP at the NAI site?  Yeah, me too. 
+Thanks to NAI, no less.  No roads lead to PGP.  But try checking out:
+
+http://www.pgpi.com 
+http://www.pgp.com/products/pgpfreeware.cgi (ver 5.5) 
+http://web.mit.edu/network/pgp.html (ver. 5.0 and 
+pgpfone)  
+
+****************************************************************** 
+SamSpade Update
+
+SamSpade, a great tool for Windows users, has moved from the  Blighty site 
+to http://www.samspade.org.  If you check out the site, you can d/l the 
+latest version of SamSpade or use any of the online tools that the author 
+has provided...tools such as an online ping, traceroute, and even a DNS 
+query tool.  Check it out, and d/l the latest version of SamSpade.
+
+****************************************************************** 
+NT Commands (Unix-like and networking)
+
+Let's continue our look at NT commands - and in doing so, I want to briefly 
+mention some Unix-like commands that you can get  from the NT Resource Kit. 
+Now, these aren't the same as those you can find at NT-Unix web sites...but 
+if you do a lot of Unix  administration, pull these programs off of the RK, 
+and it might make you life a little easier:
+
+>From the Resource Kit, native Win32 commands (have POSIX  versions): 
+cat.exe, cp.exe, ls.exe, mv.exe, touch.exe, wc.exe, vi.exe
+
+>From the Resource Kit, as POSIX: chmod.exe, chown.exe, find.exe, grep.exe, 
+ln.exe mkdir.exe, rm.exe, rmdir.exe, sh.exe
+
+As long as we're on the subject of RK commands, you might want to check out 
+the following Microsoft KnowledgeBase articles:
+
+Q171591:  Syntax Examples of WinNT Server Registry Resource Kit Utilities  
+Q158388:  Useful Resource Kit Utilities for Domain Administrators
+
+Also, check out utilities such as NewSID.exe from Systems Internals at 
+http://www.sysinternals.com, and DumpACL, DumpReg, and DumpEvt from 
+Somarsoft, Inc, at http://www.somarsoft.com.
+
+NOTE:  For a pretty good list of programs in general, check out: 
+http://www.microsoft.com/NTServer/nts/exec/vendors/freeshare/default.asp
+
+Networking commands nbtstat.exe, net.exe, ping.exe, tracert.exe, nslookup.exe
+
+The online help with NT does a pretty fair job of providing a  look at what 
+all of these commands do.  In the past, we have  looked at Perl scripts that 
+made use of nbtstat.exe, and you  can also use Perl to tie net.exe into 
+scripts as well.  Net.exe has several configuration options which can be 
+found in the  online help, or by simply typing 'net /?' at the command 
+prompt. Getting further information on the various configuration options is 
+just as easy...simply type 'net view /?' or 'net use /?', or whichever 
+option you choose.
+
+The command that deserves a good review is nslookup.exe.  This  command is 
+used to submit DNS queries, and troubleshoot DNS problems.
+
+Here is the text of the Guide To (mostly) Harmless Hacking on  DNS regarding 
+nslookup:
+
+----- begin ----- 
+[nslookup]
+
+Nslookup is a great little tool for making DNS queries that comes with NT, 
+Linux, etc.  The easiest way to use nslookup is in non- interactive mode. 
+This means that you submit a request at the command line, and you get a 
+response back with no other input. For example, from the command prompt, type:
+
+$nslookup foobar.edu
+
+Server:  localhost 
+Address: 127.0.0.1
+
+Name:    foobar.edu 
+Address: 289.13.266.37
+
+The Server and Address response you see above will vary depending upon your 
+operating system, and how it's set up.  But you can see that this is a quick 
+and easy way to look up the IP address of  a host given the name...we have 
+performed a query for the "A"  resource record.  We can do a "reverse 
+lookup" by entering the  IP address at the command prompt, rather than the 
+host name:
+
+$nslookup 289.13.266.37
+
+Server:  localhost 
+Address: 127.0.0.1
+
+Name:     www.foobar.edu 
+Address:  289.13.266.37
+
+Wait a minute!  What's this "www.foobar.edu" stuff?  Well,  what we've found 
+is an alias for the host "foobar.edu".  A  single host can have multiple 
+host names that all point to  the same IP address. 
+
+The other way to play with nslookup is to enter interactive mode  by typing 
+"nslookup" (with no arguments) at the command prompt, and then hitting 
+<Enter>.  You will get a prompt back that looks  
+like:
+
+>
+
+>From here you can enter commands.  For example, type:
+
+>foobar.edu
+
+Wow!  We get the same information back as we did for the non- interactive 
+mode query.  To look up specific resource records  for the foobar.edu 
+domain, all we need to do is tell nslookup which RR type we want:
+
+>set type=<RR>
+
+where <RR> refers to the resource record type, as we saw listed above (A, 
+PTR, MX, CNAME, etc).  This way you can look up just those records you are 
+interested in.  Note:  If you enter "ANY" in place of "<RR>", you will be 
+doing a lookup in the domain for all resource records...mail exchangers 
+(email servers), name servers, etc.
+
+Now, let's try one more little trick.  This involves listing hosts  within 
+the domain we are interested in...it doesn't mean _all_ of  the hosts, 
+though.  We already know the names and IP addresses of the nameservers that 
+point to foobar.edu, so start nslookup in  interactive mode.  Then change 
+the nameserver used to resolve  queries to the nameserver that points to the 
+foobar.edu domain:
+
+$nslookup
+
+Once you're in interactive mode, change the default nameserver that is used 
+to resolve your queries to a nameserver that points to the foobar.edu 
+domain...this information was retrieved using the whois query above:
+
+>server 287.128.192.4
+
+Now we want to list the hosts in the domain that have records available, so 
+type: 
+
+>ls foobar.edu
+
+You will see something similar to:
+
+[ns01.nameserver.org] 
+foobar.edu.           server = ns.nameserver.org        
+     
+foobar.edu.           server = ns2.nameserver.org      
+foobar.edu.           server = ns3.nameserver.org 
+foobar.edu.           289.13.266.37 
+ftp                   289.13.266.37 
+smtp                  289.13.266.37 
+www                   289.13.266.37
+
+In the real world (vice the "example" world) you will likely get a lot more 
+hosts back than this...in fact, you may get  upwards to 500 or more hosts! 
+However, what this tells us is that the host "foobar.edu" has the same IP 
+address as the hosts listed as "ftp", "smtp", and "www".  This means that 
+these are services aliased to the host...performing a lookup on 
+"ftp.foobar.edu" or trying to connect to "ftp.foobar.edu" will 
+point or connect you to the host "foobar.edu".
+
+If you do list the hosts in the domain, you may want to use  redirection to 
+save this information in a file, so that you can read over it:
+
+>ls foobar.edu > foobar.txt 
+----- end -----
+
+This is a very basic overview of how to use nslookup.  The  NT online help 
+has a some further information, specifically on how to configure specific 
+queries from the command line. For example, to lookup information on a 
+particular computer in another domain, type in something similar to:
+
+nslookup -querytype=any domain server
+
+where 'domain' is the domain you are interested in, and 'server'  is the 
+name server to be queried for the information.  If this is  left blank, the 
+default name server will be used.  This makes  the nslookup tool great for 
+scripting and using with Perl...
+
+****************************************************************** 
+Win9x shares on the Internet
+
+A while ago, I wrote an updated Guide To (mostly) Harmless Hacking that 
+addressed accessing 9x shares over the Internet while using  9x.  It seems 
+that the first edition of the Guide, which was  written for NT, was spread 
+wide and far, and almost no one has  seen the updated, 9x version.  That 
+version is at:
+
+http://www.patriot.net/users/carvdawg/win95.txt
+
+and,
+
+http://www.happyhacker.org/crack295.htm
+
+Now, I want to point out that much of the research for the second version 
+was done via the Microsoft KnowledgeBase at:
+
+http://support.microsoft.com
+
+Specifically, the following articles were used:
+
+Q178729:  How to configure Win95 to dial into a RAS/RRAS  server (pay 
+particular attention to steps 1 and 3a.) 
+http://support.microsoft.com/support/kb/articles/q178/7/29.asp 
+  
+Q145843:  How to connect to a remote server 
+http://support.microsoft.com/support/kb/articles/q145/8/43.asp 
+
+Q183368:  Requirements to browse network with dial-up  networking 
+http://support.microsoft.com/support/kb/articles/q183/3/68.asp 
+  
+Other articles of interest include:
+
+Q180099:  Troubleshooting LMHOSTS Name Resolution Issues 
+Q156323:  Error 3787: You Must Log on Before Performing this Operation 
+(applies to Win95) 
+Q141229:  How to use the Net View command to view shared resources
+
+If you are having trouble accessing shares over the Internet, whether 
+sharing files or 'wargaming' with your friends, take a look at these articles.  
+
+Anyone running 'nbtstat -A a.b.c.d' has likely been frustrated  with the 
+'host not found' response.  This can be caused by  several things...the 
+target host isn't connected to the Internet, a firewall is blocking the UDP 
+queries, etc.  However, doing a  search on the Micrsoft KnowledgeBase 
+(http://support.microsoft.com) leads to article Q175935 'NBTSTAT -A May 
+Return Host not Found Error Message'.  This article applies to NT only...and 
+the stated cause is that 'the NetBIOS Interface device on the target 
+computer is not started'.  The solution is to set the Messenger Service to 
+automatic, and set the NetBIOS Interface device in the Devices icon in the 
+Control Panel to either automatic or manual.  
+
+I have yet to find anything similar in Win9x.
+
+****************************************************************** 
+NT Tools You Can Use
+
+NTObjective's Forensic Toolkit http://www.ntobjectives.com/ 
+Great set of tools...especially 'hunt', which replaces RedButton.
+
+Mnemonix's ntis.exe 
+(the last time I checked, the default page returned the error message 
+'forbidden'...) Command line tool that attempts null connection to a machine 
+and enumerates share and user info into an HTML file.  Replaces RedButton.
+
+NAT (NetBIOS Audit Tool) 
+http://www.nmrc.org/files/snt/index.html 
+Brute force tool for null connections to NT boxes. Originally produced by 
+Secure Networks as freeware,  before they were bought by NAI.  The 
+functionality is now part of CyberCop Scanner (ie, Ballista).
+
+SamSpade 
+http://www.samspade.org 
+Port scanner and more.
+
+Perl 
+http://www.activestate.com 
+Scripting language that can be used to  automate almost any sysadmin funtion 
+on NT, or in NT domains. 
+
+GNU C compiler and utilities 
+http://www.cygnus.com 
+Free C compiler and tools.  Several of the utilities are already compiled.
+
+DumpACL, DumpReg, DumpEVT 
+http://www.somarsoft.com 
+Use the tools to dump the ACLs, Registry, and Event Log (respectively) from 
+NT boxes across your domain.
+
+netcat   
+http://www.l0pht.com/~weld/ 
+TCP/IP swiss army knife from Weld Pond of L0pht
+
+bcwipe.exe 
+http://www.nmrc.org/files/snt/index.html 
+File wipe utility
+
+NTFSDOS 
+http://www.sysinternals.com 
+Allow DOS access to NTFS partitions...great tool if you want to use a 
+bootdisk to boot to DOS, and then read the NT swap file.  Lots of other 
+extremely useful (and free) tools at this site.
+
+l0phtcrack 
+http://www.l0pht.com 
+Password cracker from L0pht
+
+Chroniclev1.0  
+http://207.98.195.250/software/ 
+Service pack and hotfix scanner from Rhino9.  This tool  is best used by 
+domain admins, but if remote access to the Registry is NOT disabled, anyone 
+can use it.  Also check out the other tools by Rhino9, such as the UI for 
+NAT (see NAT above).
+
+Other must-haves:
+
+PGP 
+http://www.pgpi.com 
+http://www.pgp.com/products/pgpfreeware.cgi (ver 5.5) 
+http://web.mit.edu/network/pgp.html (ver. 5.0 and pgpfone)  
+
+WinZip 
+http://www.bhs.com 
+http://www.tucows.com 
+Compression/decompression utility.
+
+Adobe Acrobat Reader 
+http://www.adobe.com 
+Read PDF files.
+
+For Win9x-specific tools, check out software sites such as  TUCOWS 
+(http://www.tucows.com).
+
+****************************************************************** 
+Perl Corner
+
+In this Perl Corner I'll go ahead and introduce some of the Win32  modules. 
+We've already looked at Win32 functions, so this time  we'll look at modules 
+that have been written for NT and '9x.   Now, a word of warning...most of 
+these modules only work on NT.  
+
+Perl for Win32 
+http://www.netaxs.com/~joc/perlwin32.html 
+This site has a very comprehensive list of Win32 modules.  Check it out 
+before writing a script of your own...there may be a  module available that 
+will make your life easier.
+
+Perlwin32 Modules 
+http://www.generation.net/~cybersky/Perl/perlmod.htm 
+Check these modules out!  PortIO, IPHelp, DES, and more!
+
+Phillip LeBerre's site 
+http://www.inforoute.cgs.fr/leberre1/ 
+Links to download and docs for Registry, EventLog, and  Services modules.
+
+Dave Roth's site (Roth Consulting) 
+http://www.roth.net/ 
+Home of the AdminMisc module, as well as Win32::ODBC and Win32::Perms...all 
+three of which are MUST HAVES! Also, I've been working through Dave's book, 
+"Windows NT Win32 Perl Programming"...it's a gold mine for NT admins!!
+
+For any of these modules, simply follow the installation  instructions 
+provided by the author.  Dave Roth has set up (at least some of) his modules 
+to be installed via the PPM script that ships with ActivePerl (see 
+c:\perl\bin\ppm.pl).
+
+That being said...
+
+If you want to see what services are running on your NT box, run the 
+following script:
+
+----- begin svcs.pl ----- 
+#! c:\perl\bin\perl.exe
+
+use Win32::Service; 
+my ($key, %service, %status, $part); 
+Win32::Service::GetServices('',\%services);
+
+foreach $key (sort keys %services) { 
+   print "Display Name\t: $key, $services{$key}\n";
+
+   Win32::Service::GetStatus( '',$services{$key}, 
+\%status);
+
+   foreach $part (keys %status) { 
+     print "\t$part : $status{$part}\n" if ($part eq 
+"CurrentState"); 
+   } 
+} 
+----- end svcs.pl -----
+
+Notice that we only look at the current state of the service. If we remove 
+'if ($part eq "CurrentState")' from the 13th line of the file, we'll see all 
+of the information that the module provides.  Also, in line 5, we see the 
+call to enumerate the services:
+
+Win32::Service::GetServices('',\%services);
+
+The first argument to the function is null, represented by ''.   This tells 
+the function to obtain the services from the local machine...we could easily 
+have checked other machines in the domain by providing their names via an 
+array or having them read from a file.
+
+Would you like to take a look at some Registry data?  Okay, I'll use a 
+simple example from pg. 173 of 'Learning Perl on Win32 Systems' from 
+O'Reilly and Assoc:
+
+-----  begin reg.pl  ----- 
+#! c:\perl\bin\perl.exe
+
+use Win32::Registry;
+
+# If you are using Win9x, change 'Windows NT' in 
+# the line below to 'Windows'
+
+$p = "SOFTWARE\\Microsoft\\Windows 
+NT\\CurrentVersion"; 
+$main::HKEY_LOCAL_MACHINE->Open($p, $CurrVer) ||  
+  die "Open:  $!\n"; 
+$CurrVer->GetValues(\%vals); 
+foreach $k (keys %vals) { 
+  $key = $vals{$k}; 
+  print "$$key[0] = $$key[2]\n"; 
+} 
+-----  end reg.pl  -----
+
+Dave Roth's Win32::AdminMisc module has a variety of methods that allow you 
+to do all sorts of things on your NT box, or within your NT domain.  You can 
+get drive and volume data, manage user accounts, even check to see if user's 
+password is in a dictionary file.  
+
+Dave Roth's book, mentioned above, has a great little example in which he 
+demonstrates the use of several modules to gather errors in EventLogs on 
+several machines.  The script makes use of Win32::OLE to put the gathered 
+data into an Excel  spreadsheet.  Such a script can be set to run each 
+morning prior to the sysadmin's arrival, and can show such things as failed 
+logins, etc, from across several machines.  It's not real-time, but if you 
+want a simple intrusion detection tool, such a script would work.  Also, 
+Dave Roth wrote the Win32:: ODBC module, so you could have the data dumped 
+to a database instead of a spreadsheet...whatever you choose.
+
+As I stated in the 1 Feb '99 edition of the HHD in the Perl  Corner, you can 
+also use Perl modules to generate information or warning events into the 
+Event Log on NT.   
+
+****************************************************************** 
+Editor's Comments:  Over the past several weeks, there haven't been any 
+particularly interesting submissions from readers.  A couple of 'how do I 
+change my Active Desktops', and one or two 'hey, I got this new virus called 
+Happy99.exe' (hate to tell you this, but it isn't new, and it isn't a 
+virus...).  Other than  that, not too much...just what you see here in the 
+Reader Submissions section.  Well, 'til next time...  
+******************************************************************
+
+_______________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Vincent Larsen <vincent@sage-inc.com>; Wargame Sysadmin, Satori 
+<Satori@rt66.com>; Webmaster, Diode <webmaster@happyhacker.org>; Clown 
+Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
