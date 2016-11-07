@@ -1,0 +1,730 @@
+April 8, 1999
+
+Visit the Happy Hacker site at http://www.happyhacker.org
+
+Opening Comments 
+URLs 
+Reader Submissions 
+Strange URLs...the answer 
+PGP 
+DOS Revisited 
+Secure M$IE Pt. 2 
+Perl Corner 
+Editor's Comments
+
+****************************************************************** 
+Opening Comments
+
+Wow.  After a brief hiatus, we're back with two quick digests. 
+One of them has a question that has spurred more responses than 
+anything I have seen thus far...the Strange URL question (all of 
+the responses I received by the time I sent this to edition of 
+the digest to Carolyn are listed...).
+
+****************************************************************** 
+URLs
+
+Very interesting security site 
+http://www.network-defense.com/
+
+Interesting page, submitted by <hardenbrook@ignmail.com> 
+http://i.am/xix
+
+See what happens to the author of the Melissa virus... 
+http://cnn.com?/TECH/computing/9904/03/melissa.suspect.ap/
+
+****************************************************************** 
+Reader Submissions
+
+From:  "FuzzyFlup" <flup@telekabel.nl> 
+Subj:  Changing the windows98 startup and shutdown screens
+
+I'm posting this one for the people who missed it and still 
+wanna know how to change those boring startup and shutdown screens 
+.. so Keydet98 won't have to type it all out but can jsut copy&paste 
+it :)  If this gets posted on the next HH Win edition of course.
+
+Ok, the first thing to do is to check if you have a c:\logo.sys file. 
+This file is actually just a BMP file(BitMap), it's a graphics file. 
+It could be hidden, or read-only or set as system file. 
+To check if it's a hidden file, open an MS-DOS prompt, type cd \ and 
+then 
+type
+
+attrib *.sys
+
+This shows all *.sys files, no matter what their ATTRIButes are. 
+If you haven't got the c:\logo.sys file, I suggest you copy your 
+c:\windows\logow.sys file to your c:\, because the file size is 
+kinda weird, and the pic is cropped up. 
+Now, then you type attrib *.sys and you have the file, you could 
+e.g. get something like the following:
+
+C:\>attrib *.sys 
+  A  SHR     MSDOS.SYS     C:\MSDOS.SYS 
+     SHR     IO.SYS        C:\IO.SYS 
+     SHR     LOGO.SYS      C:\LOGO.SYS 
+  A          CONFIG.SYS    C:\CONFIG.SYS
+
+As you can see here, this logo.sys has SHR attributes, which means 
+System, 
+Hidden and Read-only. 
+Unset those attributes by typing: attrib logo.sys -s -h -r 
+Then rename the file by typing: ren logo.sys logo.bmp 
+Now you can write to the file. 
+Open it in Paint, or if you have a better graphics editor, open it 
+in there.  It's very handy to adjust the size of the image to 640x480, 
+and then to crop it back to it's original size when you're done editing 
+it.  After you've made changes to it (or maybe even totally replaced 
+it), go 
+to your MS-DOS prompt again, and rename the file back to logo.sys (ren 
+logo.bmp logo.sys), and set the attributes back(attrib +s +h +r 
+logo.sys) 
+The Shutting Down and It's now safe to blablabla screens work by the 
+same routine, except they are located in c:\windows (or whereever you 
+installed win) 
+Have fun :)
+
+[Editor:  Aaahhhh!!  Does it ever end?  Not more 'how to change 
+your win9x startup'!!!]
+
+From:  "Gibney, Tim" <TGIBNEY@WMDSP.COM> 
+Subj:  Not the place but...
+
+...try it anyway.
+
+Heh...  try this in IE5.  Trust me the last part is good :)
+
+Open up IE5 
+>From the menu, select Tools > Internet Options > General (tab) 
+> Languages (button)
+
+Press 'Add' 
+Type: "ie-ee" (without the quotes) and click 'OK' 
+Move "User Defined [ie-ee]" to the TOP of the list 
+Exit back to where you can browse in IE5 again 
+Click on the Search icon (to pull up the side search menu) 
+Laugh at the new options 
+Select 'Previous Searches'
+
+Regards, 
+Tim Gibney
+
+[Editor:  I don't use IE5...so I haven't tested this one...]
+
+From:  "shadow" <shadow@info66.com> 
+Subj:  HHD Submission
+
+Recently someone had asked about a web server running under Windows. 
+Here is one I installed and had a lot of fun experimenting with. I 
+never got to experimenting with CGI or scripts but it is easy to 
+install, 
+use and works well. Best part it's free. They even send notices about 
+upgrades which reminded me about the question on HHD. 
+Shadow 
+http://www.vqsoft.com/vq/server/index.html
+
+[Editor:  Sounds like a viable option...but if I wanted to run 
+a web server, I would hold off until I had a platform on which 
+I could set some security...]
+
+From:  DataHaze@aol.com 
+Subj:  Re: IOther help for AOL
+
+1. Connect to a proxy from there you can ping, traceroute, telnet 
+and other Internet related hacking things. There is a list of them 
+a www.theargon.com.
+
+p.s.- do you know or know anyone that could help me-Im writing a 
+TSR keystroke recorder in c++.
+
+[Editor:  You don't ask for much, do you, DataHaze?!  ;-) 
+I haven't tested out any of the proxies at the listed site... 
+I don't use AOL.]
+
+From:  "John Leckert" <hardenbrook@ignmail.com> 
+Subj:  I wanna give you all this.
+
+While I was talking on IRC, I got a guy called XIX to give me his 
+page. I found it to be real interesting and different from other 
+"hacker's" pages. (You know, with those floating skulls and either 
+outdated progz and Back Oriface or with great and interesting philez 
+that have the link dead on all the good ones.) Well, it has stuff like 
+a emulator that emulates a PC and runs on a PC called Bache.(You can 
+run Linux on Win 95!) I am also confused with the Win 95 version on how 
+to use the Telnet method.
+
+His page: http://i.am/xix 
+My page: http://i.am/fraglant
+
+[Editor:  Interesting page...but I have no idea what John is talking 
+about regarding 'the Telnet method'...]
+
+From:  Will <mtgshivan@yahoo.com> 
+Subj:  Winmodems
+
+I would like to warn everyone against buying 
+Winmodems. Formerly USR, they are now sold by Lucent, 
+and come pre-installed in a number of Windows boxes. 
+If you can, buy a box that does not have a Winmodem 
+installed. They are 80% software; Winmodems rely on a 
+Windows .VXD file, so they cannot be used with Linux. 
+It is not very likely a Winmodem driver will ever be 
+written for Linux, either. I found this out the hard 
+way, by trying for 2 hours to get my 56k to work with 
+Minicom, then going online and searching futilely for 
+a Winmodem Linux driver. Bottomline - don't let anyone 
+foist a Winmodem upon you.
+
+-Will
+
+[Editor:  Our daily religious rant brought to you by Will! 
+I love it!]
+
+From:  Sage6985@aol.com 
+Subj:  question
+
+I'm beginning at this whole thing, and don't really know where to 
+get some info on editing the Registry.  I'll make my question short: 
+Where is the best place to get info on it?
+
+The thing I want to find out is if I can edit my Registry so that 
+other users on it can't go to a certain section of the hard drive. 
+I would guess that you would have to edit the User area of the Registry.
+
+I don't want to disable MY access to that section of the disk, so I 
+don't 
+want to "test" with it.  Would you have any idea if what I want done, 
+could be done.  I know it can be done to a network, but can it be used 
+on a PC.  Thanks for all the other info on your site, though.  keep up 
+the good work!
+
+[Editor:  I would suspect that what Sage is looking for is ACLs, 
+or access control lists.  If he's using win9x, he's out of luck... 
+unless 98 has some nifty little tool...I don't know, I don't use 
+it.  You can only set ACLs on NT, and then only if it's formatted 
+in NTFS.  But either way, it has little to do with Registry settings. 
+You have to set the ACLs on the files and directories to do what 
+Sage want's to do...]
+
+From:  "lambesis" <lambesis@gmx.net> 
+Subj:  .
+
+Hey, just wanted to say a bit about dragonlinux, which is 
+available at http://www.dragonlinux.nu 
+This is a umsdos, compact version of linux and is really easy 
+to install. No need to partition or to do any real setting up. 
+Just copy the files over to a dir and start it up from DOS. It 
+seems to hang a little bit when using certain programs but other 
+than that its great for new users.
+
+[Editor:  Also remember, there is the Slackware version ZipSlack, 
+and the Trinux distro called TrinuxHD.  So if you really think 
+you need to get a Linux distro, any of these is a good place to 
+start...no need to re-partition your hard drive, etc...]
+
+****************************************************************** 
+Strange URLs...the answer
+
+Okay, ever since this subject came up in the HHD, I've gotten 
+tons of email...so much so that I have only listed the two 
+differentiators...the 'dotless address' vulnerability, and 
+the explanation of the address format.  I have also included the 
+C and Perl code (see the Perl Corner for the Perl scripts) that 
+two readers provided.  For everyone else...if you submitted an 
+email to me on this subject, then you should see your name listed 
+below...
+
+From:  "Quassum" <Quassum@iname.com> 
+Subj:  Reply Hhd, Question about IP adress
+
+I write you regarding your email in the Happy Hacker Digest 
+Windows edition. 
+You mentioned those strange addresses, they are called dotless 
+ip addresses, read all about it here:
+
+http://www.worldwidewait.com/faq.html
+
+Please reply to me in case this url helps you.
+
+**************  and  *******************
+
+From:  Simon Ekstrand <simius@algonet.se 
+Subj:  Re: Question about IP address
+
+Here we go, I'll try to explain this. 
+3505003744 is an ip adress stored as binary data in 
+host byte order (on an x86 host byte order is little endian, 
+ie. least significant byte first). 
+In the example in C below we convert it from host byte order 
+to network byte order (ie. big endian, most significant byte 
+first).
+
+A quick example would be:
+
+little endian stuff (host byte order on an x86): 
+        decimal: 3505003744 
+        binary : 11010000 11101010 00011100 11100000 
+        ip-addr:      208      234       28      224 
+ 
+
+Included below is a small C program that tries to show 
+how this works.
+
+------ cut ------
+
+#include <sys/socket.h> 
+#include <netinet/in.h> 
+#include <arpa/inet.h>
+
+void version_one(unsigned long int a) { 
+        unsigned char m,n,o,p;
+
+        m=a >> 24;              // = 208 
+        n=a >> 16 & 0xff;       // = 234 
+        o=a >> 8 & 0xff;        // = 28 
+        p=a & 0xff;             // = 224
+
+        printf("version one: %d.%d.%d.%d\n",m,n,o,p); 
+}
+
+void version_two(unsigned long int a) { 
+        struct in_addr in; 
+        unsigned long int b; 
+        unsigned char m,n,o,p;
+
+        b=a >> 24; 
+        b+=(a >> 16 & 0xff) << 8; 
+        b+=(a >> 8 & 0xff) << 16; 
+        b+=(a & 0xff) << 24;
+
+        in.s_addr=b;
+
+        printf("version two: %s\n",inet_ntoa(in)); 
+}
+
+int main() { 
+        unsigned long int a;
+
+        a=3505003744; 
+        version_one(a); 
+        version_two(a);
+
+        return 0; 
+}
+
+------ cut ------
+
+[Editor:  Does anyone with Cygnus installed have this 
+compiled?  No, I don't want it, just thought I would ask...]
+
+Hope this helped a bit.
+
+-Simon Ekstrand (simius@algonet.se)
+
+From:  RavenBlack <raven@ravenblack.net> 
+Subj:  Long-number IP addresses
+
+I would have thought you would have been able to answer 
+this one, Carolyn. It's similar to the effect of Perl command 
+'pack'. 
+Look at hexadecimal... 
+208 = D0 
+234 = EA 
+ 28 = 1C 
+224 = E0 
+Then the number D0EA1CE0, when turned to decimal, produces... 
+3505003744
+
+It's the internal format of an IP address.
+
+Sharp today, 
+--RavenBlack
+
+Many, many other readers have sent in responses, all saying 
+the same thing.  Interesting, eh?  Here's a list of everyone 
+from whom I have received an email on this subject: 
+Juergen Dollinger <juergen@magrathea.stud-verwaltung.uni-ulm.de> 
+"ForEver Phreaker" <forever@phreaker.net> 
+Yeasir Rahul <rahul@bizprime.com> 
+Echo Four <echofour@on-net.net> (see the Perl Corner) 
+"Ken Morrow" <kpmorrow@prodigy.net> 
+"Mark Hibshman" <ittlecas@yahoo.com> 
+"Fred Perry" <fred_perry@msn.com> 
+"Robin Keir" <robin@keir.net> 
+"Tim Attwood" <tim.a@clara.net
+
+[Editor: Wow.  That's all I can say...wow.  All this time 
+and I have never seen a question get so many responses... 
+thanks and kudos to everyone...]
+
+****************************************************************** 
+PGP
+
+Since I put out the bit on PGP, here's some more URLs and those 
+who submitted them.  I think that by now we have a fairly 
+comprehensive list of sites to get PGP.  I wanted to bring it 
+up b/c the latest version, 6.0.2, has a secure file wipe utility.
+
+"ruiner 9in" <ruiner_9in@hotmail.com> 
+http://www.replay.com/menu/pgp.html 
+ftp://ftp.replay.com/pub/crypto/pgp/pgp60/
+
+This URL wraps... 
+ftp://ftp.replay.com/pub/crypto/pgp/pgp60/pgp602_personal/ 
+PGP_Personal_Privacy_6.0.2_RSA.zip
+
+red_wolf@ibm.net 
+http://www.nai.com/products/security/pgpfreeware.asp
+
+****************************************************************** 
+DOS Revisited  "FuzzyFlup" <flup@telekabel.nl>
+
+I'm one of those people who used to use MS-DOS, until Windows95 came. 
+Everybody suddenly had it, so ofcourse I couldn't stay behind :) 
+The problem is, I still liked DOS a lot more, especially because I 
+ran on a 486dx2-66, so Windows didn't run too well :) 
+I often just pressed F8 when you see "Starting Windows95..." (or 
+something like that), entered the boot menu and booted in a MS-DOS 
+prompt.  There was a time when I did almost nothing in Windows, and 
+everything in DOS.. so I got kinda sick of pressing F8 every time. 
+If you would like to let your Windows95/98 system boot up in MS-DOS, 
+do the following:
+
+First, back up your c:\msdos.sys and c:\msdos.--- 
+Unset the System Hidden and Read-Only attributes of the file 
+c:\msdos.sys by 
+typing attrib -s -h -r msdos.sys
+
+Then edit the msdos.sys file, and look for a line saying
+
+"BootGUI=1"
+
+If it's not there, add it under [OPTIONS] 
+Change the 1 to a 0 (BootGUI=0)
+
+Then save the file, exit your edit screen, and set the attributes 
+back by typing attrib msdos.sys +s +h +r.
+
+Then proceed with working on the msdos.--- file. 
+This file only has the +h (hidden) attribute. 
+Unset it: attrib msdos.--- -h 
+Edit the file, it shoudl contain a line saying "BootGUI=0" 
+Change it to a 1 
+If you don't have the line, just add it under [OPTIONS], if you don't 
+have the file, just create it.
+
+Save, exit your editor, set the hidden attribute: attrib msdos.--- +h 
+Reboot your system, and poof.. you start in MS-DOS! 
+Optionally, you could turn the startup logo off too, by adding "Logo=0" 
+under [OPTIONS] in your msdos.sys... personally, I hate that screen :) 
+Well I know this info may be a bit outdated.. but it's just my two 
+cents.. 
+cya :)
+
+[Editor:  One thing is for sure...DOS isn't dead yet!  Yes, there 
+are a couple of machines left running DOS...and as long as Win9x 
+is around, some of the things you learned in DOS, such as writing 
+batch files, will still be useful.  Besides, writing a batch file 
+is a heck of a lot easier than learning VBScript...]
+
+****************************************************************** 
+Secure M$IE Pt. 2 
+"Dr. Malkav" <malkavian248@yahoo.com>
+
+Well, I'm back. Today we will go over secure M$IE from 
+ActiveX/JavaScript/VBScript related holes. Let's get to the lesson:
+
+Micro$oft isn't stupid. They allow you to send files to servers. This 
+feature comes in handy when you are making an attachment to a file. 
+They designed it so that the script can not put a value into the form, 
+preventing the web page from grabbing your files. But, there was a 
+fatal flaw. They allow the scripts to copy and paste. This allows the 
+script to just cut and paste the file it wants and M$IE will happily 
+send the file to anybody. This is called the Cuartango, named after the 
+man who discovered it. Here is the code for it:
+
+document.forms[1].T1.select(); 
+document.execCommand("copy"); 
+document.forms[0].filename.select(); 
+document.execCommand("paste"); 
+document.forms[0].submit();
+
+Five lines of JavaScript, and your autoexec.bat file can be floating 
+around the net. But Microsoft fixed the problem, calling the Untrusted 
+Script Paste hole. (From now on, USP) Did they? Later, a new variant 
+was discovered. The Son of Cuartango allowed the same thing to happen, 
+only with an extra step. They added a hidden variable form that then 
+pasted into the file box. With only one extra line of code, the patch 
+can be foiled. This hole can also be implemented within HTML e-mails. 
+Sound like trouble? It is.
+
+But, again, Micro$oft patched the USP. But did they miss it still. The 
+Grandson of Cuartango showed up. That's right, Grandson. I am not 
+exactly sure as to how this works. It takes an MS Forms 2.0 box and 
+copies the contents of that into an ActiveX box, allowing the website 
+to take your files. This explanation is sort of vague, because there is 
+not much info on this hole. But, I know that it uses a variation of the 
+other two Cuartango holes.
+
+Where did these holes come from? Faulty programming? Laziness? Or a 
+Communist conspiracy? You decide. The only way to be completely safe 
+from these holes is to disable JavaScript, ActiveX, and VBScript. Good 
+luck and safe browsing. 
+EOF
+
+****************************************************************** 
+Perl Corner
+
+First off, Echo Four <echofour@on-net.net> contributed some 
+Perl code with regards to the unusual URL format...
+
+# dot2dec.pl - converts dotted-quad IP addresses to their 
+# decimal equivalents 
+# By echofour on 4/3/99 
+# usage: dot2dec.pl [dotted-quad address]
+
+# Get dotted-quad address entered on the command line
+
+$addr = shift;
+
+# We're adding an extra step to the regular expression to 
+# make it slightly more readable. 
+# $ln is a _l_egal _n_umber in an IP address - that is, a number 
+# from 0 to 255.  One or two-digit numbers may be zero-padded on 
+# the left.
+
+$ln = '([01]?\d\d|2[0-4]\d|25[0-5]|0?0?\d)';
+
+# If the argument to the script isn't four dot-separated legal 
+# numbers and nothing else, quit right now.
+
+die "Invalid IP address $addr:$!" if ($addr !~ /^$ln\.$ln\.$ln\.$ln$/);
+
+# Divide the address into its components 
+@digits = split (/\./, $addr);
+
+#  Let's start from the smaller numbers and work up.  Since 
+#  IP addresses go from larger to smaller, we'll first reverse 
+#  the order of our numbers.
+
+@digits = reverse @digits;
+
+for ($i = 0; $i <= 3; ++$i) {
+
+    #  Multiply the smallest number by 1, the second smallest by 
+    #  256, the third smallest by 256 squared, and the largest by 
+    #  256 cubed, and add the result to our running total $sum.
+
+    $sum += $digits[$i] * 256 ** $i; 
+}
+
+#  Print out sum and th-th-that's, all folks.
+
+print $sum, "\n";
+
+# End dot2dec.pl
+
+And a terse version for oldbies (the following code is all one 
+line):
+
+perl -e "for(reverse split(/\./,shift)){$s+=$_*256**$i++}print$s" 
+206.61.52.31
+
+[Editor:  The above is all one line...it's sort of a  Zen thing 
+with Perl programmers...to be able to have enough knowledge of 
+Perl to reduce most, if not all, scripts to a single line.  Hat's 
+off to the author...]
+
+# dec2dot.pl - converts decimal IP addresses to their 
+# dotted-quad equivalents 
+# By echofour on 4/3/99 
+# usage: dec2dot.pl [decimal address]
+
+# Get decimal address from command line
+
+$addr = shift;
+
+#  Quit if address is too large or contains 
+#  non-numeric addresses
+
+die "Invalid decimal IP $addr:$!" if (($addr =~ /\D/) 
+    or ($addr > (2 ** 32) - 1));
+
+# The decimal address is related to the dotted quad 
+# as follows: 
+# 
+# decimal = 1st * (256 ** 3) + 2nd * (256 ** 2) + 
+#           3rd * (256) + 4th 
+# 
+# We can find our component numbers by repeatedly 
+# taking remainders, subtracting, and dividing.
+
+$fourth = $addr % 256; 
+$addr = ($addr - $fourth) / 256; 
+$third = ($addr % 256); 
+$addr = ($addr - $third) / 256; 
+$second = $addr % 256; 
+$addr = ($addr - $second) / 256; 
+$first = $addr % 256;
+
+print "$first.$second.$third.$fourth";
+
+# End dec2dot.pl
+
+Crunch crunch (again...the following code is all one line):
+
+perl -e 
+"$a=shift;while($a){unshift@a,($a%256);($a-=($a%256))/=256}print 
+join'.',@a" 3460117535
+
+[Editor:  ...again with the one-liner...]
+
+Okay, that being said, let's get one with the Perl Corner. 
+Today's Perl Corner was sent in by Ben Jackson 
+<ben@bensheila.demon.co.uk>...here it is (NOTE:  All I've done 
+to the script is edit it to fit the page, and make a couple 
+of comments...otherwise, it's all Ben's work):
+
+I've been reading your excellent Perl corner since it started 
+and have recently started coding some Perl.
+
+The other day whilst reading some free Perl documentation I 
+stumbled on a section regarding srand / rand.
+
+This coincided with a review of *NIX password security at my 
+workplace.
+
+So I thought I'd write a "Random password generator" in Perl 
+and here it is.
+
+As is the case with the examples in Perl corner  this could be 
+used as a springboard for other applications, I intend to add 
+into it the functionality to change a users passswd via passwd 
+and then send the user an E-mail to their mail client informing 
+them of their new *NIX password.
+
+Here's the script, hope you find a space for it.
+
+#!/usr/bin/perl
+
+#  HHD Editor's Note:  For 9x/NT, change the first line 
+#  to c:\perl\bin\perl.exe 
+#  After all, this _is_ the Windows edition...
+
+# Script  : random_passwd.pl 
+# Author  : Ben Jackson 
+# Date         : 04/04/1999 
+# Comments     : Prints out a random character string containing 
+#           both alphabetic characters and also numbers. 
+#           These strings can then be used as secure passwords.
+
+# Initialise variables.
+
+# This values specifies how many characters the output string 
+# should have. 
+# You may change this value to suit your needs. 
+$passchars = 8;
+
+# Array containing the alphabet in lowercase 
+@lowercase=("a","b","c","d","e","f","g","h","i","j","k","l","m", 
+            "n","o","p", "q","r","s","t","u","v","w","x","y","z");
+
+# Array containing the alphabet in uppercase 
+@uppercase=("A","B","C","D","E","F","G","H","I","J","K","L", 
+            "M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
+
+# Array containing numbers 
+@numbers=("0","1","2","3","4","5","6","7","8","9");
+
+# Array containing arrays 
+@arrays=("lowercase","uppercase","numbers");
+
+#  HHD Editor's Note:  You could save a lot of space, but 
+#  maybe not be quite as readable to a newbie, by using 
+#  @arrays = (a..z,A..Z,1..9);
+
+# Array containing just 0 and 1 for reverse calculation 
+@revers=("0","1");
+
+# Plant the srand seed based on epoch seconds 
+srand( time() ^ ($$ + ($$ << 24)) );
+
+# Loop $passchars times to add random chars/digits to the 
+# @randomstring array 
+for ($count = 0; $count < $passchars; $count++) { 
+# Choose a random array from above and assign it to $arr 
+$arr = $arrays[int(rand(@arrays))];
+
+# Assign random number to $var 
+$var = $$arr[int(rand(@$arr))];
+
+# Add current iterations random char/digit to @randomstring array 
+@randomstring[($count)] = $var; 
+  }
+
+# Decide whether to reverse @randomstring. for extra randomosity 
+# (Is that a word?) 
+# Either 1 or 0 will be randomly selected from the @revers array 
+# and @randomstring is 
+# reversed if $revres is equal to zero, otherwise it is left alone. 
+$revres = $revers[int(rand(@revers))]; 
+if ($revres == 0) { 
+   @randomstring = reverse @randomstring; 
+   }
+
+# Print the complete @randomstring array 
+print @randomstring; 
+print "\n";
+
+-- 
+Ben Jackson
+
+****************************************************************** 
+Editor's Comments:
+
+<soapbox> 
+Okay, I get a lot of email all the time...some from listservers, 
+a lot of junk...and a lot from the readers.  So if I can answer 
+you question easily, I will...and/or I'll post it in the HHD. 
+Many times I get questions that I just can't understand...they 
+make no sense whatsoever.  Sure, the English and grammar and 
+spelling are fine...the questions just make no sense.
+
+Many times, lately, I have received questions about articles 
+in the Unix edition of the HHD.  Folks, I edit the Window 
+edition.  If you have a question about something in the Unix 
+edition, please...ask the Unix editor.
+
+I also receive email all the time from readers who want to know 
+how to 'hack' or 'root someone's box'.  I'm sorry, but we don't 
+do that.
+
+I appreciate questions...and answer as many as I can.  I also 
+appreciate contributions from the readers... 
+</soapbox> 
+****************************************************************** 
+_______________________________________________________________________ 
+
+    
+ 
+
+This is a list devoted to *legal* hacking! If you plan to use any 
+information in this Digest or at our Web site to commit crime, go away! 
+Foo on you! Don't email us bragging about any crimes you may have committed. 
+We mean it. 
+
+For Windows questions, email keydet89@yahoo.com or editor@techbroker.com 
+For Unix questions, contact unixeditor@techbroker.com. 
+For Macs, email Strider <s.corinth@iname.com> 
+
+Happy Hacker staff: Unix editor, <unixeditor@techbroker.com>; 
+Windows editor, Keydet89 <editor@techbroker.com>; postmasters Jonathan D. 
+Zerulik and William Lewis <>; Hacker Wargame Director, 
+Vincent Larsen <vincent@sage-inc.com>; Wargame Sysadmin, Satori 
+<Satori@rt66.com>; Webmaster, Diode <webmaster@happyhacker.org>; Clown 
+Princess: Carolyn Meinel <>
+
+Happy Hacker is a 501 (c) (3) tax deductible organization  
+in the United States operating under Shepherd's Fold Ministries. Yes!  
+This is all a plot to save your immortal souls!
